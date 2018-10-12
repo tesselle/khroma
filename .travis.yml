@@ -10,3 +10,6 @@ sudo: false
 dist: trusty
 
 warnings_are_errors: true
+
+# work around temporary travis + R 3.5 bug
+r_packages: devtools
