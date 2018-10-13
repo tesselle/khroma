@@ -19,5 +19,5 @@ Suggests: ggplot2 (>= 3.0.0),
 Imports: grDevices
 Collate: 
     'colour.R'
-    'utils.R'
+    'utilities.R'
     'ggplot2.R'
