@@ -47,7 +47,7 @@ ggplot(strati, aes(fill = name)) +
   scale_fill_stratigraphy(name = "Stratigraphy")
 }
 \references{
-\href{Commission for the Geological Map of the World}{https://www.ccgm.org}
+\href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 }
 \seealso{
 Other colour scales for ggplot2: \code{\link{scale_colour_tol}}

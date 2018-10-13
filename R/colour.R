@@ -17,14 +17,15 @@
 #'  }
 #' @section Scientific Colour Schemes:
 #'  The following palettes are available:
-#'  \itemize{
+#'  \describe{
 #'   \item{stratigraphy}{International Chronostratigraphic Chart}
 #'  }
 #' @return A palette function that when called with a single integer argument
 #'  (the number of levels) returns a vector of colours.
 #' @references Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
-#' \href{Commission for the Geological Map of the World}{https://www.ccgm.org}
+#'
+#'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 #' @example inst/examples/palettes.R
 #' @author N. Frerebeau
 #' @export

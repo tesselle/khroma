@@ -113,7 +113,7 @@ scale_fill_tol <- function(..., palette, reverse = FALSE, aesthetics = "fill") {
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the unit names.
-#' @references \href{Commission for the Geological Map of the World}{https://www.ccgm.org}
+#' @references \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 #' @example inst/examples/stratigraphy.R
 #' @author N. Frerebeau
 #' @family colour scales for ggplot2

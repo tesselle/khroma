@@ -41,7 +41,7 @@ Provides qualitative, diverging and sequential colour palettes.
 \section{Scientific Colour Schemes}{
 
  The following palettes are available:
- \itemize{
+ \describe{
   \item{stratigraphy}{International Chronostratigraphic Chart}
  }
 }
@@ -73,7 +73,8 @@ show_col(colour("stratigraphy")(175))
 \references{
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
-\href{Commission for the Geological Map of the World}{https://www.ccgm.org}
+
+ \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 }
 \author{
 N. Frerebeau
