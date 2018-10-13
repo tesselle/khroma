@@ -69,7 +69,7 @@ ggplot(economics, aes(psavert, pce, colour = unemploy)) +
 # Sequential data
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
-  scale_fill_tol(palette = "YlOrBr")
+  scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
 
 }
 \references{
