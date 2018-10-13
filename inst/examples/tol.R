@@ -1,24 +1,21 @@
 library("ggplot2")
 
 # Qualitative data
-ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
-  scale_color_tol(palette = "bright")
+  scale_colour_tol(palette = "bright")
 
-ggplot(diamonds, aes(x = clarity, fill = cut)) +
+ggplot(diamonds, aes(clarity, fill = cut)) +
   geom_bar() +
   scale_fill_tol(palette = "vibrant")
 
 # Diverging data
-ggplot(mtcars, aes(x = wt, y = mpg, color = qsec)) +
+ggplot(economics, aes(psavert, pce, colour = unemploy)) +
   geom_point() +
-  scale_color_tol(palette = "PRGn", reverse = TRUE)
+  scale_color_tol(palette = "sunset")
 
 # Sequential data
-ggplot(mtcars, aes(x = wt, y = mpg, color = hp)) +
-  geom_point() +
-  scale_color_tol(palette = "YlOrBr")
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_raster() +
+  scale_fill_tol(palette = "YlOrBr")
 
-ggplot(mtcars, aes(x = wt, y = mpg, color = hp)) +
-  geom_point() +
-  scale_color_tol(palette = "smooth rainbow")
