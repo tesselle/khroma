@@ -1,4 +1,4 @@
-#' @include colour.R utils.R
+#' @include colour.R utilities.R
 NULL
 # Colour scales constructor for ggplot2 ========================================
 #' Colour scale constructor
