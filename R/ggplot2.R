@@ -52,7 +52,7 @@ scale <- function(aesthetics, palette, reverse = FALSE, ...) {
 #'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
 #'  qualitative data and diverging/sequential data.
 #' @param palette A \code{\link{character}} string giving the name of
-#'  the palette to be used (see \code{\link{colour}}).
+#'  the palette to be used (see details).
 #' @param reverse A \code{\link{logical}} scalar specifying if the resulting
 #'  vector of colours should be reversed.
 #' @param aesthetics A \code{\link{character}} string or vector of character
