@@ -8,7 +8,7 @@ khroma
 Overview
 --------
 
-khroma is an utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
+khroma is a utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
 
 Installation
 ------------
@@ -25,3 +25,33 @@ Or install the development version from GitHub with:
 # install.packages("devtools")
 devtools::install_github("nfrerebeau/khroma")
 ```
+
+Usage
+-----
+
+### Paul Tol's Colour Schemes
+
+Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
+
+-   distinct for all people, including colour-blind readers;
+-   distinct from black and white;
+-   distinct on screen and paper;
+-   matching well together.
+
+All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
+
+#### Qualitative data
+
+![](man/figures/README-tol-qualitative-1.png)
+
+#### Diverging data
+
+![](man/figures/README-tol-diverging-1.png)
+
+#### Sequential data
+
+![](man/figures/README-tol-sequential-1.png)
+
+### Scientific colour schemes
+
+For now, the only scientific colour scheme available is that of the International Chronostratigraphic Chart. More will be added in future releases (suggestions are welcome).

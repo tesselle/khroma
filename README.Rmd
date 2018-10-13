@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/README-"
 )
 ```
 
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-khroma is an utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
+khroma is a utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
 
 ## Installation
 
@@ -36,3 +36,55 @@ Or install the development version from GitHub with:
 # install.packages("devtools")
 devtools::install_github("nfrerebeau/khroma")
 ```
+
+## Usage
+### Paul Tol's Colour Schemes
+
+Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
+
+* distinct for all people, including colour-blind readers;
+* distinct from black and white;
+* distinct on screen and paper;
+* matching well together.
+
+All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
+
+#### Qualitative data
+
+```{r tol-qualitative, echo = FALSE}
+# Qualitative data
+par(mfrow = c(2, 3))
+scales::show_col(khroma::colour("bright")(7))
+scales::show_col(khroma::colour("vibrant")(7))
+scales::show_col(khroma::colour("muted")(9))
+scales::show_col(khroma::colour("light")(9))
+scales::show_col(khroma::colour("rainbow")(14),
+                 cex_label = 0.7)
+scales::show_col(khroma::colour("rainbow")(23),
+                 cex_label = 0.7)
+```
+
+#### Diverging data
+
+```{r tol-diverging, echo = FALSE}
+# Diverging data
+par(mfrow = c(1, 3))
+scales::show_col(khroma::colour("BuRd")(9))
+scales::show_col(khroma::colour("PRGn")(9))
+scales::show_col(khroma::colour("sunset")(11),
+                 cex_label = 0.7)
+```
+
+#### Sequential data
+
+```{r tol-sequential, echo = FALSE}
+# Sequential data
+par(mfrow = c(1, 2))
+scales::show_col(khroma::colour("YlOrBr")(9))
+scales::show_col(khroma::colour("smooth rainbow")(34),
+                 cex_label = 0.7)
+```
+
+### Scientific colour schemes
+
+For now, the only scientific colour scheme available is that of the International Chronostratigraphic Chart. More will be added in future releases (suggestions are welcome).
