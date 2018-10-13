@@ -3,9 +3,12 @@
 khroma
 ======
 
-[![Travis status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
-khroma is an helper package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
+Overview
+--------
+
+khroma is an utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
 
 Installation
 ------------
