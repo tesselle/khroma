@@ -1,19 +1,19 @@
 #' @include colour.R utilities.R
 NULL
 # Colour scales constructor for ggplot2 ========================================
-#' Colour scale constructor
-#'
-#' Builds discrete or continuous scale for ggplot2 according to the color
-#'  scheme used.
-#' @param aesthetics The names of the aesthetics that this scale works with.
-#' @param palette A \code{\link{character}} string giving the name of
-#'  the palette to be used (see \code{\link{colour}}).
-#' @param reverse A \code{\link{logical}} scalar specifying if the resulting
-#'  vector of colours should be reversed.
-#' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
-#'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
-#'  qualitative data and diverging/sequential data.
-#' @author N. Frerebeau
+# #' Colour scale constructor
+# #'
+# #' Builds discrete or continuous scale for ggplot2 according to the color
+# #'  scheme used.
+# #' @param aesthetics The names of the aesthetics that this scale works with.
+# #' @param palette A \code{\link{character}} string giving the name of
+# #'  the palette to be used (see \code{\link{colour}}).
+# #' @param reverse A \code{\link{logical}} scalar specifying if the resulting
+# #'  vector of colours should be reversed.
+# #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
+# #'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
+# #'  qualitative data and diverging/sequential data.
+# #' @author N. Frerebeau
 scale <- function(aesthetics, palette, reverse = FALSE, ...) {
   # Check required package
   checkPackage("ggplot2")
