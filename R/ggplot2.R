@@ -85,6 +85,9 @@ scale <- function(aesthetics, palette, reverse = FALSE, ...) {
 scale_colour_tol <- function(..., palette, reverse = FALSE, aesthetics = "colour") {
   # Check required package
   checkPackage("ggplot2")
+  paul_tol <- c("bright", "vibrant", "muted", "light", "rainbow",
+                "sunset", "BuRd", "PRGn", "YlOrBr", "smooth rainbow")
+  palette <- match.arg(palette, paul_tol, several.ok = FALSE)
   # Build scale
   scale(aesthetics, palette, reverse, ...)
 }
@@ -96,6 +99,9 @@ scale_color_tol <- scale_colour_tol
 scale_fill_tol <- function(..., palette, reverse = FALSE, aesthetics = "fill") {
   # Check required package
   checkPackage("ggplot2")
+  paul_tol <- c("bright", "vibrant", "muted", "light", "rainbow",
+                "sunset", "BuRd", "PRGn", "YlOrBr", "smooth rainbow")
+  palette <- match.arg(palette, paul_tol, several.ok = FALSE)
   # Build scale
   scale(aesthetics, palette, reverse, ...)
 }
