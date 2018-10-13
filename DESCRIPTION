@@ -16,8 +16,7 @@ LazyData: true
 RoxygenNote: 6.1.0
 Suggests: ggplot2 (>= 3.0.0),
     scales
-Imports: graphics,
-    grDevices
+Imports: grDevices
 Collate: 
     'colour.R'
     'utils.R'
