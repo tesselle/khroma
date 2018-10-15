@@ -6,7 +6,7 @@ Authors@R: person("Nicolas", "Frerebeau",
                   comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944"))
 Description: Colour schemes for archaeological data visualization. Provides 
     Paul Tol's colour schemes and several thematic palettes (geologic timescale, 
-    etc.) with scales for ggplot2.
+    etc.) with scales for 'ggplot2'.
 URL: http://github.com/nfrerebeau/khroma
 BugReports: http://github.com/nfrerebeau/khroma/issues
 Depends: R (>= 3.4)
