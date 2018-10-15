@@ -1,7 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
-^README-.*\.png$
+^\man\figures\README-.*\.png$
 ^NEWS\.md$
 ^LICENSE$
 ^\.travis\.yml$
