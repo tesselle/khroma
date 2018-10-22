@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Archaeological Data Visualization
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person("Nicolas", "Frerebeau",
                   email = "nicolas.frerebeau@cea.fr", role = c("aut", "cre"),
                   comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944"))
