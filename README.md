@@ -13,7 +13,7 @@ khroma is a utility package: it provides usefull colour schemes for archaeologic
 Installation
 ------------
 
-Install the released version of usethis from CRAN:
+Install the released version of khroma from CRAN:
 
 ``` r
 install.packages("khroma")
@@ -38,7 +38,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 -   distinct on screen and paper;
 -   matching well together.
 
-All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in his 2018 technical note are implemented here, for use with graphics or ggplot2.
 
 #### Qualitative data
 

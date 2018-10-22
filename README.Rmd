@@ -24,7 +24,7 @@ khroma is a utility package: it provides usefull colour schemes for archaeologic
 
 ## Installation
 
-Install the released version of usethis from CRAN:
+Install the released version of khroma from CRAN:
 
 ```{r cran-installation, eval = FALSE}
 install.packages("khroma")
@@ -47,28 +47,24 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 * distinct on screen and paper;
 * matching well together.
 
-All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in his 2018 technical note are implemented here, for use with graphics or ggplot2.
 
 #### Qualitative data
 
-```{r tol-qualitative, echo = FALSE}
+```{r tol-qualitative, echo=FALSE, fig.height=7, fig.width=7}
 # Qualitative data
-par(mfrow = c(2, 3))
+par(mfrow = c(2, 2), mar = c(0,0,0,0), pty = "s")
 scales::show_col(khroma::colour("bright")(7))
 scales::show_col(khroma::colour("vibrant")(7))
 scales::show_col(khroma::colour("muted")(9))
 scales::show_col(khroma::colour("light")(9))
-scales::show_col(khroma::colour("rainbow")(14),
-                 cex_label = 0.7)
-scales::show_col(khroma::colour("rainbow")(23),
-                 cex_label = 0.7)
 ```
 
 #### Diverging data
 
-```{r tol-diverging, echo = FALSE}
+```{r tol-diverging, echo=FALSE, fig.height=7, fig.width=7}
 # Diverging data
-par(mfrow = c(1, 3))
+par(mfrow = c(2, 2))
 scales::show_col(khroma::colour("BuRd")(9))
 scales::show_col(khroma::colour("PRGn")(9))
 scales::show_col(khroma::colour("sunset")(11),
@@ -77,7 +73,7 @@ scales::show_col(khroma::colour("sunset")(11),
 
 #### Sequential data
 
-```{r tol-sequential, echo = FALSE}
+```{r tol-sequential, echo=FALSE, fig.height=3.5, fig.width=7}
 # Sequential data
 par(mfrow = c(1, 2))
 scales::show_col(khroma::colour("YlOrBr")(9))
