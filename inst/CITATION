@@ -9,10 +9,11 @@ citEntry(
   address      = "Pessac, France",
   note         = "R package version 1.0.0",
   url          = "http://github.com/nfrerebeau/khroma",
+  doi          = "10.5281/zenodo.1472077",
 
   textVersion =
   paste("Nicolas Frerebeau (2018).",
         "khroma: Colour Schemes for Archaeological Data Visualization.",
         "Université Bordeaux Montaigne. R package version 1.0.0",
-        "URL http://github.com/nfrerebeau/khroma.")
+        "DOI: 10.5281/zenodo.1472077.")
 )
