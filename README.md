@@ -3,12 +3,12 @@
 khroma
 ======
 
-[![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) [![DOI](https://zenodo.org/badge/152768624.svg)](https://zenodo.org/badge/latestdoi/152768624)
 
 Overview
 --------
 
-khroma is a utility package: it provides usefull colour schemes for archaeological data visualization. khroma provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for ggplot2.
+`khroma` is a utility package: it provides usefull colour schemes for archaeological data visualization. `khroma` provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for `ggplot2`.
 
 Installation
 ------------
@@ -38,7 +38,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 -   distinct on screen and paper;
 -   matching well together.
 
-All the scales presented in his 2018 technical note are implemented here, for use with graphics or ggplot2.
+All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 
