@@ -38,7 +38,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 -   distinct on screen and paper;
 -   matching well together.
 
-All the scales presented in his 2018 technical note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in his 2018 technical [1] note are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 
@@ -55,3 +55,5 @@ All the scales presented in his 2018 technical note are implemented here, for us
 ### Scientific colour schemes
 
 For now, the only scientific colour scheme available is that of the International Chronostratigraphic Chart. More will be added in future releases (suggestions are welcome).
+
+[1] Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
