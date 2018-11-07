@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-khroma
-======
+khroma <img width=120px src="man/figures/logo.svg" align="right" />
+===================================================================
 
 [![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) [![DOI](https://zenodo.org/badge/152768624.svg)](https://zenodo.org/badge/latestdoi/152768624)
 
@@ -13,7 +13,7 @@ Overview
 Installation
 ------------
 
-Install the released version of khroma from CRAN:
+Install the released version of `khroma` from CRAN:
 
 ``` r
 install.packages("khroma")
@@ -38,7 +38,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 -   distinct on screen and paper;
 -   matching well together.
 
-All the scales presented in his 2018 technical [1] note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in his 2018 technical note [1] are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 

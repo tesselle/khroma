@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# khroma
+# khroma <img width=120px src="man/figures/logo.svg" align="right" />
 
 [![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
 [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-Install the released version of khroma from CRAN:
+Install the released version of `khroma` from CRAN:
 
 ```{r cran-installation, eval = FALSE}
 install.packages("khroma")
@@ -49,7 +49,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 * distinct on screen and paper;
 * matching well together.
 
-All the scales presented in his 2018 technical [^1] note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in his 2018 technical note [^1] are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 
