@@ -1,9 +1,13 @@
 Package: khroma
 Title: Colour Schemes for Archaeological Data Visualization
 Version: 1.0.0.9000
-Authors@R: person("Nicolas", "Frerebeau",
-                  email = "nicolas.frerebeau@cea.fr", role = c("aut", "cre"),
-                  comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944"))
+Authors@R: c(person("Nicolas", "Frerebeau",
+                    email = "nicolas.frerebeau@cea.fr", role = c("aut", "cre"),
+                    comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944")),
+             person("Brice", "Lebrun",
+                    email = "brice.lebrun@u-bordeaux-montaigne.fr", role = c("ctb"),
+                    comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685"))
+            )
 Description: Colour schemes for archaeological data visualization. Provides 
     Paul Tol's colour schemes and several thematic palettes (geologic timescale, 
     etc.) with scales for 'ggplot2'.
