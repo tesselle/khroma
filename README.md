@@ -3,7 +3,7 @@
 khroma <img width=120px src="man/figures/logo.svg" align="right" />
 ===================================================================
 
-[![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) [![DOI](https://zenodo.org/badge/152768624.svg)](https://zenodo.org/badge/latestdoi/152768624)
+[![Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma) [![CRAN status](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma) [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
 
 Overview
 --------
