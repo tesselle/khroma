@@ -29,4 +29,6 @@
 #'
 #' Nicolas Frerebea, IRAMAT-CRP2A, Universite Bordeaux Montaigne, Pessac, France,\cr
 #' \email{nicolas.frerebeau@@u-bordeaux-montaigne.fr}
+#' @importFrom magrittr %<>%
+#' @importFrom magrittr %>%
 NULL
