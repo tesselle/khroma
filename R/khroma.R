@@ -1,7 +1,9 @@
 #' Colour Schemes for Archaeological Data Visualization
 #'
-#' Provides Paul Tol's colour schemes and several thematic palettes (geologic
-#' timescale, etc.) with scales for \code{ggplot2}.
+#' This package provides Paul Tol's colour schemes and several thematic palettes
+#' (geologic timescale, etc.) with scales for 'ggplot2'. The package make it
+#' easy to visualize multivariate exploratory data analysis results from
+#' 'FactoMineR'.
 #'
 #' \tabular{ll}{
 #'  \strong{Package:} \tab khroma \cr
