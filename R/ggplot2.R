@@ -60,6 +60,10 @@ scale <- function(aesthetics, palette, reverse = FALSE, ...) {
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
+#'  \strong{These methods are deprecated, use \code{\link{scale_tol_discrete}},
+#'  \code{\link{scale_tol_diverging}} or \code{\link{scale_tol_sequential}}
+#'  instead.}
+#'
 #'  Paul Tol provides colour schemes ready for each type of data, with colours
 #'  that are :
 #'  \itemize{
@@ -85,6 +89,8 @@ scale <- function(aesthetics, palette, reverse = FALSE, ...) {
 #' @export
 #' @rdname scale_tol
 scale_colour_tol <- function(..., palette, reverse = FALSE, aesthetics = "colour") {
+  # Deprecate
+  .Deprecated()
   # Check required package
   checkPackage("ggplot2")
   paul_tol <- c("bright", "vibrant", "muted", "light", "rainbow",
@@ -99,6 +105,8 @@ scale_color_tol <- scale_colour_tol
 #' @export
 #' @rdname scale_tol
 scale_fill_tol <- function(..., palette, reverse = FALSE, aesthetics = "fill") {
+  # Deprecate
+  .Deprecated()
   # Check required package
   checkPackage("ggplot2")
   paul_tol <- c("bright", "vibrant", "muted", "light", "rainbow",

@@ -1,21 +1,23 @@
-library("ggplot2")
+\dontrun{
 
-# Qualitative data
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  scale_colour_tol(palette = "bright")
+  library("ggplot2")
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  scale_fill_tol(palette = "vibrant")
+  # Qualitative data
+  ggplot(mpg, aes(displ, hwy, colour = class)) +
+    geom_point() +
+    scale_colour_tol(palette = "bright")
 
-# Diverging data
-ggplot(economics, aes(psavert, pce, colour = unemploy)) +
-  geom_point() +
-  scale_color_tol(palette = "sunset")
+  ggplot(diamonds, aes(clarity, fill = cut)) +
+    geom_bar() +
+    scale_fill_tol(palette = "vibrant")
 
-# Sequential data
-ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
+  # Diverging data
+  ggplot(economics, aes(psavert, pce, colour = unemploy)) +
+    geom_point() +
+    scale_color_tol(palette = "sunset")
 
+  # Sequential data
+  ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+    geom_raster() +
+    scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
+}
