@@ -219,34 +219,34 @@ NULL
 
 ## YlOrBr ----------------------------------------------------------------------
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_colour_YlOrBr <- function(..., reverse = FALSE, aesthetics = "colour") {
   scale(aesthetics, "YlOrBr", reverse, ...)
 }
 
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_color_YlOrBr <- scale_colour_YlOrBr
 
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_fill_YlOrBr <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "YlOrBr", reverse, ...)
 }
 
 ## smooth rainbow --------------------------------------------------------------
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_colour_smoothrainbow <- function(..., reverse = FALSE, aesthetics = "colour") {
   scale(aesthetics, "smooth rainbow", reverse, ...)
 }
 
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_color_smoothrainbow <- scale_colour_smoothrainbow
 
 #' @export
-#' @rdname scale_tol_diverging
+#' @rdname scale_tol_sequential
 scale_fill_smoothrainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "smooth rainbow", reverse, ...)
 }
