@@ -25,7 +25,8 @@ specifiying the supplementary data to plot.
 This must be one or more of "\code{individuals}", "\code{qualitative}",
 "\code{quantitative}". Any unambiguous substring can be given.}
 
-\item{group}{A \code{\link{character}} vector of categories from which
+\item{group}{A \code{\link{character}} vector of categories or a length-one
+\code{\link{numeric}} vector specifiying the categorial variable from which
 to color the individuals.
 The elements are coerced to characters by \code{\link{as.character}}.}
 
@@ -39,19 +40,18 @@ library(FactoMineR)
 library(ggplot2)
 
 # PCA
-results <- PCA(economics, scale.unit = TRUE, graph = FALSE,
-               ind.sup = 1:100, quanti.sup = 2, quali.sup = 1)
-## Plot individuals
-visualize(results, map = "ind", axes = c(1, 2))
-## Plot supplementary individuals with ellipses
-visualize(results, map = "ind", axes = c(1, 2), extra = "ind") +
+data(decathlon)
+results <- PCA(decathlon, quanti.sup = 11:12, quali.sup = 13, graph = FALSE)
+## Plot individuals and draw ellipses
+visualize(results, map = "ind", axes = c(1, 2), group = 13) +
   ggplot2::stat_ellipse() +
   khroma::scale_color_bright()
 ## Plot variables with labels
 visualize(results, map = "variables", axes = c(1, 2)) +
   ggplot2::geom_label()
-## Plot supplementary quantitative variables
-visualize(results, map = "variables", axes = c(1, 2), extra = "quanti") +
+## Plot supplementary variables
+visualize(results, map = "variables", axes = c(1, 2),
+          extra = c("quanti", "quali")) +
   ggplot2::geom_label()
 ## Plot eigenvalues
 visualize(results, map = "eig", axes = c(1, 2))
