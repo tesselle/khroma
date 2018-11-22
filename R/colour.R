@@ -26,7 +26,7 @@
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #'
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
-#' @example inst/examples/palettes.R
+#' @example inst/examples/ex-palettes.R
 #' @author N. Frerebeau
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
@@ -62,21 +62,23 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   attr(fun, "max") <- k
   return(fun)
 }
+
 #' @export
 #' @rdname colour
 color <- colour
-# #' Adjust colour palette
-# #'
-# #' Adjusts a color palette according to specific rules.
-# #' @param colours A \code{\link{character}} vector of colours.
-# #' @param palette A \code{\link{character}} string giving the name of
-# #'  the palette to be used (see \code{\link{colour}}).
-# #' @param n A \code{\link{numeric}} scalar giving the number of colours to
-# #'  select.
-# #' @details If there is no rule for the palette, \code{n} colours are
-# #'  randomly selected.
-# #' @return A character vector of colours.
-# #' @author N. Frerebeau
+
+# Adjust colour palette
+#
+# Adjusts a color palette according to specific rules.
+# @param colours A \code{\link{character}} vector of colours.
+# @param palette A \code{\link{character}} string giving the name of
+#  the palette to be used (see \code{\link{colour}}).
+# @param n A \code{\link{numeric}} scalar giving the number of colours to
+#  select.
+# @details If there is no rule for the palette, \code{n} colours are
+#  randomly selected.
+# @return A character vector of colours.
+# @author N. Frerebeau
 adjust <- function(colours, palette, n = length(colours)) {
   random <- colours[base::sample(1:length(colours), n, FALSE)]
   scheme <- schemes[[palette]]
