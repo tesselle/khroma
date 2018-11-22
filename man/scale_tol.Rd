@@ -31,7 +31,11 @@ Provides qualitative, diverging and sequential colour scales from Paul Tol's
  \emph{Colour Schemes}.
 }
 \details{
-Paul Tol provides colour schemes ready for each type of data, with colours
+\strong{These methods are deprecated, use \code{\link{scale_tol_discrete}},
+ \code{\link{scale_tol_diverging}} or \code{\link{scale_tol_sequential}}
+ instead.}
+
+ Paul Tol provides colour schemes ready for each type of data, with colours
  that are :
  \itemize{
   \item distinct for all people, including colour-blind readers;
@@ -50,27 +54,29 @@ Paul Tol provides colour schemes ready for each type of data, with colours
  }
 }
 \examples{
-library("ggplot2")
+\dontrun{
 
-# Qualitative data
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  scale_colour_tol(palette = "bright")
+  library("ggplot2")
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  scale_fill_tol(palette = "vibrant")
+  # Qualitative data
+  ggplot(mpg, aes(displ, hwy, colour = class)) +
+    geom_point() +
+    scale_colour_tol(palette = "bright")
 
-# Diverging data
-ggplot(economics, aes(psavert, pce, colour = unemploy)) +
-  geom_point() +
-  scale_color_tol(palette = "sunset")
+  ggplot(diamonds, aes(clarity, fill = cut)) +
+    geom_bar() +
+    scale_fill_tol(palette = "vibrant")
 
-# Sequential data
-ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
+  # Diverging data
+  ggplot(economics, aes(psavert, pce, colour = unemploy)) +
+    geom_point() +
+    scale_color_tol(palette = "sunset")
 
+  # Sequential data
+  ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+    geom_raster() +
+    scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
+}
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
