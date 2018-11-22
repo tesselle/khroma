@@ -1,19 +1,20 @@
 #' @include colour.R utilities.R
 NULL
+
 # Colour scales constructor for ggplot2 ========================================
-# #' Colour scale constructor
-# #'
-# #' Builds discrete or continuous scale for ggplot2 according to the color
-# #'  scheme used.
-# #' @param aesthetics The names of the aesthetics that this scale works with.
-# #' @param palette A \code{\link{character}} string giving the name of
-# #'  the palette to be used (see \code{\link{colour}}).
-# #' @param reverse A \code{\link{logical}} scalar specifying if the resulting
-# #'  vector of colours should be reversed.
-# #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
-# #'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
-# #'  qualitative data and diverging/sequential data.
-# #' @author N. Frerebeau
+# Colour scale constructor
+#
+# Builds discrete or continuous scale for ggplot2 according to the color
+#  scheme used.
+# @param aesthetics The names of the aesthetics that this scale works with.
+# @param palette A \code{\link{character}} string giving the name of
+#  the palette to be used (see \code{\link{colour}}).
+# @param reverse A \code{\link{logical}} scalar specifying if the resulting
+#  vector of colours should be reversed.
+# @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
+#  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
+#  qualitative data and diverging/sequential data.
+# @author N. Frerebeau
 scale <- function(aesthetics, palette, reverse = FALSE, ...) {
   # Check required package
   checkPackage("ggplot2")
@@ -43,6 +44,7 @@ scale <- function(aesthetics, palette, reverse = FALSE, ...) {
     )
   }
 }
+
 # Discrete and gradient colour scales for ggplot2 ==============================
 #' Paul Tol's Colour Schemes for ggplot2
 #'
@@ -104,41 +106,4 @@ scale_fill_tol <- function(..., palette, reverse = FALSE, aesthetics = "fill") {
   palette <- match.arg(palette, paul_tol, several.ok = FALSE)
   # Build scale
   scale(aesthetics, palette, reverse, ...)
-}
-# ------------------------------------------------------------------------------
-#' Geologic Timescale Colour Scheme for ggplot2
-#'
-#' Provides the geologic timescale colour scale.
-#' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
-#' @param aesthetics A \code{\link{character}} string or vector of character
-#'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @details Values will be matched based on the unit names.
-#' @references \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
-#' @example inst/examples/stratigraphy.R
-#' @author N. Frerebeau
-#' @family colour scales for ggplot2
-#' @export
-#' @rdname scale_stratigraphy
-scale_colour_stratigraphy <- function(..., aesthetics = "colour") {
-  # Check required package
-  checkPackage("ggplot2")
-  # Get palette
-  colour_palette <- colour("stratigraphy", names = TRUE)
-  # Build scale
-  ggplot2::scale_color_manual(..., values = colour_palette(175),
-                              aesthetics = aesthetics)
-}
-#' @export
-#' @rdname scale_stratigraphy
-scale_color_stratigraphy <- scale_colour_stratigraphy
-#' @export
-#' @rdname scale_stratigraphy
-scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
-  # Check required package
-  checkPackage("ggplot2")
-  # Get palette
-  colour_palette <- colour("stratigraphy", names = TRUE)
-  # Build scale
-  ggplot2::scale_fill_manual(..., values = colour_palette(175),
-                             aesthetics = aesthetics)
 }
