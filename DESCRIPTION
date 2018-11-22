@@ -10,9 +10,10 @@ Authors@R: c(person("Nicolas", "Frerebeau",
                     comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685"))
             )
 Maintainer: Nicolas Frerebeau <data@archaeo.science>
-Description: Colour schemes for archaeological data visualization. Provides 
-    Paul Tol's colour schemes and several thematic palettes (geologic timescale, 
-    etc.) with scales for 'ggplot2'.
+Description: Colour schemes for archaeological data visualization. This package 
+    provides Paul Tol's colour schemes and several thematic palettes (geologic 
+    timescale, etc.) with scales for 'ggplot2'. The package make it easy to 
+    visualize multivariate exploratory data analysis results from 'FactoMineR'.
 URL: https://cran.r-project.org/package=khroma
 BugReports: http://github.com/nfrerebeau/khroma/issues
 Depends: R (>= 3.4)
