@@ -9,6 +9,7 @@ Authors@R: c(person("Nicolas", "Frerebeau",
                     email = "brice.lebrun@u-bordeaux-montaigne.fr", role = c("ctb"),
                     comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685"))
             )
+Maintainer: Nicolas Frerebeau <data@archaeo.science>
 Description: Colour schemes for archaeological data visualization. Provides 
     Paul Tol's colour schemes and several thematic palettes (geologic timescale, 
     etc.) with scales for 'ggplot2'.
