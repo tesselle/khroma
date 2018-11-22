@@ -18,13 +18,18 @@ visualize.PCA <- function(x, axes = c(1, 2),
   } else {
     extra <- FALSE
   }
-  if (!is.null(group)) group <- as.character(group)
+  if (!is.null(group)) {
+    if (is.numeric(group) & length(group) == 1) {
+      group <- x$call$X[, group]
+    }
+    group <- as.character(group)
+  }
 
-  ind_sup <- (map == "individuals" & extra == "individuals" &
+  ind_sup <- (map == "individuals" & "individuals" %in% extra &
                 length(x$ind.sup) != 0)
-  quanti_sup <- (map == "variables" & extra == "quantitative" &
+  quanti_sup <- (map == "variables" & "quantitative" %in% extra &
                    length(x$quanti.sup) != 0)
-  quali_sup <- (map == "variables" & extra == "qualitative" &
+  quali_sup <- (map == "variables" & "qualitative" %in% extra &
                   length(x$quali.sup) != 0)
 
   graph <- switch(

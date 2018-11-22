@@ -12,7 +12,8 @@
 #'  specifiying the supplementary data to plot.
 #'  This must be one or more of "\code{individuals}", "\code{qualitative}",
 #'  "\code{quantitative}". Any unambiguous substring can be given.
-#' @param group A \code{\link{character}} vector of categories from which
+#' @param group A \code{\link{character}} vector of categories or a length-one
+#'  \code{\link{numeric}} vector specifiying the categorial variable from which
 #'  to color the individuals.
 #'  The elements are coerced to characters by \code{\link{as.character}}.
 #' @param ... Further arguments passed to other methods.
