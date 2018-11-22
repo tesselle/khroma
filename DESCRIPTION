@@ -3,7 +3,7 @@ Title: Colour Schemes for Archaeological Data Visualization
 Version: 1.0.0.9000
 Date: 2018-11-16
 Authors@R: c(person("Nicolas", "Frerebeau",
-                    email = "nicolas.frerebeau@u-bordeaux-montaigne.fr", role = c("aut", "cre"),
+                    email = "data@archaeo.science", role = c("aut", "cre"),
                     comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944")),
              person("Brice", "Lebrun",
                     email = "brice.lebrun@u-bordeaux-montaigne.fr", role = c("ctb"),
