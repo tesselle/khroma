@@ -3,10 +3,11 @@ NULL
 
 # Visualize PCA results ========================================================
 #' @export
+#' @rdname visualize
 visualize.PCA <- function(x, axes = c(1, 2),
                           map = c("individuals", "variables",
                                   "eigenvalues", "variance"),
-                          extra = NULL, habillage = NULL) {
+                          extra = NULL, group = NULL, ...) {
   # Validation
   map <- match.arg(map, several.ok = FALSE)
   if(!is.null(extra)) {
@@ -17,6 +18,7 @@ visualize.PCA <- function(x, axes = c(1, 2),
   } else {
     extra <- FALSE
   }
+  if (!is.null(group)) group <- as.character(group)
 
   ind_sup <- (map == "individuals" & extra == "individuals" &
                 length(x$ind.sup) != 0)
@@ -28,7 +30,7 @@ visualize.PCA <- function(x, axes = c(1, 2),
   graph <- switch(
     map,
     individuals = plotIndividuals(x, axes = axes, ind_sup = ind_sup,
-                                  habillage = habillage),
+                                  group = group),
     variables = plotVariables(x, axes = axes, quanti_sup = quanti_sup,
                               quali_sup = quali_sup),
     eigenvalues = plotEigenvalues(x, variance = FALSE),
@@ -44,22 +46,20 @@ printComponentVar.PCA <- function(x, axis = 1) {
 
 # Individuals factor map =======================================================
 plotIndividuals.PCA <- function(x, axes = c(1, 2), ind_sup = FALSE,
-                                habillage = NULL) {
+                                group = NULL) {
   # Get individual coordinates
   ind_coords <- as.data.frame(x$ind$coord)
   # Get row names
   ind_names <- rownames(ind_coords)
 
   sup_coords <- sup_names <- NULL
-  extra <- rep("Ind.", nrow(ind_coords))
+  extra <- if (is.null(group)) rep("Ind.", nrow(ind_coords)) else group
   if (ind_sup) {
     # Get supplementary individual coordinates
     sup_coords <- as.data.frame(x$ind.sup$coord)
     # Get row names
     sup_names <- rownames(sup_coords)
     extra <- c(extra, rep("Sup. ind.", nrow(sup_coords)))
-    # If no habillage use a color scale for supplementary individuals
-    # Else use a shape scale
   }
 
   data <- dplyr::bind_rows(ind_coords, sup_coords) %>%
@@ -68,8 +68,9 @@ plotIndividuals.PCA <- function(x, axes = c(1, 2), ind_sup = FALSE,
     dplyr::mutate(label = c(ind_names, sup_names),
                   legend = extra)
 
-  graph <- ggplot2::ggplot(data = data,
-                           ggplot2::aes(x = x, y = y, color = legend)) +
+  graph <- ggplot2::ggplot(
+    data = data, ggplot2::aes_string(x = "x", y = "y",
+                                     label = "label", color = "legend")) +
     ggplot2::geom_point() +
     ggplot2::geom_vline(xintercept = 0, size = 0.5, linetype = "dashed") +
     ggplot2::geom_hline(yintercept = 0, size = 0.5, linetype = "dashed") +
@@ -120,17 +121,17 @@ plotVariables.PCA <- function(x, axes = c(1, 2), quanti_sup = FALSE,
       data = cbind.data.frame(
         x = 1 * cos(seq(0, 2 * pi, length = 200)),
         y = 1 * sin(seq(0, 2 * pi, length = 200))),
-      ggplot2::aes(x = x, y = y), size = 0.5, inherit.aes = FALSE)
+      ggplot2::aes_string(x = "x", y = "y"), size = 0.5, inherit.aes = FALSE)
   }
 
   graph <- ggplot2::ggplot(
-    data = data, ggplot2::aes(x = x, y = y,
-                              label = label, colour = legend)) +
+    data = data, ggplot2::aes_string(x = "x", y = "y",
+                                     label = "label", colour = "legend")) +
     ggplot2::geom_vline(xintercept = 0, size = 0.5, linetype = "dashed") +
     ggplot2::geom_hline(yintercept = 0, size = 0.5, linetype = "dashed") +
     gg_unit + gg_circle +
     ggplot2::geom_segment(
-      ggplot2::aes(x = zero, xend = x, y = zero, yend = y),
+      ggplot2::aes_string(x = "zero", xend = "x", y = "zero", yend = "y"),
       arrow = ggplot2::arrow(length = ggplot2::unit(0.2, "cm")),
       size = 0.5) +
     ggplot2::labs(x = printComponentVar(x, axes[1]),
@@ -147,12 +148,12 @@ plotEigenvalues.PCA <- function(x, variance = FALSE) {
   gg_plot <- if (variance) {
     list(
       ggplot2::geom_line(
-        ggplot2::aes(x = PC, y = `cumulative percentage of variance`)),
+        ggplot2::aes_string(x = "PC", y = "`cumulative percentage of variance`")),
       ggplot2::geom_point(
-        ggplot2::aes(x = PC, y = `cumulative percentage of variance`))
+        ggplot2::aes_string(x = "PC", y = "`cumulative percentage of variance`"))
     )
   } else {
-    ggplot2::geom_col(ggplot2::aes(x = PC, y = eigenvalue))
+    ggplot2::geom_col(ggplot2::aes_string(x = "PC", y = "eigenvalue"))
   }
   graph <- ggplot2::ggplot(data = data) +
     gg_plot
