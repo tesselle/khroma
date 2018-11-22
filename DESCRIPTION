@@ -20,12 +20,14 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
-Suggests: scales, ggrepel
+Suggests: scales
 Imports: dplyr, FactoMineR, ggplot2 (>= 3.0.0), grDevices, magrittr
 Collate: 
     'FactoMineR.R'
-    'FactoMineRPCA.R'
+    'FactoMineR-PCA.R'
     'colour.R'
+    'ggplot2-science.R'
+    'ggplot2-tol.R'
     'utilities.R'
     'ggplot2.R'
     'khroma.R'
