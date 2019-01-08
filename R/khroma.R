@@ -31,10 +31,4 @@
 #'
 #' Nicolas Frerebea, IRAMAT-CRP2A, Universite Bordeaux Montaigne, Pessac, France,\cr
 #' \email{nicolas.frerebeau@@u-bordeaux-montaigne.fr}
-#' @importFrom magrittr %<>%
-#' @importFrom magrittr %>%
 NULL
-
-# Quiets concerns of R CMD check: the .'s that appear in pipelines
-# See https://github.com/tidyverse/magrittr/issues/29
-if(getRversion() >= "2.15.1") utils::globalVariables(c("."))
