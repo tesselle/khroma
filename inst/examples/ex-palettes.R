@@ -19,4 +19,5 @@ show_col(colour("smooth rainbow")(34))
 # Scientific colour schemes
 # Geologic Timescale
 show_col(colour("stratigraphy")(175))
-
+# FAO soil reference groups
+show_col(colour("soil")(24))
