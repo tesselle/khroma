@@ -8,7 +8,7 @@ khroma <img width=120px src="man/figures/logo.svg" align="right" />
 Overview
 --------
 
-`khroma` is a utility package: it provides usefull colour schemes for archaeological data visualization. `khroma` provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, etc.) with scales for `ggplot2`.
+`khroma` is a utility package: it provides usefull colour schemes for archaeological data visualization. `khroma` provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, FAO Soil Reference Groups, etc.) with scales for `ggplot2`.
 
 Installation
 ------------
@@ -54,6 +54,11 @@ All the scales presented in his 2018 technical note [1] are implemented here, fo
 
 ### Scientific colour schemes
 
-For now, the only scientific colour scheme available is that of the International Chronostratigraphic Chart. More will be added in future releases (suggestions are welcome).
+The following scientific colour schemes are available:
+
+-   International Chronostratigraphic Chart
+-   FAO Soil Reference Groups
+
+More will be added in future releases (suggestions are welcome).
 
 [1] Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
