@@ -183,5 +183,36 @@ palettes_science <- list(
       `Hadean` = '#AE027E',
       `Precambrian` = '#F74370'
     )
+  ),
+  soil = list(
+    type = "qualitative",
+    interpolate = FALSE,
+    missing = NA_character_,
+    colours = c(
+      `Acrisol` = '#795f35',
+      `Albeluvisol` = '#fbc1af',
+      `Andosol` = '#ef2c30',
+      `Anthrosol` = '#706d6e',
+      `Arenosol` = '#f4d49d',
+      `Calcisol` = '#ffee00',
+      `Cambisol` = '#fbc41e',
+      `Chernozem` = '#b45241',
+      `Cryosol` = '#5a69b2',
+      `Fluvisol` = '#1ab3ef',
+      `Kastanozem` = '#dd9785',
+      `Gleysol` = '#938abb',
+      `Gypsisol` = '#fff4a4',
+      `Histosol` = '#86817e',
+      `Leptosol` = '#d8d7d7',
+      `Luvisol` = '#f58971',
+      `Phaeozem` = '#e56d4c',
+      `Planosol` = '#f2833f',
+      `Podzol` = '#28b45d',
+      `Regosol` = '#fde09f',
+      `Solonchak` = '#ee1a95',
+      `Solonetz` = '#f6c4e5',
+      `Umbrisol` = '#618f75',
+      `Vertisol` = '#9d4076'
+    )
   )
 )
