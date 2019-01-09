@@ -7,9 +7,7 @@
 \title{Colour Schemes for Archaeological Data Visualization}
 \description{
 This package provides Paul Tol's colour schemes and several thematic palettes
-(geologic timescale, etc.) with scales for 'ggplot2'. The package make it
-easy to visualize multivariate exploratory data analysis results from
-'FactoMineR'.
+(geologic timescale, FAO soils, etc.) with scales for 'ggplot2'.
 }
 \details{
 \tabular{ll}{

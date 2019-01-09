@@ -19,7 +19,7 @@ scale_fill_stratigraphy(..., aesthetics = "fill")
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \description{
-Provides the geologic timescale colour scale.
+Provides the geologic timescale colour scheme.
 }
 \details{
 Values will be matched based on the unit names.
@@ -50,9 +50,9 @@ ggplot(strati, aes(fill = name)) +
 \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 }
 \seealso{
-Other colour scales for ggplot2: \code{\link{scale_colour_tol}}
+Other Themed colour schemes: \code{\link{scale_colour_soil}}
 }
 \author{
 N. Frerebeau
 }
-\concept{colour scales for ggplot2}
+\concept{Themed colour schemes}

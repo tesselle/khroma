@@ -43,6 +43,7 @@ Provides qualitative, diverging and sequential colour palettes.
  The following palettes are available:
  \describe{
   \item{stratigraphy}{International Chronostratigraphic Chart}
+  \item{soil}{FAO Reference Soil Groups}
  }
 }
 
@@ -68,10 +69,15 @@ show_col(colour("smooth rainbow")(34))
 # Scientific colour schemes
 # Geologic Timescale
 show_col(colour("stratigraphy")(175))
-
+# FAO soil reference groups
+show_col(colour("soil")(24))
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
+ Europe}. Luxembourg: European Commission, Office for Official Publications
+ of the European Communities. 128 pp. ISBN: 92-894-8120-X.
+
+ Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 
  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}

@@ -82,9 +82,6 @@ Provides qualitative, diverging and sequential colour scales from Paul Tol's
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
-\seealso{
-Other colour scales for ggplot2: \code{\link{scale_colour_stratigraphy}}
-}
 \author{
 N. Frerebeau
 }
