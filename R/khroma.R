@@ -1,15 +1,13 @@
 #' Colour Schemes for Archaeological Data Visualization
 #'
 #' This package provides Paul Tol's colour schemes and several thematic palettes
-#' (geologic timescale, etc.) with scales for 'ggplot2'. The package make it
-#' easy to visualize multivariate exploratory data analysis results from
-#' 'FactoMineR'.
+#' (geologic timescale, FAO soils, etc.) with scales for 'ggplot2'.
 #'
 #' \tabular{ll}{
 #'  \strong{Package:} \tab khroma \cr
 #'  \strong{Type:} \tab Package \cr
-#'  \strong{Version:} \tab 1.0.0.9000 \cr
-#'  \strong{Date:} \tab 2018-11-16 \cr
+#'  \strong{Version:} \tab 1.1.0 \cr
+#'  \strong{Date:} \tab 2019-01-09 \cr
 #'  \strong{License:} \tab GPL-3 \cr
 #'  \strong{DOI:} \tab \href{https://doi.org/10.5281/zenodo.1472077}{10.5281/zenodo.1472077}
 #' }
@@ -29,6 +27,6 @@
 #'
 #' \strong{Package maintainer}
 #'
-#' Nicolas Frerebea, IRAMAT-CRP2A, Universite Bordeaux Montaigne, Pessac, France,\cr
+#' Nicolas Frerebeau, IRAMAT-CRP2A, Universite Bordeaux Montaigne, Pessac, France,\cr
 #' \email{nicolas.frerebeau@@u-bordeaux-montaigne.fr}
 NULL

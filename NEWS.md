@@ -1,5 +1,6 @@
-# khroma 1.0.0.9000
+# khroma 1.1.0
 
+* ADD: FAO Soil Reference Groups colour scheme
 * ADD: scale_*_bright() method for Paul Tol's bright colour scheme
 * ADD: scale_*_vibrant() method for Paul Tol's vibrant colour scheme
 * ADD: scale_*_muted() method for Paul Tol's muted colour scheme
