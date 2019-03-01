@@ -45,9 +45,10 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   interpolate <- scheme[["interpolate"]]
   missing <- scheme[["missing"]]
   k <- if (palette == "rainbow") 23 else length(colours)
-  # Reverse colour order
-  if (reverse) colours <- rev(colours)
+
   if (interpolate) {
+    # Reverse colour order
+    if (reverse) colours <- rev(colours)
     # For colour schemes that can be linearly interpolated
     fun <- grDevices::colorRampPalette(colours, ...)
   } else {
@@ -57,7 +58,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       if (n > k) stop(paste("you ask for too many colours:", palette,
                             "colour scheme supports up to", k, "values", sep = " "))
       # Adjust colour schemes
-      col <- adjust(colours, palette, n)
+      col <- adjust(colours, palette, n, reverse)
       col <- if (names) col else unname(col)
       return(col)
     }
@@ -81,14 +82,16 @@ color <- colour
 #  the palette to be used (see \code{\link{colour}}).
 # @param n A \code{\link{numeric}} scalar giving the number of colours to
 #  select.
+# @param reverse  A \code{\link{logical}} scalar specifying if the resulting
+#  vector of colours should be reversed.
 # @details If there is no rule for the palette, \code{n} colours are
 #  randomly selected.
 # @return A character vector of colours.
 # @author N. Frerebeau
-adjust <- function(colours, palette, n = length(colours)) {
+adjust <- function(colours, palette, n = length(colours), reverse = FALSE) {
   random <- colours[base::sample(1:length(colours), n, FALSE)]
   scheme <- schemes[[palette]]
-  switch(
+  dyes <- switch(
     palette,
     bright = colours[scheme][1:n],
     vibrant = colours[scheme][1:n],
@@ -97,4 +100,6 @@ adjust <- function(colours, palette, n = length(colours)) {
     rainbow = colours[scheme[[n]]],
     random
   )
+  if (reverse) dyes <- rev(dyes)
+  return(dyes)
 }

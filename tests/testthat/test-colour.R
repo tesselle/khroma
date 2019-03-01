@@ -27,3 +27,11 @@ test_that("Qualitative colours", {
     expect_error(colour(palettes[i])(500))
   }
 })
+test_that("Diverging and sequential colours", {
+  palettes <- c("sunset", "BuRd", "PRGn", "YlOrBr", "smooth rainbow")
+  n <- c(11, 9, 9, 9, 34)
+  for (i in 1:length(palettes)) {
+    expect_equal(colour(palettes[i], reverse = TRUE)(n[i]),
+                 rev(colour(palettes[i], reverse = FALSE)(n[i])))
+  }
+})
