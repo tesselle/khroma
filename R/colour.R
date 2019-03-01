@@ -63,9 +63,9 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
     }
   }
   attr(fun, "type") <- type
-  attr(fun, "interpolate") <- interpolate
-  attr(fun, "missing") <- missing
-  attr(fun, "max") <- k
+  attr(fun, "interpolate") <- as.logical(interpolate)
+  attr(fun, "missing") <- as.logical(missing)
+  attr(fun, "max") <- as.integer(k)
   return(fun)
 }
 
