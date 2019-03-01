@@ -1,4 +1,4 @@
-#' @include colour.R utilities.R
+#' @include colour.R
 NULL
 
 # Colour scales constructor for ggplot2 ========================================
@@ -114,4 +114,19 @@ scale_fill_tol <- function(..., palette, reverse = FALSE, aesthetics = "fill") {
   palette <- match.arg(palette, paul_tol, several.ok = FALSE)
   # Build scale
   scale(aesthetics, palette, reverse, ...)
+}
+
+# Helper -----------------------------------------------------------------------
+# Check package import
+#
+# Checks if the required package is available.
+# @param package A \code{\link{character}} string giving the name of
+#  the needed package.
+# @details An error is signaled if the required package is not available.
+# @author N. Frerebeau
+checkPackage <- function(package) {
+  if (!requireNamespace(package, quietly = TRUE)) {
+    stop(paste(package, "needed for this function to work. Please intall it.",
+               sep = " "))
+  }
 }
