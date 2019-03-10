@@ -27,6 +27,12 @@
 #'
 #' \strong{Package maintainer}
 #'
-#' Nicolas Frerebeau, IRAMAT-CRP2A, Universite Bordeaux Montaigne, Pessac, France,\cr
+#' Nicolas Frerebeau\cr
 #' \email{nicolas.frerebeau@@u-bordeaux-montaigne.fr}
+#'
+#' IRAMAT-CRP2A (UMR 5060)\cr
+#' Maison de l'Archéologie\cr
+#' Universite Bordeaux Montaigne\cr
+#' F-33607 Pessac cedex\cr
+#' France
 NULL
