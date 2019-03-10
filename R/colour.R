@@ -58,7 +58,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       if (n > k) stop(paste("you ask for too many colours:", palette,
                             "colour scheme supports up to", k, "values", sep = " "))
       # Adjust colour schemes
-      col <- adjust(colours, palette, n, reverse)
+      col <- adjust(colours, palette, reverse, n)
       col <- if (names) col else unname(col)
       return(col)
     }
@@ -74,22 +74,23 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 #' @rdname colour
 color <- colour
 
-# Adjust colour palette
-#
-# Adjusts a color palette according to specific rules.
-# @param colours A \code{\link{character}} vector of colours.
-# @param palette A \code{\link{character}} string giving the name of
-#  the palette to be used (see \code{\link{colour}}).
-# @param n A \code{\link{numeric}} scalar giving the number of colours to
-#  select.
-# @param reverse  A \code{\link{logical}} scalar specifying if the resulting
-#  vector of colours should be reversed.
-# @details If there is no rule for the palette, \code{n} colours are
-#  randomly selected.
-# @return A character vector of colours.
-# @author N. Frerebeau
-adjust <- function(colours, palette, n = length(colours), reverse = FALSE) {
-  random <- colours[base::sample(1:length(colours), n, FALSE)]
+#' Adjust colour palette
+#'
+#' Adjusts a color palette according to specific rules.
+#' @param colours A \code{\link{character}} vector of colours.
+#' @param palette A \code{\link{character}} string giving the name of
+#'  the palette to be used (see \code{\link{colour}}).
+#' @param reverse  A \code{\link{logical}} scalar specifying if the resulting
+#'  vector of colours should be reversed.
+#' @param n A \code{\link{numeric}} scalar giving the number of colours to
+#'  select.
+#' @details If there is no rule for the palette, \code{n} colours are
+#'  randomly selected within the scheme.
+#' @return A character vector of colours.
+#' @author N. Frerebeau
+#' @noRd
+adjust <- function(colours, palette, reverse = FALSE, n = length(colours)) {
+  random <- colours[sample(1:length(colours), n, FALSE)]
   scheme <- schemes[[palette]]
   dyes <- switch(
     palette,
