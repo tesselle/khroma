@@ -3,9 +3,9 @@
 #' Provides qualitative, diverging and sequential colour palettes.
 #' @param palette A \code{\link{character}} string giving the name of
 #'  the palette to be used (see below).
-#' @param reverse  A \code{\link{logical}} scalar specifying if the resulting
+#' @param reverse A \code{\link{logical}} scalar specifying if the resulting
 #'  vector of colours should be reversed.
-#' @param names  A \code{\link{logical}} scalar specifying if the names of the
+#' @param names A \code{\link{logical}} scalar specifying if the names of the
 #'  colours should be kept in the resulting vector.
 #' @param ... Further arguments passed to \code{\link[grDevices]{colorRampPalette}}.
 #' @section Paul Tol's Colour Schemes:
@@ -34,6 +34,7 @@
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 #' @example inst/examples/ex-palettes.R
 #' @author N. Frerebeau
+#' @keywords color
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   # Validation
@@ -57,8 +58,8 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       # Check
       if (n > k) stop(paste("you ask for too many colours:", palette,
                             "colour scheme supports up to", k, "values", sep = " "))
-      # Adjust colour schemes
-      col <- adjust(colours, palette, reverse, n)
+      # Arrange colour schemes
+      col <- arrange(colours, palette, reverse, n)
       col <- if (names) col else unname(col)
       return(col)
     }
@@ -74,9 +75,9 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 #' @rdname colour
 color <- colour
 
-#' Adjust colour palette
+#' Arrange colour palette
 #'
-#' Adjusts a color palette according to specific rules.
+#' Arrange a color palette according to a specific order.
 #' @param colours A \code{\link{character}} vector of colours.
 #' @param palette A \code{\link{character}} string giving the name of
 #'  the palette to be used (see \code{\link{colour}}).
@@ -86,10 +87,11 @@ color <- colour
 #'  select.
 #' @details If there is no rule for the palette, \code{n} colours are
 #'  randomly selected within the scheme.
-#' @return A character vector of colours.
+#' @return A \code{\link{character}} vector of colours.
 #' @author N. Frerebeau
+#' @keywords internal
 #' @noRd
-adjust <- function(colours, palette, reverse = FALSE, n = length(colours)) {
+arrange <- function(colours, palette, reverse = FALSE, n = length(colours)) {
   random <- colours[sample(1:length(colours), n, FALSE)]
   scheme <- schemes[[palette]]
   dyes <- switch(
