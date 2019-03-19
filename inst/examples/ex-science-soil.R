@@ -12,4 +12,4 @@ ggplot(soil, aes(fill = name)) +
   geom_rect(aes(xmin = rep(0, 24), xmax = rep(1, 24),
                 ymin = 1:24, ymax = 1:24+1)) +
   scale_y_reverse() +
-  scale_fill_soil(name = "Soil")
+  khroma::scale_fill_soil(name = "Soil")

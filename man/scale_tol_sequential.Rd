@@ -43,16 +43,16 @@ Sequential colour schemes are linearly interpolated.
  }
 }
 \examples{
-library("ggplot2")
+library(ggplot2)
 
 # Sequential data
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
-  scale_fill_YlOrBr()
+  khroma::scale_fill_YlOrBr()
 
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
-  scale_fill_smoothrainbow(reverse = TRUE)
+  khroma::scale_fill_smoothrainbow(reverse = TRUE)
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.

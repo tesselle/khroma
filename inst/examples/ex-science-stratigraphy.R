@@ -16,5 +16,6 @@ strati <- data.frame(
 ggplot(strati, aes(fill = name)) +
   geom_rect(aes(xmin = rep(0, 15), xmax = rep(1, 15),
                 ymin = start, ymax = end)) +
-  scale_y_reverse() + facet_grid(.~type) +
-  scale_fill_stratigraphy(name = "Stratigraphy")
+  scale_y_reverse() +
+  facet_grid(.~type) +
+  khroma::scale_fill_stratigraphy(name = "Stratigraphy")

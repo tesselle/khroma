@@ -13,29 +13,41 @@
 \alias{scale_fill_PRGn}
 \title{Paul Tol's diverging colour schemes for ggplot2}
 \usage{
-scale_colour_sunset(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_sunset(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_color_sunset(..., reverse = FALSE, aesthetics = "colour")
+scale_color_sunset(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_fill_sunset(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_sunset(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "fill")
 
-scale_colour_BuRd(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_BuRd(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_color_BuRd(..., reverse = FALSE, aesthetics = "colour")
+scale_color_BuRd(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_fill_BuRd(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_BuRd(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "fill")
 
-scale_colour_PRGn(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_PRGn(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_color_PRGn(..., reverse = FALSE, aesthetics = "colour")
+scale_color_PRGn(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "colour")
 
-scale_fill_PRGn(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_PRGn(..., reverse = FALSE, midpoint = 0,
+  aesthetics = "fill")
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colours be reversed?}
+
+\item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
+(in data value) of the diverging scale. Defaults to \code{0}.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -53,20 +65,20 @@ Diverging colour schemes are linearly interpolated.
  }
 }
 \examples{
-library("ggplot2")
+library(ggplot2)
 
 # Diverging data
 ggplot(economics, aes(psavert, pce, colour = unemploy)) +
   geom_point() +
-  scale_color_sunset()
+  khroma::scale_color_sunset(midpoint = 12000)
 
 ggplot(economics, aes(psavert, pce, colour = unemploy)) +
   geom_point() +
-  scale_color_BuRd()
+  khroma::scale_color_BuRd(midpoint = 9000)
 
 ggplot(economics, aes(psavert, pce, colour = unemploy)) +
   geom_point() +
-  scale_color_PRGn()
+  khroma::scale_color_PRGn(midpoint = 6000)
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.

@@ -55,27 +55,26 @@ Provides qualitative, diverging and sequential colour scales from Paul Tol's
 }
 \examples{
 \dontrun{
-
-  library("ggplot2")
+  library(ggplot2)
 
   # Qualitative data
   ggplot(mpg, aes(displ, hwy, colour = class)) +
     geom_point() +
-    scale_colour_tol(palette = "bright")
+    khroma::scale_colour_tol(palette = "bright")
 
   ggplot(diamonds, aes(clarity, fill = cut)) +
     geom_bar() +
-    scale_fill_tol(palette = "vibrant")
+    khroma::scale_fill_tol(palette = "vibrant")
 
   # Diverging data
   ggplot(economics, aes(psavert, pce, colour = unemploy)) +
     geom_point() +
-    scale_color_tol(palette = "sunset")
+    khroma::scale_color_tol(palette = "sunset")
 
   # Sequential data
   ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
     geom_raster() +
-    scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
+    khroma::scale_fill_tol(palette = "YlOrBr", reverse = TRUE)
 }
 }
 \references{

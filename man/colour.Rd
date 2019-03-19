@@ -48,28 +48,28 @@ Provides qualitative, diverging and sequential colour palettes.
 }
 
 \examples{
-library("scales")
+library(scales)
 
 # Paul Tol's colour schemes
-# Qualitative data
+## Qualitative data
 show_col(colour("bright")(7))
 show_col(colour("vibrant")(7))
 show_col(colour("muted")(9))
 show_col(colour("light")(9))
 show_col(colour("rainbow")(14))
 show_col(colour("rainbow")(23))
-# Diverging data
+## Diverging data
 show_col(colour("sunset")(11))
 show_col(colour("BuRd")(9))
 show_col(colour("PRGn")(9))
-# Sequential data
+## Sequential data
 show_col(colour("YlOrBr")(9))
 show_col(colour("smooth rainbow")(34))
 
 # Scientific colour schemes
-# Geologic Timescale
+## Geologic Timescale
 show_col(colour("stratigraphy")(175))
-# FAO soil reference groups
+## FAO soil reference groups
 show_col(colour("soil")(24))
 }
 \references{
@@ -85,3 +85,4 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 \author{
 N. Frerebeau
 }
+\keyword{color}

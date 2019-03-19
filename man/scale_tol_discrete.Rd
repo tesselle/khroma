@@ -74,28 +74,28 @@ The qualitative colour schemes are used as given: colours are picked up to
  }
 }
 \examples{
-library("ggplot2")
+library(ggplot2)
 
 # Qualitative data
 ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
-  scale_colour_bright()
+  khroma::scale_colour_bright()
 
 ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
-  scale_colour_vibrant()
+  khroma::scale_colour_vibrant()
 
 ggplot(diamonds, aes(clarity, fill = cut)) +
   geom_bar() +
-  scale_fill_muted()
+  khroma::scale_fill_muted()
 
 ggplot(diamonds, aes(clarity, fill = cut)) +
   geom_bar() +
-  scale_fill_light()
+  khroma::scale_fill_light()
 
 ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
-  scale_colour_rainbow()
+  khroma::scale_colour_rainbow()
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
