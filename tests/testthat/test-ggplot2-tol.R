@@ -58,34 +58,40 @@ test_that("Rainbow", {
 
 # Diverging color schemes
 test_that("Sunset", {
+  expect_is(scale_colour_sunset(midpoint = 10), "ggproto")
   expect_is(scale_colour_sunset(), "ggproto")
   expect_is(scale_colour_sunset(), "ScaleContinuous")
 
   expect_is(scale_color_sunset(), "ggproto")
   expect_is(scale_color_sunset(), "ScaleContinuous")
 
+  expect_is(scale_fill_sunset(midpoint = 10), "ggproto")
   expect_is(scale_fill_sunset(), "ggproto")
   expect_is(scale_fill_sunset(), "ScaleContinuous")
 })
 
 test_that("BuRd", {
+  expect_is(scale_colour_BuRd(midpoint = 10), "ggproto")
   expect_is(scale_colour_BuRd(), "ggproto")
   expect_is(scale_colour_BuRd(), "ScaleContinuous")
 
   expect_is(scale_color_BuRd(), "ggproto")
   expect_is(scale_color_BuRd(), "ScaleContinuous")
 
+  expect_is(scale_fill_BuRd(midpoint = 10), "ggproto")
   expect_is(scale_fill_BuRd(), "ggproto")
   expect_is(scale_fill_BuRd(), "ScaleContinuous")
 })
 
 test_that("PRGn", {
+  expect_is(scale_colour_PRGn(midpoint = 10), "ggproto")
   expect_is(scale_colour_PRGn(), "ggproto")
   expect_is(scale_colour_PRGn(), "ScaleContinuous")
 
   expect_is(scale_color_PRGn(), "ggproto")
   expect_is(scale_color_PRGn(), "ScaleContinuous")
 
+  expect_is(scale_fill_PRGn(midpoint = 10), "ggproto")
   expect_is(scale_fill_PRGn(), "ggproto")
   expect_is(scale_fill_PRGn(), "ScaleContinuous")
 })

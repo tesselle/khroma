@@ -21,7 +21,8 @@ NULL
 #'   light \tab 9 \cr
 #'   rainbow \tab 23
 #'  }
-#' @references Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#' @references
+#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
@@ -122,6 +123,8 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
 #' @param reverse A \code{\link{logical}} scalar. Should the resulting
 #'  vector of colours be reversed?
+#' @param midpoint A length-one \code{\link{numeric}} vector giving the midpoint
+#'  (in data value) of the diverging scale. Defaults to \code{0}.
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
@@ -132,7 +135,8 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   BuRd \tab 9 \cr
 #'   PRGn \tab 9
 #'  }
-#' @references Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#' @references
+#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
@@ -144,8 +148,9 @@ NULL
 ## Sunset ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_sunset <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "sunset", reverse, ...)
+scale_colour_sunset <- function(..., reverse = FALSE,
+                                midpoint = 0, aesthetics = "colour") {
+  scale(aesthetics, "sunset", reverse, midpoint, ...)
 }
 
 #' @export
@@ -154,15 +159,17 @@ scale_color_sunset <- scale_colour_sunset
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_sunset <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "sunset", reverse, ...)
+scale_fill_sunset <- function(..., reverse = FALSE,
+                              midpoint = 0, aesthetics = "fill") {
+  scale(aesthetics, "sunset", reverse, midpoint, ...)
 }
 
 ## BuRd ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_BuRd <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "BuRd", reverse, ...)
+scale_colour_BuRd <- function(..., reverse = FALSE,
+                              midpoint = 0, aesthetics = "colour") {
+  scale(aesthetics, "BuRd", reverse, midpoint, ...)
 }
 
 #' @export
@@ -171,15 +178,17 @@ scale_color_BuRd <- scale_colour_BuRd
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_BuRd <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "BuRd", reverse, ...)
+scale_fill_BuRd <- function(..., reverse = FALSE,
+                            midpoint = 0, aesthetics = "fill") {
+  scale(aesthetics, "BuRd", reverse, midpoint, ...)
 }
 
 ## PRGn ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_PRGn <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "PRGn", reverse, ...)
+scale_colour_PRGn <- function(..., reverse = FALSE,
+                              midpoint = 0, aesthetics = "colour") {
+  scale(aesthetics, "PRGn", reverse, midpoint, ...)
 }
 
 #' @export
@@ -188,8 +197,9 @@ scale_color_PRGn <- scale_colour_PRGn
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_PRGn <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "PRGn", reverse, ...)
+scale_fill_PRGn <- function(..., reverse = FALSE,
+                            midpoint = 0, aesthetics = "fill") {
+  scale(aesthetics, "PRGn", reverse, midpoint, ...)
 }
 
 # Paul Tol's sequential colour schemes =========================================
@@ -208,7 +218,8 @@ scale_fill_PRGn <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   YlOrBr \tab 9 \cr
 #'   smooth rainbow \tab 34
 #'  }
-#' @references Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#' @references
+#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
