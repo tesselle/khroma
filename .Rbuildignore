@@ -1,9 +1,8 @@
+^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^\man\figures\README-.*\.png$
-^NEWS\.md$
-^LICENSE$
 ^\.travis\.yml$
 ^cran-comments\.md$
 ^data-raw$
