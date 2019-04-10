@@ -16,8 +16,8 @@ Colour schemes for archaeological data
 \tabular{ll}{
  \strong{Package:} \tab khroma \cr
  \strong{Type:} \tab Package \cr
- \strong{Version:} \tab 1.1.0 \cr
- \strong{Date:} \tab 2019-01-09 \cr
+ \strong{Version:} \tab 1.1.1 \cr
+ \strong{Date:} \tab 2019-04-10 \cr
  \strong{License:} \tab GPL-3 \cr
  \strong{DOI:} \tab \href{https://doi.org/10.5281/zenodo.1472077}{10.5281/zenodo.1472077}
 }

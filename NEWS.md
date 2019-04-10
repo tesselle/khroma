@@ -1,4 +1,8 @@
-# khroma 1.1.0.9000
+# khroma 1.1.1
+
+* FIX: midpoint can be specified in diverging colour scales
+* FIX: colour palettes can be reversed
+* FIX: ensure that the package works on all versions of R starting at 3.1
 
 # khroma 1.1.0
 
