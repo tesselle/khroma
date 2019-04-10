@@ -1,3 +1,5 @@
+# khroma 1.1.1.9000
+
 # khroma 1.1.1
 
 * FIX: midpoint can be specified in diverging colour scales
