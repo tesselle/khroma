@@ -1,9 +1,10 @@
+^\.travis\.yml$
 ^codecov\.yml$
 ^LICENSE\.md$
-^.*\.Rproj$
-^\.Rproj\.user$
+^NEWS\.md$
 ^README\.Rmd$
 ^\man\figures\README-.*\.png$
-^\.travis\.yml$
 ^cran-comments\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
 ^data-raw$
