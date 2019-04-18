@@ -20,7 +20,7 @@ Description: Colour schemes for archaeological data
     several thematic palettes (geologic timescale, FAO soils, etc.) with
     scales for 'ggplot2'.
 License: GPL-3
-URL: https://cran.r-project.org/package=khroma
+URL: http://github.com/nfrerebeau/khroma
 BugReports: http://github.com/nfrerebeau/khroma/issues
 Depends: 
     R (>= 3.1)

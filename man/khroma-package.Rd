@@ -25,7 +25,7 @@ Colour schemes for archaeological data
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://cran.r-project.org/package=khroma}
+  \item \url{http://github.com/nfrerebeau/khroma}
   \item Report bugs at \url{http://github.com/nfrerebeau/khroma/issues}
 }
 
