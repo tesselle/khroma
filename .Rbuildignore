@@ -3,6 +3,7 @@
 ^codecov\.yml$
 ^LICENSE\.md$
 ^NEWS\.md$
+^NEWS\.Rmd$
 ^README\.Rmd$
 ^\man\figures\README-.*\.png$
 ^cran-comments\.md$
