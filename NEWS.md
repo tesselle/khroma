@@ -1,24 +1,58 @@
-# khroma 1.1.1
 
-* FIX: midpoint can be specified in diverging colour scales
-* FIX: colour palettes can be reversed
-* FIX: ensure that the package works on all versions of R starting at 3.1
 
-# khroma 1.1.0
 
-* ADD: FAO Soil Reference Groups colour scheme
-* ADD: scale_*_bright() method for Paul Tol's bright colour scheme
-* ADD: scale_*_vibrant() method for Paul Tol's vibrant colour scheme
-* ADD: scale_*_muted() method for Paul Tol's muted colour scheme
-* ADD: scale_*_light() method for Paul Tol's light colour scheme
-* ADD: scale_*_rainbow() method for Paul Tol's rainbow colour scheme
-* ADD: scale_*_sunset() method for Paul Tol's sunset colour scheme
-* ADD: scale_*_BuRd() method for Paul Tol's BuRd colour scheme
-* ADD: scale_*_PRGn() method for Paul Tol's PRGn colour scheme
-* ADD: scale_*_YlOrBr() method for Paul Tol's YlOrBr colour scheme
-* ADD: scale_*_smoothrainbow() method for Paul Tol's smooth rainbow colour scheme
-* FIX: deprecate scale_*_tol()
 
-# khroma 1.0.0
 
-* First release.
+<!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
+
+## khroma 1.1.1.9000 (2019-06-01)
+
+### New functions
+
+  - Add three colour schemes: Paul Tol’s *hight contrast* (qualitative),
+    *iridescent* (sequential) and modified colour scheme for the AVHRR
+    global *land cover* classification.
+  - Add three `ggplot2` scale functions: `scale_*_contrast()`,
+    `scale_*_iridescent()` and `scale_*_land()`.
+
+### Bugfixes & changes
+
+  - The function `scale_*_tol()` is removed.
+
+### Internals
+
+  - The function `arrange()` is removed.
+
+## khroma v1.1.1 (release date: 2019-04-10)
+
+### Bugfixes & changes
+
+  - Midpoint can be specified in diverging colour scales.
+  - Colour schemes can be reversed (a bug made the `reverse` argument
+    inoperative).
+
+### Internals
+
+  - Reduce required R version to 3.1.
+
+## khroma v1.1.0 (release date: 2019-02-24)
+
+### New functions
+
+  - Add specific `ggplot2` scale functions for Paul Tol’s colour
+    schemes: `scale_*_bright()`, `scale_*_vibrant()`, `scale_*_muted()`,
+    `scale_*_light()`, `scale_*_rainbow()` (qualitative),
+    `scale_*_sunset()`, `scale_*_BuRd()`, `scale_*_PRGn()` (diverging),
+    `scale_*_YlOrBr()`, `scale_*_smoothrainbow()` (sequential).
+
+### Bugfixes & changes
+
+  - The function `scale_*_tol()` is deprecated.
+
+### Enhancements
+
+  - Add the *FAO Soil Reference Groups* colour scheme.
+
+## khroma v1.0.0 (release date: 2018-10-19)
+
+  - First release (initial version on CRAN).

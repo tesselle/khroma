@@ -1,11 +1,12 @@
 library(ggplot2)
 
 soil <- data.frame(
-  name = c("Acrisol", "Albeluvisol", "Andosol", "Anthrosol", "Arenosol",
-           "Calcisol", "Cambisol", "Chernozem", "Cryosol", "Fluvisol",
-           "Kastanozem", "Gleysol", "Gypsisol", "Histosol", "Leptosol",
-           "Luvisol", "Phaeozem", "Planosol", "Podzol", "Regosol", "Solonchak",
-           "Solonetz", "Umbrisol", "Vertisol")
+  name = c(
+    "Acrisol", "Albeluvisol", "Andosol", "Anthrosol", "Arenosol", "Calcisol",
+    "Cambisol", "Chernozem", "Cryosol", "Fluvisol", "Kastanozem", "Gleysol",
+    "Gypsisol", "Histosol", "Leptosol", "Luvisol", "Phaeozem", "Planosol",
+    "Podzol", "Regosol", "Solonchak", "Solonetz", "Umbrisol", "Vertisol"
+  )
 )
 
 ggplot(soil, aes(fill = name)) +

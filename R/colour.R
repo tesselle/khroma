@@ -11,9 +11,11 @@
 #' @section Paul Tol's Colour Schemes:
 #'  The following palettes are available (maximum supported colours in brackets):
 #'  \describe{
-#'   \item{Qualitative data}{bright (7), vibrant (7), muted (9), light (9)}
-#'   \item{Diverging data}{sunset (11), BuRd (9), PRGn (9)}
-#'   \item{Sequential data}{YlOrBr (9), rainbow (23), smooth rainbow (34)}
+#'   \item{Qualitative data}{bright (7), contrast (3),vibrant (7), muted (9),
+#'   light (9).}
+#'   \item{Diverging data}{sunset (11), BuRd (9), PRGn (9).}
+#'   \item{Sequential data}{YlOrBr (9), discrete rainbow (23),
+#'   smooth rainbow (34).}
 #'  }
 #' @section Scientific Colour Schemes:
 #'  The following palettes are available:
@@ -40,26 +42,28 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   # Validation
   palette <- match.arg(palette, names(palettes), several.ok = FALSE)
   # Get colours
-  scheme <- palettes[[palette]]
-  colours <- scheme[["colours"]]
-  type <- scheme[["type"]]
-  interpolate <- scheme[["interpolate"]]
-  missing <- scheme[["missing"]]
+  col_scheme <- palettes[[palette]]
+  colours <- col_scheme[["colours"]]
+  type <- col_scheme[["type"]]
+  interpolate <- col_scheme[["interpolate"]]
+  missing <- col_scheme[["missing"]]
+  scheme <- col_scheme[["scheme"]]
+
   k <- if (palette == "rainbow") 23 else length(colours)
 
+  if (reverse) colours <- rev(colours) # Reverse colour order
   if (interpolate) {
-    # Reverse colour order
-    if (reverse) colours <- rev(colours)
     # For colour schemes that can be linearly interpolated
     fun <- grDevices::colorRampPalette(colours, ...)
   } else {
     # No interpolation
     fun <- function(n) {
       # Check
-      if (n > k) stop(paste("you ask for too many colours:", palette,
-                            "colour scheme supports up to", k, "values", sep = " "))
+      if (n > k)
+        stop("You ask for too many colours: ", palette,
+             " colour scheme supports up to ", k, " values.", call. = FALSE)
       # Arrange colour schemes
-      col <- arrange(colours, palette, reverse, n)
+      col <- if (palette == "rainbow") colours[scheme[[n]]] else colours
       col <- if (names) col else unname(col)
       return(col)
     }
@@ -74,35 +78,3 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 #' @export
 #' @rdname colour
 color <- colour
-
-#' Arrange colour palette
-#'
-#' Arrange a color palette according to a specific order.
-#' @param colours A \code{\link{character}} vector of colours.
-#' @param palette A \code{\link{character}} string giving the name of
-#'  the palette to be used (see \code{\link{colour}}).
-#' @param reverse  A \code{\link{logical}} scalar specifying if the resulting
-#'  vector of colours should be reversed.
-#' @param n A \code{\link{numeric}} scalar giving the number of colours to
-#'  select.
-#' @details If there is no rule for the palette, \code{n} colours are
-#'  randomly selected within the scheme.
-#' @return A \code{\link{character}} vector of colours.
-#' @author N. Frerebeau
-#' @keywords internal
-#' @noRd
-arrange <- function(colours, palette, reverse = FALSE, n = length(colours)) {
-  random <- colours[sample(1:length(colours), n, FALSE)]
-  scheme <- schemes[[palette]]
-  dyes <- switch(
-    palette,
-    bright = colours[scheme][1:n],
-    vibrant = colours[scheme][1:n],
-    muted = colours[scheme][1:n],
-    light = colours[scheme][1:n],
-    rainbow = colours[scheme[[n]]],
-    random
-  )
-  if (reverse) dyes <- rev(dyes)
-  return(dyes)
-}

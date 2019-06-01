@@ -5,6 +5,9 @@
 \alias{scale_colour_YlOrBr}
 \alias{scale_color_YlOrBr}
 \alias{scale_fill_YlOrBr}
+\alias{scale_colour_iridescent}
+\alias{scale_color_iridescent}
+\alias{scale_fill_iridescent}
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
@@ -15,6 +18,12 @@ scale_colour_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
 scale_color_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_YlOrBr(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_iridescent(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_iridescent(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_iridescent(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_smoothrainbow(..., reverse = FALSE, aesthetics = "colour")
 
@@ -39,6 +48,7 @@ Sequential colour schemes are linearly interpolated.
  \tabular{ll}{
   \strong{Palette} \tab \strong{Max.} \cr
   YlOrBr \tab 9 \cr
+  iridescent \tab 23 \cr
   smooth rainbow \tab 34
  }
 }
@@ -49,6 +59,10 @@ library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
   khroma::scale_fill_YlOrBr()
+
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_raster() +
+  khroma::scale_fill_iridescent()
 
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +

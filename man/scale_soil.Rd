@@ -28,11 +28,12 @@ Values will be matched based on the soil names.
 library(ggplot2)
 
 soil <- data.frame(
-  name = c("Acrisol", "Albeluvisol", "Andosol", "Anthrosol", "Arenosol",
-           "Calcisol", "Cambisol", "Chernozem", "Cryosol", "Fluvisol",
-           "Kastanozem", "Gleysol", "Gypsisol", "Histosol", "Leptosol",
-           "Luvisol", "Phaeozem", "Planosol", "Podzol", "Regosol", "Solonchak",
-           "Solonetz", "Umbrisol", "Vertisol")
+  name = c(
+    "Acrisol", "Albeluvisol", "Andosol", "Anthrosol", "Arenosol", "Calcisol",
+    "Cambisol", "Chernozem", "Cryosol", "Fluvisol", "Kastanozem", "Gleysol",
+    "Gypsisol", "Histosol", "Leptosol", "Luvisol", "Phaeozem", "Planosol",
+    "Podzol", "Regosol", "Solonchak", "Solonetz", "Umbrisol", "Vertisol"
+  )
 )
 
 ggplot(soil, aes(fill = name)) +
@@ -47,7 +48,8 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
 }
 \seealso{
-Other Themed colour schemes: \code{\link{scale_colour_stratigraphy}}
+Other Themed colour schemes: \code{\link{scale_colour_land}},
+  \code{\link{scale_colour_stratigraphy}}
 }
 \author{
 N. Frerebeau

@@ -182,7 +182,8 @@ palettes_science <- list(
       `Archean` = '#F0047F',
       `Hadean` = '#AE027E',
       `Precambrian` = '#F74370'
-    )
+    ),
+    scheme = NULL
   ),
   soil = list(
     type = "qualitative",
@@ -213,6 +214,31 @@ palettes_science <- list(
       `Solonetz` = '#f6c4e5',
       `Umbrisol` = '#618f75',
       `Vertisol` = '#9d4076'
-    )
+    ),
+    scheme = NULL
+  ),
+  # Paul Tol's Colour-blind safe colour scheme for
+  # the AVHRR global land cover classification
+  land = list(
+    type = "qualitative",
+    interpolate = FALSE,
+    missing = NA_character_,
+    colours = c(
+      `water` = '#5566AA',
+      `evergreen needleleaf forest` = '#117733',
+      `deciduous needleleaf forest` = '#44AA66',
+      `mixed forest` = '#55AA22',
+      `evergreen broadleaf forest` = '#668822',
+      `deciduous broadleaf forest` = '#99BB55',
+      `woodland` = '#558877',
+      `wooded grassland` = '#88BBAA',
+      `grassland` = '#AADDCC',
+      `cropland` = '#44AA88',
+      `closed shrubland` = '#DDCC66',
+      `open shrubland` = '#FFDD44',
+      `bare ground` = '#FFEE88',
+      `urban and built` = '#BB0011'
+    ),
+    scheme = NULL
   )
 )

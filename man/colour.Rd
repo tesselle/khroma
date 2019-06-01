@@ -32,9 +32,11 @@ Provides qualitative, diverging and sequential colour palettes.
 
  The following palettes are available (maximum supported colours in brackets):
  \describe{
-  \item{Qualitative data}{bright (7), vibrant (7), muted (9), light (9)}
-  \item{Diverging data}{sunset (11), BuRd (9), PRGn (9)}
-  \item{Sequential data}{YlOrBr (9), rainbow (23), smooth rainbow (34)}
+  \item{Qualitative data}{bright (7), contrast (3),vibrant (7), muted (9),
+  light (9).}
+  \item{Diverging data}{sunset (11), BuRd (9), PRGn (9).}
+  \item{Sequential data}{YlOrBr (9), discrete rainbow (23),
+  smooth rainbow (34).}
  }
 }
 
@@ -53,22 +55,26 @@ library(scales)
 # Paul Tol's colour schemes
 ## Qualitative data
 show_col(colour("bright")(7))
+show_col(colour("contrast")(3))
 show_col(colour("vibrant")(7))
 show_col(colour("muted")(9))
 show_col(colour("light")(9))
-show_col(colour("rainbow")(14))
-show_col(colour("rainbow")(23))
 ## Diverging data
 show_col(colour("sunset")(11))
 show_col(colour("BuRd")(9))
 show_col(colour("PRGn")(9))
 ## Sequential data
 show_col(colour("YlOrBr")(9))
+show_col(colour("iridescent")(23))
+show_col(colour("rainbow")(14))
+show_col(colour("rainbow")(23))
 show_col(colour("smooth rainbow")(34))
 
 # Scientific colour schemes
 ## Geologic Timescale
 show_col(colour("stratigraphy")(175))
+## AVHRR global land cover classification
+show_col(colour("land")(14))
 ## FAO soil reference groups
 show_col(colour("soil")(24))
 }

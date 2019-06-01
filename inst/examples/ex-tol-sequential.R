@@ -7,4 +7,8 @@ ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
 
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
+  khroma::scale_fill_iridescent()
+
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_raster() +
   khroma::scale_fill_smoothrainbow(reverse = TRUE)
