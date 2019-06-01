@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
       </span>
     </div>
 
@@ -86,7 +86,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/nfrerebeau/khroma">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -100,7 +105,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Colour palette</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/colour.R'><code>R/colour.R</code></a></small>
     <div class="hidden name"><code>colour.Rd</code></div>
     </div>
 
@@ -147,9 +152,11 @@ colours should be kept in the resulting vector.</p></td>
 
     
     <p>The following palettes are available (maximum supported colours in brackets):</p><dl class='dl-horizontal'>
-  <dt>Qualitative data</dt><dd><p>bright (7), vibrant (7), muted (9), light (9)</p></dd>
-  <dt>Diverging data</dt><dd><p>sunset (11), BuRd (9), PRGn (9)</p></dd>
-  <dt>Sequential data</dt><dd><p>YlOrBr (9), rainbow (23), smooth rainbow (34)</p></dd>
+  <dt>Qualitative data</dt><dd><p>bright (7), contrast (3),vibrant (7), muted (9),
+  light (9).</p></dd>
+  <dt>Diverging data</dt><dd><p>sunset (11), BuRd (9), PRGn (9).</p></dd>
+  <dt>Sequential data</dt><dd><p>YlOrBr (9), discrete rainbow (23),
+  smooth rainbow (34).</p></dd>
  </dl>
     
     <h2 class="hasAnchor" id="scientific-colour-schemes"><a class="anchor" href="#scientific-colour-schemes"></a>Scientific Colour Schemes</h2>
@@ -175,13 +182,14 @@ colours should be kept in the resulting vector.</p></td>
 
 <span class='co'># Paul Tol's colour schemes</span>
 <span class='co'>## Qualitative data</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"bright"</span>)(<span class='fl'>7</span>))</div><div class='img'><img src='colour-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"vibrant"</span>)(<span class='fl'>7</span>))</div><div class='img'><img src='colour-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"muted"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"light"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"rainbow"</span>)(<span class='fl'>14</span>))</div><div class='img'><img src='colour-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"rainbow"</span>)(<span class='fl'>23</span>))</div><div class='img'><img src='colour-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## Diverging data</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"sunset"</span>)(<span class='fl'>11</span>))</div><div class='img'><img src='colour-7.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"BuRd"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-8.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"PRGn"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-9.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## Sequential data</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"YlOrBr"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-10.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"smooth rainbow"</span>)(<span class='fl'>34</span>))</div><div class='img'><img src='colour-11.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"bright"</span>)(<span class='fl'>7</span>))</div><div class='img'><img src='colour-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"contrast"</span>)(<span class='fl'>3</span>))</div><div class='img'><img src='colour-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"vibrant"</span>)(<span class='fl'>7</span>))</div><div class='img'><img src='colour-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"muted"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"light"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## Diverging data</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"sunset"</span>)(<span class='fl'>11</span>))</div><div class='img'><img src='colour-6.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"BuRd"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-7.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"PRGn"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-8.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## Sequential data</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"YlOrBr"</span>)(<span class='fl'>9</span>))</div><div class='img'><img src='colour-9.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"iridescent"</span>)(<span class='fl'>23</span>))</div><div class='img'><img src='colour-10.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"rainbow"</span>)(<span class='fl'>14</span>))</div><div class='img'><img src='colour-11.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"rainbow"</span>)(<span class='fl'>23</span>))</div><div class='img'><img src='colour-12.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"smooth rainbow"</span>)(<span class='fl'>34</span>))</div><div class='img'><img src='colour-13.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Scientific colour schemes</span>
 <span class='co'>## Geologic Timescale</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"stratigraphy"</span>)(<span class='fl'>175</span>))</div><div class='img'><img src='colour-12.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## FAO soil reference groups</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"soil"</span>)(<span class='fl'>24</span>))</div><div class='img'><img src='colour-13.png' alt='' width='700' height='433' /></div></pre>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"stratigraphy"</span>)(<span class='fl'>175</span>))</div><div class='img'><img src='colour-14.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## AVHRR global land cover classification</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"land"</span>)(<span class='fl'>14</span>))</div><div class='img'><img src='colour-15.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'>## FAO soil reference groups</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>colour</span>(<span class='st'>"soil"</span>)(<span class='fl'>24</span>))</div><div class='img'><img src='colour-16.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

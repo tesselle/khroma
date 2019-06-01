@@ -12,8 +12,8 @@
 <script src="pkgdown.js"></script><meta property="og:title" content="Colour Schemes for Archaeological Data Visualization">
 <meta property="og:description" content="Colour schemes for archaeological data
     visualization. This package provides Paul Tol's colour schemes and
-    several thematic palettes (geologic timescale, FAO soils, etc.) with
-    scales for 'ggplot2'.">
+    several thematic palettes (geologic timescale, land cover FAO soils, etc.) 
+    with scales for 'ggplot2'.">
 <meta property="og:image" content="http://khroma.archaeo.science/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -34,7 +34,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
       </span>
     </div>
 
@@ -53,7 +53,14 @@
   <a href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/nfrerebeau/khroma">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -77,7 +84,7 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p><code>khroma</code> is a utility package: it provides usefull colour schemes for archaeological data visualization. <code>khroma</code> provides Paul Tol’s colour schemes and several thematic palettes (geologic timescale, FAO Soil Reference Groups, etc.) with scales for <code>ggplot2</code>.</p>
+<p><code>khroma</code> is a utility package: it provides usefull colour schemes for archaeological data visualization. <code>khroma</code> provides Paul Tol’s colour schemes and several thematic palettes (geologic timescale, land cover, FAO Soil Reference Groups, etc.) with scales for <code>ggplot2</code>.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -96,10 +103,10 @@
 <a href="#paul-tols-colour-schemes" class="anchor"></a>Paul Tol’s Colour Schemes</h3>
 <p>Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:</p>
 <ul>
-<li>distinct for all people, including colour-blind readers;</li>
-<li>distinct from black and white;</li>
-<li>distinct on screen and paper;</li>
-<li>matching well together.</li>
+<li>Distinct for all people, including colour-blind readers;</li>
+<li>Distinct from black and white;</li>
+<li>Distinct on screen and paper;</li>
+<li>Matching well together.</li>
 </ul>
 <p>All the scales presented in his 2018 technical note <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> are implemented here, for use with <code>graphics</code> or <code>ggplot2</code>.</p>
 <div id="qualitative-data" class="section level4">
@@ -123,8 +130,9 @@
 <a href="#scientific-colour-schemes" class="anchor"></a>Scientific colour schemes</h3>
 <p>The following scientific colour schemes are available:</p>
 <ul>
-<li>International Chronostratigraphic Chart</li>
-<li>FAO Soil Reference Groups</li>
+<li>International Chronostratigraphic Chart.</li>
+<li>AVHRR global land cover classification.</li>
+<li>FAO Soil Reference Groups.</li>
 </ul>
 <p>More will be added in future releases (suggestions are welcome).</p>
 </div>
@@ -143,6 +151,8 @@
 <h2>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=khroma">https://​cloud.r-project.org/​package=khroma</a>
+</li>
+<li>Browse source code at <br><a href="https://github.com/nfrerebeau/khroma">https://​github.com/​nfrerebeau/​khroma</a>
 </li>
 <li>Report a bug at <br><a href="http://github.com/nfrerebeau/khroma/issues">http://​github.com/​nfrerebeau/​khroma/​issues</a>
 </li>

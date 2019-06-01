@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
       </span>
     </div>
 
@@ -86,7 +86,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/nfrerebeau/khroma">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -100,7 +105,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Paul Tol's discrete colour schemes for ggplot2</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/ggplot2-tol.R'><code>R/ggplot2-tol.R</code></a></small>
     <div class="hidden name"><code>scale_tol_discrete.Rd</code></div>
     </div>
 
@@ -115,6 +120,12 @@
 <span class='fu'>scale_color_bright</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
 
 <span class='fu'>scale_fill_bright</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
+
+<span class='fu'>scale_colour_contrast</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_color_contrast</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_fill_contrast</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
 
 <span class='fu'>scale_colour_vibrant</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
 
@@ -168,13 +179,14 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
 <tr><td></td><td><strong>Max.</strong></td></tr>
 <tr><td></td><td></td></tr>
 <tr><td>bright</td><td>7</td></tr>
-<tr><td></td><td>vibrant</td></tr>
-<tr><td>7</td><td></td></tr>
-<tr><td>muted</td><td>9</td></tr>
-<tr><td></td><td>light</td></tr>
+<tr><td></td><td>contrast</td></tr>
+<tr><td>3</td><td></td></tr>
+<tr><td>vibrant</td><td>7</td></tr>
+<tr><td></td><td>muted</td></tr>
 <tr><td>9</td><td></td></tr>
-<tr><td>rainbow</td><td>23</td></tr>
-<tr><td></td><td></td></tr>
+<tr><td>light</td><td>9</td></tr>
+<tr><td></td><td>rainbow</td></tr>
+<tr><td>23</td><td></td></tr>
 </table>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
@@ -194,19 +206,19 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
 <span class='co'># Qualitative data</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mpg</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>displ</span>, <span class='no'>hwy</span>, <span class='kw'>colour</span> <span class='kw'>=</span> <span class='no'>class</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_tol_discrete'>scale_colour_bright</a></span>()</div><div class='img'><img src='scale_tol_discrete-1.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_colour_bright</a></span>()</div><div class='img'><img src='scale_tol_discrete-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mpg</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>displ</span>, <span class='no'>hwy</span>, <span class='kw'>colour</span> <span class='kw'>=</span> <span class='no'>class</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_tol_discrete'>scale_colour_vibrant</a></span>()</div><div class='img'><img src='scale_tol_discrete-2.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_colour_vibrant</a></span>()</div><div class='img'><img src='scale_tol_discrete-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>diamonds</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>clarity</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_bar'>geom_bar</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_tol_discrete'>scale_fill_muted</a></span>()</div><div class='img'><img src='scale_tol_discrete-3.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_muted</a></span>()</div><div class='img'><img src='scale_tol_discrete-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>diamonds</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>clarity</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_bar'>geom_bar</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_tol_discrete'>scale_fill_light</a></span>()</div><div class='img'><img src='scale_tol_discrete-4.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_light</a></span>()</div><div class='img'><img src='scale_tol_discrete-4.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mpg</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>displ</span>, <span class='no'>hwy</span>, <span class='kw'>colour</span> <span class='kw'>=</span> <span class='no'>class</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_tol_discrete'>scale_colour_rainbow</a></span>()</div><div class='img'><img src='scale_tol_discrete-5.png' alt='' width='700' height='433' /></div></pre>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_colour_rainbow</a></span>()</div><div class='img'><img src='scale_tol_discrete-5.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

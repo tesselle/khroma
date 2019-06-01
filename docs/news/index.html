@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
       </span>
     </div>
 
@@ -84,7 +84,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/nfrerebeau/khroma">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -98,44 +103,94 @@
   <div class="col-md-9 contents">
     <div class="page-header">
       <h1>Changelog <small></small></h1>
-      
+      <small>Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="khroma-1-1-1" class="section level1">
+    <div id="khroma-1-1-2-release-date-2019-06-01" class="section level1">
 <h1 class="page-header">
-<a href="#khroma-1-1-1" class="anchor"></a>khroma 1.1.1<small> 2019-04-10 </small>
+<a href="#khroma-1-1-2-release-date-2019-06-01" class="anchor"></a>khroma 1.1.2 (release date: 2019-06-01)<small> Unreleased </small>
 </h1>
+<div id="new-functions" class="section level2">
+<h2 class="hasAnchor">
+<a href="#new-functions" class="anchor"></a>New functions</h2>
 <ul>
-<li>FIX: midpoint can be specified in diverging colour scales</li>
-<li>FIX: colour palettes can be reversed</li>
-<li>FIX: ensure that the package works on all versions of R starting at 3.1</li>
+<li>Add three <code>ggplot2</code> scale functions: <code>scale_*_contrast()</code>, <code>scale_*_iridescent()</code> and <code>scale_*_land()</code>.</li>
 </ul>
 </div>
-    <div id="khroma-1-1-0" class="section level1">
-<h1 class="page-header">
-<a href="#khroma-1-1-0" class="anchor"></a>khroma 1.1.0<small> 2019-02-24 </small>
-</h1>
+<div id="bugfixes-changes" class="section level2">
+<h2 class="hasAnchor">
+<a href="#bugfixes-changes" class="anchor"></a>Bugfixes &amp; changes</h2>
 <ul>
-<li>ADD: FAO Soil Reference Groups colour scheme</li>
-<li>ADD: scale_*_bright() method for Paul Tol’s bright colour scheme</li>
-<li>ADD: scale_*_vibrant() method for Paul Tol’s vibrant colour scheme</li>
-<li>ADD: scale_*_muted() method for Paul Tol’s muted colour scheme</li>
-<li>ADD: scale_*_light() method for Paul Tol’s light colour scheme</li>
-<li>ADD: scale_*_rainbow() method for Paul Tol’s rainbow colour scheme</li>
-<li>ADD: scale_*_sunset() method for Paul Tol’s sunset colour scheme</li>
-<li>ADD: scale_*_BuRd() method for Paul Tol’s BuRd colour scheme</li>
-<li>ADD: scale_*_PRGn() method for Paul Tol’s PRGn colour scheme</li>
-<li>ADD: scale_*_YlOrBr() method for Paul Tol’s YlOrBr colour scheme</li>
-<li>ADD: scale_*_smoothrainbow() method for Paul Tol’s smooth rainbow colour scheme</li>
-<li>FIX: deprecate scale_*_tol()</li>
+<li>The function <code>scale_*_tol()</code> is removed.</li>
 </ul>
 </div>
-    <div id="khroma-1-0-0" class="section level1">
+<div id="enhancements" class="section level2">
+<h2 class="hasAnchor">
+<a href="#enhancements" class="anchor"></a>Enhancements</h2>
+<ul>
+<li>Add three colour schemes: Paul Tol’s <em>hight contrast</em> (qualitative), <em>iridescent</em> (sequential) and modified colour scheme for the AVHRR global <em>land cover</em> classification.</li>
+</ul>
+</div>
+<div id="internals" class="section level2">
+<h2 class="hasAnchor">
+<a href="#internals" class="anchor"></a>Internals</h2>
+<ul>
+<li>The function <code>arrange()</code> is removed.</li>
+</ul>
+</div>
+</div>
+    <div id="khroma-1-1-1-release-date-2019-04-10" class="section level1">
 <h1 class="page-header">
-<a href="#khroma-1-0-0" class="anchor"></a>khroma 1.0.0<small> 2018-10-19 </small>
+<a href="#khroma-1-1-1-release-date-2019-04-10" class="anchor"></a>khroma 1.1.1 (release date: 2019-04-10)<small> 2019-04-10 </small>
+</h1>
+<div id="bugfixes-changes-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#bugfixes-changes-1" class="anchor"></a>Bugfixes &amp; changes</h2>
+<ul>
+<li>Midpoint can be specified in diverging colour scales.</li>
+<li>Colour schemes can be reversed (a bug made the <code>reverse</code> argument inoperative).</li>
+</ul>
+</div>
+<div id="internals-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#internals-1" class="anchor"></a>Internals</h2>
+<ul>
+<li>Reduce required R version to 3.1.</li>
+</ul>
+</div>
+</div>
+    <div id="khroma-1-1-0-release-date-2019-02-24" class="section level1">
+<h1 class="page-header">
+<a href="#khroma-1-1-0-release-date-2019-02-24" class="anchor"></a>khroma 1.1.0 (release date: 2019-02-24)<small> 2019-02-24 </small>
+</h1>
+<div id="new-functions-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#new-functions-1" class="anchor"></a>New functions</h2>
+<ul>
+<li>Add specific <code>ggplot2</code> scale functions for Paul Tol’s colour schemes: <code>scale_*_bright()</code>, <code>scale_*_vibrant()</code>, <code>scale_*_muted()</code>, <code>scale_*_light()</code>, <code>scale_*_rainbow()</code> (qualitative), <code>scale_*_sunset()</code>, <code>scale_*_BuRd()</code>, <code>scale_*_PRGn()</code> (diverging), <code>scale_*_YlOrBr()</code>, <code>scale_*_smoothrainbow()</code> (sequential).</li>
+</ul>
+</div>
+<div id="bugfixes-changes-2" class="section level2">
+<h2 class="hasAnchor">
+<a href="#bugfixes-changes-2" class="anchor"></a>Bugfixes &amp; changes</h2>
+<ul>
+<li>The function <code>scale_*_tol()</code> is deprecated.</li>
+</ul>
+</div>
+<div id="enhancements-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#enhancements-1" class="anchor"></a>Enhancements</h2>
+<ul>
+<li>Add the <em>FAO Soil Reference Groups</em> colour scheme.</li>
+</ul>
+</div>
+</div>
+    <div id="khroma-1-0-0-release-date-2018-10-19" class="section level1">
+<h1 class="page-header">
+<a href="#khroma-1-0-0-release-date-2018-10-19" class="anchor"></a>khroma 1.0.0 (release date: 2018-10-19)<small> 2018-10-19 </small>
 </h1>
 <ul>
-<li>First release.</li>
+<li>First release (initial version on CRAN).</li>
 </ul>
 </div>
   </div>
@@ -144,9 +199,10 @@
     <div id="tocnav">
       <h2>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="#khroma-1-1-1">1.1.1</a></li>
-        <li><a href="#khroma-1-1-0">1.1.0</a></li>
-        <li><a href="#khroma-1-0-0">1.0.0</a></li>
+        <li><a href="#khroma-1-1-2-release-date-2019-06-01">1.1.2</a></li>
+        <li><a href="#khroma-1-1-1-release-date-2019-04-10">1.1.1</a></li>
+        <li><a href="#khroma-1-1-0-release-date-2019-02-24">1.1.0</a></li>
+        <li><a href="#khroma-1-0-0-release-date-2018-10-19">1.0.0</a></li>
       </ul>
     </div>
   </div>

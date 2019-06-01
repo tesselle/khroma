@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
       </span>
     </div>
 
@@ -86,7 +86,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/nfrerebeau/khroma">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -100,7 +105,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>FAO Soil Reference Groups Colour Scheme for ggplot2</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/ggplot2-science.R'><code>R/ggplot2-science.R</code></a></small>
     <div class="hidden name"><code>scale_soil.Rd</code></div>
     </div>
 
@@ -142,25 +147,27 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>Other Themed colour schemes: <code><a href='scale_stratigraphy.html'>scale_colour_stratigraphy</a></code></p></div>
+    <div class='dont-index'><p>Other Themed colour schemes: <code><a href='scale_land.html'>scale_colour_land</a></code>,
+  <code><a href='scale_stratigraphy.html'>scale_colour_stratigraphy</a></code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)
 
 <span class='no'>soil</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/data.frame'>data.frame</a></span>(
-  <span class='kw'>name</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"Acrisol"</span>, <span class='st'>"Albeluvisol"</span>, <span class='st'>"Andosol"</span>, <span class='st'>"Anthrosol"</span>, <span class='st'>"Arenosol"</span>,
-           <span class='st'>"Calcisol"</span>, <span class='st'>"Cambisol"</span>, <span class='st'>"Chernozem"</span>, <span class='st'>"Cryosol"</span>, <span class='st'>"Fluvisol"</span>,
-           <span class='st'>"Kastanozem"</span>, <span class='st'>"Gleysol"</span>, <span class='st'>"Gypsisol"</span>, <span class='st'>"Histosol"</span>, <span class='st'>"Leptosol"</span>,
-           <span class='st'>"Luvisol"</span>, <span class='st'>"Phaeozem"</span>, <span class='st'>"Planosol"</span>, <span class='st'>"Podzol"</span>, <span class='st'>"Regosol"</span>, <span class='st'>"Solonchak"</span>,
-           <span class='st'>"Solonetz"</span>, <span class='st'>"Umbrisol"</span>, <span class='st'>"Vertisol"</span>)
+  <span class='kw'>name</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(
+    <span class='st'>"Acrisol"</span>, <span class='st'>"Albeluvisol"</span>, <span class='st'>"Andosol"</span>, <span class='st'>"Anthrosol"</span>, <span class='st'>"Arenosol"</span>, <span class='st'>"Calcisol"</span>,
+    <span class='st'>"Cambisol"</span>, <span class='st'>"Chernozem"</span>, <span class='st'>"Cryosol"</span>, <span class='st'>"Fluvisol"</span>, <span class='st'>"Kastanozem"</span>, <span class='st'>"Gleysol"</span>,
+    <span class='st'>"Gypsisol"</span>, <span class='st'>"Histosol"</span>, <span class='st'>"Leptosol"</span>, <span class='st'>"Luvisol"</span>, <span class='st'>"Phaeozem"</span>, <span class='st'>"Planosol"</span>,
+    <span class='st'>"Podzol"</span>, <span class='st'>"Regosol"</span>, <span class='st'>"Solonchak"</span>, <span class='st'>"Solonetz"</span>, <span class='st'>"Umbrisol"</span>, <span class='st'>"Vertisol"</span>
+  )
 )
 
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>soil</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>name</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_tile'>geom_rect</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>xmin</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>0</span>, <span class='fl'>24</span>), <span class='kw'>xmax</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>1</span>, <span class='fl'>24</span>),
                 <span class='kw'>ymin</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fl'>24</span>, <span class='kw'>ymax</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fl'>24</span>+<span class='fl'>1</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/scale_continuous'>scale_y_reverse</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/khroma/topics/scale_soil'>scale_fill_soil</a></span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"Soil"</span>)</div><div class='img'><img src='scale_soil-1.png' alt='' width='700' height='433' /></div></pre>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_soil.html'>scale_fill_soil</a></span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"Soil"</span>)</div><div class='img'><img src='scale_soil-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
