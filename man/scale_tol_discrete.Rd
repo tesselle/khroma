@@ -5,6 +5,9 @@
 \alias{scale_colour_bright}
 \alias{scale_color_bright}
 \alias{scale_fill_bright}
+\alias{scale_colour_contrast}
+\alias{scale_color_contrast}
+\alias{scale_fill_contrast}
 \alias{scale_colour_vibrant}
 \alias{scale_color_vibrant}
 \alias{scale_fill_vibrant}
@@ -24,6 +27,12 @@ scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 scale_color_bright(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_bright(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_contrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_contrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_contrast(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_vibrant(..., reverse = FALSE, aesthetics = "colour")
 
@@ -67,6 +76,7 @@ The qualitative colour schemes are used as given: colours are picked up to
  \tabular{ll}{
   \strong{Palette} \tab \strong{Max.} \cr
   bright \tab 7 \cr
+  contrast \tab 3 \cr
   vibrant \tab 7 \cr
   muted \tab 9 \cr
   light \tab 9 \cr

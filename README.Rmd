@@ -1,5 +1,7 @@
 ---
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -8,7 +10,8 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-"
+  fig.path = "man/figures/README-",
+  out.width = NULL
 )
 ```
 
@@ -24,7 +27,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-`khroma` is a utility package: it provides usefull colour schemes for archaeological data visualization. `khroma` provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, FAO Soil Reference Groups, etc.) with scales for `ggplot2`.
+`khroma` is a utility package: it provides usefull colour schemes for archaeological data visualization. `khroma` provides Paul Tol's colour schemes and several thematic palettes (geologic timescale, land cover, FAO Soil Reference Groups, etc.) with scales for `ggplot2`.
 
 ## Installation
 
@@ -46,19 +49,20 @@ devtools::install_github("nfrerebeau/khroma")
 
 Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
 
-* distinct for all people, including colour-blind readers;
-* distinct from black and white;
-* distinct on screen and paper;
-* matching well together.
+* Distinct for all people, including colour-blind readers;
+* Distinct from black and white;
+* Distinct on screen and paper;
+* Matching well together.
 
 All the scales presented in his 2018 technical note [^1] are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 
-```{r tol-qualitative, echo=FALSE, fig.height=7, fig.width=7}
+```{r tol-qualitative, echo=FALSE, fig.height=10.5, fig.width=7}
 # Qualitative data
-par(mfrow = c(2, 2), mar = c(0,0,0,0), pty = "s")
+par(mfrow = c(3, 2))
 scales::show_col(khroma::colour("bright")(7))
+scales::show_col(khroma::colour("contrast")(3))
 scales::show_col(khroma::colour("vibrant")(7))
 scales::show_col(khroma::colour("muted")(9))
 scales::show_col(khroma::colour("light")(9))
@@ -71,26 +75,26 @@ scales::show_col(khroma::colour("light")(9))
 par(mfrow = c(2, 2))
 scales::show_col(khroma::colour("BuRd")(9))
 scales::show_col(khroma::colour("PRGn")(9))
-scales::show_col(khroma::colour("sunset")(11),
-                 cex_label = 0.7)
+scales::show_col(khroma::colour("sunset")(11), cex_label = 0.7)
 ```
 
 #### Sequential data
 
-```{r tol-sequential, echo=FALSE, fig.height=3.5, fig.width=7}
+```{r tol-sequential, echo=FALSE, fig.height=7, fig.width=7}
 # Sequential data
-par(mfrow = c(1, 2))
+par(mfrow = c(2, 2))
 scales::show_col(khroma::colour("YlOrBr")(9))
-scales::show_col(khroma::colour("smooth rainbow")(34),
-                 cex_label = 0.7)
+scales::show_col(khroma::colour("iridescent")(23), cex_label = 0.7)
+scales::show_col(khroma::colour("smooth rainbow")(34), cex_label = 0.7)
 ```
 
 ### Scientific colour schemes
 
 The following scientific colour schemes are available:
 
-* International Chronostratigraphic Chart
-* FAO Soil Reference Groups
+* International Chronostratigraphic Chart.
+* AVHRR global land cover classification.
+* FAO Soil Reference Groups.
 
 More will be added in future releases (suggestions are welcome).
 

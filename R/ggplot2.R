@@ -1,7 +1,7 @@
+# Colour scales constructor for ggplot2
 #' @include colour.R
 NULL
 
-## Colour scales constructor for ggplot2 =======================================
 #' Colour scale constructor
 #'
 #' Builds discrete or continuous scale for 'ggplot2' according to the color
@@ -50,7 +50,7 @@ scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
   }
 }
 
-## COPY FROM GGPLOT2 NON-EXPORTS ===============================================
+# COPY FROM GGPLOT2 NON-EXPORTS
 #' @importFrom scales rescale_mid
 #' @keywords internal
 #' @noRd
