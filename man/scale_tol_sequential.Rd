@@ -49,7 +49,7 @@ Sequential colour schemes are linearly interpolated.
   \strong{Palette} \tab \strong{Max.} \cr
   YlOrBr \tab 9 \cr
   iridescent \tab 23 \cr
-  smooth rainbow \tab 34
+  smooth rainbow \tab 34 \cr
  }
 }
 \examples{

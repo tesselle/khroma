@@ -80,7 +80,7 @@ The qualitative colour schemes are used as given: colours are picked up to
   vibrant \tab 7 \cr
   muted \tab 9 \cr
   light \tab 9 \cr
-  rainbow \tab 23
+  rainbow \tab 23 \cr
  }
 }
 \examples{

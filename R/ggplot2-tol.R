@@ -21,7 +21,7 @@ NULL
 #'   vibrant \tab 7 \cr
 #'   muted \tab 9 \cr
 #'   light \tab 9 \cr
-#'   rainbow \tab 23
+#'   rainbow \tab 23 \cr
 #'  }
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
@@ -152,7 +152,7 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   \strong{Palette} \tab \strong{Max.} \cr
 #'   sunset \tab 11 \cr
 #'   BuRd \tab 9 \cr
-#'   PRGn \tab 9
+#'   PRGn \tab 9 \cr
 #'  }
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
@@ -236,7 +236,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #'   \strong{Palette} \tab \strong{Max.} \cr
 #'   YlOrBr \tab 9 \cr
 #'   iridescent \tab 23 \cr
-#'   smooth rainbow \tab 34
+#'   smooth rainbow \tab 34 \cr
 #'  }
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.

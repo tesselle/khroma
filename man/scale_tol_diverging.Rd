@@ -61,7 +61,7 @@ Diverging colour schemes are linearly interpolated.
   \strong{Palette} \tab \strong{Max.} \cr
   sunset \tab 11 \cr
   BuRd \tab 9 \cr
-  PRGn \tab 9
+  PRGn \tab 9 \cr
  }
 }
 \examples{
