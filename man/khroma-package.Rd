@@ -9,15 +9,15 @@
 \description{
 Colour schemes for archaeological data
     visualization. This package provides Paul Tol's colour schemes and
-    several thematic palettes (geologic timescale, FAO soils, etc.) with
-    scales for 'ggplot2'.
+    several thematic palettes (geologic timescale, land cover FAO soils, etc.) 
+    with scales for 'ggplot2'.
 }
 \details{
 \tabular{ll}{
  \strong{Package:} \tab khroma \cr
  \strong{Type:} \tab Package \cr
- \strong{Version:} \tab 1.1.1 \cr
- \strong{Date:} \tab 2019-04-10 \cr
+ \strong{Version:} \tab 1.1.2 \cr
+ \strong{Date:} \tab 2019-06-01 \cr
  \strong{License:} \tab GPL-3 \cr
  \strong{DOI:} \tab \href{https://doi.org/10.5281/zenodo.1472077}{10.5281/zenodo.1472077}
 }

@@ -5,7 +5,9 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-## khroma 1.1.1.9000 (2019-06-01)
+<!-- ## khroma 1.1.1.9000 (2019-06-01) -->
+
+## khroma v1.1.2 (release date: 2019-06-01)
 
 ### New functions
 

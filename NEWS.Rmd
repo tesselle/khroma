@@ -16,7 +16,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-## khroma `r utils::packageVersion("khroma")` (`r Sys.Date()`)
+<!-- ## khroma `r utils::packageVersion("khroma")` (`r Sys.Date()`) -->
+
+## khroma v1.1.2 (release date: 2019-06-01)
 ### New functions
 * Add three colour schemes: Paul Tol's *hight contrast* (qualitative), *iridescent* (sequential) and modified colour scheme for the AVHRR global *land cover* classification.
 * Add three `ggplot2` scale functions: `scale_*_contrast()`, `scale_*_iridescent()` and `scale_*_land()`.
