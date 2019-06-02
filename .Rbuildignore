@@ -1,5 +1,6 @@
 ^codecov\.yml$
 ^\.travis\.yml$
+^\.zenodo.json\.yml$
 ^\_pkgdown\.yml$
 ^cran-comments\.md$
 ^CRAN-RELEASE$
