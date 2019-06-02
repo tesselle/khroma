@@ -1,9 +1,4 @@
 {
-  "inLanguage": {
-    "alternateName": "eng",
-    "@type": "Language",
-    "name": "English"
-  },
   "description": "<p><code>khroma</code> is a utility package: it provides usefull colour schemes for archaeological data visualization. <code>khroma</code> provides Paul Tol&#39;s colour schemes and several thematic palettes (geologic timescale, land cover, FAO Soil Reference Groups, etc.) with scales for <code>ggplot2</code>.</p>",
   "license": "http://www.opensource.org/licenses/GPL-3.0",
   "creator": [
