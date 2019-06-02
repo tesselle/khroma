@@ -9,7 +9,7 @@
 \description{
 Colour schemes for archaeological data
     visualization. This package provides Paul Tol's colour schemes and
-    several thematic palettes (geologic timescale, land cover FAO soils, etc.) 
+    several thematic palettes (geologic timescale, land cover, FAO soils, etc.) 
     with scales for 'ggplot2'.
 }
 \details{

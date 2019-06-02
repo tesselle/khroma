@@ -12,7 +12,7 @@ Release](https://img.shields.io/github/release/nfrerebeau/khroma.svg)](https://g
 Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
 [![CRAN
 Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
 
 ## Overview
@@ -69,7 +69,7 @@ implemented here, for use with `graphics` or `ggplot2`.
 The following scientific colour schemes are available:
 
   - International Chronostratigraphic Chart.
-  - AVHRR global land cover classification.
+  - AVHRR Global Land Cover Classification.
   - FAO Soil Reference Groups.
 
 More will be added in future releases (suggestions are welcome).
