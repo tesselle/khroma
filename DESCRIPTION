@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Archaeological Data Visualization
-Version: 1.1.2
+Version: 1.1.2.9000
 Date: 2019-06-01
 Authors@R: 
     c(person(given = "Nicolas",
@@ -17,7 +17,7 @@ Maintainer: Nicolas Frerebeau
     <nicolas.frerebeau@u-bordeaux-montaigne.fr>
 Description: Colour schemes for archaeological data
     visualization. This package provides Paul Tol's colour schemes and
-    several thematic palettes (geologic timescale, land cover FAO soils, etc.) 
+    several thematic palettes (geologic timescale, land cover, FAO soils, etc.) 
     with scales for 'ggplot2'.
 License: GPL-3
 URL: http://khroma.archaeo.science, http://github.com/nfrerebeau/khroma, https://cran.r-project.org/package=khroma
