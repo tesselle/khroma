@@ -1,25 +1,32 @@
 {
-  "description": "<p><code>khroma</code> is a utility package: it provides usefull colour schemes for archaeological data visualization. <code>khroma</code> provides Paul Tol&#39;s colour schemes and several thematic palettes (geologic timescale, land cover, FAO Soil Reference Groups, etc.) with scales for <code>ggplot2</code>.</p>",
-  "license": "http://www.opensource.org/licenses/GPL-3.0",
-  "creator": [
-    {
-      "affiliation": "Universit\u00e9 Bordeaux Montaigne",
-      "@id": "https://orcid.org/0000-0001-5759-4944",
-      "@type": "Person",
-      "name": "Frerebeau, Nicolas"
-    }
+    "license": "GPL-3.0",
+    "description": "<p><code>khroma</code> is a utility package: it provides usefull colour schemes for archaeological data visualization. <code>khroma</code> provides Paul Tol&#39;s colour schemes and several thematic palettes (geologic timescale, land cover, FAO Soil Reference Groups, etc.) with scales for <code>ggplot2</code>.</p>",
+    "contributors": [
+        {
+            "orcid": "0000-0001-7503-8685",
+            "affiliation": "CEREGE",
+            "type": "Other",
+            "name": "Lebrun, Brice"
+        }
     ],
-  "contributor": [
-    {
-      "affiliation": "CEREGE",
-      "@id": "https://orcid.org/0000-0001-7503-8685",
-      "@type": "Person",
-      "name": "Lebrun, Brice"
-    }
+    "language": "eng",
+    "keywords": [
+        "archaeology",
+        "archaeometry",
+        "data visualization"
     ],
-  "keywords": [
-    "archaeology",
-    "archaeometry",
-    "data visualization"
-    ]
+    "upload_type": "software",
+    "communities": [
+        {
+            "identifier": "archaeo"
+        }
+    ],
+    "creators": [
+        {
+            "orcid": "0000-0001-5759-4944",
+            "affiliation": "Universit\u00e9 Bordeaux Montaigne",
+            "name": "Frerebeau, Nicolas"
+        }
+    ],
+    "access_right": "open"
 }
