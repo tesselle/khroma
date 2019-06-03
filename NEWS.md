@@ -16,6 +16,8 @@
 
   - The function `scale_*_rainbow()` is deprecated and replaced by
     `scale_*_discreterainbow()`.
+  - Fix the `missing` attribute of the palette function returned by
+    `colour()`.
 
 ## Enhancements
 
