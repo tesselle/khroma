@@ -34,7 +34,7 @@ scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
     scale_arguments[["guide"]] <- if(interpolate) "colourbar" else "legend"
   }
 
-  if (type == "qualitative") {
+  if (!interpolate) {
     do.call(ggplot2::discrete_scale,
             c(aesthetics, scale_name, palette, scale_arguments))
   } else {

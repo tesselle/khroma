@@ -119,7 +119,7 @@ palettes_tol2018 <- list(
     scheme = NULL
   ),
   "discrete rainbow" = list(
-    type = "qualitative",
+    type = "sequential",
     interpolate = FALSE,
     missing = "#777777",
     colours = c(`1`  = "#E8ECFB", `2`  = "#D9CCE3", `3`  = "#D1BBD7",

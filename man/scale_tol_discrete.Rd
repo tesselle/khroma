@@ -136,11 +136,22 @@ ggplot(diamonds, aes(clarity, fill = cut)) +
 
 ggplot(diamonds, aes(clarity, fill = cut)) +
   geom_bar() +
+  khroma::scale_fill_pale()
+
+ggplot(diamonds, aes(clarity, fill = cut)) +
+  geom_bar() +
+  khroma::scale_fill_dark()
+
+ggplot(diamonds, aes(clarity, fill = cut)) +
+  geom_bar() +
   khroma::scale_fill_light()
 
+## Deprecated: use scale_*_discreterainbow() instead
+\dontrun{
 ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
   khroma::scale_colour_rainbow()
+}
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.

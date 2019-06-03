@@ -54,9 +54,9 @@
 #' @section Scientific Colour Schemes:
 #'  The following (qualitative) colour schemes are available:
 #'  \describe{
-#'   \item{stratigraphy}{International Chronostratigraphic Chart.}
-#'   \item{land}{AVHRR Global Land Cover Classification.}
-#'   \item{soil}{FAO Reference Soil Groups.}
+#'   \item{stratigraphy}{International Chronostratigraphic Chart (175 colours).}
+#'   \item{land}{AVHRR Global Land Cover Classification (14 colours).}
+#'   \item{soil}{FAO Reference Soil Groups (24 colours).}
 #'  }
 #' @return A palette function that when called with a single integer argument
 #'  (the number of levels) returns a vector of colours.
@@ -84,9 +84,10 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   missing <- col_scheme[["missing"]]
   scheme <- col_scheme[["scheme"]]
 
-  k <- if (palette == "rainbow") 23 else length(colours)
+  k <- if (palette == "discrete rainbow") 23 else length(colours)
 
   if (reverse) colours <- rev(colours) # Reverse colour order
+
   if (interpolate) {
     # For colour schemes that can be linearly interpolated
     fun <- grDevices::colorRampPalette(colours, ...)
@@ -98,14 +99,14 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
         stop("You ask for too many colours: ", palette,
              " colour scheme supports up to ", k, " values.", call. = FALSE)
       # Arrange colour schemes
-      col <- if (palette == "rainbow") colours[scheme[[n]]] else colours
+      col <- if (palette == "discrete rainbow") colours[scheme[[n]]] else colours
       col <- if (names) col else unname(col)
       return(col)
     }
   }
   attr(fun, "type") <- type
   attr(fun, "interpolate") <- as.logical(interpolate)
-  attr(fun, "missing") <- as.logical(missing)
+  attr(fun, "missing") <- missing
   attr(fun, "max") <- as.integer(k)
   return(fun)
 }
