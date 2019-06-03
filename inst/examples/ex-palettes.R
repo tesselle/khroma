@@ -5,6 +5,8 @@ library(scales)
 show_col(colour("bright")(7))
 show_col(colour("contrast")(3))
 show_col(colour("vibrant")(7))
+show_col(colour("pale")(6))
+show_col(colour("dark")(6))
 show_col(colour("muted")(9))
 show_col(colour("light")(9))
 ### Diverging data
