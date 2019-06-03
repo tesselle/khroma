@@ -14,13 +14,19 @@
 \alias{scale_colour_muted}
 \alias{scale_color_muted}
 \alias{scale_fill_muted}
+\alias{scale_colour_pale}
+\alias{scale_color_pale}
+\alias{scale_fill_pale}
+\alias{scale_colour_dark}
+\alias{scale_color_dark}
+\alias{scale_fill_dark}
 \alias{scale_colour_light}
 \alias{scale_color_light}
 \alias{scale_fill_light}
 \alias{scale_colour_rainbow}
 \alias{scale_color_rainbow}
 \alias{scale_fill_rainbow}
-\title{Paul Tol's discrete colour schemes for ggplot2}
+\title{Paul Tol's Discrete Colour Schemes for ggplot2}
 \usage{
 scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 
@@ -45,6 +51,18 @@ scale_colour_muted(..., reverse = FALSE, aesthetics = "colour")
 scale_color_muted(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_muted(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_pale(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_pale(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_pale(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_dark(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_dark(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_dark(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_light(..., reverse = FALSE, aesthetics = "colour")
 

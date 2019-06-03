@@ -1,6 +1,13 @@
 context("ggplot2 Paul Tol scales")
 
-# Qualitative color schemes
+# Deprecated functions =========================================================
+test_that("Deprecated", {
+  expect_warning(scale_colour_rainbow(), "deprecated")
+  expect_warning(scale_color_rainbow(), "deprecated")
+  expect_warning(scale_fill_rainbow(), "deprecated")
+})
+
+# Qualitative color schemes ====================================================
 test_that("Bright", {
   expect_s3_class(scale_colour_bright(), "ggproto")
   expect_s3_class(scale_colour_bright(), "ScaleDiscrete")
@@ -45,6 +52,28 @@ test_that("Muted", {
   expect_s3_class(scale_fill_muted(), "ScaleDiscrete")
 })
 
+test_that("Pale", {
+  expect_s3_class(scale_colour_pale(), "ggproto")
+  expect_s3_class(scale_colour_pale(), "ScaleDiscrete")
+
+  expect_s3_class(scale_color_pale(), "ggproto")
+  expect_s3_class(scale_color_pale(), "ScaleDiscrete")
+
+  expect_s3_class(scale_fill_pale(), "ggproto")
+  expect_s3_class(scale_fill_pale(), "ScaleDiscrete")
+})
+
+test_that("Dark", {
+  expect_s3_class(scale_colour_dark(), "ggproto")
+  expect_s3_class(scale_colour_dark(), "ScaleDiscrete")
+
+  expect_s3_class(scale_color_dark(), "ggproto")
+  expect_s3_class(scale_color_dark(), "ScaleDiscrete")
+
+  expect_s3_class(scale_fill_dark(), "ggproto")
+  expect_s3_class(scale_fill_dark(), "ScaleDiscrete")
+})
+
 test_that("Light", {
   expect_s3_class(scale_colour_light(), "ggproto")
   expect_s3_class(scale_colour_light(), "ScaleDiscrete")
@@ -56,18 +85,7 @@ test_that("Light", {
   expect_s3_class(scale_fill_light(), "ScaleDiscrete")
 })
 
-test_that("Rainbow", {
-  expect_s3_class(scale_colour_rainbow(), "ggproto")
-  expect_s3_class(scale_colour_rainbow(), "ScaleDiscrete")
-
-  expect_s3_class(scale_color_rainbow(), "ggproto")
-  expect_s3_class(scale_color_rainbow(), "ScaleDiscrete")
-
-  expect_s3_class(scale_fill_rainbow(), "ggproto")
-  expect_s3_class(scale_fill_rainbow(), "ScaleDiscrete")
-})
-
-# Diverging color schemes
+# Diverging color schemes ======================================================
 test_that("Sunset", {
   expect_s3_class(scale_colour_sunset(midpoint = 10), "ggproto")
   expect_s3_class(scale_colour_sunset(), "ggproto")
@@ -107,7 +125,7 @@ test_that("PRGn", {
   expect_s3_class(scale_fill_PRGn(), "ScaleContinuous")
 })
 
-# Sequential schemes
+# Sequential schemes ===========================================================
 test_that("YlOrBr", {
   expect_s3_class(scale_colour_YlOrBr(), "ggproto")
   expect_s3_class(scale_colour_YlOrBr(), "ScaleContinuous")
@@ -128,6 +146,17 @@ test_that("Iridescent", {
 
   expect_s3_class(scale_fill_iridescent(), "ggproto")
   expect_s3_class(scale_fill_iridescent(), "ScaleContinuous")
+})
+
+test_that("Discrete rainbow", {
+  expect_s3_class(scale_colour_discreterainbow(), "ggproto")
+  expect_s3_class(scale_colour_discreterainbow(), "ScaleDiscrete")
+
+  expect_s3_class(scale_color_discreterainbow(), "ggproto")
+  expect_s3_class(scale_color_discreterainbow(), "ScaleDiscrete")
+
+  expect_s3_class(scale_fill_discreterainbow(), "ggproto")
+  expect_s3_class(scale_fill_discreterainbow(), "ScaleDiscrete")
 })
 
 test_that("Smooth rainbow", {

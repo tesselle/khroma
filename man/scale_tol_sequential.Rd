@@ -8,10 +8,13 @@
 \alias{scale_colour_iridescent}
 \alias{scale_color_iridescent}
 \alias{scale_fill_iridescent}
+\alias{scale_colour_discreterainbow}
+\alias{scale_color_discreterainbow}
+\alias{scale_fill_discreterainbow}
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
-\title{Paul Tol's sequential colour schemes for ggplot2}
+\title{Paul Tol's Sequential Colour Schemes for ggplot2}
 \usage{
 scale_colour_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
 
@@ -24,6 +27,14 @@ scale_colour_iridescent(..., reverse = FALSE, aesthetics = "colour")
 scale_color_iridescent(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_iridescent(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_discreterainbow(..., reverse = FALSE,
+  aesthetics = "colour")
+
+scale_color_discreterainbow(..., reverse = FALSE,
+  aesthetics = "colour")
+
+scale_fill_discreterainbow(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_smoothrainbow(..., reverse = FALSE, aesthetics = "colour")
 

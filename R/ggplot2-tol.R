@@ -101,6 +101,40 @@ scale_fill_muted <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "muted", reverse, ...)
 }
 
+## ------------------------------------------------------------------------ Pale
+#' @export
+#' @rdname scale_tol_discrete
+scale_colour_pale <- function(..., reverse = FALSE, aesthetics = "colour") {
+  scale(aesthetics, "pale", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_color_pale <- scale_colour_pale
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_fill_pale <- function(..., reverse = FALSE, aesthetics = "fill") {
+  scale(aesthetics, "pale", reverse, ...)
+}
+
+## ------------------------------------------------------------------------ Dark
+#' @export
+#' @rdname scale_tol_discrete
+scale_colour_dark <- function(..., reverse = FALSE, aesthetics = "colour") {
+  scale(aesthetics, "dark", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_color_dark <- scale_colour_dark
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_fill_dark <- function(..., reverse = FALSE, aesthetics = "fill") {
+  scale(aesthetics, "dark", reverse, ...)
+}
+
 ## ----------------------------------------------------------------------- Light
 #' @export
 #' @rdname scale_tol_discrete
@@ -122,7 +156,8 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_rainbow <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "rainbow", reverse, ...)
+  .Deprecated("scale_colour_discreterainbow")
+  scale(aesthetics, "discrete rainbow", reverse, ...)
 }
 
 #' @export
@@ -132,11 +167,12 @@ scale_color_rainbow <- scale_colour_rainbow
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "rainbow", reverse, ...)
+  .Deprecated("scale_fill_discreterainbow")
+  scale(aesthetics, "discrete rainbow", reverse, ...)
 }
 
 # ==================================================================== Diverging
-#' Paul Tol's diverging colour schemes for ggplot2
+#' Paul Tol's Diverging Colour Schemes for ggplot2
 #'
 #' Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
@@ -281,6 +317,25 @@ scale_color_iridescent <- scale_colour_iridescent
 #' @rdname scale_tol_sequential
 scale_fill_iridescent <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "iridescent", reverse, ...)
+}
+
+## ------------------------------------------------------------ Discrete Rainbow
+#' @export
+#' @rdname scale_tol_sequential
+scale_colour_discreterainbow <- function(..., reverse = FALSE,
+                                         aesthetics = "colour") {
+  scale(aesthetics, "discrete rainbow", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_sequential
+scale_color_discreterainbow <- scale_colour_discreterainbow
+
+#' @export
+#' @rdname scale_tol_sequential
+scale_fill_discreterainbow <- function(..., reverse = FALSE,
+                                       aesthetics = "fill") {
+  scale(aesthetics, "discrete rainbow", reverse, ...)
 }
 
 ## -------------------------------------------------------------- Smooth Rainbow

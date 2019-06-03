@@ -1,10 +1,11 @@
 context("Colour")
 
 test_that("Palette colours", {
-  palettes <- c("bright", "contrast", "vibrant", "muted", "light", "sunset",
-                "BuRd", "PRGn", "YlOrBr", "iridescent", "rainbow",
-                "smooth rainbow", "stratigraphy", "soil", "land")
-  n <- c(7, 3, 7, 9, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
+  palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
+                "light", "sunset", "BuRd", "PRGn", "YlOrBr", "iridescent",
+                "discrete rainbow", "smooth rainbow", "stratigraphy", "soil",
+                "land")
+  n <- c(7, 3, 7, 9, 6, 6, 9, 11, 9, 9, 9, 23, 29, 34, 175, 24, 14)
 
   for (i in 1:length(palettes)) {
     expect_type(colour(palettes[i]), "closure")
@@ -19,9 +20,9 @@ test_that("Palette colours", {
   }
 })
 test_that("Qualitative colours", {
-  palettes <- c("bright", "contrast", "vibrant", "muted", "light", "rainbow",
-                "stratigraphy", "soil", "land")
-  n <- c(7, 3, 7, 9, 9, 23, 175, 24, 14)
+  palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
+                "light", "stratigraphy", "soil", "land")
+  n <- c(7, 3, 7, 9, 6, 6, 9, 175, 24, 14)
   for (i in 1:length(palettes)) {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
@@ -30,8 +31,8 @@ test_that("Qualitative colours", {
 })
 test_that("Diverging and sequential colours", {
   palettes <- c("sunset", "BuRd", "PRGn", "YlOrBr", "iridescent",
-                "smooth rainbow")
-  n <- c(11, 9, 9, 9, 23, 34)
+                "discrete rainbow", "smooth rainbow")
+  n <- c(11, 9, 9, 9, 23, 23, 34)
   for (i in 1:length(palettes)) {
     expect_equal(colour(palettes[i], reverse = TRUE)(n[i]),
                  rev(colour(palettes[i], reverse = FALSE)(n[i])))
