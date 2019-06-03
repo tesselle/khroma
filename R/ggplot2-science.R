@@ -39,7 +39,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 }
 
 # ========================================================================= Land
-#' AVHRR Global Land Cover classification Colour Scheme for ggplot2
+#' AVHRR Global Land Cover Classification Colour Scheme for ggplot2
 #'
 #' Provides the AVHRR Global Land Cover classification as modified by
 #' Paul Tol (colour-blind safe).

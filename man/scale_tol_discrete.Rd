@@ -89,18 +89,35 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-The qualitative colour schemes are used as given: colours are picked up to
- the maximum number of supported values.
+The qualitative colour schemes are used as given (no interpolation):
+ colours are picked up to the maximum number of supported values.
+
  \tabular{ll}{
   \strong{Palette} \tab \strong{Max.} \cr
   bright \tab 7 \cr
   contrast \tab 3 \cr
   vibrant \tab 7 \cr
   muted \tab 9 \cr
+  pale \tab 6 \cr
+  dark \tab 6 \cr
   light \tab 9 \cr
-  rainbow \tab 23 \cr
  }
 }
+\section{Qualitative colour schemes}{
+
+ According to Paul Tol's technical note, the \code{bright}, \code{contrast},
+ \code{vibrant} and \code{muted} colour schemes are colour-blind safe.
+
+ The \code{light} colour scheme is reasonably distinct for both normal or
+ colour-blind vision and is intended to fill labelled cells.
+
+ The \code{pale} and \code{dark} schemes are not very distinct in either
+ normal or colour-blind vision and should be used as a text background or
+ to highlight a cell in a table.
+
+ Refer to the original document for details about the recommended uses.
+}
+
 \examples{
 library(ggplot2)
 
@@ -126,7 +143,7 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
   khroma::scale_colour_rainbow()
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{

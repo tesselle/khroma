@@ -11,7 +11,7 @@ test_that("Stratigraphic scales", {
   expect_is(scale_fill_stratigraphy(), "ScaleDiscrete")
 })
 
-test_that("land classification", {
+test_that("Land scales", {
   expect_is(scale_colour_land(), "ggproto")
   expect_is(scale_colour_land(), "ScaleDiscrete")
 

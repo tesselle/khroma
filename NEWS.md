@@ -5,9 +5,24 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-## khroma 1.1.1.9000 (2019-06-02)
+# khroma 1.1.2.9000 (2019-06-03)
 
-# khroma 1.1.2 (release date: 2019-06-01)
+## New functions
+
+  - Add three `ggplot2` scale functions: `scale_*_pale()`,
+    `scale_*_dark()` and `scale_*_discreterainbow()`.
+
+## Bugfixes & changes
+
+  - The function `scale_*_rainbow()` is deprecated and replaced by
+    `scale_*_discreterainbow()`.
+
+## Enhancements
+
+  - The documentation is expanded with several remarks on the use of
+    Paul Tol’s colour schemes.
+
+# khroma 1.1.2 (release date: 2019-06-02)
 
 ## New functions
 

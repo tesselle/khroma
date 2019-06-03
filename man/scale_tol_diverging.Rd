@@ -11,7 +11,7 @@
 \alias{scale_colour_PRGn}
 \alias{scale_color_PRGn}
 \alias{scale_fill_PRGn}
-\title{Paul Tol's diverging colour schemes for ggplot2}
+\title{Paul Tol's Diverging Colour Schemes for ggplot2}
 \usage{
 scale_colour_sunset(..., reverse = FALSE, midpoint = 0,
   aesthetics = "colour")
@@ -81,7 +81,7 @@ ggplot(economics, aes(psavert, pce, colour = unemploy)) +
   khroma::scale_color_PRGn(midpoint = 6000)
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{

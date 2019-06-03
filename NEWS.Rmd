@@ -16,9 +16,17 @@ knitr::opts_chunk$set(
 )
 ```
 
-## khroma `r utils::packageVersion("khroma")` (`r Sys.Date()`)
+# khroma `r utils::packageVersion("khroma")` (`r Sys.Date()`)
+## New functions
+* Add three `ggplot2` scale functions: `scale_*_pale()`, `scale_*_dark()` and `scale_*_discreterainbow()`.
 
-# khroma 1.1.2 (release date: 2019-06-01)
+## Bugfixes & changes
+* The function `scale_*_rainbow()` is deprecated and replaced by `scale_*_discreterainbow()`.
+
+## Enhancements
+* The documentation is expanded with several remarks on the use of Paul Tol's colour schemes.
+
+# khroma 1.1.2 (release date: 2019-06-02)
 ## New functions
 * Add three `ggplot2` scale functions: `scale_*_contrast()`, `scale_*_iridescent()` and `scale_*_land()`.
 

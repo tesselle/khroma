@@ -3,7 +3,7 @@
 NULL
 
 # ===================================================================== Discrete
-#' Paul Tol's discrete colour schemes for ggplot2
+#' Paul Tol's Discrete Colour Schemes for ggplot2
 #'
 #' Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{discrete_scale}}.
@@ -12,19 +12,22 @@ NULL
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  The qualitative colour schemes are used as given: colours are picked up to
-#'  the maximum number of supported values.
+#'  The qualitative colour schemes are used as given (no interpolation):
+#'  colours are picked up to the maximum number of supported values.
+#'
 #'  \tabular{ll}{
 #'   \strong{Palette} \tab \strong{Max.} \cr
 #'   bright \tab 7 \cr
 #'   contrast \tab 3 \cr
 #'   vibrant \tab 7 \cr
 #'   muted \tab 9 \cr
+#'   pale \tab 6 \cr
+#'   dark \tab 6 \cr
 #'   light \tab 9 \cr
-#'   rainbow \tab 23 \cr
 #'  }
+#' @inheritSection colour Qualitative colour schemes
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
@@ -191,7 +194,7 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   PRGn \tab 9 \cr
 #'  }
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
@@ -258,7 +261,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 }
 
 # =================================================================== Sequential
-#' Paul Tol's sequential colour schemes for ggplot2
+#' Paul Tol's Sequential Colour Schemes for ggplot2
 #'
 #' Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
@@ -267,15 +270,18 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  Sequential colour schemes are linearly interpolated.
+#'  The sequential colour schemes are linearly interpolated, with the exception
+#'  of the \code{discrete rainbow} palette (see below).
 #'  \tabular{ll}{
 #'   \strong{Palette} \tab \strong{Max.} \cr
 #'   YlOrBr \tab 9 \cr
 #'   iridescent \tab 23 \cr
+#'   discrete rainbow \tab 23 \cr
 #'   smooth rainbow \tab 34 \cr
 #'  }
+#' @inheritSection colour Rainbow colour scheme
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau

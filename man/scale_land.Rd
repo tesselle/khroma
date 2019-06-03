@@ -4,7 +4,7 @@
 \alias{scale_colour_land}
 \alias{scale_color_land}
 \alias{scale_fill_land}
-\title{AVHRR Global Land Cover classification Colour Scheme for ggplot2}
+\title{AVHRR Global Land Cover Classification Colour Scheme for ggplot2}
 \usage{
 scale_colour_land(..., aesthetics = "colour")
 

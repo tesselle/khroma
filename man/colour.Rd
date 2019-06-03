@@ -3,7 +3,7 @@
 \name{colour}
 \alias{colour}
 \alias{color}
-\title{Colour palette}
+\title{Colour Palette}
 \usage{
 colour(palette, reverse = FALSE, names = TRUE, ...)
 
@@ -26,26 +26,67 @@ A palette function that when called with a single integer argument
  (the number of levels) returns a vector of colours.
 }
 \description{
-Provides qualitative, diverging and sequential colour palettes.
+Provides qualitative, diverging and sequential colour schemes.
 }
 \section{Paul Tol's Colour Schemes}{
 
- The following palettes are available (maximum supported colours in brackets):
+ The following palettes are available. The maximum number of supported
+ colours is in brackets, this value is only relevant for the qualitative
+ colour schemes (divergent and sequential schemes are linearly interpolated).
  \describe{
-  \item{Qualitative data}{bright (7), contrast (3),vibrant (7), muted (9),
-  light (9).}
+  \item{Qualitative data}{bright (7), contrast (3), vibrant (7), muted (9),
+  pale (6), dark (6), light (9).}
   \item{Diverging data}{sunset (11), BuRd (9), PRGn (9).}
-  \item{Sequential data}{YlOrBr (9), discrete rainbow (23),
+  \item{Sequential data}{YlOrBr (9), iridescent (23), discrete rainbow (23),
   smooth rainbow (34).}
+ }
+}
+
+\section{Qualitative colour schemes}{
+
+ According to Paul Tol's technical note, the \code{bright}, \code{contrast},
+ \code{vibrant} and \code{muted} colour schemes are colour-blind safe.
+
+ The \code{light} colour scheme is reasonably distinct for both normal or
+ colour-blind vision and is intended to fill labelled cells.
+
+ The \code{pale} and \code{dark} schemes are not very distinct in either
+ normal or colour-blind vision and should be used as a text background or
+ to highlight a cell in a table.
+
+ Refer to the original document for details about the recommended uses.
+}
+
+\section{Rainbow colour scheme}{
+
+ As a general rule, ordered data should not be represented using a rainbow
+ scheme. There are three main arguments against such use (Tol 2018):
+ \itemize{
+  \item{The spectral order of visible light carries no inherent magnitude
+  message.}
+  \item{Some bands of almost constant hue with sharp transitions between
+  them, can be perceived as jumps in the data.}
+  \item{Colour-blind people have difficulty distinguishing some colours of
+  the rainbow.}
+ }
+ If such use cannot be avoided, Paul Tol's technical note provides two colour
+ schemes that are reasonably clear in colour-blind vision. To remain
+ colour-blind safe, these two schemes must comply with the following
+ conditions:
+ \describe{
+  \item{discrete rainbow}{This scheme should not be interpolated.}
+  \item{smooth rainbow}{This scheme does not have to be used over the full
+  range.}
  }
 }
 
 \section{Scientific Colour Schemes}{
 
- The following palettes are available:
+ The following (qualitative) colour schemes are available:
  \describe{
-  \item{stratigraphy}{International Chronostratigraphic Chart}
-  \item{soil}{FAO Reference Soil Groups}
+  \item{stratigraphy}{International Chronostratigraphic Chart.}
+  \item{land}{AVHRR Global Land Cover Classification.}
+  \item{soil}{FAO Reference Soil Groups.}
  }
 }
 

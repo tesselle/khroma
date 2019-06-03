@@ -55,14 +55,39 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-Sequential colour schemes are linearly interpolated.
+The sequential colour schemes are linearly interpolated, with the exception
+ of the \code{discrete rainbow} palette (see below).
  \tabular{ll}{
   \strong{Palette} \tab \strong{Max.} \cr
   YlOrBr \tab 9 \cr
   iridescent \tab 23 \cr
+  discrete rainbow \tab 23 \cr
   smooth rainbow \tab 34 \cr
  }
 }
+\section{Rainbow colour scheme}{
+
+ As a general rule, ordered data should not be represented using a rainbow
+ scheme. There are three main arguments against such use (Tol 2018):
+ \itemize{
+  \item{The spectral order of visible light carries no inherent magnitude
+  message.}
+  \item{Some bands of almost constant hue with sharp transitions between
+  them, can be perceived as jumps in the data.}
+  \item{Colour-blind people have difficulty distinguishing some colours of
+  the rainbow.}
+ }
+ If such use cannot be avoided, Paul Tol's technical note provides two colour
+ schemes that are reasonably clear in colour-blind vision. To remain
+ colour-blind safe, these two schemes must comply with the following
+ conditions:
+ \describe{
+  \item{discrete rainbow}{This scheme should not be interpolated.}
+  \item{smooth rainbow}{This scheme does not have to be used over the full
+  range.}
+ }
+}
+
 \examples{
 library(ggplot2)
 
@@ -80,7 +105,7 @@ ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   khroma::scale_fill_smoothrainbow(reverse = TRUE)
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
