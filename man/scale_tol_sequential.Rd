@@ -57,12 +57,15 @@ Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 \details{
 The sequential colour schemes are linearly interpolated, with the exception
  of the \code{discrete rainbow} palette (see below).
- \tabular{ll}{
-  \strong{Palette} \tab \strong{Max.} \cr
-  YlOrBr \tab 9 \cr
-  iridescent \tab 23 \cr
-  discrete rainbow \tab 23 \cr
-  smooth rainbow \tab 34 \cr
+ Note that the default colour for \code{NA} can be overridden by passing
+ a value to \code{\link[ggplot2]{continuous_scale}}.
+
+ \tabular{lll}{
+  \strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
+  YlOrBr \tab 9 \tab #888888 \cr
+  iridescent \tab 23 \tab #999999 \cr
+  discrete rainbow \tab 23 \tab #777777 \cr
+  smooth rainbow \tab 34 \tab #666666 \cr
  }
 }
 \section{Rainbow colour scheme}{

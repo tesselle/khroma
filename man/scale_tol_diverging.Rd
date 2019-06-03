@@ -56,12 +56,15 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-Diverging colour schemes are linearly interpolated.
- \tabular{ll}{
-  \strong{Palette} \tab \strong{Max.} \cr
-  sunset \tab 11 \cr
-  BuRd \tab 9 \cr
-  PRGn \tab 9 \cr
+The sequential colour schemes are linearly interpolated.
+ Note that the default colour for \code{NA} can be overridden by passing
+ a value to \code{\link[ggplot2]{continuous_scale}}.
+
+ \tabular{lll}{
+  \strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
+  sunset \tab 11 \tab #FFFFFF \cr
+  BuRd \tab 9 \tab #FFEE99 \cr
+  PRGn \tab 9 \tab #FFEE99 \cr
  }
 }
 \examples{
