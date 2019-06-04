@@ -5,7 +5,9 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-# khroma 1.1.2.9000 (2019-06-03)
+<!-- # khroma 1.1.2.9000 (2019-06-03) -->
+
+# khroma 1.1.3 (release date: 2019-06-05)
 
 ## New functions
 
@@ -17,7 +19,7 @@
   - The function `scale_*_rainbow()` is deprecated and replaced by
     `scale_*_discreterainbow()`.
   - Fix the `missing` attribute of the palette function returned by
-    `colour()`.
+    `colour()` (bug introduced in v1.1.2).
 
 ## Enhancements
 

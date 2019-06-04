@@ -2,8 +2,8 @@
 #' \tabular{ll}{
 #'  \strong{Package:} \tab khroma \cr
 #'  \strong{Type:} \tab Package \cr
-#'  \strong{Version:} \tab 1.1.2 \cr
-#'  \strong{Date:} \tab 2019-06-02 \cr
+#'  \strong{Version:} \tab 1.1.3 \cr
+#'  \strong{Date:} \tab 2019-06-05 \cr
 #'  \strong{License:} \tab GPL-3 \cr
 #'  \strong{DOI:} \tab \href{https://doi.org/10.5281/zenodo.1472077}{10.5281/zenodo.1472077}
 #' }
