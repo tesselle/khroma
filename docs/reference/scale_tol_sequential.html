@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Paul Tol's sequential colour schemes for ggplot2 — scale_tol_sequential • khroma</title>
+<title>Paul Tol's Sequential Colour Schemes for ggplot2 — scale_tol_sequential • khroma</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
 
 
-<meta property="og:title" content="Paul Tol's sequential colour schemes for ggplot2 — scale_tol_sequential" />
+<meta property="og:title" content="Paul Tol's Sequential Colour Schemes for ggplot2 — scale_tol_sequential" />
 
 <meta property="og:description" content="Provides sequential colour scales from Paul Tol's Colour Schemes." />
 
@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.3</span>
       </span>
     </div>
 
@@ -104,7 +104,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Paul Tol's sequential colour schemes for ggplot2</h1>
+    <h1>Paul Tol's Sequential Colour Schemes for ggplot2</h1>
     <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/ggplot2-tol.R'><code>R/ggplot2-tol.R</code></a></small>
     <div class="hidden name"><code>scale_tol_sequential.Rd</code></div>
     </div>
@@ -126,6 +126,14 @@
 <span class='fu'>scale_color_iridescent</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
 
 <span class='fu'>scale_fill_iridescent</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
+
+<span class='fu'>scale_colour_discreterainbow</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_color_discreterainbow</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_fill_discreterainbow</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
 
 <span class='fu'>scale_colour_smoothrainbow</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
 
@@ -154,21 +162,46 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Sequential colour schemes are linearly interpolated.</p><table class='table'>
-<tr><td></td><td></td></tr>
-<tr><td><strong>Palette</strong></td><td></td></tr>
-<tr><td></td><td><strong>Max.</strong></td></tr>
-<tr><td></td><td></td></tr>
-<tr><td>YlOrBr</td><td>9</td></tr>
-<tr><td></td><td>iridescent</td></tr>
-<tr><td>23</td><td></td></tr>
-<tr><td>smooth rainbow</td><td>34</td></tr>
-<tr><td></td><td></td></tr>
+    <p>The sequential colour schemes are linearly interpolated, with the exception
+ of the <code>discrete rainbow</code> palette (see below).
+ Note that the default colour for <code>NA</code> can be overridden by passing
+ a value to <code><a href='https://www.rdocumentation.org/packages/ggplot2/topics/continuous_scale'>continuous_scale</a></code>.</p>
+<p></p><table class='table'>
+<tr><td></td><td></td><td><strong>Palette</strong></td></tr>
+<tr><td></td><td></td><td><strong>Max. colours</strong></td></tr>
+<tr><td></td><td></td><td><strong>NA value</strong></td></tr>
+<tr><td></td><td></td><td>YlOrBr</td></tr>
+<tr><td>9</td><td>#888888</td><td></td></tr>
+<tr><td>iridescent</td><td>23</td><td>#999999</td></tr>
+<tr><td></td><td>discrete rainbow</td><td>23</td></tr>
+<tr><td>#777777</td><td></td><td>smooth rainbow</td></tr>
+<tr><td>34</td><td>#666666</td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
 </table>
+    
+    <h2 class="hasAnchor" id="rainbow-colour-scheme"><a class="anchor" href="#rainbow-colour-scheme"></a>Rainbow colour scheme</h2>
+
+    
+    <p>As a general rule, ordered data should not be represented using a rainbow
+ scheme. There are three main arguments against such use (Tol 2018):</p><ul>
+<li><p>The spectral order of visible light carries no inherent magnitude
+  message.</p></li>
+<li><p>Some bands of almost constant hue with sharp transitions between
+  them, can be perceived as jumps in the data.</p></li>
+<li><p>Colour-blind people have difficulty distinguishing some colours of
+  the rainbow.</p></li>
+</ul><p>If such use cannot be avoided, Paul Tol's technical note provides two colour
+ schemes that are reasonably clear in colour-blind vision. To remain
+ colour-blind safe, these two schemes must comply with the following
+ conditions:</p><dl class='dl-horizontal'>
+  <dt>discrete rainbow</dt><dd><p>This scheme must not be interpolated.</p></dd>
+  <dt>smooth rainbow</dt><dd><p>This scheme does not have to be used over the full
+  range.</p></dd>
+ </dl>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Tol, Paul (2018). <em>Colour Schemes.</em> SRON. Technical Note No.
+    <p>Tol, Paul (2018). <em>Colour Schemes</em>. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: <a href='https://personal.sron.nl/~pault/data/colourschemes.pdf'>https://personal.sron.nl/~pault/data/colourschemes.pdf</a></p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
@@ -197,6 +230,8 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#details">Details</a></li>
+
+      <li><a href="#rainbow-colour-scheme">Rainbow colour scheme</a></li>
 
       <li><a href="#references">References</a></li>
 

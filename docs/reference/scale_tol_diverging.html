@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Paul Tol's diverging colour schemes for ggplot2 — scale_tol_diverging • khroma</title>
+<title>Paul Tol's Diverging Colour Schemes for ggplot2 — scale_tol_diverging • khroma</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
 
 
-<meta property="og:title" content="Paul Tol's diverging colour schemes for ggplot2 — scale_tol_diverging" />
+<meta property="og:title" content="Paul Tol's Diverging Colour Schemes for ggplot2 — scale_tol_diverging" />
 
 <meta property="og:description" content="Provides diverging colour scales from Paul Tol's Colour Schemes." />
 
@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.3</span>
       </span>
     </div>
 
@@ -104,7 +104,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Paul Tol's diverging colour schemes for ggplot2</h1>
+    <h1>Paul Tol's Diverging Colour Schemes for ggplot2</h1>
     <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/ggplot2-tol.R'><code>R/ggplot2-tol.R</code></a></small>
     <div class="hidden name"><code>scale_tol_diverging.Rd</code></div>
     </div>
@@ -168,21 +168,23 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Diverging colour schemes are linearly interpolated.</p><table class='table'>
-<tr><td></td><td></td></tr>
-<tr><td><strong>Palette</strong></td><td></td></tr>
-<tr><td></td><td><strong>Max.</strong></td></tr>
-<tr><td></td><td></td></tr>
-<tr><td>sunset</td><td>11</td></tr>
-<tr><td></td><td>BuRd</td></tr>
-<tr><td>9</td><td></td></tr>
-<tr><td>PRGn</td><td>9</td></tr>
-<tr><td></td><td></td></tr>
+    <p>The sequential colour schemes are linearly interpolated.
+ Note that the default colour for <code>NA</code> can be overridden by passing
+ a value to <code><a href='https://www.rdocumentation.org/packages/ggplot2/topics/continuous_scale'>continuous_scale</a></code>.</p>
+<p></p><table class='table'>
+<tr><td></td><td></td><td><strong>Palette</strong></td></tr>
+<tr><td></td><td></td><td><strong>Max. colours</strong></td></tr>
+<tr><td></td><td></td><td><strong>NA value</strong></td></tr>
+<tr><td></td><td></td><td>sunset</td></tr>
+<tr><td>11</td><td>#FFFFFF</td><td></td></tr>
+<tr><td>BuRd</td><td>9</td><td>#FFEE99</td></tr>
+<tr><td></td><td>PRGn</td><td>9</td></tr>
+<tr><td>#FFEE99</td><td></td><td></td></tr>
 </table>
     
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Tol, Paul (2018). <em>Colour Schemes.</em> SRON. Technical Note No.
+    <p>Tol, Paul (2018). <em>Colour Schemes</em>. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: <a href='https://personal.sron.nl/~pault/data/colourschemes.pdf'>https://personal.sron.nl/~pault/data/colourschemes.pdf</a></p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>

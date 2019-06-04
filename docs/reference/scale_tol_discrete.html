@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Paul Tol's discrete colour schemes for ggplot2 — scale_tol_discrete • khroma</title>
+<title>Paul Tol's Discrete Colour Schemes for ggplot2 — scale_tol_discrete • khroma</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
 
 
-<meta property="og:title" content="Paul Tol's discrete colour schemes for ggplot2 — scale_tol_discrete" />
+<meta property="og:title" content="Paul Tol's Discrete Colour Schemes for ggplot2 — scale_tol_discrete" />
 
 <meta property="og:description" content="Provides qualitative colour scales from Paul Tol's Colour Schemes." />
 
@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">khroma</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.3</span>
       </span>
     </div>
 
@@ -104,7 +104,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Paul Tol's discrete colour schemes for ggplot2</h1>
+    <h1>Paul Tol's Discrete Colour Schemes for ggplot2</h1>
     <small class="dont-index">Source: <a href='https://github.com/nfrerebeau/khroma/blob/master/R/ggplot2-tol.R'><code>R/ggplot2-tol.R</code></a></small>
     <div class="hidden name"><code>scale_tol_discrete.Rd</code></div>
     </div>
@@ -139,6 +139,18 @@
 
 <span class='fu'>scale_fill_muted</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
 
+<span class='fu'>scale_colour_pale</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_color_pale</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_fill_pale</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
+
+<span class='fu'>scale_colour_dark</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_color_dark</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
+
+<span class='fu'>scale_fill_dark</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"fill"</span>)
+
 <span class='fu'>scale_colour_light</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
 
 <span class='fu'>scale_color_light</span>(<span class='no'>...</span>, <span class='kw'>reverse</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>aesthetics</span> <span class='kw'>=</span> <span class='st'>"colour"</span>)
@@ -172,8 +184,9 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The qualitative colour schemes are used as given: colours are picked up to
- the maximum number of supported values.</p><table class='table'>
+    <p>The qualitative colour schemes are used as given (no interpolation):
+ colours are picked up to the maximum number of supported values.</p>
+<p></p><table class='table'>
 <tr><td></td><td></td></tr>
 <tr><td><strong>Palette</strong></td><td></td></tr>
 <tr><td></td><td><strong>Max.</strong></td></tr>
@@ -184,15 +197,29 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
 <tr><td>vibrant</td><td>7</td></tr>
 <tr><td></td><td>muted</td></tr>
 <tr><td>9</td><td></td></tr>
+<tr><td>pale</td><td>6</td></tr>
+<tr><td></td><td>dark</td></tr>
+<tr><td>6</td><td></td></tr>
 <tr><td>light</td><td>9</td></tr>
-<tr><td></td><td>rainbow</td></tr>
-<tr><td>23</td><td></td></tr>
 <tr><td></td><td></td></tr>
 </table>
     
+    <h2 class="hasAnchor" id="qualitative-colour-schemes"><a class="anchor" href="#qualitative-colour-schemes"></a>Qualitative colour schemes</h2>
+
+    
+    <p>According to Paul Tol's technical note, the <code>bright</code>, <code>contrast</code>,
+ <code>vibrant</code> and <code>muted</code> colour schemes are colour-blind safe.</p>
+<p>The <code>light</code> colour scheme is reasonably distinct for both normal or
+ colour-blind vision and is intended to fill labelled cells.</p>
+<p>The <code>pale</code> and <code>dark</code> schemes are not very distinct in either
+ normal or colour-blind vision and should be used as a text background or
+ to highlight a cell in a table.</p>
+<p>Refer to the original document for details about the recommended uses (see
+ references).</p>
+    
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <p>Tol, Paul (2018). <em>Colour Schemes.</em> SRON. Technical Note No.
+    <p>Tol, Paul (2018). <em>Colour Schemes</em>. SRON. Technical Note No.
  SRON/EPS/TN/09-002. URL: <a href='https://personal.sron.nl/~pault/data/colourschemes.pdf'>https://personal.sron.nl/~pault/data/colourschemes.pdf</a></p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
@@ -202,8 +229,7 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)
-
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)</div><div class='output co'>#&gt; <span class='message'>Need help? Try Stackoverflow: https://stackoverflow.com/tags/ggplot2.</span></div><div class='input'>
 <span class='co'># Qualitative data</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mpg</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>displ</span>, <span class='no'>hwy</span>, <span class='kw'>colour</span> <span class='kw'>=</span> <span class='no'>class</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
@@ -216,10 +242,19 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
   <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_muted</a></span>()</div><div class='img'><img src='scale_tol_discrete-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>diamonds</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>clarity</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_bar'>geom_bar</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_light</a></span>()</div><div class='img'><img src='scale_tol_discrete-4.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_pale</a></span>()</div><div class='img'><img src='scale_tol_discrete-4.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>diamonds</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>clarity</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_bar'>geom_bar</a></span>() +
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_dark</a></span>()</div><div class='img'><img src='scale_tol_discrete-5.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>diamonds</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>clarity</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>cut</span>)) +
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_bar'>geom_bar</a></span>() +
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_fill_light</a></span>()</div><div class='img'><img src='scale_tol_discrete-6.png' alt='' width='700' height='433' /></div><div class='input'>
+## Deprecated: use scale_*_discreterainbow() instead
+</div><span class='co'># NOT RUN {</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='no'>mpg</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='no'>displ</span>, <span class='no'>hwy</span>, <span class='kw'>colour</span> <span class='kw'>=</span> <span class='no'>class</span>)) +
   <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/geom_point'>geom_point</a></span>() +
-  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_colour_rainbow</a></span>()</div><div class='img'><img src='scale_tol_discrete-5.png' alt='' width='700' height='433' /></div></pre>
+  <span class='kw pkg'>khroma</span><span class='kw ns'>::</span><span class='fu'><a href='http://khroma.archaeo.science/reference/scale_tol_discrete.html'>scale_colour_rainbow</a></span>()
+<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -227,6 +262,8 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.</p><
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#details">Details</a></li>
+
+      <li><a href="#qualitative-colour-schemes">Qualitative colour schemes</a></li>
 
       <li><a href="#references">References</a></li>
 
