@@ -30,7 +30,8 @@
 #'  normal or colour-blind vision and should be used as a text background or
 #'  to highlight a cell in a table.
 #'
-#'  Refer to the original document for details about the recommended uses.
+#'  Refer to the original document for details about the recommended uses (see
+#'  references).
 #' @section Rainbow colour scheme:
 #'  As a general rule, ordered data should not be represented using a rainbow
 #'  scheme. There are three main arguments against such use (Tol 2018):
@@ -47,7 +48,7 @@
 #'  colour-blind safe, these two schemes must comply with the following
 #'  conditions:
 #'  \describe{
-#'   \item{discrete rainbow}{This scheme should not be interpolated.}
+#'   \item{discrete rainbow}{This scheme must not be interpolated.}
 #'   \item{smooth rainbow}{This scheme does not have to be used over the full
 #'   range.}
 #'  }

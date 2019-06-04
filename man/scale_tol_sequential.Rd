@@ -85,7 +85,7 @@ The sequential colour schemes are linearly interpolated, with the exception
  colour-blind safe, these two schemes must comply with the following
  conditions:
  \describe{
-  \item{discrete rainbow}{This scheme should not be interpolated.}
+  \item{discrete rainbow}{This scheme must not be interpolated.}
   \item{smooth rainbow}{This scheme does not have to be used over the full
   range.}
  }

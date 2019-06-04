@@ -54,7 +54,8 @@ Provides qualitative, diverging and sequential colour schemes.
  normal or colour-blind vision and should be used as a text background or
  to highlight a cell in a table.
 
- Refer to the original document for details about the recommended uses.
+ Refer to the original document for details about the recommended uses (see
+ references).
 }
 
 \section{Rainbow colour scheme}{
@@ -74,7 +75,7 @@ Provides qualitative, diverging and sequential colour schemes.
  colour-blind safe, these two schemes must comply with the following
  conditions:
  \describe{
-  \item{discrete rainbow}{This scheme should not be interpolated.}
+  \item{discrete rainbow}{This scheme must not be interpolated.}
   \item{smooth rainbow}{This scheme does not have to be used over the full
   range.}
  }

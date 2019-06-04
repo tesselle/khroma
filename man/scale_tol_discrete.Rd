@@ -115,7 +115,8 @@ The qualitative colour schemes are used as given (no interpolation):
  normal or colour-blind vision and should be used as a text background or
  to highlight a cell in a table.
 
- Refer to the original document for details about the recommended uses.
+ Refer to the original document for details about the recommended uses (see
+ references).
 }
 
 \examples{
