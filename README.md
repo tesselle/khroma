@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# khroma <img width=120px src="man/figures/logo.svg" align="right" />
+# khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 [![Build
 Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)

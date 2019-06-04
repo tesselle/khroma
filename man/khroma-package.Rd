@@ -7,6 +7,8 @@
 \alias{khroma}
 \title{khroma: Colour Schemes for Archaeological Data Visualization}
 \description{
+\if{html}{\figure{logo.png}{options: align='right'}}
+
 Colour schemes for archaeological data
     visualization. This package provides Paul Tol's colour schemes and
     several thematic palettes (geologic timescale, land cover, FAO soils,
