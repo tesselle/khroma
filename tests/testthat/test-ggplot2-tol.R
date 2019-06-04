@@ -69,9 +69,14 @@ test_that("Muted", {
   expect_s3_class(scale_colour_muted(), "ggproto")
   expect_s3_class(scale_colour_muted(), "ScaleDiscrete")
   expect_equal(scale_colour_muted()$na.value, "#DDDDDD")
+  expect_equal(scale_colour_muted(na.value = "#FFFFFF")$na.value, "#FFFFFF")
   expect_equal(
     scale_colour_muted()$palette(9),
     colour("muted", names = FALSE)(9)
+  )
+  expect_equal(
+    scale_colour_muted(reverse = TRUE)$palette(9),
+    rev(colour("muted", names = FALSE, reverse = FALSE)(9))
   )
 
   expect_s3_class(scale_color_muted(), "ggproto")
