@@ -44,9 +44,9 @@ devtools::install_github("nfrerebeau/khroma")
 Paul Tol offers carefully chosen schemes, ready for each type of data,
 with colours that are:
 
-  - Distinct for all people, including colour-blind readers;
-  - Distinct from black and white;
-  - Distinct on screen and paper;
+  - Distinct for all people, including colour-blind readers.
+  - Distinct from black and white.
+  - Distinct on screen and paper.
   - Matching well together.
 
 All the scales presented in his 2018 technical note \[1\] are

@@ -49,25 +49,23 @@ devtools::install_github("nfrerebeau/khroma")
 
 Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
 
-* Distinct for all people, including colour-blind readers;
-* Distinct from black and white;
-* Distinct on screen and paper;
+* Distinct for all people, including colour-blind readers.
+* Distinct from black and white.
+* Distinct on screen and paper.
 * Matching well together.
 
 All the scales presented in his 2018 technical note [^1] are implemented here, for use with `graphics` or `ggplot2`.
 
 #### Qualitative data
 
-```{r tol-qualitative, echo=FALSE, fig.height=7, fig.width=7}
+```{r tol-qualitative, echo=FALSE, fig.height=4.6, fig.width=7}
 # Qualitative data
-par(mfrow = c(3, 3))
+par(mfrow = c(2, 3))
 scales::show_col(khroma::colour("bright")(7))
 scales::show_col(khroma::colour("contrast")(3))
 scales::show_col(khroma::colour("vibrant")(7))
 scales::show_col(khroma::colour("muted")(9))
 scales::show_col(khroma::colour("light")(9))
-scales::show_col(khroma::colour("pale")(6))
-scales::show_col(khroma::colour("dark")(6))
 ```
 
 #### Diverging data
