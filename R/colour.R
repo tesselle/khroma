@@ -7,7 +7,8 @@
 #'  vector of colours should be reversed.
 #' @param names A \code{\link{logical}} scalar specifying if the names of the
 #'  colours should be kept in the resulting vector.
-#' @param ... Further arguments passed to \code{\link[grDevices]{colorRampPalette}}.
+#' @param ... Further arguments passed to
+#'  \code{\link[grDevices]{colorRampPalette}}.
 #' @section Paul Tol's Colour Schemes:
 #'  The following palettes are available. The maximum number of supported
 #'  colours is in brackets, this value is only relevant for the qualitative
@@ -67,7 +68,8 @@
 #'  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
 #'
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  SRON/EPS/TN/09-002.
+#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #'
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 #' @example inst/examples/ex-palettes.R
@@ -100,7 +102,11 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
         stop("You ask for too many colours: ", palette,
              " colour scheme supports up to ", k, " values.", call. = FALSE)
       # Arrange colour schemes
-      col <- if (palette == "discrete rainbow") colours[scheme[[n]]] else colours
+      col <- if (palette == "discrete rainbow") {
+        colours[scheme[[n]]]
+      } else {
+        colours
+      }
       col <- if (names) col else unname(col)
       return(col)
     }

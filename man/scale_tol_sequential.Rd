@@ -51,6 +51,9 @@ vector of colours be reversed?}
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
+\value{
+A \code{ggplot2} continuous scale.
+}
 \description{
 Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 }
@@ -94,22 +97,22 @@ The sequential colour schemes are linearly interpolated, with the exception
 \examples{
 library(ggplot2)
 
-# Sequential data
-ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  khroma::scale_fill_YlOrBr()
+ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
+  ggplot2::geom_raster() +
+  scale_fill_YlOrBr()
 
-ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  khroma::scale_fill_iridescent()
+ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
+  ggplot2::geom_raster() +
+  scale_fill_iridescent()
 
-ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   geom_raster() +
-  khroma::scale_fill_smoothrainbow(reverse = TRUE)
+  scale_fill_smoothrainbow(reverse = TRUE)
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+ SRON/EPS/TN/09-002.
+ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other Paul Tol's colour schemes: \code{\link{scale_tol_discrete}},

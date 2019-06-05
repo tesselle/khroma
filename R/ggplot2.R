@@ -16,6 +16,7 @@ NULL
 #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
 #'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
 #'  qualitative data and diverging/sequential data.
+#' @return A \code{ggplot2} scale.
 #' @author N. Frerebeau
 #' @keywords internal
 scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {

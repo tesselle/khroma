@@ -11,6 +11,7 @@ NULL
 #' @details Values will be matched based on the unit names.
 #' @references
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}.
+#' @return A \code{ggplot2} discrete scale.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
 #' @family Themed colour schemes
@@ -47,9 +48,11 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
+#' @return A \code{ggplot2} discrete scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  SRON/EPS/TN/09-002.
+#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
 #' @family Themed colour schemes
@@ -89,6 +92,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 #'  Europe}. Luxembourg: European Commission, Office for Official Publications
 #'  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
+#' @return A \code{ggplot2} discrete scale.
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
 #' @family Themed colour schemes

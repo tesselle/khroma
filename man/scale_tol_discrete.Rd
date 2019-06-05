@@ -85,6 +85,9 @@ vector of colours be reversed?}
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
+\value{
+A \code{ggplot2} discrete scale.
+}
 \description{
 Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 }
@@ -122,41 +125,34 @@ The qualitative colour schemes are used as given (no interpolation):
 \examples{
 library(ggplot2)
 
-# Qualitative data
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_bright()
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_bright()
 
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_vibrant()
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_vibrant()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_muted()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_muted()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_pale()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_pale()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_dark()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_dark()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_light()
-
-## Deprecated: use scale_*_discreterainbow() instead
-\dontrun{
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_rainbow()
-}
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_light()
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+ SRON/EPS/TN/09-002.
+ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other Paul Tol's colour schemes: \code{\link{scale_tol_diverging}},

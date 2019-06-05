@@ -52,6 +52,9 @@ vector of colours be reversed?}
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
+\value{
+A \code{ggplot2} continuous scale.
+}
 \description{
 Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 }
@@ -70,22 +73,22 @@ The sequential colour schemes are linearly interpolated.
 \examples{
 library(ggplot2)
 
-# Diverging data
-ggplot(economics, aes(psavert, pce, colour = unemploy)) +
-  geom_point() +
-  khroma::scale_color_sunset(midpoint = 12000)
+ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
+  ggplot2::geom_point() +
+  scale_color_sunset(midpoint = 12000)
 
-ggplot(economics, aes(psavert, pce, colour = unemploy)) +
-  geom_point() +
-  khroma::scale_color_BuRd(midpoint = 9000)
+ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
+  ggplot2::geom_point() +
+  scale_color_BuRd(midpoint = 9000)
 
-ggplot(economics, aes(psavert, pce, colour = unemploy)) +
-  geom_point() +
-  khroma::scale_color_PRGn(midpoint = 6000)
+ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
+  ggplot2::geom_point() +
+  scale_color_PRGn(midpoint = 6000)
 }
 \references{
 Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+ SRON/EPS/TN/09-002.
+ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other Paul Tol's colour schemes: \code{\link{scale_tol_discrete}},

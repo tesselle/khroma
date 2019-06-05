@@ -18,6 +18,9 @@ scale_fill_soil(..., aesthetics = "fill")
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
+\value{
+A \code{ggplot2} discrete scale.
+}
 \description{
 Provides the FAO Soil Reference Groups colour scheme.
 }
@@ -36,11 +39,11 @@ soil <- data.frame(
   )
 )
 
-ggplot(soil, aes(fill = name)) +
-  geom_rect(aes(xmin = rep(0, 24), xmax = rep(1, 24),
-                ymin = 1:24, ymax = 1:24+1)) +
-  scale_y_reverse() +
-  khroma::scale_fill_soil(name = "Soil")
+ggplot2::ggplot(soil, ggplot2::aes(fill = name)) +
+  ggplot2::geom_rect(aes(xmin = rep(0, 24), xmax = rep(1, 24),
+                         ymin = 1:24, ymax = 1:24+1)) +
+  ggplot2::scale_y_reverse() +
+  scale_fill_soil(name = "Soil")
 }
 \references{
 Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of

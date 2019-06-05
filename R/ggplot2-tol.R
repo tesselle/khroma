@@ -26,9 +26,11 @@ NULL
 #'   light \tab 9 \cr
 #'  }
 #' @inheritSection colour Qualitative colour schemes
+#' @return A \code{ggplot2} discrete scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  SRON/EPS/TN/09-002.
+#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family Paul Tol's colour schemes
@@ -196,9 +198,11 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   BuRd \tab 9 \tab #FFEE99 \cr
 #'   PRGn \tab 9 \tab #FFEE99 \cr
 #'  }
+#' @return A \code{ggplot2} continuous scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  SRON/EPS/TN/09-002.
+#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
 #' @family Paul Tol's colour schemes
@@ -285,11 +289,12 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #'   discrete rainbow \tab 23 \tab #777777 \cr
 #'   smooth rainbow \tab 34 \tab #666666 \cr
 #'  }
-#'
 #' @inheritSection colour Rainbow colour scheme
+#' @return A \code{ggplot2} continuous scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002. URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  SRON/EPS/TN/09-002.
+#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
 #' @family Paul Tol's colour schemes

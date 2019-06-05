@@ -22,6 +22,9 @@ data value) of the diverging scale (defaults to \eqn{0}).}
 or \code{\link[ggplot2]{continuous_scale}}, used respectively for
 qualitative data and diverging/sequential data.}
 }
+\value{
+A \code{ggplot2} scale.
+}
 \description{
 Builds discrete or continuous scale for 'ggplot2' according to the colour
  scheme used.

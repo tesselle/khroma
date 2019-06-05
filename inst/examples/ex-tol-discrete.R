@@ -1,33 +1,25 @@
 library(ggplot2)
 
-# Qualitative data
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_bright()
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_bright()
 
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_vibrant()
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_vibrant()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_muted()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_muted()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_pale()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_pale()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_dark()
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_dark()
 
-ggplot(diamonds, aes(clarity, fill = cut)) +
-  geom_bar() +
-  khroma::scale_fill_light()
-
-## Deprecated: use scale_*_discreterainbow() instead
-\dontrun{
-ggplot(mpg, aes(displ, hwy, colour = class)) +
-  geom_point() +
-  khroma::scale_colour_rainbow()
-}
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_light()
