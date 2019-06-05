@@ -5,14 +5,20 @@ sudo: false
 cache: packages
 warnings_are_errors: true
 
-r:
-- 3.1
-- 3.2
-- 3.3
-- 3.4
-- oldrel
-- release
-- devel
+# Build matrix
+matrix:
+  include:
+  - r: devel
+  - r: release
+  - r: oldrel
+  - r: 3.4
+  - r: 3.3
+
+# Environment variables set for all builds
+env:
+  global:
+  # Don't treat missing suggested packages as error
+  - _R_CHECK_FORCE_SUGGESTS_=false
 
 after_success:
   - Rscript -e 'covr::codecov()'
