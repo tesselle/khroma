@@ -1,2 +1,19 @@
 citHeader("To cite khroma in publications please use:")
-citation(auto = meta)
+
+citEntry(entry = "Manual",
+  title        = "{khroma}: Colour Schemes for Archaeological Data Visualization",
+  author       = c(person("Nicolas", "Frerebeau", role = "aut")),
+  year         = "2019",
+  organization = "Université Bordeaux Montaigne",
+  address      = "Pessac, France",
+  note         = paste("R package version", packageVersion("khroma")),
+  url          = "https://doi.org/10.5281/zenodo.1472077",
+
+  textVersion  =
+  paste("Frerebeau, Nicolas (2019).",
+        "khroma: Colour Schemes for Archaeological Data Visualization.",
+        "R package version", paste0(packageVersion("khroma"), "."),
+        "Université Bordeaux Montaigne, Pessac, France.",
+        "DOI 10.5281/zenodo.1472077.",
+        "URL https://cran.r-project.org/package=khroma.")
+)
