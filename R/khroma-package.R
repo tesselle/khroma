@@ -21,7 +21,7 @@
 #'
 #' IRAMAT-CRP2A (UMR 5060)\cr
 #' Maison de l'Archéologie\cr
-#' Universite Bordeaux Montaigne\cr
+#' Université Bordeaux Montaigne\cr
 #' F-33607 Pessac cedex\cr
 #' France
 #' @name khroma-package
