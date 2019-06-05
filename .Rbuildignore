@@ -1,4 +1,5 @@
 ^codecov\.yml$
+^appveyor\.yml$
 ^\.travis\.yml$
 ^\.zenodo\.json$
 ^\_pkgdown\.yml$
