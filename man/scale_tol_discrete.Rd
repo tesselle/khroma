@@ -26,7 +26,7 @@
 \alias{scale_colour_rainbow}
 \alias{scale_color_rainbow}
 \alias{scale_fill_rainbow}
-\title{Paul Tol's Discrete Colour Schemes for ggplot2}
+\title{Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 
@@ -86,7 +86,7 @@ vector of colours be reversed?}
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{ggplot2} discrete scale.
+A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 }
 \description{
 Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.

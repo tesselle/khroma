@@ -14,7 +14,7 @@
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
-\title{Paul Tol's Sequential Colour Schemes for ggplot2}
+\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
 
@@ -52,7 +52,7 @@ vector of colours be reversed?}
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{ggplot2} continuous scale.
+A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 }
 \description{
 Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.

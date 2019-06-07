@@ -4,7 +4,7 @@
 \alias{scale_colour_land}
 \alias{scale_color_land}
 \alias{scale_fill_land}
-\title{AVHRR Global Land Cover Classification Colour Scheme for ggplot2}
+\title{AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}}
 \usage{
 scale_colour_land(..., aesthetics = "colour")
 
@@ -19,7 +19,7 @@ scale_fill_land(..., aesthetics = "fill")
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{ggplot2} discrete scale.
+A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 }
 \description{
 Provides the AVHRR Global Land Cover classification as modified by

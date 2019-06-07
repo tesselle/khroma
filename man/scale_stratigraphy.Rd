@@ -4,7 +4,7 @@
 \alias{scale_colour_stratigraphy}
 \alias{scale_color_stratigraphy}
 \alias{scale_fill_stratigraphy}
-\title{Geologic Timescale Colour Scheme for ggplot2}
+\title{Geologic Timescale Colour Scheme for \pkg{ggplot2}}
 \usage{
 scale_colour_stratigraphy(..., aesthetics = "colour")
 
@@ -19,7 +19,7 @@ scale_fill_stratigraphy(..., aesthetics = "fill")
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{ggplot2} discrete scale.
+A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 }
 \description{
 Provides the geologic timescale colour scheme.

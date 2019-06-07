@@ -2,7 +2,7 @@
 NULL
 
 # =========================================================== Geologic Timescale
-#' Geologic Timescale Colour Scheme for ggplot2
+#' Geologic Timescale Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the geologic timescale colour scheme.
 #' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
@@ -11,7 +11,7 @@ NULL
 #' @details Values will be matched based on the unit names.
 #' @references
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}.
-#' @return A \code{ggplot2} discrete scale.
+#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
 #' @family Themed colour schemes
@@ -40,7 +40,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 }
 
 # ========================================================================= Land
-#' AVHRR Global Land Cover Classification Colour Scheme for ggplot2
+#' AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the AVHRR Global Land Cover classification as modified by
 #' Paul Tol (colour-blind safe).
@@ -48,7 +48,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
-#' @return A \code{ggplot2} discrete scale.
+#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002.
@@ -81,7 +81,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 }
 
 # ========================================================================= Soil
-#' FAO Soil Reference Groups Colour Scheme for ggplot2
+#' FAO Soil Reference Groups Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the FAO Soil Reference Groups colour scheme.
 #' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
@@ -92,7 +92,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 #'  Europe}. Luxembourg: European Commission, Office for Official Publications
 #'  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
-#' @return A \code{ggplot2} discrete scale.
+#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
 #' @family Themed colour schemes

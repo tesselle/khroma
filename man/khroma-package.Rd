@@ -37,8 +37,8 @@ Useful links:
 \author{
 \strong{Full list of authors and contributors} (alphabetic order)
  \tabular{ll}{
-  Nicolas Frerebeau \tab \emph{IRAMAT-CRP2A, Université Bordeaux Montaigne, France} \cr
-  Brice Lebrun \tab \emph{CEREGE, Aix-Marseille Université, France}
+  Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
+  Brice Lebrun \tab \emph{Aix-Marseille Université, France}
  }
 
 \strong{Package maintainer}

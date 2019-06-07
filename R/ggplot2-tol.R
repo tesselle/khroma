@@ -3,7 +3,7 @@
 NULL
 
 # ===================================================================== Discrete
-#' Paul Tol's Discrete Colour Schemes for ggplot2
+#' Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{discrete_scale}}.
@@ -26,7 +26,7 @@ NULL
 #'   light \tab 9 \cr
 #'  }
 #' @inheritSection colour Qualitative colour schemes
-#' @return A \code{ggplot2} discrete scale.
+#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002.
@@ -177,7 +177,7 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 }
 
 # ==================================================================== Diverging
-#' Paul Tol's Diverging Colour Schemes for ggplot2
+#' Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
@@ -198,7 +198,7 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'   BuRd \tab 9 \tab #FFEE99 \cr
 #'   PRGn \tab 9 \tab #FFEE99 \cr
 #'  }
-#' @return A \code{ggplot2} continuous scale.
+#' @return A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002.
@@ -268,7 +268,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 }
 
 # =================================================================== Sequential
-#' Paul Tol's Sequential Colour Schemes for ggplot2
+#' Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
@@ -290,7 +290,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #'   smooth rainbow \tab 34 \tab #666666 \cr
 #'  }
 #' @inheritSection colour Rainbow colour scheme
-#' @return A \code{ggplot2} continuous scale.
+#' @return A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002.

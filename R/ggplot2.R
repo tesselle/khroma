@@ -2,10 +2,10 @@
 #' @include colour.R
 NULL
 
-#' Colour scale constructor
+#' Colour Scale Constructor
 #'
-#' Builds discrete or continuous scale for 'ggplot2' according to the colour
-#'  scheme used.
+#' Builds a discrete or continuous scale for \pkg{ggplot2} according to the
+#' colour scheme used.
 #' @param aesthetics The names of the aesthetics that this scale works with.
 #' @param scale_name A \code{\link{character}} string giving the name of
 #'  the palette to be used (see \code{\link{colour}}).
@@ -16,7 +16,8 @@ NULL
 #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
 #'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
 #'  qualitative data and diverging/sequential data.
-#' @return A \code{ggplot2} scale.
+#' @return A \code{\link[ggplot2:discrete_scale]{discrete}}
+#'  or \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @author N. Frerebeau
 #' @keywords internal
 scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {

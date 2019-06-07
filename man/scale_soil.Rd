@@ -4,7 +4,7 @@
 \alias{scale_colour_soil}
 \alias{scale_color_soil}
 \alias{scale_fill_soil}
-\title{FAO Soil Reference Groups Colour Scheme for ggplot2}
+\title{FAO Soil Reference Groups Colour Scheme for \pkg{ggplot2}}
 \usage{
 scale_colour_soil(..., aesthetics = "colour")
 
@@ -19,7 +19,7 @@ scale_fill_soil(..., aesthetics = "fill")
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{ggplot2} discrete scale.
+A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 }
 \description{
 Provides the FAO Soil Reference Groups colour scheme.
