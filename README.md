@@ -3,9 +3,9 @@
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/nfrerebeau/khroma?branch=master&svg=true)](https://ci.appveyor.com/project/nfrerebeau/khroma)
-[![Build
+[![Appveyor build
+status](https://ci.appveyor.com/api/projects/status/d4hib2u0jqsup0ln/branch/master?svg=true)](https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master)
+[![Travis build
 Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
 [![GitHub
