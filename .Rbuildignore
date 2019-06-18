@@ -2,6 +2,7 @@
 ^appveyor\.yml$
 ^\.travis\.yml$
 ^\.zenodo\.json$
+^codemeta\.json$
 ^\_pkgdown\.yml$
 ^cran-comments\.md$
 ^CRAN-RELEASE$
