@@ -10,6 +10,8 @@ matrix:
   include:
   - r: devel
   - r: release
+    after_success:
+    - Rscript -e 'covr::codecov()'
     before_deploy:
     - Rscript -e 'remotes::install_cran("pkgdown")'
     deploy:
@@ -30,6 +32,3 @@ env:
   global:
   # Don't treat missing suggested packages as error
   - _R_CHECK_FORCE_SUGGESTS_=false
-
-after_success:
-  - Rscript -e 'covr::codecov()'
