@@ -32,7 +32,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-`khroma` provides an implementation of Paul Tol's colour schemes, ready for each type of data, with colours that are distinct for all people, including colour-blind readers. This package also provides several thematic palettes (geologic timescale, land cover, FAO soils, etc.) with scales for `ggplot2`.
+An implementation of Paul Tol's colour schemes, ready for each type of data, with colours that are distinct for all people, including colour-blind readers. This package also provides several thematic palettes (geologic timescale, land cover, FAO soils, etc.) with scales for `ggplot2`.
 
 ## Installation
 

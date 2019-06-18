@@ -8,21 +8,28 @@ status](https://ci.appveyor.com/api/projects/status/d4hib2u0jqsup0ln/branch/mast
 [![Travis build
 Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
+
 [![GitHub
 Release](https://img.shields.io/github/release/nfrerebeau/khroma.svg)](https://github.com/nfrerebeau/khroma/releases)
 [![CRAN
 Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
 [![CRAN
 Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)
+
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
 
 ## Overview
 
-`khroma` is a utility package: it provides usefull colour schemes for
-archaeological data visualization. `khroma` provides Paul Tol’s colour
-schemes and several thematic palettes (geologic timescale, land cover,
-FAO Soil Reference Groups, etc.) with scales for `ggplot2`.
+An implementation of Paul Tol’s colour schemes, ready for each type of
+data, with colours that are distinct for all people, including
+colour-blind readers. This package also provides several thematic
+palettes (geologic timescale, land cover, FAO soils, etc.) with scales
+for `ggplot2`.
 
 ## Installation
 
