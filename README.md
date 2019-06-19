@@ -9,10 +9,10 @@ status](https://ci.appveyor.com/api/projects/status/d4hib2u0jqsup0ln/branch/mast
 Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
 
-[![GitHub
-Release](https://img.shields.io/github/release/nfrerebeau/khroma.svg)](https://github.com/nfrerebeau/khroma/releases)
 [![CRAN
 Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
+[![CRAN
+checks](https://cranchecks.info/badges/worst/khroma)](https://cran.r-project.org/web/checks/check_results_khroma.html)
 [![CRAN
 Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)
 

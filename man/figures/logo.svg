@@ -31,13 +31,13 @@
      id="namedview63"
      showgrid="false"
      units="cm"
-     inkscape:zoom="3.1685544"
-     inkscape:cx="46.374615"
-     inkscape:cy="89.230938"
+     inkscape:zoom="2.2405063"
+     inkscape:cx="-106.33589"
+     inkscape:cy="72.332345"
      inkscape:window-x="1366"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1424"
+     inkscape:current-layer="svg2"
      showguides="true"
      inkscape:guide-bbox="true" /><metadata
      id="metadata8"><rdf:RDF><cc:Work
@@ -63,12 +63,12 @@
 </defs><path
      id="path14"
      style="fill:#cccccc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.22071838"
-     d="M 0.81505715,52.381314 V 145.46248 L 81.251798,192 161.68733,145.46248 V 52.381314 L 81.251798,5.8425698 Z"
+     d="M 0,52.381311 V 145.46248 L 80.436604,192 160.872,145.46248 V 52.381311 L 80.436604,5.8425669 Z"
      inkscape:connector-curvature="0" /><g
      id="g30"
      transform="matrix(1.3333333,0,0,-1.3333333,0,191.99997)" /><g
      id="g1424"
-     transform="matrix(0.97461927,0,0,0.97461927,3.3238772,-9.746193e-7)"><path
+     transform="matrix(0.97461927,0,0,0.97461927,4.1389392,4.6715604e-7)"><path
    inkscape:connector-curvature="0"
    d="M 83.465204,-4.7932157e-7 0.9337541,47.750692 V 143.25584 L 83.465204,191.00528 165.9954,143.25584 V 47.750692 Z"
    style="fill:#1b496a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25250793"
@@ -155,5 +155,7 @@
      x="-19.507858"
      id="tspan1398"
      sodipodi:role="line">khroma</tspan></text>
+
+
 
 </g></svg>
