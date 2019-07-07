@@ -2,6 +2,7 @@
 
 export(color)
 export(colour)
+export(convert)
 export(scale_color_BuRd)
 export(scale_color_PRGn)
 export(scale_color_YlOrBr)

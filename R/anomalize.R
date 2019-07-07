@@ -14,6 +14,7 @@
 #'  SRON/EPS/TN/09-002.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @author N. Frerebeau
+#' @export
 convert <- function(x, mode) {
   fun <- function(n) { anomalize(x(n), mode = mode) }
   attributes(fun) <- attributes(x)
