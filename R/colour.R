@@ -105,7 +105,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       col <- if (palette == "discrete rainbow") {
         colours[scheme[[n]]]
       } else {
-        colours
+        colours[seq(from = 1, to = k, length.out = n)]
       }
       col <- if (names) col else unname(col)
       return(col)
