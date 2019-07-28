@@ -30,9 +30,10 @@ Imports:
     ggplot2 (>= 3.1.0),
     grDevices,
     scales (>= 1.0.0)
-Suggests: 
-    covr,
-    testthat
+Suggests:
+    covr (>= 3.2.1),
+    testthat (>= 2.1.1),
+    vdiffr (>= 0.3.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
@@ -43,3 +44,4 @@ Collate:
     'ggplot2-tol.R'
     'ggplot2.R'
     'khroma-package.R'
+    'plot.R'
