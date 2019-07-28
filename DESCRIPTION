@@ -16,9 +16,11 @@ Maintainer: Nicolas Frerebeau
     <nicolas.frerebeau@u-bordeaux-montaigne.fr>
 Description: An implementation of Paul Tol's colour schemes,
     ready for each type of data, with colours that are distinct for all
-    people, including colour-blind readers. This package also provides
-    several thematic palettes (geologic timescale, land cover, FAO soils,
-    etc.) with scales for 'ggplot2'.
+    people, including colour-blind readers. This package provides tools to
+    simulate colour-blindness and to test how well the colours are
+    identifiable. Several thematic palettes (geologic timescale, land
+    cover, FAO soils, etc.) are also implemented for use with 'graphics'
+    or 'ggplot2'.
 License: GPL-3
 URL: http://khroma.archaeo.science,
     http://github.com/nfrerebeau/khroma,
