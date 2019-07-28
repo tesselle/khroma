@@ -17,7 +17,14 @@ test_that("Schemes", {
 test_that("Diagnostic Map", {
   pdf(NULL)
   dev.control(displaylist = "enable")
-  set.seed(12345)
+  # Keep the results the same for R versions prior to 3.6
+  if (getRversion() >= "3.6") {
+    # Set sample.kind = "Rounding" to reproduce the old sampling
+    # Suppress warning "non-uniform 'Rounding' sampler used"
+    suppressWarnings(set.seed(12345, sample.kind = "Rounding"))
+  } else {
+    set.seed(12345)
+  }
   plot_map(colour("bright")(7))
   plot_map_bright <- grDevices::recordPlot()
   invisible(dev.off())
