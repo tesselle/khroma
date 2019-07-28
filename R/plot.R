@@ -32,7 +32,7 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   p <- seq(from = 1, by = 0.75, length.out = n)
   q <- 1 - 0.43 * rep(c(0, 1), length.out = n)
 
-  graphics::par(mar = c(1, 1, 1, 1) + 0.5, xaxs = "i", yaxs = "i")
+  graphics::par(mar = c(0, 0, 0, 0) + 0.1, xaxs = "i", yaxs = "i")
   graphics::plot(
     x = NULL, y = NULL,
     xlim = c(0.5, max(p) + 0.5), ylim = c(0, 1.5),
@@ -64,7 +64,7 @@ plot_map <- function(x) {
   n <- length(x) # Number of colours
   q <- floor(100 / (n + 1))
 
-  graphics::par(mar = c(1, 1, 1, 1) + 0.5, xaxs = "i", yaxs = "i")
+  graphics::par(mar = c(0, 0, 0, 0) + 0.1, xaxs = "i", yaxs = "i")
   graphics::plot(
     x = NULL, y = NULL,
     xlim = c(0, (q * (n + 1) / 2) + 1), ylim = c(0, 10.5),
