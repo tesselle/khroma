@@ -64,26 +64,26 @@ All the scales presented in Paul Tol's technical note [^1] are implemented here,
 
 #### Qualitative data
 
-```{r tol-qualitative, echo=FALSE, fig.height=2, fig.width=7, fig.align="center"}
+```{r tol-qualitative, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # Qualitative data
 plot_scheme(colour("bright")(7))
-plot_scheme(colour("contrast")(3))
 plot_scheme(colour("vibrant")(7))
 plot_scheme(colour("muted")(9))
+plot_scheme(colour("light")(9))
 ```
 
 #### Diverging data
 
-```{r tol-diverging, echo=FALSE, fig.height=2, fig.width=7, fig.align="center"}
+```{r tol-diverging, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # Diverging data
+plot_scheme(colour("sunset")(11))
 plot_scheme(colour("BuRd")(9))
 plot_scheme(colour("PRGn")(9))
-plot_scheme(colour("sunset")(11))
 ```
 
 #### Sequential data
 
-```{r tol-sequential, echo=FALSE, fig.height=2, fig.width=7, fig.align="center"}
+```{r tol-sequential, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # Sequential data
 plot_scheme(colour("YlOrBr")(9))
 plot_scheme(colour("iridescent")(23))
@@ -104,19 +104,23 @@ More will be added in future releases (suggestions are welcome).
 
 Test how well the colours are identifiable (*bright* colour scheme):
 
-```{r diagnostic, echo=FALSE, fig.height=2, fig.width=7, fig.align="center"}
+```{r diagnostic, fig.height=2, fig.width=7, fig.align='center'}
 plot_map(colour("bright")(7))
 ```
 
-Simulate colour-blindness (*bright* colour scheme; from left to right and from top to bottom: deuteranopia, protanopia, tritanopia and achromatopsia):
+Simulate colour-blindness (*bright* colour scheme; from top to bottom: deuteranopia, protanopia, tritanopia and achromatopsia):
 
-```{r anomalize, echo=FALSE, fig.height=7, fig.width=7, fig.align="center"}
+```{r anomalize, fig.height=2, fig.width=7, fig.align='center', fig.show='hold'}
 palette <- colour("bright")
-par(mfrow = c(2, 2))
-scales::show_col(convert(palette, mode = "deuteranopia")(7))
-scales::show_col(convert(palette, mode = "protanopia")(7))
-scales::show_col(convert(palette, mode = "tritanopia")(7))
-scales::show_col(convert(palette, mode = "achromatopsia")(7))
+deuteranopia <- convert(palette, mode = "deuteranopia")
+protanopia <- convert(palette, mode = "protanopia")
+tritanopia <- convert(palette, mode = "tritanopia")
+achromatopsia <- convert(palette, mode = "achromatopsia")
+
+plot_scheme(deuteranopia(7), colours = TRUE)
+plot_scheme(protanopia(7), colours = TRUE)
+plot_scheme(tritanopia(7), colours = TRUE)
+plot_scheme(achromatopsia(7), colours = TRUE)
 ```
 
 [^1]: Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.

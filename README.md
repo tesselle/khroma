@@ -90,13 +90,29 @@ More will be added in future releases (suggestions are welcome).
 Test how well the colours are identifiable (*bright* colour
 scheme):
 
+``` r
+plot_map(colour("bright")(7))
+```
+
 <img src="man/figures/README-diagnostic-1.png" style="display: block; margin: auto;" />
 
-Simulate colour-blindness (*bright* colour scheme; from left to right
-and from top to bottom: deuteranopia, protanopia, tritanopia and
-achromatopsia):
+Simulate colour-blindness (*bright* colour scheme; from top to bottom:
+deuteranopia, protanopia, tritanopia and achromatopsia):
 
-<img src="man/figures/README-anomalize-1.png" style="display: block; margin: auto;" />
+``` r
+palette <- colour("bright")
+deuteranopia <- convert(palette, mode = "deuteranopia")
+protanopia <- convert(palette, mode = "protanopia")
+tritanopia <- convert(palette, mode = "tritanopia")
+achromatopsia <- convert(palette, mode = "achromatopsia")
+
+plot_scheme(deuteranopia(7), colours = TRUE)
+plot_scheme(protanopia(7), colours = TRUE)
+plot_scheme(tritanopia(7), colours = TRUE)
+plot_scheme(achromatopsia(7), colours = TRUE)
+```
+
+<img src="man/figures/README-anomalize-1.png" style="display: block; margin: auto;" /><img src="man/figures/README-anomalize-2.png" style="display: block; margin: auto;" /><img src="man/figures/README-anomalize-3.png" style="display: block; margin: auto;" /><img src="man/figures/README-anomalize-4.png" style="display: block; margin: auto;" />
 
 1.  Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note
     No. SRON/EPS/TN/09-002. URL:
