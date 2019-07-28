@@ -76,7 +76,7 @@ plot_scheme(colour("light")(9))
 
 ```{r tol-diverging, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # Diverging data
-plot_scheme(colour("sunset")(11))
+plot_scheme(colour("sunset")(9))
 plot_scheme(colour("BuRd")(9))
 plot_scheme(colour("PRGn")(9))
 ```
@@ -86,8 +86,8 @@ plot_scheme(colour("PRGn")(9))
 ```{r tol-sequential, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # Sequential data
 plot_scheme(colour("YlOrBr")(9))
-plot_scheme(colour("iridescent")(23))
-plot_scheme(colour("smooth rainbow")(34))
+plot_scheme(colour("iridescent")(9))
+plot_scheme(colour("smooth rainbow")(9))
 ```
 
 ### Scientific colour schemes
