@@ -13,6 +13,8 @@ test_that("Schemes", {
                                   plot_scheme_bright)
     }
   }
+
+  expect_error(plot_scheme(1:5), "x must be a character vector of colours.")
 })
 test_that("Diagnostic Map", {
   pdf(NULL)
@@ -29,4 +31,6 @@ test_that("Diagnostic Map", {
   plot_map_bright <- grDevices::recordPlot()
   invisible(dev.off())
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
+
+  expect_error(plot_map(1:5), "x must be a character vector of colours.")
 })

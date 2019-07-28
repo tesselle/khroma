@@ -98,9 +98,7 @@ plot_map <- function(x) {
 #' @noRd
 draw_mosaic <- function(rows = 19, columns = 10, border = NULL, fill = NA,
                         offset = 0) {
-  if (length(fill) == 1) {
-    fill <- rep(fill, time = rows * columns)
-  }
+  fill <- rep(fill, length.out = rows * columns)
   k <- 1
   for (i in seq_len(rows)) { # Loop over lines
     even <- i %% 2 == 0
@@ -118,17 +116,17 @@ draw_mosaic <- function(rows = 19, columns = 10, border = NULL, fill = NA,
   }
 }
 
-draw_diamond <- function(x = 0, y = 0, width = 0.5, height = 1,
-                         border = NULL, fill = NA) {
-  half_width <- width / 2
-  half_height <- height / 2
-  graphics::polygon(
-    x = c(x - half_width, x, x + half_width, x),
-    y = c(y, y + half_height, y, y - half_height),
-    border = border,
-    col = fill
-  )
-}
+# draw_diamond <- function(x = 0, y = 0, width = 0.5, height = 1,
+#                          border = NULL, fill = NA) {
+#   half_width <- width / 2
+#   half_height <- height / 2
+#   graphics::polygon(
+#     x = c(x - half_width, x, x + half_width, x),
+#     y = c(y, y + half_height, y, y - half_height),
+#     border = border,
+#     col = fill
+#   )
+# }
 draw_hexagon <- function(x = 0, y = 0, r = 0.5, border = NULL, fill = NA) {
   vertices <- seq_len(6)
   graphics::polygon(
