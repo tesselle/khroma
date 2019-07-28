@@ -9,6 +9,8 @@ test_that("Schemes", {
       plot_scheme(colour("bright")(7), colours = i, names = j)
       plot_scheme_bright <- grDevices::recordPlot()
       invisible(dev.off())
+
+      skip_if(getRversion() < "3.2")
       vdiffr::expect_doppelganger(paste0("scheme_bright_", i, j),
                                   plot_scheme_bright)
     }
@@ -30,6 +32,8 @@ test_that("Diagnostic Map", {
   plot_map(colour("bright")(7))
   plot_map_bright <- grDevices::recordPlot()
   invisible(dev.off())
+
+  skip_if(getRversion() < "3.2")
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
 
   expect_error(plot_map(1:5), "x must be a character vector of colours.")
