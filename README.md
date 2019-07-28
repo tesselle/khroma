@@ -27,9 +27,10 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 An implementation of Paul Tol’s colour schemes, ready for each type of
 data, with colours that are distinct for all people, including
-colour-blind readers. This package also provides several thematic
-palettes (geologic timescale, land cover, FAO soils, etc.) with scales
-for `ggplot2`.
+colour-blind readers. This package provides tools to simulate
+colour-blindness and to test how well the colours are identifiable.
+Several thematic palettes (geologic timescale, land cover, FAO soils,
+etc.) are also implemented for use with `graphics` or `ggplot2`.
 
 ## Installation
 
@@ -58,20 +59,21 @@ with colours that are:
   - Distinct on screen and paper.
   - Matching well together.
 
-All the scales presented in his 2018 technical note \[1\] are
-implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in Paul Tol’s technical note \[1\] are
+implemented here, for use with `graphics` or
+`ggplot2`.
 
 #### Qualitative data
 
-![](man/figures/README-tol-qualitative-1.png)<!-- -->
+<img src="man/figures/README-tol-qualitative-1.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-qualitative-2.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-qualitative-3.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-qualitative-4.png" style="display: block; margin: auto;" />
 
 #### Diverging data
 
-![](man/figures/README-tol-diverging-1.png)<!-- -->
+<img src="man/figures/README-tol-diverging-1.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-diverging-2.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-diverging-3.png" style="display: block; margin: auto;" />
 
 #### Sequential data
 
-![](man/figures/README-tol-sequential-1.png)<!-- -->
+<img src="man/figures/README-tol-sequential-1.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-sequential-2.png" style="display: block; margin: auto;" /><img src="man/figures/README-tol-sequential-3.png" style="display: block; margin: auto;" />
 
 ### Scientific colour schemes
 
@@ -82,6 +84,19 @@ The following scientific colour schemes are available:
   - FAO Soil Reference Groups.
 
 More will be added in future releases (suggestions are welcome).
+
+### Diagnostic tools
+
+Test how well the colours are identifiable (*bright* colour
+scheme):
+
+<img src="man/figures/README-diagnostic-1.png" style="display: block; margin: auto;" />
+
+Simulate colour-blindness (*bright* colour scheme; from left to right
+and from top to bottom: deuteranopia, protanopia, tritanopia and
+achromatopsia):
+
+<img src="man/figures/README-anomalize-1.png" style="display: block; margin: auto;" />
 
 1.  Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note
     No. SRON/EPS/TN/09-002. URL:
