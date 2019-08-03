@@ -1,6 +1,6 @@
 Package: khroma
-Title: Colour Schemes for Archaeological Data Visualization
-Version: 1.1.3.9000
+Title: Colour Schemes for Scientific Data Visualization
+Version: 1.1.4
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
@@ -14,13 +14,14 @@ Authors@R:
              comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685")))
 Maintainer: Nicolas Frerebeau
     <nicolas.frerebeau@u-bordeaux-montaigne.fr>
-Description: An implementation of Paul Tol's colour schemes,
-    ready for each type of data, with colours that are distinct for all
-    people, including colour-blind readers. This package provides tools to
-    simulate colour-blindness and to test how well the colours are
-    identifiable. Several thematic palettes (geologic timescale, land
-    cover, FAO soils, etc.) are also implemented for use with 'graphics'
-    or 'ggplot2'.
+Description: An implementation of Paul Tol's colour schemes for
+    use with 'graphics' or 'ggplot2'. These schemes are ready for each
+    type of data (qualitative, diverging or sequential), with colours that
+    are distinct for all people, including colour-blind readers. This
+    package provides tools to simulate colour-blindness and to test how
+    well the colours of any palette are identifiable. Several scientific
+    thematic schemes (geologic timescale, land cover, FAO soils, etc.) are
+    also implemented.
 License: GPL-3
 URL: http://khroma.archaeo.science,
     http://github.com/nfrerebeau/khroma,
