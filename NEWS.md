@@ -5,7 +5,21 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-<!-- # khroma 1.1.2.9000 (2019-06-03) -->
+<!-- # khroma 1.1.3.9000 (2019-08-03) -->
+
+# khroma 1.1.4 (release date: 2019-08-05)
+
+## New functions
+
+  - Add the `convert()` function to simulate colour-blind vision.
+  - Add the `plot_scheme()` function shows colours in a plot.
+  - Add the `plot_map()` function produces a diagnostic map for a given
+    colour scheme.
+
+## Bugfixes & changes
+
+  - Fix the argument (number of levels) of the palette function returned
+    by `colour()`.
 
 # khroma 1.1.3 (release date: 2019-06-05)
 
