@@ -43,11 +43,12 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
     even <- i %% 2 == 0
     draw_hexagon(x = p[[i]], y = q[[i]], r = 0.5, border = NULL, fill = x[[i]])
   }
+  delta <- ifelse(colours && names && !is.null(names(x)), 0.1, 0)
   if (colours) {
-    graphics::text(x = p, y = q - 0.1 * info, labels = x, cex = size)
+    graphics::text(x = p, y = q - delta * info, labels = x, cex = size)
   }
   if (names && !is.null(names(x))) {
-    graphics::text(x = p, y = q + 0.1 * info, labels = names(x), cex = size)
+    graphics::text(x = p, y = q + delta * info, labels = names(x), cex = size)
   }
 }
 
