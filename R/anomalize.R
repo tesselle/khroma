@@ -1,13 +1,16 @@
 #' Simulate Colour-Blindness
 #'
 #' @param x A palette \code{\link{function}} that when called with a single
-#'  integer argument (the number of levels) returns a vector of colours.
+#'  integer argument (the number of levels) returns a vector of colours
+#'  (see \code{\link{colour}}).
 #' @param mode A \code{\link{character}} string giving the colour-blind vision
 #'  to be used. It must be one of "\code{deuteranopia}", "\code{protanopia}",
 #'  "\code{tritanopia}" or "\code{achromatopsia}".
 #'  Any unambiguous substring can be given.
 #' @return A palette \code{\link{function}} that returns a vector of anomalized
-#'  colours.
+#'  colours. All the attibutes of the initial palette function are inherited,
+#'  with a supplementary attribute "\code{mode}" giving the corresponding
+#'  colour-blind vision.
 #' @example inst/examples/ex-anomalize.R
 #' @references
 #'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.

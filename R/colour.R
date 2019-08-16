@@ -3,10 +3,10 @@
 #' Provides qualitative, diverging and sequential colour schemes.
 #' @param palette A \code{\link{character}} string giving the name of
 #'  the palette to be used (see below).
-#' @param reverse A \code{\link{logical}} scalar specifying if the resulting
-#'  vector of colours should be reversed.
-#' @param names A \code{\link{logical}} scalar specifying if the names of the
-#'  colours should be kept in the resulting vector.
+#' @param reverse A \code{\link{logical}} scalar: should the resulting
+#'  vector of colours should be reversed?
+#' @param names A \code{\link{logical}} scalar: should the names of the
+#'  colours should be kept in the resulting vector?
 #' @param ... Further arguments passed to
 #'  \code{\link[grDevices]{colorRampPalette}}.
 #' @section Paul Tol's Colour Schemes:
@@ -60,8 +60,22 @@
 #'   \item{land}{AVHRR Global Land Cover Classification (14 colours).}
 #'   \item{soil}{FAO Reference Soil Groups (24 colours).}
 #'  }
-#' @return A palette function that when called with a single integer argument
-#'  (the number of levels) returns a vector of colours.
+#' @return A palette function with the following attributes, that when called
+#'  with a single integer argument (the number of levels) returns a (named)
+#'  vector of colours.
+#'  \describe{
+#'   \item{name}{A \code{\link{character}} string giving the name of the colour
+#'   scheme.}
+#'   \item{type}{A \code{\link{character}} string giving the corresponding
+#'   data type. One of "\code{qualitative}", "\code{diverging}" or
+#'   "\code{sequential}".}
+#'   \item{interpolate}{A \code{\link{logical}} scalar: can the color palette be
+#'   interpolated?}
+#'   \item{missing}{A \code{\link{character}} string giving the the hexadecimal
+#'   representation of the colour that should be used for \code{NA} values.}
+#'   \item{max}{An \code{\link{integer}} giving the maximum number of colour
+#'   values. Only relevant for non-interpolated colour schemes.}
+#'  }
 #' @references
 #'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 #'  Europe}. Luxembourg: European Commission, Office for Official Publications
@@ -111,6 +125,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       return(col)
     }
   }
+  attr(fun, "name") <- palette
   attr(fun, "type") <- type
   attr(fun, "interpolate") <- as.logical(interpolate)
   attr(fun, "missing") <- missing

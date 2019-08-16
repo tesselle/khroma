@@ -13,18 +13,32 @@ color(palette, reverse = FALSE, names = TRUE, ...)
 \item{palette}{A \code{\link{character}} string giving the name of
 the palette to be used (see below).}
 
-\item{reverse}{A \code{\link{logical}} scalar specifying if the resulting
-vector of colours should be reversed.}
+\item{reverse}{A \code{\link{logical}} scalar: should the resulting
+vector of colours should be reversed?}
 
-\item{names}{A \code{\link{logical}} scalar specifying if the names of the
-colours should be kept in the resulting vector.}
+\item{names}{A \code{\link{logical}} scalar: should the names of the
+colours should be kept in the resulting vector?}
 
 \item{...}{Further arguments passed to
 \code{\link[grDevices]{colorRampPalette}}.}
 }
 \value{
-A palette function that when called with a single integer argument
- (the number of levels) returns a vector of colours.
+A palette function with the following attributes, that when called
+ with a single integer argument (the number of levels) returns a (named)
+ vector of colours.
+ \describe{
+  \item{name}{A \code{\link{character}} string giving the name of the colour
+  scheme.}
+  \item{type}{A \code{\link{character}} string giving the corresponding
+  data type. One of "\code{qualitative}", "\code{diverging}" or
+  "\code{sequential}".}
+  \item{interpolate}{A \code{\link{logical}} scalar: can the color palette be
+  interpolated?}
+  \item{missing}{A \code{\link{character}} string giving the the hexadecimal
+  representation of the colour that should be used for \code{NA} values.}
+  \item{max}{An \code{\link{integer}} giving the maximum number of colour
+  values. Only relevant for non-interpolated colour schemes.}
+ }
 }
 \description{
 Provides qualitative, diverging and sequential colour schemes.
