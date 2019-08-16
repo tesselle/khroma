@@ -122,3 +122,6 @@ The following scientific colour schemes are available:
 * FAO Soil Reference Groups.
 
 More will be added in future releases ([suggestions are welcome](https://github.com/nfrerebeau/khroma/issues)).
+
+## Contributing
+Please note that the 'khroma' project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.

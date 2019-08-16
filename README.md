@@ -167,6 +167,12 @@ The following scientific colour schemes are available:
 More will be added in future releases ([suggestions are
 welcome](https://github.com/nfrerebeau/khroma/issues)).
 
+## Contributing
+
+Please note that the ‘khroma’ project is released with a [Contributor
+Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this
+project, you agree to abide by its terms.
+
 1.  Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note
     No. SRON/EPS/TN/09-002. URL:
     <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
