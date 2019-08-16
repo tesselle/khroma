@@ -1,0 +1,173 @@
+---
+title: "Paul Tol's Colour Schemes"
+author: "N. Frerebeau"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    number_sections: yes
+    fig_caption: yes
+    toc: true
+bibliography: bibliography.bib
+vignette: >
+  %\VignetteIndexEntry{Paul Tol's Colour Schemes}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+ fig.align = "center"
+)
+```
+
+```{r setup}
+library(khroma)
+```
+
+# Introduction
+@tol2018 offers carefully chosen schemes, ready for each type of data, with colours that are:
+
+* Distinct for all people, including colour-blind readers.
+* Distinct from black and white.
+* Distinct on screen and paper.
+* Matching well together.
+
+All the scales presented in Paul Tol's technical note are implemented here, for use with `graphics` or `ggplot2`.
+
+# Qualitative data
+According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* colour schemes are colour-blind safe.
+
+The *light* colour scheme is reasonably distinct for both normal or colour-blind vision and is intended to fill labelled cells.
+
+The *pale* and *dark* schemes are not very distinct in either normal or colour-blind vision and should be used as a text background or to highlight a cell in a table.
+
+The qualitative colour schemes must be used as given (no interpolation): colours are picked up to the maximum number of supported values. Refer to the original document for details about the recommended uses (see references).
+
+| Scheme   | Max. colours |
+|:---------|-------------:|
+| bright   | 7            |
+| contrast | 3            |
+| vibrant  | 7            |
+| muted    | 9            |
+| pale     | 6            |
+| dark     | 6            |
+| light    | 9            |
+
+## *bright*
+```{r tol_quali_bright, fig.height = 2, fig.width = 7}
+bright <- colour("bright")
+
+plot_scheme(bright(7), colours = TRUE, names = TRUE, size = 0.9)
+plot_map(bright(7))
+```
+
+## *contrast*
+```{r tol_quali_contrast, fig.height = 2, fig.width = 7}
+contrast <- colour("contrast")
+
+plot_scheme(contrast(3), colours = TRUE, names = TRUE, size = 0.9)
+plot_map(contrast(3))
+```
+
+## *vibrant*
+```{r tol_quali_vibrant, fig.height=2, fig.width=7}
+vibrant <- colour("vibrant")
+
+plot_scheme(vibrant(7), colours = TRUE, names = TRUE, size = 0.9)
+plot_map(vibrant(7))
+```
+
+## *muted*
+```{r tol_quali_muted, fig.height=2, fig.width=7}
+muted <- colour("muted")
+
+plot_scheme(muted(9), colours = TRUE, names = TRUE, size = 0.9)
+plot_map(muted(9))
+```
+
+## *pale* and *dark*
+```{r tol_quali_pale_dark, fig.height=2, fig.width=7}
+pale <- colour("pale")
+dark <- colour("dark")
+
+plot_scheme(pale(6), colours = TRUE, names = TRUE, size = 0.9)
+plot_scheme(dark(6), colours = TRUE, names = TRUE, size = 0.9)
+```
+
+## *light*
+```{r tol_quali_light, fig.height=2, fig.width=7}
+light <- colour("light")
+
+plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
+plot_map(light(9))
+```
+
+# Diverging data
+## *sunset*
+```{r tol_div_sunset, fig.height=2, fig.width=7}
+sunset <- colour("sunset")
+
+plot_scheme(sunset(9), colours = TRUE, size = 0.9)
+plot_map(sunset(9))
+```
+
+## *BuRd*
+```{r tol_div_BuRd, fig.height=2, fig.width=7}
+BuRd <- colour("BuRd")
+
+plot_scheme(BuRd(9), colours = TRUE, size = 0.9)
+plot_map(BuRd(9))
+```
+
+## *PRGn*
+```{r tol_div_PRGn, fig.height=2, fig.width=7}
+PRGn <- colour("PRGn")
+
+plot_scheme(PRGn(9), colours = TRUE, size = 0.9)
+plot_map(PRGn(9))
+```
+
+# Sequential data
+## *YlOrBr*
+```{r tol_seq_YlOrBr, fig.height=2, fig.width=7}
+YlOrBr <- colour("YlOrBr")
+
+plot_scheme(YlOrBr(9), colours = TRUE, size = 0.9)
+plot_map(YlOrBr(9))
+```
+
+## *iridescent*
+```{r tol_seq_iridescent, fig.height=2, fig.width=7}
+iridescent <- colour("iridescent")
+
+plot_scheme(iridescent(9), colours = TRUE, size = 0.9)
+plot_map(iridescent(9))
+```
+
+## *rainbow*
+As a general rule, ordered data should not be represented using a rainbow scheme. There are three main arguments against such use [@tol2018]:
+
+* The spectral order of visible light carries no inherent magnitude message.
+* Some bands of almost constant hue with sharp transitions between them, can be perceived as jumps in the data.
+* Colour-blind people have difficulty distinguishing some colours of the rainbow.
+
+If such use cannot be avoided, Paul Tol's technical note provides two colour schemes that are reasonably clear in colour-blind vision. To remain colour-blind safe, these two schemes must comply with the following conditions:
+
+*discrete rainbow*
+: This scheme must not be interpolated.
+
+*smooth rainbow*
+: This scheme does not have to be used over the full range.
+
+```{r tol_seq_rainbow, fig.height=2, fig.width=7}
+discrete_rainbow <- colour("discrete rainbow")
+
+plot_scheme(discrete_rainbow(12), colours = TRUE, size = 0.7)
+plot_map(discrete_rainbow(12))
+```
+
+# References
