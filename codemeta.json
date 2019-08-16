@@ -128,7 +128,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 3.1"
+      "version": ">= 3.2"
     },
     {
       "@type": "SoftwareApplication",
@@ -164,7 +164,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "496.321KB",
+  "fileSize": "377.2KB",
   "contIntegration": [
     "https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master",
     "https://travis-ci.org/nfrerebeau/khroma",
