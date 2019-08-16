@@ -13,7 +13,6 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = NULL
 )
-library(khroma)
 ```
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
@@ -33,11 +32,11 @@ library(khroma)
 
 ## Overview
 
-Color blindness affects a large number of individuals ^[As many as 8 percent of men and 0.5 percent of women with Northern European ancestry have the common form of red-green color blindness.]. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
+Color blindness affects a large number of individuals. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Paul Tol's colour schemes ^[Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.]. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may be interested in the [`colorblindr`](https://github.com/clauswilke/colorblindr) package.
+This R package provides an implementation of Paul Tol's colour schemes ^[Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.]. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [`colorblindr`](https://github.com/clauswilke/colorblindr) package.
 
-For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented. Note that these colour schemes may not be colour-blind safe.
+For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these colour schemes may not be colour-blind safe.
 
 All these colour schemes are implemented for use with base R `graphics` or [`ggplot2`](https://github.com/tidyverse/ggplot2).
 
@@ -57,8 +56,50 @@ devtools::install_github("nfrerebeau/khroma")
 ```
 
 ## Usage
-### Paul Tol's Colour Schemes
+### Colour palettes and scales
+```{r usage, fig.height=2, fig.width=7, fig.align='center'}
+library(khroma)
 
+# colour() returns a palette function
+bright <- colour("bright")
+# that when called with a single integer argument returns a vector of colours
+bright(7)
+
+# Show the colour palette
+plot_scheme(bright(7), colours = TRUE)
+```
+
+```{r usage-ggplot2, fig.height=3.5, fig.width=5, fig.align='center'}
+library(ggplot2)
+
+# Use with ggplot2
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
+  geom_point() +
+  scale_colour_bright()
+```
+
+### Diagnostic tools
+```{r usage-colourblind, fig.height=2, fig.width=7, fig.align='center'}
+# Test how well the colours are identifiable
+plot_map(bright(7))
+
+# Simulate colour-blindness
+# convert() returns a modified palette function
+deuteranopia <- convert(bright, mode = "deuteranopia")
+plot_scheme(deuteranopia(7), colours = TRUE)
+
+protanopia <- convert(bright, mode = "protanopia")
+plot_scheme(protanopia(7), colours = TRUE)
+
+tritanopia <- convert(bright, mode = "tritanopia")
+plot_scheme(tritanopia(7), colours = TRUE)
+
+achromatopsia <- convert(bright, mode = "achromatopsia")
+plot_scheme(achromatopsia(7), colours = TRUE)
+```
+
+## Colour Schemes
+### Paul Tol's Colour Schemes
 Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
 
 * Distinct for all people, including colour-blind readers.
@@ -68,43 +109,16 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 
 All the scales presented in Paul Tol's technical note are implemented here, for use with `graphics` or `ggplot2`. Refer to the original document for details about the recommended uses.
 
-See the vignette for a complete overview:
+See the vignette for a more complete overview:
 ```{r tol-vignette, eval=FALSE}
 utils::vignette("tol")
 ```
 
 ### Scientific colour schemes
-
 The following scientific colour schemes are available:
 
 * International Chronostratigraphic Chart.
 * AVHRR Global Land Cover Classification.
 * FAO Soil Reference Groups.
 
-More will be added in future releases (suggestions are welcome).
-
-### Diagnostic tools
-
-Test how well the colours are identifiable:
-
-```{r diagnostic, fig.height=2, fig.width=7, fig.align='center'}
-# Paul Tol's "bright" colour scheme
-# colour() returns a palette function
-bright <- colour("bright")
-
-plot_map(bright(7))
-```
-
-Simulate colour-blindness (from top to bottom: deuteranopia, protanopia, tritanopia and achromatopsia):
-
-```{r anomalize, fig.height=2, fig.width=7, fig.align='center', fig.show='hold'}
-deuteranopia <- convert(bright, mode = "deuteranopia")
-protanopia <- convert(bright, mode = "protanopia")
-tritanopia <- convert(bright, mode = "tritanopia")
-achromatopsia <- convert(bright, mode = "achromatopsia")
-
-plot_scheme(deuteranopia(7), colours = TRUE)
-plot_scheme(protanopia(7), colours = TRUE)
-plot_scheme(tritanopia(7), colours = TRUE)
-plot_scheme(achromatopsia(7), colours = TRUE)
-```
+More will be added in future releases ([suggestions are welcome](https://github.com/nfrerebeau/khroma/issues)).

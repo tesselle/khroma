@@ -42,7 +42,7 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
   mode <- match.arg(mode, several.ok = FALSE)
 
   # Convert to RGB colour code
-  RGB1 <- grDevices::col2rgb(x)
+  RGB1 <- grDevices::col2rgb(x, alpha = FALSE)
   # Convert colours from the RGB color space to the LMS color space
   ## http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html
   RGB_to_XYZ <- matrix(

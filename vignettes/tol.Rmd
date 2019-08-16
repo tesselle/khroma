@@ -36,7 +36,7 @@ library(khroma)
 * Distinct on screen and paper.
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in Paul Tol's technical note are implemented here, for use with base R `graphics` or `ggplot2`.
 
 # Qualitative data
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* colour schemes are colour-blind safe.
