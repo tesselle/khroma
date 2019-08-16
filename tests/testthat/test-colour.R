@@ -13,6 +13,7 @@ test_that("Palette colours", {
 
     expect_type(colour(palettes[i])(n[i]), "character")
     expect_length(colour(palettes[i])(n[i]), n[i])
+    expect_type(attr(colour(palettes[i]), "name"), "character")
     expect_type(attr(colour(palettes[i]), "type"), "character")
     expect_type(attr(colour(palettes[i]), "interpolate"), "logical")
     expect_type(attr(colour(palettes[i]), "missing"), "character")
@@ -79,4 +80,15 @@ test_that("Colour-blind", {
                               "#61D0D0", "#A13B3B", "#BABBBA"))
   expect_equivalent(ach(7), c("#A2A2A2", "#777777", "#3B3B3C", "#535353",
                               "#E7E7E7", "#707070", "#BABABB"))
+})
+test_that("Colour-blind attributes", {
+  palette <- colour("bright")
+  protanopia <- convert(palette, mode = "protanopia")
+
+  expect_equivalent(attr(protanopia, "name"), "bright")
+  expect_equivalent(attr(protanopia, "type"), "qualitative")
+  expect_false(attr(protanopia, "interpolate"))
+  expect_true(is.na(attr(protanopia, "missing")))
+  expect_equivalent(attr(protanopia, "max"), 7)
+  expect_equivalent(attr(protanopia, "mode"), "protanopia")
 })
