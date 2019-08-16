@@ -6,7 +6,7 @@ editor_options:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r, echo=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -33,19 +33,25 @@ library(khroma)
 
 ## Overview
 
-An implementation of Paul Tol's colour schemes for use with `graphics` or `ggplot2`. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.
+Color blindness affects a large number of individuals ^[As many as 8 percent of men and 0.5 percent of women with Northern European ancestry have the common form of red-green color blindness.]. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
+
+This R package provides an implementation of Paul Tol's colour schemes ^[Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.]. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may be interested in the [`colorblindr`](https://github.com/clauswilke/colorblindr) package.
+
+For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented. Note that these colour schemes may not be colour-blind safe.
+
+All these colour schemes are implemented for use with base R `graphics` or [`ggplot2`](https://github.com/tidyverse/ggplot2).
 
 ## Installation
 
 Install the released version of `khroma` from CRAN:
 
-```{r cran-installation, eval = FALSE}
+```{r cran-installation, eval=FALSE}
 install.packages("khroma")
 ```
 
 Or install the development version from GitHub with:
 
-```{r gh-installation, eval = FALSE}
+```{r gh-installation, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("nfrerebeau/khroma")
 ```
@@ -60,34 +66,11 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 * Distinct on screen and paper.
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note [^1] are implemented here, for use with `graphics` or `ggplot2`.
+All the scales presented in Paul Tol's technical note are implemented here, for use with `graphics` or `ggplot2`. Refer to the original document for details about the recommended uses.
 
-#### Qualitative data
-
-```{r tol-qualitative, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
-# Qualitative data
-plot_scheme(colour("bright")(7))
-plot_scheme(colour("vibrant")(7))
-plot_scheme(colour("muted")(9))
-plot_scheme(colour("light")(9))
-```
-
-#### Diverging data
-
-```{r tol-diverging, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
-# Diverging data
-plot_scheme(colour("sunset")(9))
-plot_scheme(colour("BuRd")(9))
-plot_scheme(colour("PRGn")(9))
-```
-
-#### Sequential data
-
-```{r tol-sequential, echo=FALSE, fig.height=2, fig.width=7, fig.align='center'}
-# Sequential data
-plot_scheme(colour("YlOrBr")(9))
-plot_scheme(colour("iridescent")(9))
-plot_scheme(colour("smooth rainbow")(9))
+See the vignette for a complete overview:
+```{r tol-vignette, eval=FALSE}
+utils::vignette("tol")
 ```
 
 ### Scientific colour schemes
@@ -102,25 +85,26 @@ More will be added in future releases (suggestions are welcome).
 
 ### Diagnostic tools
 
-Test how well the colours are identifiable (*bright* colour scheme):
+Test how well the colours are identifiable:
 
 ```{r diagnostic, fig.height=2, fig.width=7, fig.align='center'}
-plot_map(colour("bright")(7))
+# Paul Tol's "bright" colour scheme
+# colour() returns a palette function
+bright <- colour("bright")
+
+plot_map(bright(7))
 ```
 
-Simulate colour-blindness (*bright* colour scheme; from top to bottom: deuteranopia, protanopia, tritanopia and achromatopsia):
+Simulate colour-blindness (from top to bottom: deuteranopia, protanopia, tritanopia and achromatopsia):
 
 ```{r anomalize, fig.height=2, fig.width=7, fig.align='center', fig.show='hold'}
-palette <- colour("bright")
-deuteranopia <- convert(palette, mode = "deuteranopia")
-protanopia <- convert(palette, mode = "protanopia")
-tritanopia <- convert(palette, mode = "tritanopia")
-achromatopsia <- convert(palette, mode = "achromatopsia")
+deuteranopia <- convert(bright, mode = "deuteranopia")
+protanopia <- convert(bright, mode = "protanopia")
+tritanopia <- convert(bright, mode = "tritanopia")
+achromatopsia <- convert(bright, mode = "achromatopsia")
 
 plot_scheme(deuteranopia(7), colours = TRUE)
 plot_scheme(protanopia(7), colours = TRUE)
 plot_scheme(tritanopia(7), colours = TRUE)
 plot_scheme(achromatopsia(7), colours = TRUE)
 ```
-
-[^1]: Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
