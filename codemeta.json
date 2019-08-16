@@ -15,7 +15,7 @@
   ],
   "issueTracker": "http://github.com/nfrerebeau/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -164,7 +164,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "377.2KB",
+  "fileSize": "377.555KB",
   "contIntegration": [
     "https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master",
     "https://travis-ci.org/nfrerebeau/khroma",
@@ -188,9 +188,9 @@
           "familyName": "Frerebeau"
         }
       ],
-      "name": "{khroma}: Colour Schemes for Archaeological Data Visualization",
+      "name": "{khroma}: Colour Schemes for Scientific Data Visualization",
       "url": "https://doi.org/10.5281/zenodo.1472077",
-      "description": "R package version 1.1.4"
+      "description": "R package version 1.2.0"
     }
   ]
 }

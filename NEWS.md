@@ -5,9 +5,9 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-<!-- # khroma 1.1.3.9000 (2019-08-03) -->
+<!-- # khroma 1.1.4 (2019-08-16) -->
 
-# khroma 1.1.4 (release date: 2019-08-05)
+# khroma 1.2.0 (current release)
 
 ## New functions
 
@@ -20,6 +20,11 @@
 
   - Fix the argument (number of levels) of the palette function returned
     by `colour()`.
+
+## Enhancements
+
+  - Add a vignette for Paul Tol’s colour schemes.
+  - Add a code of conduct.
 
 # khroma 1.1.3 (release date: 2019-06-05)
 

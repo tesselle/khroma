@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```
 
 <!-- # khroma `r utils::packageVersion("khroma")` (`r Sys.Date()`) -->
-# khroma 1.1.4 (release date: 2019-08-05)
+# khroma 1.2.0 (current release)
 ## New functions
 * Add the `convert()` function to simulate colour-blind vision.
 * Add the `plot_scheme()` function shows colours in a plot.
@@ -25,6 +25,10 @@ knitr::opts_chunk$set(
 
 ## Bugfixes & changes
 * Fix the argument (number of levels) of the palette function returned by `colour()`.
+
+## Enhancements
+* Add a vignette for Paul Tol's colour schemes.
+* Add a code of conduct.
 
 # khroma 1.1.3 (release date: 2019-06-05)
 ## New functions
