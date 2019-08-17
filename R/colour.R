@@ -92,9 +92,9 @@
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   # Validation
-  palette <- match.arg(palette, names(palettes), several.ok = FALSE)
+  palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   # Get colours
-  col_scheme <- palettes[[palette]]
+  col_scheme <- .schemes[[palette]]
   colours <- col_scheme[["colours"]]
   type <- col_scheme[["type"]]
   interpolate <- col_scheme[["interpolate"]]

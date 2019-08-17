@@ -1,7 +1,7 @@
 # Official color charts ========================================================
-palettes_official <- list(
-  # Bordeaux Montaigne University colour chart ---------------------------------
-  # The colours have to be used as given: do not interpolate
+# The colours have to be used as given: do not interpolate
+schemes_official <- list(
+  # Bordeaux Montaigne University colour chart
   UBM = list(
     type = "qualitative",
     interpolate = FALSE,
@@ -19,6 +19,7 @@ palettes_official <- list(
       'UBM 28' = "#34aa35", 'UBM 29' = "#95c11f", 'UBM 30' = "#dedc00"
     )
   ),
+  # French National Center for Scientific Research
   CNRS = list(
     type = "qualitative",
     interpolate = FALSE,

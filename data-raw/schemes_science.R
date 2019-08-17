@@ -1,5 +1,5 @@
 # Scientific color schemes =====================================================
-palettes_science <- list(
+schemes_science <- list(
   # Qualitative colour schemes -------------------------------------------------
   # The colours have to be used as given: do not interpolate
   stratigraphy = list(

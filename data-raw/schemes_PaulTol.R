@@ -1,5 +1,5 @@
 # Pol Tol's color types ======================================================
-palettes_tol2018 <- list(
+schemes_tol2018 <- list(
   # Qualitative colour types -------------------------------------------------
   # The colours have to be used as given: do not interpolate
   bright = list(
