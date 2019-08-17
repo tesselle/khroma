@@ -11,9 +11,11 @@
     ],
     "language": "eng",
     "keywords": [
+        "data-visualization",
+        "colour-schemes",
+        "accessibility",
         "archaeology",
-        "archaeometry",
-        "data visualization"
+        "archaeological-science"
     ],
     "upload_type": "software",
     "communities": [

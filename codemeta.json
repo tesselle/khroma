@@ -164,7 +164,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "377.555KB",
+  "fileSize": "377.569KB",
   "contIntegration": [
     "https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master",
     "https://travis-ci.org/nfrerebeau/khroma",
@@ -172,10 +172,11 @@
   ],
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#stable",
   "keywords": [
+    "data-visualization",
+    "colour-schemes",
+    "accessibility",
     "archaeology",
-    "archaeometry",
-    "archaeological-science",
-    "data-visualization"
+    "archaeological-science"
   ],
   "citation": [
     {
