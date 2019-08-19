@@ -36,7 +36,7 @@ library(khroma)
 * Distinct on screen and paper.
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note are implemented here, for use with base R `graphics` or `ggplot2`.
+All the scales presented in Paul Tol's technical note (issue 3.1, 2018-09-23) are implemented here, for use with base R `graphics` or `ggplot2`.
 
 # Qualitative data
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* colour schemes are colour-blind safe.
@@ -62,7 +62,6 @@ The qualitative colour schemes must be used as given (no interpolation): colours
 bright <- colour("bright")
 
 plot_scheme(bright(7), colours = TRUE, names = TRUE, size = 0.9)
-plot_map(bright(7))
 ```
 
 ## *contrast*
@@ -70,7 +69,6 @@ plot_map(bright(7))
 contrast <- colour("contrast")
 
 plot_scheme(contrast(3), colours = TRUE, names = TRUE, size = 0.9)
-plot_map(contrast(3))
 ```
 
 ## *vibrant*
@@ -78,7 +76,6 @@ plot_map(contrast(3))
 vibrant <- colour("vibrant")
 
 plot_scheme(vibrant(7), colours = TRUE, names = TRUE, size = 0.9)
-plot_map(vibrant(7))
 ```
 
 ## *muted*
@@ -86,7 +83,13 @@ plot_map(vibrant(7))
 muted <- colour("muted")
 
 plot_scheme(muted(9), colours = TRUE, names = TRUE, size = 0.9)
-plot_map(muted(9))
+```
+
+## *light*
+```{r tol_quali_light, fig.height=2, fig.width=7}
+light <- colour("light")
+
+plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
 ## *pale* and *dark*
@@ -98,21 +101,20 @@ plot_scheme(pale(6), colours = TRUE, names = TRUE, size = 0.9)
 plot_scheme(dark(6), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
-## *light*
-```{r tol_quali_light, fig.height=2, fig.width=7}
-light <- colour("light")
-
-plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
-plot_map(light(9))
-```
-
 # Diverging data
+If more colours than defined are needed from a given scheme, the colour coordinates are linearly interpolated to provide a continuous version of the scheme.
+
+| Scheme | Num. of colours | Bad data |
+|:-------|----------------:|---------:|
+| sunset | 11              | #FFFFFF  |
+| BuRd   | 9               | #FFEE99  |
+| PRGn   | 9               | #FFEE99  |
+
 ## *sunset*
 ```{r tol_div_sunset, fig.height=2, fig.width=7}
 sunset <- colour("sunset")
 
 plot_scheme(sunset(9), colours = TRUE, size = 0.9)
-plot_map(sunset(9))
 ```
 
 ## *BuRd*
@@ -120,7 +122,6 @@ plot_map(sunset(9))
 BuRd <- colour("BuRd")
 
 plot_scheme(BuRd(9), colours = TRUE, size = 0.9)
-plot_map(BuRd(9))
 ```
 
 ## *PRGn*
@@ -128,24 +129,30 @@ plot_map(BuRd(9))
 PRGn <- colour("PRGn")
 
 plot_scheme(PRGn(9), colours = TRUE, size = 0.9)
-plot_map(PRGn(9))
 ```
 
 # Sequential data
+If more colours than defined are needed from a given scheme, the colour coordinates are linearly interpolated to provide a continuous version of the scheme, with the exception of the *discrete rainbow* scheme (see below).
+
+| Scheme           | Num. of colours | Bad data |
+|:-----------------|----------------:|---------:|
+| YlOrBr           | 9               | #888888  |
+| iridescent       | 23              | #999999  |
+| discrete rainbow | 23              | #777777  |
+| smooth rainbow   | 34              | #666666  |
+
 ## *YlOrBr*
 ```{r tol_seq_YlOrBr, fig.height=2, fig.width=7}
 YlOrBr <- colour("YlOrBr")
 
 plot_scheme(YlOrBr(9), colours = TRUE, size = 0.9)
-plot_map(YlOrBr(9))
 ```
 
 ## *iridescent*
 ```{r tol_seq_iridescent, fig.height=2, fig.width=7}
 iridescent <- colour("iridescent")
 
-plot_scheme(iridescent(9), colours = TRUE, size = 0.9)
-plot_map(iridescent(9))
+plot_scheme(iridescent(23), colours = TRUE, size = 0.5)
 ```
 
 ## *rainbow*
@@ -165,9 +172,39 @@ If such use cannot be avoided, Paul Tol's technical note provides two colour sch
 
 ```{r tol_seq_rainbow, fig.height=2, fig.width=7}
 discrete_rainbow <- colour("discrete rainbow")
+smooth_rainbow <- colour("smooth rainbow")
 
-plot_scheme(discrete_rainbow(12), colours = TRUE, size = 0.7)
-plot_map(discrete_rainbow(12))
+plot_scheme(discrete_rainbow(14), colours = TRUE, size = 0.7)
+```
+
+# Diagnostic maps
+## Qualitative colour schemes
+
+```{r tol_quali, echo=FALSE, fig.height = 2, fig.width = 7, fig.show='hold', fig.cap='Diagnostic maps for the bright, vibrant, muted and light (from top to bottom) qualitative colour schemes.'}
+set.seed(12345)
+plot_map(bright(7))
+plot_map(vibrant(7))
+plot_map(muted(9))
+plot_map(light(9))
+```
+
+## Diverging schemes
+
+```{r tol_div, echo=FALSE, fig.height = 2, fig.width = 7, fig.show='hold', fig.cap='Diagnostic maps for the sunset, BuRd and PRGn (from top to bottom) diverging colour schemes.'}
+set.seed(12345)
+plot_map(sunset(11))
+plot_map(BuRd(9))
+plot_map(PRGn(9))
+```
+
+## Sequential schemes
+
+```{r tol_seq, echo=FALSE, fig.height = 2, fig.width = 7, fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent, discrete rainbow and smooth rainbow (from top to bottom) sequential colour schemes.'}
+set.seed(12345)
+plot_map(YlOrBr(9))
+plot_map(iridescent(23))
+plot_map(discrete_rainbow(14))
+plot_map(smooth_rainbow(23))
 ```
 
 # References
