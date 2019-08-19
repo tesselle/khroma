@@ -150,8 +150,8 @@ ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
   scale_fill_light()
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002.
+Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+ SRON/EPS/TN/09-002, issue 3.1.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{

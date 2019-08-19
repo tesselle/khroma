@@ -28,8 +28,8 @@ NULL
 #' @inheritSection colour Qualitative colour schemes
 #' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002.
+#'  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
@@ -188,7 +188,9 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  The sequential colour schemes are linearly interpolated.
+#'  If more colours than defined are needed from a given scheme, the colour
+#'  coordinates are linearly interpolated to provide a continuous version of the
+#'  scheme.
 #'  Note that the default colour for \code{NA} can be overridden by passing
 #'  a value to \code{\link[ggplot2]{continuous_scale}}.
 #'
@@ -200,8 +202,8 @@ scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'  }
 #' @return A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002.
+#'  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
@@ -277,8 +279,10 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  The sequential colour schemes are linearly interpolated, with the exception
-#'  of the \code{discrete rainbow} palette (see below).
+#'  If more colours than defined are needed from a given scheme, the colour
+#'  coordinates are linearly interpolated to provide a continuous version of the
+#'  scheme, with the exception of the \code{discrete rainbow} scheme (see
+#'  below).
 #'  Note that the default colour for \code{NA} can be overridden by passing
 #'  a value to \code{\link[ggplot2]{continuous_scale}}.
 #'
@@ -292,8 +296,8 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #' @inheritSection colour Rainbow colour scheme
 #' @return A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002.
+#'  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau

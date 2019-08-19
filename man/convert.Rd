@@ -47,9 +47,19 @@ ach <- convert(pal, mode = "achromatopsia")
 scales::show_col(ach(7))
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002.
+Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
+ Color Appearance for Dichromats. \emph{Journal of the Optical Society of
+ America A}, 14(10), p. 2647-2655.
+ DOI: \href{https://doi.org/10.1364/JOSAA.14.002647}{10.1364/JOSAA.14.002647}.
+
+ Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+ SRON/EPS/TN/09-002, issue 3.1.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+
+ Viénot, F., Brettel, H. and Mollon, J. D. (1999). Digital Video
+ Colourmaps for Checking the Legibility of Displays by Dichromats.
+ \emph{Color Research & Application}, 24(4), p. 243-52.
+ DOI: \href{https://doi.org/10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}{10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}.
 }
 \author{
 N. Frerebeau

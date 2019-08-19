@@ -59,7 +59,9 @@ A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-The sequential colour schemes are linearly interpolated.
+If more colours than defined are needed from a given scheme, the colour
+ coordinates are linearly interpolated to provide a continuous version of the
+ scheme.
  Note that the default colour for \code{NA} can be overridden by passing
  a value to \code{\link[ggplot2]{continuous_scale}}.
 
@@ -86,8 +88,8 @@ ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   scale_color_PRGn(midpoint = 6000)
 }
 \references{
-Tol, Paul (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002.
+Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+ SRON/EPS/TN/09-002, issue 3.1.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{

@@ -50,8 +50,8 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @details Values will be matched based on the soil names.
 #' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @references
-#'  Tol, Paul (2018). \emph{Colour Schemes.} SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002.
+#'  Tol, P. (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
