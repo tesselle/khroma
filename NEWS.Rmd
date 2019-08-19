@@ -48,7 +48,7 @@ knitr::opts_chunk$set(
 * The function `scale_*_tol()` is removed.
 
 ## Enhancements
-* Add three colour schemes: Paul Tol's *hight contrast* (qualitative), *iridescent* (sequential) and modified colour scheme for the AVHRR global *land cover* classification.
+* Add three colour schemes: Paul Tol's *high contrast* (qualitative), *iridescent* (sequential) and modified colour scheme for the AVHRR global *land cover* classification.
 
 ## Internals
 * The function `arrange()` is removed.

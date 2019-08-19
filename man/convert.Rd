@@ -18,7 +18,7 @@ Any unambiguous substring can be given.}
 }
 \value{
 A palette \code{\link{function}} that returns a vector of anomalized
- colours. All the attibutes of the initial palette function are inherited,
+ colours. All the attributes of the initial palette function are inherited,
  with a supplementary attribute "\code{mode}" giving the corresponding
  colour-blind vision.
 }
