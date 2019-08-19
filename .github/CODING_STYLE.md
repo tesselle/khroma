@@ -370,4 +370,4 @@ plot(price, weight) # Plot a scatter chart of price and weight
 # Clean data -------------------------------------------------------------------
 ```
 
-This coding style guide is adapted from the the [tidyverse style guide](http://style.tidyverse.org), the [rOpenSci Packages book](https://devguide.ropensci.org) and Iegor Rudnytskyi's [R Coding Style Guide](https://irudnyts.github.io/r-coding-style-guide/)
+This coding style guide is adapted from the the [tidyverse style guide](http://style.tidyverse.org), the [rOpenSci Packages book](https://devguide.ropensci.org) and Iegor Rudnytskyi's [R Coding Style Guide](https://irudnyts.github.io/r-coding-style-guide/).

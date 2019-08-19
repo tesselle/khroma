@@ -28,7 +28,6 @@ knitr::opts_chunk$set(
 
 ## Enhancements
 * Add a vignette for Paul Tol's colour schemes.
-* Add a code of conduct.
 
 # khroma 1.1.3 (release date: 2019-06-05)
 ## New functions
