@@ -169,9 +169,10 @@ welcome](https://github.com/nfrerebeau/khroma/issues)).
 
 ## Contributing
 
-Please note that the ‘khroma’ project is released with a [Contributor
-Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this
-project, you agree to abide by its terms.
+Please note that the `khroma` project is released with a [Contributor
+Code of
+Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
 
 1.  Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note
     No. SRON/EPS/TN/09-002. URL:
