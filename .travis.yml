@@ -6,10 +6,12 @@ cache: packages
 warnings_are_errors: true
 
 # Build matrix
+# Turn on vdiffr only on r release
 matrix:
   include:
   - r: devel
   - r: release
+    env: VDIFFR_RUN_TESTS=true
     after_success:
     - Rscript -e 'covr::codecov()'
     before_deploy:
@@ -31,3 +33,5 @@ env:
   global:
   # Don't treat missing suggested packages as error
   - _R_CHECK_FORCE_SUGGESTS_=false
+  # Switch off vdiffr by default
+  - VDIFFR_RUN_TESTS=false
