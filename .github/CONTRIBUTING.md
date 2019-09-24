@@ -22,9 +22,7 @@ Before you make a substantial pull request, you should always file an issue and 
 
 ## Code of Conduct
 
-Please note that the tabula project is released with a [Contributor Code of Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project you agree to abide by its terms.
-
-## See rOpenSci [contributing guide](https://devguide.ropensci.org/contributingguide.html) for further details.
+Please note that the khroma project is released with a [Contributor Code of Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project you agree to abide by its terms.
 
 ## Prefer to Email? 
 

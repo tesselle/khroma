@@ -42,7 +42,7 @@ All these colour schemes are implemented for use with base R `graphics` or [`ggp
 
 ## Installation
 
-Install the released version of `khroma` from CRAN:
+You can install the released version of `khroma` from [CRAN](https://CRAN.R-project.org):
 
 ```{r cran-installation, eval=FALSE}
 install.packages("khroma")
@@ -56,6 +56,12 @@ devtools::install_github("nfrerebeau/khroma")
 ```
 
 ## Usage
+```{r packages}
+# Load packages
+library(khroma)
+library(ggplot2)
+```
+
 ### Colour palettes and scales
 ```{r usage, fig.height=2, fig.width=7, fig.align='center'}
 library(khroma)
@@ -70,8 +76,6 @@ plot_scheme(bright(7), colours = TRUE)
 ```
 
 ```{r usage-ggplot2, fig.height=3.5, fig.width=5, fig.align='center'}
-library(ggplot2)
-
 # Use with ggplot2
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
   geom_point() +

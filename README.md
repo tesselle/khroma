@@ -47,7 +47,8 @@ or [`ggplot2`](https://github.com/tidyverse/ggplot2).
 
 ## Installation
 
-Install the released version of `khroma` from CRAN:
+You can install the released version of `khroma` from
+[CRAN](https://CRAN.R-project.org):
 
 ``` r
 install.packages("khroma")
@@ -61,6 +62,12 @@ devtools::install_github("nfrerebeau/khroma")
 ```
 
 ## Usage
+
+``` r
+# Load packages
+library(khroma)
+library(ggplot2)
+```
 
 ### Colour palettes and scales
 
@@ -81,8 +88,6 @@ plot_scheme(bright(7), colours = TRUE)
 <img src="man/figures/README-usage-1.png" style="display: block; margin: auto;" />
 
 ``` r
-library(ggplot2)
-
 # Use with ggplot2
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
   geom_point() +
