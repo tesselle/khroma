@@ -4,7 +4,7 @@
 \alias{plot}
 \alias{plot_scheme}
 \alias{plot_map}
-\title{Plot}
+\title{Plot Colour Scheme}
 \usage{
 plot_scheme(x, colours = FALSE, names = FALSE, size = 1)
 
@@ -42,6 +42,10 @@ plot_map(colour("sunset")(11))
 plot_map(colour("YlOrBr")(9))
 plot_map(colour("discrete rainbow")(14))
 }
+\seealso{
+Other diagnostic tools: \code{\link{convert}}
+}
 \author{
 N. Frerebeau
 }
+\concept{diagnostic tools}

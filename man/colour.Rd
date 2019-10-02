@@ -149,4 +149,5 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 \author{
 N. Frerebeau
 }
+\concept{colour palettes}
 \keyword{color}

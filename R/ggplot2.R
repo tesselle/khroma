@@ -20,6 +20,7 @@ NULL
 #'  or \code{\link[ggplot2:continuous_scale]{continuous}} scale.
 #' @author N. Frerebeau
 #' @keywords internal
+#' @noRd
 scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
   # Get colour palette and scheme information
   palette <- colour(scale_name, reverse, names = FALSE)

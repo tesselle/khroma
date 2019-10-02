@@ -27,6 +27,7 @@
 #'  \emph{Color Research & Application}, 24(4), p. 243-52.
 #'  DOI: \href{https://doi.org/10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}{10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}.
 #' @author N. Frerebeau
+#' @family diagnostic tools
 #' @export
 convert <- function(x, mode) {
   fun <- function(n) { anomalize(x(n), mode = mode) }

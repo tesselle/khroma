@@ -61,6 +61,10 @@ Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
  \emph{Color Research & Application}, 24(4), p. 243-52.
  DOI: \href{https://doi.org/10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}{10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}.
 }
+\seealso{
+Other diagnostic tools: \code{\link{plot}}
+}
 \author{
 N. Frerebeau
 }
+\concept{diagnostic tools}

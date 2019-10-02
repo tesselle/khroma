@@ -1,4 +1,4 @@
-#' Plot
+#' Plot Colour Scheme
 #'
 #' \code{plot_scheme} shows colours in a plot.
 #'
@@ -13,6 +13,7 @@
 #' Works the same as \code{cex} parameter of \code{\link[graphics]{par}}.
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau
+#' @family diagnostic tools
 #' @name plot
 #' @rdname plot
 NULL
