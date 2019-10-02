@@ -29,12 +29,12 @@ Color blindness affects a large number of individuals. When
 communicating scientific results colour palettes must therefore be
 carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Paul Tol’s colour schemes
-\[1\]. These schemes are ready for each type of data (qualitative,
-diverging or sequential), with colours that are distinct for all people,
-including colour-blind readers. This package also provides tools to
-simulate colour-blindness and to test how well the colours of any
-palette are identifiable. To simulate colour-blindness in
+This R package provides an implementation of Paul Tol’s colour
+schemes\[1\]. These schemes are ready for each type of data
+(qualitative, diverging or sequential), with colours that are distinct
+for all people, including colour-blind readers. This package also
+provides tools to simulate colour-blindness and to test how well the
+colours of any palette are identifiable. To simulate colour-blindness in
 production-ready R figures you may also be interested in the
 [`colorblindr`](https://github.com/clauswilke/colorblindr) package.
 
@@ -42,8 +42,8 @@ For specific uses, several scientific thematic schemes (geologic
 timescale, land cover, FAO soils, etc.) are implemented, but these
 colour schemes may not be colour-blind safe.
 
-All these colour schemes are implemented for use with base R `graphics`
-or [`ggplot2`](https://github.com/tidyverse/ggplot2).
+All these colour schemes are implemented for use with R `graphics` or
+[`ggplot2`](https://github.com/tidyverse/ggplot2).
 
 ## Installation
 
