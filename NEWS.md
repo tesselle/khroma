@@ -5,9 +5,13 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-<!-- # khroma 1.2.0 (2019-08-19) -->
+# khroma 1.2.0.9000 (2019-10-02)
 
-# khroma 1.2.0 (current release)
+## Bugfixes & changes
+
+  - Fix qualitative colour picking.
+
+# khroma 1.2.0 (release date: 2019-08-19)
 
 ## New functions
 
@@ -57,7 +61,7 @@
 
 ## Enhancements
 
-  - Add three colour schemes: Paul Tol’s *hight contrast* (qualitative),
+  - Add three colour schemes: Paul Tol’s *high contrast* (qualitative),
     *iridescent* (sequential) and modified colour scheme for the AVHRR
     global *land cover* classification.
 

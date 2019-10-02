@@ -5,7 +5,7 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "khroma",
-  "description": "An implementation of Paul Tol's colour schemes for\n    use with 'graphics' or 'ggplot2'. These schemes are ready for each\n    type of data (qualitative, diverging or sequential), with colours that\n    are distinct for all people, including colour-blind readers. This\n    package provides tools to simulate colour-blindness and to test how\n    well the colours of any palette are identifiable. Several scientific\n    thematic schemes (geologic timescale, land cover, FAO soils, etc.) are\n    also implemented.",
+  "description": "An implementation of Paul Tol's colour schemes for use with 'graphics' or 'ggplot2'. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.",
   "name": "khroma: Colour Schemes for Scientific Data Visualization",
   "codeRepository": "http://github.com/nfrerebeau/khroma",
   "relatedLink": [
@@ -15,7 +15,7 @@
   ],
   "issueTracker": "http://github.com/nfrerebeau/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.2.0.9000",
+  "version": "1.2.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",

@@ -88,6 +88,7 @@
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 #' @example inst/examples/ex-palettes.R
 #' @author N. Frerebeau
+#' @family colour palettes
 #' @keywords color
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
@@ -118,6 +119,8 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
       # Arrange colour schemes
       col <- if (palette == "discrete rainbow") {
         colours[scheme[[n]]]
+      } else if (type == "qualitative") {
+        colours[seq_len(n)]
       } else {
         colours[seq(from = 1, to = k, length.out = n)]
       }
