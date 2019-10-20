@@ -24,6 +24,8 @@ test_that("Palette colours", {
   }
 })
 test_that("Qualitative colours", {
+  options(khroma.pretty_print = FALSE)
+
   palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
                 "light", "stratigraphy", "soil", "land")
   n <- c(7, 3, 7, 9, 6, 6, 9, 175, 24, 14)
@@ -32,29 +34,36 @@ test_that("Qualitative colours", {
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
     expect_error(colour(palettes[i])(500))
     expect_equal(
-      colour(palettes[i], reverse = TRUE)(n[i]),
-      rev(colour(palettes[i], reverse = FALSE)(n[i]))
+      unclass(colour(palettes[i], reverse = TRUE)(n[i])),
+      rev(colour(palettes[i], reverse = FALSE)(n[i])),
+      label = palettes[i]
     )
   }
 })
 test_that("Diverging colours", {
+  options(khroma.pretty_print = FALSE)
+
   palettes <- c("sunset", "BuRd", "PRGn")
   n <- c(11, 9, 9)
   for (i in seq_len(length(palettes))) {
     expect_equal(
       colour(palettes[i], reverse = TRUE)(n[i]),
-      rev(colour(palettes[i], reverse = FALSE)(n[i]))
+      rev(colour(palettes[i], reverse = FALSE)(n[i])),
+      label = palettes[i]
     )
     expect_null(names(colour(palettes[i])(n[i])))
   }
 })
 test_that("Sequential colours", {
+  options(khroma.pretty_print = FALSE)
+
   palettes <- c("YlOrBr", "iridescent", "smooth rainbow")
   n <- c(9, 23,34)
   for (i in seq_len(length(palettes))) {
     expect_equal(
       colour(palettes[i], reverse = TRUE)(n[i]),
-      rev(colour(palettes[i], reverse = FALSE)(n[i]))
+      rev(colour(palettes[i], reverse = FALSE)(n[i])),
+      label = palettes[i]
     )
     expect_null(names(colour(palettes[i])(n[i])))
   }

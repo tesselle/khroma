@@ -75,7 +75,7 @@ test_that("Muted", {
     colour("muted", names = FALSE)(9)
   )
   expect_equal(
-    scale_colour_muted(reverse = TRUE)$palette(9),
+    unclass(scale_colour_muted(reverse = TRUE)$palette(9)),
     rev(colour("muted", names = FALSE, reverse = FALSE)(9))
   )
 

@@ -125,6 +125,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
         colours[seq(from = 1, to = k, length.out = n)]
       }
       col <- if (names) col else unname(col)
+      class(col) <- "colour_scheme"
       return(col)
     }
   }
@@ -139,3 +140,15 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 #' @export
 #' @rdname colour
 color <- colour
+
+#' @export
+print.colour_scheme <- function(x, ..., pretty = FALSE) {
+  if (requireNamespace("crayon", quietly = TRUE) &&
+      getOption("khroma.pretty_print")) {
+    styled <- vapply(x, FUN = function(x) crayon::make_style(x, bg = TRUE)(x),
+                     FUN.VALUE = character(1))
+    cat(styled)
+  } else {
+    print(unclass(x))
+  }
+}
