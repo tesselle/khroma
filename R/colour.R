@@ -142,7 +142,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 color <- colour
 
 #' @export
-print.colour_scheme <- function(x, ..., pretty = FALSE) {
+print.colour_scheme <- function(x, ...) {
   if (requireNamespace("crayon", quietly = TRUE) &&
       getOption("khroma.pretty_print")) {
     styled <- vapply(x, FUN = function(x) crayon::make_style(x, bg = TRUE)(x),

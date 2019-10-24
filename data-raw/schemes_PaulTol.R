@@ -67,7 +67,7 @@ schemes_tol2018 <- list(
     colours = c(
       `light blue`   = "#77AADD", `orange` = "#EE8866",
       `light yellow` = "#EEDD88", `pink`   = "#FFAABB",
-      `light cyant`  = "#99DDFF", `mint`   = "#44BB99",
+      `light cyan`   = "#99DDFF", `mint`   = "#44BB99",
       `pear`         = "#BBCC33", `olive`  = "#AAAA00",
       `pale grey`    = "#DDDDDD"),
     scheme = NULL
