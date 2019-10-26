@@ -13,7 +13,3 @@
 There is 1 reverse dependency. 
 
 The changes do not impact any of the dependencies.
-
-## Resubmission
-
-This is a resubmission, relative links were replaced by fully specified URLs in README.
