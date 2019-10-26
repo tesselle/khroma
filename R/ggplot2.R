@@ -22,6 +22,7 @@ NULL
 #' @keywords internal
 #' @noRd
 scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
+  require_ggplot2()
   # Get colour palette and scheme information
   palette <- colour(scale_name, reverse, names = FALSE)
   type <- attr(palette, "type")
@@ -62,4 +63,12 @@ mid_rescaler <- function(mid) {
   function(x, to = c(0, 1), from = range(x, na.rm = TRUE)) {
     scales::rescale_mid(x, to, from, mid)
   }
+}
+
+#' @keywords internal
+#' @noRd
+require_ggplot2 <- function() {
+  if (!requireNamespace("ggplot2", quietly = TRUE))
+    stop("Package \"ggplo2\" needed for this function to work.\n",
+         "Please install it.", call. = FALSE)
 }

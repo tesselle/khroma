@@ -23,9 +23,6 @@
 \alias{scale_colour_light}
 \alias{scale_color_light}
 \alias{scale_fill_light}
-\alias{scale_colour_rainbow}
-\alias{scale_color_rainbow}
-\alias{scale_fill_rainbow}
 \title{Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
@@ -69,12 +66,6 @@ scale_colour_light(..., reverse = FALSE, aesthetics = "colour")
 scale_color_light(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_light(..., reverse = FALSE, aesthetics = "fill")
-
-scale_colour_rainbow(..., reverse = FALSE, aesthetics = "colour")
-
-scale_color_rainbow(..., reverse = FALSE, aesthetics = "colour")
-
-scale_fill_rainbow(..., reverse = FALSE, aesthetics = "fill")
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2]{discrete_scale}}.}

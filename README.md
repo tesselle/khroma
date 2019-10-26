@@ -1,6 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<STYLE type='text/css' scoped>
+PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
+</STYLE>
+
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 [![Appveyor build
@@ -71,21 +75,40 @@ library(ggplot2)
 
 ### Colour palettes and scales
 
-``` r
-library(khroma)
+`colour()` returns a palette function that when called with a single
+integer argument returns a vector of colours.
 
-# colour() returns a palette function
+``` r
 bright <- colour("bright")
-# that when called with a single integer argument returns a vector of colours
+```
+
+If [`crayon`](https://github.com/r-lib/crayon) is installed, colours
+will be nicely printed in the
+console.
+
+``` r
+bright(7)
+```
+
+<PRE class="fansi fansi-output"><CODE>#&gt; <span style='background-color: #5F87AF;'>#4477AA</span><span> </span><span style='background-color: #FF8787;'>#EE6677</span><span> </span><span style='background-color: #00AF5F;'>#228833</span><span> </span><span style='background-color: #D7D75F;'>#CCBB44</span><span> </span><span style='background-color: #87D7FF;'>#66CCEE</span><span> </span><span style='background-color: #AF5F87;'>#AA3377</span><span> </span><span style='background-color: #B2B2B2;'>#BBBBBB</span><span>
+</span></CODE></PRE>
+
+You can disable this feature by setting the `khroma.crayon` option to
+`FALSE`.
+
+``` r
+options(khroma.crayon = FALSE)
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB"
+```
 
+``` r
 # Show the colour palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-usage-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-show-1.png" style="display: block; margin: auto;" />
 
 ``` r
 # Use with ggplot2

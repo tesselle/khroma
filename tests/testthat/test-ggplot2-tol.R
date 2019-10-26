@@ -1,14 +1,8 @@
 context("ggplot2 Paul Tol scales")
 
-# Deprecated functions =========================================================
-test_that("Deprecated", {
-  expect_warning(scale_colour_rainbow(), "deprecated")
-  expect_warning(scale_color_rainbow(), "deprecated")
-  expect_warning(scale_fill_rainbow(), "deprecated")
-})
-
 # Qualitative color schemes ====================================================
 test_that("Bright", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_bright(), "ggproto")
   expect_s3_class(scale_colour_bright(), "ScaleDiscrete")
   expect_equal(
@@ -28,6 +22,7 @@ test_that("Bright", {
 })
 
 test_that("Contrast", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_contrast(), "ggproto")
   expect_s3_class(scale_colour_contrast(), "ScaleDiscrete")
   expect_equal(
@@ -47,6 +42,7 @@ test_that("Contrast", {
 })
 
 test_that("Vibrant", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_vibrant(), "ggproto")
   expect_s3_class(scale_colour_vibrant(), "ScaleDiscrete")
   expect_equal(
@@ -66,6 +62,7 @@ test_that("Vibrant", {
 })
 
 test_that("Muted", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_muted(), "ggproto")
   expect_s3_class(scale_colour_muted(), "ScaleDiscrete")
   expect_equal(scale_colour_muted()$na.value, "#DDDDDD")
@@ -92,6 +89,7 @@ test_that("Muted", {
 })
 
 test_that("Pale", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_pale(), "ggproto")
   expect_s3_class(scale_colour_pale(), "ScaleDiscrete")
   expect_equal(
@@ -111,6 +109,7 @@ test_that("Pale", {
 })
 
 test_that("Dark", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_dark(), "ggproto")
   expect_s3_class(scale_colour_dark(), "ScaleDiscrete")
   expect_equal(
@@ -130,6 +129,7 @@ test_that("Dark", {
 })
 
 test_that("Light", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_light(), "ggproto")
   expect_s3_class(scale_colour_light(), "ScaleDiscrete")
   expect_equal(
@@ -150,12 +150,14 @@ test_that("Light", {
 
 # Diverging color schemes ======================================================
 test_that("ggplo2 rescaler", {
+  skip_if_not_installed("scales")
   expect_type(mid_rescaler(mid = 5)(1:100), "double")
   expect_length(mid_rescaler(mid = 5)(1:100), 100)
   expect_equal(max(mid_rescaler(mid = 5)(1:100)), 1)
 })
 
 test_that("Sunset", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_sunset(midpoint = 10), "ggproto")
   expect_s3_class(scale_colour_sunset(midpoint = 10), "ScaleContinuous")
   expect_s3_class(scale_colour_sunset(), "ggproto")
@@ -173,6 +175,7 @@ test_that("Sunset", {
 })
 
 test_that("BuRd", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_BuRd(midpoint = 10), "ggproto")
   expect_s3_class(scale_colour_BuRd(midpoint = 10), "ScaleContinuous")
   expect_s3_class(scale_colour_BuRd(), "ggproto")
@@ -191,6 +194,7 @@ test_that("BuRd", {
 })
 
 test_that("PRGn", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_PRGn(midpoint = 10), "ggproto")
   expect_s3_class(scale_colour_PRGn(midpoint = 10), "ScaleContinuous")
   expect_s3_class(scale_colour_PRGn(), "ggproto")
@@ -210,6 +214,7 @@ test_that("PRGn", {
 
 # Sequential schemes ===========================================================
 test_that("YlOrBr", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_YlOrBr(), "ggproto")
   expect_s3_class(scale_colour_YlOrBr(), "ScaleContinuous")
   expect_equal(scale_colour_YlOrBr()$na.value, "#888888")
@@ -224,6 +229,7 @@ test_that("YlOrBr", {
 })
 
 test_that("Iridescent", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_iridescent(), "ggproto")
   expect_s3_class(scale_colour_iridescent(), "ScaleContinuous")
   expect_equal(scale_colour_iridescent()$na.value, "#999999")
@@ -238,6 +244,7 @@ test_that("Iridescent", {
 })
 
 test_that("Discrete rainbow", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_discreterainbow(), "ggproto")
   expect_s3_class(scale_colour_discreterainbow(), "ScaleDiscrete")
   expect_equal(scale_colour_discreterainbow()$na.value, "#777777")
@@ -252,6 +259,7 @@ test_that("Discrete rainbow", {
 })
 
 test_that("Smooth rainbow", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_smoothrainbow(), "ggproto")
   expect_s3_class(scale_colour_smoothrainbow(), "ScaleContinuous")
   expect_equal(scale_colour_smoothrainbow()$na.value, "#666666")

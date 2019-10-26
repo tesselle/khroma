@@ -157,25 +157,6 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "light", reverse, ...)
 }
 
-## --------------------------------------------------------------------- Rainbow
-#' @export
-#' @rdname scale_tol_discrete
-scale_colour_rainbow <- function(..., reverse = FALSE, aesthetics = "colour") {
-  .Deprecated("scale_colour_discreterainbow")
-  scale(aesthetics, "discrete rainbow", reverse, ...)
-}
-
-#' @export
-#' @rdname scale_tol_discrete
-scale_color_rainbow <- scale_colour_rainbow
-
-#' @export
-#' @rdname scale_tol_discrete
-scale_fill_rainbow <- function(..., reverse = FALSE, aesthetics = "fill") {
-  .Deprecated("scale_fill_discreterainbow")
-  scale(aesthetics, "discrete rainbow", reverse, ...)
-}
-
 # ==================================================================== Diverging
 #' Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}
 #'

@@ -108,7 +108,11 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 
   if (interpolate) {
     # For colour schemes that can be linearly interpolated
-    fun <- grDevices::colorRampPalette(colours, ...)
+    fun <- function(n, ...) {
+      col <- grDevices::colorRampPalette(colours, ...)(n)
+      class(col) <- "colour_scheme"
+      return(col)
+    }
   } else {
     # No interpolation
     fun <- function(n) {
@@ -144,7 +148,7 @@ color <- colour
 #' @export
 print.colour_scheme <- function(x, ...) {
   if (requireNamespace("crayon", quietly = TRUE) &&
-      getOption("khroma.pretty_print")) {
+      getOption("khroma.crayon")) {
     styled <- vapply(x, FUN = function(x) crayon::make_style(x, bg = TRUE)(x),
                      FUN.VALUE = character(1))
     cat(styled)

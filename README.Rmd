@@ -7,12 +7,20 @@ editor_options:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo=FALSE}
+options(
+  crayon.enabled = TRUE
+)
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = NULL
 )
+```
+
+```{r hook, comment="", results="asis", echo=FALSE}
+# https://cran.r-project.org/web/packages/fansi/vignettes/sgr-in-rmd.html
+old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 ```
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
@@ -63,14 +71,24 @@ library(ggplot2)
 ```
 
 ### Colour palettes and scales
-```{r usage, fig.height=2, fig.width=7, fig.align='center'}
-library(khroma)
-
-# colour() returns a palette function
+`colour()` returns a palette function that when called with a single integer argument returns a vector of colours.
+```{r usage}
 bright <- colour("bright")
-# that when called with a single integer argument returns a vector of colours
-bright(7)
+```
 
+If [`crayon`](https://github.com/r-lib/crayon) is installed, colours will be nicely printed in the console.
+```{r crayon}
+bright(7)
+```
+
+You can disable this feature by setting the `khroma.crayon` option to `FALSE`.
+```{r no-crayon}
+options(khroma.crayon = FALSE)
+bright(7)
+```
+
+
+```{r show, fig.height=2, fig.width=7, fig.align='center'}
 # Show the colour palette
 plot_scheme(bright(7), colours = TRUE)
 ```
