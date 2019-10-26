@@ -1,27 +1,27 @@
 ## Paul Tol's colour schemes
 ### Qualitative data
-scales::show_col(colour("bright")(7))
-scales::show_col(colour("contrast")(3))
-scales::show_col(colour("vibrant")(7))
-scales::show_col(colour("pale")(6))
-scales::show_col(colour("dark")(6))
-scales::show_col(colour("muted")(9))
-scales::show_col(colour("light")(9))
+plot_scheme(colour("bright")(7))
+plot_scheme(colour("contrast")(3))
+plot_scheme(colour("vibrant")(7))
+plot_scheme(colour("pale")(6))
+plot_scheme(colour("dark")(6))
+plot_scheme(colour("muted")(9))
+plot_scheme(colour("light")(9))
 ### Diverging data
-scales::show_col(colour("sunset")(11))
-scales::show_col(colour("BuRd")(9))
-scales::show_col(colour("PRGn")(9))
+plot_scheme(colour("sunset")(11))
+plot_scheme(colour("BuRd")(9))
+plot_scheme(colour("PRGn")(9))
 ### Sequential data
-scales::show_col(colour("YlOrBr")(9))
-scales::show_col(colour("iridescent")(23))
-scales::show_col(colour("discrete rainbow")(14))
-scales::show_col(colour("discrete rainbow")(23))
-scales::show_col(colour("smooth rainbow")(34))
+plot_scheme(colour("YlOrBr")(9))
+plot_scheme(colour("iridescent")(23))
+plot_scheme(colour("discrete rainbow")(14))
+plot_scheme(colour("discrete rainbow")(23))
+plot_scheme(colour("smooth rainbow")(34))
 
 ## Scientific colour schemes
 ### Geologic timescale
-scales::show_col(colour("stratigraphy")(175))
+plot_scheme(colour("stratigraphy")(175))
 ### AVHRR global land cover classification
-scales::show_col(colour("land")(14))
+plot_scheme(colour("land")(14))
 ### FAO soil reference groups
-scales::show_col(colour("soil")(24))
+plot_scheme(colour("soil")(24))
