@@ -93,11 +93,11 @@ bright(7)
 <PRE class="fansi fansi-output"><CODE>#&gt; <span style='background-color: #5F87AF;'>#4477AA</span><span> </span><span style='background-color: #FF8787;'>#EE6677</span><span> </span><span style='background-color: #00AF5F;'>#228833</span><span> </span><span style='background-color: #D7D75F;'>#CCBB44</span><span> </span><span style='background-color: #87D7FF;'>#66CCEE</span><span> </span><span style='background-color: #AF5F87;'>#AA3377</span><span> </span><span style='background-color: #B2B2B2;'>#BBBBBB</span><span>
 </span></CODE></PRE>
 
-You can disable this feature by setting the `khroma.crayon` option to
+You can disable this feature by setting the `crayon.enabled` option to
 `FALSE`.
 
 ``` r
-options(khroma.crayon = FALSE)
+options(crayon.enabled = FALSE)
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB"
