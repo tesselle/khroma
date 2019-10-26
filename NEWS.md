@@ -5,11 +5,23 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-# khroma 1.2.0.9000 (2019-10-02)
+<!--# khroma 1.3.0 (2019-10-26)-->
+
+# khroma 1.3.0
 
 ## Bugfixes & changes
 
   - Fix qualitative colour picking.
+  - Fix typos in colour names (\#2).
+
+## Enhancements
+
+  - Use {crayon} if installed to nicely print colours in the console.
+
+## Internals
+
+  - Move {ggplot2} and {scales} from Imports to Suggests.
+  - Remove `scale_*_rainbow()`.
 
 # khroma 1.2.0 (release date: 2019-08-19)
 
