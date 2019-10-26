@@ -52,5 +52,4 @@ Collate:
     'ggplot2.R'
     'khroma-package.R'
     'plot.R'
-    'zzz.R'
 VignetteBuilder: knitr

@@ -1,6 +1,7 @@
 context("ggplot2 science scales")
 
 test_that("Stratigraphic scales", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_stratigraphy(), "ggproto")
   expect_s3_class(scale_colour_stratigraphy(), "ScaleDiscrete")
   expect_equal(
@@ -20,6 +21,7 @@ test_that("Stratigraphic scales", {
 })
 
 test_that("Land scales", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_land(), "ggproto")
   expect_s3_class(scale_colour_land(), "ScaleDiscrete")
   expect_equal(
@@ -39,6 +41,7 @@ test_that("Land scales", {
 })
 
 test_that("Soil scales", {
+  skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_soil(), "ggproto")
   expect_s3_class(scale_colour_soil(), "ScaleDiscrete")
   expect_equal(

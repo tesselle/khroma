@@ -24,7 +24,7 @@ test_that("Palette colours", {
   }
 })
 test_that("Qualitative colours", {
-  options(khroma.crayon = FALSE)
+  options(crayon.enabled = FALSE)
 
   palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
                 "light", "stratigraphy", "soil", "land")
@@ -41,7 +41,7 @@ test_that("Qualitative colours", {
   }
 })
 test_that("Diverging colours", {
-  options(khroma.crayon = FALSE)
+  options(crayon.enabled = FALSE)
 
   palettes <- c("sunset", "BuRd", "PRGn")
   n <- c(11, 9, 9)
@@ -55,7 +55,7 @@ test_that("Diverging colours", {
   }
 })
 test_that("Sequential colours", {
-  options(khroma.crayon = FALSE)
+  options(crayon.enabled = FALSE)
 
   palettes <- c("YlOrBr", "iridescent", "smooth rainbow")
   n <- c(9, 23,34)
@@ -100,4 +100,16 @@ test_that("Colour-blind attributes", {
   expect_true(is.na(attr(protanopia, "missing")))
   expect_equivalent(attr(protanopia, "max"), 7)
   expect_equivalent(attr(protanopia, "mode"), "protanopia")
+})
+test_that("Print with crayon", {
+  palette <- colour("bright")
+
+  options(crayon.enabled = FALSE)
+  col <- utils::capture.output(print(palette(7)))
+  expect_type(col, "character")
+
+  skip_if_not_installed("crayon")
+  options(crayon.enabled = TRUE)
+  col <- utils::capture.output(print(palette(7)))
+  expect_true(crayon::has_style(col))
 })
