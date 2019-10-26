@@ -56,7 +56,6 @@ scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
 }
 
 # COPY FROM GGPLOT2 NON-EXPORTS
-#' @importFrom scales rescale_mid
 #' @keywords internal
 #' @noRd
 mid_rescaler <- function(mid) {

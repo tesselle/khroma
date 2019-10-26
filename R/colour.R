@@ -108,8 +108,8 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 
   if (interpolate) {
     # For colour schemes that can be linearly interpolated
-    fun <- function(n, ...) {
-      col <- grDevices::colorRampPalette(colours, ...)(n)
+    fun <- function(n) {
+      col <- grDevices::colorRampPalette(colours)(n)
       class(col) <- "colour_scheme"
       return(col)
     }
