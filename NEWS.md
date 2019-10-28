@@ -5,9 +5,9 @@
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-<!--# khroma 1.3.0 (2019-10-26)-->
+# khroma 1.3.0.9000 (2019-10-28)
 
-# khroma 1.3.0
+# khroma 1.3.0 (release date: 2019-10-26)
 
 ## Bugfixes & changes
 
@@ -45,7 +45,7 @@
 
 ## New functions
 
-  - Add three `ggplot2` scale functions: `scale_*_pale()`,
+  - Add three {ggplot2} scale functions: `scale_*_pale()`,
     `scale_*_dark()` and `scale_*_discreterainbow()`.
 
 ## Bugfixes & changes
@@ -64,7 +64,7 @@
 
 ## New functions
 
-  - Add three `ggplot2` scale functions: `scale_*_contrast()`,
+  - Add three {ggplot2} scale functions: `scale_*_contrast()`,
     `scale_*_iridescent()` and `scale_*_land()`.
 
 ## Bugfixes & changes
@@ -97,7 +97,7 @@
 
 ## New functions
 
-  - Add specific `ggplot2` scale functions for Paul Tol’s colour
+  - Add specific {ggplot2} scale functions for Paul Tol’s colour
     schemes: `scale_*_bright()`, `scale_*_vibrant()`, `scale_*_muted()`,
     `scale_*_light()`, `scale_*_rainbow()` (qualitative),
     `scale_*_sunset()`, `scale_*_BuRd()`, `scale_*_PRGn()` (diverging),
