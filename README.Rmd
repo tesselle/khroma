@@ -7,7 +7,6 @@ editor_options:
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo=FALSE}
-options(crayon.enabled = TRUE)
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -16,7 +15,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r hook, comment="", results="asis", echo=FALSE}
+```{r hook, comment="", results="asis", echo=FALSE, eval=FALSE}
+options(crayon.enabled = TRUE)
 # https://cran.r-project.org/web/packages/fansi/vignettes/sgr-in-rmd.html
 old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 ```
@@ -40,15 +40,15 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 
 Color blindness affects a large number of individuals. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Paul Tol's colour schemes^[Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.]. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [`colorblindr`](https://github.com/clauswilke/colorblindr) package.
+This R package provides an implementation of Paul Tol's colour schemes^[Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.]. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
 
 For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these colour schemes may not be colour-blind safe.
 
-All these colour schemes are implemented for use with R `graphics` or [`ggplot2`](https://github.com/tidyverse/ggplot2).
+All these colour schemes are implemented for use with base R or [**ggplot2**](https://github.com/tidyverse/ggplot2).
 
 ## Installation
 
-You can install the released version of `khroma` from [CRAN](https://CRAN.R-project.org):
+You can install the released version of **khroma** from [CRAN](https://CRAN.R-project.org):
 
 ```{r cran-installation, eval=FALSE}
 install.packages("khroma")
@@ -74,9 +74,13 @@ library(ggplot2)
 bright <- colour("bright")
 ```
 
-If [`crayon`](https://github.com/r-lib/crayon) is installed, colours will be nicely printed in the console.
-```{r crayon}
+If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine, colours will be nicely printed in the console.
+```{r crayon, echo=FALSE, eval=FALSE}
 bright(7)
+```
+
+```{r crayon-screen, echo=FALSE, fig.width=7}
+knitr::include_graphics("./man/figures/README-crayon.png")
 ```
 
 You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
@@ -84,7 +88,6 @@ You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
 options(crayon.enabled = FALSE)
 bright(7)
 ```
-
 
 ```{r show, fig.height=2, fig.width=7, fig.align='center'}
 # Show the colour palette
@@ -101,6 +104,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 ### Diagnostic tools
 ```{r usage-colourblind, fig.height=2, fig.width=7, fig.align='center'}
 # Test how well the colours are identifiable
+set.seed(12345)
 plot_map(bright(7))
 
 # Simulate colour-blindness
@@ -127,7 +131,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 * Distinct on screen and paper.
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note are implemented here, for use with `graphics` or `ggplot2`. Refer to the original document for details about the recommended uses.
+All the scales presented in Paul Tol's technical note are implemented here, for use with base R or [**ggplot2**](https://github.com/tidyverse/ggplot2). Refer to the original document for details about the recommended uses.
 
 See the vignette for a more complete overview:
 ```{r tol-vignette, eval=FALSE}
@@ -144,4 +148,4 @@ The following scientific colour schemes are available:
 More will be added in future releases ([suggestions are welcome](https://github.com/nfrerebeau/khroma/issues)).
 
 ## Contributing
-Please note that the `khroma` project is released with a [Contributor Code of Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
+Please note that the **khroma** project is released with a [Contributor Code of Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.

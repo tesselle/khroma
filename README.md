@@ -1,10 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<STYLE type='text/css' scoped>
-PRE.fansi SPAN {padding-top: .25em; padding-bottom: .25em};
-</STYLE>
-
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 [![Appveyor build
@@ -40,18 +36,18 @@ for all people, including colour-blind readers. This package also
 provides tools to simulate colour-blindness and to test how well the
 colours of any palette are identifiable. To simulate colour-blindness in
 production-ready R figures you may also be interested in the
-[`colorblindr`](https://github.com/clauswilke/colorblindr) package.
+[**colorblindr**](https://github.com/clauswilke/colorblindr) package.
 
 For specific uses, several scientific thematic schemes (geologic
 timescale, land cover, FAO soils, etc.) are implemented, but these
 colour schemes may not be colour-blind safe.
 
-All these colour schemes are implemented for use with R `graphics` or
-[`ggplot2`](https://github.com/tidyverse/ggplot2).
+All these colour schemes are implemented for use with base R or
+[**ggplot2**](https://github.com/tidyverse/ggplot2).
 
 ## Installation
 
-You can install the released version of `khroma` from
+You can install the released version of **khroma** from
 [CRAN](https://CRAN.R-project.org):
 
 ``` r
@@ -82,16 +78,10 @@ integer argument returns a vector of colours.
 bright <- colour("bright")
 ```
 
-If [`crayon`](https://github.com/r-lib/crayon) is installed, colours
-will be nicely printed in the
-console.
+If [**crayon**](https://github.com/r-lib/crayon) is installed on your
+machine, colours will be nicely printed in the console.
 
-``` r
-bright(7)
-```
-
-<PRE class="fansi fansi-output"><CODE>#&gt; <span style='background-color: #5F87AF;'>#4477AA</span><span> </span><span style='background-color: #FF8787;'>#EE6677</span><span> </span><span style='background-color: #00AF5F;'>#228833</span><span> </span><span style='background-color: #D7D75F;'>#CCBB44</span><span> </span><span style='background-color: #87D7FF;'>#66CCEE</span><span> </span><span style='background-color: #AF5F87;'>#AA3377</span><span> </span><span style='background-color: #B2B2B2;'>#BBBBBB</span><span>
-</span></CODE></PRE>
+![](./man/figures/README-crayon.png)<!-- -->
 
 You can disable this feature by setting the `crayon.enabled` option to
 `FALSE`.
@@ -123,6 +113,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 
 ``` r
 # Test how well the colours are identifiable
+set.seed(12345)
 plot_map(bright(7))
 ```
 
@@ -175,8 +166,9 @@ with colours that are:
   - Matching well together.
 
 All the scales presented in Paul Tol’s technical note are implemented
-here, for use with `graphics` or `ggplot2`. Refer to the original
-document for details about the recommended uses.
+here, for use with base R or
+[**ggplot2**](https://github.com/tidyverse/ggplot2). Refer to the
+original document for details about the recommended uses.
 
 See the vignette for a more complete overview:
 
@@ -197,7 +189,7 @@ welcome](https://github.com/nfrerebeau/khroma/issues)).
 
 ## Contributing
 
-Please note that the `khroma` project is released with a [Contributor
+Please note that the **khroma** project is released with a [Contributor
 Code of
 Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
