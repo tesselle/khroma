@@ -7,7 +7,7 @@
 \alias{khroma}
 \title{khroma: Colour Schemes for Scientific Data Visualization}
 \description{
-\if{html}{\figure{logo.png}{options: align='right'}}
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
 An implementation of Paul Tol's colour schemes for
     use with 'graphics' or 'ggplot2'. These schemes are ready for each

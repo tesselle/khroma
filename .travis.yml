@@ -1,13 +1,14 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
-sudo: false
+language: r
+os: linux
+dist: xenial
 cache: packages
 warnings_are_errors: true
 
 # Build matrix
 # Turn on vdiffr only on r release
-matrix:
+jobs:
   include:
   - r: devel
   - r: release
@@ -19,7 +20,7 @@ matrix:
     deploy:
       provider: script
       script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
-      skip_cleanup: true
+      cleanup: false
       on:
         all_branches: true
         tags: true

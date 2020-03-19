@@ -28,11 +28,9 @@ scale_color_iridescent(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_iridescent(..., reverse = FALSE, aesthetics = "fill")
 
-scale_colour_discreterainbow(..., reverse = FALSE,
-  aesthetics = "colour")
+scale_colour_discreterainbow(..., reverse = FALSE, aesthetics = "colour")
 
-scale_color_discreterainbow(..., reverse = FALSE,
-  aesthetics = "colour")
+scale_color_discreterainbow(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_discreterainbow(..., reverse = FALSE, aesthetics = "fill")
 
@@ -117,8 +115,9 @@ Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other Paul Tol's colour schemes: \code{\link{scale_tol_discrete}},
-  \code{\link{scale_tol_diverging}}
+Other Paul Tol's colour schemes: 
+\code{\link{scale_tol_discrete}},
+\code{\link{scale_tol_diverging}}
 }
 \author{
 N. Frerebeau

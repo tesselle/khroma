@@ -13,32 +13,23 @@
 \alias{scale_fill_PRGn}
 \title{Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}}
 \usage{
-scale_colour_sunset(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_colour_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_color_sunset(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_color_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_fill_sunset(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "fill")
+scale_fill_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
 
-scale_colour_BuRd(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_colour_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_color_BuRd(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_color_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_fill_BuRd(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "fill")
+scale_fill_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
 
-scale_colour_PRGn(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_colour_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_color_PRGn(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "colour")
+scale_color_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
 
-scale_fill_PRGn(..., reverse = FALSE, midpoint = 0,
-  aesthetics = "fill")
+scale_fill_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
@@ -93,8 +84,9 @@ Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other Paul Tol's colour schemes: \code{\link{scale_tol_discrete}},
-  \code{\link{scale_tol_sequential}}
+Other Paul Tol's colour schemes: 
+\code{\link{scale_tol_discrete}},
+\code{\link{scale_tol_sequential}}
 }
 \author{
 N. Frerebeau

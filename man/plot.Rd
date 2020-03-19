@@ -43,7 +43,8 @@ plot_map(colour("YlOrBr")(9))
 plot_map(colour("discrete rainbow")(14))
 }
 \seealso{
-Other diagnostic tools: \code{\link{convert}}
+Other diagnostic tools: 
+\code{\link{convert}()}
 }
 \author{
 N. Frerebeau

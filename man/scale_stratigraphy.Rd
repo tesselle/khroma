@@ -54,8 +54,9 @@ ggplot2::ggplot(strati, ggplot2::aes(fill = name)) +
 \href{https://www.ccgm.org}{Commission for the Geological Map of the World}.
 }
 \seealso{
-Other Themed colour schemes: \code{\link{scale_colour_land}},
-  \code{\link{scale_colour_soil}}
+Other Themed colour schemes: 
+\code{\link{scale_colour_land}()},
+\code{\link{scale_colour_soil}()}
 }
 \author{
 N. Frerebeau

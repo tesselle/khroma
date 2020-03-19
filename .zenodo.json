@@ -1,5 +1,5 @@
 {
-    "license": "GPL-3.0",
+    "license": "GPL-3.0+",
     "description": "<p>An implementation of Paul Tol&#39;s colour schemes for use with <code>graphics</code> or <code>ggplot2</code>. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.</p>",
     "contributors": [
         {
@@ -11,11 +11,12 @@
     ],
     "language": "eng",
     "keywords": [
-        "data-visualization",
-        "colour-schemes",
+        "data visualization",
+        "colour schemes",
         "accessibility",
         "archaeology",
-        "archaeological-science"
+        "archaeological science",
+        "r package"
     ],
     "upload_type": "software",
     "communities": [

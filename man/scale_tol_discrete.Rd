@@ -146,8 +146,9 @@ Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other Paul Tol's colour schemes: \code{\link{scale_tol_diverging}},
-  \code{\link{scale_tol_sequential}}
+Other Paul Tol's colour schemes: 
+\code{\link{scale_tol_diverging}},
+\code{\link{scale_tol_sequential}}
 }
 \author{
 N. Frerebeau
