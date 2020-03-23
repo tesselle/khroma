@@ -28,3 +28,8 @@
 #' @docType package
 #' @keywords internal
 "_PACKAGE"
+
+#' @importFrom ggplot2 continuous_scale discrete_scale scale_color_manual
+#' scale_fill_manual
+#' @importFrom scales gradient_n_pal rescale_mid
+NULL

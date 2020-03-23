@@ -18,7 +18,6 @@ NULL
 #' @export
 #' @rdname scale_stratigraphy
 scale_colour_stratigraphy <- function(..., aesthetics = "colour") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("stratigraphy", names = TRUE)
   # Build scale
@@ -33,7 +32,6 @@ scale_color_stratigraphy <- scale_colour_stratigraphy
 #' @export
 #' @rdname scale_stratigraphy
 scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("stratigraphy", names = TRUE)
   # Build scale
@@ -61,7 +59,6 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @export
 #' @rdname scale_land
 scale_colour_land <- function(..., aesthetics = "colour") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("land", names = TRUE)
   # Build scale
@@ -76,7 +73,6 @@ scale_color_land <- scale_colour_land
 #' @export
 #' @rdname scale_land
 scale_fill_land <- function(..., aesthetics = "fill") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("land", names = TRUE)
   # Build scale
@@ -103,7 +99,6 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #' @export
 #' @rdname scale_soil
 scale_colour_soil <- function(..., aesthetics = "colour") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("soil", names = TRUE)
   # Build scale
@@ -118,7 +113,6 @@ scale_color_soil <- scale_colour_soil
 #' @export
 #' @rdname scale_soil
 scale_fill_soil <- function(..., aesthetics = "fill") {
-  require_ggplot2()
   # Get palette
   color_palette <- colour("soil", names = TRUE)
   # Build scale
