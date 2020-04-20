@@ -29,7 +29,8 @@
 #' @keywords internal
 "_PACKAGE"
 
-#' @importFrom ggplot2 continuous_scale discrete_scale scale_color_manual
-#' scale_fill_manual
-#' @importFrom scales gradient_n_pal rescale_mid
+#' @importFrom ggplot2 aes
+#' ggproto layer Geom GeomPolygon Stat
+#' continuous_scale discrete_scale scale_color_manual scale_fill_manual
+#' @importFrom scales alpha gradient_n_pal rescale_mid
 NULL

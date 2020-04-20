@@ -47,9 +47,10 @@ RoxygenNote: 7.1.0
 Collate: 
     'anomalize.R'
     'colour.R'
-    'ggplot2-science.R'
-    'ggplot2-tol.R'
     'ggplot2.R'
     'khroma-package.R'
+    'layer_chull.R'
     'plot.R'
+    'scale_colour_science.R'
+    'scale_colour_tol.R'
 VignetteBuilder: knitr
