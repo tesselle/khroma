@@ -3,10 +3,8 @@
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
-[![Appveyor build
-status](https://ci.appveyor.com/api/projects/status/d4hib2u0jqsup0ln/branch/master?svg=true)](https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master)
-[![Travis build
-Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
+[![R build
+status](https://github.com/nfrerebeau/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/nfrerebeau/khroma/actions)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
 
 [![CRAN
@@ -81,7 +79,7 @@ bright <- colour("bright")
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your
 machine, colours will be nicely printed in the console.
 
-![](./man/figures/README-crayon.png)<!-- -->
+<img src="./man/figures/README-crayon.png" width="646" />
 
 You can disable this feature by setting the `crayon.enabled` option to
 `FALSE`.
