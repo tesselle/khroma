@@ -12,7 +12,6 @@
 ^README\.Rmd$
 ^data-raw$
 ^docs$
-^\man\figures\README-.*\.png$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.github$
