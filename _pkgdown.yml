@@ -2,6 +2,12 @@ url: http://khroma.archaeo.science
 development:
   mode: auto
 
+template:
+  opengraph:
+    twitter:
+      creator: "@nfrerebeau"
+      card: summary_large_image
+
 reference:
 - title: Colour Palette
   contents:
