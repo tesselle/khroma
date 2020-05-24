@@ -30,10 +30,10 @@ An implementation of Paul Tol's colour schemes for
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://khroma.archaeo.science}
-  \item \url{http://github.com/nfrerebeau/khroma}
+  \item \url{https://khroma.archaeo.science}
+  \item \url{https://github.com/nfrerebeau/khroma}
   \item \url{https://cran.r-project.org/package=khroma}
-  \item Report bugs at \url{http://github.com/nfrerebeau/khroma/issues}
+  \item Report bugs at \url{https://github.com/nfrerebeau/khroma/issues}
 }
 
 }

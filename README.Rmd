@@ -56,8 +56,8 @@ install.packages("khroma")
 Or install the development version from GitHub with:
 
 ```{r gh-installation, eval=FALSE}
-# install.packages("devtools")
-devtools::install_github("nfrerebeau/khroma")
+# install.packages("remotes")
+remotes::install_github("nfrerebeau/khroma")
 ```
 
 ## Usage
@@ -132,10 +132,7 @@ Paul Tol offers carefully chosen schemes, ready for each type of data, with colo
 
 All the scales presented in Paul Tol's technical note are implemented here, for use with base R or [**ggplot2**](https://github.com/tidyverse/ggplot2). Refer to the original document for details about the recommended uses.
 
-See the vignette for a more complete overview:
-```{r tol-vignette, eval=FALSE}
-utils::vignette("tol")
-```
+See `vignette("tol")` for a more complete overview.
 
 ### Scientific colour schemes
 The following scientific colour schemes are available:

@@ -55,8 +55,8 @@ install.packages("khroma")
 Or install the development version from GitHub with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("nfrerebeau/khroma")
+# install.packages("remotes")
+remotes::install_github("nfrerebeau/khroma")
 ```
 
 ## Usage
@@ -168,11 +168,7 @@ here, for use with base R or
 [**ggplot2**](https://github.com/tidyverse/ggplot2). Refer to the
 original document for details about the recommended uses.
 
-See the vignette for a more complete overview:
-
-``` r
-utils::vignette("tol")
-```
+See `vignette("tol")` for a more complete overview.
 
 ### Scientific colour schemes
 
