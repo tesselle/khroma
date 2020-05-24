@@ -18,19 +18,24 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: macOS-latest,   r: 'devel'}
-          - {os: macOS-latest,   r: '4.0'}
-          - {os: windows-latest, r: '4.0'}
-          - {os: ubuntu-16.04,   r: '4.0', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
-          - {os: ubuntu-16.04,   r: '3.6', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
-          - {os: ubuntu-16.04,   r: '3.5', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
-          - {os: ubuntu-16.04,   r: '3.4', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
-          - {os: ubuntu-16.04,   r: '3.3', rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
+          - {os: macOS-latest,   r: 'devel',   vdiffr: false}
+          - {os: macOS-latest,   r: 'release', vdiffr: true}
+          - {os: windows-latest, r: 'release', vdiffr: true}
+          - {os: ubuntu-16.04,   r: 'release', vdiffr: true,  rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
+          - {os: ubuntu-16.04,   r: 'oldrel',  vdiffr: false, rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
+          - {os: ubuntu-16.04,   r: '3.5',     vdiffr: false, rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
+          - {os: ubuntu-16.04,   r: '3.4',     vdiffr: false, rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
+          - {os: ubuntu-16.04,   r: '3.3',     vdiffr: false, rspm: "https://packagemanager.rstudio.com/cran/__linux__/xenial/latest"}
 
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
       RSPM: ${{ matrix.config.rspm }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      # don't treat missing suggested packages as error
+      _R_CHECK_FORCE_SUGGESTS_: false
+      # Runs vdiffr test only on the latest version of R
+      VDIFFR_RUN_TESTS: ${{ matrix.config.vdiffr }}
+      VDIFFR_LOG_PATH: "../vdiffr.Rout.fail"
 
     steps:
       - uses: actions/checkout@v2
@@ -55,7 +60,7 @@ jobs:
           key: ${{ runner.os }}-r-${{ matrix.config.r }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-r-${{ matrix.config.r }}-1-
 
-      - name: Install system dependencies
+      - name: Install system dependencies on Linux
         if: runner.os == 'Linux'
         env:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
@@ -63,6 +68,17 @@ jobs:
           Rscript -e "remotes::install_github('r-hub/sysreqs')"
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
+
+      - name: Install system dependencies on macOS
+        if: runner.os == 'macOS'
+        run: |
+          # XQuartz is needed by vdiffr
+          brew cask install xquartz
+          # To install vdiffr, these three libraries/tools are needed in addition to XQuartz
+          # - freetype (already installed, needed by systemfonts)
+          # - cairo (not installed, needed by gdtools)
+          # - pkg-config (not installed, needed to set proper build settings)
+          brew install pkg-config cairo
 
       - name: Install dependencies
         run: |
