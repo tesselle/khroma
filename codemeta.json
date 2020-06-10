@@ -148,12 +148,6 @@
   "softwareRequirements": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "R",
-      "name": "R",
-      "version": ">= 3.2"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
       "provider": {
@@ -184,7 +178,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "394.018KB",
+  "fileSize": "449.067KB",
   "contIntegration": [
     "https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master",
     "https://travis-ci.org/nfrerebeau/khroma",

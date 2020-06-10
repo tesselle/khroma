@@ -27,8 +27,6 @@ URL: https://khroma.archaeo.science,
     https://github.com/nfrerebeau/khroma,
     https://cran.r-project.org/package=khroma
 BugReports: https://github.com/nfrerebeau/khroma/issues
-Depends: 
-    R (>= 3.2)
 Imports:
     ggplot2,
     grDevices,

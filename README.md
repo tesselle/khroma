@@ -3,6 +3,8 @@
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
+<!-- badges: start -->
+
 [![R build
 status](https://github.com/nfrerebeau/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/nfrerebeau/khroma/actions)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
@@ -17,9 +19,11 @@ Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
+<!-- badges: end -->
 
 ## Overview
 
