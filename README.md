@@ -113,23 +113,24 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 
 ### Diagnostic tools
 
+#### Test how well the colours are identifiable
+
 ``` r
-# Test how well the colours are identifiable
 set.seed(12345)
 plot_map(bright(7))
 ```
 
-<img src="man/figures/README-usage-colourblind-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind1-1.png" style="display: block; margin: auto;" />
+
+#### Simulate colour-blindness
 
 ``` r
-
-# Simulate colour-blindness
 # convert() returns a modified palette function
 deuteranopia <- convert(bright, mode = "deuteranopia")
 plot_scheme(deuteranopia(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-usage-colourblind-2.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -137,7 +138,7 @@ protanopia <- convert(bright, mode = "protanopia")
 plot_scheme(protanopia(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-usage-colourblind-3.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind2-2.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -145,7 +146,7 @@ tritanopia <- convert(bright, mode = "tritanopia")
 plot_scheme(tritanopia(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-usage-colourblind-4.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind2-3.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -153,7 +154,7 @@ achromatopsia <- convert(bright, mode = "achromatopsia")
 plot_scheme(achromatopsia(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-usage-colourblind-5.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind2-4.png" style="display: block; margin: auto;" />
 
 ## Colour Schemes
 

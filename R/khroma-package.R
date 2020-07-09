@@ -33,4 +33,5 @@
 #' ggproto layer Geom GeomPolygon Stat
 #' continuous_scale discrete_scale scale_color_manual scale_fill_manual
 #' @importFrom scales alpha gradient_n_pal rescale_mid
+#' @importFrom grDevices colorRampPalette
 NULL

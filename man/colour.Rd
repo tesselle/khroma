@@ -20,7 +20,7 @@ vector of colours should be reversed?}
 colours should be kept in the resulting vector?}
 
 \item{...}{Further arguments passed to
-\code{\link[grDevices]{colorRampPalette}}.}
+\code{\link[grDevices:colorRamp]{colorRampPalette}}.}
 }
 \value{
 A palette function with the following attributes, that when called

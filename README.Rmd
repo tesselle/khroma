@@ -103,12 +103,14 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 ```
 
 ### Diagnostic tools
-```{r usage-colourblind, fig.height=2, fig.width=7, fig.align='center'}
-# Test how well the colours are identifiable
+#### Test how well the colours are identifiable
+```{r usage-colourblind1, fig.height=2, fig.width=7, fig.align='center'}
 set.seed(12345)
 plot_map(bright(7))
+```
 
-# Simulate colour-blindness
+#### Simulate colour-blindness
+```{r usage-colourblind2, fig.height=2, fig.width=7, fig.align='center'}
 # convert() returns a modified palette function
 deuteranopia <- convert(bright, mode = "deuteranopia")
 plot_scheme(deuteranopia(7), colours = TRUE)

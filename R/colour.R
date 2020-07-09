@@ -8,7 +8,7 @@
 #' @param names A \code{\link{logical}} scalar: should the names of the
 #'  colours should be kept in the resulting vector?
 #' @param ... Further arguments passed to
-#'  \code{\link[grDevices]{colorRampPalette}}.
+#'  \code{\link[grDevices:colorRamp]{colorRampPalette}}.
 #' @section Paul Tol's Colour Schemes:
 #'  The following palettes are available. The maximum number of supported
 #'  colours is in brackets, this value is only relevant for the qualitative

@@ -20,10 +20,9 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.3 (2020-02-29)",
+  "runtimePlatform": "R version 4.0.2 (2020-06-22)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -184,13 +183,9 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "449.078KB",
-  "contIntegration": [
-    "https://ci.appveyor.com/project/nfrerebeau/khroma/branch/master",
-    "https://travis-ci.org/nfrerebeau/khroma",
-    "https://codecov.io/gh/nfrerebeau/khroma"
-  ],
-  "developmentStatus": "https://www.tidyverse.org/lifecycle/#stable",
+  "fileSize": "1186.398KB",
+  "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
+  "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [
     "data-visualization",
     "colour-schemes",
