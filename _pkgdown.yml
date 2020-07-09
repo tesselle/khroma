@@ -3,6 +3,8 @@ development:
   mode: auto
 
 template:
+  params:
+    ganalytics: UA-172160955-2
   opengraph:
     twitter:
       creator: "@nfrerebeau"
