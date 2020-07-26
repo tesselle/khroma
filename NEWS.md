@@ -1,6 +1,7 @@
 ## khroma 1.3.0.9000
 ### New functions
 * Add a {ggplot2} `geom` and `stat` to create convex hull polygons.
+* Add a plot_scheme_colourblind function
 
 ## khroma 1.3.0 (CRAN release date: 2019-10-26)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3519838.svg)](https://doi.org/10.5281/zenodo.3519838)

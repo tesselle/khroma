@@ -2,7 +2,11 @@
 #'
 #' \code{plot_scheme} shows colours in a plot.
 #'
+#' 
 #' \code{plot_map} produces a diagnostic map for a given colour scheme.
+#'
+#' \code{plot_scheme_colorblind} shows colours in a plot with different types
+#' of simulated color blindness.
 #' @param x A \code{\link{character}} vector of colours.
 #' @param colours A \code{\link{logical}} scalar: should the hexadecimal
 #' representation of the colours be displayed?
@@ -138,3 +142,40 @@ draw_hexagon <- function(x = 0, y = 0, r = 0.5, border = NULL, fill = NA) {
     col = fill
   )
 }
+
+
+#' @rdname plot
+#' @export
+plot_scheme_colourblind <- function(x) {
+    # coerce colour scheme class to character vector
+    x <- as.character(x) 
+    dat <- data.frame(Palette = x, 
+                      Deuteranopia = khroma:::anomalize(x, 'deuteranopia'),
+                      Protanopia = khroma:::anomalize(x, 'protanopia'),
+                      Tritanopia = khroma:::anomalize(x, 'tritanopia'),
+                      Achromatopsia = khroma:::anomalize(x, 'achromatopsia'))
+    xcoord <- seq(0, 1, length.out = length(x) + 1)[1:nrow(dat)]
+    ycoord <- c(.8, .6, .4, .2, 0)
+    grid::grid.newpage()
+    for (i in 1:nrow(dat)) {
+        for (j in 1:ncol(dat)) {
+            color <- dat[i, j]
+            grid::grid.rect(x = grid::unit(xcoord[i], "npc"), 
+                            y = grid::unit(ycoord[j], "npc"),
+                            width = grid::unit(1 / length(x), "npc"), 
+                            height = grid::unit(.7 / 5, "npc"),
+                            hjust = 0,
+                            vjust = 0,
+                            gp = grid::gpar(fill=color, col = color))
+        }
+    }
+    grid::grid.text(label = 'Palette', x = grid::unit(0.1, 'npc'), y = grid::unit(0.97, 'npc'))
+    grid::grid.text(label = 'Deuteranopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.77, 'npc'))
+    grid::grid.text(label = 'Protanopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.57, 'npc'))
+    grid::grid.text(label = 'Tritanopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.37, 'npc'))
+    grid::grid.text(label = 'Achromatopsia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.17, 'npc'))
+}
+
+#' @rdname plot
+#' @export
+plot_scheme_colorblind <- plot_scheme_colourblind

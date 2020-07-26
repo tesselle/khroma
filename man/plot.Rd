@@ -4,11 +4,17 @@
 \alias{plot}
 \alias{plot_scheme}
 \alias{plot_map}
+\alias{plot_scheme_colourblind}
+\alias{plot_scheme_colorblind}
 \title{Plot Colour Scheme}
 \usage{
 plot_scheme(x, colours = FALSE, names = FALSE, size = 1)
 
 plot_map(x)
+
+plot_scheme_colourblind(x)
+
+plot_scheme_colorblind(x)
 }
 \arguments{
 \item{x}{A \code{\link{character}} vector of colours.}
@@ -28,6 +34,9 @@ Works the same as \code{cex} parameter of \code{\link[graphics]{par}}.}
 }
 \details{
 \code{plot_map} produces a diagnostic map for a given colour scheme.
+
+\code{plot_scheme_colorblind} shows colours in a plot with different types
+of simulated color blindness.
 }
 \examples{
 ## Plot colour schemes

@@ -125,6 +125,13 @@ achromatopsia <- convert(bright, mode = "achromatopsia")
 plot_scheme(achromatopsia(7), colours = TRUE)
 ```
 
+```{r usage-colourblind3, fig.height=4, fig.width=7, fig.align='center'}
+plot_scheme_colourblind(bright(7))
+
+x <- c("#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15")
+plot_scheme_colourblind(x)
+```
+
 ## Colour Schemes
 ### Paul Tol's Colour Schemes
 Paul Tol offers carefully chosen schemes, ready for each type of data, with colours that are:
