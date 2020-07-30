@@ -10,7 +10,6 @@ test_that("Schemes", {
       plot_scheme_bright <- grDevices::recordPlot()
       invisible(dev.off())
 
-      skip_if(getRversion() < "3.2")
       vdiffr::expect_doppelganger(paste0("scheme_bright_", i, j),
                                   plot_scheme_bright)
     }
@@ -33,8 +32,16 @@ test_that("Diagnostic Map", {
   plot_map_bright <- grDevices::recordPlot()
   invisible(dev.off())
 
-  skip_if(getRversion() < "3.2")
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
 
   expect_error(plot_map(1:5), "x must be a character vector of colours.")
+})
+test_that("Colourblind Schemes", {
+  pdf(NULL)
+  dev.control(displaylist = "enable")
+  plot_scheme_colourblind(colour("bright")(7))
+  plot_colourblind_bright <- grDevices::recordPlot()
+  invisible(dev.off())
+
+  vdiffr::expect_doppelganger("scheme_colourblind", plot_colourblind_bright)
 })

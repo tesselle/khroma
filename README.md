@@ -156,6 +156,20 @@ plot_scheme(achromatopsia(7), colours = TRUE)
 
 <img src="man/figures/README-usage-colourblind2-4.png" style="display: block; margin: auto;" />
 
+``` r
+plot_scheme_colourblind(bright(7))
+```
+
+<img src="man/figures/README-usage-colourblind3-1.png" style="display: block; margin: auto;" />
+
+``` r
+
+x <- c("#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15")
+plot_scheme_colourblind(x)
+```
+
+<img src="man/figures/README-usage-colourblind3-2.png" style="display: block; margin: auto;" />
+
 ## Colour Schemes
 
 ### Paul Tol’s Colour Schemes
