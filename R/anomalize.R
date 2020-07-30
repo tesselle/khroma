@@ -106,6 +106,12 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
   # Conversion
   RGB2 <- solve(RGB_to_LMS) %*% S %*% RGB_to_LMS %*% RGB1
 
+  # RGB constraints
+  for (j in 1:ncol(RGB2)) {
+      RGB2[, j] <- pmin(RGB2[, j], rep(255, 3))
+      RGB2[, j] <- pmax(RGB2[, j], rep(0, 3))
+  }
+
   # Convert to Hex colour code
   grDevices::rgb(red = RGB2[1, ], green = RGB2[2, ], blue = RGB2[3, ],
                  names = names(x), maxColorValue = 255)
