@@ -56,6 +56,6 @@ Other diagnostic tools:
 \code{\link{convert}()}
 }
 \author{
-N. Frerebeau
+N. Frerebeau, V. Arel-Bundock
 }
 \concept{diagnostic tools}

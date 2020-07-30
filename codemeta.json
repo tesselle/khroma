@@ -45,6 +45,13 @@
       "familyName": "Lebrun",
       "email": "brice.lebrun@u-bordeaux-montaigne.fr",
       "@id": "https://orcid.org/0000-0001-7503-8685"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Vincent",
+      "familyName": "Arel-Bundock",
+      "email": "vincent.arel-bundock@umontreal.ca",
+      "@id": "https://orcid.org/0000-0003-2042-7063"
     }
   ],
   "copyrightHolder": {},
@@ -188,7 +195,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1228.724KB",
+  "fileSize": "1229.089KB",
   "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [

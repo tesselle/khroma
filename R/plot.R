@@ -16,7 +16,7 @@
 #' plotting text should be magnified relative to the default.
 #' Works the same as \code{cex} parameter of \code{\link[graphics]{par}}.
 #' @example inst/examples/ex-plot.R
-#' @author N. Frerebeau
+#' @author N. Frerebeau, V. Arel-Bundock
 #' @family diagnostic tools
 #' @name plot
 #' @rdname plot
