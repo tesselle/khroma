@@ -32,6 +32,7 @@ Depends:
 Imports:
     ggplot2,
     grDevices,
+    grid,
     scales
 Suggests:
     covr,
