@@ -1,7 +1,6 @@
 ## Test environments
-* local Ubuntu 18.04 install: 3.6.0
-* travis-ci: 3.2, 3.3, 3.4, oldrel, release and devel
-* appveyor: release
+* local Ubuntu 18.04 install: 4.0.2
+* GitHub Actions: 3.3, 3.4, 3.5, oldrel, release and devel
 * win-builder: oldrel, release and devel
 
 ## R CMD check results

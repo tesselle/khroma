@@ -1,12 +1,25 @@
 {
-    "license": "GPL-3.0+",
+    "title": "khroma: Colour Schemes for Scientific Data Visualization",
     "description": "<p>An implementation of Paul Tol&#39;s colour schemes for use with <code>graphics</code> or <code>ggplot2</code>. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.</p>",
+    "creators": [
+        {
+            "orcid": "0000-0001-5759-4944",
+            "affiliation": "Universit\u00e9 Bordeaux Montaigne",
+            "name": "Frerebeau, Nicolas"
+        }
+    ],
     "contributors": [
         {
             "orcid": "0000-0001-7503-8685",
-            "affiliation": "CEREGE",
+            "affiliation": "Universit\u00e9 Bordeaux Montaigne",
             "type": "Other",
             "name": "Lebrun, Brice"
+        },
+        {
+            "orcid": "0000-0003-2042-7063",
+            "affiliation": "Universit\u00e9 de Montréal",
+            "type": "Other",
+            "name": "Arel-Bundock, Vincent"
         }
     ],
     "language": "eng",
@@ -19,17 +32,11 @@
         "r package"
     ],
     "upload_type": "software",
+    "license": "GPL-3.0+",
+    "access_right": "open",
     "communities": [
         {
             "identifier": "archaeo"
         }
-    ],
-    "creators": [
-        {
-            "orcid": "0000-0001-5759-4944",
-            "affiliation": "Universit\u00e9 Bordeaux Montaigne",
-            "name": "Frerebeau, Nicolas"
-        }
-    ],
-    "access_right": "open"
+    ]
 }

@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Scientific Data Visualization
-Version: 1.3.0.9000
+Version: 1.4.0
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
@@ -55,7 +55,6 @@ Collate:
     'colour.R'
     'ggplot2.R'
     'khroma-package.R'
-    'layer_chull.R'
     'plot.R'
     'scale_colour_science.R'
     'scale_colour_tol.R'

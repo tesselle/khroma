@@ -6,13 +6,13 @@ citEntry(entry = "Manual",
   year         = "2019",
   organization = "Université Bordeaux Montaigne",
   address      = "Pessac, France",
-  note         = "R package version 1.3.0.9000",
+  note         = "R package version 1.4.0",
   url          = "https://doi.org/10.5281/zenodo.1472077",
 
   textVersion  =
   paste("Frerebeau, Nicolas (2019).",
         "khroma: Colour Schemes for Scientific Data Visualization.",
-        "R package version 1.3.0.9000",
+        "R package version 1.4.0",
         "Université Bordeaux Montaigne, Pessac, France.",
         "DOI 10.5281/zenodo.1472077.",
         "URL https://cran.r-project.org/package=khroma.")
