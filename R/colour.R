@@ -53,6 +53,11 @@
 #'   \item{smooth rainbow}{This scheme does not have to be used over the full
 #'   range.}
 #'  }
+#' @section Okabe and Ito Colour Scheme:
+#'  The following (qualitative) colour scheme is available:
+#'  \describe{
+#'   \item{okabe ito}{Up to 8 colours.}
+#'  }
 #' @section Scientific Colour Schemes:
 #'  The following (qualitative) colour schemes are available:
 #'  \describe{
@@ -80,6 +85,10 @@
 #'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 #'  Europe}. Luxembourg: European Commission, Office for Official Publications
 #'  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
+#'
+#'  Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
+#'  Figures and Presentations That Are Friendly to Colorblind People}.
+#'  URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
 #'
 #'  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.

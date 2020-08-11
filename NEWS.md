@@ -1,6 +1,7 @@
 ## khroma 1.4.0
 ### New functions
-* Add a plot_scheme_colourblind function.
+* Add a `plot_scheme_colourblind` function.
+* Add Okabe and Ito (2008) colour scheme.
 
 ### Bugfixes & changes
 * Restrict the RGB values in the `anomalize` function.

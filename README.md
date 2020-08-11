@@ -31,8 +31,8 @@ Color blindness affects a large number of individuals. When
 communicating scientific results colour palettes must therefore be
 carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Paul Tol’s colour
-schemes\[1\]. These schemes are ready for each type of data
+This R package provides an implementation of Paul Tol\[1\] and Okabe and
+Ito\[2\] colour schemes. These schemes are ready for each type of data
 (qualitative, diverging or sequential), with colours that are distinct
 for all people, including colour-blind readers. This package also
 provides tools to simulate colour-blindness and to test how well the
@@ -106,7 +106,7 @@ plot_scheme(bright(7), colours = TRUE)
 # Use with ggplot2
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
   geom_point() +
-  scale_colour_bright()
+  scale_colour_okabeito()
 ```
 
 <img src="man/figures/README-usage-ggplot2-1.png" style="display: block; margin: auto;" />
@@ -207,6 +207,10 @@ Code of
 Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
 
-1.  Tol, Paul (2018). *Colour Schemes*. SRON. Technical Note
+1.  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note
     No. SRON/EPS/TN/09-002. URL:
     <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
+
+2.  Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to
+    Make Figures and Presentations That Are Friendly to Colorblind
+    People*. URL: <http://jfly.iam.u-tokyo.ac.jp/color>.

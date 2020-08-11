@@ -96,6 +96,14 @@ Provides qualitative, diverging and sequential colour schemes.
  }
 }
 
+\section{Okabe and Ito Colour Scheme}{
+
+ The following (qualitative) colour scheme is available:
+ \describe{
+  \item{okabe ito}{Up to 8 colours.}
+ }
+}
+
 \section{Scientific Colour Schemes}{
 
  The following (qualitative) colour schemes are available:
@@ -107,6 +115,9 @@ Provides qualitative, diverging and sequential colour schemes.
 }
 
 \examples{
+## Okabe and Ito colour scheme
+plot_scheme(colour("okabe ito")(8))
+
 ## Paul Tol's colour schemes
 ### Qualitative data
 plot_scheme(colour("bright")(7))
@@ -139,6 +150,10 @@ plot_scheme(colour("soil")(24))
 Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
  Europe}. Luxembourg: European Commission, Office for Official Publications
  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
+
+ Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
+ Figures and Presentations That Are Friendly to Colorblind People}.
+ URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
 
  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002, issue 3.1.

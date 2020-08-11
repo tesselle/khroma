@@ -19,6 +19,7 @@
 
 # Save =========================================================================
 source("./data-raw/schemes_PaulTol.R")
+source("./data-raw/schemes_OkabeIto.R")
 source("./data-raw/schemes_science.R")
-.schemes <- c(schemes_tol2018, schemes_science)
+.schemes <- c(schemes_tol2018, schemes_okabe2008, schemes_science)
 usethis::use_data(.schemes, internal = TRUE, overwrite = TRUE)

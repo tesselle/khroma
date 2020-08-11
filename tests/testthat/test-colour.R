@@ -1,11 +1,11 @@
 context("Colour")
 
 test_that("Palette colours", {
-  palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
-                "light", "sunset", "BuRd", "PRGn", "YlOrBr", "iridescent",
-                "discrete rainbow", "smooth rainbow", "stratigraphy", "soil",
-                "land")
-  n <- c(7, 3, 7, 9, 6, 6, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
+  palettes <- c("okabe ito", "bright", "contrast", "vibrant", "muted", "pale",
+                "dark", "light", "sunset", "BuRd", "PRGn", "YlOrBr",
+                "iridescent", "discrete rainbow", "smooth rainbow",
+                "stratigraphy", "soil", "land")
+  n <- c(8, 7, 3, 7, 9, 6, 6, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
 
   for (i in seq_len(length(palettes))) {
     expect_type(colour(palettes[i]), "closure")
@@ -26,9 +26,9 @@ test_that("Palette colours", {
 test_that("Qualitative colours", {
   options(crayon.enabled = FALSE)
 
-  palettes <- c("bright", "contrast", "vibrant", "muted", "pale", "dark",
-                "light", "stratigraphy", "soil", "land")
-  n <- c(7, 3, 7, 9, 6, 6, 9, 175, 24, 14)
+  palettes <- c("okabe ito", "bright", "contrast", "vibrant", "muted", "pale",
+                "dark", "light", "stratigraphy", "soil", "land")
+  n <- c(8, 7, 3, 7, 9, 6, 6, 9, 175, 24, 14)
   for (i in seq_len(length(palettes))) {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
@@ -91,25 +91,25 @@ test_that("Colour-blind", {
                               "#E7E7E7", "#707070", "#BABABB"))
 })
 test_that("Colour-blind attributes", {
-  palette <- colour("bright")
+  palette <- colour("okabe ito")
   protanopia <- convert(palette, mode = "protanopia")
 
-  expect_equivalent(attr(protanopia, "name"), "bright")
+  expect_equivalent(attr(protanopia, "name"), "okabe ito")
   expect_equivalent(attr(protanopia, "type"), "qualitative")
   expect_false(attr(protanopia, "interpolate"))
   expect_true(is.na(attr(protanopia, "missing")))
-  expect_equivalent(attr(protanopia, "max"), 7)
+  expect_equivalent(attr(protanopia, "max"), 8)
   expect_equivalent(attr(protanopia, "mode"), "protanopia")
 })
 test_that("Print with crayon", {
-  palette <- colour("bright")
+  palette <- colour("okabe ito")
 
   options(crayon.enabled = FALSE)
-  col <- utils::capture.output(print(palette(7)))
+  col <- utils::capture.output(print(palette(8)))
   expect_type(col, "character")
 
   skip_if_not_installed("crayon")
   options(crayon.enabled = TRUE)
-  col <- utils::capture.output(print(palette(7)))
+  col <- utils::capture.output(print(palette(8)))
   expect_true(crayon::has_style(col))
 })

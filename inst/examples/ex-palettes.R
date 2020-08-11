@@ -1,3 +1,6 @@
+## Okabe and Ito colour scheme
+plot_scheme(colour("okabe ito")(8))
+
 ## Paul Tol's colour schemes
 ### Qualitative data
 plot_scheme(colour("bright")(7))
