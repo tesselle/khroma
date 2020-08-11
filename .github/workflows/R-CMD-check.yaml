@@ -8,6 +8,10 @@ on:
 
 name: R-CMD-check
 
+# Increment this version when we want to clear cache
+env:
+  cache-version: v3
+
 jobs:
   R-CMD-check:
     runs-on: ${{ matrix.config.os }}
