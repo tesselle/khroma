@@ -56,7 +56,7 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
 
   info <- colours && names
   missing <- attr(x, "missing")
-  bad_data <- !is.na(missing)
+  bad_data <- !is.null(missing) && !is.na(missing)
   if (bad_data) x <- c(x, missing)
 
   n <- length(x) # Number of colours
@@ -82,9 +82,9 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   if (colours) {
     if (bad_data) {
       graphics::text(x = p[[n]] + 0.5, y = q[[n]], labels = missing, cex = size)
-      x <- head(x, -1)
-      p <- head(p, -1)
-      q <- head(q, -1)
+      x <- utils::head(x, -1)
+      p <- utils::head(p, -1)
+      q <- utils::head(q, -1)
     }
     graphics::text(x = p, y = q - delta * info, labels = x, cex = size)
   }

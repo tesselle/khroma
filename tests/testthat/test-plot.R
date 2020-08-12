@@ -15,12 +15,12 @@ test_that("Schemes", {
     for (j in c(TRUE, FALSE)) {
       pdf(NULL)
       dev.control(displaylist = "enable")
-      plot_scheme(colour("bright")(7), colours = i, names = j)
-      plot_scheme_bright <- grDevices::recordPlot()
+      plot_scheme(colour("muted")(9), colours = i, names = j)
+      plot_scheme_muted <- grDevices::recordPlot()
       invisible(dev.off())
 
-      vdiffr::expect_doppelganger(paste0("scheme_bright_", i, j),
-                                  plot_scheme_bright)
+      vdiffr::expect_doppelganger(paste0("scheme_muted_", i, j),
+                                  plot_scheme_muted)
     }
   }
 
