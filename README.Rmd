@@ -80,9 +80,7 @@ If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine, c
 bright(7)
 ```
 
-```{r crayon-screen, echo=FALSE, fig.width=7}
-knitr::include_graphics("./man/figures/README-crayon.png")
-```
+![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
 
 You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
 ```{r no-crayon}

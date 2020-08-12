@@ -83,7 +83,7 @@ bright <- colour("bright")
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your
 machine, colours will be nicely printed in the console.
 
-<img src="./man/figures/README-crayon.png" width="646" />
+![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
 
 You can disable this feature by setting the `crayon.enabled` option to
 `FALSE`.
@@ -92,7 +92,9 @@ You can disable this feature by setting the `crayon.enabled` option to
 options(crayon.enabled = FALSE)
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
-#> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB"
+#> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
+#> attr(,"missing")
+#> [1] NA
 ```
 
 ``` r
