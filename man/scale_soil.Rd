@@ -51,11 +51,11 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
 }
 \seealso{
-Other Themed colour schemes: 
+Other themed colour schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_stratigraphy}()}
 }
 \author{
 N. Frerebeau
 }
-\concept{Themed colour schemes}
+\concept{themed colour schemes}

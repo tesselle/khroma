@@ -14,7 +14,7 @@ NULL
 #' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
-#' @family Themed colour schemes
+#' @family themed colour schemes
 #' @export
 #' @rdname scale_stratigraphy
 scale_colour_stratigraphy <- function(..., aesthetics = "colour") {
@@ -55,7 +55,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
-#' @family Themed colour schemes
+#' @family themed colour schemes
 #' @export
 #' @rdname scale_land
 scale_colour_land <- function(..., aesthetics = "colour") {
@@ -95,7 +95,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
-#' @family Themed colour schemes
+#' @family themed colour schemes
 #' @export
 #' @rdname scale_soil
 scale_colour_soil <- function(..., aesthetics = "colour") {

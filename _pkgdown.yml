@@ -14,12 +14,15 @@ reference:
 - title: Colour Palette
   contents:
   - has_concept("colour palettes")
+- title: Okabe and Ito's colour scheme
+  contents:
+  - has_concept("Okabe and Ito's colour scheme")
 - title: Paul Tol's Colour Schemes
   contents:
   - has_concept("Paul Tol's colour schemes")
 - title: Themed Colour Schemes
   contents:
-  - has_concept("Themed colour schemes")
+  - has_concept("themed colour schemes")
 - title: Diagnostic Tools
   contents:
   - has_concept("diagnostic tools")

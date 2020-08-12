@@ -52,11 +52,11 @@ Tol, P. (2018). \emph{Colour Schemes.} SRON. Technical Note No.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other Themed colour schemes: 
+Other themed colour schemes: 
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()}
 }
 \author{
 N. Frerebeau
 }
-\concept{Themed colour schemes}
+\concept{themed colour schemes}
