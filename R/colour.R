@@ -81,6 +81,11 @@
 #'   \item{max}{An \code{\link{integer}} giving the maximum number of colour
 #'   values. Only relevant for non-interpolated colour schemes.}
 #'  }
+#'
+#'  For colour schemes that can be interpolated (diverging and sequential data),
+#'  the colour range can be limited with an additional argument. `range` allows
+#'  to remove a fraction of the colour domain (before being interpolated; see
+#'  examples).
 #' @references
 #'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 #'  Europe}. Luxembourg: European Commission, Office for Official Publications
@@ -117,14 +122,24 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
 
   if (interpolate) {
     # For colour schemes that can be linearly interpolated
-    fun <- function(n) {
+    fun <- function(n, range = c(0, 1)) {
+      if (any(range > 1) | any(range < 0))
+        stop(sQuote("range"), " values must be in [0,1].", call. = FALSE)
+      # Remove starting colours
+      colours <- utils::tail(colours, k * (1 - range[[1]]))
+      # Remove ending colours
+      colours <- utils::head(colours, k * range[[2]])
+
       col <- grDevices::colorRampPalette(colours)(n)
+      attr(col, "missing") <- missing
       class(col) <- "colour_scheme"
       return(col)
     }
   } else {
     # No interpolation
-    fun <- function(n) {
+    # FIXME: add 'range = c(0, 1)' to prevent "multiple local function
+    # definitions" note in R CMD check
+    fun <- function(n, range = c(0, 1)) {
       # Check
       if (n > k)
         stop("You ask for too many colours: ", palette,

@@ -16,17 +16,42 @@
 \alias{scale_fill_smoothrainbow}
 \title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}}
 \usage{
-scale_colour_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_color_YlOrBr(..., reverse = FALSE, aesthetics = "colour")
+scale_color_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_fill_YlOrBr(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_YlOrBr(..., reverse = FALSE, range = c(0, 1), aesthetics = "fill")
 
-scale_colour_iridescent(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_color_iridescent(..., reverse = FALSE, aesthetics = "colour")
+scale_color_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_fill_iridescent(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "fill"
+)
 
 scale_colour_discreterainbow(..., reverse = FALSE, aesthetics = "colour")
 
@@ -34,17 +59,35 @@ scale_color_discreterainbow(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_discreterainbow(..., reverse = FALSE, aesthetics = "fill")
 
-scale_colour_smoothrainbow(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_color_smoothrainbow(..., reverse = FALSE, aesthetics = "colour")
+scale_color_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "colour"
+)
 
-scale_fill_smoothrainbow(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  aesthetics = "fill"
+)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colours be reversed?}
+
+\item{range}{A length-two \code{\link{numeric}} vector specifying the
+fraction of the scheme's colour domain to keep.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -103,11 +146,11 @@ ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
-  scale_fill_iridescent()
+  scale_fill_iridescent(reverse = TRUE)
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  scale_fill_smoothrainbow(reverse = TRUE)
+  ggplot2::geom_raster() +
+  scale_fill_smoothrainbow(range = c(0.25, 1))
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.

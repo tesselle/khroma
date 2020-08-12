@@ -21,7 +21,8 @@ NULL
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
-scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
+scale <- function(aesthetics, scale_name, reverse = FALSE,
+                  range = c(0, 1), midpoint = 0, ...) {
   # Get colour palette and scheme information
   palette <- colour(scale_name, reverse, names = FALSE)
   type <- attr(palette, "type")
@@ -42,7 +43,7 @@ scale <- function(aesthetics, scale_name, reverse = FALSE, midpoint = 0, ...) {
     do.call(ggplot2::discrete_scale,
             c(aesthetics, scale_name, palette, scale_arguments))
   } else {
-    palette <- scales::gradient_n_pal(palette(max))
+    palette <- scales::gradient_n_pal(palette(max, range = range))
     if (type == "diverging") {
       scale_arguments[["rescaler"]] <- mid_rescaler(mid = midpoint)
     }

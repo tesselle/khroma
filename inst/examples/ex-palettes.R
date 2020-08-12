@@ -28,3 +28,7 @@ plot_scheme(colour("stratigraphy")(175))
 plot_scheme(colour("land")(14))
 ### FAO soil reference groups
 plot_scheme(colour("soil")(24))
+
+## Adjust colour levels
+PRGn <- colour("PRGn")
+plot_scheme(PRGn(9, range = c(0.5, 1)))

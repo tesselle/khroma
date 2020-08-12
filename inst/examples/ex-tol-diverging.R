@@ -2,7 +2,7 @@ library(ggplot2)
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
-  scale_color_sunset(midpoint = 12000)
+  scale_color_sunset(reverse = TRUE, midpoint = 12000)
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
@@ -10,4 +10,4 @@ ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
-  scale_color_PRGn(midpoint = 6000)
+  scale_color_PRGn(midpoint = 9000, range = c(0.25, 1))

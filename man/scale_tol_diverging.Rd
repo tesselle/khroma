@@ -13,29 +13,86 @@
 \alias{scale_fill_PRGn}
 \title{Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}}
 \usage{
-scale_colour_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_colour_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_color_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_color_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_fill_sunset(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
+scale_fill_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "fill"
+)
 
-scale_colour_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_colour_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_color_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_color_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_fill_BuRd(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
+scale_fill_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "fill"
+)
 
-scale_colour_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_colour_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_color_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "colour")
+scale_color_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "colour"
+)
 
-scale_fill_PRGn(..., reverse = FALSE, midpoint = 0, aesthetics = "fill")
+scale_fill_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  aesthetics = "fill"
+)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colours be reversed?}
+
+\item{range}{A length-two \code{\link{numeric}} vector specifying the
+fraction of the scheme's colour domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
@@ -68,7 +125,7 @@ library(ggplot2)
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
-  scale_color_sunset(midpoint = 12000)
+  scale_color_sunset(reverse = TRUE, midpoint = 12000)
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
@@ -76,7 +133,7 @@ ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +
-  scale_color_PRGn(midpoint = 6000)
+  scale_color_PRGn(midpoint = 9000, range = c(0.25, 1))
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.

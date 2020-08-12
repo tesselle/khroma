@@ -164,6 +164,8 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
 #' @param reverse A \code{\link{logical}} scalar. Should the resulting
 #'  vector of colours be reversed?
+#' @param range A length-two \code{\link{numeric}} vector specifying the
+#' fraction of the scheme's colour domain to keep.
 #' @param midpoint A length-one \code{\link{numeric}} vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to \code{0}.
 #' @param aesthetics A \code{\link{character}} string or vector of character
@@ -196,9 +198,10 @@ NULL
 ## ---------------------------------------------------------------------- Sunset
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_sunset <- function(..., reverse = FALSE,
+scale_colour_sunset <- function(..., reverse = FALSE, range = c(0, 1),
                                 midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "sunset", reverse, midpoint, ...)
+  scale(aesthetics, "sunset", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 #' @export
@@ -207,17 +210,19 @@ scale_color_sunset <- scale_colour_sunset
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_sunset <- function(..., reverse = FALSE,
+scale_fill_sunset <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "sunset", reverse, midpoint, ...)
+  scale(aesthetics, "sunset", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 ## ------------------------------------------------------------------------ BuRd
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_BuRd <- function(..., reverse = FALSE,
+scale_colour_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "BuRd", reverse, midpoint, ...)
+  scale(aesthetics, "BuRd", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 #' @export
@@ -226,17 +231,19 @@ scale_color_BuRd <- scale_colour_BuRd
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_BuRd <- function(..., reverse = FALSE,
+scale_fill_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
                             midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "BuRd", reverse, midpoint, ...)
+  scale(aesthetics, "BuRd", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 ## ------------------------------------------------------------------------ PRGn
 #' @export
 #' @rdname scale_tol_diverging
-scale_colour_PRGn <- function(..., reverse = FALSE,
+scale_colour_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "PRGn", reverse, midpoint, ...)
+  scale(aesthetics, "PRGn", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 #' @export
@@ -245,9 +252,10 @@ scale_color_PRGn <- scale_colour_PRGn
 
 #' @export
 #' @rdname scale_tol_diverging
-scale_fill_PRGn <- function(..., reverse = FALSE,
+scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
                             midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "PRGn", reverse, midpoint, ...)
+  scale(aesthetics, "PRGn", reverse = reverse, range = range,
+        midpoint = midpoint, ...)
 }
 
 # =================================================================== Sequential
@@ -257,6 +265,8 @@ scale_fill_PRGn <- function(..., reverse = FALSE,
 #' @param ... Arguments passed to \code{\link[ggplot2]{continuous_scale}}.
 #' @param reverse A \code{\link{logical}} scalar. Should the resulting
 #'  vector of colours be reversed?
+#' @param range A length-two \code{\link{numeric}} vector specifying the
+#' fraction of the scheme's colour domain to keep.
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
@@ -290,8 +300,9 @@ NULL
 ## ---------------------------------------------------------------------- YlOrBr
 #' @export
 #' @rdname scale_tol_sequential
-scale_colour_YlOrBr <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "YlOrBr", reverse, ...)
+scale_colour_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
+                                aesthetics = "colour") {
+  scale(aesthetics, "YlOrBr", reverse = reverse, range = range, ...)
 }
 
 #' @export
@@ -300,16 +311,17 @@ scale_color_YlOrBr <- scale_colour_YlOrBr
 
 #' @export
 #' @rdname scale_tol_sequential
-scale_fill_YlOrBr <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "YlOrBr", reverse, ...)
+scale_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
+                              aesthetics = "fill") {
+  scale(aesthetics, "YlOrBr", reverse = reverse, range = range, ...)
 }
 
 ## ------------------------------------------------------------------ Iridescent
 #' @export
 #' @rdname scale_tol_sequential
-scale_colour_iridescent <- function(..., reverse = FALSE,
+scale_colour_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
                                     aesthetics = "colour") {
-  scale(aesthetics, "iridescent", reverse, ...)
+  scale(aesthetics, "iridescent", reverse = reverse, range = range, ...)
 }
 
 #' @export
@@ -318,8 +330,9 @@ scale_color_iridescent <- scale_colour_iridescent
 
 #' @export
 #' @rdname scale_tol_sequential
-scale_fill_iridescent <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "iridescent", reverse, ...)
+scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
+                                  aesthetics = "fill") {
+  scale(aesthetics, "iridescent", reverse = reverse, range = range, ...)
 }
 
 ## ------------------------------------------------------------ Discrete Rainbow
@@ -344,9 +357,9 @@ scale_fill_discreterainbow <- function(..., reverse = FALSE,
 ## -------------------------------------------------------------- Smooth Rainbow
 #' @export
 #' @rdname scale_tol_sequential
-scale_colour_smoothrainbow <- function(..., reverse = FALSE,
+scale_colour_smoothrainbow <- function(..., reverse = FALSE, range = c(0, 1),
                                        aesthetics = "colour") {
-  scale(aesthetics, "smooth rainbow", reverse, ...)
+  scale(aesthetics, "smooth rainbow", reverse = reverse, range = range, ...)
 }
 
 #' @export
@@ -355,7 +368,7 @@ scale_color_smoothrainbow <- scale_colour_smoothrainbow
 
 #' @export
 #' @rdname scale_tol_sequential
-scale_fill_smoothrainbow <- function(..., reverse = FALSE,
+scale_fill_smoothrainbow <- function(..., reverse = FALSE, range = c(0, 1),
                                      aesthetics = "fill") {
-  scale(aesthetics, "smooth rainbow", reverse, ...)
+  scale(aesthetics, "smooth rainbow", reverse = reverse, range = range, ...)
 }

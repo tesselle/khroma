@@ -6,8 +6,8 @@ ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
-  scale_fill_iridescent()
+  scale_fill_iridescent(reverse = TRUE)
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
-  geom_raster() +
-  scale_fill_smoothrainbow(reverse = TRUE)
+  ggplot2::geom_raster() +
+  scale_fill_smoothrainbow(range = c(0.25, 1))
