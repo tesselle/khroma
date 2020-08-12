@@ -39,6 +39,11 @@ A palette function with the following attributes, that when called
   \item{max}{An \code{\link{integer}} giving the maximum number of colour
   values. Only relevant for non-interpolated colour schemes.}
  }
+
+ For colour schemes that can be interpolated (diverging and sequential data),
+ the colour range can be limited with an additional argument. `range` allows
+ to remove a fraction of the colour domain (before being interpolated; see
+ examples).
 }
 \description{
 Provides qualitative, diverging and sequential colour schemes.

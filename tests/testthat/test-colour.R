@@ -33,7 +33,7 @@ test_that("Qualitative colours", {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
     expect_error(colour(palettes[i])(500))
-    expect_equal(
+    expect_equivalent(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
       label = palettes[i]
@@ -46,7 +46,7 @@ test_that("Diverging colours", {
   palettes <- c("sunset", "BuRd", "PRGn")
   n <- c(11, 9, 9)
   for (i in seq_len(length(palettes))) {
-    expect_equal(
+    expect_equivalent(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
       label = palettes[i]
@@ -60,7 +60,7 @@ test_that("Sequential colours", {
   palettes <- c("YlOrBr", "iridescent", "smooth rainbow")
   n <- c(9, 23,34)
   for (i in seq_len(length(palettes))) {
-    expect_equal(
+    expect_equivalent(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
       label = palettes[i]

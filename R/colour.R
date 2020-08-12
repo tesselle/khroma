@@ -138,6 +138,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
         colours[seq(from = 1, to = k, length.out = n)]
       }
       col <- if (names) col else unname(col)
+      attr(col, "missing") <- missing
       class(col) <- "colour_scheme"
       return(col)
     }

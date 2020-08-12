@@ -1,6 +1,15 @@
 context("Plot")
 
 # Save plots to an object using a null PDF device
+test_that("Quick and Dirty Plot", {
+  pdf(NULL)
+  dev.control(displaylist = "enable")
+  plot(colour("smooth rainbow")(256, range = c(0.5, 1)))
+  plot_range <- grDevices::recordPlot()
+  invisible(dev.off())
+
+  vdiffr::expect_doppelganger("plot_range", plot_range)
+})
 test_that("Schemes", {
   for (i in c(TRUE, FALSE)) {
     for (j in c(TRUE, FALSE)) {
