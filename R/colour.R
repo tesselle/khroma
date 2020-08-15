@@ -115,24 +115,31 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   interpolate <- col_scheme[["interpolate"]]
   missing <- col_scheme[["missing"]]
   scheme <- col_scheme[["scheme"]]
+  k <- col_scheme[["max"]]
 
-  k <- if (palette == "discrete rainbow") 23 else length(colours)
-
-  if (reverse) colours <- rev(colours) # Reverse colour order
+  # Reverse colour order
+  if (reverse) colours <- rev(colours)
 
   if (interpolate) {
     # For colour schemes that can be linearly interpolated
     fun <- function(n, range = c(0, 1)) {
+      if (missing(n)) n <- k
+      # Validate
       if (any(range > 1) | any(range < 0))
         stop(sQuote("range"), " values must be in [0,1].", call. = FALSE)
       # Remove starting colours
       colours <- utils::tail(colours, k * (1 - range[[1]]))
       # Remove ending colours
       colours <- utils::head(colours, k * range[[2]])
-
+      # Interpolate
       col <- grDevices::colorRampPalette(colours)(n)
-      attr(col, "missing") <- missing
-      class(col) <- "colour_scheme"
+      # Set attributes
+      col <- structure(
+        col,
+        name = palette,
+        missing = missing,
+        class = c("colour_scheme", "colour_continuous")
+      )
       return(col)
     }
   } else {
@@ -140,29 +147,40 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
     # FIXME: add 'range = c(0, 1)' to prevent "multiple local function
     # definitions" note in R CMD check
     fun <- function(n, range = c(0, 1)) {
-      # Check
+      if (missing(n)) n <- k
+      # Validate
       if (n > k)
         stop("You ask for too many colours: ", palette,
              " colour scheme supports up to ", k, " values.", call. = FALSE)
       # Arrange colour schemes
-      col <- if (palette == "discrete rainbow") {
+      col <- if (!is.null(scheme)) {
         colours[scheme[[n]]]
       } else if (type == "qualitative") {
         colours[seq_len(n)]
       } else {
         colours[seq(from = 1, to = k, length.out = n)]
       }
+      # Keep names?
       col <- if (names) col else unname(col)
-      attr(col, "missing") <- missing
-      class(col) <- "colour_scheme"
+      # Set attributes
+      col <- structure(
+        col,
+        name = palette,
+        missing = missing,
+        class = c("colour_scheme", "colour_discrete")
+      )
       return(col)
     }
   }
-  attr(fun, "name") <- palette
-  attr(fun, "type") <- type
-  attr(fun, "interpolate") <- as.logical(interpolate)
-  attr(fun, "missing") <- missing
-  attr(fun, "max") <- as.integer(k)
+  # Set attributes
+  fun <- structure(
+    fun,
+    type = type,
+    name = palette,
+    missing = missing,
+    interpolate = interpolate,
+    max = as.integer(k)
+  )
   return(fun)
 }
 

@@ -6,6 +6,7 @@ schemes_science <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 175,
     colours = c(
       `Holocene` = '#FEF2E0',
       `Upper Pleistocene` = '#FFF2D3',
@@ -189,6 +190,7 @@ schemes_science <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 24,
     colours = c(
       `Acrisol` = '#795f35',
       `Albeluvisol` = '#fbc1af',
@@ -223,6 +225,7 @@ schemes_science <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 14,
     colours = c(
       `water` = '#5566AA',
       `evergreen needleleaf forest` = '#117733',

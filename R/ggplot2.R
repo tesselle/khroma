@@ -24,25 +24,25 @@ NULL
 scale <- function(aesthetics, scale_name, reverse = FALSE,
                   range = c(0, 1), midpoint = 0, ...) {
   # Get colour palette and scheme information
-  palette <- colour(scale_name, reverse, names = FALSE)
-  type <- attr(palette, "type")
+  palette <- colour(scale_name, reverse = reverse, names = FALSE)
   interpolate <- attr(palette, "interpolate")
-  missing <- attr(palette, "missing")
-  max <- attr(palette, "max")
 
   # Build scale
   scale_arguments <- list(...)
   if (!("na.value" %in% names(scale_arguments))) {
+    missing <- attr(palette, "missing")
     scale_arguments[["na.value"]] <- missing
   }
   if (!("guide" %in% names(scale_arguments))) {
-    scale_arguments[["guide"]] <- if(interpolate) "colourbar" else "legend"
+    scale_arguments[["guide"]] <- if (interpolate) "colourbar" else "legend"
   }
 
   if (!interpolate) {
     do.call(ggplot2::discrete_scale,
             c(aesthetics, scale_name, palette, scale_arguments))
   } else {
+    max <- attr(palette, "max")
+    type <- attr(palette, "type")
     palette <- scales::gradient_n_pal(palette(max, range = range))
     if (type == "diverging") {
       scale_arguments[["rescaler"]] <- mid_rescaler(mid = midpoint)

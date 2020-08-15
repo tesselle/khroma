@@ -6,6 +6,7 @@ schemes_okabe2008 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 8,
     colours = c(
       `black`        = "#000000", `orange` = "#E69F00", `sky blue`  = "#56B4E9",
       `bluish green` = "#009E73", `yellow` = "#F0E442", `blue`      = "#0072B2",

@@ -121,6 +121,7 @@ Provides qualitative, diverging and sequential colour schemes.
 
 \examples{
 ## Okabe and Ito colour scheme
+colour("okabe ito")(8)
 plot_scheme(colour("okabe ito")(8))
 
 ## Paul Tol's colour schemes

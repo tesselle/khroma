@@ -6,6 +6,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 7,
     colours = c(
       `blue`   = "#4477AA", `red`  = "#EE6677", `green`  = "#228833",
       `yellow` = "#CCBB44", `cyan` = "#66CCEE", `purple` = "#AA3377",
@@ -16,6 +17,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 3,
     colours = c(
       `blue`   = "#004488", `yellow` = "#DDAA33", `red`  = "#BB5566"),
     scheme = NULL
@@ -24,6 +26,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 7,
     colours = c(
       `orange`  = "#EE7733", `blue` = "#0077BB", `cyan` = "#33BBEE",
       `magenta` = "#EE3377", `red`  = "#CC3311", `teal` = "#009988",
@@ -34,6 +37,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = "#DDDDDD",
+    max = 9,
     colours = c(
       `rose`   = "#CC6677", `indigo` = "#332288", `sand`   = "#DDCC77",
       `green`  = "#117733", `cyan`   = "#88CCEE", `wine`   = "#882255",
@@ -44,6 +48,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 6,
     colours = c(
       `pale blue`  = "#BBCCEE", `pale cyan`   = "#CCEEFF",
       `pale green` = "#CCDDAA", `pale yellow` = "#EEEEBB",
@@ -54,6 +59,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 6,
     colours = c(
       `dark blue`  = "#222255", `dark cyan`   = "#225555",
       `dark green` = "#225522", `dark yellow` = "#666633",
@@ -64,6 +70,7 @@ schemes_tol2018 <- list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
+    max = 9,
     colours = c(
       `light blue`   = "#77AADD", `orange` = "#EE8866",
       `light yellow` = "#EEDD88", `pink`   = "#FFAABB",
@@ -78,6 +85,7 @@ schemes_tol2018 <- list(
     type = "diverging",
     interpolate = TRUE,
     missing = "#FFFFFF",
+    max = 11,
     colours = c("#364B9A", "#4A7BB7", "#6EA6CD", "#98CAE1", "#C2E4EF", "#EAECCC",
                 "#FEDA8B", "#FDB366", "#F67E4B", "#DD3D2D", "#A50026"),
     scheme = NULL
@@ -86,6 +94,7 @@ schemes_tol2018 <- list(
     type = "diverging",
     interpolate = TRUE,
     missing = "#FFEE99",
+    max = 9,
     colours = c("#2166AC", "#4393C3", "#92C5DE", "#D1E5F0", "#F7F7F7", "#FDDBC7",
                 "#F4A582", "#D6604D", "#B2182B"),
     scheme = NULL
@@ -94,6 +103,7 @@ schemes_tol2018 <- list(
     type = "diverging",
     interpolate = TRUE,
     missing = "#FFEE99",
+    max = 9,
     colours = c("#762A83", "#9970AB", "#C2A5CF", "#E7D4E8", "#F7F7F7", "#D9F0D3",
                 "#ACD39E", "#5AAE61", "#1B7837"),
     scheme = NULL
@@ -104,6 +114,7 @@ schemes_tol2018 <- list(
     type = "sequential",
     interpolate = TRUE,
     missing = "#888888",
+    max = 9,
     colours = c("#FFFFE5", "#FFF7BC", "#FEE391", "#FEC44F", "#FB9A29", "#EC7014",
                 "#CC4C02", "#993404", "#662506"),
     scheme = NULL
@@ -112,6 +123,7 @@ schemes_tol2018 <- list(
     type = "sequential",
     interpolate = TRUE,
     missing = "#999999",
+    max = 23,
     colours = c("#FEFBE9", "#FCF7D5", "#F5F3C1", "#EAF0B5", "#DDECBF", "#D0E7CA",
                 "#C2E3D2", "#B5DDD8", "#A8D8DC", "#9BD2E1", "#8DCBE4", "#81C4E7",
                 "#7BBCE7", "#7EB2E4", "#88A5DD", "#9398D2", "#9B8AC4", "#9D7DB2",
@@ -122,6 +134,7 @@ schemes_tol2018 <- list(
     type = "sequential",
     interpolate = FALSE,
     missing = "#777777",
+    max = 23,
     colours = c(`1`  = "#E8ECFB", `2`  = "#D9CCE3", `3`  = "#D1BBD7",
                 `4`  = "#CAACCB", `5`  = "#BA8DB4", `6`  = "#AE76A3",
                 `7`  = "#AA6F9E", `8`  = "#994F88", `9`  = "#882E72",
@@ -162,6 +175,7 @@ schemes_tol2018 <- list(
     type = "sequential",
     interpolate = TRUE,
     missing = "#666666",
+    max = 34,
     colours = c("#E8ECFB", "#DDD8EF", "#D1C1E1", "#C3A8D1", "#B58FC2",
                 "#A778B4", "#9B62A7", "#8C4E99", "#6F4C9B", "#6059A9",
                 "#5568B8", "#4E79C5", "#4D8AC6", "#4E96BC", "#549EB3",

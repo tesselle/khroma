@@ -12,6 +12,7 @@ test_that("Palette colours", {
     expect_type(color(palettes[i]), "closure")
 
     expect_type(colour(palettes[i])(n[i]), "character")
+    expect_length(colour(palettes[i])(), n[i])
     expect_length(colour(palettes[i])(n[i]), n[i])
     expect_type(attr(colour(palettes[i]), "name"), "character")
     expect_type(attr(colour(palettes[i]), "type"), "character")
@@ -19,6 +20,7 @@ test_that("Palette colours", {
     expect_type(attr(colour(palettes[i]), "missing"), "character")
     expect_type(attr(colour(palettes[i]), "max"), "integer")
   }
+
   for (i in seq_len(7)) {
     expect_length(colour("bright")(i), i)
   }
