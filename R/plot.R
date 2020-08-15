@@ -179,7 +179,7 @@ draw_hexagon <- function(x = 0, y = 0, r = 0.5, border = NULL, fill = NA) {
   )
 }
 draw_circle <- function(x = 0, y = 0, r = 0.5, n = 200,
-                         border = NULL, fill = NA) {
+                        border = NULL, fill = NA) {
   theta <- seq(0, 2 * pi, length.out = n)
   graphics::polygon(
     x = r * cos(theta) + x,
@@ -188,36 +188,41 @@ draw_circle <- function(x = 0, y = 0, r = 0.5, n = 200,
     col = fill
   )
 }
+
 #' @rdname plot
 #' @export
 plot_scheme_colourblind <- function(x) {
-    # coerce colour scheme class to character vector
-    x <- as.character(x)
-    dat <- data.frame(Palette = x,
-                      Deuteranopia = anomalize(x, 'deuteranopia'),
-                      Protanopia = anomalize(x, 'protanopia'),
-                      Tritanopia = anomalize(x, 'tritanopia'),
-                      Achromatopsia = anomalize(x, 'achromatopsia'))
-    xcoord <- seq(0, 1, length.out = length(x) + 1)[1:nrow(dat)]
-    ycoord <- c(.8, .6, .4, .2, 0)
-    grid::grid.newpage()
-    for (i in 1:nrow(dat)) {
-        for (j in 1:ncol(dat)) {
-            color <- dat[i, j]
-            grid::grid.rect(x = grid::unit(xcoord[i], "npc"),
-                            y = grid::unit(ycoord[j], "npc"),
-                            width = grid::unit(1 / length(x), "npc"),
-                            height = grid::unit(.7 / 5, "npc"),
-                            hjust = 0,
-                            vjust = 0,
-                            gp = grid::gpar(fill=color, col = color))
-        }
-    }
-    grid::grid.text(label = 'Palette', x = grid::unit(0.1, 'npc'), y = grid::unit(0.97, 'npc'))
-    grid::grid.text(label = 'Deuteranopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.77, 'npc'))
-    grid::grid.text(label = 'Protanopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.57, 'npc'))
-    grid::grid.text(label = 'Tritanopia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.37, 'npc'))
-    grid::grid.text(label = 'Achromatopsia', x = grid::unit(0.1, 'npc'), y = grid::unit(0.17, 'npc'))
+  # coerce colour scheme class to character vector
+  x <- as.character(x)
+  dat <- list(
+    palette = x,
+    deuteranopia = anomalize(x, 'deuteranopia'),
+    protanopia = anomalize(x, 'protanopia'),
+    tritanopia = anomalize(x, 'tritanopia'),
+    achromatopsia = anomalize(x, 'achromatopsia')
+  )
+  xcoord <- seq(0, 1, length.out = length(x) + 1)
+  ycoord <- c(.8, .6, .4, .2, 0)
+  grid::grid.newpage()
+  for (i in seq_along(dat)) {
+    color <- dat[[i]]
+    grid::grid.rect(
+      x = grid::unit(xcoord, "npc"),
+      y = grid::unit(ycoord[[i]], "npc"),
+      width = grid::unit(1 / length(x), "npc"),
+      height = grid::unit(0.7 / 5, "npc"),
+      hjust = 0,
+      vjust = 0,
+      gp = grid::gpar(fill = color, col = color)
+    )
+  }
+  grid::grid.text(
+    label = c("Palette", "Deuteranopia", "Protanopia", "Tritanopia",
+              "Achromatopsia"),
+    x = grid::unit(0, 'npc'),
+    y = grid::unit(c(0.97, 0.77, 0.57, 0.37, 0.17), "npc"),
+    hjust = 0
+  )
 }
 
 #' @rdname plot

@@ -77,6 +77,7 @@ library(ggplot2)
 integer argument returns a vector of colours.
 
 ``` r
+# Paul Tol's bright colour scheme
 bright <- colour("bright")
 ```
 
@@ -93,6 +94,8 @@ options(crayon.enabled = FALSE)
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
+#> attr(,"name")
+#> [1] "bright"
 #> attr(,"missing")
 #> [1] NA
 ```
@@ -108,7 +111,7 @@ plot_scheme(bright(7), colours = TRUE)
 # Use with ggplot2
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
   geom_point() +
-  scale_colour_okabeito()
+  scale_colour_bright()
 ```
 
 <img src="man/figures/README-usage-ggplot2-1.png" style="display: block; margin: auto;" />
@@ -118,8 +121,11 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 #### Test how well the colours are identifiable
 
 ``` r
+# Okabe & Ito's colour scheme
+okabe <- colour("okabe ito")
+
 set.seed(12345)
-plot_map(bright(7))
+plot_map(okabe(8))
 ```
 
 <img src="man/figures/README-usage-colourblind1-1.png" style="display: block; margin: auto;" />
@@ -128,45 +134,47 @@ plot_map(bright(7))
 
 ``` r
 # convert() returns a modified palette function
-deuteranopia <- convert(bright, mode = "deuteranopia")
-plot_scheme(deuteranopia(7), colours = TRUE)
+deuteranopia <- convert(okabe, mode = "deuteranopia")
+plot_scheme(deuteranopia(8), colours = TRUE)
 ```
 
 <img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
-protanopia <- convert(bright, mode = "protanopia")
-plot_scheme(protanopia(7), colours = TRUE)
+protanopia <- convert(okabe, mode = "protanopia")
+plot_scheme(protanopia(8), colours = TRUE)
 ```
 
 <img src="man/figures/README-usage-colourblind2-2.png" style="display: block; margin: auto;" />
 
 ``` r
 
-tritanopia <- convert(bright, mode = "tritanopia")
-plot_scheme(tritanopia(7), colours = TRUE)
+tritanopia <- convert(okabe, mode = "tritanopia")
+plot_scheme(tritanopia(8), colours = TRUE)
 ```
 
 <img src="man/figures/README-usage-colourblind2-3.png" style="display: block; margin: auto;" />
 
 ``` r
 
-achromatopsia <- convert(bright, mode = "achromatopsia")
-plot_scheme(achromatopsia(7), colours = TRUE)
+achromatopsia <- convert(okabe, mode = "achromatopsia")
+plot_scheme(achromatopsia(8), colours = TRUE)
 ```
 
 <img src="man/figures/README-usage-colourblind2-4.png" style="display: block; margin: auto;" />
 
 ``` r
-plot_scheme_colourblind(bright(7))
+plot_scheme_colourblind(okabe(8))
 ```
 
 <img src="man/figures/README-usage-colourblind3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
-x <- c("#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15")
+# ggplot2 default colour scheme
+# (equally spaced hues around the colour wheel)
+x <- scales::hue_pal()(8)
 plot_scheme_colourblind(x)
 ```
 
