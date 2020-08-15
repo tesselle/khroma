@@ -2,7 +2,7 @@
 #' @include colour.R
 NULL
 
-# ===================================================================== Discrete
+# Discrete =====================================================================
 #' Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
@@ -33,6 +33,8 @@ NULL
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
+#' @family colour-blind safe colour schemes
+#' @family qualitative colour schemes
 #' @family Paul Tol's colour schemes
 #' @name scale_tol_discrete
 #' @rdname scale_tol_discrete
@@ -157,7 +159,7 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "light", reverse, ...)
 }
 
-# ==================================================================== Diverging
+# Diverging ====================================================================
 #' Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
@@ -190,6 +192,8 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
+#' @family colour-blind safe colour schemes
+#' @family diverging colour schemes
 #' @family Paul Tol's colour schemes
 #' @name scale_tol_diverging
 #' @rdname scale_tol_diverging
@@ -258,7 +262,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
         midpoint = midpoint, ...)
 }
 
-# =================================================================== Sequential
+# Sequential ===================================================================
 #' Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}
 #'
 #' Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
@@ -292,6 +296,8 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
+#' @family colour-blind safe colour schemes
+#' @family sequential colour schemes
 #' @family Paul Tol's colour schemes
 #' @name scale_tol_sequential
 #' @rdname scale_tol_sequential

@@ -54,8 +54,15 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 Other themed colour schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_stratigraphy}()}
+
+Other qualitative colour schemes: 
+\code{\link{scale_colour_land}()},
+\code{\link{scale_colour_stratigraphy}()},
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_discrete}}
 }
 \author{
 N. Frerebeau
 }
+\concept{qualitative colour schemes}
 \concept{themed colour schemes}

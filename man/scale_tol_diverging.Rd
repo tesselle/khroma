@@ -141,6 +141,11 @@ Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
+Other colour-blind safe colour schemes: 
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_discrete}},
+\code{\link{scale_tol_sequential}}
+
 Other Paul Tol's colour schemes: 
 \code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_sequential}}
@@ -149,3 +154,5 @@ Other Paul Tol's colour schemes:
 N. Frerebeau
 }
 \concept{Paul Tol's colour schemes}
+\concept{colour-blind safe colour schemes}
+\concept{diverging colour schemes}

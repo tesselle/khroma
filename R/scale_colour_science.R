@@ -1,7 +1,7 @@
 #' @include colour.R
 NULL
 
-# =========================================================== Geologic Timescale
+# Geologic Timescale ===========================================================
 #' Geologic Timescale Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the geologic timescale colour scheme.
@@ -15,6 +15,7 @@ NULL
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
 #' @family themed colour schemes
+#' @family qualitative colour schemes
 #' @export
 #' @rdname scale_stratigraphy
 scale_colour_stratigraphy <- function(..., aesthetics = "colour") {
@@ -39,7 +40,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
                              aesthetics = aesthetics)
 }
 
-# ========================================================================= Land
+# Land =========================================================================
 #' AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the AVHRR Global Land Cover classification as modified by
@@ -56,6 +57,7 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
 #' @family themed colour schemes
+#' @family qualitative colour schemes
 #' @export
 #' @rdname scale_land
 scale_colour_land <- function(..., aesthetics = "colour") {
@@ -80,7 +82,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
                              aesthetics = aesthetics)
 }
 
-# ========================================================================= Soil
+# Soil =========================================================================
 #' FAO Soil Reference Groups Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the FAO Soil Reference Groups colour scheme.
@@ -96,6 +98,7 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
 #' @family themed colour schemes
+#' @family qualitative colour schemes
 #' @export
 #' @rdname scale_soil
 scale_colour_soil <- function(..., aesthetics = "colour") {

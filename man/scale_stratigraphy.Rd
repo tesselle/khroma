@@ -57,8 +57,15 @@ ggplot2::ggplot(strati, ggplot2::aes(fill = name)) +
 Other themed colour schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()}
+
+Other qualitative colour schemes: 
+\code{\link{scale_colour_land}()},
+\code{\link{scale_colour_soil}()},
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_discrete}}
 }
 \author{
 N. Frerebeau
 }
+\concept{qualitative colour schemes}
 \concept{themed colour schemes}

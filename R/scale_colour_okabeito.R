@@ -2,10 +2,10 @@
 #' @include colour.R
 NULL
 
-# ===================================================================== Discrete
-#' Okabe and Ito Discrete Colour Scheme for \pkg{ggplot2}
+# Discrete =====================================================================
+#' Okabe and Ito's Discrete Colour Scheme for \pkg{ggplot2}
 #'
-#' Provides qualitative colour scales from Okabe and Ito 2008.
+#' Provides the qualitative colour scale from Okabe and Ito 2008.
 #' @param ... Arguments passed to \code{\link[ggplot2]{discrete_scale}}.
 #' @param reverse A \code{\link{logical}} scalar. Should the resulting
 #'  vector of colours be reversed?
@@ -21,23 +21,25 @@ NULL
 #'  URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
 #' @example inst/examples/ex-okabeito-discrete.R
 #' @author N. Frerebeau
+#' @family colour-blind safe colour schemes
+#' @family qualitative colour schemes
 #' @family Okabe and Ito's colour scheme
-#' @name scale_tol_okabeito
-#' @rdname scale_tol_okabeito
+#' @name scale_okabeito_discrete
+#' @rdname scale_okabeito_discrete
 NULL
 
 #' @export
-#' @rdname scale_tol_okabeito
+#' @rdname scale_okabeito_discrete
 scale_colour_okabeito <- function(..., reverse = FALSE, aesthetics = "colour") {
   scale(aesthetics, "okabe ito", reverse, ...)
 }
 
 #' @export
-#' @rdname scale_tol_okabeito
+#' @rdname scale_okabeito_discrete
 scale_color_okabeito <- scale_colour_okabeito
 
 #' @export
-#' @rdname scale_tol_okabeito
+#' @rdname scale_okabeito_discrete
 scale_fill_okabeito <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale(aesthetics, "okabe ito", reverse, ...)
 }
