@@ -273,6 +273,10 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #' fraction of the scheme's colour domain to keep.
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
+#' @param discrete A \code{\link{logical}} scalar: should the colour scheme be
+#'  used as a discrete scale? Only used with the \code{YlOrBr} and
+#'  \code{iridescent} schemes. If \code{TRUE}, it is a departure from Paul Tol's
+#'  recommendations and likely a very poor use of colour.
 #' @details
 #'  If more colours than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
@@ -307,8 +311,9 @@ NULL
 #' @export
 #' @rdname scale_tol_sequential
 scale_colour_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
-                                aesthetics = "colour") {
-  scale(aesthetics, "YlOrBr", reverse = reverse, range = range, ...)
+                                discrete = FALSE, aesthetics = "colour") {
+  scale(aesthetics, "YlOrBr", reverse = reverse, range = range,
+        type = ifelse(discrete, "discrete", "auto"), ...)
 }
 
 #' @export
@@ -318,16 +323,18 @@ scale_color_YlOrBr <- scale_colour_YlOrBr
 #' @export
 #' @rdname scale_tol_sequential
 scale_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
-                              aesthetics = "fill") {
-  scale(aesthetics, "YlOrBr", reverse = reverse, range = range, ...)
+                              discrete = FALSE, aesthetics = "fill") {
+  scale(aesthetics, "YlOrBr", reverse = reverse, range = range,
+        type = ifelse(discrete, "discrete", "auto"), ...)
 }
 
 ## ------------------------------------------------------------------ Iridescent
 #' @export
 #' @rdname scale_tol_sequential
 scale_colour_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
-                                    aesthetics = "colour") {
-  scale(aesthetics, "iridescent", reverse = reverse, range = range, ...)
+                                    discrete = FALSE, aesthetics = "colour") {
+  scale(aesthetics, "iridescent", reverse = reverse, range = range,
+        type = ifelse(discrete, "discrete", "auto"), ...)
 }
 
 #' @export
@@ -337,8 +344,9 @@ scale_color_iridescent <- scale_colour_iridescent
 #' @export
 #' @rdname scale_tol_sequential
 scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
-                                  aesthetics = "fill") {
-  scale(aesthetics, "iridescent", reverse = reverse, range = range, ...)
+                                  discrete = FALSE, aesthetics = "fill") {
+  scale(aesthetics, "iridescent", reverse = reverse, range = range,
+        type = ifelse(discrete, "discrete", "auto"), ...)
 }
 
 ## ------------------------------------------------------------ Discrete Rainbow
@@ -346,7 +354,7 @@ scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_sequential
 scale_colour_discreterainbow <- function(..., reverse = FALSE,
                                          aesthetics = "colour") {
-  scale(aesthetics, "discrete rainbow", reverse, ...)
+  scale(aesthetics, "discrete rainbow", reverse = reverse, ...)
 }
 
 #' @export
@@ -357,7 +365,7 @@ scale_color_discreterainbow <- scale_colour_discreterainbow
 #' @rdname scale_tol_sequential
 scale_fill_discreterainbow <- function(..., reverse = FALSE,
                                        aesthetics = "fill") {
-  scale(aesthetics, "discrete rainbow", reverse, ...)
+  scale(aesthetics, "discrete rainbow", reverse = reverse, ...)
 }
 
 ## -------------------------------------------------------------- Smooth Rainbow

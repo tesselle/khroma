@@ -11,10 +11,12 @@ NULL
 #'  the palette to be used (see \code{\link{colour}}).
 #' @param reverse A \code{\link{logical}} scalar: should the resulting
 #'  vector of colours should be reversed?
-#' @param force A \code{\link{logical}} scalar. If \code{TRUE}, forces the
-#'  colour scheme to be interpolated. It should not be used routinely with
-#'  qualitative colour schemes, as they are designed to be used as is to remain
-#'  colourblind-safe.
+#' @param type A \code{\link{character}} string specifying the scale to be
+#'  build. It must be one of "\code{auto}" (the default), "\code{discrete}" or
+#'  "\code{continuous}". "\code{discrete}" allows to use a continuous colour
+#'  scheme with discrete data. "\code{continuous}" allows to use a discrete
+#'  colour scheme with continuous data (forces interpolation; see
+#'  \code{\link{colour}}).
 #' @param midpoint A \code{\link{numeric}} value specifying the midpoint (in
 #'  data value) of the diverging scale (defaults to \eqn{0}).
 #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
@@ -25,11 +27,16 @@ NULL
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
-scale <- function(aesthetics, scale_name, reverse = FALSE, force = FALSE,
+scale <- function(aesthetics, scale_name, reverse = FALSE,
+                  type = c("auto", "discrete", "continuous"),
                   range = c(0, 1), midpoint = 0, ...) {
+  # Validation
+  type <- match.arg(type, several.ok = FALSE)
+
   # Get colour palette and scheme information
-  palette <- colour(scale_name, reverse = reverse, names = FALSE, force = force)
-  interpolate <- attr(palette, "interpolate")
+  palette <- colour(scale_name, reverse = reverse, names = FALSE,
+                    force = type == "continuous")
+  interpolate <- ifelse(type == "discrete", FALSE, attr(palette, "interpolate"))
 
   # Build scale
   scale_arguments <- list(...)

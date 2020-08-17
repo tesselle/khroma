@@ -20,6 +20,7 @@ scale_colour_YlOrBr(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -27,15 +28,23 @@ scale_color_YlOrBr(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
-scale_fill_YlOrBr(..., reverse = FALSE, range = c(0, 1), aesthetics = "fill")
+scale_fill_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
 
 scale_colour_iridescent(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -43,6 +52,7 @@ scale_color_iridescent(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -50,6 +60,7 @@ scale_fill_iridescent(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "fill"
 )
 
@@ -88,6 +99,11 @@ vector of colours be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
 fraction of the scheme's colour domain to keep.}
+
+\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+used as a discrete scale? Only used with the \code{YlOrBr} and
+\code{iridescent} schemes. If \code{TRUE}, it is a departure from Paul Tol's
+recommendations and likely a very poor use of colour.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
