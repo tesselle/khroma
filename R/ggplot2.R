@@ -9,8 +9,12 @@ NULL
 #' @param aesthetics The names of the aesthetics that this scale works with.
 #' @param scale_name A \code{\link{character}} string giving the name of
 #'  the palette to be used (see \code{\link{colour}}).
-#' @param reverse A \code{\link{logical}} scalar specifying if the resulting
-#'  vector of colours should be reversed.
+#' @param reverse A \code{\link{logical}} scalar: should the resulting
+#'  vector of colours should be reversed?
+#' @param force A \code{\link{logical}} scalar. If \code{TRUE}, forces the
+#'  colour scheme to be interpolated. It should not be used routinely with
+#'  qualitative colour schemes, as they are designed to be used as is to remain
+#'  colourblind-safe.
 #' @param midpoint A \code{\link{numeric}} value specifying the midpoint (in
 #'  data value) of the diverging scale (defaults to \eqn{0}).
 #' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
@@ -21,10 +25,10 @@ NULL
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
-scale <- function(aesthetics, scale_name, reverse = FALSE,
+scale <- function(aesthetics, scale_name, reverse = FALSE, force = FALSE,
                   range = c(0, 1), midpoint = 0, ...) {
   # Get colour palette and scheme information
-  palette <- colour(scale_name, reverse = reverse, names = FALSE)
+  palette <- colour(scale_name, reverse = reverse, names = FALSE, force = force)
   interpolate <- attr(palette, "interpolate")
 
   # Build scale

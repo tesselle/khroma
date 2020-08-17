@@ -7,6 +7,10 @@
 #'  vector of colours should be reversed?
 #' @param names A \code{\link{logical}} scalar: should the names of the
 #'  colours should be kept in the resulting vector?
+#' @param force A \code{\link{logical}} scalar. If \code{TRUE}, forces the
+#'  colour scheme to be interpolated. It should not be used routinely with
+#'  qualitative colour schemes, as they are designed to be used as is to remain
+#'  colourblind-safe.
 #' @param ... Further arguments passed to
 #'  \code{\link[grDevices:colorRamp]{colorRampPalette}}.
 #' @section Paul Tol's Colour Schemes:
@@ -105,7 +109,7 @@
 #' @family colour palettes
 #' @keywords color
 #' @export
-colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
+colour <- function(palette, reverse = FALSE, names = TRUE, force = FALSE, ...) {
   # Validation
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   # Get colours
@@ -120,7 +124,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
   # Reverse colour order
   if (reverse) colours <- rev(colours)
 
-  if (interpolate) {
+  if (interpolate || force) {
     # For colour schemes that can be linearly interpolated
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
@@ -178,7 +182,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, ...) {
     type = type,
     name = palette,
     missing = missing,
-    interpolate = interpolate,
+    interpolate = interpolate || force,
     max = as.integer(k)
   )
   return(fun)

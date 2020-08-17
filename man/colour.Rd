@@ -5,9 +5,9 @@
 \alias{color}
 \title{Colour Palette}
 \usage{
-colour(palette, reverse = FALSE, names = TRUE, ...)
+colour(palette, reverse = FALSE, names = TRUE, force = FALSE, ...)
 
-color(palette, reverse = FALSE, names = TRUE, ...)
+color(palette, reverse = FALSE, names = TRUE, force = FALSE, ...)
 }
 \arguments{
 \item{palette}{A \code{\link{character}} string giving the name of
@@ -18,6 +18,11 @@ vector of colours should be reversed?}
 
 \item{names}{A \code{\link{logical}} scalar: should the names of the
 colours should be kept in the resulting vector?}
+
+\item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the
+colour scheme to be interpolated. It should not be used routinely with
+qualitative colour schemes, as they are designed to be used as is to remain
+colourblind-safe.}
 
 \item{...}{Further arguments passed to
 \code{\link[grDevices:colorRamp]{colorRampPalette}}.}

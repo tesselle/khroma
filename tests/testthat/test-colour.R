@@ -41,6 +41,9 @@ test_that("Qualitative colours", {
       label = palettes[i]
     )
   }
+
+  expect_error(colour("bright", force = FALSE)(500))
+  expect_type(colour("bright", force = TRUE)(500), "character")
 })
 test_that("Diverging colours", {
   options(crayon.enabled = FALSE)
