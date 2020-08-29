@@ -13,7 +13,8 @@
 #             values. If no default colour is provided, this element must be
 #             set to "NA_character_".
 # colours     (mandatory) a character vector giving the the hexadecimal
-#             representation of the colours. Names are optional but recommended.
+#             representation of the colours.
+# names       (optional) a list of character vectors specifying the color names.
 # scheme      (optional) a list of integer vectors giving the indices of
 #             colours to be picked for a given number of levels.
 

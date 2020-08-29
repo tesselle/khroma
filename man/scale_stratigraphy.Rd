@@ -6,14 +6,18 @@
 \alias{scale_fill_stratigraphy}
 \title{Geologic Timescale Colour Scheme for \pkg{ggplot2}}
 \usage{
-scale_colour_stratigraphy(..., aesthetics = "colour")
+scale_colour_stratigraphy(..., lang = "en", aesthetics = "colour")
 
-scale_color_stratigraphy(..., aesthetics = "colour")
+scale_color_stratigraphy(..., lang = "en", aesthetics = "colour")
 
-scale_fill_stratigraphy(..., aesthetics = "fill")
+scale_fill_stratigraphy(..., lang = "en", aesthetics = "fill")
 }
 \arguments{
 \item{...}{Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.}
+
+\item{lang}{A \code{\link{character}} string specifying the language for the
+colour names (see details). It must be one of "\code{en}" (english, the
+default) or "\code{fr}" (french).}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}

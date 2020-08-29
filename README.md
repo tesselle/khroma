@@ -203,8 +203,8 @@ See `vignette("tol")` for a more complete overview.
 
 The following scientific colour schemes are available:
 
-  - International Chronostratigraphic Chart.
-  - AVHRR Global Land Cover Classification.
+  - International Chronostratigraphic Chart;
+  - AVHRR Global Land Cover Classification;
   - FAO Soil Reference Groups.
 
 More will be added in future releases ([suggestions are

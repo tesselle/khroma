@@ -11,6 +11,9 @@ NULL
 #'  the palette to be used (see \code{\link{colour}}).
 #' @param reverse A \code{\link{logical}} scalar: should the resulting
 #'  vector of colours should be reversed?
+#' @param lang A \code{\link{character}} string specifying the language for the
+#'  colour names. It must be one of "\code{en}" (english, the default) or
+#'  "\code{fr}" (french).
 #' @param type A \code{\link{character}} string specifying the scale to be
 #'  build. It must be one of "\code{auto}" (the default), "\code{discrete}" or
 #'  "\code{continuous}". "\code{discrete}" allows to use a continuous colour
@@ -27,30 +30,31 @@ NULL
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
-scale <- function(aesthetics, scale_name, reverse = FALSE,
+scale <- function(aesthetics, scale_name, reverse = FALSE, lang = "en",
                   type = c("auto", "discrete", "continuous"),
                   range = c(0, 1), midpoint = 0, ...) {
   # Validation
   type <- match.arg(type, several.ok = FALSE)
 
   # Get colour palette and scheme information
-  palette <- colour(scale_name, reverse = reverse, names = FALSE,
+  palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang,
                     force = type == "continuous")
   interpolate <- ifelse(type == "discrete", FALSE, attr(palette, "interpolate"))
 
   # Build scale
   scale_arguments <- list(...)
   if (!("na.value" %in% names(scale_arguments))) {
-    missing <- attr(palette, "missing")
-    scale_arguments[["na.value"]] <- missing
+    scale_arguments[["na.value"]] <- attr(palette, "missing")
   }
   if (!("guide" %in% names(scale_arguments))) {
     scale_arguments[["guide"]] <- if (interpolate) "colourbar" else "legend"
   }
 
   if (!interpolate) {
-    do.call(ggplot2::discrete_scale,
-            c(aesthetics, scale_name, palette, scale_arguments))
+    do.call(
+      ggplot2::discrete_scale,
+      c(aesthetics, scale_name, palette, scale_arguments)
+    )
   } else {
     max <- attr(palette, "max")
     type <- attr(palette, "type")

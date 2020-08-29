@@ -7,6 +7,9 @@
 #'  vector of colours should be reversed?
 #' @param names A \code{\link{logical}} scalar: should the names of the
 #'  colours should be kept in the resulting vector?
+#' @param lang A \code{\link{character}} string specifying the language for the
+#'  colour names. It must be one of "\code{en}" (english, the default) or
+#'  "\code{fr}" (french).
 #' @param force A \code{\link{logical}} scalar. If \code{TRUE}, forces the
 #'  colour scheme to be interpolated. It should not be used routinely with
 #'  qualitative colour schemes, as they are designed to be used as is to remain
@@ -109,22 +112,25 @@
 #' @family colour palettes
 #' @keywords color
 #' @export
-colour <- function(palette, reverse = FALSE, names = TRUE, force = FALSE, ...) {
+colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
+                   force = FALSE, ...) {
   # Validation
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
+  lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
   # Get colours
-  col_scheme <- .schemes[[palette]]
-  colours <- col_scheme[["colours"]]
-  type <- col_scheme[["type"]]
-  interpolate <- col_scheme[["interpolate"]]
-  missing <- col_scheme[["missing"]]
-  scheme <- col_scheme[["scheme"]]
-  k <- col_scheme[["max"]]
+  col_palette <- .schemes[[palette]]
+  col_colours <- col_palette[["colours"]]
+  col_names <- col_palette[["names"]][[lang]]
+  col_type <- col_palette[["type"]]
+  col_interpolate <- col_palette[["interpolate"]]
+  col_missing <- col_palette[["missing"]]
+  col_scheme <- col_palette[["scheme"]]
+  k <- col_palette[["max"]]
 
   # Reverse colour order
-  if (reverse) colours <- rev(colours)
+  if (reverse) col_colours <- rev(col_colours)
 
-  if (interpolate || force) {
+  if (col_interpolate || force) {
     # For colour schemes that can be linearly interpolated
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
@@ -132,16 +138,16 @@ colour <- function(palette, reverse = FALSE, names = TRUE, force = FALSE, ...) {
       if (any(range > 1) | any(range < 0))
         stop(sQuote("range"), " values must be in [0,1].", call. = FALSE)
       # Remove starting colours
-      colours <- utils::tail(colours, k * (1 - range[[1]]))
+      col_colours <- utils::tail(col_colours, k * (1 - range[[1]]))
       # Remove ending colours
-      colours <- utils::head(colours, k * range[[2]])
+      col_colours <- utils::head(col_colours, k * range[[2]])
       # Interpolate
-      col <- grDevices::colorRampPalette(colours)(n)
+      col <- grDevices::colorRampPalette(col_colours)(n)
       # Set attributes
       col <- structure(
         col,
         name = palette,
-        missing = missing,
+        missing = col_missing,
         class = c("colour_scheme", "colour_continuous")
       )
       return(col)
@@ -154,23 +160,29 @@ colour <- function(palette, reverse = FALSE, names = TRUE, force = FALSE, ...) {
       if (missing(n)) n <- k
       # Validate
       if (n > k)
-        stop("You ask for too many colours: ", palette,
-             " colour scheme supports up to ", k, " values.", call. = FALSE)
+        stop(
+          sprintf("%s colour scheme supports up to %d values.",
+                  sQuote(palette), k),
+          call. = FALSE
+        )
       # Arrange colour schemes
-      col <- if (!is.null(scheme)) {
-        colours[scheme[[n]]]
-      } else if (type == "qualitative") {
-        colours[seq_len(n)]
+      if (!is.null(col_scheme)) {
+        m <- col_scheme[[n]]
+        col <- col_colours[m]
+      } else if (col_type == "qualitative") {
+        m <- seq_len(n)
+        col <- col_colours[m]
       } else {
-        colours[seq(from = 1, to = k, length.out = n)]
+        m <- seq(from = 1, to = k, length.out = n)
+        col <- col_colours[m]
       }
       # Keep names?
-      col <- if (names) col else unname(col)
+      if (names) names(col) <- col_names[m] else col <- unname(col)
       # Set attributes
       col <- structure(
         col,
         name = palette,
-        missing = missing,
+        missing = col_missing,
         class = c("colour_scheme", "colour_discrete")
       )
       return(col)
@@ -179,10 +191,10 @@ colour <- function(palette, reverse = FALSE, names = TRUE, force = FALSE, ...) {
   # Set attributes
   fun <- structure(
     fun,
-    type = type,
+    type = col_type,
     name = palette,
-    missing = missing,
-    interpolate = interpolate || force,
+    missing = col_missing,
+    interpolate = col_interpolate || force,
     max = as.integer(k)
   )
   return(fun)

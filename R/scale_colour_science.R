@@ -6,6 +6,9 @@ NULL
 #'
 #' Provides the geologic timescale colour scheme.
 #' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
+#' @param lang A \code{\link{character}} string specifying the language for the
+#'  colour names (see details). It must be one of "\code{en}" (english, the
+#'  default) or "\code{fr}" (french).
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the unit names.
@@ -18,9 +21,9 @@ NULL
 #' @family qualitative colour schemes
 #' @export
 #' @rdname scale_stratigraphy
-scale_colour_stratigraphy <- function(..., aesthetics = "colour") {
+scale_colour_stratigraphy <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = TRUE)
+  color_palette <- colour("stratigraphy", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(175),
                               aesthetics = aesthetics)
@@ -32,9 +35,9 @@ scale_color_stratigraphy <- scale_colour_stratigraphy
 
 #' @export
 #' @rdname scale_stratigraphy
-scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
+scale_fill_stratigraphy <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = TRUE)
+  color_palette <- colour("stratigraphy", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(175),
                              aesthetics = aesthetics)
@@ -46,6 +49,9 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' Provides the AVHRR Global Land Cover classification as modified by
 #' Paul Tol (colour-blind safe).
 #' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
+#' @param lang A \code{\link{character}} string specifying the language for the
+#'  colour names (see details). It must be one of "\code{en}" (english, the
+#'  default) or "\code{fr}" (french).
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
@@ -60,9 +66,9 @@ scale_fill_stratigraphy <- function(..., aesthetics = "fill") {
 #' @family qualitative colour schemes
 #' @export
 #' @rdname scale_land
-scale_colour_land <- function(..., aesthetics = "colour") {
+scale_colour_land <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("land", names = TRUE)
+  color_palette <- colour("land", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(14),
                               aesthetics = aesthetics)
@@ -74,9 +80,9 @@ scale_color_land <- scale_colour_land
 
 #' @export
 #' @rdname scale_land
-scale_fill_land <- function(..., aesthetics = "fill") {
+scale_fill_land <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("land", names = TRUE)
+  color_palette <- colour("land", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(14),
                              aesthetics = aesthetics)
@@ -87,6 +93,9 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #'
 #' Provides the FAO Soil Reference Groups colour scheme.
 #' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
+#' @param lang A \code{\link{character}} string specifying the language for the
+#'  colour names (see details). It must be one of "\code{en}" (english, the
+#'  default) or "\code{fr}" (french).
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
@@ -101,9 +110,9 @@ scale_fill_land <- function(..., aesthetics = "fill") {
 #' @family qualitative colour schemes
 #' @export
 #' @rdname scale_soil
-scale_colour_soil <- function(..., aesthetics = "colour") {
+scale_colour_soil <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("soil", names = TRUE)
+  color_palette <- colour("soil", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(24),
                               aesthetics = aesthetics)
@@ -115,9 +124,9 @@ scale_color_soil <- scale_colour_soil
 
 #' @export
 #' @rdname scale_soil
-scale_fill_soil <- function(..., aesthetics = "fill") {
+scale_fill_soil <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("soil", names = TRUE)
+  color_palette <- colour("soil", names = TRUE, lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(24),
                              aesthetics = aesthetics)

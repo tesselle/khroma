@@ -5,9 +5,9 @@
 \alias{color}
 \title{Colour Palette}
 \usage{
-colour(palette, reverse = FALSE, names = TRUE, force = FALSE, ...)
+colour(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 
-color(palette, reverse = FALSE, names = TRUE, force = FALSE, ...)
+color(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 }
 \arguments{
 \item{palette}{A \code{\link{character}} string giving the name of
@@ -18,6 +18,10 @@ vector of colours should be reversed?}
 
 \item{names}{A \code{\link{logical}} scalar: should the names of the
 colours should be kept in the resulting vector?}
+
+\item{lang}{A \code{\link{character}} string specifying the language for the
+colour names. It must be one of "\code{en}" (english, the default) or
+"\code{fr}" (french).}
 
 \item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the
 colour scheme to be interpolated. It should not be used routinely with

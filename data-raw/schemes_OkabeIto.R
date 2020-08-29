@@ -7,10 +7,14 @@ schemes_okabe2008 <- list(
     interpolate = FALSE,
     missing = NA_character_,
     max = 8,
-    colours = c(
-      `black`        = "#000000", `orange` = "#E69F00", `sky blue`  = "#56B4E9",
-      `bluish green` = "#009E73", `yellow` = "#F0E442", `blue`      = "#0072B2",
-      `vermilion`    = "#D55E00", `reddish purple` = "#CC79A7"),
+    colours = c("#000000", "#E69F00", "#56B4E9", "#009E73",
+                "#F0E442", "#0072B2", "#D55E00", "#CC79A7"),
+    names = list(
+      en = c("black", "orange", "sky blue", "bluish green", "yellow", "blue",
+             "vermilion", "reddish purple"),
+      fr = c("noir", "orange", "bleu ciel", "bleu-vert", "jaune", "bleu",
+             "vermillon", "rouge pourpre")
+    ),
     scheme = NULL
   )
 )
