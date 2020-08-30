@@ -94,8 +94,6 @@ options(crayon.enabled = FALSE)
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
-#> attr(,"name")
-#> [1] "bright"
 #> attr(,"missing")
 #> [1] NA
 ```

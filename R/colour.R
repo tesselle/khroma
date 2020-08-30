@@ -76,8 +76,8 @@
 #'  with a single integer argument (the number of levels) returns a (named)
 #'  vector of colours.
 #'  \describe{
-#'   \item{name}{A \code{\link{character}} string giving the name of the colour
-#'   scheme.}
+#'   \item{palette}{A \code{\link{character}} string giving the name of the
+#'   colour scheme.}
 #'   \item{type}{A \code{\link{character}} string giving the corresponding
 #'   data type. One of "\code{qualitative}", "\code{diverging}" or
 #'   "\code{sequential}".}
@@ -146,7 +146,6 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       # Set attributes
       col <- structure(
         col,
-        name = palette,
         missing = col_missing,
         class = c("colour_scheme", "colour_continuous")
       )
@@ -181,7 +180,6 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       # Set attributes
       col <- structure(
         col,
-        name = palette,
         missing = col_missing,
         class = c("colour_scheme", "colour_discrete")
       )
@@ -191,8 +189,8 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
   # Set attributes
   fun <- structure(
     fun,
+    palette = palette,
     type = col_type,
-    name = palette,
     missing = col_missing,
     interpolate = col_interpolate || force,
     max = as.integer(k)

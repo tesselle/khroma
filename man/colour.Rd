@@ -36,8 +36,8 @@ A palette function with the following attributes, that when called
  with a single integer argument (the number of levels) returns a (named)
  vector of colours.
  \describe{
-  \item{name}{A \code{\link{character}} string giving the name of the colour
-  scheme.}
+  \item{palette}{A \code{\link{character}} string giving the name of the
+  colour scheme.}
   \item{type}{A \code{\link{character}} string giving the corresponding
   data type. One of "\code{qualitative}", "\code{diverging}" or
   "\code{sequential}".}
