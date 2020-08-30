@@ -2,7 +2,7 @@
 #' @include colour.R
 NULL
 
-#' Colour Scale Constructor
+#' Colour Scale Constructors
 #'
 #' Builds a discrete or continuous scale for \pkg{ggplot2} according to the
 #' colour scheme used.
@@ -30,44 +30,46 @@ NULL
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
-scale <- function(aesthetics, scale_name, reverse = FALSE, lang = "en",
-                  type = c("auto", "discrete", "continuous"),
-                  range = c(0, 1), midpoint = 0, ...) {
-  # Validation
-  type <- match.arg(type, several.ok = FALSE)
+NULL
 
-  # Get colour palette and scheme information
-  palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang,
-                    force = type == "continuous")
-  interpolate <- ifelse(type == "discrete", FALSE, attr(palette, "interpolate"))
+scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
+                           names = FALSE, lang = "en", ...) {
+  # Get colour scheme
+  palette <- colour(scale_name, reverse = reverse, names = names, lang = lang)
 
   # Build scale
   scale_arguments <- list(...)
   if (!("na.value" %in% names(scale_arguments))) {
     scale_arguments[["na.value"]] <- attr(palette, "missing")
   }
-  if (!("guide" %in% names(scale_arguments))) {
-    scale_arguments[["guide"]] <- if (interpolate) "colourbar" else "legend"
+  do.call(
+    ggplot2::discrete_scale,
+    c(aesthetics, scale_name, palette, scale_arguments)
+  )
+}
+
+scale_continuous <- function(aesthetics, scale_name, reverse = FALSE,
+                             names = FALSE, lang = "en",
+                             range = c(0, 1), midpoint = 0, ...) {
+  # Get colour scheme
+  palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang)
+  max <- attr(palette, "max")
+  type <- attr(palette, "type")
+
+  # Build scale
+  scale_arguments <- list(...)
+  if (!("na.value" %in% names(scale_arguments))) {
+    scale_arguments[["na.value"]] <- attr(palette, "missing")
+  }
+  if (type == "diverging") {
+    scale_arguments[["rescaler"]] <- mid_rescaler(mid = midpoint)
   }
 
-  if (!interpolate) {
-    do.call(
-      ggplot2::discrete_scale,
-      c(aesthetics, scale_name, palette, scale_arguments)
-    )
-  } else {
-    max <- attr(palette, "max")
-    type <- attr(palette, "type")
-    palette <- scales::gradient_n_pal(palette(max, range = range))
-    if (type == "diverging") {
-      scale_arguments[["rescaler"]] <- mid_rescaler(mid = midpoint)
-    }
-
-    do.call(
-      ggplot2::continuous_scale,
-      c(aesthetics, scale_name, palette, scale_arguments)
-    )
-  }
+  palette <- scales::gradient_n_pal(palette(max, range = range))
+  do.call(
+    ggplot2::continuous_scale,
+    c(aesthetics, scale_name, palette, scale_arguments)
+  )
 }
 
 # COPY FROM GGPLOT2 NON-EXPORTS

@@ -6,17 +6,17 @@ Authors@R:
              family = "Frerebeau",
              role = c("aut", "cre"),
              email = "nicolas.frerebeau@u-bordeaux-montaigne.fr",
-             comment = c(ORCID = "https://orcid.org/0000-0001-5759-4944")),
+             comment = c(ORCID = "0000-0001-5759-4944")),
       person(given = "Brice",
              family = "Lebrun",
              role = "ctb",
              email = "brice.lebrun@u-bordeaux-montaigne.fr",
-             comment = c(ORCID = "https://orcid.org/0000-0001-7503-8685")),
+             comment = c(ORCID = "0000-0001-7503-8685")),
       person(given = "Vincent",
              family = "Arel-Bundock",
              role = "ctb",
              email = "vincent.arel-bundock@umontreal.ca",
-             comment = c(ORCID = "https://orcid.org/0000-0003-2042-7063")))
+             comment = c(ORCID = "0000-0003-2042-7063")))
 Maintainer: Nicolas Frerebeau
     <nicolas.frerebeau@u-bordeaux-montaigne.fr>
 Description: An implementation of Paul Tol's colour schemes for

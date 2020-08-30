@@ -195,7 +195,7 @@
   ],
   "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1215.981KB",
+  "fileSize": "1269.907KB",
   "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [

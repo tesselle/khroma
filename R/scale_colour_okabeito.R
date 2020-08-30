@@ -31,7 +31,7 @@ NULL
 #' @export
 #' @rdname scale_okabeito_discrete
 scale_colour_okabeito <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "okabe ito", reverse, ...)
+  scale_discrete(aesthetics, "okabe ito", reverse, ...)
 }
 
 #' @export
@@ -41,5 +41,5 @@ scale_color_okabeito <- scale_colour_okabeito
 #' @export
 #' @rdname scale_okabeito_discrete
 scale_fill_okabeito <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "okabe ito", reverse, ...)
+  scale_discrete(aesthetics, "okabe ito", reverse, ...)
 }

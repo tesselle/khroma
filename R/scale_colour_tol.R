@@ -44,7 +44,7 @@ NULL
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_bright <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "bright", reverse, ...)
+  scale_discrete(aesthetics, "bright", reverse, ...)
 }
 
 #' @export
@@ -54,14 +54,14 @@ scale_color_bright <- scale_colour_bright
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_bright <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "bright", reverse, ...)
+  scale_discrete(aesthetics, "bright", reverse, ...)
 }
 
 ## --------------------------------------------------------------- High contrast
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_contrast <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "contrast", reverse, ...)
+  scale_discrete(aesthetics, "contrast", reverse, ...)
 }
 
 #' @export
@@ -71,14 +71,14 @@ scale_color_contrast <- scale_colour_contrast
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_contrast <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "contrast", reverse, ...)
+  scale_discrete(aesthetics, "contrast", reverse, ...)
 }
 
 ## --------------------------------------------------------------------- Vibrant
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_vibrant <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "vibrant", reverse, ...)
+  scale_discrete(aesthetics, "vibrant", reverse, ...)
 }
 
 #' @export
@@ -88,14 +88,14 @@ scale_color_vibrant <- scale_colour_vibrant
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_vibrant <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "vibrant", reverse, ...)
+  scale_discrete(aesthetics, "vibrant", reverse, ...)
 }
 
 ## ----------------------------------------------------------------------- Muted
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_muted <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "muted", reverse, ...)
+  scale_discrete(aesthetics, "muted", reverse, ...)
 }
 
 #' @export
@@ -105,14 +105,14 @@ scale_color_muted <- scale_colour_muted
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_muted <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "muted", reverse, ...)
+  scale_discrete(aesthetics, "muted", reverse, ...)
 }
 
 ## ------------------------------------------------------------------------ Pale
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_pale <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "pale", reverse, ...)
+  scale_discrete(aesthetics, "pale", reverse, ...)
 }
 
 #' @export
@@ -122,14 +122,14 @@ scale_color_pale <- scale_colour_pale
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_pale <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "pale", reverse, ...)
+  scale_discrete(aesthetics, "pale", reverse, ...)
 }
 
 ## ------------------------------------------------------------------------ Dark
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_dark <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "dark", reverse, ...)
+  scale_discrete(aesthetics, "dark", reverse, ...)
 }
 
 #' @export
@@ -139,14 +139,14 @@ scale_color_dark <- scale_colour_dark
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_dark <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "dark", reverse, ...)
+  scale_discrete(aesthetics, "dark", reverse, ...)
 }
 
 ## ----------------------------------------------------------------------- Light
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_light <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "light", reverse, ...)
+  scale_discrete(aesthetics, "light", reverse, ...)
 }
 
 #' @export
@@ -156,7 +156,7 @@ scale_color_light <- scale_colour_light
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "light", reverse, ...)
+  scale_discrete(aesthetics, "light", reverse, ...)
 }
 
 # Diverging ====================================================================
@@ -204,8 +204,8 @@ NULL
 #' @rdname scale_tol_diverging
 scale_colour_sunset <- function(..., reverse = FALSE, range = c(0, 1),
                                 midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "sunset", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "sunset", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 #' @export
@@ -216,8 +216,8 @@ scale_color_sunset <- scale_colour_sunset
 #' @rdname scale_tol_diverging
 scale_fill_sunset <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "sunset", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "sunset", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 ## ------------------------------------------------------------------------ BuRd
@@ -225,8 +225,8 @@ scale_fill_sunset <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_diverging
 scale_colour_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "BuRd", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "BuRd", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 #' @export
@@ -237,8 +237,8 @@ scale_color_BuRd <- scale_colour_BuRd
 #' @rdname scale_tol_diverging
 scale_fill_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
                             midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "BuRd", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "BuRd", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 ## ------------------------------------------------------------------------ PRGn
@@ -246,8 +246,8 @@ scale_fill_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_diverging
 scale_colour_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
                               midpoint = 0, aesthetics = "colour") {
-  scale(aesthetics, "PRGn", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "PRGn", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 #' @export
@@ -258,8 +258,8 @@ scale_color_PRGn <- scale_colour_PRGn
 #' @rdname scale_tol_diverging
 scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
                             midpoint = 0, aesthetics = "fill") {
-  scale(aesthetics, "PRGn", reverse = reverse, range = range,
-        midpoint = midpoint, ...)
+  scale_continuous(aesthetics, "PRGn", reverse = reverse, range = range,
+                   midpoint = midpoint, ...)
 }
 
 # Sequential ===================================================================
@@ -274,8 +274,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #' @param aesthetics A \code{\link{character}} string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A \code{\link{logical}} scalar: should the colour scheme be
-#'  used as a discrete scale? Only used with the \code{YlOrBr} and
-#'  \code{iridescent} schemes. If \code{TRUE}, it is a departure from Paul Tol's
+#'  used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
 #'  recommendations and likely a very poor use of colour.
 #' @details
 #'  If more colours than defined are needed from a given scheme, the colour
@@ -312,8 +311,12 @@ NULL
 #' @rdname scale_tol_sequential
 scale_colour_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
                                 discrete = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "YlOrBr", reverse = reverse, range = range,
-        type = ifelse(discrete, "discrete", "auto"), ...)
+  if (discrete) {
+    scale_discrete(aesthetics, "YlOrBr", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "YlOrBr", reverse = reverse,
+                     range = range, ...)
+  }
 }
 
 #' @export
@@ -324,8 +327,12 @@ scale_color_YlOrBr <- scale_colour_YlOrBr
 #' @rdname scale_tol_sequential
 scale_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
                               discrete = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "YlOrBr", reverse = reverse, range = range,
-        type = ifelse(discrete, "discrete", "auto"), ...)
+  if (discrete) {
+    scale_discrete(aesthetics, "YlOrBr", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "YlOrBr", reverse = reverse,
+                     range = range, ...)
+  }
 }
 
 ## ------------------------------------------------------------------ Iridescent
@@ -333,8 +340,12 @@ scale_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_sequential
 scale_colour_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
                                     discrete = FALSE, aesthetics = "colour") {
-  scale(aesthetics, "iridescent", reverse = reverse, range = range,
-        type = ifelse(discrete, "discrete", "auto"), ...)
+  if (discrete) {
+    scale_discrete(aesthetics, "iridescent", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "iridescent", reverse = reverse,
+                     range = range, ...)
+  }
 }
 
 #' @export
@@ -345,8 +356,12 @@ scale_color_iridescent <- scale_colour_iridescent
 #' @rdname scale_tol_sequential
 scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
                                   discrete = FALSE, aesthetics = "fill") {
-  scale(aesthetics, "iridescent", reverse = reverse, range = range,
-        type = ifelse(discrete, "discrete", "auto"), ...)
+  if (discrete) {
+    scale_discrete(aesthetics, "iridescent", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "iridescent", reverse = reverse,
+                     range = range, ...)
+  }
 }
 
 ## ------------------------------------------------------------ Discrete Rainbow
@@ -354,7 +369,7 @@ scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_sequential
 scale_colour_discreterainbow <- function(..., reverse = FALSE,
                                          aesthetics = "colour") {
-  scale(aesthetics, "discrete rainbow", reverse = reverse, ...)
+  scale_discrete(aesthetics, "discrete rainbow", reverse = reverse, ...)
 }
 
 #' @export
@@ -365,15 +380,20 @@ scale_color_discreterainbow <- scale_colour_discreterainbow
 #' @rdname scale_tol_sequential
 scale_fill_discreterainbow <- function(..., reverse = FALSE,
                                        aesthetics = "fill") {
-  scale(aesthetics, "discrete rainbow", reverse = reverse, ...)
+  scale_discrete(aesthetics, "discrete rainbow", reverse = reverse, ...)
 }
 
 ## -------------------------------------------------------------- Smooth Rainbow
 #' @export
 #' @rdname scale_tol_sequential
 scale_colour_smoothrainbow <- function(..., reverse = FALSE, range = c(0, 1),
-                                       aesthetics = "colour") {
-  scale(aesthetics, "smooth rainbow", reverse = reverse, range = range, ...)
+                                       discrete = FALSE, aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "smooth rainbow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "smooth rainbow", reverse = reverse,
+                     range = range, ...)
+  }
 }
 
 #' @export
@@ -383,6 +403,11 @@ scale_color_smoothrainbow <- scale_colour_smoothrainbow
 #' @export
 #' @rdname scale_tol_sequential
 scale_fill_smoothrainbow <- function(..., reverse = FALSE, range = c(0, 1),
-                                     aesthetics = "fill") {
-  scale(aesthetics, "smooth rainbow", reverse = reverse, range = range, ...)
+                                     discrete = FALSE, aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "smooth rainbow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "smooth rainbow", reverse = reverse,
+                     range = range, ...)
+  }
 }

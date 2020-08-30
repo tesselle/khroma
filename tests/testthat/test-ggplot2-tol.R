@@ -217,6 +217,7 @@ test_that("YlOrBr", {
   skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_YlOrBr(), "ggproto")
   expect_s3_class(scale_colour_YlOrBr(), "ScaleContinuous")
+  expect_s3_class(scale_colour_YlOrBr(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_colour_YlOrBr()$na.value, "#888888")
 
   expect_s3_class(scale_color_YlOrBr(), "ggproto")
@@ -225,6 +226,7 @@ test_that("YlOrBr", {
 
   expect_s3_class(scale_fill_YlOrBr(), "ggproto")
   expect_s3_class(scale_fill_YlOrBr(), "ScaleContinuous")
+  expect_s3_class(scale_fill_YlOrBr(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_fill_YlOrBr()$na.value, "#888888")
 })
 
@@ -232,6 +234,7 @@ test_that("Iridescent", {
   skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_iridescent(), "ggproto")
   expect_s3_class(scale_colour_iridescent(), "ScaleContinuous")
+  expect_s3_class(scale_colour_iridescent(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_colour_iridescent()$na.value, "#999999")
 
   expect_s3_class(scale_color_iridescent(), "ggproto")
@@ -240,6 +243,7 @@ test_that("Iridescent", {
 
   expect_s3_class(scale_fill_iridescent(), "ggproto")
   expect_s3_class(scale_fill_iridescent(), "ScaleContinuous")
+  expect_s3_class(scale_fill_iridescent(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_fill_iridescent()$na.value, "#999999")
 })
 
@@ -262,6 +266,7 @@ test_that("Smooth rainbow", {
   skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_smoothrainbow(), "ggproto")
   expect_s3_class(scale_colour_smoothrainbow(), "ScaleContinuous")
+  expect_s3_class(scale_colour_smoothrainbow(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_colour_smoothrainbow()$na.value, "#666666")
 
   expect_s3_class(scale_color_smoothrainbow(), "ggproto")
@@ -270,5 +275,6 @@ test_that("Smooth rainbow", {
 
   expect_s3_class(scale_fill_smoothrainbow(), "ggproto")
   expect_s3_class(scale_fill_smoothrainbow(), "ScaleContinuous")
+  expect_s3_class(scale_fill_smoothrainbow(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_fill_smoothrainbow()$na.value, "#666666")
 })

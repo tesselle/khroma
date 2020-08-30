@@ -74,6 +74,7 @@ scale_colour_smoothrainbow(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -81,6 +82,7 @@ scale_color_smoothrainbow(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -88,6 +90,7 @@ scale_fill_smoothrainbow(
   ...,
   reverse = FALSE,
   range = c(0, 1),
+  discrete = FALSE,
   aesthetics = "fill"
 )
 }
@@ -101,8 +104,7 @@ vector of colours be reversed?}
 fraction of the scheme's colour domain to keep.}
 
 \item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
-used as a discrete scale? Only used with the \code{YlOrBr} and
-\code{iridescent} schemes. If \code{TRUE}, it is a departure from Paul Tol's
+used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
 recommendations and likely a very poor use of colour.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
