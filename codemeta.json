@@ -191,10 +191,22 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=scales"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "spacesXYZ",
+      "name": "spacesXYZ",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=spacesXYZ"
     }
   ],
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1277.716KB",
+  "fileSize": "1283.877KB",
   "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [

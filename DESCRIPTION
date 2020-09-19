@@ -38,7 +38,8 @@ Imports:
     ggplot2,
     grDevices,
     grid,
-    scales
+    scales,
+    spacesXYZ
 Suggests:
     covr,
     crayon,
@@ -53,6 +54,7 @@ RoxygenNote: 7.1.1
 Collate: 
     'anomalize.R'
     'colour.R'
+    'compare.R'
     'convert.R'
     'ggplot2.R'
     'khroma-package.R'

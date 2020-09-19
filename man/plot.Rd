@@ -67,6 +67,7 @@ plot_scheme_colorblind(colour("bright")(7))
 }
 \seealso{
 Other diagnostic tools: 
+\code{\link{compare}()},
 \code{\link{convert}()}
 }
 \author{

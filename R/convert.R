@@ -162,7 +162,7 @@ LMS2RGB <- function(long, medium, short, max = 255) {
   return(RGB * max)
 }
 
-#' XYZ to/from CIE Lab Colour Conversion
+#' XYZ to CIE Lab Colour Conversion
 #'
 #' @param x,y,z A \code{\link{numeric}} vector of colour coordinates.
 #' @param white A length-three \code{\link{numeric}} vector giving a reference

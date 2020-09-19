@@ -63,6 +63,7 @@ Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
 }
 \seealso{
 Other diagnostic tools: 
+\code{\link{compare}()},
 \code{\link{plot}()}
 }
 \author{

@@ -192,8 +192,10 @@ draw_circle <- function(x = 0, y = 0, r = 0.5, n = 200,
 #' @rdname plot
 #' @export
 plot_scheme_colourblind <- function(x) {
-  # coerce colour scheme class to character vector
-  x <- as.character(x)
+  # Validation
+  if (!is.atomic(x) || !is.character(x))
+    stop("x must be a character vector of colours.")
+
   n <- length(x)
   col <- c(x, anomalize(x, 'deuteranopia'), anomalize(x, 'protanopia'),
            anomalize(x, 'tritanopia'), anomalize(x, 'achromatopsia'))
