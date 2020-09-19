@@ -53,23 +53,7 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
   mode <- match.arg(mode, several.ok = FALSE)
 
   # Convert to RGB colour code
-  RGB1 <- grDevices::col2rgb(x, alpha = FALSE)
-  # Convert colours from the RGB color space to the LMS color space
-  ## http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html
-  RGB_to_XYZ <- matrix(
-    data = c(0.4124564, 0.3575761, 0.1804375,
-             0.2126729, 0.7151522, 0.0721750,
-             0.0193339, 0.1191920, 0.9503041),
-    nrow = 3, ncol = 3, byrow = TRUE
-  )
-  ## Hunt-Pointer-Estevez transformation matrix
-  XYZ_to_LMS <- matrix(
-    data = c(0.4002, 0.7076, -0.0808,
-             -0.2263, 1.1653, 0.0457,
-             0, 0, 0.9182),
-    nrow = 3, ncol = 3, byrow = TRUE
-  )
-  RGB_to_LMS <- XYZ_to_LMS %*% RGB_to_XYZ
+  RGB1 <- t(grDevices::col2rgb(x, alpha = FALSE))
 
   # Dichromat
   S <- switch (
@@ -103,16 +87,21 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
       c(0, 0, 1)
     )
   )
+
+  # Convert colours from the RGB color space to the LMS color space
+  # RGB_to_LMS <- .XYZ_to_LMS %*% .sRGB_to_XYZ
+  # RGB2 <- solve(RGB_to_LMS) %*% S %*% RGB_to_LMS %*% RGB1
+
   # Conversion
-  RGB2 <- solve(RGB_to_LMS) %*% S %*% RGB_to_LMS %*% RGB1
+  LMS <- RGB2LMS(RGB1) %*% t(S)
+  RGB2 <- LMS2RGB(LMS)
 
   # RGB constraints
-  for (j in 1:ncol(RGB2)) {
-      RGB2[, j] <- pmin(RGB2[, j], rep(255, 3))
-      RGB2[, j] <- pmax(RGB2[, j], rep(0, 3))
+  for (i in 1:nrow(RGB2)) {
+    RGB2[i, ] <- pmin(RGB2[i, ], rep(255, 3))
+    RGB2[i, ] <- pmax(RGB2[i, ], rep(0, 3))
   }
 
   # Convert to Hex colour code
-  grDevices::rgb(red = RGB2[1, ], green = RGB2[2, ], blue = RGB2[3, ],
-                 names = names(x), maxColorValue = 255)
+  grDevices::rgb(RGB2, names = names(x), maxColorValue = 255)
 }

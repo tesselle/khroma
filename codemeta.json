@@ -193,9 +193,8 @@
       "sameAs": "https://CRAN.R-project.org/package=scales"
     }
   ],
-  "releaseNotes": "https://github.com/nfrerebeau/khroma/blob/master/NEWS.md",
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1269.907KB",
+  "fileSize": "1277.716KB",
   "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [

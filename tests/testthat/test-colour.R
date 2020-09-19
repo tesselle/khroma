@@ -86,14 +86,18 @@ test_that("Colour-blind", {
   # Achromatopsia
   ach <- convert(palette, mode = "achromatopsia")
 
-  expect_equivalent(pro(7), c("#6E6EAA", "#7D7D76", "#767633", "#BDBD43",
-                              "#BABAEE", "#474776", "#BBBABB"))
-  expect_equivalent(deu(7), c("#6666AB", "#929273", "#666635", "#C0C043",
-                              "#AAAAF0", "#5A5A73", "#BBBABB"))
-  expect_equivalent(tri(7), c("#3D7D7D", "#EB6868", "#2C7D7D", "#DBABAB",
-                              "#61D0D0", "#A13B3B", "#BABBBA"))
-  expect_equivalent(ach(7), c("#A2A2A2", "#777777", "#3B3B3C", "#535353",
-                              "#E7E7E7", "#707070", "#BABABB"))
+  expect_equal(pro(7), c(blue = "#7070AA", red = "#8A8A76", green = "#7D7D33",
+                         yellow = "#BEBE43", cyan = "#BFBFEE", purple = "#575776",
+                         grey = "#BBBABB"))
+  expect_equal(deu(7), c(blue = "#6969AA", red = "#A4A470", green = "#727237",
+                         yellow = "#C0C042", cyan = "#B2B2EF", purple = "#6D6D73",
+                         grey = "#BBBABB"))
+  expect_equal(tri(7), c(blue = "#307E7E", red = "#ED6868", green = "#3A8080",
+                         yellow = "#D4B1B1", cyan = "#59D0D0", purple = "#A64040",
+                         grey = "#BABBBA"))
+  expect_equal(ach(7), c(blue = "#A4A4A4", red = "#787878", green = "#424243",
+                         yellow = "#5F5F5F", cyan = "#E8E8E8", purple = "#737373",
+                         grey = "#BABABB"))
 })
 test_that("Colour-blind attributes", {
   palette <- colour("okabe ito")
