@@ -23,7 +23,7 @@ distance matrix should be printed?}
 A \code{\link[stats:dist]{distance matrix}}.
 }
 \description{
-Computes CIELAB distance metric (\eqn{\DeltaE*}).
+Computes CIELAB distance metric.
 }
 \examples{
 # Trichromat

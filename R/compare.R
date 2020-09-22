@@ -1,6 +1,6 @@
 #' Colour Difference
 #'
-#' Computes CIELAB distance metric (\eqn{\DeltaE*}).
+#' Computes CIELAB distance metric.
 #' @param x A \code{\link{character}} vector of colours.
 #' @param metric An \code{\link{integer}} value giving the year the metric was
 #'  recommended by the CIE. It must be one of "\code{1976}", "\code{1994}", or
