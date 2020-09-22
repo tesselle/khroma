@@ -25,7 +25,6 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 
 <!-- badges: start -->
 [![Travis CI Build Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
-[![R build status](https://github.com/nfrerebeau/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/nfrerebeau/khroma/actions)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
 
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
@@ -77,7 +76,7 @@ library(ggplot2)
 bright <- colour("bright")
 ```
 
-If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine, colours will be nicely printed in the console.
+If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console.
 ```{r crayon, echo=FALSE, eval=FALSE}
 bright(7)
 ```
@@ -110,6 +109,12 @@ okabe <- colour("okabe ito")
 
 set.seed(12345)
 plot_map(okabe(8))
+```
+
+#### Compute CIELAB distance metric
+```{r usage-cielab}
+DeltaE <- compare(okabe(8))
+round(DeltaE, 2)
 ```
 
 #### Simulate colour-blindness

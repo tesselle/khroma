@@ -204,10 +204,13 @@ color <- colour
 
 #' @export
 print.colour_scheme <- function(x, ...) {
-  if (requireNamespace("crayon", quietly = TRUE) &
+  if (requireNamespace("crayon", quietly = TRUE) &&
       getOption("crayon.enabled", default = FALSE)) {
-    styled <- vapply(x, FUN = function(x) crayon::make_style(x, bg = TRUE)(x),
-                     FUN.VALUE = character(1))
+    styled <- vapply(
+      X = x,
+      FUN = function(x) crayon::make_style(x, bg = TRUE)(x),
+      FUN.VALUE = character(1)
+    )
     cat(styled)
   } else {
     print(unclass(x))

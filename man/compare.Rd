@@ -11,7 +11,7 @@ compare(x, metric = 2000, diag = FALSE, upper = FALSE)
 
 \item{metric}{An \code{\link{integer}} value giving the year the metric was
 recommended by the CIE. It must be one of "\code{1976}", "\code{1994}", or
-"\code{2000}".}
+"\code{2000}" (default).}
 
 \item{diag}{A \code{\link{logical}} scalar: should the diagonal of the
 distance matrix be printed?}

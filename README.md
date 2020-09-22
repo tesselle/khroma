@@ -5,8 +5,8 @@
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/nfrerebeau/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/nfrerebeau/khroma/actions)
+[![Travis CI Build
+Status](https://travis-ci.org/nfrerebeau/khroma.svg?branch=master)](https://travis-ci.org/nfrerebeau/khroma)
 [![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
 
 [![CRAN
@@ -82,7 +82,8 @@ bright <- colour("bright")
 ```
 
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your
-machine, colours will be nicely printed in the console.
+machine and if the `crayon.enabled` option is set to `TRUE` with
+`options()`, colours will be nicely printed in the console.
 
 ![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
 
@@ -127,6 +128,21 @@ plot_map(okabe(8))
 ```
 
 <img src="man/figures/README-usage-colourblind1-1.png" style="display: block; margin: auto;" />
+
+#### Compute CIELAB distance metric
+
+``` r
+DeltaE <- compare(okabe(8))
+round(DeltaE, 2)
+#>                black orange sky blue bluish green yellow  blue vermilion
+#> orange         64.74                                                    
+#> sky blue       60.95  53.61                                             
+#> bluish green   50.51  42.87    34.69                                    
+#> yellow         88.42  21.72    57.53        38.04                       
+#> blue           39.23  55.35    22.31        38.40  70.37                
+#> vermilion      49.36  22.24    52.27        54.36  43.71 49.62          
+#> reddish purple 53.11  49.01    45.51        63.45  62.54 41.11     37.02
+```
 
 #### Simulate colour-blindness
 

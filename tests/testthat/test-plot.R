@@ -2,6 +2,8 @@ context("Plot")
 
 # Save plots to an object using a null PDF device
 test_that("Quick and Dirty Plot", {
+  skip_if_not_installed("vdiffr")
+
   pdf(NULL)
   dev.control(displaylist = "enable")
   plot(colour("smooth rainbow")(256, range = c(0.5, 1)))
@@ -11,6 +13,9 @@ test_that("Quick and Dirty Plot", {
   vdiffr::expect_doppelganger("plot_range", plot_range)
 })
 test_that("Schemes", {
+  expect_error(plot_scheme(1:5), "x must be a character vector of colours.")
+
+  skip_if_not_installed("vdiffr")
   for (i in c(TRUE, FALSE)) {
     for (j in c(TRUE, FALSE)) {
       pdf(NULL)
@@ -23,10 +28,11 @@ test_that("Schemes", {
                                   plot_scheme_muted)
     }
   }
-
-  expect_error(plot_scheme(1:5), "x must be a character vector of colours.")
 })
 test_that("Diagnostic Map", {
+  expect_error(plot_map(1:5), "x must be a character vector of colours.")
+
+  skip_if_not_installed("vdiffr")
   pdf(NULL)
   dev.control(displaylist = "enable")
   # Keep the results the same for R versions prior to 3.6
@@ -42,10 +48,10 @@ test_that("Diagnostic Map", {
   invisible(dev.off())
 
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
-
-  expect_error(plot_map(1:5), "x must be a character vector of colours.")
 })
 test_that("Colourblind Schemes", {
+  skip_if_not_installed("vdiffr")
+
   pdf(NULL)
   dev.control(displaylist = "enable")
   plot_scheme_colourblind(colour("bright")(7))
