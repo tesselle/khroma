@@ -16,3 +16,4 @@
 ^\.Rproj\.user$
 ^\.github$
 ^\.httr-oauth$
+^revdep$

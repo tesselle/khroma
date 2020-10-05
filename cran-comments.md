@@ -9,6 +9,7 @@
 
 ## Reverse dependencies
 
-There is 1 reverse dependency. 
+We checked 1 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
 
-The changes do not impact any of the dependencies.
+* We saw 0 new problems
+* We failed to check 0 packages
