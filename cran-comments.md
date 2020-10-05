@@ -1,6 +1,6 @@
 ## Test environments
-* local Ubuntu 18.04 install: 4.0.2
-* GitHub Actions: 3.3, 3.4, 3.5, oldrel, release and devel
+* local (Ubuntu Focal): 4.0.2
+* Travis CI (Ubuntu Xenial): 3.3, 3.4, 3.5, oldrel, release and devel
 * win-builder: oldrel, release and devel
 
 ## R CMD check results

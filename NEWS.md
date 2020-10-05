@@ -1,10 +1,19 @@
 ## khroma 1.4.0
 ### New functions
-* Add a `plot_scheme_colourblind` function.
+* Add a `compare()` function to compute CIELAB distance metric.
+* Add a `plot()` function.
+* Add a `plot_scheme_colourblind()` function (#4).
 * Add Okabe and Ito (2008) colour scheme.
 
 ### Bugfixes & changes
-* Restrict the RGB values in the `anomalize` function.
+* Restrict the RGB values in the `anomalize()` function (#5).
+
+### Enhancements
+* `plot_scheme()` now display colour for bad/missing data (if any).
+* `colour()` output can be restricted to a fraction of the cheme's colour domain (#6).
+* `colour()` gained a new argument to force interpolation of colour scheme.
+* `colour()` gained a new argument to choose colour names language.
+* `scale_*_YlOrBr()`, `scale_*_iridescent()` and `scale_*_smoothrainbow()` gained a new argument to be used with discrete data (#3).
 
 ### Internals
 * Move {ggplot2} and {scales} from Suggests to Imports.
