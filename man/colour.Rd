@@ -172,7 +172,7 @@ Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 
  Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
  Figures and Presentations That Are Friendly to Colorblind People}.
- URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
+ URL: \url{https://jfly.uni-koeln.de/color/}.
 
  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
  SRON/EPS/TN/09-002, issue 3.1.

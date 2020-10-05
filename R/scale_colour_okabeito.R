@@ -18,7 +18,7 @@ NULL
 #' @references
 #'  Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
 #'  Figures and Presentations That Are Friendly to Colorblind People}.
-#'  URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
+#'  URL: \url{https://jfly.uni-koeln.de/color/}.
 #' @example inst/examples/ex-okabeito-discrete.R
 #' @author N. Frerebeau
 #' @family colour-blind safe colour schemes

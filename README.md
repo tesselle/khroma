@@ -237,4 +237,4 @@ By contributing to this project, you agree to abide by its terms.
 
 2.  Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to
     Make Figures and Presentations That Are Friendly to Colorblind
-    People*. URL: <http://jfly.iam.u-tokyo.ac.jp/color>.
+    People*. URL: <https://jfly.uni-koeln.de/color/>.

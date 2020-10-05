@@ -42,7 +42,7 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 \references{
 Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
  Figures and Presentations That Are Friendly to Colorblind People}.
- URL: \url{http://jfly.iam.u-tokyo.ac.jp/color/}.
+ URL: \url{https://jfly.uni-koeln.de/color/}.
 }
 \seealso{
 Other colour-blind safe colour schemes: 
