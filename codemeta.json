@@ -16,7 +16,7 @@
   ],
   "issueTracker": "https://github.com/nfrerebeau/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.4.0",
+  "version": "1.4.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -206,8 +206,8 @@
     }
   ],
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1283.877KB",
-  "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
+  "fileSize": "1288.137KB",
+  "contIntegration": ["https://travis-ci.org/nfrerebeau/khroma", "https://codecov.io/gh/nfrerebeau/khroma"],
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [
     "data-visualization",
@@ -230,7 +230,7 @@
       ],
       "name": "{khroma}: Colour Schemes for Scientific Data Visualization",
       "url": "https://doi.org/10.5281/zenodo.1472077",
-      "description": "R package version 1.4.0"
+      "description": "R package version 1.4.0.9000"
     }
   ]
 }

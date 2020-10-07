@@ -1,4 +1,6 @@
-## khroma 1.4.0
+## khroma 1.4.0 (CRAN release date: 2020-10-05)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4067906.svg)](https://doi.org/10.5281/zenodo.4067906)
+
 ### New functions
 * Add a `compare()` function to compute CIELAB distance metric.
 * Add a `plot()` function.
