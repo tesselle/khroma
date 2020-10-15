@@ -18,6 +18,7 @@ scale_colour_sunset(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -26,6 +27,7 @@ scale_color_sunset(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -34,6 +36,7 @@ scale_fill_sunset(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "fill"
 )
 
@@ -42,6 +45,7 @@ scale_colour_BuRd(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -50,6 +54,7 @@ scale_color_BuRd(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -58,6 +63,7 @@ scale_fill_BuRd(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "fill"
 )
 
@@ -66,6 +72,7 @@ scale_colour_PRGn(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -74,6 +81,7 @@ scale_color_PRGn(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "colour"
 )
 
@@ -82,6 +90,7 @@ scale_fill_PRGn(
   reverse = FALSE,
   range = c(0, 1),
   midpoint = 0,
+  discrete = FALSE,
   aesthetics = "fill"
 )
 }
@@ -96,6 +105,10 @@ fraction of the scheme's colour domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
+
+\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
+recommendations and likely a very poor use of colour.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
