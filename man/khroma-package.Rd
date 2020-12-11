@@ -32,7 +32,6 @@ Useful links:
 \itemize{
   \item \url{https://khroma.archaeo.science}
   \item \url{https://github.com/nfrerebeau/khroma}
-  \item \url{https://cran.r-project.org/package=khroma}
   \item Report bugs at \url{https://github.com/nfrerebeau/khroma/issues}
 }
 
