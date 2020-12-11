@@ -22,7 +22,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.0.2 (2020-06-22)",
+  "runtimePlatform": "R version 4.0.3 (2020-10-10)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -206,8 +206,8 @@
     }
   ],
   "readme": "https://github.com/nfrerebeau/khroma/blob/master/README.md",
-  "fileSize": "1288.137KB",
-  "contIntegration": ["https://travis-ci.org/nfrerebeau/khroma", "https://codecov.io/gh/nfrerebeau/khroma"],
+  "fileSize": "1289.595KB",
+  "contIntegration": "https://codecov.io/gh/nfrerebeau/khroma",
   "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
   "keywords": [
     "data-visualization",
