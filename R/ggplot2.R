@@ -61,6 +61,9 @@ scale_continuous <- function(aesthetics, scale_name, reverse = FALSE,
   if (!("na.value" %in% names(scale_arguments))) {
     scale_arguments[["na.value"]] <- attr(palette, "missing")
   }
+  if (!("guide" %in% names(scale_arguments))) {
+    scale_arguments[["guide"]] <- "colourbar"
+  }
   if (type == "diverging") {
     scale_arguments[["rescaler"]] <- mid_rescaler(mid = midpoint)
   }
