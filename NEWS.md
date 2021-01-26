@@ -1,3 +1,7 @@
+## khroma 1.4.1
+### Enhancements
+* `scale_*_sunset()`, `scale_*_BuRd()` and `scale_*_PRGn()` gained a new argument to be used with discrete data (#7).
+
 ## khroma 1.4.0 (CRAN release date: 2020-10-05)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4067906.svg)](https://doi.org/10.5281/zenodo.4067906)
 

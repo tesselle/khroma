@@ -22,7 +22,7 @@ An implementation of Paul Tol's colour schemes for
 \tabular{ll}{
  \strong{Package:} \tab khroma \cr
  \strong{Type:} \tab Package \cr
- \strong{Version:} \tab 1.4.0.9000 \cr
+ \strong{Version:} \tab 1.4.1 \cr
  \strong{License:} \tab GPL-3 \cr
  \strong{DOI:} \tab \doi{10.5281/zenodo.1472077}
 }
@@ -30,7 +30,7 @@ An implementation of Paul Tol's colour schemes for
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://khroma.archaeo.science}
+  \item \url{https://khroma.tesselle.org}
   \item \url{https://github.com/tesselle/khroma}
   \item Report bugs at \url{https://github.com/tesselle/khroma/issues}
 }

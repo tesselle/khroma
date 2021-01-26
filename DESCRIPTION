@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Scientific Data Visualization
-Version: 1.4.0.9000
+Version: 1.4.1
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
@@ -28,7 +28,7 @@ Description: An implementation of Paul Tol's colour schemes for
     thematic schemes (geologic timescale, land cover, FAO soils, etc.) are
     also implemented.
 License: GPL-3
-URL: https://khroma.archaeo.science,
+URL: https://khroma.tesselle.org,
     https://github.com/tesselle/khroma
 BugReports: https://github.com/tesselle/khroma/issues
 Depends: 
