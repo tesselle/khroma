@@ -24,8 +24,8 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
-[![R build status](https://github.com/nfrerebeau/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/nfrerebeau/khroma/actions)
-[![codecov](https://codecov.io/gh/nfrerebeau/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/nfrerebeau/khroma)
+[![R build status](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
+[![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
 
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
 [![CRAN checks](https://cranchecks.info/badges/worst/khroma)](https://cran.r-project.org/web/checks/check_results_khroma.html)
@@ -55,7 +55,7 @@ You can install the released version of **khroma** from [CRAN](https://CRAN.R-pr
 install.packages("khroma")
 ```
 
-Or install the development version from GitHub with:
+And the development version from [GitHub](https://github.com/) with:
 
 ```{r gh-installation, eval=FALSE}
 # install.packages("remotes")
@@ -162,7 +162,7 @@ The following scientific colour schemes are available:
 * AVHRR Global Land Cover Classification;
 * FAO Soil Reference Groups.
 
-More will be added in future releases ([suggestions are welcome](https://github.com/nfrerebeau/khroma/issues)).
+More will be added in future releases ([suggestions are welcome](https://github.com/tesselle/khroma/issues)).
 
 ## Contributing
-Please note that the **khroma** project is released with a [Contributor Code of Conduct](https://github.com/nfrerebeau/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
+Please note that the **khroma** project is released with a [Contributor Code of Conduct](https://github.com/tesselle/khroma/blob/master/.github/CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.

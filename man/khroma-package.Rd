@@ -31,8 +31,8 @@ An implementation of Paul Tol's colour schemes for
 Useful links:
 \itemize{
   \item \url{https://khroma.archaeo.science}
-  \item \url{https://github.com/nfrerebeau/khroma}
-  \item Report bugs at \url{https://github.com/nfrerebeau/khroma/issues}
+  \item \url{https://github.com/tesselle/khroma}
+  \item Report bugs at \url{https://github.com/tesselle/khroma/issues}
 }
 
 }
