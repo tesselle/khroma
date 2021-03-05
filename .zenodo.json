@@ -31,10 +31,5 @@
     ],
     "upload_type": "software",
     "license": "GPL-3.0+",
-    "access_right": "open",
-    "communities": [
-        {
-            "identifier": "archaeo"
-        }
-    ]
+    "access_right": "open"
 }

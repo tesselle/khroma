@@ -1,19 +1,20 @@
-citHeader("To cite khroma in publications please use:")
+citHeader("To cite khroma in publications use:")
 
-citEntry(entry = "Manual",
-  title        = "{khroma}: Colour Schemes for Scientific Data Visualization",
+citEntry(
+  entry        = "Manual",
+  title        = "khroma: Colour Schemes for Scientific Data Visualization",
   author       = c(person("Nicolas", "Frerebeau", role = "aut")),
-  year         = "2019",
+  year         = "2021",
   organization = "Université Bordeaux Montaigne",
   address      = "Pessac, France",
   note         = "R package version 1.4.1",
   url          = "https://doi.org/10.5281/zenodo.1472077",
 
   textVersion  =
-  paste("Frerebeau, Nicolas (2019).",
+  paste("Frerebeau, Nicolas (2021).",
         "khroma: Colour Schemes for Scientific Data Visualization.",
         "R package version 1.4.1",
         "Université Bordeaux Montaigne, Pessac, France.",
         "DOI 10.5281/zenodo.1472077.",
-        "URL https://cran.r-project.org/package=khroma.")
+        "URL https://khroma.tesselle.org.")
 )

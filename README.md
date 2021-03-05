@@ -19,8 +19,6 @@ Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Lifecycle:
-stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
 <!-- badges: end -->
@@ -108,8 +106,8 @@ plot_scheme(bright(7), colours = TRUE)
 
 ``` r
 # Use with ggplot2
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
-  geom_point() +
+ggplot2::ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
+  ggplot2::geom_point() +
   scale_colour_bright()
 ```
 

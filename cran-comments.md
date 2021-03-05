@@ -1,7 +1,8 @@
 ## Test environments
-* local (Ubuntu Focal): 4.0.2
-* Travis CI (Ubuntu Focal): 3.3, 3.4, 3.5, oldrel, release and devel
-* win-builder: oldrel, release and devel
+* Local R installation: R 4.0.3
+* Ubuntu 20.04 (on GitHub Actions): R devel, release, oldrel
+* Windows (on GitHub Actions and win-builder): R devel, release, oldrel
+* MacOS (on GitHub Actions): R release
 
 ## R CMD check results
 

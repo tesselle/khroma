@@ -6,7 +6,7 @@ editor_options:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -16,7 +16,6 @@ knitr::opts_chunk$set(
 ```
 
 ```{r hook, comment="", results="asis", echo=FALSE, eval=FALSE}
-options(crayon.enabled = TRUE)
 # https://cran.r-project.org/web/packages/fansi/vignettes/sgr-in-rmd.html
 old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 ```
@@ -32,7 +31,6 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
 <!-- badges: end -->
@@ -78,6 +76,7 @@ bright <- colour("bright")
 
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console.
 ```{r crayon, echo=FALSE, eval=FALSE}
+options(crayon.enabled = TRUE)
 bright(7)
 ```
 
@@ -96,8 +95,8 @@ plot_scheme(bright(7), colours = TRUE)
 
 ```{r usage-ggplot2, fig.height=3.5, fig.width=5, fig.align='center'}
 # Use with ggplot2
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
-  geom_point() +
+ggplot2::ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
+  ggplot2::geom_point() +
   scale_colour_bright()
 ```
 
