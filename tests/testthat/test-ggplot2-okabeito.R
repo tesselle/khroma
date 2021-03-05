@@ -1,5 +1,3 @@
-context("ggplot2 Okabe and Ito scale")
-
 # Qualitative color schemes ====================================================
 test_that("Bright", {
   skip_if_not_installed("ggplot2")

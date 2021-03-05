@@ -1,5 +1,3 @@
-context("Convert")
-
 # red, blue, green
 rgb <- matrix(data = c(255, 0, 0, 0, 255, 0, 0, 0, 255),
               ncol = 3, dimnames = list(NULL, c("R", "G", "B")),

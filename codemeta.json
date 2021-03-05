@@ -131,6 +131,7 @@
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
+      "version": ">= 3.0.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -207,9 +208,9 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "1280.758KB",
+  "fileSize": "1281.377KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
-  "developmentStatus": ["https://www.repostatus.org/#active", "https://www.tidyverse.org/lifecycle/#stable"],
+  "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
     "data-visualization",
     "colour-schemes",
@@ -221,7 +222,7 @@
   "citation": [
     {
       "@type": "SoftwareSourceCode",
-      "datePublished": "2019",
+      "datePublished": "2021",
       "author": [
         {
           "@type": "Person",
@@ -229,7 +230,7 @@
           "familyName": "Frerebeau"
         }
       ],
-      "name": "{khroma}: Colour Schemes for Scientific Data Visualization",
+      "name": "khroma: Colour Schemes for Scientific Data Visualization",
       "url": "https://doi.org/10.5281/zenodo.1472077",
       "description": "R package version 1.4.1"
     }

@@ -1,5 +1,3 @@
-context("ggplot2 science scales")
-
 test_that("Stratigraphic scales", {
   skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_stratigraphy(), "ggproto")

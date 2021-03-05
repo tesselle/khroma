@@ -1,5 +1,3 @@
-context("Colour")
-
 test_that("Palette colours", {
   palettes <- c("okabe ito", "bright", "contrast", "vibrant", "muted", "pale",
                 "dark", "light", "sunset", "BuRd", "PRGn", "YlOrBr",
@@ -35,10 +33,11 @@ test_that("Qualitative colours", {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
     expect_error(colour(palettes[i])(500))
-    expect_equivalent(
+    expect_equal(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
-      label = palettes[i]
+      label = palettes[i],
+      ignore_attr = TRUE
     )
   }
 
@@ -51,10 +50,11 @@ test_that("Diverging colours", {
   palettes <- c("sunset", "BuRd", "PRGn")
   n <- c(11, 9, 9)
   for (i in seq_len(length(palettes))) {
-    expect_equivalent(
+    expect_equal(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
-      label = palettes[i]
+      label = palettes[i],
+      ignore_attr = TRUE
     )
     expect_null(names(colour(palettes[i])(n[i])))
   }
@@ -65,10 +65,11 @@ test_that("Sequential colours", {
   palettes <- c("YlOrBr", "iridescent", "smooth rainbow")
   n <- c(9, 23,34)
   for (i in seq_len(length(palettes))) {
-    expect_equivalent(
+    expect_equal(
       unclass(colour(palettes[i], reverse = TRUE)(n[i])),
       rev(colour(palettes[i], reverse = FALSE)(n[i])),
-      label = palettes[i]
+      label = palettes[i],
+      ignore_attr = TRUE
     )
     expect_null(names(colour(palettes[i])(n[i])))
   }
@@ -103,12 +104,12 @@ test_that("Colour-blind attributes", {
   palette <- colour("okabe ito")
   protanopia <- convert(palette, mode = "protanopia")
 
-  expect_equivalent(attr(protanopia, "palette"), "okabe ito")
-  expect_equivalent(attr(protanopia, "type"), "qualitative")
+  expect_true(attr(protanopia, "palette") == "okabe ito")
+  expect_true(attr(protanopia, "type") == "qualitative")
   expect_false(attr(protanopia, "interpolate"))
   expect_true(is.na(attr(protanopia, "missing")))
-  expect_equivalent(attr(protanopia, "max"), 8)
-  expect_equivalent(attr(protanopia, "mode"), "protanopia")
+  expect_true(attr(protanopia, "max") == 8)
+  expect_true(attr(protanopia, "mode") == "protanopia")
 })
 test_that("Print with crayon", {
   palette <- colour("okabe ito")

@@ -1,5 +1,3 @@
-context("Plot")
-
 # Save plots to an object using a null PDF device
 test_that("Quick and Dirty Plot", {
   skip_if_not_installed("vdiffr")

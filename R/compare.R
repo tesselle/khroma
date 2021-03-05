@@ -32,7 +32,6 @@ compare <- function(x, metric = 2000, diag = FALSE, upper = FALSE) {
     Lab2 = Lab,
     metric = metric[[1L]]
   )
-  delta_E <- stats::as.dist(delta_E, diag = diag, upper = upper)
 
-  return(delta_E)
+  stats::as.dist(delta_E, diag = diag, upper = upper)
 }

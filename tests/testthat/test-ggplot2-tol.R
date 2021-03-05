@@ -1,5 +1,3 @@
-context("ggplot2 Paul Tol scales")
-
 # Qualitative color schemes ====================================================
 test_that("Bright", {
   skip_if_not_installed("ggplot2")
@@ -71,9 +69,10 @@ test_that("Muted", {
     scale_colour_muted()$palette(9),
     colour("muted", names = FALSE)(9)
   )
-  expect_equivalent(
+  expect_equal(
     unclass(scale_colour_muted(reverse = TRUE)$palette(9)),
-    rev(colour("muted", names = FALSE, reverse = FALSE)(9))
+    rev(colour("muted", names = FALSE, reverse = FALSE)(9)),
+    ignore_attr = TRUE
   )
 
   expect_s3_class(scale_color_muted(), "ggproto")
