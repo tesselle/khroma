@@ -11,6 +11,8 @@ NULL
 #'  the palette to be used (see \code{\link{colour}}).
 #' @param reverse A \code{\link{logical}} scalar: should the resulting
 #'  vector of colours should be reversed?
+#' @param label A \code{\link{logical}} scalar: should the names of the
+#'  colours should be kept in the resulting vector?
 #' @param lang A \code{\link{character}} string specifying the language for the
 #'  colour names. It must be one of "\code{en}" (english, the default) or
 #'  "\code{fr}" (french).
@@ -33,9 +35,9 @@ NULL
 NULL
 
 scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
-                           names = FALSE, lang = "en", ...) {
+                           labels = FALSE, lang = "en", ...) {
   # Get colour scheme
-  palette <- colour(scale_name, reverse = reverse, names = names, lang = lang)
+  palette <- colour(scale_name, reverse = reverse, names = labels, lang = lang)
 
   # Build scale
   scale_arguments <- list(...)
@@ -49,8 +51,7 @@ scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
 }
 
 scale_continuous <- function(aesthetics, scale_name, reverse = FALSE,
-                             names = FALSE, lang = "en",
-                             range = c(0, 1), midpoint = 0, ...) {
+                             lang = "en", range = c(0, 1), midpoint = 0, ...) {
   # Get colour scheme
   palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang)
   max <- attr(palette, "max")

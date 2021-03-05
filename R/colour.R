@@ -117,6 +117,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
   # Validation
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
+
   # Get colours
   col_palette <- .schemes[[palette]]
   col_colours <- col_palette[["colours"]]
