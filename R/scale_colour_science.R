@@ -2,19 +2,19 @@
 NULL
 
 # Geologic Timescale ===========================================================
-#' Geologic Timescale Colour Scheme for \pkg{ggplot2}
+#' Geologic Timescale Color Scheme for \pkg{ggplot2}
 #'
-#' Provides the geologic timescale colour scheme.
-#' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
-#' @param lang A \code{\link{character}} string specifying the language for the
-#'  colour names (see details). It must be one of "\code{en}" (english, the
-#'  default) or "\code{fr}" (french).
-#' @param aesthetics A \code{\link{character}} string or vector of character
+#' Provides the geologic timescale color scheme.
+#' @param ... Arguments passed on to [ggplot2::discrete_scale()].
+#' @param lang A [`character`] string specifying the language for the
+#'  color names (see details). It must be one of "`en`" (english, the
+#'  default) or "`fr`" (french).
+#' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the unit names.
 #' @references
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}.
-#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+#' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
 #' @family themed colour schemes
@@ -47,15 +47,15 @@ scale_fill_stratigraphy <- function(..., lang = "en", aesthetics = "fill") {
 #' AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}
 #'
 #' Provides the AVHRR Global Land Cover classification as modified by
-#' Paul Tol (colour-blind safe).
-#' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
-#' @param lang A \code{\link{character}} string specifying the language for the
-#'  colour names (see details). It must be one of "\code{en}" (english, the
-#'  default) or "\code{fr}" (french).
-#' @param aesthetics A \code{\link{character}} string or vector of character
+#' Paul Tol (colorblind safe).
+#' @param ... Arguments passed on to [ggplot2::discrete_scale()].
+#' @param lang A [`character`] string specifying the language for the
+#'  color names (see details). It must be one of "`en`" (english, the
+#'  default) or "`fr`" (french).
+#' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
-#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+#' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2018). \emph{Colour Schemes.} SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
@@ -89,21 +89,21 @@ scale_fill_land <- function(..., lang = "en", aesthetics = "fill") {
 }
 
 # Soil =========================================================================
-#' FAO Soil Reference Groups Colour Scheme for \pkg{ggplot2}
+#' FAO Soil Reference Groups Color Scheme for \pkg{ggplot2}
 #'
 #' Provides the FAO Soil Reference Groups colour scheme.
-#' @param ... Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.
-#' @param lang A \code{\link{character}} string specifying the language for the
-#'  colour names (see details). It must be one of "\code{en}" (english, the
-#'  default) or "\code{fr}" (french).
-#' @param aesthetics A \code{\link{character}} string or vector of character
+#' @param ... Arguments passed on to [ggplot2::discrete_scale()].
+#' @param lang A [`character`] string specifying the language for the
+#'  color names (see details). It must be one of "`en`" (english, the
+#'  default) or "`fr`" (french).
+#' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details Values will be matched based on the soil names.
 #' @references
-#'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
-#'  Europe}. Luxembourg: European Commission, Office for Official Publications
+#'  Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). *Soil atlas of
+#'  Europe*. Luxembourg: European Commission, Office for Official Publications
 #'  of the European Communities. 128 pp. ISBN: 92-894-8120-X.
-#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+#' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
 #' @family themed colour schemes

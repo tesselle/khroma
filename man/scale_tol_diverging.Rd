@@ -95,43 +95,43 @@ scale_fill_PRGn(
 )
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
+\item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
-recommendations and likely a very poor use of colour.}
+recommendations and likely a very poor use of color.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
+A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
 Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-If more colours than defined are needed from a given scheme, the colour
- coordinates are linearly interpolated to provide a continuous version of the
- scheme.
- Note that the default colour for \code{NA} can be overridden by passing
- a value to \code{\link[ggplot2]{continuous_scale}}.
+If more colors than defined are needed from a given scheme, the color
+coordinates are linearly interpolated to provide a continuous version of the
+scheme.
+Note that the default color for \code{NA} can be overridden by passing
+a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 
- \tabular{lll}{
-  \strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
-  sunset \tab 11 \tab #FFFFFF \cr
-  BuRd \tab 9 \tab #FFEE99 \cr
-  PRGn \tab 9 \tab #FFEE99 \cr
- }
+\tabular{lll}{
+\strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
+\code{sunset} \tab 11 \tab #FFFFFF \cr
+\code{BuRd} \tab 9 \tab #FFEE99 \cr
+\code{PRGn} \tab 9 \tab #FFEE99 \cr
+}
 }
 \examples{
 library(ggplot2)
@@ -150,8 +150,8 @@ ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002, issue 3.1.
- URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+SRON/EPS/TN/09-002, issue 3.1.
+URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour-blind safe colour schemes: 

@@ -23,7 +23,7 @@
 \alias{scale_colour_light}
 \alias{scale_color_light}
 \alias{scale_fill_light}
-\title{Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}}
+\title{Paul Tol's Discrete Color Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 
@@ -68,49 +68,49 @@ scale_color_light(..., reverse = FALSE, aesthetics = "colour")
 scale_fill_light(..., reverse = FALSE, aesthetics = "fill")
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[ggplot2]{discrete_scale}}.}
+\item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
+Provides qualitative color scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-The qualitative colour schemes are used as given (no interpolation):
- colours are picked up to the maximum number of supported values.
+The qualitative color schemes are used as given (no interpolation):
+colors are picked up to the maximum number of supported values.
 
- \tabular{ll}{
-  \strong{Palette} \tab \strong{Max.} \cr
-  bright \tab 7 \cr
-  contrast \tab 3 \cr
-  vibrant \tab 7 \cr
-  muted \tab 9 \cr
-  pale \tab 6 \cr
-  dark \tab 6 \cr
-  light \tab 9 \cr
- }
+\tabular{ll}{
+\strong{Palette} \tab \strong{Max.} \cr
+\code{bright} \tab 7 \cr
+\code{contrast} \tab 3 \cr
+\code{vibrant} \tab 7 \cr
+\code{muted} \tab 9 \cr
+\code{pale} \tab 6 \cr
+\code{dark} \tab 6 \cr
+\code{light} \tab 9 \cr
 }
-\section{Qualitative colour schemes}{
+}
+\section{Qualitative color schemes}{
 
- According to Paul Tol's technical note, the \code{bright}, \code{contrast},
- \code{vibrant} and \code{muted} colour schemes are colour-blind safe.
+According to Paul Tol's technical note, the \code{bright}, \code{contrast},
+\code{vibrant} and \code{muted} color schemes are colorblind safe.
 
- The \code{light} colour scheme is reasonably distinct for both normal or
- colour-blind vision and is intended to fill labelled cells.
+The \code{light} color scheme is reasonably distinct for both normal or
+colorblind vision and is intended to fill labeled cells.
 
- The \code{pale} and \code{dark} schemes are not very distinct in either
- normal or colour-blind vision and should be used as a text background or
- to highlight a cell in a table.
+The \code{pale} and \code{dark} schemes are not very distinct in either normal or
+colorblind vision and should be used as a text background or to highlight
+a cell in a table.
 
- Refer to the original document for details about the recommended uses (see
- references).
+Refer to the original document for details about the recommended uses (see
+references).
 }
 
 \examples{
@@ -142,8 +142,8 @@ ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002, issue 3.1.
- URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+SRON/EPS/TN/09-002, issue 3.1.
+URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour-blind safe colour schemes: 

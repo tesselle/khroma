@@ -14,7 +14,7 @@
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
-\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}}
+\title{Paul Tol's Sequential Color Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_YlOrBr(
   ...,
@@ -95,64 +95,64 @@ scale_fill_smoothrainbow(
 )
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[ggplot2]{continuous_scale}}.}
+\item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
-recommendations and likely a very poor use of colour.}
+recommendations and likely a very poor use of color.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{\link[ggplot2:continuous_scale]{continuous}} scale.
+A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
+Provides sequential color scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-If more colours than defined are needed from a given scheme, the colour
- coordinates are linearly interpolated to provide a continuous version of the
- scheme, with the exception of the \code{discrete rainbow} scheme (see
- below).
- Note that the default colour for \code{NA} can be overridden by passing
- a value to \code{\link[ggplot2]{continuous_scale}}.
+If more colors than defined are needed from a given scheme, the color
+coordinates are linearly interpolated to provide a continuous version of the
+scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
 
- \tabular{lll}{
-  \strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
-  YlOrBr \tab 9 \tab #888888 \cr
-  iridescent \tab 23 \tab #999999 \cr
-  discrete rainbow \tab 23 \tab #777777 \cr
-  smooth rainbow \tab 34 \tab #666666 \cr
- }
+Note that the default color for \code{NA} can be overridden by passing
+a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+
+\tabular{lll}{
+\strong{Palette} \tab \strong{Max. colors} \tab \strong{NA value} \cr
+\code{YlOrBr} \tab 9 \tab #888888 \cr
+\code{iridescent} \tab 23 \tab #999999 \cr
+\verb{discrete rainbow} \tab 23 \tab #777777 \cr
+\verb{smooth rainbow} \tab 34 \tab #666666 \cr
 }
-\section{Rainbow colour scheme}{
+}
+\section{Rainbow color scheme}{
 
- As a general rule, ordered data should not be represented using a rainbow
- scheme. There are three main arguments against such use (Tol 2018):
- \itemize{
-  \item{The spectral order of visible light carries no inherent magnitude
-  message.}
-  \item{Some bands of almost constant hue with sharp transitions between
-  them, can be perceived as jumps in the data.}
-  \item{Colour-blind people have difficulty distinguishing some colours of
-  the rainbow.}
- }
- If such use cannot be avoided, Paul Tol's technical note provides two colour
- schemes that are reasonably clear in colour-blind vision. To remain
- colour-blind safe, these two schemes must comply with the following
- conditions:
- \describe{
-  \item{discrete rainbow}{This scheme must not be interpolated.}
-  \item{smooth rainbow}{This scheme does not have to be used over the full
-  range.}
- }
+As a general rule, ordered data should not be represented using a rainbow
+scheme. There are three main arguments against such use (Tol 2018):
+\itemize{
+\item{The spectral order of visible light carries no inherent magnitude
+message.}
+\item{Some bands of almost constant hue with sharp transitions between
+them, can be perceived as jumps in the data.}
+\item{Colour-blind people have difficulty distinguishing some colours of
+the rainbow.}
+}
+If such use cannot be avoided, Paul Tol's technical note provides two colour
+schemes that are reasonably clear in colour-blind vision. To remain
+colour-blind safe, these two schemes must comply with the following
+conditions:
+\describe{
+\item{discrete rainbow}{This scheme must not be interpolated.}
+\item{smooth rainbow}{This scheme does not have to be used over the full
+range.}
+}
 }
 
 \examples{
@@ -172,8 +172,8 @@ ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
- SRON/EPS/TN/09-002, issue 3.1.
- URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+SRON/EPS/TN/09-002, issue 3.1.
+URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour-blind safe colour schemes: 

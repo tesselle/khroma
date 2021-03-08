@@ -7,20 +7,20 @@
 compare(x, metric = 2000, diag = FALSE, upper = FALSE)
 }
 \arguments{
-\item{x}{A \code{\link{character}} vector of colours.}
+\item{x}{A \code{\link{character}} vector of colors.}
 
 \item{metric}{An \code{\link{integer}} value giving the year the metric was
 recommended by the CIE. It must be one of "\code{1976}", "\code{1994}", or
-"\code{2000}" (default).}
+"\code{2000}" (default; see \code{\link[spacesXYZ:DeltaE]{spacesXYZ::DeltaE()}}).}
 
-\item{diag}{A \code{\link{logical}} scalar: should the diagonal of the
-distance matrix be printed?}
+\item{diag}{A \code{\link{logical}} scalar: should the diagonal of the distance matrix
+be printed?}
 
-\item{upper}{A \code{\link{logical}} scalar: should the upper triangle of the
-distance matrix should be printed?}
+\item{upper}{A \code{\link{logical}} scalar: should the upper triangle of the distance
+matrix should be printed?}
 }
 \value{
-A \code{\link[stats:dist]{distance matrix}}.
+A \link[stats:dist]{distance matrix}.
 }
 \description{
 Computes CIELAB distance metric.

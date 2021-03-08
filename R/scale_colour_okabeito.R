@@ -3,21 +3,21 @@
 NULL
 
 # Discrete =====================================================================
-#' Okabe and Ito's Discrete Colour Scheme for \pkg{ggplot2}
+#' Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2}
 #'
-#' Provides the qualitative colour scale from Okabe and Ito 2008.
-#' @param ... Arguments passed to \code{\link[ggplot2]{discrete_scale}}.
-#' @param reverse A \code{\link{logical}} scalar. Should the resulting
-#'  vector of colours be reversed?
-#' @param aesthetics A \code{\link{character}} string or vector of character
+#' Provides the qualitative color scale from Okabe and Ito 2008.
+#' @param ... Arguments passed to [ggplot2::discrete_scale()].
+#' @param reverse A [`logical`] scalar. Should the resulting
+#'  vector of colors be reversed?
+#' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  This qualitative colour scheme is used as given (no interpolation):
-#'  colours are picked up to the maximum number of supported values (8).
-#' @return A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+#'  This qualitative color scheme is used as given (no interpolation):
+#'  colors are picked up to the maximum number of supported values (8).
+#' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
-#'  Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
-#'  Figures and Presentations That Are Friendly to Colorblind People}.
+#'  Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to Make
+#'  Figures and Presentations That Are Friendly to Colorblind People*.
 #'  URL: \url{https://jfly.uni-koeln.de/color/}.
 #' @example inst/examples/ex-okabeito-discrete.R
 #' @author N. Frerebeau

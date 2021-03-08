@@ -2,33 +2,31 @@
 #' @include colour.R
 NULL
 
-#' Colour Scale Constructors
+#' Color Scale Constructors
 #'
 #' Builds a discrete or continuous scale for \pkg{ggplot2} according to the
-#' colour scheme used.
+#' color scheme used.
 #' @param aesthetics The names of the aesthetics that this scale works with.
-#' @param scale_name A \code{\link{character}} string giving the name of
-#'  the palette to be used (see \code{\link{colour}}).
-#' @param reverse A \code{\link{logical}} scalar: should the resulting
-#'  vector of colours should be reversed?
-#' @param label A \code{\link{logical}} scalar: should the names of the
-#'  colours should be kept in the resulting vector?
-#' @param lang A \code{\link{character}} string specifying the language for the
-#'  colour names. It must be one of "\code{en}" (english, the default) or
-#'  "\code{fr}" (french).
-#' @param type A \code{\link{character}} string specifying the scale to be
-#'  build. It must be one of "\code{auto}" (the default), "\code{discrete}" or
-#'  "\code{continuous}". "\code{discrete}" allows to use a continuous colour
-#'  scheme with discrete data. "\code{continuous}" allows to use a discrete
-#'  colour scheme with continuous data (forces interpolation; see
-#'  \code{\link{colour}}).
-#' @param midpoint A \code{\link{numeric}} value specifying the midpoint (in
+#' @param scale_name A [`character`] string giving the name of the palette to be
+#'  used (see [colour()]).
+#' @param reverse A [`logical`] scalar: should the resulting vector of colors
+#'  should be reversed?
+#' @param label A [`logical`] scalar: should the names of the colors should be
+#'  kept in the resulting vector?
+#' @param lang A [`character`] string specifying the language for the color
+#'  names. It must be one of "`en`" (english, the default) or "`fr`" (french).
+#' @param type A [`character`] string specifying the scale to be
+#'  build. It must be one of "`auto`" (the default), "`discrete`" or
+#'  "`continuous`". "`discrete`" allows to use a continuous color scheme with
+#'  discrete data. "`continuous`" allows to use a discrete color scheme with
+#'  continuous data (forces interpolation; see [colour()]).
+#' @param midpoint A [`numeric`] value specifying the midpoint (in
 #'  data value) of the diverging scale (defaults to \eqn{0}).
-#' @param ... Further arguments passed to \code{\link[ggplot2]{discrete_scale}}
-#'  or \code{\link[ggplot2]{continuous_scale}}, used respectively for
-#'  qualitative data and diverging/sequential data.
-#' @return A \code{\link[ggplot2:discrete_scale]{discrete}}
-#'  or \code{\link[ggplot2:continuous_scale]{continuous}} scale.
+#' @param ... Further arguments passed to [ggplot2::discrete_scale()]
+#'  or [ggplot2::continuous_scale()], used respectively for qualitative data
+#'  and diverging/sequential data.
+#' @return A [discrete][ggplot2::discrete_scale()]
+#'  or [continuous][ggplot2:continuous_scale()] scale.
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd

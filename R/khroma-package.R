@@ -1,20 +1,20 @@
 #' @details
-#' \tabular{ll}{
-#'  \strong{Package:} \tab khroma \cr
-#'  \strong{Type:} \tab Package \cr
-#'  \strong{Version:} \tab 1.4.1 \cr
-#'  \strong{License:} \tab GPL-3 \cr
-#'  \strong{DOI:} \tab \doi{10.5281/zenodo.1472077} \cr
-#' }
-#' @author
-#' \strong{Full list of authors and contributors} (alphabetic order)
 #'  \tabular{ll}{
-#'   Vincent Arel-Bundock \tab \emph{Université de Montréal, Canada} \cr
-#'   Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
-#'   Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France}
+#'   **Package:** \tab khroma \cr
+#'   **Type:** \tab Package \cr
+#'   **Version:** \tab 1.4.1 \cr
+#'   **License:** \tab GPL-3 \cr
+#'   **DOI:** \tab \doi{10.5281/zenodo.1472077} \cr
+#'  }
+#' @author
+#'  **Full list of authors and contributors** (alphabetic order)
+#'  \tabular{ll}{
+#'   Vincent Arel-Bundock \tab *Université de Montréal, Canada* \cr
+#'   Nicolas Frerebeau \tab *Université Bordeaux Montaigne, France* \cr
+#'   Brice Lebrun \tab *Université Bordeaux Montaigne, France*
 #'  }
 #'
-#' \strong{Package maintainer}
+#'  **Package maintainer**
 #'
 #' Nicolas Frerebeau\cr
 #' \email{nicolas.frerebeau@@u-bordeaux-montaigne.fr}

@@ -1,30 +1,28 @@
 #' Simulate Colour-Blindness
 #'
-#' @param x A palette \code{\link{function}} that when called with a single
-#'  integer argument (the number of levels) returns a vector of colours
-#'  (see \code{\link{colour}}).
-#' @param mode A \code{\link{character}} string giving the colour-blind vision
-#'  to be used. It must be one of "\code{deuteranopia}", "\code{protanopia}",
-#'  "\code{tritanopia}" or "\code{achromatopsia}".
-#'  Any unambiguous substring can be given.
-#' @return A palette \code{\link{function}} that returns a vector of anomalized
+#' @param x A palette [`function`] that when called with a single
+#'  integer argument (the number of levels) returns a vector of colors
+#'  (see [colour()]).
+#' @param mode A [`character`] string giving the colorblind vision
+#'  to be used. It must be one of "`deuteranopia`", "`protanopia`",
+#'  "`tritanopia`" or "`achromatopsia`". Any unambiguous substring can be given.
+#' @return A palette [`function`] that returns a vector of anomalized
 #'  colours. All the attributes of the initial palette function are inherited,
-#'  with a supplementary attribute "\code{mode}" giving the corresponding
+#'  with a supplementary attribute "`mode`" giving the corresponding
 #'  colour-blind vision.
 #' @example inst/examples/ex-anomalize.R
 #' @references
 #'  Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
-#'  Color Appearance for Dichromats. \emph{Journal of the Optical Society of
-#'  America A}, 14(10), p. 2647-2655.
-#'  \doi{10.1364/JOSAA.14.002647}.
+#'  Color Appearance for Dichromats. *Journal of the Optical Society of America
+#'  A*, 14(10), p. 2647-2655. \doi{10.1364/JOSAA.14.002647}.
 #'
-#'  Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
+#'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #'
 #'  Viénot, F., Brettel, H. and Mollon, J. D. (1999). Digital Video
 #'  Colourmaps for Checking the Legibility of Displays by Dichromats.
-#'  \emph{Color Research & Application}, 24(4), p. 243-52.
+#'  *Color Research & Application*, 24(4), p. 243-52.
 #'  \doi{10.1002/(SICI)1520-6378(199908)24:4<243::AID-COL5>3.0.CO;2-3}.
 #' @author N. Frerebeau
 #' @family diagnostic tools
@@ -38,12 +36,11 @@ convert <- function(x, mode) {
 
 #' Anomalize
 #'
-#' @param x A \code{\link{character}} vector of colour codes.
-#' @param mode A \code{\link{character}} string giving the colour-blind vision
-#'  to be used. It must be one of "\code{deuteranopia}", "\code{protanopia}",
-#'  "\code{tritanopia}" or "\code{achromatopsia}". Any unambiguous substring
-#'  can be given.
-#' @return A \code{\link{character}} vector of colour codes.
+#' @param x A [`character`] vector of color codes.
+#' @param mode A [`character`] string giving the colorblind vision
+#'  to be used. It must be one of "`deuteranopia`", "`protanopia`",
+#'  "`tritanopia`" or "`achromatopsia`". Any unambiguous substring can be given.
+#' @return A [`character`] vector of color codes.
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd

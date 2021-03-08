@@ -5,7 +5,7 @@
 \alias{scale_colour_okabeito}
 \alias{scale_color_okabeito}
 \alias{scale_fill_okabeito}
-\title{Okabe and Ito's Discrete Colour Scheme for \pkg{ggplot2}}
+\title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2}}
 \usage{
 scale_colour_okabeito(..., reverse = FALSE, aesthetics = "colour")
 
@@ -14,23 +14,23 @@ scale_color_okabeito(..., reverse = FALSE, aesthetics = "colour")
 scale_fill_okabeito(..., reverse = FALSE, aesthetics = "fill")
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[ggplot2]{discrete_scale}}.}
+\item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides the qualitative colour scale from Okabe and Ito 2008.
+Provides the qualitative color scale from Okabe and Ito 2008.
 }
 \details{
-This qualitative colour scheme is used as given (no interpolation):
- colours are picked up to the maximum number of supported values (8).
+This qualitative color scheme is used as given (no interpolation):
+colors are picked up to the maximum number of supported values (8).
 }
 \examples{
 library(ggplot2)
@@ -41,8 +41,8 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 }
 \references{
 Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
- Figures and Presentations That Are Friendly to Colorblind People}.
- URL: \url{https://jfly.uni-koeln.de/color/}.
+Figures and Presentations That Are Friendly to Colorblind People}.
+URL: \url{https://jfly.uni-koeln.de/color/}.
 }
 \seealso{
 Other colour-blind safe colour schemes: 

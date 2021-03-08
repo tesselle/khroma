@@ -7,7 +7,7 @@
 \alias{plot_map}
 \alias{plot_scheme_colourblind}
 \alias{plot_scheme_colorblind}
-\title{Plot Colour Scheme}
+\title{Plot Color Scheme}
 \usage{
 \method{plot}{colour_scheme}(x, ...)
 
@@ -20,31 +20,28 @@ plot_scheme_colourblind(x)
 plot_scheme_colorblind(x)
 }
 \arguments{
-\item{x}{A \code{\link{character}} vector of colours.}
+\item{x}{A \code{\link{character}} vector of colors.}
 
 \item{...}{Currently not used.}
 
 \item{colours}{A \code{\link{logical}} scalar: should the hexadecimal
-representation of the colours be displayed?}
+representation of the colors be displayed?}
 
-\item{names}{A \code{\link{logical}} scalar: should the name of the colours
+\item{names}{A \code{\link{logical}} scalar: should the name of the colors
 be displayed?}
 
 \item{size}{A \code{\link{numeric}} value giving the amount by which
 plotting text should be magnified relative to the default.
-Works the same as \code{cex} parameter of \code{\link[graphics]{par}}.}
+Works the same as \code{cex} parameter of \code{\link[graphics:par]{graphics::par()}}.}
 }
 \description{
-\code{plot} allows to quickly display a colour scheme returned by
-\code{\link{colour}}.
-}
-\details{
-\code{plot_scheme} shows colours in a plot.
-
-\code{plot_map} produces a diagnostic map for a given colour scheme.
-
-\code{plot_scheme_colorblind} shows colours in a plot with different types
+\itemize{
+\item \code{plot()} allows to quickly display a color scheme returned by \code{\link[=colour]{colour()}}.
+\item \code{plot_scheme()} shows colors in a plot.
+\item \code{plot_map()} produces a diagnostic map for a given color scheme.
+\item \code{plot_scheme_colorblind()} shows colors in a plot with different types
 of simulated color blindness.
+}
 }
 \examples{
 plot(colour("bright")(7))

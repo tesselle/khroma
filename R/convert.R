@@ -2,10 +2,9 @@
 
 #' CMYK to/from RGB Colour Conversion
 #'
-#' @param cyan,magenta,yellow,black,red,blue,green A \code{\link{numeric}}
-#'  vector with values in \eqn{[0, max]}.
-#' @param max A \code{\link{numeric}} value giving the maximum of the colour
-#'  values range.
+#' @param cyan,magenta,yellow,black,red,blue,green A [`numeric`] vector with
+#'  values in \eqn{[0, max]}.
+#' @param max A [`numeric`] value giving the maximum of the colour values range.
 #' @return An integer matrix with three or four columns.
 #' @author N. Frerebeau
 #' @keywords internal
@@ -51,11 +50,9 @@ RGB2CMYB <- function(red, green, blue, max = 255) {
 
 #' RGB to/from XYZ Colour Conversion
 #'
-#' @param red,blue,green A \code{\link{numeric}} vector with values
-#'  in \eqn{[0, max]}.
-#' @param x,y,z A \code{\link{numeric}} vector of colour coordinates.
-#' @param max A \code{\link{numeric}} value giving the maximum of the colour
-#'  values range.
+#' @param red,blue,green A [`numeric`] vector with values in \eqn{[0, max]}.
+#' @param x,y,z A [`numeric`] vector of color coordinates.
+#' @param max A [`numeric`] value giving the maximum of the color values range.
 #' @return A numeric matrix with three columns.
 #' @author N. Frerebeau
 #' @keywords internal
@@ -112,12 +109,10 @@ RGB2XYZ <- function(red, green, blue, max_rgb = 255) {
   return(XYZ)
 }
 
-#' RGB to/from LMS Lab Colour Conversion
+#' RGB to/from LMS Lab Color Conversion
 #'
-#' @param red,blue,green A \code{\link{numeric}} vector with values
-#'  in \eqn{[0, max]}.
-#' @param max A \code{\link{numeric}} value giving the maximum of the colour
-#'  values range.
+#' @param red,blue,green A [`numeric`] vector with values in \eqn{[0, max]}.
+#' @param max A [`numeric`] value giving the maximum of the color values range.
 #' @return A numeric matrix with three rows.
 #' @author N. Frerebeau
 #' @keywords internal
@@ -162,11 +157,11 @@ LMS2RGB <- function(long, medium, short, max = 255) {
   return(RGB * max)
 }
 
-#' XYZ to CIE Lab Colour Conversion
+#' XYZ to CIE Lab Color Conversion
 #'
-#' @param x,y,z A \code{\link{numeric}} vector of colour coordinates.
-#' @param white A length-three \code{\link{numeric}} vector giving a reference
-#'  white coordinates (default to D65).
+#' @param x,y,z A [`numeric`] vector of color coordinates.
+#' @param white A length-three [`numeric`] vector giving a reference white
+#'  coordinates (default to D65).
 #' @return A numeric matrix with three columns.
 #' @author N. Frerebeau
 #' @keywords internal

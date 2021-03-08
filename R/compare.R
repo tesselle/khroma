@@ -1,15 +1,15 @@
 #' Colour Difference
 #'
 #' Computes CIELAB distance metric.
-#' @param x A \code{\link{character}} vector of colours.
-#' @param metric An \code{\link{integer}} value giving the year the metric was
-#'  recommended by the CIE. It must be one of "\code{1976}", "\code{1994}", or
-#'  "\code{2000}" (default).
-#' @param diag A \code{\link{logical}} scalar: should the diagonal of the
-#'  distance matrix be printed?
-#' @param upper	A \code{\link{logical}} scalar: should the upper triangle of the
-#'  distance matrix should be printed?
-#' @return A \code{\link[stats:dist]{distance matrix}}.
+#' @param x A [`character`] vector of colors.
+#' @param metric An [`integer`] value giving the year the metric was
+#'  recommended by the CIE. It must be one of "`1976`", "`1994`", or
+#'  "`2000`" (default; see [spacesXYZ::DeltaE()]).
+#' @param diag A [`logical`] scalar: should the diagonal of the distance matrix
+#'  be printed?
+#' @param upper	A [`logical`] scalar: should the upper triangle of the distance
+#'  matrix should be printed?
+#' @return A [distance matrix][stats::dist].
 #' @example inst/examples/ex-compare.R
 #' @author N. Frerebeau
 #' @family diagnostic tools

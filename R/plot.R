@@ -1,22 +1,18 @@
-#' Plot Colour Scheme
+#' Plot Color Scheme
 #'
-#' \code{plot} allows to quickly display a colour scheme returned by
-#' \code{\link{colour}}.
-#'
-#' \code{plot_scheme} shows colours in a plot.
-#'
-#' \code{plot_map} produces a diagnostic map for a given colour scheme.
-#'
-#' \code{plot_scheme_colorblind} shows colours in a plot with different types
-#' of simulated color blindness.
-#' @param x A \code{\link{character}} vector of colours.
-#' @param colours A \code{\link{logical}} scalar: should the hexadecimal
-#' representation of the colours be displayed?
-#' @param names A \code{\link{logical}} scalar: should the name of the colours
+#' * `plot()` allows to quickly display a color scheme returned by [colour()].
+#' * `plot_scheme()` shows colors in a plot.
+#' * `plot_map()` produces a diagnostic map for a given color scheme.
+#' * `plot_scheme_colorblind()` shows colors in a plot with different types
+#'   of simulated color blindness.
+#' @param x A [`character`] vector of colors.
+#' @param colours A [`logical`] scalar: should the hexadecimal
+#' representation of the colors be displayed?
+#' @param names A [`logical`] scalar: should the name of the colors
 #' be displayed?
-#' @param size A \code{\link{numeric}} value giving the amount by which
+#' @param size A [`numeric`] value giving the amount by which
 #' plotting text should be magnified relative to the default.
-#' Works the same as \code{cex} parameter of \code{\link[graphics]{par}}.
+#' Works the same as `cex` parameter of [graphics::par()].
 #' @param ... Currently not used.
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau, V. Arel-Bundock
@@ -128,13 +124,13 @@ plot_map <- function(x) {
 #' Mosaic
 #'
 #' Draws a mosaic of diamonds.
-#' @param rows An \code{\link{integer}} giving the number of lines.
-#' @param columns An \code{\link{integer}} giving the number of columns.
-#' @param border A \code{\link{character}} string giving the color to draw the
+#' @param rows An [`integer`] giving the number of lines.
+#' @param columns An [`integer`] giving the number of columns.
+#' @param border A [`character`] string giving the color to draw the
 #' border (see \code{\link[graphics]{polygon}}).
-#' @param fill A \code{\link{character}} string giving the color for filling
+#' @param fill A [`character`] string giving the color for filling
 #' the polygon (see \code{\link[graphics]{polygon}}).
-#' @param offset An \code{\link{numeric}} value giving the \code{x} offset from
+#' @param offset An [`numeric`] value giving the \code{x} offset from
 #' zero of the mosaic.
 #' @keywords internal
 #' @noRd

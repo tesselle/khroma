@@ -13,21 +13,21 @@ scale_color_land(..., lang = "en", aesthetics = "colour")
 scale_fill_land(..., lang = "en", aesthetics = "fill")
 }
 \arguments{
-\item{...}{Arguments passed on to \code{\link[ggplot2]{discrete_scale}}.}
+\item{...}{Arguments passed on to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{lang}{A \code{\link{character}} string specifying the language for the
-colour names (see details). It must be one of "\code{en}" (english, the
+color names (see details). It must be one of "\code{en}" (english, the
 default) or "\code{fr}" (french).}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \code{\link[ggplot2:discrete_scale]{discrete}} scale.
+A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
 Provides the AVHRR Global Land Cover classification as modified by
-Paul Tol (colour-blind safe).
+Paul Tol (colorblind safe).
 }
 \details{
 Values will be matched based on the soil names.
@@ -52,8 +52,8 @@ ggplot2::ggplot(land, ggplot2::aes(fill = name)) +
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes.} SRON. Technical Note No.
- SRON/EPS/TN/09-002, issue 3.1.
- URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+SRON/EPS/TN/09-002, issue 3.1.
+URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other themed colour schemes: 
