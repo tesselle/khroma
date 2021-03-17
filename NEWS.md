@@ -1,3 +1,5 @@
+# khroma 1.4.1.9000
+
 # khroma 1.4.1
 ## Bugfixes & changes
 * `scale_*_sunset()`, `scale_*_BuRd()` and `scale_*_PRGn()` gained a new argument to be used with discrete data (#7).
