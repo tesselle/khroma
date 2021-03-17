@@ -1,6 +1,7 @@
 # khroma 1.4.1
 ## Bugfixes & changes
 * `scale_*_sunset()`, `scale_*_BuRd()` and `scale_*_PRGn()` gained a new argument to be used with discrete data (#7).
+* Fix conflict with the `name` argument of `ggplot2::discrete_scale()` and `ggplot2::scale_continuous()`.
 
 # khroma 1.4.0
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4067906.svg)](https://doi.org/10.5281/zenodo.4067906)
@@ -8,11 +9,11 @@
 ## New functions
 * Add a `compare()` function to compute CIELAB distance metric.
 * Add a `plot()` function.
-* Add a `plot_scheme_colourblind()` function (#4).
+* Add a `plot_scheme_colourblind()` function (#4, thanks to @vincentarelbundock).
 * Add Okabe and Ito (2008) colour scheme.
 
 ## Bugfixes & changes
-* Restrict the RGB values in the `anomalize()` function (#5).
+* Restrict the RGB values in the `anomalize()` function (#5, thanks to @vincentarelbundock).
 * `plot_scheme()` now display colour for bad/missing data (if any).
 * `colour()` output can be restricted to a fraction of the cheme's colour domain (#6).
 * `colour()` gained a new argument to force interpolation of colour scheme.

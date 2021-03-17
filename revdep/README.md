@@ -2,7 +2,7 @@
 
 |field    |value                        |
 |:--------|:----------------------------|
-|version  |R version 4.0.2 (2020-06-22) |
+|version  |R version 4.0.3 (2020-10-10) |
 |os       |Ubuntu 20.04.1 LTS           |
 |system   |x86_64, linux-gnu            |
 |ui       |RStudio                      |
@@ -10,54 +10,41 @@
 |collate  |fr_FR.UTF-8                  |
 |ctype    |fr_FR.UTF-8                  |
 |tz       |Europe/Paris                 |
-|date     |2020-10-05                   |
+|date     |2021-03-05                   |
 
 # Dependencies
 
-|package      |old   |new    |Δ  |
-|:------------|:-----|:------|:--|
-|khroma       |1.3.0 |1.4.0  |*  |
-|assertthat   |NA    |0.2.1  |*  |
-|backports    |NA    |1.1.10 |*  |
-|callr        |NA    |3.4.4  |*  |
-|cli          |NA    |2.0.2  |*  |
-|colorspace   |NA    |1.4-1  |*  |
-|crayon       |NA    |1.3.4  |*  |
-|desc         |NA    |1.2.0  |*  |
-|digest       |NA    |0.6.25 |*  |
-|ellipsis     |NA    |0.3.1  |*  |
-|evaluate     |NA    |0.14   |*  |
-|fansi        |NA    |0.4.1  |*  |
-|farver       |NA    |2.0.3  |*  |
-|ggplot2      |NA    |3.3.2  |*  |
-|glue         |NA    |1.4.2  |*  |
-|gtable       |NA    |0.3.0  |*  |
-|isoband      |NA    |0.2.2  |*  |
-|labeling     |NA    |0.3    |*  |
-|lifecycle    |NA    |0.2.0  |*  |
-|magrittr     |NA    |1.5    |*  |
-|munsell      |NA    |0.5.0  |*  |
-|pillar       |NA    |1.4.6  |*  |
-|pkgbuild     |NA    |1.1.0  |*  |
-|pkgconfig    |NA    |2.0.3  |*  |
-|pkgload      |NA    |1.1.0  |*  |
-|praise       |NA    |1.0.0  |*  |
-|prettyunits  |NA    |1.1.1  |*  |
-|processx     |NA    |3.4.4  |*  |
-|ps           |NA    |1.3.4  |*  |
-|R6           |NA    |2.4.1  |*  |
-|RColorBrewer |NA    |1.1-2  |*  |
-|rlang        |NA    |0.4.7  |*  |
-|rprojroot    |NA    |1.3-2  |*  |
-|rstudioapi   |NA    |0.11   |*  |
-|scales       |NA    |1.1.1  |*  |
-|spacesXYZ    |NA    |1.1-1  |*  |
-|testthat     |NA    |2.3.2  |*  |
-|tibble       |NA    |3.0.3  |*  |
-|utf8         |NA    |1.1.4  |*  |
-|vctrs        |NA    |0.3.4  |*  |
-|viridisLite  |NA    |0.3.0  |*  |
-|withr        |NA    |2.3.0  |*  |
+|package      |old    |new    |Δ  |
+|:------------|:------|:------|:--|
+|khroma       |1.4.0  |1.4.1  |*  |
+|assertthat   |0.2.1  |0.2.1  |   |
+|cli          |2.3.1  |2.3.1  |   |
+|colorspace   |2.0-0  |2.0-0  |   |
+|crayon       |1.4.1  |1.4.1  |   |
+|digest       |0.6.27 |0.6.27 |   |
+|ellipsis     |0.3.1  |0.3.1  |   |
+|fansi        |0.4.2  |0.4.2  |   |
+|farver       |2.1.0  |2.1.0  |   |
+|ggplot2      |3.3.3  |3.3.3  |   |
+|glue         |1.4.2  |1.4.2  |   |
+|gtable       |0.3.0  |0.3.0  |   |
+|isoband      |0.2.4  |0.2.4  |   |
+|labeling     |0.4.2  |0.4.2  |   |
+|lifecycle    |1.0.0  |1.0.0  |   |
+|magrittr     |2.0.1  |2.0.1  |   |
+|munsell      |0.5.0  |0.5.0  |   |
+|pillar       |1.5.1  |1.5.1  |   |
+|pkgconfig    |2.0.3  |2.0.3  |   |
+|R6           |2.5.0  |2.5.0  |   |
+|RColorBrewer |1.1-2  |1.1-2  |   |
+|rlang        |0.4.10 |0.4.10 |   |
+|scales       |1.1.1  |1.1.1  |   |
+|spacesXYZ    |1.1-1  |1.1-1  |   |
+|tibble       |3.1.0  |3.1.0  |   |
+|utf8         |1.1.4  |1.1.4  |   |
+|vctrs        |0.3.6  |0.3.6  |   |
+|viridisLite  |0.3.0  |0.3.0  |   |
+|withr        |2.4.1  |2.4.1  |   |
 
 # Revdeps
 
