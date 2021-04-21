@@ -4,8 +4,10 @@
 #'   **Type:** \tab Package \cr
 #'   **Version:** \tab 1.4.1.9000 \cr
 #'   **License:** \tab GPL-3 \cr
-#'   **DOI:** \tab \doi{10.5281/zenodo.1472077} \cr
 #'  }
+#'
+#' \doi{10.5281/zenodo.1472077}
+#'
 #' @author
 #'  **Full list of authors and contributors** (alphabetic order)
 #'  \tabular{ll}{

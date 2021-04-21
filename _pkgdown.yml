@@ -3,6 +3,7 @@ development:
   mode: auto
 
 template:
+  package: preferably
   opengraph:
     twitter:
       creator: "@nfrerebeau"
