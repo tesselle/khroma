@@ -10,15 +10,14 @@
 |collate  |fr_FR.UTF-8                  |
 |ctype    |fr_FR.UTF-8                  |
 |tz       |Europe/Paris                 |
-|date     |2021-03-05                   |
+|date     |2021-04-22                   |
 
 # Dependencies
 
 |package      |old    |new    |Δ  |
 |:------------|:------|:------|:--|
-|khroma       |1.4.0  |1.4.1  |*  |
-|assertthat   |0.2.1  |0.2.1  |   |
-|cli          |2.3.1  |2.3.1  |   |
+|khroma       |1.4.1  |1.5.0  |*  |
+|cli          |2.4.0  |2.4.0  |   |
 |colorspace   |2.0-0  |2.0-0  |   |
 |crayon       |1.4.1  |1.4.1  |   |
 |digest       |0.6.27 |0.6.27 |   |
@@ -33,18 +32,24 @@
 |lifecycle    |1.0.0  |1.0.0  |   |
 |magrittr     |2.0.1  |2.0.1  |   |
 |munsell      |0.5.0  |0.5.0  |   |
-|pillar       |1.5.1  |1.5.1  |   |
+|pillar       |1.6.0  |1.6.0  |   |
 |pkgconfig    |2.0.3  |2.0.3  |   |
 |R6           |2.5.0  |2.5.0  |   |
 |RColorBrewer |1.1-2  |1.1-2  |   |
 |rlang        |0.4.10 |0.4.10 |   |
 |scales       |1.1.1  |1.1.1  |   |
 |spacesXYZ    |1.1-1  |1.1-1  |   |
-|tibble       |3.1.0  |3.1.0  |   |
-|utf8         |1.1.4  |1.1.4  |   |
-|vctrs        |0.3.6  |0.3.6  |   |
-|viridisLite  |0.3.0  |0.3.0  |   |
-|withr        |2.4.1  |2.4.1  |   |
+|tibble       |3.1.1  |3.1.1  |   |
+|utf8         |1.2.1  |1.2.1  |   |
+|vctrs        |0.3.7  |0.3.7  |   |
+|viridisLite  |0.4.0  |0.4.0  |   |
+|withr        |2.4.2  |2.4.2  |   |
 
 # Revdeps
+
+## Failed to check (1)
+
+|package  |version |error |warning |note |
+|:--------|:-------|:-----|:-------|:----|
+|dimensio |?       |      |        |     |
 
