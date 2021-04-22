@@ -61,6 +61,7 @@ Collate:
     'ggplot2.R'
     'khroma-package.R'
     'plot.R'
+    'scale_colour_crameri.R'
     'scale_colour_okabeito.R'
     'scale_colour_science.R'
     'scale_colour_tol.R'

@@ -42,9 +42,11 @@
 )
 
 # Save =========================================================================
+source("./data-raw/schemes_FabioCrameri.R")
 source("./data-raw/schemes_PaulTol.R")
 source("./data-raw/schemes_OkabeIto.R")
 source("./data-raw/schemes_science.R")
-.schemes <- c(schemes_tol2018, schemes_okabe2008, schemes_science)
+.schemes <- c(schemes_crameri2020, schemes_tol2018, schemes_okabe2008,
+              schemes_science)
 usethis::use_data(.schemes, .sRGB_to_XYZ, .XYZ_to_sRGB, .XYZ_to_LMS,
                   internal = TRUE, overwrite = TRUE)

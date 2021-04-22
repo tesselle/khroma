@@ -173,7 +173,7 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A [`logical`] scalar: should the color scheme be
-#'  used as a discrete scale?. If `TRUE`, it is a departure from Paul Tol's
+#'  used as a discrete scale? If `TRUE`, it is a departure from Paul Tol's
 #'  recommendations and likely a very poor use of color.
 #' @details
 #'  If more colors than defined are needed from a given scheme, the color
@@ -301,7 +301,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A [`logical`] scalar: should the color scheme be
-#'  used as a discrete scale?. If `TRUE`, it is a departure from Paul Tol's
+#'  used as a discrete scale? If `TRUE`, it is a departure from Paul Tol's
 #'  recommendations and likely a very poor use of color.
 #' @details
 #'  If more colors than defined are needed from a given scheme, the color

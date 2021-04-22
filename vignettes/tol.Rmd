@@ -16,7 +16,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include = FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -31,12 +31,12 @@ library(khroma)
 # Introduction
 @tol2018 offers carefully chosen schemes, ready for each type of data, with colours that are:
 
-* Distinct for all people, including colour-blind readers.
-* Distinct from black and white.
-* Distinct on screen and paper.
+* Distinct for all people, including colour-blind readers,
+* Distinct from black and white,
+* Distinct on screen and paper,
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note (issue 3.1, 2018-09-23) are implemented here, for use with base R `graphics` or `ggplot2`.
+All the scales presented in Paul Tol's technical note (issue 3.1, 2018-09-23) are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
 
 # Qualitative data
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* colour schemes are colour-blind safe.

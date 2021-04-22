@@ -1,4 +1,4 @@
-library(ggplot2)
+data(economics, package = "ggplot2")
 
 ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
   ggplot2::geom_point() +

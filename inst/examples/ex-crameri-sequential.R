@@ -2,12 +2,12 @@ data(faithfuld, package = "ggplot2")
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
-  scale_fill_YlOrBr()
+  scale_fill_batlow()
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
-  scale_fill_iridescent(reverse = TRUE)
+  scale_fill_bamako()
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
-  scale_fill_smoothrainbow(range = c(0.25, 1))
+  scale_fill_hawaii(reverse = TRUE)

@@ -19,6 +19,9 @@ reference:
 - title: Paul Tol's Colour Schemes
   contents:
   - has_concept("Paul Tol's colour schemes")
+- title: Fabio Crameri's Colour Schemes
+  contents:
+  - has_concept("Fabio Crameri's colour schemes")
 - title: Themed Colour Schemes
   contents:
   - has_concept("themed colour schemes")

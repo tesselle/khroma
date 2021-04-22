@@ -104,7 +104,7 @@ vector of colors be reversed?}
 fraction of the scheme's color domain to keep.}
 
 \item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
-used as a discrete scale?. If \code{TRUE}, it is a departure from Paul Tol's
+used as a discrete scale? If \code{TRUE}, it is a departure from Paul Tol's
 recommendations and likely a very poor use of color.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
@@ -156,7 +156,7 @@ range.}
 }
 
 \examples{
-library(ggplot2)
+data(faithfuld, package = "ggplot2")
 
 ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
   ggplot2::geom_raster() +
@@ -177,9 +177,16 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour-blind safe colour schemes: 
+\code{\link{scale_crameri_cyclic}},
+\code{\link{scale_crameri_diverging}},
+\code{\link{scale_crameri_mutlisequential}},
+\code{\link{scale_crameri_sequential}},
 \code{\link{scale_okabeito_discrete}},
 \code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}}
+
+Other sequential colour schemes: 
+\code{\link{scale_crameri_sequential}}
 
 Other Paul Tol's colour schemes: 
 \code{\link{scale_tol_discrete}},

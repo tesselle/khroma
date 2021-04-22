@@ -1,5 +1,13 @@
 # khroma 1.4.1.9000
 
+## New functions
+* Add Fabio Crameri's *Scientific colour* schemes (35 new colour schemes).
+* Add **ggplot2** scale functions:
+** Diverging Colour Schemes: `scale_*_broc`, `scale_*_cork`, `scale_*_vik`, `scale_*_lisbon`, `scale_*_tofino`, `scale_*_berlin`, `scale_*_roma`, `scale_*_bam`, `scale_*_vanimo`.
+** Sequential colour schemes: `scale_*_batlow`, `scale_*_batlowW`, `scale_*_batlowK`, `scale_*_devon`, `scale_*_lajolla`, `scale_*_bamako`, `scale_*_davos`, `scale_*_bilbao`, `scale_*_nuuk`, `scale_*_oslo`, `scale_*_grayC`, `scale_*_hawaii`, `scale_*_lapaz`, `scale_*_tokyo`, `scale_*_buda`, `scale_*_acton`, `scale_*_turku`, `scale_*_imola`.
+** Multi-sequential colour schemes: `scale_*_oleron`, `scale_*_bukavu`, `scale_*_fes`.
+** Cyclic colour schemes: `scale_*_brocO`, `scale_*_corkO`, `scale_*_vikO`, `scale_*_romaO`, `scale_*_bamO`.
+
 # khroma 1.4.1
 ## Bugfixes & changes
 * `scale_*_sunset()`, `scale_*_BuRd()` and `scale_*_PRGn()` gained a new argument to be used with discrete data (#7).
@@ -55,7 +63,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3239344.svg)](https://doi.org/10.5281/zenodo.3239344)
 
 ## New functions
-* Add three {ggplot2} scale functions: `scale_*_pale()`, `scale_*_dark()` and `scale_*_discreterainbow()`.
+* Add three **ggplot2** scale functions: `scale_*_pale()`, `scale_*_dark()` and `scale_*_discreterainbow()`.
 
 ## Bugfixes & changes
 * The function `scale_*_rainbow()` is deprecated and replaced by `scale_*_discreterainbow()`.
