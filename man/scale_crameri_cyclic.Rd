@@ -2,10 +2,146 @@
 % Please edit documentation in R/scale_colour_crameri.R
 \name{scale_crameri_cyclic}
 \alias{scale_crameri_cyclic}
+\alias{scale_colour_brocO}
+\alias{scale_color_brocO}
+\alias{scale_fill_brocO}
+\alias{scale_colour_corkO}
+\alias{scale_color_corkO}
+\alias{scale_fill_corkO}
+\alias{scale_colour_vikO}
+\alias{scale_color_vikO}
+\alias{scale_fill_vikO}
+\alias{scale_colour_romaO}
+\alias{scale_color_romaO}
+\alias{scale_fill_romaO}
+\alias{scale_colour_bamO}
+\alias{scale_color_bamO}
+\alias{scale_fill_bamO}
 \title{Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
+}
+\usage{
+scale_colour_brocO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_color_brocO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_fill_brocO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
+
+scale_colour_corkO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_color_corkO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_fill_corkO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
+
+scale_colour_vikO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_color_vikO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_fill_vikO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
+
+scale_colour_romaO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_color_romaO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_fill_romaO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
+
+scale_colour_bamO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_color_bamO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "colour"
+)
+
+scale_fill_bamO(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "fill"
+)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
@@ -16,11 +152,11 @@ vector of colors be reversed?}
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
 fraction of the scheme's color domain to keep.}
 
-\item{aesthetics}{A \code{\link{character}} string or vector of character
-strings listing the name(s) of the aesthetic(s) that this scale works with.}
-
 \item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?}
+
+\item{aesthetics}{A \code{\link{character}} string or vector of character
+strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
 A \link[ggplot2:continuous_scale]{continuous} scale.

@@ -1086,7 +1086,7 @@ NULL
 
 ## brocO -----------------------------------------------------------------------
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_colour_brocO <- function(..., reverse = FALSE, range = c(0, 1),
                                discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
@@ -1097,11 +1097,11 @@ scale_colour_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_color_brocO <- scale_colour_brocO
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
                              discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
@@ -1113,7 +1113,7 @@ scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 
 ## corkO -----------------------------------------------------------------------
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_colour_corkO <- function(..., reverse = FALSE, range = c(0, 1),
                                discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
@@ -1124,11 +1124,11 @@ scale_colour_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_color_corkO <- scale_colour_corkO
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
                              discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
@@ -1140,7 +1140,7 @@ scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 
 ## vikO ------------------------------------------------------------------------
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_colour_vikO <- function(..., reverse = FALSE, range = c(0, 1),
                               discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
@@ -1151,11 +1151,11 @@ scale_colour_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_color_vikO <- scale_colour_vikO
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
                             discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
@@ -1167,7 +1167,7 @@ scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 
 ## romaO -----------------------------------------------------------------------
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_colour_romaO <- function(..., reverse = FALSE, range = c(0, 1),
                                discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
@@ -1178,11 +1178,11 @@ scale_colour_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_color_romaO <- scale_colour_romaO
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
                              discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
@@ -1194,7 +1194,7 @@ scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 
 ## bamO ------------------------------------------------------------------------
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_colour_bamO <- function(..., reverse = FALSE, range = c(0, 1),
                               discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
@@ -1205,11 +1205,11 @@ scale_colour_bamO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_color_bamO <- scale_colour_bamO
 
 #' @export
-#' @rdname scale_crameri_diverging
+#' @rdname scale_crameri_cyclic
 scale_fill_bamO <- function(..., reverse = FALSE, range = c(0, 1),
                             discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
