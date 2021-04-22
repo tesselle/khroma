@@ -148,13 +148,6 @@ test_that("Light", {
 })
 
 # Diverging color schemes ======================================================
-test_that("ggplo2 rescaler", {
-  skip_if_not_installed("scales")
-  expect_type(mid_rescaler(mid = 5)(1:100), "double")
-  expect_length(mid_rescaler(mid = 5)(1:100), 100)
-  expect_equal(max(mid_rescaler(mid = 5)(1:100)), 1)
-})
-
 test_that("Sunset", {
   skip_if_not_installed("ggplot2")
   expect_s3_class(scale_colour_sunset(midpoint = 10), "ggproto")

@@ -1084,17 +1084,15 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 NULL
 
 
-## brocO ------------------------------------------------------------------------
+## brocO -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
 scale_colour_brocO <- function(..., reverse = FALSE, range = c(0, 1),
-                               midpoint = 0, discrete = FALSE,
-                               aesthetics = "colour") {
+                               discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
     scale_discrete(aesthetics, "brocO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "brocO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "brocO", reverse = reverse, range = range, ...)
   }
 }
 
@@ -1105,27 +1103,23 @@ scale_color_brocO <- scale_colour_brocO
 #' @export
 #' @rdname scale_crameri_diverging
 scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
-                             midpoint = 0, discrete = FALSE,
-                             aesthetics = "fill") {
+                             discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     scale_discrete(aesthetics, "brocO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "brocO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "brocO", reverse = reverse, range = range, ...)
   }
 }
 
-## corkO ------------------------------------------------------------------------
+## corkO -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
 scale_colour_corkO <- function(..., reverse = FALSE, range = c(0, 1),
-                               midpoint = 0, discrete = FALSE,
-                               aesthetics = "colour") {
+                               discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
     scale_discrete(aesthetics, "corkO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "corkO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "corkO", reverse = reverse, range = range, ...)
   }
 }
 
@@ -1136,27 +1130,23 @@ scale_color_corkO <- scale_colour_corkO
 #' @export
 #' @rdname scale_crameri_diverging
 scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
-                             midpoint = 0, discrete = FALSE,
-                             aesthetics = "fill") {
+                             discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     scale_discrete(aesthetics, "corkO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "corkO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "corkO", reverse = reverse, range = range, ...)
   }
 }
 
-## vikO -------------------------------------------------------------------------
+## vikO ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
 scale_colour_vikO <- function(..., reverse = FALSE, range = c(0, 1),
-                              midpoint = 0, discrete = FALSE,
-                              aesthetics = "colour") {
+                              discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
     scale_discrete(aesthetics, "vikO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "vikO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "vikO", reverse = reverse, range = range, ...)
   }
 }
 
@@ -1167,27 +1157,23 @@ scale_color_vikO <- scale_colour_vikO
 #' @export
 #' @rdname scale_crameri_diverging
 scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
-                            midpoint = 0, discrete = FALSE,
-                            aesthetics = "fill") {
+                            discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     scale_discrete(aesthetics, "vikO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "vikO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "vikO", reverse = reverse, range = range, ...)
   }
 }
 
-## romaO ------------------------------------------------------------------------
+## romaO -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
 scale_colour_romaO <- function(..., reverse = FALSE, range = c(0, 1),
-                               midpoint = 0, discrete = FALSE,
-                               aesthetics = "colour") {
+                               discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
     scale_discrete(aesthetics, "romaO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "romaO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "romaO", reverse = reverse, range = range, ...)
   }
 }
 
@@ -1198,27 +1184,23 @@ scale_color_romaO <- scale_colour_romaO
 #' @export
 #' @rdname scale_crameri_diverging
 scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
-                             midpoint = 0, discrete = FALSE,
-                             aesthetics = "fill") {
+                             discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     scale_discrete(aesthetics, "romaO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "romaO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "romaO", reverse = reverse, range = range, ...)
   }
 }
 
-## bamO -------------------------------------------------------------------------
+## bamO ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
 scale_colour_bamO <- function(..., reverse = FALSE, range = c(0, 1),
-                              midpoint = 0, discrete = FALSE,
-                              aesthetics = "colour") {
+                              discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
     scale_discrete(aesthetics, "bamO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "bamO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "bamO", reverse = reverse, range = range, ...)
   }
 }
 
@@ -1229,12 +1211,10 @@ scale_color_bamO <- scale_colour_bamO
 #' @export
 #' @rdname scale_crameri_diverging
 scale_fill_bamO <- function(..., reverse = FALSE, range = c(0, 1),
-                            midpoint = 0, discrete = FALSE,
-                            aesthetics = "fill") {
+                            discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     scale_discrete(aesthetics, "bamO", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "bamO", reverse = reverse, range = range,
-                     midpoint = midpoint, ...)
+    scale_continuous(aesthetics, "bamO", reverse = reverse, range = range, ...)
   }
 }

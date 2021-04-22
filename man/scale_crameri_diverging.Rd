@@ -297,7 +297,6 @@ scale_colour_brocO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -306,7 +305,6 @@ scale_color_brocO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -315,7 +313,6 @@ scale_fill_brocO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
 )
@@ -324,7 +321,6 @@ scale_colour_corkO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -333,7 +329,6 @@ scale_color_corkO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -342,7 +337,6 @@ scale_fill_corkO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
 )
@@ -351,7 +345,6 @@ scale_colour_vikO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -360,7 +353,6 @@ scale_color_vikO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -369,7 +361,6 @@ scale_fill_vikO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
 )
@@ -378,7 +369,6 @@ scale_colour_romaO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -387,7 +377,6 @@ scale_color_romaO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -396,7 +385,6 @@ scale_fill_romaO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
 )
@@ -405,7 +393,6 @@ scale_colour_bamO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -414,7 +401,6 @@ scale_color_bamO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "colour"
 )
@@ -423,7 +409,6 @@ scale_fill_bamO(
   ...,
   reverse = FALSE,
   range = c(0, 1),
-  midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
 )
