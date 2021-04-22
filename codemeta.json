@@ -5,7 +5,7 @@
   ],
   "@type": "SoftwareSourceCode",
   "identifier": "khroma",
-  "description": "An implementation of Paul Tol's colour schemes for\n    use with 'graphics' or 'ggplot2'. These schemes are ready for each\n    type of data (qualitative, diverging or sequential), with colours that\n    are distinct for all people, including colour-blind readers. This\n    package provides tools to simulate colour-blindness and to test how\n    well the colours of any palette are identifiable. Several scientific\n    thematic schemes (geologic timescale, land cover, FAO soils, etc.) are\n    also implemented.",
+  "description": "Colour schemes ready for each type of data (qualitative,\n    diverging or sequential), with colours that are distinct for all\n    people, including colour-blind readers. This package provides an\n    implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:\n    10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or\n    'ggplot2'. It provides tools to simulate colour-blindness and to test\n    how well the colours of any palette are identifiable. Several\n    scientific thematic schemes (geologic timescale, land cover, FAO\n    soils, etc.) are also implemented.",
   "name": "khroma: Colour Schemes for Scientific Data Visualization",
   "codeRepository": "https://github.com/tesselle/khroma",
   "relatedLink": [
@@ -17,7 +17,7 @@
   ],
   "issueTracker": "https://github.com/tesselle/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.4.1.9000",
+  "version": "1.5.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -208,7 +208,7 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "103562.445KB",
+  "fileSize": "103580.988KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
@@ -232,7 +232,7 @@
       ],
       "name": "khroma: Colour Schemes for Scientific Data Visualization",
       "url": "https://doi.org/10.5281/zenodo.1472077",
-      "description": "R package version 1.4.1"
+      "description": "R package version 1.5.0"
     }
   ],
   "releaseNotes": "https://github.com/tesselle/khroma/blob/master/NEWS.md"

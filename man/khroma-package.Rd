@@ -9,20 +9,21 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-An implementation of Paul Tol's colour schemes for
-    use with 'graphics' or 'ggplot2'. These schemes are ready for each
-    type of data (qualitative, diverging or sequential), with colours that
-    are distinct for all people, including colour-blind readers. This
-    package provides tools to simulate colour-blindness and to test how
-    well the colours of any palette are identifiable. Several scientific
-    thematic schemes (geologic timescale, land cover, FAO soils, etc.) are
-    also implemented.
+Colour schemes ready for each type of data (qualitative,
+    diverging or sequential), with colours that are distinct for all
+    people, including colour-blind readers. This package provides an
+    implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:
+    10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or
+    'ggplot2'. It provides tools to simulate colour-blindness and to test
+    how well the colours of any palette are identifiable. Several
+    scientific thematic schemes (geologic timescale, land cover, FAO
+    soils, etc.) are also implemented.
 }
 \details{
 \tabular{ll}{
 \strong{Package:} \tab khroma \cr
 \strong{Type:} \tab Package \cr
-\strong{Version:} \tab 1.4.1.9000 \cr
+\strong{Version:} \tab 1.5.0 \cr
 \strong{License:} \tab GPL-3 \cr
 }
 

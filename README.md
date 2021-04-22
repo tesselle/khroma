@@ -29,13 +29,14 @@ Color blindness affects a large number of individuals. When
 communicating scientific results colour palettes must therefore be
 carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Paul Tol[1] and Okabe and
-Ito[2] colour schemes. These schemes are ready for each type of data
-(qualitative, diverging or sequential), with colours that are distinct
-for all people, including colour-blind readers. This package also
-provides tools to simulate colour-blindness and to test how well the
-colours of any palette are identifiable. To simulate colour-blindness in
-production-ready R figures you may also be interested in the
+This R package provides an implementation of Okabe and Ito[1], Paul
+Tol[2] and Fabio Crameri[3] colour schemes. These schemes are ready for
+each type of data (qualitative, diverging or sequential), with colours
+that are distinct for all people, including colour-blind readers. This
+package also provides tools to simulate colour-blindness and to test how
+well the colours of any palette are identifiable. To simulate
+colour-blindness in production-ready R figures you may also be
+interested in the
 [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
 
 For specific uses, several scientific thematic schemes (geologic
@@ -145,35 +146,6 @@ round(DeltaE, 2)
 #### Simulate colour-blindness
 
 ``` r
-# convert() returns a modified palette function
-deuteranopia <- convert(okabe, mode = "deuteranopia")
-plot_scheme(deuteranopia(8), colours = TRUE)
-```
-
-<img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
-
-``` r
-protanopia <- convert(okabe, mode = "protanopia")
-plot_scheme(protanopia(8), colours = TRUE)
-```
-
-<img src="man/figures/README-usage-colourblind2-2.png" style="display: block; margin: auto;" />
-
-``` r
-tritanopia <- convert(okabe, mode = "tritanopia")
-plot_scheme(tritanopia(8), colours = TRUE)
-```
-
-<img src="man/figures/README-usage-colourblind2-3.png" style="display: block; margin: auto;" />
-
-``` r
-achromatopsia <- convert(okabe, mode = "achromatopsia")
-plot_scheme(achromatopsia(8), colours = TRUE)
-```
-
-<img src="man/figures/README-usage-colourblind2-4.png" style="display: block; margin: auto;" />
-
-``` r
 plot_scheme_colourblind(okabe(8))
 ```
 
@@ -190,22 +162,19 @@ plot_scheme_colourblind(x)
 
 ## Colour Schemes
 
-### Paul Tol’s Colour Schemes
+### Colour Schemes
 
-Paul Tol offers carefully chosen schemes, ready for each type of data,
-with colours that are:
+Paul Tol and Fabio Crameri offer carefully chosen schemes, ready for
+each type of data, with colours that are:
 
--   Distinct for all people, including colour-blind readers.
--   Distinct from black and white.
--   Distinct on screen and paper.
--   Matching well together.
+-   Distinct for all people, including colour-blind readers,
+-   Distinct from black and white,
+-   Distinct on screen and paper,
+-   Matching well together,
+-   Citable & reproducible.
 
-All the scales presented in Paul Tol’s technical note are implemented
-here, for use with base R or
-[**ggplot2**](https://github.com/tidyverse/ggplot2). Refer to the
-original document for details about the recommended uses.
-
-See `vignette("tol")` for a more complete overview.
+See `vignette("tol")` and `vignette("crameri")` for a more complete
+overview.
 
 ### Scientific colour schemes
 
@@ -224,10 +193,14 @@ Please note that the **khroma** project is released with a [Contributor
 Code of Conduct](https://www.tesselle.org/conduct.html). By contributing
 to this project, you agree to abide by its terms.
 
-[1] Tol, P. (2018). *Colour Schemes*. SRON. Technical Note
+[1] Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to
+Make Figures and Presentations That Are Friendly to Colorblind People*.
+URL: <https://jfly.uni-koeln.de/color/>.
+
+[2] Tol, P. (2018). *Colour Schemes*. SRON. Technical Note
 No. SRON/EPS/TN/09-002. URL:
 <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
 
-[2] Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to
-Make Figures and Presentations That Are Friendly to Colorblind People*.
-URL: <https://jfly.uni-koeln.de/color/>.
+[3] Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation
+and StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+<https://doi.org/10.5194/gmd-11-2541-2018>

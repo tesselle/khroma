@@ -1,4 +1,4 @@
-# khroma 1.4.1.9000
+# khroma 1.5.0
 
 ## New functions
 * Add Fabio Crameri's *Scientific colour* schemes (35 new colour schemes).

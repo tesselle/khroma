@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Scientific Data Visualization
-Version: 1.4.1.9000
+Version: 1.5.0
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
@@ -17,19 +17,18 @@ Authors@R:
              role = "ctb",
              email = "vincent.arel-bundock@umontreal.ca",
              comment = c(ORCID = "0000-0003-2042-7063")))
-Maintainer: Nicolas Frerebeau
-    <nicolas.frerebeau@u-bordeaux-montaigne.fr>
-Description: An implementation of Paul Tol's colour schemes for
-    use with 'graphics' or 'ggplot2'. These schemes are ready for each
-    type of data (qualitative, diverging or sequential), with colours that
-    are distinct for all people, including colour-blind readers. This
-    package provides tools to simulate colour-blindness and to test how
-    well the colours of any palette are identifiable. Several scientific
-    thematic schemes (geologic timescale, land cover, FAO soils, etc.) are
-    also implemented.
+Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
+Description: Colour schemes ready for each type of data (qualitative,
+    diverging or sequential), with colours that are distinct for all
+    people, including colour-blind readers. This package provides an
+    implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:
+    10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or
+    'ggplot2'. It provides tools to simulate colour-blindness and to test
+    how well the colours of any palette are identifiable. Several
+    scientific thematic schemes (geologic timescale, land cover, FAO
+    soils, etc.) are also implemented.
 License: GPL-3
-URL: https://khroma.tesselle.org,
-    https://github.com/tesselle/khroma
+URL: https://khroma.tesselle.org, https://github.com/tesselle/khroma
 BugReports: https://github.com/tesselle/khroma/issues
 Depends: 
     R (>= 3.3)
@@ -51,8 +50,8 @@ VignetteBuilder:
     knitr
 Config/testthat/edition: 3
 Encoding: UTF-8
-RoxygenNote: 7.1.1
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
 Collate: 
     'anomalize.R'
     'colour.R'
