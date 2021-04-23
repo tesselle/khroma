@@ -23,7 +23,7 @@ Colour schemes ready for each type of data (qualitative,
 \tabular{ll}{
 \strong{Package:} \tab khroma \cr
 \strong{Type:} \tab Package \cr
-\strong{Version:} \tab 1.5.0 \cr
+\strong{Version:} \tab 1.5.0.9000 \cr
 \strong{License:} \tab GPL-3 \cr
 }
 

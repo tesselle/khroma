@@ -2,7 +2,7 @@
 #'  \tabular{ll}{
 #'   **Package:** \tab khroma \cr
 #'   **Type:** \tab Package \cr
-#'   **Version:** \tab 1.5.0 \cr
+#'   **Version:** \tab 1.5.0.9000 \cr
 #'   **License:** \tab GPL-3 \cr
 #'  }
 #'
