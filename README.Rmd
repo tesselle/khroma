@@ -57,7 +57,7 @@ And the development version from [GitHub](https://github.com/) with:
 
 ```{r gh-installation, eval=FALSE}
 # install.packages("remotes")
-remotes::install_github("nfrerebeau/khroma")
+remotes::install_github("tesselle/khroma")
 ```
 
 ## Usage
