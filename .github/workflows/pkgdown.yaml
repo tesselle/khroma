@@ -8,9 +8,14 @@ name: pkgdown
 
 jobs:
   pkgdown:
+    name: Build-Website
+    
     runs-on: macOS-latest
+    
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      REPO: ${{ github.event.repository.name }}
+      
     steps:
       - uses: actions/checkout@v2
 
@@ -42,9 +47,32 @@ jobs:
       - name: Install package
         run: R CMD INSTALL .
 
-      - name: Deploy package
+      - name: Build site
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          Rscript -e 'pkgdown::deploy_to_branch(new_process = FALSE)'
+          Rscript -e 'pkgdown::build_site(devel = FALSE, preview = FALSE, install = FALSE, new_process = FALSE)'
+ 
+      - name: Configure git
+        if: success()
+        env:
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          git config --global url."https://${TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
+          git config --global user.email "${REPO}@tesselle.org"
+          git config --global user.name "${REPO}"
+          
+      - name: Clone tesselle/packages
+        if: success()
+        run: |
+          rm -rf tmp
+          git clone https://github.com/tesselle/packages.git tmp
+
+      - name: Deploy
+        if: success()
+        run: |
+          mkdir -p tmp/${REPO}
+          cp -r docs/* tmp/${REPO}/
+          cd tmp
+          git add .
+          git commit -m "Built site for ${REPO}@$(echo ${GITHUB_SHA} | cut -c1-7)"
+          git push origin gh-pages
 

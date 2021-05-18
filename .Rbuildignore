@@ -7,11 +7,11 @@
 ^cran-comments\.md$
 ^CRAN-RELEASE$
 ^LICENSE\.md$
-^NEWS\.md$
 ^NEWS\.Rmd$
 ^README\.Rmd$
 ^data-raw$
 ^docs$
+^Meta$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.github$

@@ -9,6 +9,8 @@ name: drat
 
 jobs:
   drat:
+    name: Insert-Package
+    
     runs-on: ubuntu-20.04
     
     env:
@@ -58,7 +60,7 @@ jobs:
         shell: Rscript {0}
         
       - name: Configure git
-        # https://stackoverflow.com/a/60548651/633251
+        if: success()
         env:
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
@@ -76,17 +78,17 @@ jobs:
         if: success()
         run: |
           targz <- list.files(path = "build", pattern = "\\.tar\\.gz", full.names = TRUE)
-          drat::insertPackage(file = targz, repodir = "tmp", action = "archive", location = "docs")
+          drat::insertPackage(file = targz, repodir = "tmp", action = "archive", location = "gh-pages")
         shell: Rscript {0}
         
       - name: Deploy
         if: success()
         run: |
           cd tmp
-          git add *
+          git add .
           # .tar.gz files are globally blocked (git ignored) by git,
           # must add manually and force it
           git add -f *.tar.gz
           git commit -m "Add ${REPO} ${RELEASE}"
-          git push origin master
+          git push origin gh-pages
           
