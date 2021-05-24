@@ -10,6 +10,7 @@
 ^NEWS\.Rmd$
 ^README\.Rmd$
 ^data-raw$
+^pkgdown$
 ^docs$
 ^Meta$
 ^.*\.Rproj$

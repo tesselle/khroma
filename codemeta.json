@@ -9,11 +9,8 @@
   "name": "khroma: Colour Schemes for Scientific Data Visualization",
   "codeRepository": "https://github.com/tesselle/khroma",
   "relatedLink": [
-    "http://khroma.archaeo.science",
-    "https://cran.r-project.org/package=khroma",
     "https://CRAN.R-project.org/package=khroma",
-    "https://khroma.archaeo.science",
-    "https://khroma.tesselle.org"
+    "https://packages.tesselle.org/khroma"
   ],
   "issueTracker": "https://github.com/tesselle/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
@@ -23,7 +20,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.0.3 (2020-10-10)",
+  "runtimePlatform": "R version 4.1.0 (2021-05-18)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -208,7 +205,7 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "106560.516KB",
+  "fileSize": "1327.729KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
