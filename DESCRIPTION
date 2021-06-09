@@ -27,8 +27,8 @@ Description: Colour schemes ready for each type of data (qualitative,
     how well the colours of any palette are identifiable. Several
     scientific thematic schemes (geologic timescale, land cover, FAO
     soils, etc.) are also implemented.
-License: GPL-3
-URL: https://packages.tesselle.org/khroma, https://github.com/tesselle/khroma
+License: GPL (>= 3)
+URL: https://packages.tesselle.org/khroma/, https://github.com/tesselle/khroma
 BugReports: https://github.com/tesselle/khroma/issues
 Depends: 
     R (>= 3.3)
