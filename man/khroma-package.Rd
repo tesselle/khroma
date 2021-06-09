@@ -32,7 +32,7 @@ Colour schemes ready for each type of data (qualitative,
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://packages.tesselle.org/khroma}
+  \item \url{https://packages.tesselle.org/khroma/}
   \item \url{https://github.com/tesselle/khroma}
   \item Report bugs at \url{https://github.com/tesselle/khroma/issues}
 }

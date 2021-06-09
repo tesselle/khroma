@@ -11,8 +11,8 @@ NULL
 #'  used (see [colour()]).
 #' @param reverse A [`logical`] scalar: should the resulting vector of colors
 #'  should be reversed?
-#' @param label A [`logical`] scalar: should the names of the colors should be
-#'  kept in the resulting vector?
+#' @param use_names A [`logical`] scalar: should the names of the colors be
+#'  preserved?
 #' @param lang A [`character`] string specifying the language for the color
 #'  names. It must be one of "`en`" (english, the default) or "`fr`" (french).
 #' @param type A [`character`] string specifying the scale to be
@@ -33,9 +33,10 @@ NULL
 NULL
 
 scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
-                           labels = FALSE, lang = "en", ...) {
+                           use_names = FALSE, lang = "en", ...) {
   # Get colour scheme
-  palette <- colour(scale_name, reverse = reverse, names = labels, lang = lang)
+  palette <- colour(scale_name, reverse = reverse, names = use_names,
+                    lang = lang)
 
   # Build scale
   scale_arguments <- list(...)
