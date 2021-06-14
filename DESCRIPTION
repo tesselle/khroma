@@ -1,6 +1,6 @@
 Package: khroma
 Title: Colour Schemes for Scientific Data Visualization
-Version: 1.5.0.9000
+Version: 1.6.0
 Authors@R: 
     c(person(given = "Nicolas",
              family = "Frerebeau",
@@ -33,17 +33,19 @@ BugReports: https://github.com/tesselle/khroma/issues
 Depends: 
     R (>= 3.3)
 Imports:
-    ggplot2,
     grDevices,
     grid,
-    scales,
-    spacesXYZ
+    stats,
+    utils
 Suggests:
     covr,
     crayon,
     fansi,
+    ggplot2,
     knitr,
     rmarkdown,
+    scales,
+    spacesXYZ,
     testthat (>= 3.0.0),
     vdiffr
 VignetteBuilder:

@@ -2,11 +2,10 @@
 #'  \tabular{ll}{
 #'   **Package:** \tab khroma \cr
 #'   **Type:** \tab Package \cr
-#'   **Version:** \tab 1.5.0.9000 \cr
+#'   **Version:** \tab 1.6.0 \cr
 #'   **License:** \tab GPL-3 \cr
+#'   **Zenodo:** \tab \doi{10.5281/zenodo.1472077} \cr
 #'  }
-#'
-#' \doi{10.5281/zenodo.1472077}
 #'
 #' @author
 #'  **Full list of authors and contributors** (alphabetic order)
@@ -32,9 +31,18 @@
 #' @keywords internal
 "_PACKAGE"
 
-#' @importFrom ggplot2 aes continuous_scale discrete_scale scale_color_manual
-#' scale_fill_manual
-#' @importFrom scales alpha gradient_n_pal rescale_mid
-#' @importFrom grDevices colorRampPalette
+# @importFrom ggplot2 aes continuous_scale discrete_scale scale_color_manual
+# scale_fill_manual
+# @importFrom scales alpha gradient_n_pal rescale_mid
+# @importFrom spacesXYZ DeltaE
+#' @importFrom grDevices col2rgb colorRampPalette
 #' @importFrom grid gpar grid.newpage grid.rect grid.text unit
 NULL
+
+check_package <- function(x) {
+  if (!requireNamespace(x, quietly = TRUE)) {
+    msg <- "Package %s needed for this function to work. Please install it."
+    stop(sprintf(msg, x), call. = FALSE)
+  }
+  invisible(NULL)
+}

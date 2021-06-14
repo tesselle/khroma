@@ -7,7 +7,7 @@ template:
   opengraph:
     twitter:
       creator: "@nfrerebeau"
-      card: summary_large_image
+      card: summary
 
 reference:
 - title: Colour Palette

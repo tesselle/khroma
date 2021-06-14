@@ -121,9 +121,11 @@ test_that("Colour-blind attributes", {
   expect_true(attr(protanopia, "mode") == "protanopia")
 })
 test_that("Print with crayon", {
+  skip_if_not_installed("crayon")
+  options(crayon.enabled = FALSE)
+
   palette <- colour("okabe ito")
 
-  options(crayon.enabled = FALSE)
   col <- utils::capture.output(print(palette(8)))
   expect_type(col, "character")
 

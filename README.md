@@ -65,9 +65,11 @@ remotes::install_github("tesselle/khroma")
 ## Usage
 
 ``` r
-# Load packages
+## Load packages
 library(khroma)
-library(ggplot2)
+
+## Install extra packages (if needed)
+# install.packages(c("ggplot2", "spacesXYZ"))
 ```
 
 <details>
@@ -173,7 +175,10 @@ plot_scheme(bright(7), colours = TRUE)
 
 ``` r
 # Use with ggplot2
-ggplot2::ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
+data(mpg, package = "ggplot2")
+
+ggplot2::ggplot(data = mpg) +
+  ggplot2::aes(x = displ, y = hwy, colour = class) +
   ggplot2::geom_point() +
   scale_colour_bright()
 ```

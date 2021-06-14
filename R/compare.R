@@ -16,6 +16,7 @@
 #' @export
 compare <- function(x, metric = 2000, diag = FALSE, upper = FALSE) {
   # Validation
+  check_package("spacesXYZ")
   if (!is.atomic(x) || !is.character(x))
     stop("x must be a character vector of colours.", call. = FALSE)
 

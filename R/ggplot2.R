@@ -34,6 +34,9 @@ NULL
 
 scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
                            use_names = FALSE, lang = "en", ...) {
+  # Check if ggplot2 is installed
+  check_package("ggplot2")
+
   # Get colour scheme
   palette <- colour(scale_name, reverse = reverse, names = use_names,
                     lang = lang)
@@ -51,6 +54,9 @@ scale_discrete <- function(aesthetics, scale_name, reverse = FALSE,
 
 scale_continuous <- function(aesthetics, scale_name, reverse = FALSE,
                              lang = "en", range = c(0, 1), midpoint = 0, ...) {
+  # Validation
+  check_package("ggplot2") # Check if ggplot2 is installed
+
   # Get colour scheme
   palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang)
   max <- attr(palette, "max")
@@ -79,6 +85,7 @@ scale_continuous <- function(aesthetics, scale_name, reverse = FALSE,
 #' @keywords internal
 #' @noRd
 mid_rescaler <- function(mid) {
+  check_package("scales") # Check if scales is installed
   function(x, to = c(0, 1), from = range(x, na.rm = TRUE)) {
     scales::rescale_mid(x, to, from, mid)
   }

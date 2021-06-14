@@ -1,7 +1,10 @@
-# khroma 1.5.0.9000
+# khroma 1.6.0
 
 ## New functions
 * Add `info()` to get a table of all available palettes.
+
+## Internals
+* Move **ggplot2**, **scales** and **spacesXYZ** from Imports to Suggests (#8).
 
 # khroma 1.5.0
 

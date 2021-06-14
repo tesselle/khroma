@@ -23,11 +23,10 @@ Colour schemes ready for each type of data (qualitative,
 \tabular{ll}{
 \strong{Package:} \tab khroma \cr
 \strong{Type:} \tab Package \cr
-\strong{Version:} \tab 1.5.0.9000 \cr
+\strong{Version:} \tab 1.6.0 \cr
 \strong{License:} \tab GPL-3 \cr
+\strong{Zenodo:} \tab \doi{10.5281/zenodo.1472077} \cr
 }
-
-\doi{10.5281/zenodo.1472077}
 }
 \seealso{
 Useful links:

@@ -14,7 +14,7 @@
   ],
   "issueTracker": "https://github.com/tesselle/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.5.0.9000",
+  "version": "1.6.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -102,6 +102,18 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "ggplot2",
+      "name": "ggplot2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ggplot2"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
       "provider": {
@@ -123,6 +135,30 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "scales",
+      "name": "scales",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=scales"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "spacesXYZ",
+      "name": "spacesXYZ",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=spacesXYZ"
     },
     {
       "@type": "SoftwareApplication",
@@ -159,18 +195,6 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "ggplot2",
-      "name": "ggplot2",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=ggplot2"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "grDevices",
       "name": "grDevices"
     },
@@ -181,31 +205,17 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "scales",
-      "name": "scales",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=scales"
+      "identifier": "stats",
+      "name": "stats"
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "spacesXYZ",
-      "name": "spacesXYZ",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=spacesXYZ"
+      "identifier": "utils",
+      "name": "utils"
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "1326.543KB",
+  "fileSize": "1334.651KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
@@ -229,7 +239,7 @@
       ],
       "name": "khroma: Colour Schemes for Scientific Data Visualization",
       "url": "https://doi.org/10.5281/zenodo.1472077",
-      "description": "R package version 1.5.0"
+      "description": "R package version 1.6.0"
     }
   ],
   "releaseNotes": "https://github.com/tesselle/khroma/blob/master/NEWS.md"
