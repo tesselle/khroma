@@ -1,4 +1,11 @@
+# khroma 1.5.0.9000
+
+## New functions
+* Add `info()` to get a table of all available palettes.
+
 # khroma 1.5.0
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4723613.svg)](https://doi.org/10.5281/zenodo.4723613)
 
 ## New functions
 * Add Fabio Crameri's *Scientific colour* schemes (35 new colour schemes).

@@ -177,6 +177,10 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 
 \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
 }
+\seealso{
+Other colour palettes: 
+\code{\link{info}()}
+}
 \author{
 N. Frerebeau
 }

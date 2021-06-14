@@ -67,14 +67,27 @@ library(khroma)
 library(ggplot2)
 ```
 
+<details>
+<summary><strong>Available palettes</strong> (click to expand)</summary>
+
+```{r info}
+## Get a table of available palettes
+info()
+```
+
+</details>
+
 ### Colour palettes and scales
+
 `colour()` returns a palette function that when called with a single integer argument returns a vector of colours.
+
 ```{r usage}
 # Paul Tol's bright colour scheme
 bright <- colour("bright")
 ```
 
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console.
+
 ```{r crayon, echo=FALSE, eval=FALSE}
 options(crayon.enabled = TRUE)
 bright(7)
@@ -83,6 +96,7 @@ bright(7)
 ![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
 
 You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
+
 ```{r no-crayon}
 options(crayon.enabled = FALSE)
 bright(7)
@@ -102,6 +116,7 @@ ggplot2::ggplot(data = mpg, mapping = aes(x = displ, y = hwy, colour = class)) +
 
 ### Diagnostic tools
 #### Test how well the colours are identifiable
+
 ```{r usage-colourblind1, fig.height=2, fig.width=7, fig.align='center'}
 # Okabe & Ito's colour scheme
 okabe <- colour("okabe ito")
@@ -111,12 +126,14 @@ plot_map(okabe(8))
 ```
 
 #### Compute CIELAB distance metric
+
 ```{r usage-cielab}
 DeltaE <- compare(okabe(8))
 round(DeltaE, 2)
 ```
 
 #### Simulate colour-blindness
+
 ```{r usage-colourblind2, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 # convert() returns a modified palette function
 deuteranopia <- convert(okabe, mode = "deuteranopia")
@@ -143,6 +160,7 @@ plot_scheme_colourblind(x)
 
 ## Colour Schemes
 ### Colour Schemes
+
 Paul Tol and Fabio Crameri offer carefully chosen schemes, ready for each type of data, with colours that are:
 
 * Distinct for all people, including colour-blind readers,
@@ -154,6 +172,7 @@ Paul Tol and Fabio Crameri offer carefully chosen schemes, ready for each type o
 See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
 
 ### Scientific colour schemes
+
 The following scientific colour schemes are available:
 
 * International Chronostratigraphic Chart;
@@ -163,4 +182,7 @@ The following scientific colour schemes are available:
 More will be added in future releases ([suggestions are welcome](https://github.com/tesselle/khroma/issues)).
 
 ## Contributing
+
 Please note that the **khroma** project is released with a [Contributor Code of Conduct](https://www.tesselle.org/conduct.html). By contributing to this project, you agree to abide by its terms.
+
+## References
