@@ -177,6 +177,7 @@
       "@type": "SoftwareApplication",
       "identifier": "vdiffr",
       "name": "vdiffr",
+      "version": ">= 1.0.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -215,7 +216,7 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "1334.793KB",
+  "fileSize": "1223.551KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
