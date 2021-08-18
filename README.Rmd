@@ -26,6 +26,7 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 [![R build status](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
 
+[![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
 [![CRAN checks](https://cranchecks.info/badges/worst/khroma)](https://cran.r-project.org/web/checks/check_results_khroma.html)
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)

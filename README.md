@@ -9,6 +9,7 @@
 status](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
 
+[![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
 [![CRAN
 Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
 [![CRAN
