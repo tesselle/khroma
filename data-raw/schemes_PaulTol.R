@@ -15,7 +15,7 @@ schemes_tol2018 <- list(
     ),
     scheme = NULL
   ),
-  contrast = list(
+  "high contrast" = list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
@@ -52,6 +52,21 @@ schemes_tol2018 <- list(
              "teal", "olive", "purple"),
       fr = c("rose vif", "indigo", "sable", "vert", "cyan", "lie de vin",
              "bleu canard", "olive", "pourpre")
+    ),
+    scheme = NULL
+  ),
+  "medium contrast" = list(
+    type = "qualitative",
+    interpolate = FALSE,
+    missing = NA_character_,
+    max = 6,
+    colours = c("#EECC66", "#EE99AA", "#6699CC",
+                "#997700", "#994455", "#004488"),
+    names = list(
+      en = c("light yellow", "light red", "light blue",
+             "dark yellow", "dark red", "dark blue"),
+      fr = c("jaune clair", "rouge clair", "bleu clair",
+             "jaune foncé", "rouge foncé", "bleu foncé")
     ),
     scheme = NULL
   ),

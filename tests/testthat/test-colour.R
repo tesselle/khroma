@@ -8,11 +8,12 @@ test_that("Palette informations", {
   expect_snapshot(info(), cran = TRUE)
 })
 test_that("Palette colours", {
-  palettes <- c("okabe ito", "bright", "contrast", "vibrant", "muted", "pale",
-                "dark", "light", "sunset", "BuRd", "PRGn", "YlOrBr",
-                "iridescent", "discrete rainbow", "smooth rainbow",
+  palettes <- c("okabe ito", "bright", "high contrast", "vibrant", "muted",
+                "medium contrast", "pale", "dark", "light",
+                "sunset", "BuRd", "PRGn",
+                "YlOrBr", "iridescent", "discrete rainbow", "smooth rainbow",
                 "stratigraphy", "soil", "land")
-  n <- c(8, 7, 3, 7, 9, 6, 6, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
+  n <- c(8, 7, 3, 7, 9, 6, 6, 6, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
 
   for (i in seq_len(length(palettes))) {
     expect_type(colour(palettes[i]), "closure")
@@ -35,9 +36,10 @@ test_that("Palette colours", {
 test_that("Qualitative colours", {
   options(crayon.enabled = FALSE)
 
-  palettes <- c("okabe ito", "bright", "contrast", "vibrant", "muted", "pale",
-                "dark", "light", "stratigraphy", "soil", "land")
-  n <- c(8, 7, 3, 7, 9, 6, 6, 9, 175, 24, 14)
+  palettes <- c("okabe ito", "bright", "high contrast", "vibrant", "muted",
+                "medium contrast", "pale", "dark", "light",
+                "stratigraphy", "soil", "land")
+  n <- c(8, 7, 3, 7, 9, 6, 6, 6, 9, 175, 24, 14)
   for (i in seq_len(length(palettes))) {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))

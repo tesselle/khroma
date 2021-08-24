@@ -5,11 +5,12 @@ plot_scheme(colour("okabe ito")(8))
 ## Paul Tol's colour schemes
 ### Qualitative data
 plot_scheme(colour("bright")(7))
-plot_scheme(colour("contrast")(3))
+plot_scheme(colour("high contrast")(3))
 plot_scheme(colour("vibrant")(7))
+plot_scheme(colour("muted")(9))
+plot_scheme(colour("medium contrast")(6))
 plot_scheme(colour("pale")(6))
 plot_scheme(colour("dark")(6))
-plot_scheme(colour("muted")(9))
 plot_scheme(colour("light")(9))
 ### Diverging data
 plot_scheme(colour("sunset")(11))

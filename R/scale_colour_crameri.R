@@ -8,20 +8,20 @@ NULL
 #' Provides diverging colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colors be reversed?
+#'  vector of colours be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param midpoint A length-one [`numeric`] vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the color scheme be
+#' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale?
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colours than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
 #'  Available schemes:
@@ -339,25 +339,25 @@ scale_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 # Sequential ===================================================================
 #' Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2}
 #'
-#' Provides sequential color scales from Fabio Crameri's *Scientific colour*.
+#' Provides sequential colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colors be reversed?
+#'  vector of colours be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the color scheme be
+#' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale?
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colours than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
-#'  Availble schemes:
+#'  Available schemes:
 #'
 #'  * `batlow`
 #'  * `batlowW`
@@ -924,26 +924,26 @@ scale_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 # Multi Sequential =============================================================
 #' Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
 #'
-#' Provides multi-sequential color scales from Fabio Crameri's *Scientific
+#' Provides multi-sequential colour scales from Fabio Crameri's *Scientific
 #' colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colors be reversed?
+#'  vector of colours be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param midpoint A length-one [`numeric`] vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colours than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
-#'  Availble schemes:
+#'  Available schemes:
 #'
 #'  * `oleron`
 #'  * `bukavu`
@@ -1036,22 +1036,22 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 # Cyclic =======================================================================
 #' Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2}
 #'
-#' Provides cyclic color scales from Fabio Crameri's *Scientific colour*.
+#' Provides cyclic colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colors be reversed?
+#'  vector of colours be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the color scheme be
+#' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale?
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colours than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
 #'  Availble schemes:

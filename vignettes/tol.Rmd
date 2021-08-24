@@ -29,14 +29,14 @@ library(khroma)
 ```
 
 # Introduction
-@tol2018 offers carefully chosen schemes, ready for each type of data, with colours that are:
+@tol2021 offers carefully chosen schemes, ready for each type of data, with colours that are:
 
 * Distinct for all people, including colour-blind readers,
 * Distinct from black and white,
 * Distinct on screen and paper,
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note (issue 3.1, 2018-09-23) are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
+All the scales presented in Paul Tol's technical note (issue 3.2, 2021-08-18) are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
 
 # Qualitative data
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* colour schemes are colour-blind safe.
@@ -47,15 +47,16 @@ The *pale* and *dark* schemes are not very distinct in either normal or colour-b
 
 The qualitative colour schemes must be used as given (no interpolation): colours are picked up to the maximum number of supported values. Refer to the original document for details about the recommended uses (see references).
 
-| Scheme   | Max. colours |
-|:---------|-------------:|
-| bright   | 7            |
-| contrast | 3            |
-| vibrant  | 7            |
-| muted    | 9            |
-| pale     | 6            |
-| dark     | 6            |
-| light    | 9            |
+| Scheme            | Max. colours |
+|:------------------|-------------:|
+| `bright`          | 7            |
+| `high contrast`   | 3            |
+| `vibrant`         | 7            |
+| `muted`           | 9            |
+| `medium contrast` | 3            |
+| `pale`            | 6            |
+| `dark`            | 6            |
+| `light`           | 9            |
 
 ## *bright*
 ```{r tol_quali_bright, fig.height = 2, fig.width = 7}
@@ -63,10 +64,10 @@ bright <- colour("bright")
 plot_scheme(bright(7), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
-## *contrast*
-```{r tol_quali_contrast, fig.height = 2, fig.width = 7}
-contrast <- colour("contrast")
-plot_scheme(contrast(3), colours = TRUE, names = TRUE, size = 0.9)
+## *high contrast*
+```{r tol_quali_highcontrast, fig.height = 2, fig.width = 7}
+highcontrast <- colour("high contrast")
+plot_scheme(highcontrast(3), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
 ## *vibrant*
@@ -81,10 +82,10 @@ muted <- colour("muted")
 plot_scheme(muted(9), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
-## *light*
-```{r tol_quali_light, fig.height=2, fig.width=7}
-light <- colour("light")
-plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
+## *medium contrast*
+```{r tol_quali_mediumcontrast, fig.height = 2, fig.width = 7}
+mediumcontrast <- colour("medium contrast")
+plot_scheme(mediumcontrast(6), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
 ## *pale* and *dark*
@@ -96,14 +97,20 @@ dark <- colour("dark")
 plot_scheme(dark(6), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
+## *light*
+```{r tol_quali_light, fig.height=2, fig.width=7}
+light <- colour("light")
+plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
+```
+
 # Diverging data
 If more colours than defined are needed from a given scheme, the colour coordinates are linearly interpolated to provide a continuous version of the scheme.
 
-| Scheme | Num. of colours | Bad data |
-|:-------|----------------:|---------:|
-| sunset | 11              | #FFFFFF  |
-| BuRd   | 9               | #FFEE99  |
-| PRGn   | 9               | #FFEE99  |
+| Scheme   | Num. of colours | Bad data |
+|:---------|----------------:|---------:|
+| `sunset` | 11              | #FFFFFF  |
+| `BuRd`   | 9               | #FFEE99  |
+| `PRGn`   | 9               | #FFEE99  |
 
 ## *sunset*
 ```{r tol_div_sunset, fig.height=2, fig.width=7}
@@ -126,12 +133,12 @@ plot_scheme(PRGn(9), colours = TRUE, size = 0.9)
 # Sequential data
 If more colours than defined are needed from a given scheme, the colour coordinates are linearly interpolated to provide a continuous version of the scheme, with the exception of the *discrete rainbow* scheme (see below).
 
-| Scheme           | Num. of colours | Bad data |
-|:-----------------|----------------:|---------:|
-| YlOrBr           | 9               | #888888  |
-| iridescent       | 23              | #999999  |
-| discrete rainbow | 23              | #777777  |
-| smooth rainbow   | 34              | #666666  |
+| Scheme             | Num. of colours | Bad data |
+|:-------------------|----------------:|---------:|
+| `YlOrBr`           | 9               | #888888  |
+| `iridescent`       | 23              | #999999  |
+| `discrete rainbow` | 23              | #777777  |
+| `smooth rainbow`   | 34              | #666666  |
 
 ## *YlOrBr*
 ```{r tol_seq_YlOrBr, fig.height=2, fig.width=7}
@@ -146,7 +153,7 @@ plot_scheme(iridescent(23), colours = TRUE, size = 0.5)
 ```
 
 ## *rainbow*
-As a general rule, ordered data should not be represented using a rainbow scheme. There are three main arguments against such use [@tol2018]:
+As a general rule, ordered data should not be represented using a rainbow scheme. There are three main arguments against such use [@tol2021]:
 
 * The spectral order of visible light carries no inherent magnitude message.
 * Some bands of almost constant hue with sharp transitions between them, can be perceived as jumps in the data.
@@ -158,7 +165,7 @@ If such use cannot be avoided, Paul Tol's technical note provides two colour sch
 : This scheme must not be interpolated.
 
 *smooth rainbow*
-: This scheme does not have to be used over the full range [@tol2018 suggests starting at purple].
+: This scheme does not have to be used over the full range [@tol2021 suggests starting at purple].
 
 ```{r tol_seq_rainbow, fig.height=2, fig.width=7}
 discrete_rainbow <- colour("discrete rainbow")

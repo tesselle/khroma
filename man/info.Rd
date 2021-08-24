@@ -2,7 +2,7 @@
 % Please edit documentation in R/colour.R
 \name{info}
 \alias{info}
-\title{Informations}
+\title{Information}
 \usage{
 info()
 }
@@ -11,7 +11,7 @@ A \code{\link{data.frame}} with the following columns:
 \describe{
 \item{\code{palette}}{Names of palette.}
 \item{\code{type}}{Types of palettes: sequential, diverging or qualitative.}
-\item{\code{max}}{Maximum number of colors that are contained in each
+\item{\code{max}}{Maximum number of colours that are contained in each
 palette. Only relevant for qualitative palettes.}
 \item{\code{missing}}{The hexadecimal color value for mapping missing values.}
 }

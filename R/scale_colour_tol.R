@@ -3,33 +3,34 @@
 NULL
 
 # Discrete =====================================================================
-#' Paul Tol's Discrete Color Schemes for \pkg{ggplot2}
+#' Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}
 #'
-#' Provides qualitative color scales from Paul Tol's *Colour Schemes*.
+#' Provides qualitative colour scales from Paul Tol's *Colour Schemes*.
 #' @param ... Arguments passed to [ggplot2::discrete_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
-#'  The qualitative color schemes are used as given (no interpolation):
+#'  The qualitative colour schemes are used as given (no interpolation):
 #'  colors are picked up to the maximum number of supported values.
 #'
 #'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
 #'   `bright` \tab 7 \cr
-#'   `contrast` \tab 3 \cr
+#'   `high contrast` \tab 3 \cr
 #'   `vibrant` \tab 7 \cr
 #'   `muted` \tab 9 \cr
+#'   `medium contrast` \tab 6 \cr
 #'   `pale` \tab 6 \cr
 #'   `dark` \tab 6 \cr
 #'   `light` \tab 9 \cr
 #'  }
-#' @inheritSection colour Qualitative color schemes
+#' @inheritSection colour Qualitative colour schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
-#'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002, issue 3.1.
+#'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.2.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
@@ -61,7 +62,8 @@ scale_fill_bright <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @export
 #' @rdname scale_tol_discrete
 scale_colour_contrast <- function(..., reverse = FALSE, aesthetics = "colour") {
-  scale_discrete(aesthetics, "contrast", reverse, ...)
+  .Deprecated("scale_colour_highcontrast()")
+  scale_discrete(aesthetics, "high contrast", reverse, ...)
 }
 
 #' @export
@@ -71,7 +73,26 @@ scale_color_contrast <- scale_colour_contrast
 #' @export
 #' @rdname scale_tol_discrete
 scale_fill_contrast <- function(..., reverse = FALSE, aesthetics = "fill") {
-  scale_discrete(aesthetics, "contrast", reverse, ...)
+  .Deprecated("scale_colour_highcontrast()")
+  scale_discrete(aesthetics, "high contrast", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_colour_highcontrast <- function(..., reverse = FALSE,
+                                      aesthetics = "colour") {
+  scale_discrete(aesthetics, "high contrast", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_color_highcontrast <- scale_colour_highcontrast
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_fill_highcontrast <- function(..., reverse = FALSE,
+                                    aesthetics = "fill") {
+  scale_discrete(aesthetics, "high contrast", reverse, ...)
 }
 
 ## Vibrant ---------------------------------------------------------------------
@@ -106,6 +127,25 @@ scale_color_muted <- scale_colour_muted
 #' @rdname scale_tol_discrete
 scale_fill_muted <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale_discrete(aesthetics, "muted", reverse, ...)
+}
+
+## Medium contrast -------------------------------------------------------------
+#' @export
+#' @rdname scale_tol_discrete
+scale_colour_mediumcontrast <- function(..., reverse = FALSE,
+                                        aesthetics = "colour") {
+  scale_discrete(aesthetics, "medium contrast", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_color_mediumcontrast <- scale_colour_mediumcontrast
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_fill_mediumcontrast <- function(..., reverse = FALSE,
+                                      aesthetics = "fill") {
+  scale_discrete(aesthetics, "medium contrast", reverse, ...)
 }
 
 ## Pale ------------------------------------------------------------------------
@@ -167,19 +207,19 @@ scale_fill_light <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param midpoint A length-one [`numeric`] vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the color scheme be
+#' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale? If `TRUE`, it is a departure from Paul Tol's
-#'  recommendations and likely a very poor use of color.
+#'  recommendations and likely a very poor use of colour.
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colors than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
 #'  \tabular{lll}{
@@ -290,25 +330,25 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Sequential ===================================================================
-#' Paul Tol's Sequential Color Schemes for \pkg{ggplot2}
+#' Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}
 #'
-#' Provides sequential color scales from Paul Tol's *Colour Schemes*.
+#' Provides sequential colour scales from Paul Tol's *Colour Schemes*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's color domain to keep.
+#' fraction of the scheme's colour domain to keep.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the color scheme be
+#' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale? If `TRUE`, it is a departure from Paul Tol's
-#'  recommendations and likely a very poor use of color.
+#'  recommendations and likely a very poor use of colour.
 #' @details
-#'  If more colors than defined are needed from a given scheme, the color
+#'  If more colors than defined are needed from a given scheme, the colour
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme, with the exception of the `discrete rainbow` scheme (see below).
 #'
-#'  Note that the default color for `NA` can be overridden by passing
+#'  Note that the default colour for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #'
 #'  \tabular{lll}{
@@ -318,7 +358,7 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #'   `discrete rainbow` \tab 23 \tab #777777 \cr
 #'   `smooth rainbow` \tab 34 \tab #666666 \cr
 #'  }
-#' @inheritSection colour Rainbow color scheme
+#' @inheritSection colour Rainbow colour scheme
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.

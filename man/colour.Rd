@@ -13,17 +13,17 @@ color(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 \item{palette}{A \code{\link{character}} string giving the name of the palette to be
 used (see below).}
 
-\item{reverse}{A \code{\link{logical}} scalar: should the resulting vector of colors
+\item{reverse}{A \code{\link{logical}} scalar: should the resulting vector of colours
 should be reversed?}
 
-\item{names}{A \code{\link{logical}} scalar: should the names of the colors should be
+\item{names}{A \code{\link{logical}} scalar: should the names of the colours should be
 kept in the resulting vector?}
 
-\item{lang}{A \code{\link{character}} string specifying the language for the color
-names. It must be one of "\code{en}" (english, the default) or "\code{fr}" (french).}
+\item{lang}{A \code{\link{character}} string specifying the language for the colour
+names. It must be one of "\code{en}" (English, the default) or "\code{fr}" (French).}
 
-\item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the color scheme to be
-interpolated. It should not be used routinely with qualitative color
+\item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the colour scheme to be
+interpolated. It should not be used routinely with qualitative colour
 schemes, as they are designed to be used as is to remain colorblind-safe.}
 
 \item{...}{Further arguments passed to
@@ -52,39 +52,39 @@ to remove a fraction of the colour domain (before being interpolated; see
 examples).
 }
 \description{
-Provides qualitative, diverging and sequential color schemes.
+Provides qualitative, diverging and sequential colour schemes.
 }
-\section{Paul Tol's Color Schemes}{
+\section{Paul Tol's Colour Schemes}{
 
 The following palettes are available. The maximum number of supported
-colors is in brackets, this value is only relevant for the qualitative
-color schemes (divergent and sequential schemes are linearly interpolated).
+colours is in brackets, this value is only relevant for the qualitative
+colour schemes (divergent and sequential schemes are linearly interpolated).
 \describe{
-\item{Qualitative data}{bright (7), contrast (3), vibrant (7), muted (9),
-pale (6), dark (6), light (9).}
-\item{Diverging data}{sunset (11), BuRd (9), PRGn (9).}
-\item{Sequential data}{YlOrBr (9), iridescent (23), discrete rainbow (23),
-smooth rainbow (34).}
+\item{Qualitative data}{\code{bright} (7), \verb{high contrast} (3), \code{vibrant} (7),
+\code{muted} (9), \verb{medium contrast} (6), \code{pale} (6), \code{dark} (6), \code{light} (9).}
+\item{Diverging data}{\code{sunset} (11), \code{BuRd} (9), \code{PRGn} (9).}
+\item{Sequential data}{\code{YlOrBr} (9), \code{iridescent} (23), \verb{discrete rainbow}
+(23), \verb{smooth rainbow} (34).}
 }
 }
 
-\section{Qualitative color schemes}{
+\section{Qualitative colour schemes}{
 
-According to Paul Tol's technical note, the \code{bright}, \code{contrast},
-\code{vibrant} and \code{muted} color schemes are colorblind safe.
+According to Paul Tol's technical note, the \code{bright}, \verb{high contrast},
+\code{vibrant} and \code{muted} colour schemes are colourblind safe. The \verb{medium contrast} colour scheme is designed for situations needing colour pairs.
 
-The \code{light} color scheme is reasonably distinct for both normal or
-colorblind vision and is intended to fill labeled cells.
+The \code{light} colour scheme is reasonably distinct for both normal or
+colourblind vision and is intended to fill labeled cells.
 
 The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colorblind vision and should be used as a text background or to highlight
+colourblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
 references).
 }
 
-\section{Rainbow color scheme}{
+\section{Rainbow colour scheme}{
 
 As a general rule, ordered data should not be represented using a rainbow
 scheme. There are three main arguments against such use (Tol 2018):
@@ -101,8 +101,8 @@ schemes that are reasonably clear in colour-blind vision. To remain
 colour-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
-\item{discrete rainbow}{This scheme must not be interpolated.}
-\item{smooth rainbow}{This scheme does not have to be used over the full
+\item{\verb{discrete rainbow}}{This scheme must not be interpolated.}
+\item{\verb{smooth rainbow}}{This scheme does not have to be used over the full
 range.}
 }
 }
@@ -111,7 +111,7 @@ range.}
 
 The following (qualitative) colour scheme is available:
 \describe{
-\item{okabe ito}{Up to 8 colours.}
+\item{\verb{okabe ito}}{Up to 8 colours.}
 }
 }
 
@@ -119,9 +119,10 @@ The following (qualitative) colour scheme is available:
 
 The following (qualitative) color schemes are available:
 \describe{
-\item{stratigraphy}{International Chronostratigraphic Chart (175 colours).}
-\item{land}{AVHRR Global Land Cover Classification (14 colours).}
-\item{soil}{FAO Reference Soil Groups (24 colours).}
+\item{\code{stratigraphy}}{International Chronostratigraphic Chart (175
+colours).}
+\item{\code{land}}{AVHRR Global Land Cover Classification (14 colours).}
+\item{\code{soil}}{FAO Reference Soil Groups (24 colours).}
 }
 }
 
@@ -133,11 +134,12 @@ plot_scheme(colour("okabe ito")(8))
 ## Paul Tol's colour schemes
 ### Qualitative data
 plot_scheme(colour("bright")(7))
-plot_scheme(colour("contrast")(3))
+plot_scheme(colour("high contrast")(3))
 plot_scheme(colour("vibrant")(7))
+plot_scheme(colour("muted")(9))
+plot_scheme(colour("medium contrast")(6))
 plot_scheme(colour("pale")(6))
 plot_scheme(colour("dark")(6))
-plot_scheme(colour("muted")(9))
 plot_scheme(colour("light")(9))
 ### Diverging data
 plot_scheme(colour("sunset")(11))
@@ -171,8 +173,8 @@ Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
 Figures and Presentations That Are Friendly to Colorblind People}.
 URL: \url{https://jfly.uni-koeln.de/color/}.
 
-Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-SRON/EPS/TN/09-002, issue 3.1.
+Tol, P. (2021). \emph{Colour Schemes}. SRON. Technical Note No.
+SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 
 \href{https://www.ccgm.org}{Commission for the Geological Map of the World}

@@ -282,15 +282,15 @@ scale_fill_vanimo(
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colors be reversed?}
+vector of colours be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's color domain to keep.}
+fraction of the scheme's colour domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
 used as a discrete scale?}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
@@ -303,10 +303,10 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 Provides diverging colour scales from Fabio Crameri's \emph{Scientific colour}.
 }
 \details{
-If more colors than defined are needed from a given scheme, the color
+If more colours than defined are needed from a given scheme, the colour
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
-Note that the default color for \code{NA} can be overridden by passing
+Note that the default colour for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 
 Available schemes:

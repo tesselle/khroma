@@ -19,24 +19,27 @@ test_that("Bright", {
   )
 })
 
-test_that("Contrast", {
+test_that("High-contrast", {
   skip_if_not_installed("ggplot2")
-  expect_s3_class(scale_colour_contrast(), "ggproto")
-  expect_s3_class(scale_colour_contrast(), "ScaleDiscrete")
+  expect_s3_class(scale_colour_highcontrast(), "ggproto")
+  expect_s3_class(scale_colour_highcontrast(), "ScaleDiscrete")
   expect_equal(
-    scale_colour_contrast()$palette(3),
-    colour("contrast", names = FALSE)(3)
+    scale_colour_highcontrast()$palette(3),
+    colour("high contrast", names = FALSE)(3)
   )
 
-  expect_s3_class(scale_color_contrast(), "ggproto")
-  expect_s3_class(scale_color_contrast(), "ScaleDiscrete")
+  expect_s3_class(scale_color_highcontrast(), "ggproto")
+  expect_s3_class(scale_color_highcontrast(), "ScaleDiscrete")
 
-  expect_s3_class(scale_fill_contrast(), "ggproto")
-  expect_s3_class(scale_fill_contrast(), "ScaleDiscrete")
+  expect_s3_class(scale_fill_highcontrast(), "ggproto")
+  expect_s3_class(scale_fill_highcontrast(), "ScaleDiscrete")
   expect_equal(
-    scale_fill_contrast()$palette(3),
-    colour("contrast", names = FALSE)(3)
+    scale_fill_highcontrast()$palette(3),
+    colour("high contrast", names = FALSE)(3)
   )
+
+  ## TEMP
+  expect_warning(colour("contrast"), "deprecated")
 })
 
 test_that("Vibrant", {
@@ -84,6 +87,26 @@ test_that("Muted", {
   expect_equal(
     scale_fill_muted()$palette(9),
     colour("muted", names = FALSE)(9)
+  )
+})
+
+test_that("Medium-contrast", {
+  skip_if_not_installed("ggplot2")
+  expect_s3_class(scale_colour_mediumcontrast(), "ggproto")
+  expect_s3_class(scale_colour_mediumcontrast(), "ScaleDiscrete")
+  expect_equal(
+    scale_colour_mediumcontrast()$palette(3),
+    colour("medium contrast", names = FALSE)(3)
+  )
+
+  expect_s3_class(scale_color_mediumcontrast(), "ggproto")
+  expect_s3_class(scale_color_mediumcontrast(), "ScaleDiscrete")
+
+  expect_s3_class(scale_fill_mediumcontrast(), "ggproto")
+  expect_s3_class(scale_fill_mediumcontrast(), "ScaleDiscrete")
+  expect_equal(
+    scale_fill_mediumcontrast()$palette(3),
+    colour("medium contrast", names = FALSE)(3)
   )
 })
 

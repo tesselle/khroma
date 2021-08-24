@@ -40,21 +40,22 @@
       34            romaO  sequential 256    <NA>
       35             bamO  sequential 256    <NA>
       36           bright qualitative   7    <NA>
-      37         contrast qualitative   3    <NA>
+      37    high contrast qualitative   3    <NA>
       38          vibrant qualitative   7    <NA>
       39            muted qualitative   9 #DDDDDD
-      40             pale qualitative   6    <NA>
-      41             dark qualitative   6    <NA>
-      42            light qualitative   9    <NA>
-      43           sunset   diverging  11 #FFFFFF
-      44             BuRd   diverging   9 #FFEE99
-      45             PRGn   diverging   9 #FFEE99
-      46           YlOrBr  sequential   9 #888888
-      47       iridescent  sequential  23 #999999
-      48 discrete rainbow  sequential  23 #777777
-      49   smooth rainbow  sequential  34 #666666
-      50        okabe ito qualitative   8    <NA>
-      51     stratigraphy qualitative 175    <NA>
-      52             soil qualitative  24    <NA>
-      53             land qualitative  14    <NA>
+      40  medium contrast qualitative   6    <NA>
+      41             pale qualitative   6    <NA>
+      42             dark qualitative   6    <NA>
+      43            light qualitative   9    <NA>
+      44           sunset   diverging  11 #FFFFFF
+      45             BuRd   diverging   9 #FFEE99
+      46             PRGn   diverging   9 #FFEE99
+      47           YlOrBr  sequential   9 #888888
+      48       iridescent  sequential  23 #999999
+      49 discrete rainbow  sequential  23 #777777
+      50   smooth rainbow  sequential  34 #666666
+      51        okabe ito qualitative   8    <NA>
+      52     stratigraphy qualitative 175    <NA>
+      53             soil qualitative  24    <NA>
+      54             land qualitative  14    <NA>
 

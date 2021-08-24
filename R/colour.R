@@ -1,44 +1,45 @@
 #' Color Palette
 #'
-#' Provides qualitative, diverging and sequential color schemes.
+#' Provides qualitative, diverging and sequential colour schemes.
 #' @param palette A [`character`] string giving the name of the palette to be
 #'  used (see below).
-#' @param reverse A [`logical`] scalar: should the resulting vector of colors
+#' @param reverse A [`logical`] scalar: should the resulting vector of colours
 #'  should be reversed?
-#' @param names A [`logical`] scalar: should the names of the colors should be
+#' @param names A [`logical`] scalar: should the names of the colours should be
 #'  kept in the resulting vector?
-#' @param lang A [`character`] string specifying the language for the color
-#'  names. It must be one of "`en`" (english, the default) or "`fr`" (french).
-#' @param force A [`logical`] scalar. If `TRUE`, forces the color scheme to be
-#'  interpolated. It should not be used routinely with qualitative color
+#' @param lang A [`character`] string specifying the language for the colour
+#'  names. It must be one of "`en`" (English, the default) or "`fr`" (French).
+#' @param force A [`logical`] scalar. If `TRUE`, forces the colour scheme to be
+#'  interpolated. It should not be used routinely with qualitative colour
 #'  schemes, as they are designed to be used as is to remain colorblind-safe.
 #' @param ... Further arguments passed to
 #'  [colorRampPalette][grDevices::colorRamp].
-#' @section Paul Tol's Color Schemes:
+#' @section Paul Tol's Colour Schemes:
 #'  The following palettes are available. The maximum number of supported
-#'  colors is in brackets, this value is only relevant for the qualitative
-#'  color schemes (divergent and sequential schemes are linearly interpolated).
+#'  colours is in brackets, this value is only relevant for the qualitative
+#'  colour schemes (divergent and sequential schemes are linearly interpolated).
 #'  \describe{
-#'   \item{Qualitative data}{bright (7), contrast (3), vibrant (7), muted (9),
-#'   pale (6), dark (6), light (9).}
-#'   \item{Diverging data}{sunset (11), BuRd (9), PRGn (9).}
-#'   \item{Sequential data}{YlOrBr (9), iridescent (23), discrete rainbow (23),
-#'   smooth rainbow (34).}
+#'   \item{Qualitative data}{`bright` (7), `high contrast` (3), `vibrant` (7),
+#'   `muted` (9), `medium contrast` (6), `pale` (6), `dark` (6), `light` (9).}
+#'   \item{Diverging data}{`sunset` (11), `BuRd` (9), `PRGn` (9).}
+#'   \item{Sequential data}{`YlOrBr` (9), `iridescent` (23), `discrete rainbow`
+#'   (23), `smooth rainbow` (34).}
 #'  }
-#' @section Qualitative color schemes:
-#'  According to Paul Tol's technical note, the `bright`, `contrast`,
-#'  `vibrant` and `muted` color schemes are colorblind safe.
+#' @section Qualitative colour schemes:
+#'  According to Paul Tol's technical note, the `bright`, `high contrast`,
+#'  `vibrant` and `muted` colour schemes are colourblind safe. The `medium
+#'  contrast` colour scheme is designed for situations needing colour pairs.
 #'
-#'  The `light` color scheme is reasonably distinct for both normal or
-#'  colorblind vision and is intended to fill labeled cells.
+#'  The `light` colour scheme is reasonably distinct for both normal or
+#'  colourblind vision and is intended to fill labeled cells.
 #'
 #'  The `pale` and `dark` schemes are not very distinct in either normal or
-#'  colorblind vision and should be used as a text background or to highlight
+#'  colourblind vision and should be used as a text background or to highlight
 #'  a cell in a table.
 #'
 #'  Refer to the original document for details about the recommended uses (see
 #'  references).
-#' @section Rainbow color scheme:
+#' @section Rainbow colour scheme:
 #'  As a general rule, ordered data should not be represented using a rainbow
 #'  scheme. There are three main arguments against such use (Tol 2018):
 #'  \itemize{
@@ -54,21 +55,22 @@
 #'  colour-blind safe, these two schemes must comply with the following
 #'  conditions:
 #'  \describe{
-#'   \item{discrete rainbow}{This scheme must not be interpolated.}
-#'   \item{smooth rainbow}{This scheme does not have to be used over the full
+#'   \item{`discrete rainbow`}{This scheme must not be interpolated.}
+#'   \item{`smooth rainbow`}{This scheme does not have to be used over the full
 #'   range.}
 #'  }
 #' @section Okabe and Ito Colour Scheme:
 #'  The following (qualitative) colour scheme is available:
 #'  \describe{
-#'   \item{okabe ito}{Up to 8 colours.}
+#'   \item{`okabe ito`}{Up to 8 colours.}
 #'  }
 #' @section Scientific Colour Schemes:
 #'  The following (qualitative) color schemes are available:
 #'  \describe{
-#'   \item{stratigraphy}{International Chronostratigraphic Chart (175 colours).}
-#'   \item{land}{AVHRR Global Land Cover Classification (14 colours).}
-#'   \item{soil}{FAO Reference Soil Groups (24 colours).}
+#'   \item{`stratigraphy`}{International Chronostratigraphic Chart (175
+#'   colours).}
+#'   \item{`land`}{AVHRR Global Land Cover Classification (14 colours).}
+#'   \item{`soil`}{FAO Reference Soil Groups (24 colours).}
 #'  }
 #' @return A palette function with the following attributes, that when called
 #'  with a single integer argument (the number of levels) returns a (named)
@@ -99,8 +101,8 @@
 #'  Figures and Presentations That Are Friendly to Colorblind People*.
 #'  URL: \url{https://jfly.uni-koeln.de/color/}.
 #'
-#'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002, issue 3.1.
+#'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
+#'  SRON/EPS/TN/09-002, issue 3.2.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #'
 #'  \href{https://www.ccgm.org}{Commission for the Geological Map of the World}
@@ -111,6 +113,16 @@
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
                    force = FALSE, ...) {
+
+  ## Deprecate contrast colour scheme (P. Tol)
+  ## Temporary: must be removed in khroma > 1.7
+  if (palette == "contrast") {
+    palette <- "high contrast"
+    warning("The `contrast` colour scheme is deprecated.\n",
+            "Use `colour('high contrast')` instead.",
+            call. = FALSE)
+  }
+
   # Validation
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
@@ -215,7 +227,7 @@ print.colour_scheme <- function(x, ...) {
   }
 }
 
-#' Informations
+#' Information
 #'
 #' Returns information about the available palettes.
 #' @return
@@ -223,7 +235,7 @@ print.colour_scheme <- function(x, ...) {
 #'  \describe{
 #'   \item{`palette`}{Names of palette.}
 #'   \item{`type`}{Types of palettes: sequential, diverging or qualitative.}
-#'   \item{`max`}{Maximum number of colors that are contained in each
+#'   \item{`max`}{Maximum number of colours that are contained in each
 #'   palette. Only relevant for qualitative palettes.}
 #'   \item{`missing`}{The hexadecimal color value for mapping missing values.}
 #'  }

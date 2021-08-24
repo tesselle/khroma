@@ -14,7 +14,7 @@
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
-\title{Paul Tol's Sequential Color Schemes for \pkg{ggplot2}}
+\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_YlOrBr(
   ...,
@@ -101,11 +101,11 @@ scale_fill_smoothrainbow(
 vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's color domain to keep.}
+fraction of the scheme's colour domain to keep.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
 used as a discrete scale? If \code{TRUE}, it is a departure from Paul Tol's
-recommendations and likely a very poor use of color.}
+recommendations and likely a very poor use of colour.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -114,14 +114,14 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Provides sequential color scales from Paul Tol's \emph{Colour Schemes}.
+Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-If more colors than defined are needed from a given scheme, the color
+If more colors than defined are needed from a given scheme, the colour
 coordinates are linearly interpolated to provide a continuous version of the
 scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
 
-Note that the default color for \code{NA} can be overridden by passing
+Note that the default colour for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 
 \tabular{lll}{
@@ -132,7 +132,7 @@ a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 \verb{smooth rainbow} \tab 34 \tab #666666 \cr
 }
 }
-\section{Rainbow color scheme}{
+\section{Rainbow colour scheme}{
 
 As a general rule, ordered data should not be represented using a rainbow
 scheme. There are three main arguments against such use (Tol 2018):
@@ -149,8 +149,8 @@ schemes that are reasonably clear in colour-blind vision. To remain
 colour-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
-\item{discrete rainbow}{This scheme must not be interpolated.}
-\item{smooth rainbow}{This scheme does not have to be used over the full
+\item{\verb{discrete rainbow}}{This scheme must not be interpolated.}
+\item{\verb{smooth rainbow}}{This scheme does not have to be used over the full
 range.}
 }
 }

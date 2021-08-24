@@ -8,12 +8,18 @@
 \alias{scale_colour_contrast}
 \alias{scale_color_contrast}
 \alias{scale_fill_contrast}
+\alias{scale_colour_highcontrast}
+\alias{scale_color_highcontrast}
+\alias{scale_fill_highcontrast}
 \alias{scale_colour_vibrant}
 \alias{scale_color_vibrant}
 \alias{scale_fill_vibrant}
 \alias{scale_colour_muted}
 \alias{scale_color_muted}
 \alias{scale_fill_muted}
+\alias{scale_colour_mediumcontrast}
+\alias{scale_color_mediumcontrast}
+\alias{scale_fill_mediumcontrast}
 \alias{scale_colour_pale}
 \alias{scale_color_pale}
 \alias{scale_fill_pale}
@@ -23,7 +29,7 @@
 \alias{scale_colour_light}
 \alias{scale_color_light}
 \alias{scale_fill_light}
-\title{Paul Tol's Discrete Color Schemes for \pkg{ggplot2}}
+\title{Paul Tol's Discrete Colour Schemes for \pkg{ggplot2}}
 \usage{
 scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 
@@ -37,6 +43,12 @@ scale_color_contrast(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_contrast(..., reverse = FALSE, aesthetics = "fill")
 
+scale_colour_highcontrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_highcontrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_highcontrast(..., reverse = FALSE, aesthetics = "fill")
+
 scale_colour_vibrant(..., reverse = FALSE, aesthetics = "colour")
 
 scale_color_vibrant(..., reverse = FALSE, aesthetics = "colour")
@@ -48,6 +60,12 @@ scale_colour_muted(..., reverse = FALSE, aesthetics = "colour")
 scale_color_muted(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_muted(..., reverse = FALSE, aesthetics = "fill")
+
+scale_colour_mediumcontrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_color_mediumcontrast(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_mediumcontrast(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_pale(..., reverse = FALSE, aesthetics = "colour")
 
@@ -80,33 +98,34 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides qualitative color scales from Paul Tol's \emph{Colour Schemes}.
+Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-The qualitative color schemes are used as given (no interpolation):
+The qualitative colour schemes are used as given (no interpolation):
 colors are picked up to the maximum number of supported values.
 
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
 \code{bright} \tab 7 \cr
-\code{contrast} \tab 3 \cr
+\verb{high contrast} \tab 3 \cr
 \code{vibrant} \tab 7 \cr
 \code{muted} \tab 9 \cr
+\verb{medium contrast} \tab 6 \cr
 \code{pale} \tab 6 \cr
 \code{dark} \tab 6 \cr
 \code{light} \tab 9 \cr
 }
 }
-\section{Qualitative color schemes}{
+\section{Qualitative colour schemes}{
 
-According to Paul Tol's technical note, the \code{bright}, \code{contrast},
-\code{vibrant} and \code{muted} color schemes are colorblind safe.
+According to Paul Tol's technical note, the \code{bright}, \verb{high contrast},
+\code{vibrant} and \code{muted} colour schemes are colourblind safe. The \verb{medium contrast} colour scheme is designed for situations needing colour pairs.
 
-The \code{light} color scheme is reasonably distinct for both normal or
-colorblind vision and is intended to fill labeled cells.
+The \code{light} colour scheme is reasonably distinct for both normal or
+colourblind vision and is intended to fill labeled cells.
 
 The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colorblind vision and should be used as a text background or to highlight
+colourblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
@@ -141,8 +160,8 @@ ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
   scale_fill_light()
 }
 \references{
-Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
-SRON/EPS/TN/09-002, issue 3.1.
+Tol, P. (2021). \emph{Colour Schemes}. SRON. Technical Note No.
+SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
