@@ -1,15 +1,10 @@
 url: https://packages.tesselle.org/khroma
-development:
-  mode: auto
 
 template:
-  package: preferably
-  params:
-    footer: khroma is a part of the <strong>tesselle</strong> project, a collection of packages for research and teaching in archaeology. Learn more at <a href="https://www.tesselle.org/?mtm_campaign=pkgdown&mtm_kwd=khroma">tesselle.org</a>.
+  package: tekton
   opengraph:
     twitter:
       creator: "@nfrerebeau"
-      card: summary
 
 reference:
 - title: Colour Palette
