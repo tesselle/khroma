@@ -85,34 +85,21 @@ info()
 
 `colour()` returns a palette function that when called with a single integer argument returns a vector of colours.
 
+If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console. You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
+
 ```{r usage}
-# Paul Tol's bright colour scheme
+## Paul Tol's bright colour scheme
 bright <- colour("bright")
-```
-
-If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console.
-
-```{r crayon, echo=FALSE, eval=FALSE}
-options(crayon.enabled = TRUE)
-bright(7)
-```
-
-![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
-
-You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
-
-```{r no-crayon}
-options(crayon.enabled = FALSE)
 bright(7)
 ```
 
 ```{r show, fig.height=2, fig.width=7, fig.align='center'}
-# Show the colour palette
+## Show the colour palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
 ```{r usage-ggplot2, fig.height=3.5, fig.width=5, fig.align='center'}
-# Use with ggplot2
+## Use with ggplot2
 data(mpg, package = "ggplot2")
 
 ggplot2::ggplot(data = mpg) +
@@ -125,7 +112,7 @@ ggplot2::ggplot(data = mpg) +
 #### Test how well the colours are identifiable
 
 ```{r usage-colourblind1, fig.height=2, fig.width=7, fig.align='center'}
-# Okabe & Ito's colour scheme
+## Okabe & Ito's colour scheme
 okabe <- colour("okabe ito")
 
 set.seed(12345)
@@ -142,7 +129,7 @@ round(DeltaE, 2)
 #### Simulate colour-blindness
 
 ```{r usage-colourblind2, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
-# convert() returns a modified palette function
+## convert() returns a modified palette function
 deuteranopia <- convert(okabe, mode = "deuteranopia")
 plot_scheme(deuteranopia(8), colours = TRUE)
 
@@ -159,8 +146,8 @@ plot_scheme(achromatopsia(8), colours = TRUE)
 ```{r usage-colourblind3, fig.height=4, fig.width=7, fig.align='center'}
 plot_scheme_colourblind(okabe(8))
 
-# ggplot2 default colour scheme
-# (equally spaced hues around the colour wheel)
+## ggplot2 default colour scheme
+## (equally spaced hues around the colour wheel)
 x <- scales::hue_pal()(8)
 plot_scheme_colourblind(x)
 ```

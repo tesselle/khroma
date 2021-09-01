@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 library(khroma)
 ```
 
-# Introduction
+## Introduction
 @crameri2018 offers carefully chosen schemes, ready for mapping data, with colours that are:
 
 * Perceptually uniform,
@@ -39,190 +39,190 @@ library(khroma)
 
 All the scales presented in @crameri2021 are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
 
-# Diverging data
+## Diverging data
 
-## *broc*
+### *broc*
 ```{r crameri_div_broc, fig.height=2, fig.width=7}
 broc <- colour("broc")
 plot(broc(256))
 ```
 
-## *cork*
+### *cork*
 ```{r crameri_div_cork, fig.height=2, fig.width=7}
 cork <- colour("cork")
 plot(cork(256))
 ```
 
-## *vik*
+### *vik*
 ```{r crameri_div_vik, fig.height=2, fig.width=7}
 vik <- colour("vik")
 plot(vik(256))
 ```
 
-## *lisbon*
+### *lisbon*
 ```{r crameri_div_lisbon, fig.height=2, fig.width=7}
 lisbon <- colour("lisbon")
 plot(lisbon(256))
 ```
 
-## *tofino*
+### *tofino*
 ```{r crameri_div_tofino, fig.height=2, fig.width=7}
 tofino <- colour("tofino")
 plot(tofino(256))
 ```
 
-## *berlin*
+### *berlin*
 ```{r crameri_div_berlin, fig.height=2, fig.width=7}
 berlin <- colour("berlin")
 plot(berlin(256))
 ```
 
-## *roma*
+### *roma*
 ```{r crameri_div_roma, fig.height=2, fig.width=7}
 roma <- colour("roma")
 plot(roma(256))
 ```
 
-## *bam*
+### *bam*
 ```{r crameri_div_bam, fig.height=2, fig.width=7}
 bam <- colour("bam")
 plot(bam(256))
 ```
 
-## *vanimo*
+### *vanimo*
 ```{r crameri_div_vanimo, fig.height=2, fig.width=7}
 vanimo <- colour("vanimo")
 plot(vanimo(256))
 ```
 
-# Sequential data
+## Sequential data
 
-## *batlow*
+### *batlow*
 ```{r crameri_seq_batlow, fig.height=2, fig.width=7}
 batlow <- colour("batlow")
 plot(batlow(256))
 ```
 
-## *batlowW*
+### *batlowW*
 ```{r crameri_seq_batlowW, fig.height=2, fig.width=7}
 batlowW <- colour("batlowW")
 plot(batlowW(256))
 ```
 
-## *batlowK*
+### *batlowK*
 ```{r crameri_seq_batlowK, fig.height=2, fig.width=7}
 batlowK <- colour("batlowK")
 plot(batlowK(256))
 ```
 
-## *devon*
+### *devon*
 ```{r crameri_seq_devon, fig.height=2, fig.width=7}
 devon <- colour("devon")
 plot(devon(256))
 ```
 
-## *lajolla*
+### *lajolla*
 ```{r crameri_seq_lajolla, fig.height=2, fig.width=7}
 lajolla <- colour("lajolla")
 plot(lajolla(256))
 ```
 
-## *bamako*
+### *bamako*
 ```{r crameri_seq_bamako, fig.height=2, fig.width=7}
 bamako <- colour("bamako")
 plot(bamako(256))
 ```
 
-## *davos*
+### *davos*
 ```{r crameri_seq_davos, fig.height=2, fig.width=7}
 davos <- colour("davos")
 plot(davos(256))
 ```
 
-## *bilbao*
+### *bilbao*
 ```{r crameri_seq_bilbao, fig.height=2, fig.width=7}
 bilbao <- colour("bilbao")
 plot(bilbao(256))
 ```
 
-## *nuuk*
+### *nuuk*
 ```{r crameri_seq_nuuk, fig.height=2, fig.width=7}
 nuuk <- colour("nuuk")
 plot(nuuk(256))
 ```
 
-## *oslo*
+### *oslo*
 ```{r crameri_seq_oslo, fig.height=2, fig.width=7}
 oslo <- colour("oslo")
 plot(oslo(256))
 ```
 
-## *grayC*
+### *grayC*
 ```{r crameri_seq_grayC, fig.height=2, fig.width=7}
 grayC <- colour("grayC")
 plot(grayC(256))
 ```
 
-## *hawaii*
+### *hawaii*
 ```{r crameri_seq_hawaii, fig.height=2, fig.width=7}
 hawaii <- colour("hawaii")
 plot(hawaii(256))
 ```
 
-## *lapaz*
+### *lapaz*
 ```{r crameri_seq_lapaz, fig.height=2, fig.width=7}
 lapaz <- colour("lapaz")
 plot(lapaz(256))
 ```
 
-## *tokyo*
+### *tokyo*
 ```{r crameri_seq_tokyo, fig.height=2, fig.width=7}
 tokyo <- colour("tokyo")
 plot(tokyo(256))
 ```
 
-## *buda*
+### *buda*
 ```{r crameri_seq_buda, fig.height=2, fig.width=7}
 buda <- colour("buda")
 plot(buda(256))
 ```
 
-## *acton*
+### *acton*
 ```{r crameri_seq_acton, fig.height=2, fig.width=7}
 acton <- colour("acton")
 plot(acton(256))
 ```
 
-## *turku*
+### *turku*
 ```{r crameri_seq_turku, fig.height=2, fig.width=7}
 turku <- colour("turku")
 plot(turku(256))
 ```
 
-## *imola*
+### *imola*
 ```{r crameri_seq_imola, fig.height=2, fig.width=7}
 imola <- colour("imola")
 plot(imola(256))
 ```
 
-# Multi-sequential data
+## Multi-sequential data
 
-## *oleron*
+### *oleron*
 ```{r crameri_seq_oleron, fig.height=2, fig.width=7}
 oleron <- colour("oleron")
 plot(oleron(256))
 ```
 
-## *bukavu*
+### *bukavu*
 ```{r crameri_seq_bukavu, fig.height=2, fig.width=7}
 bukavu <- colour("bukavu")
 plot(bukavu(256))
 ```
 
-## *fes*
+### *fes*
 ```{r crameri_seq_fes, fig.height=2, fig.width=7}
 fes <- colour("fes")
 plot(fes(256))
 ```
 
-# References
+## References

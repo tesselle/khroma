@@ -145,22 +145,14 @@ info()
 `colour()` returns a palette function that when called with a single
 integer argument returns a vector of colours.
 
-``` r
-# Paul Tol's bright colour scheme
-bright <- colour("bright")
-```
-
 If [**crayon**](https://github.com/r-lib/crayon) is installed on your
 machine and if the `crayon.enabled` option is set to `TRUE` with
-`options()`, colours will be nicely printed in the console.
-
-![](https://github.com/nfrerebeau/khroma/raw/master/man/figures/README-crayon.png)
-
-You can disable this feature by setting the `crayon.enabled` option to
-`FALSE`.
+`options()`, colours will be nicely printed in the console. You can
+disable this feature by setting the `crayon.enabled` option to `FALSE`.
 
 ``` r
-options(crayon.enabled = FALSE)
+## Paul Tol's bright colour scheme
+bright <- colour("bright")
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
@@ -169,14 +161,14 @@ bright(7)
 ```
 
 ``` r
-# Show the colour palette
+## Show the colour palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
 <img src="man/figures/README-show-1.png" style="display: block; margin: auto;" />
 
 ``` r
-# Use with ggplot2
+## Use with ggplot2
 data(mpg, package = "ggplot2")
 
 ggplot2::ggplot(data = mpg) +
@@ -192,7 +184,7 @@ ggplot2::ggplot(data = mpg) +
 #### Test how well the colours are identifiable
 
 ``` r
-# Okabe & Ito's colour scheme
+## Okabe & Ito's colour scheme
 okabe <- colour("okabe ito")
 
 set.seed(12345)
@@ -225,8 +217,8 @@ plot_scheme_colourblind(okabe(8))
 <img src="man/figures/README-usage-colourblind3-1.png" style="display: block; margin: auto;" />
 
 ``` r
-# ggplot2 default colour scheme
-# (equally spaced hues around the colour wheel)
+## ggplot2 default colour scheme
+## (equally spaced hues around the colour wheel)
 x <- scales::hue_pal()(8)
 plot_scheme_colourblind(x)
 ```

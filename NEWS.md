@@ -1,4 +1,4 @@
-# khroma 1.6.0.9000
+# khroma 1.7.0
 
 ## New functions
 * Add Paul Tol's high and medium contrast colour schemes: 
