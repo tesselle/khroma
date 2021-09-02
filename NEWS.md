@@ -1,8 +1,11 @@
+# khroma 1.7.0.9000
+
 # khroma 1.7.0
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5388239.svg)](https://doi.org/10.5281/zenodo.5388239)
+
 ## New functions
-* Add Paul Tol's high and medium contrast colour schemes: 
-  `scale_*_mediumcontrast` and `scale_*_highcontrast` (#9).
+* Add Paul Tol's high and medium contrast colour schemes: `scale_*_mediumcontrast` and `scale_*_highcontrast` (#9).
 
 ## Bugfixes & changes
 * Deprecate `scale_*_contrast`.
