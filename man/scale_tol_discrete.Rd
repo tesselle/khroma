@@ -5,9 +5,6 @@
 \alias{scale_colour_bright}
 \alias{scale_color_bright}
 \alias{scale_fill_bright}
-\alias{scale_colour_contrast}
-\alias{scale_color_contrast}
-\alias{scale_fill_contrast}
 \alias{scale_colour_highcontrast}
 \alias{scale_color_highcontrast}
 \alias{scale_fill_highcontrast}
@@ -36,12 +33,6 @@ scale_colour_bright(..., reverse = FALSE, aesthetics = "colour")
 scale_color_bright(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_bright(..., reverse = FALSE, aesthetics = "fill")
-
-scale_colour_contrast(..., reverse = FALSE, aesthetics = "colour")
-
-scale_color_contrast(..., reverse = FALSE, aesthetics = "colour")
-
-scale_fill_contrast(..., reverse = FALSE, aesthetics = "fill")
 
 scale_colour_highcontrast(..., reverse = FALSE, aesthetics = "colour")
 

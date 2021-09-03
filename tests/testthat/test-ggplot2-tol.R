@@ -37,9 +37,6 @@ test_that("High-contrast", {
     scale_fill_highcontrast()$palette(3),
     colour("high contrast", names = FALSE)(3)
   )
-
-  ## TEMP
-  expect_warning(colour("contrast"), "deprecated")
 })
 
 test_that("Vibrant", {

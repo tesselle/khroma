@@ -61,24 +61,6 @@ scale_fill_bright <- function(..., reverse = FALSE, aesthetics = "fill") {
 ## High contrast ---------------------------------------------------------------
 #' @export
 #' @rdname scale_tol_discrete
-scale_colour_contrast <- function(..., reverse = FALSE, aesthetics = "colour") {
-  .Deprecated("scale_colour_highcontrast()")
-  scale_discrete(aesthetics, "high contrast", reverse, ...)
-}
-
-#' @export
-#' @rdname scale_tol_discrete
-scale_color_contrast <- scale_colour_contrast
-
-#' @export
-#' @rdname scale_tol_discrete
-scale_fill_contrast <- function(..., reverse = FALSE, aesthetics = "fill") {
-  .Deprecated("scale_colour_highcontrast()")
-  scale_discrete(aesthetics, "high contrast", reverse, ...)
-}
-
-#' @export
-#' @rdname scale_tol_discrete
 scale_colour_highcontrast <- function(..., reverse = FALSE,
                                       aesthetics = "colour") {
   scale_discrete(aesthetics, "high contrast", reverse, ...)

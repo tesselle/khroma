@@ -113,16 +113,6 @@
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
                    force = FALSE, ...) {
-
-  ## Deprecate contrast colour scheme (P. Tol)
-  ## Temporary: must be removed in khroma > 1.7
-  if (palette == "contrast") {
-    palette <- "high contrast"
-    warning("The `contrast` colour scheme is deprecated.\n",
-            "Use `colour('high contrast')` instead.",
-            call. = FALSE)
-  }
-
   # Validation
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
