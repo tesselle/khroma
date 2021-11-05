@@ -216,7 +216,7 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/master/README.md",
-  "fileSize": "1228.578KB",
+  "fileSize": "1226.255KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
@@ -239,8 +239,11 @@
         }
       ],
       "name": "khroma: Colour Schemes for Scientific Data Visualization",
-      "url": "https://doi.org/10.5281/zenodo.1472077",
-      "description": "R package version 1.7.0"
+      "identifier": "10.5281/zenodo.1472077",
+      "url": "https://packages.tesselle.org/khroma",
+      "description": "R package version 1.7.0",
+      "@id": "https://doi.org/10.5281/zenodo.1472077",
+      "sameAs": "https://doi.org/10.5281/zenodo.1472077"
     }
   ],
   "releaseNotes": "https://github.com/tesselle/khroma/blob/master/NEWS.md"

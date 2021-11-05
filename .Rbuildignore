@@ -1,13 +1,9 @@
 ^codecov\.yml$
-^appveyor\.yml$
-^\.travis\.yml$
-^\.zenodo\.json$
 ^codemeta\.json$
 ^\_pkgdown\.yml$
 ^cran-comments\.md$
 ^CRAN-RELEASE$
 ^LICENSE\.md$
-^NEWS\.Rmd$
 ^README\.Rmd$
 ^data-raw$
 ^pkgdown$
@@ -18,3 +14,4 @@
 ^\.github$
 ^\.httr-oauth$
 ^revdep$
+^CITATION\.cff$
