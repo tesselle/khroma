@@ -1,4 +1,6 @@
 # khroma 1.7.0.9000
+## New functions
+* Add `plot_tiles()` to produces a diagnostic map for a given colour scheme.
 
 # khroma 1.7.0
 ## New functions
@@ -59,8 +61,8 @@
 # khroma 1.2.0
 ## New functions
 * Add the `convert()` function to simulate colour-blind vision.
-* Add the `plot_scheme()` function shows colours in a plot.
-* Add the `plot_map()` function produces a diagnostic map for a given colour scheme.
+* Add the `plot_scheme()` function to shows colours in a plot.
+* Add the `plot_map()` function to produces a diagnostic map for a given colour scheme.
 
 ## Bugfixes & changes
 * Fix the argument (number of levels) of the palette function returned by `colour()`.

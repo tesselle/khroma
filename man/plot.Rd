@@ -5,6 +5,7 @@
 \alias{plot.colour_scheme}
 \alias{plot_scheme}
 \alias{plot_map}
+\alias{plot_tiles}
 \alias{plot_scheme_colourblind}
 \alias{plot_scheme_colorblind}
 \title{Plot Color Scheme}
@@ -15,6 +16,8 @@ plot_scheme(x, colours = FALSE, names = FALSE, size = 1)
 
 plot_map(x)
 
+plot_tiles(x, n = 512)
+
 plot_scheme_colourblind(x)
 
 plot_scheme_colorblind(x)
@@ -24,21 +27,25 @@ plot_scheme_colorblind(x)
 
 \item{...}{Currently not used.}
 
-\item{colours}{A \code{\link{logical}} scalar: should the hexadecimal
-representation of the colors be displayed?}
+\item{colours}{A \code{\link{logical}} scalar: should the hexadecimal representation of
+the colors be displayed?}
 
-\item{names}{A \code{\link{logical}} scalar: should the name of the colors
-be displayed?}
+\item{names}{A \code{\link{logical}} scalar: should the name of the colors be
+displayed?}
 
-\item{size}{A \code{\link{numeric}} value giving the amount by which
-plotting text should be magnified relative to the default.
-Works the same as \code{cex} parameter of \code{\link[graphics:par]{graphics::par()}}.}
+\item{size}{A \code{\link{numeric}} value giving the amount by which plotting text
+should be magnified relative to the default. Works the same as \code{cex}
+parameter of \code{\link[graphics:par]{graphics::par()}}.}
+
+\item{n}{An \code{\link{integer}} specifying the size of the grid (defaults to
+\eqn{512}).}
 }
 \description{
 \itemize{
 \item \code{plot()} allows to quickly display a color scheme returned by \code{\link[=colour]{colour()}}.
 \item \code{plot_scheme()} shows colors in a plot.
-\item \code{plot_map()} produces a diagnostic map for a given color scheme.
+\item \code{plot_map()} and \code{plot_tiles()} produce a diagnostic map for a given color
+scheme.
 \item \code{plot_scheme_colorblind()} shows colors in a plot with different types
 of simulated color blindness.
 }
@@ -58,6 +65,11 @@ plot_map(colour("bright")(7))
 plot_map(colour("sunset")(11))
 plot_map(colour("YlOrBr")(9))
 plot_map(colour("discrete rainbow")(14))
+
+## Plot diagnostic images
+plot_tiles(colour("discrete rainbow")(14), n = 256)
+plot_tiles(colour("discrete rainbow")(23), n = 256)
+plot_tiles(colour("smooth rainbow")(256), n = 256)
 
 ## Plot simulated color blindness
 plot_scheme_colorblind(colour("bright")(7))

@@ -5,8 +5,7 @@
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
+[![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
@@ -30,8 +29,8 @@ Color blindness affects a large number of individuals. When
 communicating scientific results colour palettes must therefore be
 carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Okabe and Ito[1], Paul
-Tol[2] and Fabio Crameri[3] colour schemes. These schemes are ready for
+This R package provides an implementation of Okabe and Ito (2008), Tol
+(2021) and Crameri (2018) colour schemes. These schemes are ready for
 each type of data (qualitative, diverging or sequential), with colours
 that are distinct for all people, including colour-blind readers. This
 package also provides tools to simulate colour-blindness and to test how
@@ -39,6 +38,18 @@ well the colours of any palette are identifiable. To simulate
 colour-blindness in production-ready R figures you may also be
 interested in the
 [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
+
+Tol (2021) and Crameri (2018) offer carefully chosen schemes, ready for
+each type of data, with colours that are:
+
+-   Distinct for all people, including colour-blind readers,
+-   Distinct from black and white,
+-   Distinct on screen and paper,
+-   Matching well together,
+-   Citable and reproducible.
+
+See `vignette("tol")` and `vignette("crameri")` for a more complete
+overview.
 
 For specific uses, several scientific thematic schemes (geologic
 timescale, land cover, FAO soils, etc.) are implemented, but these
@@ -191,7 +202,16 @@ set.seed(12345)
 plot_map(okabe(8))
 ```
 
-<img src="man/figures/README-usage-colourblind1-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-map-1.png" style="display: block; margin: auto;" />
+
+``` r
+## BuRd sequential colour scheme
+BuRd <- colour("BuRd")
+
+plot_tiles(BuRd(128), n = 256)
+```
+
+<img src="man/figures/README-usage-tiles-1.png" style="display: block; margin: auto;" />
 
 #### Compute CIELAB distance metric
 
@@ -214,7 +234,7 @@ round(DeltaE, 2)
 plot_scheme_colourblind(okabe(8))
 ```
 
-<img src="man/figures/README-usage-colourblind3-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 ## ggplot2 default colour scheme
@@ -223,34 +243,7 @@ x <- scales::hue_pal()(8)
 plot_scheme_colourblind(x)
 ```
 
-<img src="man/figures/README-usage-colourblind3-2.png" style="display: block; margin: auto;" />
-
-## Colour Schemes
-
-### Colour Schemes
-
-Paul Tol and Fabio Crameri offer carefully chosen schemes, ready for
-each type of data, with colours that are:
-
--   Distinct for all people, including colour-blind readers,
--   Distinct from black and white,
--   Distinct on screen and paper,
--   Matching well together,
--   Citable & reproducible.
-
-See `vignette("tol")` and `vignette("crameri")` for a more complete
-overview.
-
-### Scientific colour schemes
-
-The following scientific colour schemes are available:
-
--   International Chronostratigraphic Chart;
--   AVHRR Global Land Cover Classification;
--   FAO Soil Reference Groups.
-
-More will be added in future releases ([suggestions are
-welcome](https://github.com/tesselle/khroma/issues)).
+<img src="man/figures/README-usage-colourblind2-2.png" style="display: block; margin: auto;" />
 
 ## Contributing
 
@@ -260,14 +253,29 @@ to this project, you agree to abide by its terms.
 
 ## References
 
-[1] Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to
-Make Figures and Presentations That Are Friendly to Colorblind People*.
-URL: <https://jfly.uni-koeln.de/color/>.
+<div id="refs" class="references csl-bib-body hanging-indent">
 
-[2] Tol, P. (2021). *Colour Schemes*. SRON. Technical Note
-No. SRON/EPS/TN/09-002. URL:
-<https://personal.sron.nl/~pault/data/colourschemes.pdf>.
+<div id="ref-crameri2018" class="csl-entry">
 
-[3] Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation
-and StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
-<https://doi.org/10.5194/gmd-11-2541-2018>
+Crameri, Fabio. 2018. “Geodynamic Diagnostics, Scientific Visualisation
+and StagLab 3.0.” *Geoscientific Model Development* 11 (6): 2541–62.
+<https://doi.org/10.5194/gmd-11-2541-2018>.
+
+</div>
+
+<div id="ref-okabe2008" class="csl-entry">
+
+Okabe, Masataka, and Key Ito. 2008. “Color Universal Design (CUD): How
+to Make Figures and Presentations That Are Friendly to Colorblind
+People.” *J\*FLY*. <https://jfly.uni-koeln.de/color/>.
+
+</div>
+
+<div id="ref-tol2021" class="csl-entry">
+
+Tol, Paul. 2021. “Colour Schemes.” Technical note SRON/EPS/TN/09-002
+3.2. SRON. <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
+
+</div>
+
+</div>

@@ -13,5 +13,10 @@ plot_map(colour("sunset")(11))
 plot_map(colour("YlOrBr")(9))
 plot_map(colour("discrete rainbow")(14))
 
+## Plot diagnostic images
+plot_tiles(colour("discrete rainbow")(14), n = 256)
+plot_tiles(colour("discrete rainbow")(23), n = 256)
+plot_tiles(colour("smooth rainbow")(256), n = 256)
+
 ## Plot simulated color blindness
 plot_scheme_colorblind(colour("bright")(7))

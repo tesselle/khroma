@@ -47,6 +47,18 @@ test_that("Diagnostic Map", {
 
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
 })
+test_that("Diagnostic Tiles", {
+  expect_error(plot_tiles(1:5), "x must be a character vector of colours.")
+
+  skip_if_not_installed("vdiffr")
+  pdf(NULL)
+  dev.control(displaylist = "enable")
+  plot_tiles(colour("bright")(7), n = 128)
+  plot_tiles_bright <- grDevices::recordPlot()
+  invisible(dev.off())
+
+  vdiffr::expect_doppelganger("tiles_bright", plot_tiles_bright)
+})
 test_that("Colourblind Schemes", {
   skip_if_not_installed("vdiffr")
 

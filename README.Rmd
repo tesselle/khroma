@@ -1,7 +1,6 @@
 ---
 output: github_document
-editor_options: 
-  chunk_output_type: console
+bibliography: vignettes/bibliography.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -23,7 +22,7 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
-[![R build status](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
+[![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
@@ -34,14 +33,23 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1472077.svg)](https://doi.org/10.5281/zenodo.1472077)
-[![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 <!-- badges: end -->
 
 ## Overview
 
 Color blindness affects a large number of individuals. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of Okabe and Ito^[Okabe, M. & Ito, K. (2008). *Color Universal Design (CUD): How to Make Figures and Presentations That Are Friendly to Colorblind People*. URL: <https://jfly.uni-koeln.de/color/>.], Paul Tol^[Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No. SRON/EPS/TN/09-002. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.] and Fabio Crameri^[Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562. <https://doi.org/10.5194/gmd-11-2541-2018>] colour schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
+This R package provides an implementation of @okabe2008, @tol2021 and @crameri2018 colour schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
+
+@tol2021 and @crameri2018 offer carefully chosen schemes, ready for each type of data, with colours that are:
+
+* Distinct for all people, including colour-blind readers,
+* Distinct from black and white,
+* Distinct on screen and paper,
+* Matching well together,
+* Citable and reproducible.
+
+See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
 
 For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these colour schemes may not be colour-blind safe.
 
@@ -112,12 +120,19 @@ ggplot2::ggplot(data = mpg) +
 ### Diagnostic tools
 #### Test how well the colours are identifiable
 
-```{r usage-colourblind1, fig.height=2, fig.width=7, fig.align='center'}
+```{r usage-map, fig.height=2, fig.width=7, fig.align='center'}
 ## Okabe & Ito's colour scheme
 okabe <- colour("okabe ito")
 
 set.seed(12345)
 plot_map(okabe(8))
+```
+
+```{r usage-tiles, fig.height=3, fig.width=3, fig.align='center'}
+## BuRd sequential colour scheme
+BuRd <- colour("BuRd")
+
+plot_tiles(BuRd(128), n = 256)
 ```
 
 #### Compute CIELAB distance metric
@@ -129,7 +144,7 @@ round(DeltaE, 2)
 
 #### Simulate colour-blindness
 
-```{r usage-colourblind2, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
+```{r usage-colourblind1, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 ## convert() returns a modified palette function
 deuteranopia <- convert(okabe, mode = "deuteranopia")
 plot_scheme(deuteranopia(8), colours = TRUE)
@@ -144,7 +159,7 @@ achromatopsia <- convert(okabe, mode = "achromatopsia")
 plot_scheme(achromatopsia(8), colours = TRUE)
 ```
 
-```{r usage-colourblind3, fig.height=4, fig.width=7, fig.align='center'}
+```{r usage-colourblind2, fig.height=4, fig.width=7, fig.align='center'}
 plot_scheme_colourblind(okabe(8))
 
 ## ggplot2 default colour scheme
@@ -152,29 +167,6 @@ plot_scheme_colourblind(okabe(8))
 x <- scales::hue_pal()(8)
 plot_scheme_colourblind(x)
 ```
-
-## Colour Schemes
-### Colour Schemes
-
-Paul Tol and Fabio Crameri offer carefully chosen schemes, ready for each type of data, with colours that are:
-
-* Distinct for all people, including colour-blind readers,
-* Distinct from black and white,
-* Distinct on screen and paper,
-* Matching well together,
-* Citable & reproducible.
-
-See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
-
-### Scientific colour schemes
-
-The following scientific colour schemes are available:
-
-* International Chronostratigraphic Chart;
-* AVHRR Global Land Cover Classification;
-* FAO Soil Reference Groups.
-
-More will be added in future releases ([suggestions are welcome](https://github.com/tesselle/khroma/issues)).
 
 ## Contributing
 

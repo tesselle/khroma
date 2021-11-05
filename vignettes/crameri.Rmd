@@ -4,7 +4,6 @@ author: "N. Frerebeau"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
-    number_sections: yes
     fig_caption: yes
     toc: true
 bibliography: bibliography.bib
@@ -16,15 +15,15 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include=FALSE}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
- fig.align = "center"
+  fig.align = "center"
 )
 ```
 
-```{r setup}
+```{r packages}
 library(khroma)
 ```
 

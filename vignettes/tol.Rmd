@@ -4,7 +4,6 @@ author: "N. Frerebeau"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
-    number_sections: yes
     fig_caption: yes
     toc: true
 bibliography: bibliography.bib
@@ -16,15 +15,11 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
- fig.align = "center"
-)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-```{r setup}
+```{r packages}
 library(khroma)
 ```
 
@@ -206,6 +201,12 @@ plot_map(BuRd(9))
 plot_map(PRGn(9))
 ```
 
+```{r tol_div_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='30%', fig.show='hold', fig.cap='Diagnostic maps for the sunset, BuRd and PRGn diverging colour schemes.'}
+plot_tiles(colour("sunset")(128), n = 256)
+plot_tiles(colour("BuRd")(128), n = 256)
+plot_tiles(colour("PRGn")(128), n = 256)
+```
+
 ### Sequential schemes
 
 ```{r tol_seq, echo=FALSE, fig.height = 2, fig.width = 7, fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent, discrete rainbow and smooth rainbow (from top to bottom) sequential colour schemes.'}
@@ -214,6 +215,12 @@ plot_map(YlOrBr(9))
 plot_map(iridescent(23))
 plot_map(discrete_rainbow(14))
 plot_map(smooth_rainbow(23))
+```
+
+```{r tol_seq_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='30%', fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent and smooth rainbow sequential colour schemes.'}
+plot_tiles(colour("YlOrBr")(128), n = 256)
+plot_tiles(colour("iridescent")(128), n = 256)
+plot_tiles(colour("smooth rainbow")(128), n = 256)
 ```
 
 ## References

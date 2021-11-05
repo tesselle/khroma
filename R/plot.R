@@ -2,17 +2,20 @@
 #'
 #' * `plot()` allows to quickly display a color scheme returned by [colour()].
 #' * `plot_scheme()` shows colors in a plot.
-#' * `plot_map()` produces a diagnostic map for a given color scheme.
+#' * `plot_map()` and `plot_tiles()` produce a diagnostic map for a given color
+#'   scheme.
 #' * `plot_scheme_colorblind()` shows colors in a plot with different types
 #'   of simulated color blindness.
 #' @param x A [`character`] vector of colors.
-#' @param colours A [`logical`] scalar: should the hexadecimal
-#' representation of the colors be displayed?
-#' @param names A [`logical`] scalar: should the name of the colors
-#' be displayed?
-#' @param size A [`numeric`] value giving the amount by which
-#' plotting text should be magnified relative to the default.
-#' Works the same as `cex` parameter of [graphics::par()].
+#' @param colours A [`logical`] scalar: should the hexadecimal representation of
+#'  the colors be displayed?
+#' @param names A [`logical`] scalar: should the name of the colors be
+#'  displayed?
+#' @param size A [`numeric`] value giving the amount by which plotting text
+#'  should be magnified relative to the default. Works the same as `cex`
+#'  parameter of [graphics::par()].
+#' @param n An [`integer`] specifying the size of the grid (defaults to
+#'  \eqn{512}).
 #' @param ... Currently not used.
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau, V. Arel-Bundock
@@ -119,6 +122,29 @@ plot_map <- function(x) {
 
     draw_mosaic(columns = q, border = "black", fill = unique_colour, offset = h)
   }
+}
+
+#' @rdname plot
+#' @export
+plot_tiles <- function(x, n = 512) {
+  # Validation
+  if (!is.atomic(x) || !is.character(x))
+    stop("x must be a character vector of colours.")
+  # Save and restore graphical parameters
+  old_par <- graphics::par(no.readonly = TRUE)
+  on.exit(graphics::par(old_par))
+
+  g <- expand.grid(
+    x = seq_len(n),
+    y = seq_len(n)
+  )
+  noise <- sin(g$x / 16) + cos(g$y / 16) +
+    stats::dnorm(sqrt((g$x - 0.75 * n)^2 + (g$y - 0.33 * n)^2) / n * 20)
+  z <- matrix(data = noise, nrow = n, ncol = n)
+
+  graphics::par(mar = c(0, 0, 0, 0) + 0.1, xaxs = "i", yaxs = "i")
+  graphics::image(x = seq_len(n), y = seq_len(n), z = z, col = x,
+                  axes = FALSE, asp = 1)
 }
 
 #' Mosaic
