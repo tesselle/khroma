@@ -25,6 +25,7 @@ info()
 }
 \seealso{
 Other colour palettes: 
+\code{\link{build_scale}()},
 \code{\link{colour}()}
 }
 \author{

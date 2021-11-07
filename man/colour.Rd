@@ -181,6 +181,7 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour palettes: 
+\code{\link{build_scale}()},
 \code{\link{info}()}
 }
 \author{

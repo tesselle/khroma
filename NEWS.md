@@ -1,6 +1,7 @@
 # khroma 1.7.0.9000
 ## New functions
-* Add `plot_tiles()` to produces a diagnostic map for a given colour scheme.
+* Add `plot_tiles()` to produce a diagnostic map for a given colour scheme.
+* Add `scale_*_picker()` to build scales for **ggplot2**.
 
 # khroma 1.7.0
 ## New functions

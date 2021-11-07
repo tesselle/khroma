@@ -2,6 +2,39 @@
 #' @include colour.R
 NULL
 
+#' Colour Scale Builder
+#'
+#' Builds a colour scale for \pkg{ggplot2}.
+#' @param palette A [`character`] string giving the name of the colour scheme to
+#'  be used (see [info()]).
+#' @param ... Extra parameters to be passed to the colour scale function.
+#' @return A [discrete][ggplot2::discrete_scale] or
+#'  [continuous][ggplot2::continuous_scale] scale.
+#' @example inst/examples/ex-pick.R
+#' @author N. Frerebeau
+#' @family colour palettes
+#' @name scale_picker
+#' @rdname scale_picker
+NULL
+
+#' @export
+#' @rdname scale_picker
+scale_colour_picker <- function(..., palette = "YlOrBr") {
+  fun <- sprintf("scale_colour_%s", palette)
+  do.call(fun, args = list(...))
+}
+
+#' @export
+#' @rdname scale_picker
+scale_color_picker <- scale_colour_picker
+
+#' @export
+#' @rdname scale_picker
+scale_fill_picker <- function(..., palette = "YlOrBr") {
+  fun <- sprintf("scale_fill_%s", palette)
+  do.call(fun, args = list(...))
+}
+
 #' Color Scale Constructors
 #'
 #' Builds a discrete or continuous scale for \pkg{ggplot2} according to the

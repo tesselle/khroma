@@ -9,15 +9,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Colour schemes ready for each type of data (qualitative,
-    diverging or sequential), with colours that are distinct for all
-    people, including colour-blind readers. This package provides an
-    implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:
-    10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or
-    'ggplot2'. It provides tools to simulate colour-blindness and to test
-    how well the colours of any palette are identifiable. Several
-    scientific thematic schemes (geologic timescale, land cover, FAO
-    soils, etc.) are also implemented.
+Colour schemes ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi: 10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.
 }
 \details{
 \tabular{ll}{

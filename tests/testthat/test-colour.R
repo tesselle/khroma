@@ -136,3 +136,15 @@ test_that("Print with crayon", {
   col <- utils::capture.output(print(palette(8)))
   expect_true(crayon::has_style(col))
 })
+test_that("Scale builder", {
+  skip_if_not_installed("ggplot2")
+
+  pal_colour <- scale_colour_picker(palette = "okabeito")
+  expect_true(all.equal(pal_colour, scale_colour_okabeito()))
+
+  pal_colour_rev <- scale_colour_picker(reverse = TRUE, palette = "okabeito")
+  expect_true(all.equal(pal_colour_rev, scale_colour_okabeito(reverse = TRUE)))
+
+  pal_fill <- scale_fill_picker(palette = "YlOrBr")
+  expect_true(all.equal(pal_fill, scale_fill_YlOrBr()))
+})
