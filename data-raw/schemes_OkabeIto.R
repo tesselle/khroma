@@ -2,7 +2,7 @@
 schemes_okabe2008 <- list(
   # Qualitative colour types -------------------------------------------------
   # The colours have to be used as given: do not interpolate
-  "okabe ito" = list(
+  okabeito = list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,

@@ -18,10 +18,10 @@ NULL
 #'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
 #'   `bright` \tab 7 \cr
-#'   `high contrast` \tab 3 \cr
+#'   `highcontrast` \tab 3 \cr
 #'   `vibrant` \tab 7 \cr
 #'   `muted` \tab 9 \cr
-#'   `medium contrast` \tab 6 \cr
+#'   `mediumcontrast` \tab 6 \cr
 #'   `pale` \tab 6 \cr
 #'   `dark` \tab 6 \cr
 #'   `light` \tab 9 \cr
@@ -63,7 +63,7 @@ scale_fill_bright <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @rdname scale_tol_discrete
 scale_colour_highcontrast <- function(..., reverse = FALSE,
                                       aesthetics = "colour") {
-  scale_discrete(aesthetics, "high contrast", reverse, ...)
+  scale_discrete(aesthetics, "highcontrast", reverse, ...)
 }
 
 #' @export
@@ -74,7 +74,7 @@ scale_color_highcontrast <- scale_colour_highcontrast
 #' @rdname scale_tol_discrete
 scale_fill_highcontrast <- function(..., reverse = FALSE,
                                     aesthetics = "fill") {
-  scale_discrete(aesthetics, "high contrast", reverse, ...)
+  scale_discrete(aesthetics, "highcontrast", reverse, ...)
 }
 
 ## Vibrant ---------------------------------------------------------------------
@@ -116,7 +116,7 @@ scale_fill_muted <- function(..., reverse = FALSE, aesthetics = "fill") {
 #' @rdname scale_tol_discrete
 scale_colour_mediumcontrast <- function(..., reverse = FALSE,
                                         aesthetics = "colour") {
-  scale_discrete(aesthetics, "medium contrast", reverse, ...)
+  scale_discrete(aesthetics, "mediumcontrast", reverse, ...)
 }
 
 #' @export
@@ -127,7 +127,7 @@ scale_color_mediumcontrast <- scale_colour_mediumcontrast
 #' @rdname scale_tol_discrete
 scale_fill_mediumcontrast <- function(..., reverse = FALSE,
                                       aesthetics = "fill") {
-  scale_discrete(aesthetics, "medium contrast", reverse, ...)
+  scale_discrete(aesthetics, "mediumcontrast", reverse, ...)
 }
 
 ## Pale ------------------------------------------------------------------------
@@ -337,8 +337,8 @@ scale_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #'   **Palette** \tab **Max. colors** \tab **NA value** \cr
 #'   `YlOrBr` \tab 9 \tab #888888 \cr
 #'   `iridescent` \tab 23 \tab #999999 \cr
-#'   `discrete rainbow` \tab 23 \tab #777777 \cr
-#'   `smooth rainbow` \tab 34 \tab #666666 \cr
+#'   `discreterainbow` \tab 23 \tab #777777 \cr
+#'   `smoothrainbow` \tab 34 \tab #666666 \cr
 #'  }
 #' @inheritSection colour Rainbow colour scheme
 #' @return A [continuous][ggplot2::continuous_scale] scale.
@@ -418,7 +418,7 @@ scale_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
 #' @rdname scale_tol_sequential
 scale_colour_discreterainbow <- function(..., reverse = FALSE,
                                          aesthetics = "colour") {
-  scale_discrete(aesthetics, "discrete rainbow", reverse = reverse, ...)
+  scale_discrete(aesthetics, "discreterainbow", reverse = reverse, ...)
 }
 
 #' @export
@@ -429,7 +429,7 @@ scale_color_discreterainbow <- scale_colour_discreterainbow
 #' @rdname scale_tol_sequential
 scale_fill_discreterainbow <- function(..., reverse = FALSE,
                                        aesthetics = "fill") {
-  scale_discrete(aesthetics, "discrete rainbow", reverse = reverse, ...)
+  scale_discrete(aesthetics, "discreterainbow", reverse = reverse, ...)
 }
 
 ## Smooth Rainbow --------------------------------------------------------------
@@ -438,9 +438,9 @@ scale_fill_discreterainbow <- function(..., reverse = FALSE,
 scale_colour_smoothrainbow <- function(..., reverse = FALSE, range = c(0, 1),
                                        discrete = FALSE, aesthetics = "colour") {
   if (discrete) {
-    scale_discrete(aesthetics, "smooth rainbow", reverse = reverse, ...)
+    scale_discrete(aesthetics, "smoothrainbow", reverse = reverse, ...)
   } else {
-    scale_continuous(aesthetics, "smooth rainbow", reverse = reverse,
+    scale_continuous(aesthetics, "smoothrainbow", reverse = reverse,
                      range = range, ...)
   }
 }

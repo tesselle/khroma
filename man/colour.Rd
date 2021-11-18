@@ -70,8 +70,10 @@ colour schemes (divergent and sequential schemes are linearly interpolated).
 
 \section{Qualitative colour schemes}{
 
-According to Paul Tol's technical note, the \code{bright}, \verb{high contrast},
-\code{vibrant} and \code{muted} colour schemes are colourblind safe. The \verb{medium contrast} colour scheme is designed for situations needing colour pairs.
+According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
+\code{vibrant} and \code{muted} colour schemes are colourblind safe. The
+\code{mediumcontrast} colour scheme is designed for situations needing colour
+pairs.
 
 The \code{light} colour scheme is reasonably distinct for both normal or
 colourblind vision and is intended to fill labeled cells.
@@ -101,8 +103,8 @@ schemes that are reasonably clear in colour-blind vision. To remain
 colour-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
-\item{\verb{discrete rainbow}}{This scheme must not be interpolated.}
-\item{\verb{smooth rainbow}}{This scheme does not have to be used over the full
+\item{\code{discreterainbow}}{This scheme must not be interpolated.}
+\item{\code{smoothrainbow}}{This scheme does not have to be used over the full
 range.}
 }
 }
@@ -111,7 +113,7 @@ range.}
 
 The following (qualitative) colour scheme is available:
 \describe{
-\item{\verb{okabe ito}}{Up to 8 colours.}
+\item{\code{okabeito}}{Up to 8 colours.}
 }
 }
 
@@ -181,8 +183,8 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other colour palettes: 
-\code{\link{build_scale}()},
-\code{\link{info}()}
+\code{\link{info}()},
+\code{\link{scale_picker}}
 }
 \author{
 N. Frerebeau

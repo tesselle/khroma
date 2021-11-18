@@ -128,8 +128,8 @@ a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 \strong{Palette} \tab \strong{Max. colors} \tab \strong{NA value} \cr
 \code{YlOrBr} \tab 9 \tab #888888 \cr
 \code{iridescent} \tab 23 \tab #999999 \cr
-\verb{discrete rainbow} \tab 23 \tab #777777 \cr
-\verb{smooth rainbow} \tab 34 \tab #666666 \cr
+\code{discreterainbow} \tab 23 \tab #777777 \cr
+\code{smoothrainbow} \tab 34 \tab #666666 \cr
 }
 }
 \section{Rainbow colour scheme}{
@@ -149,8 +149,8 @@ schemes that are reasonably clear in colour-blind vision. To remain
 colour-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
-\item{\verb{discrete rainbow}}{This scheme must not be interpolated.}
-\item{\verb{smooth rainbow}}{This scheme does not have to be used over the full
+\item{\code{discreterainbow}}{This scheme must not be interpolated.}
+\item{\code{smoothrainbow}}{This scheme does not have to be used over the full
 range.}
 }
 }

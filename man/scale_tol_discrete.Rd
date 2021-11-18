@@ -98,10 +98,10 @@ colors are picked up to the maximum number of supported values.
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
 \code{bright} \tab 7 \cr
-\verb{high contrast} \tab 3 \cr
+\code{highcontrast} \tab 3 \cr
 \code{vibrant} \tab 7 \cr
 \code{muted} \tab 9 \cr
-\verb{medium contrast} \tab 6 \cr
+\code{mediumcontrast} \tab 6 \cr
 \code{pale} \tab 6 \cr
 \code{dark} \tab 6 \cr
 \code{light} \tab 9 \cr
@@ -109,8 +109,10 @@ colors are picked up to the maximum number of supported values.
 }
 \section{Qualitative colour schemes}{
 
-According to Paul Tol's technical note, the \code{bright}, \verb{high contrast},
-\code{vibrant} and \code{muted} colour schemes are colourblind safe. The \verb{medium contrast} colour scheme is designed for situations needing colour pairs.
+According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
+\code{vibrant} and \code{muted} colour schemes are colourblind safe. The
+\code{mediumcontrast} colour scheme is designed for situations needing colour
+pairs.
 
 The \code{light} colour scheme is reasonably distinct for both normal or
 colourblind vision and is intended to fill labeled cells.

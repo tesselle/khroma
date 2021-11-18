@@ -8,10 +8,10 @@ test_that("Palette informations", {
   expect_snapshot(info(), cran = TRUE)
 })
 test_that("Palette colours", {
-  palettes <- c("okabe ito", "bright", "high contrast", "vibrant", "muted",
-                "medium contrast", "pale", "dark", "light",
+  palettes <- c("okabeito", "bright", "highcontrast", "vibrant", "muted",
+                "mediumcontrast", "pale", "dark", "light",
                 "sunset", "BuRd", "PRGn",
-                "YlOrBr", "iridescent", "discrete rainbow", "smooth rainbow",
+                "YlOrBr", "iridescent", "discreterainbow", "smoothrainbow",
                 "stratigraphy", "soil", "land")
   n <- c(8, 7, 3, 7, 9, 6, 6, 6, 9, 11, 9, 9, 9, 23, 23, 34, 175, 24, 14)
 
@@ -115,7 +115,7 @@ test_that("Colour-blind attributes", {
   palette <- colour("okabe ito")
   protanopia <- convert(palette, mode = "protanopia")
 
-  expect_true(attr(protanopia, "palette") == "okabe ito")
+  expect_true(attr(protanopia, "palette") == "okabeito")
   expect_true(attr(protanopia, "type") == "qualitative")
   expect_false(attr(protanopia, "interpolate"))
   expect_true(is.na(attr(protanopia, "missing")))

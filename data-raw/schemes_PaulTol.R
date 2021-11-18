@@ -15,7 +15,7 @@ schemes_tol2018 <- list(
     ),
     scheme = NULL
   ),
-  "high contrast" = list(
+  highcontrast = list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
@@ -55,7 +55,7 @@ schemes_tol2018 <- list(
     ),
     scheme = NULL
   ),
-  "medium contrast" = list(
+  mediumcontrast = list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
@@ -171,7 +171,7 @@ schemes_tol2018 <- list(
     names = NULL,
     scheme = NULL
   ),
-  "discrete rainbow" = list(
+  discreterainbow = list(
     type = "sequential",
     interpolate = FALSE,
     missing = "#777777",
@@ -216,7 +216,7 @@ schemes_tol2018 <- list(
       c(1, 2, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25, 26, 27, 28, 29)
     )
   ),
-  "smooth rainbow" = list(
+  smoothrainbow = list(
     type = "sequential",
     interpolate = TRUE,
     missing = "#666666",

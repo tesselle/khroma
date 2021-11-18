@@ -26,9 +26,10 @@
 #'   (23), `smooth rainbow` (34).}
 #'  }
 #' @section Qualitative colour schemes:
-#'  According to Paul Tol's technical note, the `bright`, `high contrast`,
-#'  `vibrant` and `muted` colour schemes are colourblind safe. The `medium
-#'  contrast` colour scheme is designed for situations needing colour pairs.
+#'  According to Paul Tol's technical note, the `bright`, `highcontrast`,
+#'  `vibrant` and `muted` colour schemes are colourblind safe. The
+#'  `mediumcontrast` colour scheme is designed for situations needing colour
+#'  pairs.
 #'
 #'  The `light` colour scheme is reasonably distinct for both normal or
 #'  colourblind vision and is intended to fill labeled cells.
@@ -55,14 +56,14 @@
 #'  colour-blind safe, these two schemes must comply with the following
 #'  conditions:
 #'  \describe{
-#'   \item{`discrete rainbow`}{This scheme must not be interpolated.}
-#'   \item{`smooth rainbow`}{This scheme does not have to be used over the full
+#'   \item{`discreterainbow`}{This scheme must not be interpolated.}
+#'   \item{`smoothrainbow`}{This scheme does not have to be used over the full
 #'   range.}
 #'  }
 #' @section Okabe and Ito Colour Scheme:
 #'  The following (qualitative) colour scheme is available:
 #'  \describe{
-#'   \item{`okabe ito`}{Up to 8 colours.}
+#'   \item{`okabeito`}{Up to 8 colours.}
 #'  }
 #' @section Scientific Colour Schemes:
 #'  The following (qualitative) color schemes are available:
@@ -114,6 +115,7 @@
 colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
                    force = FALSE, ...) {
   # Validation
+  palette <- gsub(pattern = "[[:blank:]]", replacement = "", x = palette)
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
 
