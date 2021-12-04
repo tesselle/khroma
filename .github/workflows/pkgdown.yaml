@@ -1,83 +1,16 @@
+# https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main, master]
+    tags: ['*']
 
 name: pkgdown
 
 jobs:
   pkgdown:
-    name: Build-Website
-
-    runs-on: macOS-latest
-
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    uses: tesselle/packages/.github/workflows/pkgdown.yaml@main
+    with:
       REPO: ${{ github.event.repository.name }}
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: r-lib/actions/setup-r@v1
-
-      - uses: r-lib/actions/setup-pandoc@v1
-
-      - name: Query dependencies
-        run: |
-          install.packages('remotes')
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
-        shell: Rscript {0}
-
-      - name: Restore R package cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-
-      - name: Install dependencies
-        run: |
-          remotes::install_deps(dependencies = TRUE)
-          remotes::install_github("r-lib/pkgdown")
-          remotes::install_github("tesselle/tekton")
-        shell: Rscript {0}
-
-      - name: Install package
-        run: R CMD INSTALL .
-
-      - name: Build site
-        run: |
-          Rscript -e 'pkgdown::build_site(devel = FALSE, preview = FALSE, install = FALSE, new_process = FALSE)'
-
-      - name: Configure git
-        if: success()
-        env:
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          git config --global url."https://${TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
-          git config --global user.email "${REPO}@tesselle.org"
-          git config --global user.name "${REPO}"
-
-      - name: Clone tesselle/packages
-        if: success()
-        run: |
-          rm -rf tmp
-          git clone -b gh-pages https://github.com/tesselle/packages.git tmp
-          
-      - name: Clean old files
-        if: success()
-        run: |
-          [ -d docs/dev ] && rm -r tmp/${REPO}/dev || true
-          [ ! -d docs/dev ] && rm -r tmp/${REPO}/* || true
-
-      - name: Deploy
-        if: success()
-        run: |
-          mkdir -p tmp/${REPO}
-          cp -r docs/* tmp/${REPO}/
-          cd tmp
-          git add -A
-          git commit -m "Built site for ${REPO}@$(echo ${GITHUB_SHA} | cut -c1-7)"
-          git push origin gh-pages
+      COMMIT: ${{ github.sha }}
+    secrets:
+      TOKEN: ${{ secrets.ACCESS_TOKEN }}
