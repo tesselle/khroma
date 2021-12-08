@@ -23,7 +23,8 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
-[![codecov](https://codecov.io/gh/tesselle/khroma/branch/master/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
+[![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
+[![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
