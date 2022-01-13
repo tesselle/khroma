@@ -124,15 +124,12 @@ test_that("Colour-blind attributes", {
 })
 test_that("Print with crayon", {
   skip_if_not_installed("crayon")
-  options(crayon.enabled = FALSE)
 
   palette <- colour("okabe ito")
-
   col <- utils::capture.output(print(palette(8)))
   expect_type(col, "character")
 
-  skip_if_not_installed("crayon")
-  options(crayon.enabled = TRUE)
+  local_reproducible_output(crayon = TRUE)
   col <- utils::capture.output(print(palette(8)))
   expect_true(crayon::has_style(col))
 })
