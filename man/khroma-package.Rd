@@ -15,7 +15,7 @@ Colour schemes ready for each type of data (qualitative, diverging or sequential
 \tabular{ll}{
 \strong{Package:} \tab khroma \cr
 \strong{Type:} \tab Package \cr
-\strong{Version:} \tab 1.7.0 \cr
+\strong{Version:} \tab 1.8.0 \cr
 \strong{License:} \tab GPL-3 \cr
 \strong{Zenodo:} \tab \doi{10.5281/zenodo.1472077} \cr
 }

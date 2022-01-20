@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
-[![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://codecov.io/gh/tesselle/khroma)
+[![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tesselle/khroma)
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
@@ -57,7 +57,8 @@ timescale, land cover, FAO soils, etc.) are implemented, but these
 colour schemes may not be colour-blind safe.
 
 All these colour schemes are implemented for use with base R or
-[**ggplot2**](https://github.com/tidyverse/ggplot2).
+[**ggplot2**](https://github.com/tidyverse/ggplot2) and
+[**ggraph**](https://github.com/thomasp85/ggraph).
 
 ## Installation
 

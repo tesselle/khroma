@@ -2,13 +2,13 @@
 # CITATION file created with {cffr} R package, v0.1.0
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
- 
+
 cff-version: 1.2.0
 message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.7.0.9000
+version: 1.8.0
 abstract: 'Colour schemes ready for each type of data (qualitative, diverging or sequential),
   with colours that are distinct for all people, including colour-blind readers. This
   package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:

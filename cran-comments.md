@@ -8,6 +8,8 @@
 
 0 errors | 0 warnings | 0 note
 
+This is a resubmission: invalid URLs were fixed.
+
 ## Reverse dependencies
 
 We checked 3 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.

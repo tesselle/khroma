@@ -1,7 +1,11 @@
-# khroma 1.7.0.9000
+# khroma 1.8.0
 ## New functions
 * Add `plot_tiles()` to produce a diagnostic map for a given colour scheme.
-* Add `scale_*_picker()` to build scales for **ggplot2**.
+* Add `scale_*_picker()` and `scale_edge_*_picker()` to build scales for **ggplot2** and **ggraph**.
+* Add **ggraph** scale functions `scale_edge_colour_*()` and `scale_edge_fill_*()` (#10).
+
+## Bugfixes & changes
+* Fix test broken by **testthat** 3.1.2 (#11, thanks to @hadley).
 
 # khroma 1.7.0
 ## New functions

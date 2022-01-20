@@ -4,18 +4,18 @@ citEntry(
   entry        = "Manual",
   title        = "khroma: Colour Schemes for Scientific Data Visualization",
   author       = c(person("Nicolas", "Frerebeau", role = "aut")),
-  year         = "2021",
+  year         = "2022",
   organization = "Université Bordeaux Montaigne",
   address      = "Pessac, France",
-  note         = "R package version 1.7.0",
-  url          = "https://packages.tesselle.org/khroma",
+  note         = "R package version 1.8.0",
+  url          = "https://packages.tesselle.org/khroma/",
   doi          = "10.5281/zenodo.1472077",
 
   textVersion  =
-  paste("Frerebeau, Nicolas (2021).",
+  paste("Frerebeau, Nicolas (2022).",
         "khroma: Colour Schemes for Scientific Data Visualization.",
-        "R package version 1.7.0",
+        "R package version 1.8.0",
         "Université Bordeaux Montaigne, Pessac, France.",
         "DOI 10.5281/zenodo.1472077.",
-        "URL https://packages.tesselle.org/khroma.")
+        "URL https://packages.tesselle.org/khroma/.")
 )

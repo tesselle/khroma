@@ -14,7 +14,7 @@
   ],
   "issueTracker": "https://github.com/tesselle/khroma/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "1.7.0.9000",
+  "version": "1.8.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -228,7 +228,7 @@
     }
   ],
   "readme": "https://github.com/tesselle/khroma/blob/main/README.md",
-  "fileSize": "2883.77KB",
+  "fileSize": "2885.235KB",
   "contIntegration": "https://codecov.io/gh/tesselle/khroma",
   "developmentStatus": "https://www.repostatus.org/#active",
   "keywords": [
@@ -242,7 +242,7 @@
   "citation": [
     {
       "@type": "SoftwareSourceCode",
-      "datePublished": "2021",
+      "datePublished": "2022",
       "author": [
         {
           "@type": "Person",
@@ -253,7 +253,7 @@
       "name": "khroma: Colour Schemes for Scientific Data Visualization",
       "identifier": "10.5281/zenodo.1472077",
       "url": "https://packages.tesselle.org/khroma",
-      "description": "R package version 1.7.0",
+      "description": "R package version 1.8.0",
       "@id": "https://doi.org/10.5281/zenodo.1472077",
       "sameAs": "https://doi.org/10.5281/zenodo.1472077"
     }
