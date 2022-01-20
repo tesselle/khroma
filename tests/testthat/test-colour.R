@@ -144,4 +144,10 @@ test_that("Scale builder", {
 
   pal_fill <- scale_fill_picker(palette = "YlOrBr")
   expect_true(all.equal(pal_fill, scale_fill_YlOrBr()))
+
+  pal_edge_colour <- scale_edge_colour_picker(palette = "okabeito")
+  expect_true(all.equal(pal_edge_colour, scale_edge_colour_okabeito()))
+
+  pal_edge_fill <- scale_edge_fill_picker(palette = "YlOrBr")
+  expect_true(all.equal(pal_edge_fill, scale_edge_fill_YlOrBr()))
 })

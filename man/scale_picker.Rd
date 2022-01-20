@@ -5,6 +5,9 @@
 \alias{scale_colour_picker}
 \alias{scale_color_picker}
 \alias{scale_fill_picker}
+\alias{scale_edge_colour_picker}
+\alias{scale_edge_color_picker}
+\alias{scale_edge_fill_picker}
 \title{Colour Scale Builder}
 \usage{
 scale_colour_picker(..., palette = "YlOrBr")
@@ -12,6 +15,12 @@ scale_colour_picker(..., palette = "YlOrBr")
 scale_color_picker(..., palette = "YlOrBr")
 
 scale_fill_picker(..., palette = "YlOrBr")
+
+scale_edge_colour_picker(..., palette = "YlOrBr")
+
+scale_edge_color_picker(..., palette = "YlOrBr")
+
+scale_edge_fill_picker(..., palette = "YlOrBr")
 }
 \arguments{
 \item{...}{Extra parameters to be passed to the colour scale function.}
@@ -24,7 +33,7 @@ A \link[ggplot2:discrete_scale]{discrete} or
 \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Builds a colour scale for \pkg{ggplot2}.
+Builds a colour scale for \pkg{ggplot2} or \pkg{ggraph}.
 }
 \examples{
 library(ggplot2)

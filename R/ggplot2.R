@@ -4,7 +4,7 @@ NULL
 
 #' Colour Scale Builder
 #'
-#' Builds a colour scale for \pkg{ggplot2}.
+#' Builds a colour scale for \pkg{ggplot2} or \pkg{ggraph}.
 #' @param palette A [`character`] string giving the name of the colour scheme to
 #'  be used (see [info()]).
 #' @param ... Extra parameters to be passed to the colour scale function.
@@ -32,6 +32,24 @@ scale_color_picker <- scale_colour_picker
 #' @rdname scale_picker
 scale_fill_picker <- function(..., palette = "YlOrBr") {
   fun <- sprintf("scale_fill_%s", palette)
+  do.call(fun, args = list(...))
+}
+
+#' @export
+#' @rdname scale_picker
+scale_edge_colour_picker <- function(..., palette = "YlOrBr") {
+  fun <- sprintf("scale_edge_colour_%s", palette)
+  do.call(fun, args = list(...))
+}
+
+#' @export
+#' @rdname scale_picker
+scale_edge_color_picker <- scale_edge_colour_picker
+
+#' @export
+#' @rdname scale_picker
+scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
+  fun <- sprintf("scale_edge_fill_%s", palette)
   do.call(fun, args = list(...))
 }
 
