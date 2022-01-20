@@ -5,58 +5,112 @@
 \alias{scale_colour_batlow}
 \alias{scale_color_batlow}
 \alias{scale_fill_batlow}
+\alias{scale_edge_colour_batlow}
+\alias{scale_edge_color_batlow}
+\alias{scale_edge_fill_batlow}
 \alias{scale_colour_batlowW}
 \alias{scale_color_batlowW}
 \alias{scale_fill_batlowW}
+\alias{scale_edge_colour_batlowW}
+\alias{scale_edge_color_batlowW}
+\alias{scale_edge_fill_batlowW}
 \alias{scale_colour_batlowK}
 \alias{scale_color_batlowK}
 \alias{scale_fill_batlowK}
+\alias{scale_edge_colour_batlowK}
+\alias{scale_edge_color_batlowK}
+\alias{scale_edge_fill_batlowK}
 \alias{scale_colour_devon}
 \alias{scale_color_devon}
 \alias{scale_fill_devon}
+\alias{scale_edge_colour_devon}
+\alias{scale_edge_color_devon}
+\alias{scale_edge_fill_devon}
 \alias{scale_colour_lajolla}
 \alias{scale_color_lajolla}
 \alias{scale_fill_lajolla}
+\alias{scale_edge_colour_lajolla}
+\alias{scale_edge_color_lajolla}
+\alias{scale_edge_fill_lajolla}
 \alias{scale_colour_bamako}
 \alias{scale_color_bamako}
 \alias{scale_fill_bamako}
+\alias{scale_edge_colour_bamako}
+\alias{scale_edge_color_bamako}
+\alias{scale_edge_fill_bamako}
 \alias{scale_colour_davos}
 \alias{scale_color_davos}
 \alias{scale_fill_davos}
+\alias{scale_edge_colour_davos}
+\alias{scale_edge_color_davos}
+\alias{scale_edge_fill_davos}
 \alias{scale_colour_bilbao}
 \alias{scale_color_bilbao}
 \alias{scale_fill_bilbao}
+\alias{scale_edge_colour_bilbao}
+\alias{scale_edge_color_bilbao}
+\alias{scale_edge_fill_bilbao}
 \alias{scale_colour_nuuk}
 \alias{scale_color_nuuk}
 \alias{scale_fill_nuuk}
+\alias{scale_edge_colour_nuuk}
+\alias{scale_edge_color_nuuk}
+\alias{scale_edge_fill_nuuk}
 \alias{scale_colour_oslo}
 \alias{scale_color_oslo}
 \alias{scale_fill_oslo}
+\alias{scale_edge_colour_oslo}
+\alias{scale_edge_color_oslo}
+\alias{scale_edge_fill_oslo}
 \alias{scale_colour_grayC}
 \alias{scale_color_grayC}
 \alias{scale_fill_grayC}
+\alias{scale_edge_colour_grayC}
+\alias{scale_edge_color_grayC}
+\alias{scale_edge_fill_grayC}
 \alias{scale_colour_hawaii}
 \alias{scale_color_hawaii}
 \alias{scale_fill_hawaii}
+\alias{scale_edge_colour_hawaii}
+\alias{scale_edge_color_hawaii}
+\alias{scale_edge_fill_hawaii}
 \alias{scale_colour_lapaz}
 \alias{scale_color_lapaz}
 \alias{scale_fill_lapaz}
+\alias{scale_edge_colour_lapaz}
+\alias{scale_edge_color_lapaz}
+\alias{scale_edge_fill_lapaz}
 \alias{scale_colour_tokyo}
 \alias{scale_color_tokyo}
 \alias{scale_fill_tokyo}
+\alias{scale_edge_colour_tokyo}
+\alias{scale_edge_color_tokyo}
+\alias{scale_edge_fill_tokyo}
 \alias{scale_colour_buda}
 \alias{scale_color_buda}
 \alias{scale_fill_buda}
+\alias{scale_edge_colour_buda}
+\alias{scale_edge_color_buda}
+\alias{scale_edge_fill_buda}
 \alias{scale_colour_acton}
 \alias{scale_color_acton}
 \alias{scale_fill_acton}
+\alias{scale_edge_colour_acton}
+\alias{scale_edge_color_acton}
+\alias{scale_edge_fill_acton}
 \alias{scale_colour_turku}
 \alias{scale_color_turku}
 \alias{scale_fill_turku}
+\alias{scale_edge_colour_turku}
+\alias{scale_edge_color_turku}
+\alias{scale_edge_fill_turku}
 \alias{scale_colour_imola}
 \alias{scale_color_imola}
 \alias{scale_fill_imola}
-\title{Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2}}
+\alias{scale_edge_colour_imola}
+\alias{scale_edge_color_imola}
+\alias{scale_edge_fill_imola}
+\title{Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -86,6 +140,30 @@ scale_fill_batlow(
   aesthetics = "fill"
 )
 
+scale_edge_colour_batlow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_batlow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_batlow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_batlowW(
   ...,
   reverse = FALSE,
@@ -108,6 +186,30 @@ scale_fill_batlowW(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_batlowW(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_batlowW(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_batlowW(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_batlowK(
@@ -134,6 +236,30 @@ scale_fill_batlowK(
   aesthetics = "fill"
 )
 
+scale_edge_colour_batlowK(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_batlowK(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_batlowK(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_devon(
   ...,
   reverse = FALSE,
@@ -156,6 +282,30 @@ scale_fill_devon(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_devon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_devon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_devon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_lajolla(
@@ -182,6 +332,30 @@ scale_fill_lajolla(
   aesthetics = "fill"
 )
 
+scale_edge_colour_lajolla(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_lajolla(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_lajolla(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_bamako(
   ...,
   reverse = FALSE,
@@ -204,6 +378,30 @@ scale_fill_bamako(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_bamako(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_bamako(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_bamako(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_davos(
@@ -230,6 +428,30 @@ scale_fill_davos(
   aesthetics = "fill"
 )
 
+scale_edge_colour_davos(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_davos(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_davos(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_bilbao(
   ...,
   reverse = FALSE,
@@ -252,6 +474,30 @@ scale_fill_bilbao(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_bilbao(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_bilbao(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_bilbao(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_nuuk(
@@ -278,6 +524,30 @@ scale_fill_nuuk(
   aesthetics = "fill"
 )
 
+scale_edge_colour_nuuk(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_nuuk(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_nuuk(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_oslo(
   ...,
   reverse = FALSE,
@@ -300,6 +570,30 @@ scale_fill_oslo(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_oslo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_oslo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_oslo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_grayC(
@@ -326,6 +620,30 @@ scale_fill_grayC(
   aesthetics = "fill"
 )
 
+scale_edge_colour_grayC(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_grayC(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_grayC(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_hawaii(
   ...,
   reverse = FALSE,
@@ -348,6 +666,30 @@ scale_fill_hawaii(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_hawaii(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_hawaii(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_hawaii(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_lapaz(
@@ -374,6 +716,30 @@ scale_fill_lapaz(
   aesthetics = "fill"
 )
 
+scale_edge_colour_lapaz(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_lapaz(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_lapaz(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_tokyo(
   ...,
   reverse = FALSE,
@@ -396,6 +762,30 @@ scale_fill_tokyo(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_tokyo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_tokyo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_tokyo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_buda(
@@ -422,6 +812,30 @@ scale_fill_buda(
   aesthetics = "fill"
 )
 
+scale_edge_colour_buda(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_buda(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_buda(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_acton(
   ...,
   reverse = FALSE,
@@ -444,6 +858,30 @@ scale_fill_acton(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_acton(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_acton(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_acton(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_turku(
@@ -470,6 +908,30 @@ scale_fill_turku(
   aesthetics = "fill"
 )
 
+scale_edge_colour_turku(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_turku(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_turku(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_imola(
   ...,
   reverse = FALSE,
@@ -492,6 +954,30 @@ scale_fill_imola(
   range = c(0, 1),
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_imola(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_imola(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_imola(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 }
 \arguments{
@@ -574,8 +1060,8 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 

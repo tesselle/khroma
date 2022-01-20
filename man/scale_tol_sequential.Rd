@@ -14,7 +14,7 @@
 \alias{scale_colour_smoothrainbow}
 \alias{scale_color_smoothrainbow}
 \alias{scale_fill_smoothrainbow}
-\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2}}
+\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_YlOrBr(
   ...,
@@ -181,15 +181,15 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}}
 
 Other sequential colour schemes: 
 \code{\link{scale_crameri_sequential}}
 
 Other Paul Tol's colour schemes: 
-\code{\link{scale_tol_discrete}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_tol_diverging}}
 }
 \author{

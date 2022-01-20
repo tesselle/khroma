@@ -11,7 +11,8 @@
 \alias{scale_colour_fes}
 \alias{scale_color_fes}
 \alias{scale_fill_fes}
-\title{Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}}
+\title{Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
+and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -153,8 +154,8 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_sequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 

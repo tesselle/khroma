@@ -3,7 +3,7 @@
 NULL
 
 # Diverging ====================================================================
-#' Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2}
+#' Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
 #' Provides diverging colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
@@ -88,6 +88,36 @@ scale_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_broc <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "broc", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "broc", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_broc <- scale_edge_colour_broc
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
+                                 midpoint = 0, discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "broc", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "broc", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 ## cork ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
@@ -116,6 +146,36 @@ scale_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "cork", reverse = reverse, range = range,
                      midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_cork <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "cork", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "cork", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_cork <- scale_edge_colour_cork
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
+                                 midpoint = 0, discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "cork", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "cork", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
   }
 }
 
@@ -150,6 +210,36 @@ scale_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_vik <- function(..., reverse = FALSE, range = c(0, 1),
+                                  midpoint = 0, discrete = FALSE,
+                                  aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "vik", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "vik", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_vik <- scale_edge_colour_vik
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
+                                midpoint = 0, discrete = FALSE,
+                                aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "vik", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "vik", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 ## lisbon ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
@@ -178,6 +268,36 @@ scale_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "lisbon", reverse = reverse, range = range,
                      midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
+                                     midpoint = 0, discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lisbon", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lisbon", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_lisbon <- scale_edge_colour_lisbon
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lisbon", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lisbon", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
   }
 }
 
@@ -212,6 +332,36 @@ scale_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_tofino <- function(..., reverse = FALSE, range = c(0, 1),
+                                     midpoint = 0, discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "tofino", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "tofino", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_tofino <- scale_edge_colour_tofino
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "tofino", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "tofino", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 ## berlin ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
@@ -240,6 +390,36 @@ scale_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "berlin", reverse = reverse, range = range,
                      midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_berlin <- function(..., reverse = FALSE, range = c(0, 1),
+                                     midpoint = 0, discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "berlin", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "berlin", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_berlin <- scale_edge_colour_berlin
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "berlin", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "berlin", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
   }
 }
 
@@ -274,6 +454,36 @@ scale_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_roma <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "roma", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "roma", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_roma <- scale_edge_colour_roma
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
+                                 midpoint = 0, discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "roma", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "roma", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 ## bam -------------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_diverging
@@ -302,6 +512,36 @@ scale_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "bam", reverse = reverse, range = range,
                      midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_bam <- function(..., reverse = FALSE, range = c(0, 1),
+                                  midpoint = 0, discrete = FALSE,
+                                  aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bam", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bam", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_bam <- scale_edge_colour_bam
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
+                                midpoint = 0, discrete = FALSE,
+                                aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bam", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bam", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
   }
 }
 
@@ -336,8 +576,38 @@ scale_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_colour_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
+                                     midpoint = 0, discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "vanimo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "vanimo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_color_vanimo <- scale_edge_colour_vanimo
+
+#' @export
+#' @rdname scale_crameri_diverging
+scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "vanimo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "vanimo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 # Sequential ===================================================================
-#' Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2}
+#' Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
 #' Provides sequential colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
@@ -428,6 +698,36 @@ scale_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_batlow <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlow", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_batlow <- scale_edge_colour_batlow
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlow", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## batlowW ---------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -454,6 +754,36 @@ scale_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "batlowW", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
+                                      discrete = FALSE,
+                                      aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlowW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlowW", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_batlowW <- scale_edge_colour_batlowW
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlowW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlowW", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -486,6 +816,36 @@ scale_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
+                                      discrete = FALSE,
+                                      aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlowK", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlowK", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_batlowK <- scale_edge_colour_batlowK
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "batlowK", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "batlowK", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## devon -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -512,6 +872,36 @@ scale_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "devon", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_devon <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "devon", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "devon", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_devon <- scale_edge_colour_devon
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "devon", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "devon", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -544,6 +934,36 @@ scale_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
+                                      discrete = FALSE,
+                                      aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lajolla", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lajolla", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_lajolla <- scale_edge_colour_lajolla
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lajolla", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lajolla", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## bamako ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -570,6 +990,36 @@ scale_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "bamako", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_bamako <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bamako", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bamako", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_bamako <- scale_edge_colour_bamako
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bamako", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bamako", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -602,6 +1052,36 @@ scale_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_davos <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "davos", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "davos", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_davos <- scale_edge_colour_davos
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "davos", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "davos", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## bilbao ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -628,6 +1108,36 @@ scale_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "bilbao", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bilbao", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bilbao", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_bilbao <- scale_edge_colour_bilbao
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "bilbao", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "bilbao", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -660,6 +1170,36 @@ scale_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "nuuk", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "nuuk", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_nuuk <- scale_edge_colour_nuuk
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
+                                 discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "nuuk", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "nuuk", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## oslo ------------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -686,6 +1226,36 @@ scale_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "oslo", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_oslo <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "oslo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "oslo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_oslo <- scale_edge_colour_oslo
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
+                                 discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "oslo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "oslo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -718,6 +1288,36 @@ scale_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_grayC <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "grayC", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "grayC", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_grayC <- scale_edge_colour_grayC
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "grayC", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "grayC", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## hawaii ----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -744,6 +1344,36 @@ scale_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "hawaii", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "hawaii", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "hawaii", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_hawaii <- scale_edge_colour_hawaii
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "hawaii", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "hawaii", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -776,6 +1406,36 @@ scale_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lapaz", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lapaz", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_lapaz <- scale_edge_colour_lapaz
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lapaz", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lapaz", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## tokyo -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -802,6 +1462,36 @@ scale_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "tokyo", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "tokyo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "tokyo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_tokyo <- scale_edge_colour_tokyo
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "tokyo", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "tokyo", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -834,6 +1524,36 @@ scale_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_buda <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "buda", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "buda", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_buda <- scale_edge_colour_buda
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
+                                 discrete = FALSE,
+                                 aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "buda", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "buda", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## acton -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -860,6 +1580,36 @@ scale_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
   } else {
     scale_continuous(aesthetics, "acton", reverse = reverse,
                      range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_acton <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "acton", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "acton", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_acton <- scale_edge_colour_acton
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "acton", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "acton", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
   }
 }
 
@@ -892,6 +1642,36 @@ scale_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_turku <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "turku", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "turku", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_turku <- scale_edge_colour_turku
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "turku", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "turku", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 ## imola -----------------------------------------------------------------------
 #' @export
 #' @rdname scale_crameri_sequential
@@ -921,8 +1701,39 @@ scale_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_colour_imola <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "imola", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "imola", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_color_imola <- scale_edge_colour_imola
+
+#' @export
+#' @rdname scale_crameri_sequential
+scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "imola", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "imola", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 # Multi Sequential =============================================================
 #' Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
+#'  and \pkg{ggraph}
 #'
 #' Provides multi-sequential colour scales from Fabio Crameri's *Scientific
 #' colour*.
@@ -1034,7 +1845,7 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Cyclic =======================================================================
-#' Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2}
+#' Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
 #' Provides cyclic colour scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].

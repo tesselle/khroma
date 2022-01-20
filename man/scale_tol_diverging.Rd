@@ -5,13 +5,31 @@
 \alias{scale_colour_sunset}
 \alias{scale_color_sunset}
 \alias{scale_fill_sunset}
+\alias{scale_edge_colour_sunset}
+\alias{scale_edge_color_sunset}
+\alias{scale_edge_fill_sunset}
 \alias{scale_colour_BuRd}
 \alias{scale_color_BuRd}
 \alias{scale_fill_BuRd}
+\alias{scale_edge_colour_BuRd}
+\alias{scale_edge_color_BuRd}
+\alias{scale_edge_fill_BuRd}
 \alias{scale_colour_PRGn}
 \alias{scale_color_PRGn}
 \alias{scale_fill_PRGn}
-\title{Paul Tol's Diverging Colour Schemes for \pkg{ggplot2}}
+\alias{scale_edge_colour_PRGn}
+\alias{scale_edge_color_PRGn}
+\alias{scale_edge_fill_PRGn}
+\alias{scale_edge_colour_YlOrBr}
+\alias{scale_edge_color_YlOrBr}
+\alias{scale_edge_fill_YlOrBr}
+\alias{scale_edge_colour_iridescent}
+\alias{scale_edge_color_iridescent}
+\alias{scale_edge_fill_iridescent}
+\alias{scale_edge_colour_smoothrainbow}
+\alias{scale_edge_color_smoothrainbow}
+\alias{scale_edge_fill_smoothrainbow}
+\title{Paul Tol's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_sunset(
   ...,
@@ -38,6 +56,33 @@ scale_fill_sunset(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_sunset(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_BuRd(
@@ -67,6 +112,33 @@ scale_fill_BuRd(
   aesthetics = "fill"
 )
 
+scale_edge_colour_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_BuRd(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_PRGn(
   ...,
   reverse = FALSE,
@@ -92,6 +164,105 @@ scale_fill_PRGn(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_PRGn(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
+scale_edge_colour_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_YlOrBr(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
+scale_edge_colour_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_iridescent(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
+scale_edge_colour_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_smoothrainbow(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 }
 \arguments{
@@ -159,15 +330,15 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_sequential}}
 
 Other diverging colour schemes: 
 \code{\link{scale_crameri_diverging}}
 
 Other Paul Tol's colour schemes: 
-\code{\link{scale_tol_discrete}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_tol_sequential}}
 }
 \author{

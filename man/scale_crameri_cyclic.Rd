@@ -17,7 +17,7 @@
 \alias{scale_colour_bamO}
 \alias{scale_color_bamO}
 \alias{scale_fill_bamO}
-\title{Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2}}
+\title{Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -206,8 +206,8 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 

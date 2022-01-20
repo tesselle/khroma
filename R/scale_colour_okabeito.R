@@ -3,7 +3,7 @@
 NULL
 
 # Discrete =====================================================================
-#' Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2}
+#' Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2} and \pkg{ggraph}
 #'
 #' Provides the qualitative color scale from Okabe and Ito 2008.
 #' @param ... Arguments passed to [ggplot2::discrete_scale()].
@@ -42,4 +42,22 @@ scale_color_okabeito <- scale_colour_okabeito
 #' @rdname scale_okabeito_discrete
 scale_fill_okabeito <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale_discrete(aesthetics, "okabeito", reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_edge_colour_okabeito <- function(..., reverse = FALSE,
+                                       aesthetics = "edge_colour") {
+  scale_discrete(aesthetics, "okabeito", reverse = reverse, ...)
+}
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_edge_color_okabeito <- scale_edge_colour_okabeito
+
+#' @export
+#' @rdname scale_tol_discrete
+scale_edge_fill_okabeito <- function(..., reverse = FALSE,
+                                     aesthetics = "edge_fill") {
+  scale_discrete(aesthetics, "okabeito", reverse = reverse, ...)
 }

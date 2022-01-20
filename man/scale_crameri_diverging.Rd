@@ -5,31 +5,58 @@
 \alias{scale_colour_broc}
 \alias{scale_color_broc}
 \alias{scale_fill_broc}
+\alias{scale_edge_colour_broc}
+\alias{scale_edge_color_broc}
+\alias{scale_edge_fill_broc}
 \alias{scale_colour_cork}
 \alias{scale_color_cork}
 \alias{scale_fill_cork}
+\alias{scale_edge_colour_cork}
+\alias{scale_edge_color_cork}
+\alias{scale_edge_fill_cork}
 \alias{scale_colour_vik}
 \alias{scale_color_vik}
 \alias{scale_fill_vik}
+\alias{scale_edge_colour_vik}
+\alias{scale_edge_color_vik}
+\alias{scale_edge_fill_vik}
 \alias{scale_colour_lisbon}
 \alias{scale_color_lisbon}
 \alias{scale_fill_lisbon}
+\alias{scale_edge_colour_lisbon}
+\alias{scale_edge_color_lisbon}
+\alias{scale_edge_fill_lisbon}
 \alias{scale_colour_tofino}
 \alias{scale_color_tofino}
 \alias{scale_fill_tofino}
+\alias{scale_edge_colour_tofino}
+\alias{scale_edge_color_tofino}
+\alias{scale_edge_fill_tofino}
 \alias{scale_colour_berlin}
 \alias{scale_color_berlin}
 \alias{scale_fill_berlin}
+\alias{scale_edge_colour_berlin}
+\alias{scale_edge_color_berlin}
+\alias{scale_edge_fill_berlin}
 \alias{scale_colour_roma}
 \alias{scale_color_roma}
 \alias{scale_fill_roma}
+\alias{scale_edge_colour_roma}
+\alias{scale_edge_color_roma}
+\alias{scale_edge_fill_roma}
 \alias{scale_colour_bam}
 \alias{scale_color_bam}
 \alias{scale_fill_bam}
+\alias{scale_edge_colour_bam}
+\alias{scale_edge_color_bam}
+\alias{scale_edge_fill_bam}
 \alias{scale_colour_vanimo}
 \alias{scale_color_vanimo}
 \alias{scale_fill_vanimo}
-\title{Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2}}
+\alias{scale_edge_colour_vanimo}
+\alias{scale_edge_color_vanimo}
+\alias{scale_edge_fill_vanimo}
+\title{Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -62,6 +89,33 @@ scale_fill_broc(
   aesthetics = "fill"
 )
 
+scale_edge_colour_broc(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_broc(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_broc(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_cork(
   ...,
   reverse = FALSE,
@@ -87,6 +141,33 @@ scale_fill_cork(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_cork(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_cork(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_cork(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_vik(
@@ -116,6 +197,33 @@ scale_fill_vik(
   aesthetics = "fill"
 )
 
+scale_edge_colour_vik(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_vik(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_vik(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_lisbon(
   ...,
   reverse = FALSE,
@@ -141,6 +249,33 @@ scale_fill_lisbon(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_lisbon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_lisbon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_lisbon(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_tofino(
@@ -170,6 +305,33 @@ scale_fill_tofino(
   aesthetics = "fill"
 )
 
+scale_edge_colour_tofino(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_tofino(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_tofino(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_berlin(
   ...,
   reverse = FALSE,
@@ -195,6 +357,33 @@ scale_fill_berlin(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_berlin(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_berlin(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_berlin(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 
 scale_colour_roma(
@@ -224,6 +413,33 @@ scale_fill_roma(
   aesthetics = "fill"
 )
 
+scale_edge_colour_roma(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_roma(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_roma(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_bam(
   ...,
   reverse = FALSE,
@@ -251,6 +467,33 @@ scale_fill_bam(
   aesthetics = "fill"
 )
 
+scale_edge_colour_bam(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_bam(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_bam(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
+)
+
 scale_colour_vanimo(
   ...,
   reverse = FALSE,
@@ -276,6 +519,33 @@ scale_fill_vanimo(
   midpoint = 0,
   discrete = FALSE,
   aesthetics = "fill"
+)
+
+scale_edge_colour_vanimo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_color_vanimo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_colour"
+)
+
+scale_edge_fill_vanimo(
+  ...,
+  reverse = FALSE,
+  range = c(0, 1),
+  midpoint = 0,
+  discrete = FALSE,
+  aesthetics = "edge_fill"
 )
 }
 \arguments{
@@ -347,8 +617,8 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 

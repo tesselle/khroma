@@ -4,20 +4,30 @@
 \alias{scale_colour_soil}
 \alias{scale_color_soil}
 \alias{scale_fill_soil}
-\title{FAO Soil Reference Groups Color Scheme for \pkg{ggplot2}}
+\alias{scale_edge_colour_soil}
+\alias{scale_edge_color_soil}
+\alias{scale_edge_fill_soil}
+\title{FAO Soil Reference Groups Color Scheme for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_soil(..., lang = "en", aesthetics = "colour")
 
 scale_color_soil(..., lang = "en", aesthetics = "colour")
 
 scale_fill_soil(..., lang = "en", aesthetics = "fill")
+
+scale_edge_colour_soil(..., lang = "en")
+
+scale_edge_color_soil(..., lang = "en")
+
+scale_edge_fill_soil(..., lang = "en")
 }
 \arguments{
 \item{...}{Arguments passed on to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{lang}{A \code{\link{character}} string specifying the language for the
 color names (see details). It must be one of "\code{en}" (english, the
-default) or "\code{fr}" (french).}
+default), "\code{fr}" (french) or \code{NULL}. If not \code{NULL}, the values will be
+matched based on the color names.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -62,8 +72,8 @@ Other themed colour schemes:
 Other qualitative colour schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_stratigraphy}()},
-\code{\link{scale_okabeito_discrete}},
-\code{\link{scale_tol_discrete}}
+\code{\link{scale_edge_colour_okabeito}()},
+\code{\link{scale_okabeito_discrete}}
 }
 \author{
 N. Frerebeau

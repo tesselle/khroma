@@ -45,6 +45,7 @@ Suggests:
     crayon,
     fansi,
     ggplot2,
+    ggraph,
     knitr,
     rmarkdown,
     scales,

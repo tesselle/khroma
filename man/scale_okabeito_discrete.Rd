@@ -5,7 +5,7 @@
 \alias{scale_colour_okabeito}
 \alias{scale_color_okabeito}
 \alias{scale_fill_okabeito}
-\title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2}}
+\title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_okabeito(..., reverse = FALSE, aesthetics = "colour")
 
@@ -50,7 +50,7 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
-\code{\link{scale_tol_discrete}},
+\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 
@@ -58,7 +58,7 @@ Other qualitative colour schemes:
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
-\code{\link{scale_tol_discrete}}
+\code{\link{scale_edge_colour_okabeito}()}
 }
 \author{
 N. Frerebeau

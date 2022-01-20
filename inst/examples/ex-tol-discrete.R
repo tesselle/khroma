@@ -11,15 +11,3 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
   ggplot2::geom_bar() +
   scale_fill_muted()
-
-ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
-  ggplot2::geom_bar() +
-  scale_fill_pale()
-
-ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
-  ggplot2::geom_bar() +
-  scale_fill_dark()
-
-ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
-  ggplot2::geom_bar() +
-  scale_fill_light()
