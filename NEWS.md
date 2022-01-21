@@ -1,3 +1,5 @@
+# khroma 1.8.0.9000
+
 # khroma 1.8.0
 ## New functions
 * Add `plot_tiles()` to produce a diagnostic map for a given colour scheme.
