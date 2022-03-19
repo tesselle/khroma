@@ -74,8 +74,8 @@ Other themed colour schemes:
 Other qualitative colour schemes: 
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
-\code{\link{scale_edge_colour_okabeito}()},
-\code{\link{scale_okabeito_discrete}}
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_discrete}}
 }
 \author{
 N. Frerebeau

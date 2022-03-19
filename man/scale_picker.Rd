@@ -45,7 +45,8 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 \seealso{
 Other colour palettes: 
 \code{\link{colour}()},
-\code{\link{info}()}
+\code{\link{info}()},
+\code{\link{ramp}()}
 }
 \author{
 N. Frerebeau

@@ -5,6 +5,9 @@
 \alias{scale_colour_okabeito}
 \alias{scale_color_okabeito}
 \alias{scale_fill_okabeito}
+\alias{scale_edge_colour_okabeito}
+\alias{scale_edge_color_okabeito}
+\alias{scale_edge_fill_okabeito}
 \title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_okabeito(..., reverse = FALSE, aesthetics = "colour")
@@ -12,6 +15,12 @@ scale_colour_okabeito(..., reverse = FALSE, aesthetics = "colour")
 scale_color_okabeito(..., reverse = FALSE, aesthetics = "colour")
 
 scale_fill_okabeito(..., reverse = FALSE, aesthetics = "fill")
+
+scale_edge_colour_okabeito(..., reverse = FALSE, aesthetics = "edge_colour")
+
+scale_edge_color_okabeito(..., reverse = FALSE, aesthetics = "edge_colour")
+
+scale_edge_fill_okabeito(..., reverse = FALSE, aesthetics = "edge_fill")
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
@@ -50,7 +59,7 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
-\code{\link{scale_edge_colour_okabeito}()},
+\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 
@@ -58,7 +67,7 @@ Other qualitative colour schemes:
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
-\code{\link{scale_edge_colour_okabeito}()}
+\code{\link{scale_tol_discrete}}
 }
 \author{
 N. Frerebeau

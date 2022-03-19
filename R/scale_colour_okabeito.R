@@ -45,18 +45,18 @@ scale_fill_okabeito <- function(..., reverse = FALSE, aesthetics = "fill") {
 }
 
 #' @export
-#' @rdname scale_tol_discrete
+#' @rdname scale_okabeito_discrete
 scale_edge_colour_okabeito <- function(..., reverse = FALSE,
                                        aesthetics = "edge_colour") {
   scale_discrete(aesthetics, "okabeito", reverse = reverse, ...)
 }
 
 #' @export
-#' @rdname scale_tol_discrete
+#' @rdname scale_okabeito_discrete
 scale_edge_color_okabeito <- scale_edge_colour_okabeito
 
 #' @export
-#' @rdname scale_tol_discrete
+#' @rdname scale_okabeito_discrete
 scale_edge_fill_okabeito <- function(..., reverse = FALSE,
                                      aesthetics = "edge_fill") {
   scale_discrete(aesthetics, "okabeito", reverse = reverse, ...)

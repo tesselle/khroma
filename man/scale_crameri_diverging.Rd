@@ -617,8 +617,8 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
-\code{\link{scale_edge_colour_okabeito}()},
 \code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 
