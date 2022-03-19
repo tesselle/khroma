@@ -35,7 +35,8 @@
 # scale_fill_manual
 # @importFrom scales alpha gradient_n_pal rescale_mid
 # @importFrom spacesXYZ DeltaE
-#' @importFrom grDevices col2rgb colorRampPalette
+#' @importFrom graphics hist image legend
+#' @importFrom grDevices col2rgb colorRamp colorRampPalette rgb
 #' @importFrom grid gpar grid.newpage grid.rect grid.text unit
 NULL
 

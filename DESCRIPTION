@@ -36,6 +36,7 @@ BugReports: https://github.com/tesselle/khroma/issues
 Depends: 
     R (>= 3.3)
 Imports:
+    graphics,
     grDevices,
     grid,
     stats,

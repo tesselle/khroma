@@ -3,7 +3,7 @@
 \name{colour}
 \alias{colour}
 \alias{color}
-\title{Color Palette}
+\title{Colour Palette}
 \usage{
 colour(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 
@@ -24,7 +24,7 @@ names. It must be one of "\code{en}" (English, the default) or "\code{fr}" (Fren
 
 \item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the colour scheme to be
 interpolated. It should not be used routinely with qualitative colour
-schemes, as they are designed to be used as is to remain colorblind-safe.}
+schemes, as they are designed to be used as is to remain colour-blind safe.}
 
 \item{...}{Further arguments passed to
 \link[grDevices:colorRamp]{colorRampPalette}.}
@@ -32,7 +32,7 @@ schemes, as they are designed to be used as is to remain colorblind-safe.}
 \value{
 A palette function with the following attributes, that when called
 with a single integer argument (the number of levels) returns a (named)
-vector of colors.
+vector of colours.
 \describe{
 \item{palette}{A \code{\link{character}} string giving the name of the
 color scheme.}
@@ -41,9 +41,9 @@ data type. One of "\code{qualitative}", "\code{diverging}" or "\code{sequential}
 \item{interpolate}{A \code{\link{logical}} scalar: can the color palette be
 interpolated?}
 \item{missing}{A \code{\link{character}} string giving the the hexadecimal
-representation of the color that should be used for \code{NA} values.}
-\item{max}{An \code{\link{integer}} giving the maximum number of color values.
-Only relevant for non-interpolated color schemes.}
+representation of the colour that should be used for \code{NA} values.}
+\item{max}{An \code{\link{integer}} giving the maximum number of colour values.
+Only relevant for non-interpolated colour schemes.}
 }
 
 For colour schemes that can be interpolated (diverging and sequential data),
@@ -71,7 +71,7 @@ colour schemes (divergent and sequential schemes are linearly interpolated).
 \section{Qualitative colour schemes}{
 
 According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
-\code{vibrant} and \code{muted} colour schemes are colourblind safe. The
+\code{vibrant} and \code{muted} colour schemes are colour-blind safe. The
 \code{mediumcontrast} colour scheme is designed for situations needing colour
 pairs.
 
@@ -184,6 +184,7 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 \seealso{
 Other colour palettes: 
 \code{\link{info}()},
+\code{\link{ramp}()},
 \code{\link{scale_picker}}
 }
 \author{

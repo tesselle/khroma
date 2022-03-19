@@ -1,4 +1,4 @@
-#' Color Palette
+#' Colour Palette
 #'
 #' Provides qualitative, diverging and sequential colour schemes.
 #' @param palette A [`character`] string giving the name of the palette to be
@@ -11,7 +11,7 @@
 #'  names. It must be one of "`en`" (English, the default) or "`fr`" (French).
 #' @param force A [`logical`] scalar. If `TRUE`, forces the colour scheme to be
 #'  interpolated. It should not be used routinely with qualitative colour
-#'  schemes, as they are designed to be used as is to remain colorblind-safe.
+#'  schemes, as they are designed to be used as is to remain colour-blind safe.
 #' @param ... Further arguments passed to
 #'  [colorRampPalette][grDevices::colorRamp].
 #' @section Paul Tol's Colour Schemes:
@@ -27,7 +27,7 @@
 #'  }
 #' @section Qualitative colour schemes:
 #'  According to Paul Tol's technical note, the `bright`, `highcontrast`,
-#'  `vibrant` and `muted` colour schemes are colourblind safe. The
+#'  `vibrant` and `muted` colour schemes are colour-blind safe. The
 #'  `mediumcontrast` colour scheme is designed for situations needing colour
 #'  pairs.
 #'
@@ -75,7 +75,7 @@
 #'  }
 #' @return A palette function with the following attributes, that when called
 #'  with a single integer argument (the number of levels) returns a (named)
-#'  vector of colors.
+#'  vector of colours.
 #'  \describe{
 #'   \item{palette}{A [`character`] string giving the name of the
 #'   color scheme.}
@@ -84,9 +84,9 @@
 #'   \item{interpolate}{A [`logical`] scalar: can the color palette be
 #'   interpolated?}
 #'   \item{missing}{A [`character`] string giving the the hexadecimal
-#'   representation of the color that should be used for `NA` values.}
-#'   \item{max}{An [`integer`] giving the maximum number of color values.
-#'   Only relevant for non-interpolated color schemes.}
+#'   representation of the colour that should be used for `NA` values.}
+#'   \item{max}{An [`integer`] giving the maximum number of colour values.
+#'   Only relevant for non-interpolated colour schemes.}
 #'  }
 #'
 #'  For colour schemes that can be interpolated (diverging and sequential data),
@@ -114,12 +114,12 @@
 #' @export
 colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
                    force = FALSE, ...) {
-  # Validation
+  ## Validation
   palette <- gsub(pattern = "[[:blank:]]", replacement = "", x = palette)
   palette <- match.arg(palette, names(.schemes), several.ok = FALSE)
   lang <- match.arg(lang, c("en", "fr"), several.ok = FALSE)
 
-  # Get colours
+  ## Get colours
   col_palette <- .schemes[[palette]]
   col_colours <- col_palette[["colours"]]
   col_names <- col_palette[["names"]][[lang]]
@@ -129,11 +129,11 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
   col_scheme <- col_palette[["scheme"]]
   k <- col_palette[["max"]]
 
-  # Reverse colour order
+  ## Reverse colour order
   if (reverse) col_colours <- rev(col_colours)
 
   if (col_interpolate || force) {
-    # For colour schemes that can be linearly interpolated
+    ## For colour schemes that can be linearly interpolated
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
       # Validate
@@ -154,9 +154,9 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       return(col)
     }
   } else {
-    # No interpolation
-    # FIXME: add 'range = c(0, 1)' to prevent "multiple local function
-    # definitions" note in R CMD check
+    ## No interpolation
+    ## FIXME: add 'range = c(0, 1)' to prevent "multiple local function
+    ## definitions" note in R CMD check
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
       # Validate
@@ -188,7 +188,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       return(col)
     }
   }
-  # Set attributes
+  ## Set attributes
   fun <- structure(
     fun,
     palette = palette,
@@ -217,6 +217,51 @@ print.colour_scheme <- function(x, ...) {
   } else {
     print(unclass(x))
   }
+}
+
+#' Colour Ramp
+#'
+#' Provides a colour scheme that map a `numeric` vector to colours.
+#' @param x A [`numeric`] vector to be mapped to colours.
+#' @param palette A [`character`] string giving the name of the palette to be
+#'  used (see [colour()]).
+#' @param midpoint A [`numeric`] value specifying the midpoint of `x`. If not
+#'  `NULL`, `x` will be rescaled to have the specified `midpoint`.
+#' @param ... Further arguments passed to [colour()].
+#' @return A palette function with the following attributes, that when called
+#'  with a single argument (the number of colours, see the `breaks` argument of
+#'  [hist()]) returns a vector of colours.
+#' @example inst/examples/ex-ramp.R
+#' @author N. Frerebeau
+#' @family colour palettes
+#' @keywords color
+#' @export
+ramp <- function(x, palette, midpoint = NULL, ...) {
+
+  fun <- function(breaks) {
+    h <- hist(x, breaks = breaks, plot = FALSE)$breaks
+    n <- length(h)
+
+    if (!is.null(midpoint) && is.numeric(midpoint)) {
+      to <- c(0, 1)
+      from <- range(h, na.rm = TRUE)
+      extent <- 2 * max(abs(from - midpoint))
+      x <- (h - midpoint) / extent * diff(to) + mean(to)
+    } else {
+      x <- (h - min(h)) / (max(h) - min(h))
+    }
+
+    col <- colour(palette, ...)
+    ramp <- grDevices::colorRamp(col(n))(x)
+
+    ## Set attributes
+    structure(
+      grDevices::rgb(ramp[, 1], ramp[, 2], ramp[, 3], maxColorValue = 255),
+      breaks = h,
+      class = c("colour_scheme")
+    )
+  }
+  return(fun)
 }
 
 #' Information

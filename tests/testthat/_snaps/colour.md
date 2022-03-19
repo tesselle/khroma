@@ -1,3 +1,23 @@
+# Colour ramp
+
+    Code
+      ramp(volcano, palette = "BuRd")(10)
+    Output
+       [1] "#2166AC" "#3986BC" "#66A9CF" "#9DCAE1" "#CBE2EE" "#E8F0F4" "#F9ECE5"
+       [8] "#FCD6C0" "#F5AE8E" "#E37F65" "#CC4C43" "#B2182B"
+      attr(,"breaks")
+       [1]  90 100 110 120 130 140 150 160 170 180 190 200
+
+---
+
+    Code
+      ramp(volcano, palette = "BuRd", midpoint = 160)(10)
+    Output
+       [1] "#2166AC" "#337FB8" "#529AC6" "#79B4D5" "#A3CDE2" "#C7E0ED" "#E0EBF2"
+       [8] "#F1EEEC" "#F9E5DA" "#FBD3BC" "#F6B395" "#E98F73"
+      attr(,"breaks")
+       [1]  90 100 110 120 130 140 150 160 170 180 190 200
+
 # Palette informations
 
     Code

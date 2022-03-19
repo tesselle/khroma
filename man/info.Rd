@@ -26,6 +26,7 @@ info()
 \seealso{
 Other colour palettes: 
 \code{\link{colour}()},
+\code{\link{ramp}()},
 \code{\link{scale_picker}}
 }
 \author{
