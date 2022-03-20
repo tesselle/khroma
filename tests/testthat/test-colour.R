@@ -5,8 +5,9 @@ test_that("ggplot2 rescaler", {
   expect_equal(max(mid_rescaler(mid = 5)(1:100)), 1)
 })
 test_that("Colour ramp", {
-  expect_snapshot(ramp(volcano, palette = "BuRd")(10), cran = TRUE)
-  expect_snapshot(ramp(volcano, palette = "BuRd", midpoint = 160)(10), cran = TRUE)
+  h <- elevation <- hist(volcano, breaks = 10, plot = FALSE)$breaks
+  expect_snapshot(ramp(h, palette = "BuRd")(10), cran = TRUE)
+  expect_snapshot(ramp(h, palette = "BuRd", midpoint = 160)(10), cran = TRUE)
 })
 test_that("Palette informations", {
   expect_snapshot(info(), cran = TRUE)

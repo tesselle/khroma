@@ -229,7 +229,7 @@ print.colour_scheme <- function(x, ...) {
 #'  `NULL`, `x` will be rescaled to have the specified `midpoint`.
 #' @param ... Further arguments passed to [colour()].
 #' @return A palette function with the following attributes, that when called
-#'  with a single argument (the number of colours, see the `breaks` argument of
+#'  with a single argument (the number of levels, e.g. the `breaks` returned by
 #'  [hist()]) returns a vector of colours.
 #' @example inst/examples/ex-ramp.R
 #' @author N. Frerebeau
@@ -238,26 +238,24 @@ print.colour_scheme <- function(x, ...) {
 #' @export
 ramp <- function(x, palette, midpoint = NULL, ...) {
 
-  fun <- function(breaks) {
-    h <- hist(x, breaks = breaks, plot = FALSE)$breaks
-    n <- length(h)
+  fun <- function(n) {
 
     if (!is.null(midpoint) && is.numeric(midpoint)) {
       to <- c(0, 1)
-      from <- range(h, na.rm = TRUE)
+      from <- range(x, na.rm = TRUE)
       extent <- 2 * max(abs(from - midpoint))
-      x <- (h - midpoint) / extent * diff(to) + mean(to)
+      z <- (x - midpoint) / extent * diff(to) + mean(to)
     } else {
-      x <- (h - min(h)) / (max(h) - min(h))
+      z <- (x - min(x)) / (max(x) - min(x))
     }
 
     col <- colour(palette, ...)
-    ramp <- grDevices::colorRamp(col(n))(x)
+    ramp <- grDevices::colorRamp(col(n))(z)
 
     ## Set attributes
     structure(
       grDevices::rgb(ramp[, 1], ramp[, 2], ramp[, 3], maxColorValue = 255),
-      breaks = h,
+      breaks = x,
       class = c("colour_scheme")
     )
   }

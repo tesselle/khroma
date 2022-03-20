@@ -19,7 +19,7 @@ used (see \code{\link[=colour]{colour()}}).}
 }
 \value{
 A palette function with the following attributes, that when called
-with a single argument (the number of colours, see the \code{breaks} argument of
+with a single argument (the number of levels, e.g. the \code{breaks} returned by
 \code{\link[=hist]{hist()}}) returns a vector of colours.
 }
 \description{
@@ -27,12 +27,20 @@ Provides a colour scheme that map a \code{numeric} vector to colours.
 }
 \examples{
 ## Visualize a simple DEM model
-ramp_default <- ramp(volcano, palette = "BuRd")(10)
+
+## Distribution of elevation values
+elevation <- hist(volcano)
+
+## Where are breaks?
+elevation$breaks
+
+## No rescaling
+ramp_default <- ramp(elevation$breaks, palette = "BuRd")(10)
 image(volcano, col = ramp_default)
 legend("topright", legend = attr(ramp_default, "breaks"), fill = ramp_default)
 
 ## Rescale to midpoint
-ramp_160 <- ramp(volcano, palette = "BuRd", midpoint = 160)(10)
+ramp_160 <- ramp(elevation$breaks, palette = "BuRd", midpoint = 160)(10)
 image(volcano, col = ramp_160)
 legend("topright", legend = attr(ramp_160, "breaks"), fill = ramp_160)
 }
