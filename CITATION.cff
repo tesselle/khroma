@@ -1,14 +1,14 @@
 # -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.1.0
+# CITATION file created with {cffr} R package, v0.2.2
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
-
+ 
 cff-version: 1.2.0
 message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.8.0
+version: 1.9.0
 abstract: 'Colour schemes ready for each type of data (qualitative, diverging or sequential),
   with colours that are distinct for all people, including colour-blind readers. This
   package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:
@@ -31,7 +31,7 @@ preferred-citation:
     email: nicolas.frerebeau@u-bordeaux-montaigne.fr
     orcid: https://orcid.org/0000-0001-5759-4944
     affiliation: Université Bordeaux Montaigne
-  version: 1.7.0.9000
+  version: 1.9.0
   abstract: 'Colour schemes ready for each type of data (qualitative, diverging or
     sequential), with colours that are distinct for all people, including colour-blind
     readers. This package provides an implementation of Paul Tol (2018) and Fabio
@@ -48,8 +48,13 @@ preferred-citation:
     email: nicolas.frerebeau@u-bordeaux-montaigne.fr
     orcid: https://orcid.org/0000-0001-5759-4944
     affiliation: Université Bordeaux Montaigne
+  keywords:
+  - accessibility
+  - colour-schemes
+  - data-visualization
+  - r-package
   license: GPL-3.0-or-later
-  year: '2021'
+  year: '2022'
 repository: https://CRAN.R-project.org/package=khroma
 repository-code: https://github.com/tesselle/khroma
 url: https://packages.tesselle.org/khroma/
@@ -64,6 +69,260 @@ keywords:
 - colour schemes
 - accessibility
 - r package
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 3.3'
+- type: software
+  title: graphics
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+- type: software
+  title: grDevices
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+- type: software
+  title: grid
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+- type: software
+  title: stats
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+- type: software
+  title: utils
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+- type: software
+  title: covr
+  abstract: 'covr: Test Coverage for Packages'
+  notes: Suggests
+  authors:
+  - family-names: Hester
+    given-names: Jim
+    email: james.f.hester@gmail.com
+  year: '2022'
+  url: https://CRAN.R-project.org/package=covr
+- type: software
+  title: crayon
+  abstract: 'crayon: Colored Terminal Output'
+  notes: Suggests
+  authors:
+  - family-names: Csárdi
+    given-names: Gábor
+    email: csardi.gabor@gmail.com
+  year: '2022'
+  url: https://CRAN.R-project.org/package=crayon
+- type: software
+  title: fansi
+  abstract: 'fansi: ANSI Control Sequence Aware String Functions'
+  notes: Suggests
+  authors:
+  - family-names: Gaslam
+    given-names: Brodie
+    email: brodie.gaslam@yahoo.com
+  year: '2022'
+  url: https://CRAN.R-project.org/package=fansi
+- type: software
+  title: ggplot2
+  abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
+  notes: Suggests
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@rstudio.com
+    orcid: https://orcid.org/0000-0003-4757-117X
+  - family-names: Chang
+    given-names: Winston
+    orcid: https://orcid.org/0000-0002-1576-2126
+  - family-names: Henry
+    given-names: Lionel
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@rstudio.com
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Takahashi
+    given-names: Kohske
+  - family-names: Wilke
+    given-names: Claus
+    orcid: https://orcid.org/0000-0002-7470-9261
+  - family-names: Woo
+    given-names: Kara
+    orcid: https://orcid.org/0000-0002-5125-4188
+  - family-names: Yutani
+    given-names: Hiroaki
+    orcid: https://orcid.org/0000-0002-3385-7233
+  - family-names: Dunnington
+    given-names: Dewey
+    orcid: https://orcid.org/0000-0002-9415-4582
+  year: '2022'
+  url: https://CRAN.R-project.org/package=ggplot2
+- type: software
+  title: ggraph
+  abstract: 'ggraph: An Implementation of Grammar of Graphics for Graphs and Networks'
+  notes: Suggests
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomasp85@gmail.com
+    orcid: https://orcid.org/0000-0002-5147-4711
+  year: '2022'
+  url: https://CRAN.R-project.org/package=ggraph
+- type: software
+  title: knitr
+  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
+  notes: Suggests
+  authors:
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  year: '2022'
+  url: https://CRAN.R-project.org/package=knitr
+- type: software
+  title: rmarkdown
+  abstract: 'rmarkdown: Dynamic Documents for R'
+  notes: Suggests
+  authors:
+  - family-names: Allaire
+    given-names: JJ
+    email: jj@rstudio.com
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  - family-names: McPherson
+    given-names: Jonathan
+    email: jonathan@rstudio.com
+  - family-names: Luraschi
+    given-names: Javier
+    email: javier@rstudio.com
+  - family-names: Ushey
+    given-names: Kevin
+    email: kevin@rstudio.com
+  - family-names: Atkins
+    given-names: Aron
+    email: aron@rstudio.com
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@rstudio.com
+  - family-names: Cheng
+    given-names: Joe
+    email: joe@rstudio.com
+  - family-names: Chang
+    given-names: Winston
+    email: winston@rstudio.com
+  - family-names: Iannone
+    given-names: Richard
+    email: rich@rstudio.com
+    orcid: https://orcid.org/0000-0003-3925-190X
+  year: '2022'
+  url: https://CRAN.R-project.org/package=rmarkdown
+- type: software
+  title: scales
+  abstract: 'scales: Scale Functions for Visualization'
+  notes: Suggests
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@rstudio.com
+  - family-names: Seidel
+    given-names: Dana
+  year: '2022'
+  url: https://CRAN.R-project.org/package=scales
+- type: software
+  title: spacesXYZ
+  abstract: 'spacesXYZ: CIE XYZ and some of Its Derived Color Spaces'
+  notes: Suggests
+  authors:
+  - family-names: Davis
+    given-names: Glenn
+  year: '2022'
+  url: https://CRAN.R-project.org/package=spacesXYZ
+- type: software
+  title: testthat
+  abstract: 'testthat: Unit Testing for R'
+  notes: Suggests
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@rstudio.com
+  year: '2022'
+  url: https://CRAN.R-project.org/package=testthat
+  version: '>= 3.0.0'
+- type: software
+  title: vdiffr
+  abstract: 'vdiffr: Visual Regression Testing and Graphical Diffing'
+  notes: Suggests
+  authors:
+  - family-names: Henry
+    given-names: Lionel
+    email: lionel@rstudio.com
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@rstudio.com
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Luciani
+    given-names: T Jake
+    email: jake@apache.org
+  - family-names: Decorde
+    given-names: Matthieu
+    email: matthieu.decorde@ens-lyon.fr
+  - family-names: Lise
+    given-names: Vaudor
+    email: lise.vaudor@ens-lyon.fr
+  year: '2022'
+  url: https://CRAN.R-project.org/package=vdiffr
+  version: '>= 1.0.0'
 identifiers:
 - description: The concept DOI.
   type: doi
