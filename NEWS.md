@@ -3,6 +3,9 @@
 * Add `ramp()` to produce a colour scheme that map a `numeric` vector to colours (allow rescaling to a specific midpoint).
 * Add `scale_*_logical()` for `logical` values.
 
+## Bugfixes & changes
+* Fix `scale_colour_okabeito()` and `scale_fill_okabeito()` (unnamed argument were passed in the wrong order).
+
 # khroma 1.8.0
 ## New functions
 * Add `plot_tiles()` to produce a diagnostic map for a given colour scheme.
