@@ -2,269 +2,7 @@
 % Please edit documentation in R/scale_colour_tol.R
 \name{scale_tol_diverging}
 \alias{scale_tol_diverging}
-\alias{scale_colour_sunset}
-\alias{scale_color_sunset}
-\alias{scale_fill_sunset}
-\alias{scale_edge_colour_sunset}
-\alias{scale_edge_color_sunset}
-\alias{scale_edge_fill_sunset}
-\alias{scale_colour_BuRd}
-\alias{scale_color_BuRd}
-\alias{scale_fill_BuRd}
-\alias{scale_edge_colour_BuRd}
-\alias{scale_edge_color_BuRd}
-\alias{scale_edge_fill_BuRd}
-\alias{scale_colour_PRGn}
-\alias{scale_color_PRGn}
-\alias{scale_fill_PRGn}
-\alias{scale_edge_colour_PRGn}
-\alias{scale_edge_color_PRGn}
-\alias{scale_edge_fill_PRGn}
-\alias{scale_edge_colour_YlOrBr}
-\alias{scale_edge_color_YlOrBr}
-\alias{scale_edge_fill_YlOrBr}
-\alias{scale_edge_colour_iridescent}
-\alias{scale_edge_color_iridescent}
-\alias{scale_edge_fill_iridescent}
-\alias{scale_edge_colour_smoothrainbow}
-\alias{scale_edge_color_smoothrainbow}
-\alias{scale_edge_fill_smoothrainbow}
 \title{Paul Tol's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
-\usage{
-scale_colour_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_color_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_fill_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "fill"
-)
-
-scale_edge_colour_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_sunset(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-
-scale_colour_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_color_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_fill_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "fill"
-)
-
-scale_edge_colour_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_BuRd(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-
-scale_colour_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_color_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "colour"
-)
-
-scale_fill_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "fill"
-)
-
-scale_edge_colour_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_PRGn(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-
-scale_edge_colour_YlOrBr(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_YlOrBr(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_YlOrBr(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-
-scale_edge_colour_iridescent(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_iridescent(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_iridescent(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-
-scale_edge_colour_smoothrainbow(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_color_smoothrainbow(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_colour"
-)
-
-scale_edge_fill_smoothrainbow(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  discrete = FALSE,
-  aesthetics = "edge_fill"
-)
-}
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
@@ -291,12 +29,6 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 Provides diverging colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
-If more colors than defined are needed from a given scheme, the colour
-coordinates are linearly interpolated to provide a continuous version of the
-scheme.
-Note that the default colour for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
-
 \tabular{lll}{
 \strong{Palette} \tab \strong{Max. colours} \tab \strong{NA value} \cr
 \code{sunset} \tab 11 \tab #FFFFFF \cr
@@ -304,6 +36,16 @@ a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 \code{PRGn} \tab 9 \tab #FFEE99 \cr
 }
 }
+\section{Interpolation}{
+
+If more colors than defined are needed from a given scheme, the colour
+coordinates are linearly interpolated to provide a continuous version of the
+scheme.
+
+Note that the default colour for \code{NA} can be overridden by passing
+a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+}
+
 \examples{
 data(economics, package = "ggplot2")
 
@@ -333,17 +75,9 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_okabeito_discrete}},
 \code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_sequential}}
-
-Other diverging colour schemes: 
-\code{\link{scale_crameri_diverging}}
-
-Other Paul Tol's colour schemes: 
-\code{\link{scale_tol_discrete}},
-\code{\link{scale_tol_sequential}}
 }
 \author{
 N. Frerebeau
 }
-\concept{Paul Tol's colour schemes}
 \concept{colour-blind safe colour schemes}
-\concept{diverging colour schemes}
+\keyword{internal}

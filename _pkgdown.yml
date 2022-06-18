@@ -10,15 +10,21 @@ reference:
 - title: Colour Palette
   contents:
   - has_concept("colour palettes")
-- title: Okabe and Ito's colour scheme
+- title: Qualitative Colour Schemes
   contents:
-  - has_concept("Okabe and Ito's colour scheme")
-- title: Paul Tol's Colour Schemes
+  - has_concept("qualitative colour schemes")
+- title: Diverging Colour Schemes
   contents:
-  - has_concept("Paul Tol's colour schemes")
-- title: Fabio Crameri's Colour Schemes
+  - has_concept("diverging colour schemes")
+- title: Sequential Colour Schemes
   contents:
-  - has_concept("Fabio Crameri's colour schemes")
+  - has_concept("sequential colour schemes")
+- title: Multi Sequential Colour Schemes
+  contents:
+  - has_concept("multi sequential colour schemes")
+- title: Cyclic Colour Schemes
+  contents:
+  - has_concept("cyclic colour schemes")
 - title: Themed Colour Schemes
   contents:
   - has_concept("themed colour schemes")

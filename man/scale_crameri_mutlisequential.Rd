@@ -2,93 +2,11 @@
 % Please edit documentation in R/scale_colour_crameri.R
 \name{scale_crameri_mutlisequential}
 \alias{scale_crameri_mutlisequential}
-\alias{scale_colour_oleron}
-\alias{scale_color_oleron}
-\alias{scale_fill_oleron}
-\alias{scale_colour_bukavu}
-\alias{scale_color_bukavu}
-\alias{scale_fill_bukavu}
-\alias{scale_colour_fes}
-\alias{scale_color_fes}
-\alias{scale_fill_fes}
-\title{Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
+\title{Fabio Crameri's Multi-Sequential Colour Schemes for \pkg{ggplot2}
 and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
-}
-\usage{
-scale_colour_oleron(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_color_oleron(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_fill_oleron(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "fill"
-)
-
-scale_colour_bukavu(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_color_bukavu(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_fill_bukavu(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "fill"
-)
-
-scale_colour_fes(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_color_fes(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "colour"
-)
-
-scale_fill_fes(
-  ...,
-  reverse = FALSE,
-  range = c(0, 1),
-  midpoint = 0,
-  aesthetics = "fill"
-)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
@@ -113,13 +31,6 @@ Provides multi-sequential colour scales from Fabio Crameri's \emph{Scientific
 colour}.
 }
 \details{
-If more colours than defined are needed from a given scheme, the colour
-coordinates are linearly interpolated to provide a continuous version of the
-scheme.
-
-Note that the default colour for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
-
 Available schemes:
 \itemize{
 \item \code{oleron}
@@ -127,6 +38,16 @@ Available schemes:
 \item \code{fes}
 }
 }
+\section{Interpolation}{
+
+If more colours than defined are needed from a given scheme, the colour
+coordinates are linearly interpolated to provide a continuous version of the
+scheme.
+
+Note that the default colour for \code{NA} can be overridden by passing
+a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+}
+
 \examples{
 data(volcano)
 
@@ -158,15 +79,9 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_tol_discrete}},
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
-
-Other Fabio Crameri's colour schemes: 
-\code{\link{scale_crameri_cyclic}},
-\code{\link{scale_crameri_diverging}},
-\code{\link{scale_crameri_sequential}}
 }
 \author{
 N. Frerebeau
 }
-\concept{Fabio Crameri's colour schemes}
 \concept{colour-blind safe colour schemes}
-\concept{multi sequential colour schemes}
+\keyword{internal}
