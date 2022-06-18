@@ -86,6 +86,7 @@ Other qualitative colour schemes:
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
+\code{\link{scale_logical_discrete}},
 \code{\link{scale_okabeito_discrete}},
 \code{\link{scale_tol_bright}},
 \code{\link{scale_tol_dark}},

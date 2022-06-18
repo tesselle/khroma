@@ -11,7 +11,7 @@ NULL
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @example inst/examples/ex-other-discrete.R
-#' @family discrete colour schemes
+#' @family qualitative colour schemes
 #' @author N. Frerebeau
 #' @name scale_logical_discrete
 #' @rdname scale_logical_discrete

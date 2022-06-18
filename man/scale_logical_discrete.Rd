@@ -38,7 +38,22 @@ ggplot2::ggplot(logic, ggplot2::aes(x, y, fill = values)) +
   ggplot2::geom_raster() +
   scale_fill_logical()
 }
+\seealso{
+Other qualitative colour schemes: 
+\code{\link{scale_colour_land}()},
+\code{\link{scale_colour_soil}()},
+\code{\link{scale_colour_stratigraphy}()},
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_bright}},
+\code{\link{scale_tol_dark}},
+\code{\link{scale_tol_highcontrast}},
+\code{\link{scale_tol_light}},
+\code{\link{scale_tol_mediumcontrast}},
+\code{\link{scale_tol_muted}},
+\code{\link{scale_tol_pale}},
+\code{\link{scale_tol_vibrant}}
+}
 \author{
 N. Frerebeau
 }
-\concept{discrete colour schemes}
+\concept{qualitative colour schemes}
