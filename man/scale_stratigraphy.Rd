@@ -57,12 +57,17 @@ strati <- data.frame(
           66, 201, 145, 66, 2.6, 23, 2.6, 0)
 )
 
-ggplot2::ggplot(strati, ggplot2::aes(fill = name)) +
-  ggplot2::geom_rect(aes(xmin = rep(0, 15), xmax = rep(1, 15),
-                         ymin = start, ymax = end)) +
+## Keep chronological order in the legend
+strati$name <- factor(strati$name, levels = rev(unique(strati$name)),
+                      ordered = TRUE)
+
+## Workaround: use `limits = force` to remove unused values
+ggplot2::ggplot(strati) +
+  ggplot2::geom_rect(ggplot2::aes(xmin = rep(0, 15), xmax = rep(1, 15),
+                                  ymin = start, ymax = end, fill = name)) +
   ggplot2::scale_y_reverse() +
   ggplot2::facet_grid(. ~ type) +
-  scale_fill_stratigraphy(name = "Stratigraphy")
+  scale_fill_stratigraphy(name = "Stratigraphy", limits = force)
 }
 \references{
 \href{https://www.ccgm.org}{Commission for the Geological Map of the World}.

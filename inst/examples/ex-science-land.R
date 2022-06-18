@@ -9,8 +9,8 @@ land <- data.frame(
   )
 )
 
-ggplot2::ggplot(land, ggplot2::aes(fill = name)) +
-  ggplot2::geom_rect(aes(xmin = rep(0, 14), xmax = rep(1, 14),
-                         ymin = 1:14, ymax = 1:14+1)) +
+ggplot2::ggplot(land) +
+  ggplot2::geom_rect(ggplot2::aes(xmin = rep(0, 14), xmax = rep(1, 14),
+                                  ymin = 1:14, ymax = 1:14+1, fill = name)) +
   ggplot2::scale_y_reverse() +
   scale_fill_land(name = "land")
