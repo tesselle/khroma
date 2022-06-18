@@ -2,7 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "khroma",
-  "description": "Colour schemes ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi: 10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.",
+  "description": "Colour schemes ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:10.5194/gmd-11-2541-2018> colour schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. Several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are also implemented.",
   "name": "khroma: Colour Schemes for Scientific Data Visualization",
   "relatedLink": ["https://packages.tesselle.org/khroma/", "https://CRAN.R-project.org/package=khroma"],
   "codeRepository": "https://github.com/tesselle/khroma",
@@ -225,7 +225,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3126.77KB",
+  "fileSize": "3126.769KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
