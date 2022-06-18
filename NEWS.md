@@ -1,6 +1,7 @@
 # khroma 1.8.0.9000
 ## New functions
 * Add `ramp()` to produce a colour scheme that map a `numeric` vector to colours (allow rescaling to a specific midpoint).
+* Add `scale_*_logical()` for `logical` values.
 
 # khroma 1.8.0
 ## New functions

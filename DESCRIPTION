@@ -69,5 +69,6 @@ Collate:
     'plot.R'
     'scale_colour_crameri.R'
     'scale_colour_okabeito.R'
+    'scale_colour_other.R'
     'scale_colour_science.R'
     'scale_colour_tol.R'
