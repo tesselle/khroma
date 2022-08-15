@@ -42,7 +42,7 @@ Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France}
 Nicolas Frerebeau\cr
 \email{nicolas.frerebeau@u-bordeaux-montaigne.fr}
 
-IRAMAT-CRP2A (UMR 5060)\cr
+Archéosciences Bordeaux (UMR 6034)\cr
 Maison de l'Archéologie\cr
 Université Bordeaux Montaigne\cr
 F-33607 Pessac cedex\cr

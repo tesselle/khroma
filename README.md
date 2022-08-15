@@ -9,13 +9,21 @@
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tesselle/khroma)
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 
-[![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev)
-[![CRAN
-Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma)
-[![CRAN
-checks](https://cranchecks.info/badges/worst/khroma)](https://cran.r-project.org/web/checks/check_results_khroma.html)
-[![CRAN
-Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma)
+<a href="https://tesselle.r-universe.dev" class="pkgdown-devel"><img
+src="https://tesselle.r-universe.dev/badges/khroma"
+alt="r-universe" /></a>
+<a href="https://cran.r-project.org/package=khroma"
+class="pkgdown-release"><img
+src="http://www.r-pkg.org/badges/version/khroma"
+alt="CRAN Version" /></a> <a
+href="https://cran.r-project.org/web/checks/check_results_khroma.html"
+class="pkgdown-release"><img
+src="https://cranchecks.info/badges/worst/khroma"
+alt="CRAN checks" /></a>
+<a href="https://cran.r-project.org/package=khroma"
+class="pkgdown-release"><img
+src="http://cranlogs.r-pkg.org/badges/khroma"
+alt="CRAN Downloads" /></a>
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
