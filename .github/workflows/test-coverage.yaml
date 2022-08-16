@@ -9,4 +9,4 @@ name: test-coverage
 
 jobs:
   test-coverage:
-    uses: tesselle/packages/.github/workflows/test-coverage.yaml@main
+    uses: tesselle/.github/.github/workflows/test-coverage.yaml@main

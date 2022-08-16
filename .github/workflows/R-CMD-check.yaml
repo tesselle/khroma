@@ -9,4 +9,4 @@ name: R-CMD-check
 
 jobs:
   R-CMD-check:
-    uses: tesselle/packages/.github/workflows/R-CMD-check.yaml@main
+    uses: tesselle/.github/.github/workflows/R-CMD-check.yaml@main

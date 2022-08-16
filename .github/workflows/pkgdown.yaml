@@ -8,7 +8,7 @@ name: pkgdown
 
 jobs:
   pkgdown:
-    uses: tesselle/packages/.github/workflows/pkgdown.yaml@main
+    uses: tesselle/.github/.github/workflows/pkgdown.yaml@main
     with:
       REPO: ${{ github.event.repository.name }}
       COMMIT: ${{ github.sha }}

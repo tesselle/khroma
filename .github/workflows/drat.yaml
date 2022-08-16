@@ -7,7 +7,7 @@ name: drat
 
 jobs:
   drat:
-    uses: tesselle/packages/.github/workflows/drat.yaml@main
+    uses: tesselle/.github/.github/workflows/drat.yaml@main
     with:
       REPO: ${{ github.event.repository.name }}
       RELEASE: ${{ github.event.release.tag_name }}
