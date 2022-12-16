@@ -2,12 +2,7 @@
 test_that("Quick and Dirty Plot", {
   skip_if_not_installed("vdiffr")
 
-  pdf(NULL)
-  dev.control(displaylist = "enable")
-  plot(colour("smooth rainbow")(256, range = c(0.5, 1)))
-  plot_range <- grDevices::recordPlot()
-  invisible(dev.off())
-
+  plot_range <- function() plot(colour("smooth rainbow")(256, range = c(0.5, 1)))
   vdiffr::expect_doppelganger("plot_range", plot_range)
 })
 test_that("Schemes", {
@@ -16,14 +11,8 @@ test_that("Schemes", {
   skip_if_not_installed("vdiffr")
   for (i in c(TRUE, FALSE)) {
     for (j in c(TRUE, FALSE)) {
-      pdf(NULL)
-      dev.control(displaylist = "enable")
-      plot_scheme(colour("muted")(9), colours = i, names = j)
-      plot_scheme_muted <- grDevices::recordPlot()
-      invisible(dev.off())
-
-      vdiffr::expect_doppelganger(paste0("scheme_muted_", i, j),
-                                  plot_scheme_muted)
+      plot_scheme_muted <- function() plot_scheme(colour("muted")(9), colours = i, names = j)
+      vdiffr::expect_doppelganger(paste0("scheme_muted_", i, j), plot_scheme_muted)
     }
   }
 })
@@ -31,8 +20,7 @@ test_that("Diagnostic Map", {
   expect_error(plot_map(1:5), "x must be a character vector of colours.")
 
   skip_if_not_installed("vdiffr")
-  pdf(NULL)
-  dev.control(displaylist = "enable")
+
   # Keep the results the same for R versions prior to 3.6
   if (getRversion() >= "3.6") {
     # Set sample.kind = "Rounding" to reproduce the old sampling
@@ -41,32 +29,21 @@ test_that("Diagnostic Map", {
   } else {
     set.seed(12345)
   }
-  plot_map(colour("bright")(7))
-  plot_map_bright <- grDevices::recordPlot()
-  invisible(dev.off())
 
+  plot_map_bright <- function() plot_map(colour("bright")(7))
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
 })
 test_that("Diagnostic Tiles", {
   expect_error(plot_tiles(1:5), "x must be a character vector of colours.")
 
   skip_if_not_installed("vdiffr")
-  pdf(NULL)
-  dev.control(displaylist = "enable")
-  plot_tiles(colour("bright")(7), n = 128)
-  plot_tiles_bright <- grDevices::recordPlot()
-  invisible(dev.off())
 
+  plot_tiles_bright <- function() plot_tiles(colour("bright")(7), n = 128)
   vdiffr::expect_doppelganger("tiles_bright", plot_tiles_bright)
 })
 test_that("Colourblind Schemes", {
   skip_if_not_installed("vdiffr")
 
-  pdf(NULL)
-  dev.control(displaylist = "enable")
-  plot_scheme_colourblind(colour("bright")(7))
-  plot_colourblind_bright <- grDevices::recordPlot()
-  invisible(dev.off())
-
+  plot_colourblind_bright <- function() plot_scheme_colourblind(colour("bright")(7))
   vdiffr::expect_doppelganger("scheme_colourblind", plot_colourblind_bright)
 })
