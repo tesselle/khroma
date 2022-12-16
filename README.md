@@ -8,6 +8,7 @@
 [![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tesselle/khroma)
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
+[![Dependencies](https://tinyverse.netlify.com/badge/khroma)](https://cran.r-project.org/package=khroma)
 
 <a href="https://tesselle.r-universe.dev" class="pkgdown-devel"><img
 src="https://tesselle.r-universe.dev/badges/khroma"
@@ -51,11 +52,11 @@ interested in the
 Tol (2021) and Crameri (2018) offer carefully chosen schemes, ready for
 each type of data, with colours that are:
 
--   Distinct for all people, including colour-blind readers,
--   Distinct from black and white,
--   Distinct on screen and paper,
--   Matching well together,
--   Citable and reproducible.
+- Distinct for all people, including colour-blind readers,
+- Distinct from black and white,
+- Distinct on screen and paper,
+- Matching well together,
+- Citable and reproducible.
 
 See `vignette("tol")` and `vignette("crameri")` for a more complete
 overview.
@@ -247,6 +248,7 @@ plot_scheme_colourblind(okabe(8))
 <img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
 
 ``` r
+
 ## ggplot2 default colour scheme
 ## (equally spaced hues around the colour wheel)
 x <- scales::hue_pal()(8)
