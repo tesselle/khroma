@@ -41,10 +41,10 @@ test_that("Palette colours", {
 test_that("Qualitative colours", {
   options(crayon.enabled = FALSE)
 
-  palettes <- c("okabe ito", "bright", "high contrast", "vibrant", "muted",
-                "medium contrast", "pale", "dark", "light",
+  palettes <- c("okabe ito", "okabe ito black", "bright", "high contrast",
+                "vibrant", "muted", "medium contrast", "pale", "dark", "light",
                 "stratigraphy", "soil", "land")
-  n <- c(8, 7, 3, 7, 9, 6, 6, 6, 9, 175, 24, 14)
+  n <- c(8, 8, 7, 3, 7, 9, 6, 6, 6, 9, 175, 24, 14)
   for (i in seq_len(length(palettes))) {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))
@@ -146,6 +146,12 @@ test_that("Scale builder", {
 
   pal_colour_rev <- scale_colour_picker(reverse = TRUE, palette = "okabeito")
   expect_true(all.equal(pal_colour_rev, scale_colour_okabeito(reverse = TRUE)))
+
+  pal_colour <- scale_colour_picker(black_position = "last", palette = "okabeito")
+  expect_true(all.equal(pal_colour, scale_colour_okabeito(black_position = "last")))
+
+  pal_colour_rev <- scale_colour_picker(reverse = TRUE, black_position = "last", palette = "okabeito")
+  expect_true(all.equal(pal_colour_rev, scale_colour_okabeito(reverse = TRUE, black_position = "last")))
 
   pal_fill <- scale_fill_picker(palette = "YlOrBr")
   expect_true(all.equal(pal_fill, scale_fill_YlOrBr()))

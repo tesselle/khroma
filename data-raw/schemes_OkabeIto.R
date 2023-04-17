@@ -16,5 +16,20 @@ schemes_okabe2008 <- list(
              "vermillon", "rouge pourpre")
     ),
     scheme = NULL
+  ),
+  okabeitoblack = list(
+    type = "qualitative",
+    interpolate = FALSE,
+    missing = NA_character_,
+    max = 8,
+    colours = c("#E69F00", "#56B4E9", "#009E73", "#F0E442",
+                "#0072B2", "#D55E00", "#CC79A7", "#000000"),
+    names = list(
+      en = c("orange", "sky blue", "bluish green", "yellow", "blue",
+             "vermilion", "reddish purple", "black"),
+      fr = c("orange", "bleu ciel", "bleu-vert", "jaune", "bleu",
+             "vermillon", "rouge pourpre", "noir")
+    ),
+    scheme = NULL
   )
 )

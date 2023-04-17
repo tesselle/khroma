@@ -75,7 +75,8 @@
       49 discreterainbow  sequential  23 #777777
       50   smoothrainbow  sequential  34 #666666
       51        okabeito qualitative   8    <NA>
-      52    stratigraphy qualitative 175    <NA>
-      53            soil qualitative  24    <NA>
-      54            land qualitative  14    <NA>
+      52   okabeitoblack qualitative   8    <NA>
+      53    stratigraphy qualitative 175    <NA>
+      54            soil qualitative  24    <NA>
+      55            land qualitative  14    <NA>
 

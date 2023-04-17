@@ -64,6 +64,7 @@
 #'  The following (qualitative) colour scheme is available:
 #'  \describe{
 #'   \item{`okabeito`}{Up to 8 colours.}
+#'   \item{`okabeito black`}{Up to 8 colours, with black as the last.}
 #'  }
 #' @section Scientific Colour Schemes:
 #'  The following (qualitative) color schemes are available:

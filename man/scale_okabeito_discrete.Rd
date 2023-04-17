@@ -10,23 +10,57 @@
 \alias{scale_edge_fill_okabeito}
 \title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
-scale_colour_okabeito(..., reverse = FALSE, aesthetics = "colour")
+scale_colour_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "colour"
+)
 
-scale_color_okabeito(..., reverse = FALSE, aesthetics = "colour")
+scale_color_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "colour"
+)
 
-scale_fill_okabeito(..., reverse = FALSE, aesthetics = "fill")
+scale_fill_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "fill"
+)
 
-scale_edge_colour_okabeito(..., reverse = FALSE, aesthetics = "edge_colour")
+scale_edge_colour_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "edge_colour"
+)
 
-scale_edge_color_okabeito(..., reverse = FALSE, aesthetics = "edge_colour")
+scale_edge_color_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "edge_colour"
+)
 
-scale_edge_fill_okabeito(..., reverse = FALSE, aesthetics = "edge_fill")
+scale_edge_fill_okabeito(
+  ...,
+  reverse = FALSE,
+  black_position = c("first", "last"),
+  aesthetics = "edge_fill"
+)
 }
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colors be reversed?}
+
+\item{black_position}{A \code{\link{character}} string giving the position of the black
+colour. It must be one of "\code{first}" or "\code{last}". Any unambiguous substring
+can be given.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -47,6 +81,10 @@ library(ggplot2)
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
   scale_colour_okabeito()
+
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_okabeito(black_position = "last")
 }
 \references{
 Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make
