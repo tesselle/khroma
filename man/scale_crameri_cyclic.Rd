@@ -29,7 +29,7 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 Provides cyclic colour scales from Fabio Crameri's \emph{Scientific colour}.
 }
 \details{
-Availble schemes:
+Available schemes:
 \itemize{
 \item \code{brocO}
 \item \code{corkO}

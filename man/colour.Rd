@@ -180,7 +180,7 @@ Tol, P. (2021). \emph{Colour Schemes}. SRON. Technical Note No.
 SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 
-\href{https://www.ccgm.org}{Commission for the Geological Map of the World}
+\href{https://ccgm.org/}{Commission for the Geological Map of the World}
 }
 \seealso{
 Other colour palettes: 

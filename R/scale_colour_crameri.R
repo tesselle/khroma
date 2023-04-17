@@ -2576,7 +2576,7 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 #' @param discrete A [`logical`] scalar: should the colour scheme be
 #'  used as a discrete scale?
 #' @details
-#'  Availble schemes:
+#'  Available schemes:
 #'
 #'  * `brocO`
 #'  * `corkO`
