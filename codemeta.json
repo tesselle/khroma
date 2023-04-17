@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.2.1 (2022-06-23)",
+  "runtimePlatform": "R version 4.2.3 (2023-03-15)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -44,6 +44,13 @@
       "familyName": "Arel-Bundock",
       "email": "vincent.arel-bundock@umontreal.ca",
       "@id": "https://orcid.org/0000-0003-2042-7063"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Ulrik",
+      "familyName": "Stervbo",
+      "email": "ulrik.stervbo@gmail.com",
+      "@id": "https://orcid.org/0000-0002-2831-8868"
     }
   ],
   "maintainer": [
@@ -225,7 +232,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3127.947KB",
+  "fileSize": "3131.055KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

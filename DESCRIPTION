@@ -19,7 +19,13 @@ Authors@R:
              role = "ctb",
              email = "vincent.arel-bundock@umontreal.ca",
              comment = c(ORCID = "0000-0003-2042-7063", 
-                         affiliation = "Université de Montréal")))
+                         affiliation = "Université de Montréal")),
+      person(given = "Ulrik",
+             family = "Stervbo",
+             role = "ctb",
+             email = "ulrik.stervbo@gmail.com",
+             comment = c(ORCID = "0000-0002-2831-8868",
+                         affiliation = "Ruhr-University of Bochum")))
 Maintainer: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>
 Description: Colour schemes ready for each type of data (qualitative,
     diverging or sequential), with colours that are distinct for all

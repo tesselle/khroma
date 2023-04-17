@@ -34,7 +34,8 @@ Useful links:
 \tabular{ll}{
 Vincent Arel-Bundock \tab \emph{Université de Montréal, Canada} \cr
 Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
-Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France}
+Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France} \cr
+Ulrik Stervbo \tab \emph{Ruhr-University of Bochum, Germany}
 }
 
 \strong{Package maintainer}
