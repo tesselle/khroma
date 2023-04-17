@@ -13,7 +13,7 @@
 #'   Vincent Arel-Bundock \tab *Université de Montréal, Canada* \cr
 #'   Nicolas Frerebeau \tab *Université Bordeaux Montaigne, France* \cr
 #'   Brice Lebrun \tab *Université Bordeaux Montaigne, France* \cr
-#'   Ulrik Stervbo \tab *Ruhr-University of Bochum, Germany*
+#'   Ulrik Stervbo \tab *Ruhr-Universität Bochum*
 #'  }
 #'
 #'  **Package maintainer**
