@@ -9,6 +9,9 @@ NULL
 #' @param ... Arguments passed to [ggplot2::discrete_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
+#' @param black_position A [`character`] string giving the position of the black
+#'  colour. It must be one of "`first`" or "`last`". Any unambiguous substring
+#'  can be given.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @details
@@ -28,25 +31,26 @@ NULL
 #' @rdname scale_okabeito_discrete
 NULL
 
-#' @param black_position A [`character`] string giving the position of the black colour.
+#' Get Okabe and Ito's Discrete Color Scheme
 #'
-#' @keyword Internal
+#' @param black_position A [`character`] string giving the position of the black
+#'  colour. It must be one of "`first`" or "`last`". Any unambiguous substring
+#'  can be given.
 #' @examples
 #' get_okabeito_scale("first")
 #' get_okabeito_scale("last")
-#' @rdname scale_okabeito_discrete
-get_okabeito_scale <- function(black_position = c("first", "last")){
+#' @keywords internal
+#' @noRd
+get_okabeito_scale <- function(black_position = c("first", "last")) {
   black_position <- match.arg(black_position, several.ok = FALSE)
-  if(black_position == "first"){
-    return("okabeito")
-  }else{
-    return("okabeito_black_last")
-  }
+  switch (black_position, first = "okabeito", last = "okabeitoblack")
 }
 
 #' @export
 #' @rdname scale_okabeito_discrete
-scale_colour_okabeito <- function(..., reverse = FALSE, black_position = c("first", "last"), aesthetics = "colour") {
+scale_colour_okabeito <- function(..., reverse = FALSE,
+                                  black_position = c("first", "last"),
+                                  aesthetics = "colour") {
   oi_palette <- get_okabeito_scale(black_position)
   scale_discrete(aesthetics, oi_palette, reverse = reverse, ...)
 }
@@ -57,7 +61,9 @@ scale_color_okabeito <- scale_colour_okabeito
 
 #' @export
 #' @rdname scale_okabeito_discrete
-scale_fill_okabeito <- function(..., reverse = FALSE, black_position = c("first", "last"), aesthetics = "fill") {
+scale_fill_okabeito <- function(..., reverse = FALSE,
+                                black_position = c("first", "last"),
+                                aesthetics = "fill") {
   oi_palette <- get_okabeito_scale(black_position)
   scale_discrete(aesthetics, oi_palette, reverse = reverse, ...)
 }

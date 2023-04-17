@@ -2,7 +2,6 @@
 % Please edit documentation in R/scale_colour_okabeito.R
 \name{scale_okabeito_discrete}
 \alias{scale_okabeito_discrete}
-\alias{get_okabeito_scale}
 \alias{scale_colour_okabeito}
 \alias{scale_color_okabeito}
 \alias{scale_fill_okabeito}
@@ -11,8 +10,6 @@
 \alias{scale_edge_fill_okabeito}
 \title{Okabe and Ito's Discrete Color Scheme for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
-get_okabeito_scale(black_position = c("first", "last"))
-
 scale_colour_okabeito(
   ...,
   reverse = FALSE,
@@ -56,12 +53,14 @@ scale_edge_fill_okabeito(
 )
 }
 \arguments{
-\item{black_position}{A \code{\link{character}} string giving the position of the black colour.}
-
 \item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colors be reversed?}
+
+\item{black_position}{A \code{\link{character}} string giving the position of the black
+colour. It must be one of "\code{first}" or "\code{last}". Any unambiguous substring
+can be given.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -82,8 +81,10 @@ library(ggplot2)
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
   scale_colour_okabeito()
-get_okabeito_scale("first")
-get_okabeito_scale("last")
+
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_okabeito(black_position = "last")
 }
 \references{
 Okabe, M. & Ito, K. (2008). \emph{Color Universal Design (CUD): How to Make

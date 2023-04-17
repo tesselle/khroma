@@ -114,6 +114,7 @@ range.}
 The following (qualitative) colour scheme is available:
 \describe{
 \item{\code{okabeito}}{Up to 8 colours.}
+\item{\verb{okabeito black}}{Up to 8 colours, with black as the last.}
 }
 }
 

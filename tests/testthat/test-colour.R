@@ -41,10 +41,10 @@ test_that("Palette colours", {
 test_that("Qualitative colours", {
   options(crayon.enabled = FALSE)
 
-  palettes <- c("okabe ito", "bright", "high contrast", "vibrant", "muted",
-                "medium contrast", "pale", "dark", "light",
+  palettes <- c("okabe ito", "okabe ito black", "bright", "high contrast",
+                "vibrant", "muted", "medium contrast", "pale", "dark", "light",
                 "stratigraphy", "soil", "land")
-  n <- c(8, 7, 3, 7, 9, 6, 6, 6, 9, 175, 24, 14)
+  n <- c(8, 8, 7, 3, 7, 9, 6, 6, 6, 9, 175, 24, 14)
   for (i in seq_len(length(palettes))) {
     expect_named(colour(palettes[i], names = TRUE)(n[i]))
     expect_null(names(colour(palettes[i], names = FALSE)(n[i])))

@@ -3,8 +3,12 @@ test_that("Okabe Ito", {
   expect_s3_class(scale_edge_colour_okabeito(), "ggproto")
   expect_s3_class(scale_edge_colour_okabeito(), "ScaleDiscrete")
   expect_equal(
-    scale_edge_colour_okabeito()$palette(8),
+    scale_edge_colour_okabeito(black_position = "first")$palette(8),
     colour("okabe ito", names = FALSE)(8)
+  )
+  expect_equal(
+    scale_edge_colour_okabeito(black_position = "last")$palette(8),
+    colour("okabe ito black", names = FALSE)(8)
   )
 
   expect_s3_class(scale_edge_color_okabeito(), "ggproto")

@@ -17,7 +17,7 @@ schemes_okabe2008 <- list(
     ),
     scheme = NULL
   ),
-  okabeito_black_last = list(
+  okabeitoblack = list(
     type = "qualitative",
     interpolate = FALSE,
     missing = NA_character_,
