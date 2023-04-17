@@ -1,21 +1,13 @@
-citHeader("To cite khroma in publications use:")
-
-citEntry(
-  entry        = "Manual",
-  title        = "khroma: Colour Schemes for Scientific Data Visualization",
-  author       = c(person("Nicolas", "Frerebeau", role = "aut")),
-  year         = "2022",
+bibentry(
+  bibtype      = "Manual",
+  header       = "To cite khroma in publications use:",
+  footer       = "This package is a part of the tesselle project <https://www.tesselle.org>.",
+  author       = "Nicolas Frerebeau",
+  title        = "{khroma: Colour Schemes for Scientific Data Visualization}",
+  year         = "2023",
   organization = "Université Bordeaux Montaigne",
   address      = "Pessac, France",
   note         = "R package version 1.9.0",
-  url          = "https://packages.tesselle.org/khroma/",
   doi          = "10.5281/zenodo.1472077",
-
-  textVersion  =
-  paste("Frerebeau, Nicolas (2022).",
-        "khroma: Colour Schemes for Scientific Data Visualization.",
-        "R package version 1.9.0",
-        "Université Bordeaux Montaigne, Pessac, France.",
-        "DOI 10.5281/zenodo.1472077.",
-        "URL https://packages.tesselle.org/khroma/.")
+  url          = "https://packages.tesselle.org/khroma/"
 )

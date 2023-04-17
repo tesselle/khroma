@@ -14,11 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r hook, comment="", results="asis", echo=FALSE, eval=FALSE}
-# https://cran.r-project.org/web/packages/fansi/vignettes/sgr-in-rmd.html
-old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
-```
-
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
@@ -29,7 +24,7 @@ old.hooks <- fansi::set_knit_hooks(knitr::knit_hooks)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev){.pkgdown-devel}
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-release}
-[![CRAN checks](https://cranchecks.info/badges/worst/khroma)](https://cran.r-project.org/web/checks/check_results_khroma.html){.pkgdown-release}
+[![CRAN checks](https://badges.cranchecks.info/worst/khroma.svg)](https://cran.r-project.org/web/checks/check_results_khroma.html){.pkgdown-release}
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-release}
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
@@ -55,7 +50,7 @@ See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
 
 For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these colour schemes may not be colour-blind safe.
 
-All these colour schemes are implemented for use with base R or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
+All these colour schemes are implemented for use with base R **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
 
 ## Installation
 
@@ -96,26 +91,37 @@ info()
 
 `colour()` returns a palette function that when called with a single integer argument returns a vector of colours.
 
-If [**crayon**](https://github.com/r-lib/crayon) is installed on your machine and if the `crayon.enabled` option is set to `TRUE` with `options()`, colours will be nicely printed in the console. You can disable this feature by setting the `crayon.enabled` option to `FALSE`.
-
 ```{r usage}
 ## Paul Tol's bright colour scheme
 bright <- colour("bright")
 bright(7)
 ```
 
-```{r show, fig.height=2, fig.width=7, fig.align='center'}
+```{r usage-show, fig.height=2, fig.width=7, fig.align='center'}
 ## Show the colour palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
-```{r usage-ggplot2, fig.height=3.5, fig.width=5, fig.align='center'}
-## Use with ggplot2
+```{r usage-plot, fig.height=3.5, fig.width=5, fig.align='center'}
 data(mpg, package = "ggplot2")
 
+## Use with graphics
+par(mar = c(5, 4, 1, 1) + 0.1)
+plot(
+  x = mpg$displ,
+  y = mpg$hwy,
+  pch = 16,
+  col = colour("bright")(7)[as.factor(mpg$class)],
+  xlab = "displ",
+  ylab = "hwy",
+  panel.first = grid()
+)
+
+## Use with ggplot2
 ggplot2::ggplot(data = mpg) +
   ggplot2::aes(x = displ, y = hwy, colour = class) +
   ggplot2::geom_point() +
+  ggplot2::theme_bw() +
   scale_colour_bright()
 ```
 

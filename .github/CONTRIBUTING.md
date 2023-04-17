@@ -20,7 +20,7 @@ If you want to make a bigger change, it's a good idea to first file an issue and
 
 ### Code style
 
-* New code should follow the [style guide](https://documentation.tesselle.org).
+* New code should follow the [style guide](https://www.tesselle.org/style).
 * We use [roxygen2](https://cran.r-project.org/package=roxygen2), with [Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd-formatting.html), for documentation.
 * We use [testthat](https://cran.r-project.org/package=testthat) for unit tests. Contributions with test cases included are easier to accept.
 

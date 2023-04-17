@@ -19,7 +19,7 @@ src="http://www.r-pkg.org/badges/version/khroma"
 alt="CRAN Version" /></a> <a
 href="https://cran.r-project.org/web/checks/check_results_khroma.html"
 class="pkgdown-release"><img
-src="https://cranchecks.info/badges/worst/khroma"
+src="https://badges.cranchecks.info/worst/khroma.svg"
 alt="CRAN checks" /></a>
 <a href="https://cran.r-project.org/package=khroma"
 class="pkgdown-release"><img
@@ -65,8 +65,8 @@ For specific uses, several scientific thematic schemes (geologic
 timescale, land cover, FAO soils, etc.) are implemented, but these
 colour schemes may not be colour-blind safe.
 
-All these colour schemes are implemented for use with base R or
-[**ggplot2**](https://github.com/tidyverse/ggplot2) and
+All these colour schemes are implemented for use with base R
+**graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 [**ggraph**](https://github.com/thomasp85/ggraph).
 
 ## Installation
@@ -167,11 +167,6 @@ info()
 `colour()` returns a palette function that when called with a single
 integer argument returns a vector of colours.
 
-If [**crayon**](https://github.com/r-lib/crayon) is installed on your
-machine and if the `crayon.enabled` option is set to `TRUE` with
-`options()`, colours will be nicely printed in the console. You can
-disable this feature by setting the `crayon.enabled` option to `FALSE`.
-
 ``` r
 ## Paul Tol's bright colour scheme
 bright <- colour("bright")
@@ -187,19 +182,37 @@ bright(7)
 plot_scheme(bright(7), colours = TRUE)
 ```
 
-<img src="man/figures/README-show-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-show-1.png" style="display: block; margin: auto;" />
 
 ``` r
-## Use with ggplot2
 data(mpg, package = "ggplot2")
 
+## Use with graphics
+par(mar = c(5, 4, 1, 1) + 0.1)
+plot(
+  x = mpg$displ,
+  y = mpg$hwy,
+  pch = 16,
+  col = colour("bright")(7)[as.factor(mpg$class)],
+  xlab = "displ",
+  ylab = "hwy",
+  panel.first = grid()
+)
+```
+
+<img src="man/figures/README-usage-plot-1.png" style="display: block; margin: auto;" />
+
+``` r
+
+## Use with ggplot2
 ggplot2::ggplot(data = mpg) +
   ggplot2::aes(x = displ, y = hwy, colour = class) +
   ggplot2::geom_point() +
+  ggplot2::theme_bw() +
   scale_colour_bright()
 ```
 
-<img src="man/figures/README-usage-ggplot2-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-plot-2.png" style="display: block; margin: auto;" />
 
 ### Diagnostic tools
 

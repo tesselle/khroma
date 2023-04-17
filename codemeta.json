@@ -232,11 +232,11 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3131.055KB",
+  "fileSize": "3124.641KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
-      "datePublished": "2022",
+      "datePublished": "2023",
       "author": [
         {
           "@type": "Person",
@@ -244,7 +244,7 @@
           "familyName": "Frerebeau"
         }
       ],
-      "name": "khroma: Colour Schemes for Scientific Data Visualization",
+      "name": "{khroma: Colour Schemes for Scientific Data Visualization}",
       "identifier": "10.5281/zenodo.1472077",
       "url": "https://packages.tesselle.org/khroma/",
       "description": "R package version 1.9.0",
