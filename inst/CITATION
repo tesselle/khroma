@@ -2,7 +2,7 @@ bibentry(
   bibtype      = "Manual",
   header       = "To cite khroma in publications use:",
   footer       = "This package is a part of the tesselle project <https://www.tesselle.org>.",
-  author       = "Nicolas Frerebeau",
+  author       = person("Nicolas", "Frerebeau", role = "aut"),
   title        = "{khroma: Colour Schemes for Scientific Data Visualization}",
   year         = "2023",
   organization = "Université Bordeaux Montaigne",

@@ -52,6 +52,10 @@ For specific uses, several scientific thematic schemes (geologic timescale, land
 
 All these colour schemes are implemented for use with base R **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
 
+```{r citation, echo=FALSE, comment=''}
+utils::citation("khroma")
+```
+
 ## Installation
 
 You can install the released version of **khroma** from [CRAN](https://CRAN.R-project.org):
@@ -141,13 +145,6 @@ plot_map(okabe(8))
 BuRd <- colour("BuRd")
 
 plot_tiles(BuRd(128), n = 256)
-```
-
-#### Compute CIELAB distance metric
-
-```{r usage-cielab}
-DeltaE <- compare(okabe(8))
-round(DeltaE, 2)
 ```
 
 #### Simulate colour-blindness

@@ -69,6 +69,29 @@ All these colour schemes are implemented for use with base R
 **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 [**ggraph**](https://github.com/thomasp85/ggraph).
 
+    To cite khroma in publications use:
+
+      Frerebeau N (2023). _khroma: Colour Schemes for Scientific Data
+      Visualization_. Université Bordeaux Montaigne, Pessac, France.
+      doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
+      R package version 1.10.0, <https://packages.tesselle.org/khroma/>.
+
+    Une entrée BibTeX pour les utilisateurs LaTeX est
+
+      @Manual{,
+        author = {Nicolas Frerebeau},
+        title = {{khroma: Colour Schemes for Scientific Data Visualization}},
+        year = {2023},
+        organization = {Université Bordeaux Montaigne},
+        address = {Pessac, France},
+        note = {R package version 1.10.0},
+        doi = {10.5281/zenodo.1472077},
+        url = {https://packages.tesselle.org/khroma/},
+      }
+
+    This package is a part of the tesselle project
+    <https://www.tesselle.org>.
+
 ## Installation
 
 You can install the released version of **khroma** from
@@ -155,9 +178,10 @@ info()
 #> 49 discreterainbow  sequential  23 #777777
 #> 50   smoothrainbow  sequential  34 #666666
 #> 51        okabeito qualitative   8    <NA>
-#> 52    stratigraphy qualitative 175    <NA>
-#> 53            soil qualitative  24    <NA>
-#> 54            land qualitative  14    <NA>
+#> 52   okabeitoblack qualitative   8    <NA>
+#> 53    stratigraphy qualitative 175    <NA>
+#> 54            soil qualitative  24    <NA>
+#> 55            land qualitative  14    <NA>
 ```
 
 </details>
@@ -236,21 +260,6 @@ plot_tiles(BuRd(128), n = 256)
 ```
 
 <img src="man/figures/README-usage-tiles-1.png" style="display: block; margin: auto;" />
-
-#### Compute CIELAB distance metric
-
-``` r
-DeltaE <- compare(okabe(8))
-round(DeltaE, 2)
-#>                black orange sky blue bluish green yellow  blue vermilion
-#> orange         64.74                                                    
-#> sky blue       60.95  53.61                                             
-#> bluish green   50.51  42.87    34.69                                    
-#> yellow         88.42  21.72    57.53        38.04                       
-#> blue           39.23  55.35    22.31        38.40  70.37                
-#> vermilion      49.36  22.24    52.27        54.36  43.71 49.62          
-#> reddish purple 53.11  49.01    45.51        63.45  62.54 41.11     37.02
-```
 
 #### Simulate colour-blindness
 
