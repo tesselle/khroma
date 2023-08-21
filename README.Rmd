@@ -74,11 +74,11 @@ remotes::install_github("tesselle/khroma")
 ## Usage
 
 ```{r packages}
+## Install extra packages (if needed)
+# install.packages("ggplot2"))
+
 ## Load packages
 library(khroma)
-
-## Install extra packages (if needed)
-# install.packages(c("ggplot2", "spacesXYZ"))
 ```
 
 <details>

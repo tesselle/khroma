@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.4.1
+# CITATION file created with {cffr} R package, v0.5.0
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
  
@@ -8,13 +8,13 @@ message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.10.0.9000
+version: 1.11.0
 doi: 10.5281/zenodo.1472077
-abstract: Colour schemes ready for each type of data (qualitative, diverging or sequential),
-  with colours that are distinct for all people, including colour-blind readers. This
+abstract: Color schemes ready for each type of data (qualitative, diverging or sequential),
+  with colors that are distinct for all people, including color-blind readers. This
   package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:10.5194/gmd-11-2541-2018>
-  colour schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate
-  colour-blindness and to test how well the colours of any palette are identifiable.
+  color schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate
+  color-blindness and to test how well the colors of any palette are identifiable.
   Several scientific thematic schemes (geologic timescale, land cover, FAO soils,
   etc.) are also implemented.
 authors:
@@ -35,7 +35,7 @@ preferred-citation:
   year: '2023'
   location:
     name: Pessac, France
-  notes: R package version 1.10.0
+  notes: R package version 1.11.0
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
   institution:
@@ -66,7 +66,7 @@ references:
   year: '2023'
   institution:
     name: R Foundation for Statistical Computing
-  version: '>= 3.3'
+  version: '>= 3.5.0'
 - type: software
   title: graphics
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -123,17 +123,6 @@ references:
   institution:
     name: R Foundation for Statistical Computing
 - type: software
-  title: covr
-  abstract: 'covr: Test Coverage for Packages'
-  notes: Suggests
-  url: https://covr.r-lib.org
-  repository: https://CRAN.R-project.org/package=covr
-  authors:
-  - family-names: Hester
-    given-names: Jim
-    email: james.f.hester@gmail.com
-  year: '2023'
-- type: software
   title: crayon
   abstract: 'crayon: Colored Terminal Output'
   notes: Suggests
@@ -143,17 +132,6 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2023'
-- type: software
-  title: fansi
-  abstract: 'fansi: ANSI Control Sequence Aware String Functions'
-  notes: Suggests
-  url: https://github.com/brodieG/fansi
-  repository: https://CRAN.R-project.org/package=fansi
-  authors:
-  - family-names: Gaslam
-    given-names: Brodie
-    email: brodie.gaslam@yahoo.com
   year: '2023'
 - type: software
   title: ggplot2
@@ -258,6 +236,19 @@ references:
     orcid: https://orcid.org/0000-0003-3925-190X
   year: '2023'
 - type: software
+  title: rsvg
+  abstract: 'rsvg: Render SVG Images into PDF, PNG, (Encapsulated) PostScript, or
+    Bitmap Arrays'
+  notes: Suggests
+  url: https://docs.ropensci.org/rsvg/
+  repository: https://CRAN.R-project.org/package=rsvg
+  authors:
+  - family-names: Ooms
+    given-names: Jeroen
+    email: jeroen@berkeley.edu
+    orcid: https://orcid.org/0000-0002-4035-0289
+  year: '2023'
+- type: software
   title: scales
   abstract: 'scales: Scale Functions for Visualization'
   notes: Suggests
@@ -280,30 +271,21 @@ references:
     given-names: Glenn
   year: '2023'
 - type: software
-  title: testthat
-  abstract: 'testthat: Unit Testing for R'
+  title: svglite
+  abstract: 'svglite: An ''SVG'' Graphics Device'
   notes: Suggests
-  url: https://testthat.r-lib.org
-  repository: https://CRAN.R-project.org/package=testthat
+  url: https://svglite.r-lib.org
+  repository: https://CRAN.R-project.org/package=svglite
   authors:
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
-  year: '2023'
-  version: '>= 3.0.0'
-- type: software
-  title: vdiffr
-  abstract: 'vdiffr: Visual Regression Testing and Graphical Diffing'
-  notes: Suggests
-  url: https://vdiffr.r-lib.org/
-  repository: https://CRAN.R-project.org/package=vdiffr
-  authors:
+    email: hadley@posit.co
   - family-names: Henry
     given-names: Lionel
-    email: lionel@rstudio.com
+    email: lionel@posit.co
   - family-names: Pedersen
     given-names: Thomas Lin
-    email: thomas.pedersen@rstudio.com
+    email: thomas.pedersen@posit.co
     orcid: https://orcid.org/0000-0002-5147-4711
   - family-names: Luciani
     given-names: T Jake
@@ -315,7 +297,30 @@ references:
     given-names: Vaudor
     email: lise.vaudor@ens-lyon.fr
   year: '2023'
-  version: '>= 1.0.0'
+- type: software
+  title: tinysnapshot
+  abstract: 'tinysnapshot: Snapshots for Unit Tests using the ''tinytest'' Framework'
+  notes: Suggests
+  url: https://github.com/vincentarelbundock/tinysnapshot
+  repository: https://CRAN.R-project.org/package=tinysnapshot
+  authors:
+  - family-names: Arel-Bundock
+    given-names: Vincent
+    email: vincent.arel-bundock@umontreal.ca
+    orcid: https://orcid.org/0000-0003-2042-7063
+  year: '2023'
+- type: software
+  title: tinytest
+  abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'
+  notes: Suggests
+  url: https://github.com/markvanderloo/tinytest
+  repository: https://CRAN.R-project.org/package=tinytest
+  authors:
+  - family-names: van der Loo
+    given-names: Mark
+    email: mark.vanderloo@gmail.com
+    orcid: https://orcid.org/0000-0002-9807-4686
+  year: '2023'
 identifiers:
 - description: The concept DOI.
   type: doi

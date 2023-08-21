@@ -74,8 +74,7 @@ or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
       Frerebeau N (2023). _khroma: Colour Schemes for Scientific Data
       Visualization_. Université Bordeaux Montaigne, Pessac, France.
       doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
-      R package version 1.10.0.9000,
-      <https://packages.tesselle.org/khroma/>.
+      R package version 1.11.0, <https://packages.tesselle.org/khroma/>.
 
     Une entrée BibTeX pour les utilisateurs LaTeX est
 
@@ -85,7 +84,7 @@ or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
         year = {2023},
         organization = {Université Bordeaux Montaigne},
         address = {Pessac, France},
-        note = {R package version 1.10.0.9000},
+        note = {R package version 1.11.0},
         doi = {10.5281/zenodo.1472077},
         url = {https://packages.tesselle.org/khroma/},
       }
@@ -112,11 +111,11 @@ remotes::install_github("tesselle/khroma")
 ## Usage
 
 ``` r
+## Install extra packages (if needed)
+# install.packages("ggplot2"))
+
 ## Load packages
 library(khroma)
-
-## Install extra packages (if needed)
-# install.packages(c("ggplot2", "spacesXYZ"))
 ```
 
 <details>
