@@ -1,15 +1,15 @@
-#' Simulate Colour-Blindness
+#' Simulate Color-Blindness
 #'
 #' @param x A palette [`function`] that when called with a single
 #'  integer argument (the number of levels) returns a vector of colors
-#'  (see [colour()]).
+#'  (see [color()]).
 #' @param mode A [`character`] string giving the colorblind vision
 #'  to be used. It must be one of "`deuteranopia`", "`protanopia`",
 #'  "`tritanopia`" or "`achromatopsia`". Any unambiguous substring can be given.
 #' @return A palette [`function`] that returns a vector of anomalized
-#'  colours. All the attributes of the initial palette function are inherited,
+#'  colors. All the attributes of the initial palette function are inherited,
 #'  with a supplementary attribute "`mode`" giving the corresponding
-#'  colour-blind vision.
+#'  color-blind vision.
 #' @example inst/examples/ex-anomalize.R
 #' @references
 #'  Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
@@ -49,7 +49,7 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
   # Validation
   mode <- match.arg(mode, several.ok = FALSE)
 
-  # Convert to RGB colour code
+  # Convert to RGB color code
   RGB1 <- t(grDevices::col2rgb(x, alpha = FALSE))
 
   # Dichromat
@@ -85,7 +85,7 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
     )
   )
 
-  # Convert colours from the RGB color space to the LMS color space
+  # Convert colors from the RGB color space to the LMS color space
   # RGB_to_LMS <- .XYZ_to_LMS %*% .sRGB_to_XYZ
   # RGB2 <- solve(RGB_to_LMS) %*% S %*% RGB_to_LMS %*% RGB1
 
@@ -99,6 +99,6 @@ anomalize <- function(x, mode = c("deuteranopia", "protanopia", "tritanopia",
     RGB2[i, ] <- pmax(RGB2[i, ], rep(0, 3))
   }
 
-  # Convert to Hex colour code
+  # Convert to Hex color code
   grDevices::rgb(RGB2, names = names(x), maxColorValue = 255)
 }

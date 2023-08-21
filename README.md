@@ -36,23 +36,23 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 ## Overview
 
 Color blindness affects a large number of individuals. When
-communicating scientific results colour palettes must therefore be
+communicating scientific results color palettes must therefore be
 carefully chosen to be accessible to all readers.
 
 This R package provides an implementation of Okabe and Ito (2008), Tol
-(2021) and Crameri (2018) colour schemes. These schemes are ready for
-each type of data (qualitative, diverging or sequential), with colours
-that are distinct for all people, including colour-blind readers. This
-package also provides tools to simulate colour-blindness and to test how
-well the colours of any palette are identifiable. To simulate
-colour-blindness in production-ready R figures you may also be
-interested in the
-[**colorblindr**](https://github.com/clauswilke/colorblindr) package.
+(2021) and Crameri (2018) color schemes. These schemes are ready for
+each type of data (qualitative, diverging or sequential), with colors
+that are distinct for all people, including color-blind readers. This
+package also provides tools to simulate color-blindness and to test how
+well the colors of any palette are identifiable. To simulate
+color-blindness in production-ready R figures you may also be interested
+in the [**colorblindr**](https://github.com/clauswilke/colorblindr)
+package.
 
 Tol (2021) and Crameri (2018) offer carefully chosen schemes, ready for
-each type of data, with colours that are:
+each type of data, with colors that are:
 
-- Distinct for all people, including colour-blind readers,
+- Distinct for all people, including color-blind readers,
 - Distinct from black and white,
 - Distinct on screen and paper,
 - Matching well together,
@@ -62,11 +62,11 @@ See `vignette("tol")` and `vignette("crameri")` for a more complete
 overview.
 
 For specific uses, several scientific thematic schemes (geologic
-timescale, land cover, FAO soils, etc.) are implemented, but these
-colour schemes may not be colour-blind safe.
+timescale, land cover, FAO soils, etc.) are implemented, but these color
+schemes may not be color-blind safe.
 
-All these colour schemes are implemented for use with base R
-**graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
+All these color schemes are implemented for use with base R **graphics**
+or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 [**ggraph**](https://github.com/thomasp85/ggraph).
 
     To cite khroma in publications use:
@@ -74,7 +74,8 @@ All these colour schemes are implemented for use with base R
       Frerebeau N (2023). _khroma: Colour Schemes for Scientific Data
       Visualization_. Université Bordeaux Montaigne, Pessac, France.
       doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
-      R package version 1.10.0, <https://packages.tesselle.org/khroma/>.
+      R package version 1.10.0.9000,
+      <https://packages.tesselle.org/khroma/>.
 
     Une entrée BibTeX pour les utilisateurs LaTeX est
 
@@ -84,7 +85,7 @@ All these colour schemes are implemented for use with base R
         year = {2023},
         organization = {Université Bordeaux Montaigne},
         address = {Pessac, France},
-        note = {R package version 1.10.0},
+        note = {R package version 1.10.0.9000},
         doi = {10.5281/zenodo.1472077},
         url = {https://packages.tesselle.org/khroma/},
       }
@@ -186,14 +187,14 @@ info()
 
 </details>
 
-### Colour palettes and scales
+### Color palettes and scales
 
-`colour()` returns a palette function that when called with a single
-integer argument returns a vector of colours.
+`color()` returns a palette function that when called with a single
+integer argument returns a vector of colors.
 
 ``` r
-## Paul Tol's bright colour scheme
-bright <- colour("bright")
+## Paul Tol's bright color scheme
+bright <- color("bright")
 bright(7)
 #>      blue       red     green    yellow      cyan    purple      grey 
 #> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
@@ -202,7 +203,7 @@ bright(7)
 ```
 
 ``` r
-## Show the colour palette
+## Show the color palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
@@ -217,7 +218,7 @@ plot(
   x = mpg$displ,
   y = mpg$hwy,
   pch = 16,
-  col = colour("bright")(7)[as.factor(mpg$class)],
+  col = color("bright")(7)[as.factor(mpg$class)],
   xlab = "displ",
   ylab = "hwy",
   panel.first = grid()
@@ -230,21 +231,21 @@ plot(
 
 ## Use with ggplot2
 ggplot2::ggplot(data = mpg) +
-  ggplot2::aes(x = displ, y = hwy, colour = class) +
+  ggplot2::aes(x = displ, y = hwy, color = class) +
   ggplot2::geom_point() +
   ggplot2::theme_bw() +
-  scale_colour_bright()
+  scale_color_bright()
 ```
 
 <img src="man/figures/README-usage-plot-2.png" style="display: block; margin: auto;" />
 
 ### Diagnostic tools
 
-#### Test how well the colours are identifiable
+#### Test how well the colors are identifiable
 
 ``` r
-## Okabe & Ito's colour scheme
-okabe <- colour("okabe ito")
+## Okabe & Ito's color scheme
+okabe <- color("okabe ito")
 
 set.seed(12345)
 plot_map(okabe(8))
@@ -253,31 +254,31 @@ plot_map(okabe(8))
 <img src="man/figures/README-usage-map-1.png" style="display: block; margin: auto;" />
 
 ``` r
-## BuRd sequential colour scheme
-BuRd <- colour("BuRd")
+## BuRd sequential color scheme
+BuRd <- color("BuRd")
 
 plot_tiles(BuRd(128), n = 256)
 ```
 
 <img src="man/figures/README-usage-tiles-1.png" style="display: block; margin: auto;" />
 
-#### Simulate colour-blindness
+#### Simulate color-blindness
 
 ``` r
-plot_scheme_colourblind(okabe(8))
+plot_scheme_colorblind(okabe(8))
 ```
 
-<img src="man/figures/README-usage-colourblind2-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colorblind2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
-## ggplot2 default colour scheme
-## (equally spaced hues around the colour wheel)
+## ggplot2 default color scheme
+## (equally spaced hues around the color wheel)
 x <- scales::hue_pal()(8)
-plot_scheme_colourblind(x)
+plot_scheme_colorblind(x)
 ```
 
-<img src="man/figures/README-usage-colourblind2-2.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-usage-colorblind2-2.png" style="display: block; margin: auto;" />
 
 ## Contributing
 

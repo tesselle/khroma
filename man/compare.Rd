@@ -2,7 +2,7 @@
 % Please edit documentation in R/compare.R
 \name{compare}
 \alias{compare}
-\title{Colour Difference}
+\title{Color Difference}
 \usage{
 compare(x, metric = 2000, diag = FALSE, upper = FALSE)
 }

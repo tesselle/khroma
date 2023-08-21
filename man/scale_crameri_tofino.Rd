@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_tofino}
 \alias{scale_edge_color_tofino}
 \alias{scale_edge_fill_tofino}
-\title{Fabio Crameri's \emph{tofino} Diverging Colour Scheme}
+\title{Fabio Crameri's \emph{tofino} Diverging Color Scheme}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -72,15 +72,15 @@ scale_edge_fill_tofino(
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
@@ -90,15 +90,15 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Fabio Crameri's \emph{tofino} Diverging Colour Scheme
+Fabio Crameri's \emph{tofino} Diverging Color Scheme
 }
 \section{Interpolation}{
 
-If more colours than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.#'
 }
 
@@ -123,7 +123,7 @@ science communication. \emph{Nature Communications}, 11, 5444.
 \doi{10.1038/s41467-020-19160-7}
 }
 \seealso{
-Other diverging colour schemes: 
+Other diverging color schemes: 
 \code{\link{scale_crameri_bam}},
 \code{\link{scale_crameri_berlin}},
 \code{\link{scale_crameri_broc}},
@@ -136,7 +136,7 @@ Other diverging colour schemes:
 \code{\link{scale_tol_PRGn}},
 \code{\link{scale_tol_sunset}}
 
-Other Fabio Crameri's colour schemes: 
+Other Fabio Crameri's color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamO}},
 \code{\link{scale_crameri_bamako}},
@@ -175,5 +175,5 @@ Other Fabio Crameri's colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Fabio Crameri's colour schemes}
-\concept{diverging colour schemes}
+\concept{Fabio Crameri's color schemes}
+\concept{diverging color schemes}

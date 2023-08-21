@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale_colour_tol.R
 \name{scale_tol_sequential}
 \alias{scale_tol_sequential}
-\title{Paul Tol's Sequential Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
+\title{Paul Tol's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \arguments{
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
@@ -10,20 +10,20 @@
 vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale? If \code{TRUE}, it is a departure from Paul Tol's
-recommendations and likely a very poor use of colour.}
+recommendations and likely a very poor use of color.}
 }
 \value{
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
+Provides sequential color scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
 #'
@@ -37,15 +37,15 @@ Provides sequential colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \section{Interpolation}{
 
-If more colors than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 }
 
-\section{Rainbow colour scheme}{
+\section{Rainbow Color Scheme}{
 
 As a general rule, ordered data should not be represented using a rainbow
 scheme. There are three main arguments against such use (Tol 2018):
@@ -54,12 +54,12 @@ scheme. There are three main arguments against such use (Tol 2018):
 message.}
 \item{Some bands of almost constant hue with sharp transitions between
 them, can be perceived as jumps in the data.}
-\item{Colour-blind people have difficulty distinguishing some colours of
+\item{Color-blind people have difficulty distinguishing some colors of
 the rainbow.}
 }
-If such use cannot be avoided, Paul Tol's technical note provides two colour
-schemes that are reasonably clear in colour-blind vision. To remain
-colour-blind safe, these two schemes must comply with the following
+If such use cannot be avoided, Paul Tol's technical note provides two color
+schemes that are reasonably clear in color-blind vision. To remain
+color-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
 \item{\code{discreterainbow}}{This scheme must not be interpolated.}
@@ -89,7 +89,7 @@ SRON/EPS/TN/09-002, issue 3.1.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other colour-blind safe colour schemes: 
+Other color-blind safe color schemes: 
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
@@ -101,5 +101,5 @@ Other colour-blind safe colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{colour-blind safe colour schemes}
+\concept{color-blind safe color schemes}
 \keyword{internal}

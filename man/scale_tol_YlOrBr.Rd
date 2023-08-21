@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_YlOrBr}
 \alias{scale_edge_color_YlOrBr}
 \alias{scale_edge_fill_YlOrBr}
-\title{Paul Tol's \emph{YlOrBr} Sequential Colour Scheme}
+\title{Paul Tol's \emph{YlOrBr} Sequential Color Scheme}
 \usage{
 scale_colour_YlOrBr(
   ...,
@@ -65,11 +65,11 @@ scale_edge_fill_YlOrBr(
 vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale? If \code{TRUE}, it is a departure from Paul Tol's
-recommendations and likely a very poor use of colour.}
+recommendations and likely a very poor use of color.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
@@ -78,39 +78,16 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Paul Tol's \emph{YlOrBr} Sequential Colour Scheme
+Paul Tol's \emph{YlOrBr} Sequential Color Scheme
 }
 \section{Interpolation}{
 
-If more colors than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
-}
-
-\section{Rainbow colour scheme}{
-
-As a general rule, ordered data should not be represented using a rainbow
-scheme. There are three main arguments against such use (Tol 2018):
-\itemize{
-\item{The spectral order of visible light carries no inherent magnitude
-message.}
-\item{Some bands of almost constant hue with sharp transitions between
-them, can be perceived as jumps in the data.}
-\item{Colour-blind people have difficulty distinguishing some colours of
-the rainbow.}
-}
-If such use cannot be avoided, Paul Tol's technical note provides two colour
-schemes that are reasonably clear in colour-blind vision. To remain
-colour-blind safe, these two schemes must comply with the following
-conditions:
-\describe{
-\item{\code{discreterainbow}}{This scheme must not be interpolated.}
-\item{\code{smoothrainbow}}{This scheme does not have to be used over the full
-range.}
-}
 }
 
 \examples{
@@ -134,7 +111,7 @@ SRON/EPS/TN/09-002, issue 3.1.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other sequential colour schemes: 
+Other sequential color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamako}},
 \code{\link{scale_crameri_batlowK}},
@@ -157,7 +134,7 @@ Other sequential colour schemes:
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_smoothrainbow}}
 
-Other Paul Tol's colour schemes: 
+Other Paul Tol's color schemes: 
 \code{\link{scale_tol_BuRd}},
 \code{\link{scale_tol_PRGn}},
 \code{\link{scale_tol_bright}},
@@ -176,5 +153,5 @@ Other Paul Tol's colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Paul Tol's colour schemes}
-\concept{sequential colour schemes}
+\concept{Paul Tol's color schemes}
+\concept{sequential color schemes}

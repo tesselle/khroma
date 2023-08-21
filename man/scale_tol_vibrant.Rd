@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_vibrant}
 \alias{scale_edge_color_vibrant}
 \alias{scale_edge_fill_vibrant}
-\title{Paul Tol's \emph{vibrant} Discrete Colour Scheme}
+\title{Paul Tol's \emph{vibrant} Discrete Color Scheme}
 \usage{
 scale_colour_vibrant(..., reverse = FALSE, aesthetics = "colour")
 
@@ -35,26 +35,26 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Paul Tol's \emph{vibrant} Discrete Colour Scheme
+Paul Tol's \emph{vibrant} Discrete Color Scheme
 }
 \section{Interpolation}{
 
-The qualitative colour schemes are used as given (no interpolation):
+The qualitative color schemes are used as given (no interpolation):
 colors are picked up to the maximum number of supported values.
 }
 
-\section{Qualitative colour schemes}{
+\section{Qualitative Color Schemes}{
 
 According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
-\code{vibrant} and \code{muted} colour schemes are colour-blind safe. The
-\code{mediumcontrast} colour scheme is designed for situations needing colour
+\code{vibrant} and \code{muted} color schemes are color-blind safe. The
+\code{mediumcontrast} color scheme is designed for situations needing color
 pairs.
 
-The \code{light} colour scheme is reasonably distinct for both normal or
-colourblind vision and is intended to fill labeled cells.
+The \code{light} color scheme is reasonably distinct for both normal or
+colorblind vision and is intended to fill labeled cells.
 
 The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colourblind vision and should be used as a text background or to highlight
+colorblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
@@ -82,7 +82,7 @@ SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
@@ -96,7 +96,7 @@ Other qualitative colour schemes:
 \code{\link{scale_tol_muted}},
 \code{\link{scale_tol_pale}}
 
-Other Paul Tol's colour schemes: 
+Other Paul Tol's color schemes: 
 \code{\link{scale_tol_BuRd}},
 \code{\link{scale_tol_PRGn}},
 \code{\link{scale_tol_YlOrBr}},
@@ -115,5 +115,5 @@ Other Paul Tol's colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Paul Tol's colour schemes}
-\concept{qualitative colour schemes}
+\concept{Paul Tol's color schemes}
+\concept{qualitative color schemes}

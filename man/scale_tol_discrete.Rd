@@ -3,7 +3,7 @@
 \name{scale_tol_discrete}
 \alias{scale_tol_discrete}
 \alias{scale_fill_muted}
-\title{Paul Tol's Discrete Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
+\title{Paul Tol's Discrete Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_fill_muted(..., reverse = FALSE, aesthetics = "fill")
 }
@@ -20,7 +20,7 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
+Provides qualitative color scales from Paul Tol's \emph{Colour Schemes}.
 }
 \details{
 \tabular{ll}{
@@ -37,22 +37,22 @@ Provides qualitative colour scales from Paul Tol's \emph{Colour Schemes}.
 }
 \section{Interpolation}{
 
-The qualitative colour schemes are used as given (no interpolation):
+The qualitative color schemes are used as given (no interpolation):
 colors are picked up to the maximum number of supported values.
 }
 
-\section{Qualitative colour schemes}{
+\section{Qualitative Color Schemes}{
 
 According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
-\code{vibrant} and \code{muted} colour schemes are colour-blind safe. The
-\code{mediumcontrast} colour scheme is designed for situations needing colour
+\code{vibrant} and \code{muted} color schemes are color-blind safe. The
+\code{mediumcontrast} color scheme is designed for situations needing color
 pairs.
 
-The \code{light} colour scheme is reasonably distinct for both normal or
-colourblind vision and is intended to fill labeled cells.
+The \code{light} color scheme is reasonably distinct for both normal or
+colorblind vision and is intended to fill labeled cells.
 
 The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colourblind vision and should be used as a text background or to highlight
+colorblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
@@ -80,7 +80,7 @@ SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other colour-blind safe colour schemes: 
+Other color-blind safe color schemes: 
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
@@ -92,5 +92,5 @@ Other colour-blind safe colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{colour-blind safe colour schemes}
+\concept{color-blind safe color schemes}
 \keyword{internal}

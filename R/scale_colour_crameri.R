@@ -1,21 +1,21 @@
-# Fabio Crameri's colour schemes
+# Fabio Crameri's color schemes
 #' @include colour.R
 NULL
 
 # Diverging ====================================================================
-#' Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}
+#' Fabio Crameri's Diverging Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
-#' Provides diverging colour scales from Fabio Crameri's *Scientific colour*.
+#' Provides diverging color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colours be reversed?
+#'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's colour domain to keep.
+#' fraction of the scheme's color domain to keep.
 #' @param midpoint A length-one [`numeric`] vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the colour scheme be
+#' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
 #' @details
 #'  Available schemes:
@@ -31,11 +31,11 @@ NULL
 #'  * `vanimo`
 #'
 #' @section Interpolation:
-#'  If more colours than defined are needed from a given scheme, the colour
+#'  If more colors than defined are needed from a given scheme, the color
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default colour for `NA` can be overridden by passing
+#'  Note that the default color for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].#'
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
@@ -51,14 +51,14 @@ NULL
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family colour-blind safe colour schemes
+#' @family color-blind safe color schemes
 #' @name scale_crameri_diverging
 #' @rdname scale_crameri_diverging
 #' @keywords internal
 NULL
 
 ## broc ------------------------------------------------------------------------
-#' Fabio Crameri's *broc* Diverging Colour Scheme
+#' Fabio Crameri's *broc* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -76,8 +76,8 @@ NULL
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_broc
 #' @rdname scale_crameri_broc
 NULL
@@ -143,7 +143,7 @@ scale_edge_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## cork ------------------------------------------------------------------------
-#' Fabio Crameri's *cork* Diverging Colour Scheme
+#' Fabio Crameri's *cork* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -161,8 +161,8 @@ scale_edge_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_cork
 #' @rdname scale_crameri_cork
 NULL
@@ -228,7 +228,7 @@ scale_edge_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## vik -------------------------------------------------------------------------
-#' Fabio Crameri's *vik* Diverging Colour Scheme
+#' Fabio Crameri's *vik* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -246,8 +246,8 @@ scale_edge_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_vik
 #' @rdname scale_crameri_vik
 NULL
@@ -313,7 +313,7 @@ scale_edge_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## lisbon ----------------------------------------------------------------------
-#' Fabio Crameri's *lisbon* Diverging Colour Scheme
+#' Fabio Crameri's *lisbon* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -331,8 +331,8 @@ scale_edge_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_lisbon
 #' @rdname scale_crameri_lisbon
 NULL
@@ -398,7 +398,7 @@ scale_edge_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## tofino ----------------------------------------------------------------------
-#' Fabio Crameri's *tofino* Diverging Colour Scheme
+#' Fabio Crameri's *tofino* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -416,8 +416,8 @@ scale_edge_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_tofino
 #' @rdname scale_crameri_tofino
 NULL
@@ -483,7 +483,7 @@ scale_edge_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## berlin ----------------------------------------------------------------------
-#' Fabio Crameri's *berlin* Diverging Colour Scheme
+#' Fabio Crameri's *berlin* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -501,8 +501,8 @@ scale_edge_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_berlin
 #' @rdname scale_crameri_berlin
 NULL
@@ -568,7 +568,7 @@ scale_edge_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## roma ------------------------------------------------------------------------
-#' Fabio Crameri's *roma* Diverging Colour Scheme
+#' Fabio Crameri's *roma* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -586,8 +586,8 @@ scale_edge_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_roma
 #' @rdname scale_crameri_roma
 NULL
@@ -653,7 +653,7 @@ scale_edge_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## bam -------------------------------------------------------------------------
-#' Fabio Crameri's *bam* Diverging Colour Scheme
+#' Fabio Crameri's *bam* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -671,8 +671,8 @@ scale_edge_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_bam
 #' @rdname scale_crameri_bam
 NULL
@@ -738,7 +738,7 @@ scale_edge_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## vanimo ----------------------------------------------------------------------
-#' Fabio Crameri's *vanimo* Diverging Colour Scheme
+#' Fabio Crameri's *vanimo* Diverging Color Scheme
 #'
 #' @inheritParams scale_crameri_diverging
 #' @inheritSection scale_crameri_diverging Interpolation
@@ -756,8 +756,8 @@ scale_edge_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family diverging colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_vanimo
 #' @rdname scale_crameri_vanimo
 NULL
@@ -823,17 +823,17 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Sequential ===================================================================
-#' Fabio Crameri's Sequential Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}
+#' Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
-#' Provides sequential colour scales from Fabio Crameri's *Scientific colour*.
+#' Provides sequential color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colours be reversed?
+#'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's colour domain to keep.
+#' fraction of the scheme's color domain to keep.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the colour scheme be
+#' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
 #' @details
 #'  Available schemes:
@@ -858,11 +858,11 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  * `imola`
 #'
 #' @section Interpolation:
-#'  If more colours than defined are needed from a given scheme, the colour
+#'  If more colors than defined are needed from a given scheme, the color
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default colour for `NA` can be overridden by passing
+#'  Note that the default color for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
@@ -878,14 +878,14 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family colour-blind safe colour schemes
+#' @family color-blind safe color schemes
 #' @name scale_crameri_sequential
 #' @rdname scale_crameri_sequential
 #' @keywords internal
 NULL
 
 ## batlow ----------------------------------------------------------------------
-#' Fabio Crameri's *batlow* Sequential Colour Scheme
+#' Fabio Crameri's *batlow* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -903,8 +903,8 @@ NULL
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_batlow
 #' @rdname scale_crameri_batlow
 NULL
@@ -968,7 +968,7 @@ scale_edge_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## batlowW ---------------------------------------------------------------------
-#' Fabio Crameri's *batlowW* Sequential Colour Scheme
+#' Fabio Crameri's *batlowW* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -986,8 +986,8 @@ scale_edge_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_batlowW
 #' @rdname scale_crameri_batlowW
 NULL
@@ -1051,7 +1051,7 @@ scale_edge_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## batlowK ---------------------------------------------------------------------
-#' Fabio Crameri's *batlowK* Sequential Colour Scheme
+#' Fabio Crameri's *batlowK* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1069,8 +1069,8 @@ scale_edge_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_batlowK
 #' @rdname scale_crameri_batlowK
 NULL
@@ -1134,7 +1134,7 @@ scale_edge_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## devon -----------------------------------------------------------------------
-#' Fabio Crameri's *devon* Sequential Colour Scheme
+#' Fabio Crameri's *devon* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1152,8 +1152,8 @@ scale_edge_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_devon
 #' @rdname scale_crameri_devon
 NULL
@@ -1217,7 +1217,7 @@ scale_edge_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## lajolla ---------------------------------------------------------------------
-#' Fabio Crameri's *lajolla* Sequential Colour Scheme
+#' Fabio Crameri's *lajolla* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1235,8 +1235,8 @@ scale_edge_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_lajolla
 #' @rdname scale_crameri_lajolla
 NULL
@@ -1300,7 +1300,7 @@ scale_edge_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## bamako ----------------------------------------------------------------------
-#' Fabio Crameri's *bamako* Sequential Colour Scheme
+#' Fabio Crameri's *bamako* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1318,8 +1318,8 @@ scale_edge_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_bamako
 #' @rdname scale_crameri_bamako
 NULL
@@ -1383,7 +1383,7 @@ scale_edge_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## davos -----------------------------------------------------------------------
-#' Fabio Crameri's *davos* Sequential Colour Scheme
+#' Fabio Crameri's *davos* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1401,8 +1401,8 @@ scale_edge_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_davos
 #' @rdname scale_crameri_davos
 NULL
@@ -1466,7 +1466,7 @@ scale_edge_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## bilbao ----------------------------------------------------------------------
-#' Fabio Crameri's *bilbao* Sequential Colour Scheme
+#' Fabio Crameri's *bilbao* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1484,8 +1484,8 @@ scale_edge_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_bilbao
 #' @rdname scale_crameri_bilbao
 NULL
@@ -1549,7 +1549,7 @@ scale_edge_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## nuuk ------------------------------------------------------------------------
-#' Fabio Crameri's *nuuk* Sequential Colour Scheme
+#' Fabio Crameri's *nuuk* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1567,8 +1567,8 @@ scale_edge_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_nuuk
 #' @rdname scale_crameri_nuuk
 NULL
@@ -1632,7 +1632,7 @@ scale_edge_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## oslo ------------------------------------------------------------------------
-#' Fabio Crameri's *oslo* Sequential Colour Scheme
+#' Fabio Crameri's *oslo* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1650,8 +1650,8 @@ scale_edge_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_oslo
 #' @rdname scale_crameri_oslo
 NULL
@@ -1715,7 +1715,7 @@ scale_edge_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## grayC -----------------------------------------------------------------------
-#' Fabio Crameri's *grayC* Sequential Colour Scheme
+#' Fabio Crameri's *grayC* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1733,8 +1733,8 @@ scale_edge_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_grayC
 #' @rdname scale_crameri_grayC
 NULL
@@ -1798,7 +1798,7 @@ scale_edge_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## hawaii ----------------------------------------------------------------------
-#' Fabio Crameri's *hawaii* Sequential Colour Scheme
+#' Fabio Crameri's *hawaii* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1816,8 +1816,8 @@ scale_edge_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_hawaii
 #' @rdname scale_crameri_hawaii
 NULL
@@ -1881,7 +1881,7 @@ scale_edge_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## lapaz -----------------------------------------------------------------------
-#' Fabio Crameri's *lapaz* Sequential Colour Scheme
+#' Fabio Crameri's *lapaz* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1899,8 +1899,8 @@ scale_edge_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_lapaz
 #' @rdname scale_crameri_lapaz
 NULL
@@ -1964,7 +1964,7 @@ scale_edge_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## tokyo -----------------------------------------------------------------------
-#' Fabio Crameri's *tokyo* Sequential Colour Scheme
+#' Fabio Crameri's *tokyo* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -1982,8 +1982,8 @@ scale_edge_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_tokyo
 #' @rdname scale_crameri_tokyo
 NULL
@@ -2047,7 +2047,7 @@ scale_edge_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## buda ------------------------------------------------------------------------
-#' Fabio Crameri's *buda* Sequential Colour Scheme
+#' Fabio Crameri's *buda* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -2065,8 +2065,8 @@ scale_edge_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_buda
 #' @rdname scale_crameri_buda
 NULL
@@ -2130,7 +2130,7 @@ scale_edge_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## acton -----------------------------------------------------------------------
-#' Fabio Crameri's *acton* Sequential Colour Scheme
+#' Fabio Crameri's *acton* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -2148,8 +2148,8 @@ scale_edge_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_acton
 #' @rdname scale_crameri_acton
 NULL
@@ -2213,7 +2213,7 @@ scale_edge_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## turku -----------------------------------------------------------------------
-#' Fabio Crameri's *turku* Sequential Colour Scheme
+#' Fabio Crameri's *turku* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -2231,8 +2231,8 @@ scale_edge_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_turku
 #' @rdname scale_crameri_turku
 NULL
@@ -2296,7 +2296,7 @@ scale_edge_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## imola -----------------------------------------------------------------------
-#' Fabio Crameri's *imola* Sequential Colour Scheme
+#' Fabio Crameri's *imola* Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_sequential
 #' @inheritSection scale_crameri_sequential Interpolation
@@ -2314,8 +2314,8 @@ scale_edge_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
-#' @family sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_imola
 #' @rdname scale_crameri_imola
 NULL
@@ -2379,16 +2379,16 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Multi Sequential =============================================================
-#' Fabio Crameri's Multi-Sequential Colour Schemes for \pkg{ggplot2}
+#' Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
 #'  and \pkg{ggraph}
 #'
-#' Provides multi-sequential colour scales from Fabio Crameri's *Scientific
+#' Provides multi-sequential color scales from Fabio Crameri's *Scientific
 #' colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colours be reversed?
+#'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's colour domain to keep.
+#' fraction of the scheme's color domain to keep.
 #' @param midpoint A length-one [`numeric`] vector giving the midpoint
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
@@ -2401,11 +2401,11 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 #'  * `fes`
 #'
 #' @section Interpolation:
-#'  If more colours than defined are needed from a given scheme, the colour
+#'  If more colors than defined are needed from a given scheme, the color
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default colour for `NA` can be overridden by passing
+#'  Note that the default color for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
@@ -2421,14 +2421,14 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
-#' @family colour-blind safe colour schemes
+#' @family color-blind safe color schemes
 #' @name scale_crameri_mutlisequential
 #' @rdname scale_crameri_mutlisequential
 #' @keywords internal
 NULL
 
 ## oleron ----------------------------------------------------------------------
-#' Fabio Crameri's *oleron* Multi-Sequential Colour Scheme
+#' Fabio Crameri's *oleron* Multi-Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_mutlisequential
 #' @inheritSection scale_crameri_mutlisequential Interpolation
@@ -2446,8 +2446,8 @@ NULL
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
-#' @family multi sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family multi sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_oleron
 #' @rdname scale_crameri_oleron
 NULL
@@ -2473,7 +2473,7 @@ scale_fill_oleron <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## bukavu ----------------------------------------------------------------------
-#' Fabio Crameri's *bukavu* Multi-Sequential Colour Scheme
+#' Fabio Crameri's *bukavu* Multi-Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_mutlisequential
 #' @inheritSection scale_crameri_mutlisequential Interpolation
@@ -2491,8 +2491,8 @@ scale_fill_oleron <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
-#' @family multi sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family multi sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_bukavu
 #' @rdname scale_crameri_bukavu
 NULL
@@ -2518,7 +2518,7 @@ scale_fill_bukavu <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## fes -------------------------------------------------------------------------
-#' Fabio Crameri's *fes* Multi-Sequential Colour Scheme
+#' Fabio Crameri's *fes* Multi-Sequential Color Scheme
 #'
 #' @inheritParams scale_crameri_mutlisequential
 #' @inheritSection scale_crameri_mutlisequential Interpolation
@@ -2536,8 +2536,8 @@ scale_fill_bukavu <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
-#' @family multi sequential colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family multi sequential color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_fes
 #' @rdname scale_crameri_fes
 NULL
@@ -2563,17 +2563,17 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Cyclic =======================================================================
-#' Fabio Crameri's Cyclic Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}
+#' Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
-#' Provides cyclic colour scales from Fabio Crameri's *Scientific colour*.
+#' Provides cyclic color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
-#'  vector of colours be reversed?
+#'  vector of colors be reversed?
 #' @param range A length-two [`numeric`] vector specifying the
-#' fraction of the scheme's colour domain to keep.
+#' fraction of the scheme's color domain to keep.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @param discrete A [`logical`] scalar: should the colour scheme be
+#' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
 #' @details
 #'  Available schemes:
@@ -2585,11 +2585,11 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 #'  * `bamO`
 #'
 #' @section Interpolation:
-#'  If more colours than defined are needed from a given scheme, the colour
+#'  If more colors than defined are needed from a given scheme, the color
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  Note that the default colour for `NA` can be overridden by passing
+#'  Note that the default color for `NA` can be overridden by passing
 #'  a value to [ggplot2::continuous_scale()].
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
@@ -2605,14 +2605,14 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family colour-blind safe colour schemes
+#' @family color-blind safe color schemes
 #' @name scale_crameri_cyclic
 #' @rdname scale_crameri_cyclic
 #' @keywords internal
 NULL
 
 ## brocO -----------------------------------------------------------------------
-#' Fabio Crameri's *brocO* Cyclic Colour Scheme
+#' Fabio Crameri's *brocO* Cyclic Color Scheme
 #'
 #' @inheritParams scale_crameri_cyclic
 #' @inheritSection scale_crameri_cyclic Interpolation
@@ -2630,8 +2630,8 @@ NULL
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family cyclic colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family cyclic color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_brocO
 #' @rdname scale_crameri_brocO
 NULL
@@ -2663,7 +2663,7 @@ scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## corkO -----------------------------------------------------------------------
-#' Fabio Crameri's *corkO* Cyclic Colour Scheme
+#' Fabio Crameri's *corkO* Cyclic Color Scheme
 #'
 #' @inheritParams scale_crameri_cyclic
 #' @inheritSection scale_crameri_cyclic Interpolation
@@ -2681,8 +2681,8 @@ scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family cyclic colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family cyclic color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_corkO
 #' @rdname scale_crameri_corkO
 NULL
@@ -2714,7 +2714,7 @@ scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## vikO ------------------------------------------------------------------------
-#' Fabio Crameri's *vikO* Cyclic Colour Scheme
+#' Fabio Crameri's *vikO* Cyclic Color Scheme
 #'
 #' @inheritParams scale_crameri_cyclic
 #' @inheritSection scale_crameri_cyclic Interpolation
@@ -2732,8 +2732,8 @@ scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family cyclic colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family cyclic color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_vikO
 #' @rdname scale_crameri_vikO
 NULL
@@ -2765,7 +2765,7 @@ scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## romaO -----------------------------------------------------------------------
-#' Fabio Crameri's *romaO* Cyclic Colour Scheme
+#' Fabio Crameri's *romaO* Cyclic Color Scheme
 #'
 #' @inheritParams scale_crameri_cyclic
 #' @inheritSection scale_crameri_cyclic Interpolation
@@ -2783,8 +2783,8 @@ scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family cyclic colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family cyclic color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_romaO
 #' @rdname scale_crameri_romaO
 NULL
@@ -2816,7 +2816,7 @@ scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 ## bamO ------------------------------------------------------------------------
-#' Fabio Crameri's *bamO* Cyclic Colour Scheme
+#' Fabio Crameri's *bamO* Cyclic Color Scheme
 #'
 #' @inheritParams scale_crameri_cyclic
 #' @inheritSection scale_crameri_cyclic Interpolation
@@ -2834,8 +2834,8 @@ scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  \doi{10.5281/zenodo.4491293}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
-#' @family cyclic colour schemes
-#' @family Fabio Crameri's colour schemes
+#' @family cyclic color schemes
+#' @family Fabio Crameri's color schemes
 #' @name scale_crameri_bamO
 #' @rdname scale_crameri_bamO
 NULL

@@ -6,7 +6,7 @@ test_that("Quick and Dirty Plot", {
   vdiffr::expect_doppelganger("plot_range", plot_range)
 })
 test_that("Schemes", {
-  expect_error(plot_scheme(1:5), "x must be a character vector of colours.")
+  expect_error(plot_scheme(1:5), "x must be a character vector of colors.")
 
   skip_if_not_installed("vdiffr")
   for (i in c(TRUE, FALSE)) {
@@ -17,7 +17,7 @@ test_that("Schemes", {
   }
 })
 test_that("Diagnostic Map", {
-  expect_error(plot_map(1:5), "x must be a character vector of colours.")
+  expect_error(plot_map(1:5), "x must be a character vector of colors.")
 
   skip_if_not_installed("vdiffr")
 
@@ -34,7 +34,7 @@ test_that("Diagnostic Map", {
   vdiffr::expect_doppelganger("map_bright", plot_map_bright)
 })
 test_that("Diagnostic Tiles", {
-  expect_error(plot_tiles(1:5), "x must be a character vector of colours.")
+  expect_error(plot_tiles(1:5), "x must be a character vector of colors.")
 
   skip_if_not_installed("vdiffr")
 

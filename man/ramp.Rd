@@ -2,28 +2,28 @@
 % Please edit documentation in R/colour.R
 \name{ramp}
 \alias{ramp}
-\title{Colour Ramp}
+\title{Color Ramp}
 \usage{
 ramp(x, palette, midpoint = NULL, ...)
 }
 \arguments{
-\item{x}{A \code{\link{numeric}} vector to be mapped to colours.}
+\item{x}{A \code{\link{numeric}} vector to be mapped to colors.}
 
 \item{palette}{A \code{\link{character}} string giving the name of the palette to be
-used (see \code{\link[=colour]{colour()}}).}
+used (see \code{\link[=color]{color()}}).}
 
 \item{midpoint}{A \code{\link{numeric}} value specifying the midpoint of \code{x}. If not
 \code{NULL}, \code{x} will be rescaled to have the specified \code{midpoint}.}
 
-\item{...}{Further arguments passed to \code{\link[=colour]{colour()}}.}
+\item{...}{Further arguments passed to \code{\link[=color]{color()}}.}
 }
 \value{
-A palette function with the following attributes, that when called
-with a single argument (the number of levels, e.g. the \code{breaks} returned by
-\code{\link[=hist]{hist()}}) returns a vector of colours.
+A palette function, that when called with a single argument
+(the number of levels, e.g. the \code{breaks} returned by \code{\link[=hist]{hist()}})
+returns a vector of colors.
 }
 \description{
-Provides a colour scheme that map a \code{numeric} vector to colours.
+Provides a color scheme that map a \code{numeric} vector to colors.
 }
 \examples{
 ## Visualize a simple DEM model
@@ -45,7 +45,7 @@ image(volcano, col = ramp_160)
 legend("topright", legend = attr(ramp_160, "breaks"), fill = ramp_160)
 }
 \seealso{
-Other colour palettes: 
+Other color palettes: 
 \code{\link{colour}()},
 \code{\link{info}()},
 \code{\link{scale_picker}}
@@ -53,5 +53,5 @@ Other colour palettes:
 \author{
 N. Frerebeau
 }
-\concept{colour palettes}
+\concept{color palettes}
 \keyword{color}

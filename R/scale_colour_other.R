@@ -1,17 +1,17 @@
-# Other colour schemes
+# Other color schemes
 #' @include colour.R
 NULL
 
 # Discrete =====================================================================
-#' Binary Discrete Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}
+#' Binary Discrete Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
 #'
-#' Provides a colour scale for [`logical`] values.
+#' Provides a color scale for [`logical`] values.
 #' @param ... Arguments passed to [ggplot2::discrete_scale()].
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @example inst/examples/ex-other-discrete.R
-#' @family qualitative colour schemes
+#' @family qualitative color schemes
 #' @author N. Frerebeau
 #' @name scale_logical_discrete
 #' @rdname scale_logical_discrete

@@ -1,18 +1,18 @@
-# Colour scales constructor for ggplot2
+# Color scales constructor for ggplot2
 #' @include colour.R
 NULL
 
-#' Colour Scale Builder
+#' Color Scale Builder
 #'
-#' Builds a colour scale for \pkg{ggplot2} or \pkg{ggraph}.
-#' @param palette A [`character`] string giving the name of the colour scheme to
+#' Builds a color scale for \pkg{ggplot2} or \pkg{ggraph}.
+#' @param palette A [`character`] string giving the name of the color scheme to
 #'  be used (see [info()]).
-#' @param ... Extra parameters to be passed to the colour scale function.
+#' @param ... Extra parameters to be passed to the color scale function.
 #' @return A [discrete][ggplot2::discrete_scale] or
 #'  [continuous][ggplot2::continuous_scale] scale.
 #' @example inst/examples/ex-pick.R
 #' @author N. Frerebeau
-#' @family colour palettes
+#' @family color palettes
 #' @name scale_picker
 #' @rdname scale_picker
 NULL
@@ -59,7 +59,7 @@ scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
 #' color scheme used.
 #' @param aesthetics The names of the aesthetics that this scale works with.
 #' @param scale_name A [`character`] string giving the name of the palette to be
-#'  used (see [colour()]).
+#'  used (see [color()]).
 #' @param guide A [`function`] used to create a guide or its name.
 #'  See [ggplot2::guides()] for more information.
 #' @param reverse A [`logical`] scalar: should the resulting vector of colors
@@ -72,7 +72,7 @@ scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
 #'  build. It must be one of "`auto`" (the default), "`discrete`" or
 #'  "`continuous`". "`discrete`" allows to use a continuous color scheme with
 #'  discrete data. "`continuous`" allows to use a discrete color scheme with
-#'  continuous data (forces interpolation; see [colour()]).
+#'  continuous data (forces interpolation; see [color()]).
 #' @param midpoint A [`numeric`] value specifying the midpoint (in
 #'  data value) of the diverging scale (defaults to \eqn{0}).
 #' @param ... Further arguments passed to [ggplot2::discrete_scale()]
@@ -91,9 +91,9 @@ scale_discrete <- function(aesthetics, scale_name, guide = "legend",
   # Check if ggplot2 is installed
   check_package("ggplot2")
 
-  # Get colour scheme
-  palette <- colour(scale_name, reverse = reverse, names = use_names,
-                    lang = lang)
+  # Get color scheme
+  palette <- color(scale_name, reverse = reverse, names = use_names,
+                   lang = lang)
 
   # Build scale
   scale_args <- list(...)
@@ -112,8 +112,8 @@ scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
   check_package("ggplot2") # Check if ggplot2 is installed
   if (guide == "edge_colourbar") check_package("ggraph")
 
-  # Get colour scheme
-  palette <- colour(scale_name, reverse = reverse, names = FALSE, lang = lang)
+  # Get color scheme
+  palette <- color(scale_name, reverse = reverse, names = FALSE, lang = lang)
   max <- attr(palette, "max")
   type <- attr(palette, "type")
 

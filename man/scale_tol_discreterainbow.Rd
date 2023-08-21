@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_discreterainbow}
 \alias{scale_edge_color_discreterainbow}
 \alias{scale_edge_fill_discreterainbow}
-\title{Paul Tol's \emph{discrete rainbow} Sequential Colour Scheme}
+\title{Paul Tol's \emph{discrete rainbow} Sequential Color Scheme}
 \usage{
 scale_colour_discreterainbow(..., reverse = FALSE, aesthetics = "colour")
 
@@ -43,19 +43,19 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Paul Tol's \emph{discrete rainbow} Sequential Colour Scheme
+Paul Tol's \emph{discrete rainbow} Sequential Color Scheme
 }
 \section{Interpolation}{
 
-If more colors than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 }
 
-\section{Rainbow colour scheme}{
+\section{Rainbow Color Scheme}{
 
 As a general rule, ordered data should not be represented using a rainbow
 scheme. There are three main arguments against such use (Tol 2018):
@@ -64,12 +64,12 @@ scheme. There are three main arguments against such use (Tol 2018):
 message.}
 \item{Some bands of almost constant hue with sharp transitions between
 them, can be perceived as jumps in the data.}
-\item{Colour-blind people have difficulty distinguishing some colours of
+\item{Color-blind people have difficulty distinguishing some colors of
 the rainbow.}
 }
-If such use cannot be avoided, Paul Tol's technical note provides two colour
-schemes that are reasonably clear in colour-blind vision. To remain
-colour-blind safe, these two schemes must comply with the following
+If such use cannot be avoided, Paul Tol's technical note provides two color
+schemes that are reasonably clear in color-blind vision. To remain
+color-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
 \item{\code{discreterainbow}}{This scheme must not be interpolated.}
@@ -99,7 +99,7 @@ SRON/EPS/TN/09-002, issue 3.1.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other sequential colour schemes: 
+Other sequential color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamako}},
 \code{\link{scale_crameri_batlowK}},
@@ -122,7 +122,7 @@ Other sequential colour schemes:
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_smoothrainbow}}
 
-Other Paul Tol's colour schemes: 
+Other Paul Tol's color schemes: 
 \code{\link{scale_tol_BuRd}},
 \code{\link{scale_tol_PRGn}},
 \code{\link{scale_tol_YlOrBr}},
@@ -141,5 +141,5 @@ Other Paul Tol's colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Paul Tol's colour schemes}
-\concept{sequential colour schemes}
+\concept{Paul Tol's color schemes}
+\concept{sequential color schemes}

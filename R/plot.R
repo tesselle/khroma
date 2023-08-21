@@ -1,6 +1,6 @@
 #' Plot Color Scheme
 #'
-#' * `plot()` allows to quickly display a color scheme returned by [colour()].
+#' * `plot()` allows to quickly display a color scheme returned by [color()].
 #' * `plot_scheme()` shows colors in a plot.
 #' * `plot_map()` and `plot_tiles()` produce a diagnostic map for a given color
 #'   scheme.
@@ -26,7 +26,7 @@ NULL
 
 #' @rdname plot
 #' @export
-plot.colour_scheme <- function(x, ...) {
+plot.color_scheme <- function(x, ...) {
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(old_par))
@@ -48,7 +48,8 @@ plot.colour_scheme <- function(x, ...) {
 plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   # Validation
   if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colours.")
+    stop("x must be a character vector of colors.")
+
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(old_par))
@@ -58,7 +59,7 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   bad_data <- !is.null(missing) && !is.na(missing)
   if (bad_data) x <- c(x, missing)
 
-  n <- length(x) # Number of colours
+  n <- length(x) # Number of colors
   p <- seq(from = 1, by = 0.75, length.out = n)
   q <- 1 - 0.43 * rep(c(0, 1), length.out = n)
 
@@ -97,12 +98,12 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
 plot_map <- function(x) {
   # Validation
   if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colours.")
+    stop("x must be a character vector of colors.")
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(old_par))
 
-  n <- length(x) # Number of colours
+  n <- length(x) # Number of colors
   q <- floor(100 / (n + 1))
 
   graphics::par(mar = c(0, 0, 0, 0) + 0.1, xaxs = "i", yaxs = "i")
@@ -112,15 +113,15 @@ plot_map <- function(x) {
     xlab = "", ylab = "", axes = FALSE, asp = 1
   )
 
-  random_colours <- sample(x, size = 19 * q, replace = TRUE)
-  draw_mosaic(columns = q, border = "black", fill = random_colours)
+  random_colors <- sample(x, size = 19 * q, replace = TRUE)
+  draw_mosaic(columns = q, border = "black", fill = random_colors)
 
   for (h in seq_len(n)) {
     random_positions <- sample(seq_len(19 * q), size = n, replace = FALSE)
-    unique_colour <- rep(x[[h]], length.out = 19 * q)
-    unique_colour[random_positions] <- x
+    unique_color <- rep(x[[h]], length.out = 19 * q)
+    unique_color[random_positions] <- x
 
-    draw_mosaic(columns = q, border = "black", fill = unique_colour, offset = h)
+    draw_mosaic(columns = q, border = "black", fill = unique_color, offset = h)
   }
 }
 
@@ -129,7 +130,7 @@ plot_map <- function(x) {
 plot_tiles <- function(x, n = 512) {
   # Validation
   if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colours.")
+    stop("x must be a character vector of colors.")
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(old_par))
@@ -216,7 +217,7 @@ draw_circle <- function(x = 0, y = 0, r = 0.5, n = 200,
 plot_scheme_colourblind <- function(x) {
   # Validation
   if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colours.")
+    stop("x must be a character vector of colors.")
 
   n <- length(x)
   col <- c(x, anomalize(x, 'deuteranopia'), anomalize(x, 'protanopia'),

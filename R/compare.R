@@ -1,4 +1,4 @@
-#' Colour Difference
+#' Color Difference
 #'
 #' Computes CIELAB distance metric.
 #' @param x A [`character`] vector of colors.
@@ -18,14 +18,14 @@ compare <- function(x, metric = 2000, diag = FALSE, upper = FALSE) {
   # Validation
   check_package("spacesXYZ")
   if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colours.", call. = FALSE)
+    stop("x must be a character vector of colors.", call. = FALSE)
 
   # Hex to RGB
   RGB <- t(grDevices::col2rgb(x, alpha = FALSE))
   # RGB to Lab
   Lab <- XYZ2Lab(RGB2XYZ(RGB))
 
-  # Colour comparisons
+  # Color comparisons
   delta_E <- apply(
     X = Lab,
     MARGIN = 1,

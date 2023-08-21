@@ -59,7 +59,7 @@ scale_edge_fill_okabeito(
 vector of colors be reversed?}
 
 \item{black_position}{A \code{\link{character}} string giving the position of the black
-colour. It must be one of "\code{first}" or "\code{last}". Any unambiguous substring
+color. It must be one of "\code{first}" or "\code{last}". Any unambiguous substring
 can be given.}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
@@ -92,7 +92,7 @@ Figures and Presentations That Are Friendly to Colorblind People}.
 URL: \url{https://jfly.uni-koeln.de/color/}.
 }
 \seealso{
-Other colour-blind safe colour schemes: 
+Other color-blind safe color schemes: 
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_diverging}},
 \code{\link{scale_crameri_mutlisequential}},
@@ -101,7 +101,7 @@ Other colour-blind safe colour schemes:
 \code{\link{scale_tol_diverging}},
 \code{\link{scale_tol_sequential}}
 
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
@@ -118,6 +118,6 @@ Other qualitative colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Okabe and Ito's colour scheme}
-\concept{colour-blind safe colour schemes}
-\concept{qualitative colour schemes}
+\concept{Okabe and Ito's color scheme}
+\concept{color-blind safe color schemes}
+\concept{qualitative color schemes}

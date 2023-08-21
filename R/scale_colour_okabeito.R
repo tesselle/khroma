@@ -1,4 +1,4 @@
-# Okabe & Ito colour scheme
+# Okabe & Ito color scheme
 #' @include colour.R
 NULL
 
@@ -10,7 +10,7 @@ NULL
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
 #' @param black_position A [`character`] string giving the position of the black
-#'  colour. It must be one of "`first`" or "`last`". Any unambiguous substring
+#'  color. It must be one of "`first`" or "`last`". Any unambiguous substring
 #'  can be given.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
@@ -24,9 +24,9 @@ NULL
 #'  URL: \url{https://jfly.uni-koeln.de/color/}.
 #' @example inst/examples/ex-okabeito-discrete.R
 #' @author N. Frerebeau
-#' @family colour-blind safe colour schemes
-#' @family qualitative colour schemes
-#' @family Okabe and Ito's colour scheme
+#' @family color-blind safe color schemes
+#' @family qualitative color schemes
+#' @family Okabe and Ito's color scheme
 #' @name scale_okabeito_discrete
 #' @rdname scale_okabeito_discrete
 NULL
@@ -34,7 +34,7 @@ NULL
 #' Get Okabe and Ito's Discrete Color Scheme
 #'
 #' @param black_position A [`character`] string giving the position of the black
-#'  colour. It must be one of "`first`" or "`last`". Any unambiguous substring
+#'  color. It must be one of "`first`" or "`last`". Any unambiguous substring
 #'  can be given.
 #' @examples
 #' get_okabeito_scale("first")

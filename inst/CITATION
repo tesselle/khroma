@@ -7,7 +7,7 @@ bibentry(
   year         = "2023",
   organization = "Université Bordeaux Montaigne",
   address      = "Pessac, France",
-  note         = "R package version 1.10.0",
+  note         = sprintf("R package version %s", meta$Version),
   doi          = "10.5281/zenodo.1472077",
   url          = "https://packages.tesselle.org/khroma/"
 )

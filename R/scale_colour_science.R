@@ -18,13 +18,13 @@ NULL
 #'  \href{https://ccgm.org/}{Commission for the Geological Map of the World}.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
-#' @family themed colour schemes
-#' @family qualitative colour schemes
+#' @family themed color schemes
+#' @family qualitative color schemes
 #' @export
 #' @rdname scale_stratigraphy
 scale_colour_stratigraphy <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = !is.null(lang), lang = lang)
+  color_palette <- color("stratigraphy", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(175),
                               aesthetics = aesthetics)
@@ -38,7 +38,7 @@ scale_color_stratigraphy <- scale_colour_stratigraphy
 #' @rdname scale_stratigraphy
 scale_fill_stratigraphy <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = !is.null(lang), lang = lang)
+  color_palette <- color("stratigraphy", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(175),
                              aesthetics = aesthetics)
@@ -48,7 +48,7 @@ scale_fill_stratigraphy <- function(..., lang = "en", aesthetics = "fill") {
 #' @rdname scale_stratigraphy
 scale_edge_colour_stratigraphy <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = !is.null(lang), lang = lang)
+  color_palette <- color("stratigraphy", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_colour_manual(..., values = color_palette(175))
 }
@@ -61,13 +61,13 @@ scale_edge_color_stratigraphy <- scale_edge_colour_stratigraphy
 #' @rdname scale_stratigraphy
 scale_edge_fill_stratigraphy <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("stratigraphy", names = !is.null(lang), lang = lang)
+  color_palette <- color("stratigraphy", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_fill_manual(..., values = color_palette(175))
 }
 
 # Land =========================================================================
-#' AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}
+#' AVHRR Global Land Cover Classification Color Scheme for \pkg{ggplot2}
 #'  and \pkg{ggraph}
 #'
 #' Provides the AVHRR Global Land Cover classification as modified by
@@ -82,18 +82,18 @@ scale_edge_fill_stratigraphy <- function(..., lang = "en") {
 #' @details Values will be matched based on the land classification names.
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
-#'  Tol, P. (2018). \emph{Colour Schemes.} SRON. Technical Note No.
+#'  Tol, P. (2018). *Colour Schemes.* SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
 #'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
-#' @family themed colour schemes
-#' @family qualitative colour schemes
+#' @family themed color schemes
+#' @family qualitative color schemes
 #' @export
 #' @rdname scale_land
 scale_colour_land <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("land", names = !is.null(lang), lang = lang)
+  color_palette <- color("land", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(14),
                               aesthetics = aesthetics)
@@ -107,7 +107,7 @@ scale_color_land <- scale_colour_land
 #' @rdname scale_land
 scale_fill_land <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("land", names = !is.null(lang), lang = lang)
+  color_palette <- color("land", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(14),
                              aesthetics = aesthetics)
@@ -117,7 +117,7 @@ scale_fill_land <- function(..., lang = "en", aesthetics = "fill") {
 #' @rdname scale_land
 scale_edge_colour_land <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("land", names = !is.null(lang), lang = lang)
+  color_palette <- color("land", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_colour_manual(..., values = color_palette(14))
 }
@@ -130,7 +130,7 @@ scale_edge_color_land <- scale_edge_colour_land
 #' @rdname scale_land
 scale_edge_fill_land <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("land", names = !is.null(lang), lang = lang)
+  color_palette <- color("land", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_fill_manual(..., values = color_palette(14))
 }
@@ -138,7 +138,7 @@ scale_edge_fill_land <- function(..., lang = "en") {
 # Soil =========================================================================
 #' FAO Soil Reference Groups Color Scheme for \pkg{ggplot2} and \pkg{ggraph}
 #'
-#' Provides the FAO Soil Reference Groups colour scheme.
+#' Provides the FAO Soil Reference Groups color scheme.
 #' @param ... Arguments passed on to [ggplot2::discrete_scale()].
 #' @param lang A [`character`] string specifying the language for the
 #'  color names (see details). It must be one of "`en`" (english, the
@@ -154,13 +154,13 @@ scale_edge_fill_land <- function(..., lang = "en") {
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @example inst/examples/ex-science-soil.R
 #' @author N. Frerebeau
-#' @family themed colour schemes
-#' @family qualitative colour schemes
+#' @family themed color schemes
+#' @family qualitative color schemes
 #' @export
 #' @rdname scale_soil
 scale_colour_soil <- function(..., lang = "en", aesthetics = "colour") {
   # Get palette
-  color_palette <- colour("soil", names = !is.null(lang), lang = lang)
+  color_palette <- color("soil", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_color_manual(..., values = color_palette(24),
                               aesthetics = aesthetics)
@@ -174,7 +174,7 @@ scale_color_soil <- scale_colour_soil
 #' @rdname scale_soil
 scale_fill_soil <- function(..., lang = "en", aesthetics = "fill") {
   # Get palette
-  color_palette <- colour("soil", names = !is.null(lang), lang = lang)
+  color_palette <- color("soil", names = !is.null(lang), lang = lang)
   # Build scale
   ggplot2::scale_fill_manual(..., values = color_palette(24),
                              aesthetics = aesthetics)
@@ -184,7 +184,7 @@ scale_fill_soil <- function(..., lang = "en", aesthetics = "fill") {
 #' @rdname scale_soil
 scale_edge_colour_soil <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("soil", names = !is.null(lang), lang = lang)
+  color_palette <- color("soil", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_colour_manual(..., values = color_palette(24))
 }
@@ -197,7 +197,7 @@ scale_edge_color_soil <- scale_edge_colour_soil
 #' @rdname scale_soil
 scale_edge_fill_soil <- function(..., lang = "en") {
   # Get palette
-  color_palette <- colour("soil", names = !is.null(lang), lang = lang)
+  color_palette <- color("soil", names = !is.null(lang), lang = lang)
   # Build scale
   ggraph::scale_edge_fill_manual(..., values = color_palette(24))
 }

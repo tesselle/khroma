@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot.R
 \name{plot}
 \alias{plot}
-\alias{plot.colour_scheme}
+\alias{plot.color_scheme}
 \alias{plot_scheme}
 \alias{plot_map}
 \alias{plot_tiles}
@@ -10,7 +10,7 @@
 \alias{plot_scheme_colorblind}
 \title{Plot Color Scheme}
 \usage{
-\method{plot}{colour_scheme}(x, ...)
+\method{plot}{color_scheme}(x, ...)
 
 plot_scheme(x, colours = FALSE, names = FALSE, size = 1)
 
@@ -42,7 +42,7 @@ parameter of \code{\link[graphics:par]{graphics::par()}}.}
 }
 \description{
 \itemize{
-\item \code{plot()} allows to quickly display a color scheme returned by \code{\link[=colour]{colour()}}.
+\item \code{plot()} allows to quickly display a color scheme returned by \code{\link[=color]{color()}}.
 \item \code{plot_scheme()} shows colors in a plot.
 \item \code{plot_map()} and \code{plot_tiles()} produce a diagnostic map for a given color
 scheme.

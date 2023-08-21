@@ -11,7 +11,7 @@ A \code{\link{data.frame}} with the following columns:
 \describe{
 \item{\code{palette}}{Names of palette.}
 \item{\code{type}}{Types of palettes: sequential, diverging or qualitative.}
-\item{\code{max}}{Maximum number of colours that are contained in each
+\item{\code{max}}{Maximum number of colors that are contained in each
 palette. Only relevant for qualitative palettes.}
 \item{\code{missing}}{The hexadecimal color value for mapping missing values.}
 }
@@ -24,7 +24,7 @@ Returns information about the available palettes.
 info()
 }
 \seealso{
-Other colour palettes: 
+Other color palettes: 
 \code{\link{colour}()},
 \code{\link{ramp}()},
 \code{\link{scale_picker}}
@@ -32,4 +32,4 @@ Other colour palettes:
 \author{
 N. Frerebeau
 }
-\concept{colour palettes}
+\concept{color palettes}

@@ -3,7 +3,7 @@
 \name{colour}
 \alias{colour}
 \alias{color}
-\title{Colour Palette}
+\title{Color Palette}
 \usage{
 colour(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 
@@ -13,18 +13,18 @@ color(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
 \item{palette}{A \code{\link{character}} string giving the name of the palette to be
 used (see below).}
 
-\item{reverse}{A \code{\link{logical}} scalar: should the resulting vector of colours
+\item{reverse}{A \code{\link{logical}} scalar: should the resulting vector of colors
 should be reversed?}
 
-\item{names}{A \code{\link{logical}} scalar: should the names of the colours should be
+\item{names}{A \code{\link{logical}} scalar: should the names of the colors should be
 kept in the resulting vector?}
 
-\item{lang}{A \code{\link{character}} string specifying the language for the colour
+\item{lang}{A \code{\link{character}} string specifying the language for the color
 names. It must be one of "\code{en}" (English, the default) or "\code{fr}" (French).}
 
-\item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the colour scheme to be
-interpolated. It should not be used routinely with qualitative colour
-schemes, as they are designed to be used as is to remain colour-blind safe.}
+\item{force}{A \code{\link{logical}} scalar. If \code{TRUE}, forces the color scheme to be
+interpolated. It should not be used routinely with qualitative color
+schemes, as they are designed to be used as is to remain color-blind safe.}
 
 \item{...}{Further arguments passed to
 \link[grDevices:colorRamp]{colorRampPalette}.}
@@ -32,7 +32,7 @@ schemes, as they are designed to be used as is to remain colour-blind safe.}
 \value{
 A palette function with the following attributes, that when called
 with a single integer argument (the number of levels) returns a (named)
-vector of colours.
+vector of colors.
 \describe{
 \item{palette}{A \code{\link{character}} string giving the name of the
 color scheme.}
@@ -41,24 +41,24 @@ data type. One of "\code{qualitative}", "\code{diverging}" or "\code{sequential}
 \item{interpolate}{A \code{\link{logical}} scalar: can the color palette be
 interpolated?}
 \item{missing}{A \code{\link{character}} string giving the the hexadecimal
-representation of the colour that should be used for \code{NA} values.}
-\item{max}{An \code{\link{integer}} giving the maximum number of colour values.
-Only relevant for non-interpolated colour schemes.}
+representation of the color that should be used for \code{NA} values.}
+\item{max}{An \code{\link{integer}} giving the maximum number of color values.
+Only relevant for non-interpolated color schemes.}
 }
 
-For colour schemes that can be interpolated (diverging and sequential data),
-the colour range can be limited with an additional argument. \code{range} allows
-to remove a fraction of the colour domain (before being interpolated; see
+For color schemes that can be interpolated (diverging and sequential data),
+the color range can be limited with an additional argument. \code{range} allows
+to remove a fraction of the color domain (before being interpolated; see
 examples).
 }
 \description{
-Provides qualitative, diverging and sequential colour schemes.
+Provides qualitative, diverging and sequential color schemes.
 }
-\section{Paul Tol's Colour Schemes}{
+\section{Paul Tol's Color Schemes}{
 
 The following palettes are available. The maximum number of supported
-colours is in brackets, this value is only relevant for the qualitative
-colour schemes (divergent and sequential schemes are linearly interpolated).
+colors is in brackets, this value is only relevant for the qualitative
+color schemes (divergent and sequential schemes are linearly interpolated).
 \describe{
 \item{Qualitative data}{\code{bright} (7), \verb{high contrast} (3), \code{vibrant} (7),
 \code{muted} (9), \verb{medium contrast} (6), \code{pale} (6), \code{dark} (6), \code{light} (9).}
@@ -68,25 +68,25 @@ colour schemes (divergent and sequential schemes are linearly interpolated).
 }
 }
 
-\section{Qualitative colour schemes}{
+\section{Qualitative Color Schemes}{
 
 According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
-\code{vibrant} and \code{muted} colour schemes are colour-blind safe. The
-\code{mediumcontrast} colour scheme is designed for situations needing colour
+\code{vibrant} and \code{muted} color schemes are color-blind safe. The
+\code{mediumcontrast} color scheme is designed for situations needing color
 pairs.
 
-The \code{light} colour scheme is reasonably distinct for both normal or
-colourblind vision and is intended to fill labeled cells.
+The \code{light} color scheme is reasonably distinct for both normal or
+colorblind vision and is intended to fill labeled cells.
 
 The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colourblind vision and should be used as a text background or to highlight
+colorblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
 references).
 }
 
-\section{Rainbow colour scheme}{
+\section{Rainbow Color Scheme}{
 
 As a general rule, ordered data should not be represented using a rainbow
 scheme. There are three main arguments against such use (Tol 2018):
@@ -95,12 +95,12 @@ scheme. There are three main arguments against such use (Tol 2018):
 message.}
 \item{Some bands of almost constant hue with sharp transitions between
 them, can be perceived as jumps in the data.}
-\item{Colour-blind people have difficulty distinguishing some colours of
+\item{Color-blind people have difficulty distinguishing some colors of
 the rainbow.}
 }
-If such use cannot be avoided, Paul Tol's technical note provides two colour
-schemes that are reasonably clear in colour-blind vision. To remain
-colour-blind safe, these two schemes must comply with the following
+If such use cannot be avoided, Paul Tol's technical note provides two color
+schemes that are reasonably clear in color-blind vision. To remain
+color-blind safe, these two schemes must comply with the following
 conditions:
 \describe{
 \item{\code{discreterainbow}}{This scheme must not be interpolated.}
@@ -109,23 +109,22 @@ range.}
 }
 }
 
-\section{Okabe and Ito Colour Scheme}{
+\section{Okabe and Ito Color Scheme}{
 
-The following (qualitative) colour scheme is available:
+The following (qualitative) color scheme is available:
 \describe{
-\item{\code{okabeito}}{Up to 8 colours.}
-\item{\verb{okabeito black}}{Up to 8 colours, with black as the last.}
+\item{\code{okabeito}}{Up to 8 colors.}
+\item{\verb{okabeito black}}{Up to 8 colors, with black as the last.}
 }
 }
 
-\section{Scientific Colour Schemes}{
+\section{Scientific Color Schemes}{
 
 The following (qualitative) color schemes are available:
 \describe{
-\item{\code{stratigraphy}}{International Chronostratigraphic Chart (175
-colours).}
-\item{\code{land}}{AVHRR Global Land Cover Classification (14 colours).}
-\item{\code{soil}}{FAO Reference Soil Groups (24 colours).}
+\item{\code{stratigraphy}}{International Chronostratigraphic Chart (175 colors).}
+\item{\code{land}}{AVHRR Global Land Cover Classification (14 colors).}
+\item{\code{soil}}{FAO Reference Soil Groups (24 colors).}
 }
 }
 
@@ -183,7 +182,7 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 \href{https://ccgm.org/}{Commission for the Geological Map of the World}
 }
 \seealso{
-Other colour palettes: 
+Other color palettes: 
 \code{\link{info}()},
 \code{\link{ramp}()},
 \code{\link{scale_picker}}
@@ -191,5 +190,5 @@ Other colour palettes:
 \author{
 N. Frerebeau
 }
-\concept{colour palettes}
+\concept{color palettes}
 \keyword{color}

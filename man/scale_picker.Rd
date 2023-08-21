@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_picker}
 \alias{scale_edge_color_picker}
 \alias{scale_edge_fill_picker}
-\title{Colour Scale Builder}
+\title{Color Scale Builder}
 \usage{
 scale_colour_picker(..., palette = "YlOrBr")
 
@@ -23,9 +23,9 @@ scale_edge_color_picker(..., palette = "YlOrBr")
 scale_edge_fill_picker(..., palette = "YlOrBr")
 }
 \arguments{
-\item{...}{Extra parameters to be passed to the colour scale function.}
+\item{...}{Extra parameters to be passed to the color scale function.}
 
-\item{palette}{A \code{\link{character}} string giving the name of the colour scheme to
+\item{palette}{A \code{\link{character}} string giving the name of the color scheme to
 be used (see \code{\link[=info]{info()}}).}
 }
 \value{
@@ -33,7 +33,7 @@ A \link[ggplot2:discrete_scale]{discrete} or
 \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Builds a colour scale for \pkg{ggplot2} or \pkg{ggraph}.
+Builds a color scale for \pkg{ggplot2} or \pkg{ggraph}.
 }
 \examples{
 library(ggplot2)
@@ -43,7 +43,7 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   scale_colour_picker(palette = "okabeito")
 }
 \seealso{
-Other colour palettes: 
+Other color palettes: 
 \code{\link{colour}()},
 \code{\link{info}()},
 \code{\link{ramp}()}
@@ -51,4 +51,4 @@ Other colour palettes:
 \author{
 N. Frerebeau
 }
-\concept{colour palettes}
+\concept{color palettes}

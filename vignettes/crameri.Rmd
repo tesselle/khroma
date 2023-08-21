@@ -1,5 +1,5 @@
 ---
-title: "Fabio Crameri's Colour Schemes"
+title: "Fabio Crameri's Color Schemes"
 author: "N. Frerebeau"
 date: "`r Sys.Date()`"
 output:
@@ -8,11 +8,9 @@ output:
     toc: true
 bibliography: bibliography.bib
 vignette: >
-  %\VignetteIndexEntry{Fabio Crameri's Colour Schemes}
+  %\VignetteIndexEntry{Fabio Crameri's Color Schemes}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
-editor_options:
-  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -28,11 +26,11 @@ library(khroma)
 ```
 
 ## Introduction
-@crameri2018 offers carefully chosen schemes, ready for mapping data, with colours that are:
+@crameri2018 offers carefully chosen schemes, ready for mapping data, with colors that are:
 
 * Perceptually uniform,
 * Perceptually ordered,
-* Colour vision deficiency friendly,
+* Color vision deficiency friendly,
 * Readable as black and white print,
 * Citable & reproducible.
 
@@ -42,55 +40,55 @@ All the scales presented in @crameri2021 are implemented here, for use with base
 
 ### *broc*
 ```{r crameri_div_broc, fig.height=2, fig.width=7}
-broc <- colour("broc")
+broc <- color("broc")
 plot(broc(256))
 ```
 
 ### *cork*
 ```{r crameri_div_cork, fig.height=2, fig.width=7}
-cork <- colour("cork")
+cork <- color("cork")
 plot(cork(256))
 ```
 
 ### *vik*
 ```{r crameri_div_vik, fig.height=2, fig.width=7}
-vik <- colour("vik")
+vik <- color("vik")
 plot(vik(256))
 ```
 
 ### *lisbon*
 ```{r crameri_div_lisbon, fig.height=2, fig.width=7}
-lisbon <- colour("lisbon")
+lisbon <- color("lisbon")
 plot(lisbon(256))
 ```
 
 ### *tofino*
 ```{r crameri_div_tofino, fig.height=2, fig.width=7}
-tofino <- colour("tofino")
+tofino <- color("tofino")
 plot(tofino(256))
 ```
 
 ### *berlin*
 ```{r crameri_div_berlin, fig.height=2, fig.width=7}
-berlin <- colour("berlin")
+berlin <- color("berlin")
 plot(berlin(256))
 ```
 
 ### *roma*
 ```{r crameri_div_roma, fig.height=2, fig.width=7}
-roma <- colour("roma")
+roma <- color("roma")
 plot(roma(256))
 ```
 
 ### *bam*
 ```{r crameri_div_bam, fig.height=2, fig.width=7}
-bam <- colour("bam")
+bam <- color("bam")
 plot(bam(256))
 ```
 
 ### *vanimo*
 ```{r crameri_div_vanimo, fig.height=2, fig.width=7}
-vanimo <- colour("vanimo")
+vanimo <- color("vanimo")
 plot(vanimo(256))
 ```
 
@@ -98,109 +96,109 @@ plot(vanimo(256))
 
 ### *batlow*
 ```{r crameri_seq_batlow, fig.height=2, fig.width=7}
-batlow <- colour("batlow")
+batlow <- color("batlow")
 plot(batlow(256))
 ```
 
 ### *batlowW*
 ```{r crameri_seq_batlowW, fig.height=2, fig.width=7}
-batlowW <- colour("batlowW")
+batlowW <- color("batlowW")
 plot(batlowW(256))
 ```
 
 ### *batlowK*
 ```{r crameri_seq_batlowK, fig.height=2, fig.width=7}
-batlowK <- colour("batlowK")
+batlowK <- color("batlowK")
 plot(batlowK(256))
 ```
 
 ### *devon*
 ```{r crameri_seq_devon, fig.height=2, fig.width=7}
-devon <- colour("devon")
+devon <- color("devon")
 plot(devon(256))
 ```
 
 ### *lajolla*
 ```{r crameri_seq_lajolla, fig.height=2, fig.width=7}
-lajolla <- colour("lajolla")
+lajolla <- color("lajolla")
 plot(lajolla(256))
 ```
 
 ### *bamako*
 ```{r crameri_seq_bamako, fig.height=2, fig.width=7}
-bamako <- colour("bamako")
+bamako <- color("bamako")
 plot(bamako(256))
 ```
 
 ### *davos*
 ```{r crameri_seq_davos, fig.height=2, fig.width=7}
-davos <- colour("davos")
+davos <- color("davos")
 plot(davos(256))
 ```
 
 ### *bilbao*
 ```{r crameri_seq_bilbao, fig.height=2, fig.width=7}
-bilbao <- colour("bilbao")
+bilbao <- color("bilbao")
 plot(bilbao(256))
 ```
 
 ### *nuuk*
 ```{r crameri_seq_nuuk, fig.height=2, fig.width=7}
-nuuk <- colour("nuuk")
+nuuk <- color("nuuk")
 plot(nuuk(256))
 ```
 
 ### *oslo*
 ```{r crameri_seq_oslo, fig.height=2, fig.width=7}
-oslo <- colour("oslo")
+oslo <- color("oslo")
 plot(oslo(256))
 ```
 
 ### *grayC*
 ```{r crameri_seq_grayC, fig.height=2, fig.width=7}
-grayC <- colour("grayC")
+grayC <- color("grayC")
 plot(grayC(256))
 ```
 
 ### *hawaii*
 ```{r crameri_seq_hawaii, fig.height=2, fig.width=7}
-hawaii <- colour("hawaii")
+hawaii <- color("hawaii")
 plot(hawaii(256))
 ```
 
 ### *lapaz*
 ```{r crameri_seq_lapaz, fig.height=2, fig.width=7}
-lapaz <- colour("lapaz")
+lapaz <- color("lapaz")
 plot(lapaz(256))
 ```
 
 ### *tokyo*
 ```{r crameri_seq_tokyo, fig.height=2, fig.width=7}
-tokyo <- colour("tokyo")
+tokyo <- color("tokyo")
 plot(tokyo(256))
 ```
 
 ### *buda*
 ```{r crameri_seq_buda, fig.height=2, fig.width=7}
-buda <- colour("buda")
+buda <- color("buda")
 plot(buda(256))
 ```
 
 ### *acton*
 ```{r crameri_seq_acton, fig.height=2, fig.width=7}
-acton <- colour("acton")
+acton <- color("acton")
 plot(acton(256))
 ```
 
 ### *turku*
 ```{r crameri_seq_turku, fig.height=2, fig.width=7}
-turku <- colour("turku")
+turku <- color("turku")
 plot(turku(256))
 ```
 
 ### *imola*
 ```{r crameri_seq_imola, fig.height=2, fig.width=7}
-imola <- colour("imola")
+imola <- color("imola")
 plot(imola(256))
 ```
 
@@ -208,19 +206,19 @@ plot(imola(256))
 
 ### *oleron*
 ```{r crameri_seq_oleron, fig.height=2, fig.width=7}
-oleron <- colour("oleron")
+oleron <- color("oleron")
 plot(oleron(256))
 ```
 
 ### *bukavu*
 ```{r crameri_seq_bukavu, fig.height=2, fig.width=7}
-bukavu <- colour("bukavu")
+bukavu <- color("bukavu")
 plot(bukavu(256))
 ```
 
 ### *fes*
 ```{r crameri_seq_fes, fig.height=2, fig.width=7}
-fes <- colour("fes")
+fes <- color("fes")
 plot(fes(256))
 ```
 

@@ -8,7 +8,7 @@
 \alias{scale_edge_colour_batlow}
 \alias{scale_edge_color_batlow}
 \alias{scale_edge_fill_batlow}
-\title{Fabio Crameri's \emph{batlow} Sequential Colour Scheme}
+\title{Fabio Crameri's \emph{batlow} Sequential Color Scheme}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -66,12 +66,12 @@ scale_edge_fill_batlow(
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?}
 
 \item{aesthetics}{A \code{\link{character}} string or vector of character
@@ -81,15 +81,15 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Fabio Crameri's \emph{batlow} Sequential Colour Scheme
+Fabio Crameri's \emph{batlow} Sequential Color Scheme
 }
 \section{Interpolation}{
 
-If more colours than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
 }
 
@@ -118,7 +118,7 @@ science communication. \emph{Nature Communications}, 11, 5444.
 \doi{10.1038/s41467-020-19160-7}
 }
 \seealso{
-Other sequential colour schemes: 
+Other sequential color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamako}},
 \code{\link{scale_crameri_batlowK}},
@@ -141,7 +141,7 @@ Other sequential colour schemes:
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_smoothrainbow}}
 
-Other Fabio Crameri's colour schemes: 
+Other Fabio Crameri's color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamO}},
 \code{\link{scale_crameri_bamako}},
@@ -180,5 +180,5 @@ Other Fabio Crameri's colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{Fabio Crameri's colour schemes}
-\concept{sequential colour schemes}
+\concept{Fabio Crameri's color schemes}
+\concept{sequential color schemes}

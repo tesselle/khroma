@@ -36,7 +36,7 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides the FAO Soil Reference Groups colour scheme.
+Provides the FAO Soil Reference Groups color scheme.
 }
 \details{
 Values will be matched based on the soil names.
@@ -65,11 +65,11 @@ Europe}. Luxembourg: European Commission, Office for Official Publications
 of the European Communities. 128 pp. ISBN: 92-894-8120-X.
 }
 \seealso{
-Other themed colour schemes: 
+Other themed color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_stratigraphy}()}
 
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_stratigraphy}()},
 \code{\link{scale_logical_discrete}},
@@ -86,5 +86,5 @@ Other qualitative colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{qualitative colour schemes}
-\concept{themed colour schemes}
+\concept{qualitative color schemes}
+\concept{themed color schemes}

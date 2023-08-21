@@ -73,11 +73,11 @@ ggplot2::ggplot(strati) +
 \href{https://ccgm.org/}{Commission for the Geological Map of the World}.
 }
 \seealso{
-Other themed colour schemes: 
+Other themed color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()}
 
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_logical_discrete}},
@@ -94,5 +94,5 @@ Other qualitative colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{qualitative colour schemes}
-\concept{themed colour schemes}
+\concept{qualitative color schemes}
+\concept{themed color schemes}

@@ -7,7 +7,7 @@
 \alias{scale_edge_colour_land}
 \alias{scale_edge_color_land}
 \alias{scale_edge_fill_land}
-\title{AVHRR Global Land Cover Classification Colour Scheme for \pkg{ggplot2}
+\title{AVHRR Global Land Cover Classification Color Scheme for \pkg{ggplot2}
 and \pkg{ggraph}}
 \usage{
 scale_colour_land(..., lang = "en", aesthetics = "colour")
@@ -67,11 +67,11 @@ SRON/EPS/TN/09-002, issue 3.1.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other themed colour schemes: 
+Other themed color schemes: 
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()}
 
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
 \code{\link{scale_logical_discrete}},
@@ -88,5 +88,5 @@ Other qualitative colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{qualitative colour schemes}
-\concept{themed colour schemes}
+\concept{qualitative color schemes}
+\concept{themed color schemes}

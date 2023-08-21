@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale_colour_crameri.R
 \name{scale_crameri_diverging}
 \alias{scale_crameri_diverging}
-\title{Fabio Crameri's Diverging Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
+\title{Fabio Crameri's Diverging Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \source{
 Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \doi{10.5281/zenodo.4491293}
@@ -11,10 +11,10 @@ Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
 \item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
-vector of colours be reversed?}
+vector of colors be reversed?}
 
 \item{range}{A length-two \code{\link{numeric}} vector specifying the
-fraction of the scheme's colour domain to keep.}
+fraction of the scheme's color domain to keep.}
 
 \item{midpoint}{A length-one \code{\link{numeric}} vector giving the midpoint
 (in data value) of the diverging scale. Defaults to \code{0}.}
@@ -22,14 +22,14 @@ fraction of the scheme's colour domain to keep.}
 \item{aesthetics}{A \code{\link{character}} string or vector of character
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 
-\item{discrete}{A \code{\link{logical}} scalar: should the colour scheme be
+\item{discrete}{A \code{\link{logical}} scalar: should the color scheme be
 used as a discrete scale?}
 }
 \value{
 A \link[ggplot2:continuous_scale]{continuous} scale.
 }
 \description{
-Provides diverging colour scales from Fabio Crameri's \emph{Scientific colour}.
+Provides diverging color scales from Fabio Crameri's \emph{Scientific colour}.
 }
 \details{
 Available schemes:
@@ -47,11 +47,11 @@ Available schemes:
 }
 \section{Interpolation}{
 
-If more colours than defined are needed from a given scheme, the colour
+If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default colour for \code{NA} can be overridden by passing
+Note that the default color for \code{NA} can be overridden by passing
 a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.#'
 }
 
@@ -76,7 +76,7 @@ science communication. \emph{Nature Communications}, 11, 5444.
 \doi{10.1038/s41467-020-19160-7}
 }
 \seealso{
-Other colour-blind safe colour schemes: 
+Other color-blind safe color schemes: 
 \code{\link{scale_crameri_cyclic}},
 \code{\link{scale_crameri_mutlisequential}},
 \code{\link{scale_crameri_sequential}},
@@ -88,5 +88,5 @@ Other colour-blind safe colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{colour-blind safe colour schemes}
+\concept{color-blind safe color schemes}
 \keyword{internal}

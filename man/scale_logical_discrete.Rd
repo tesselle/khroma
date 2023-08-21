@@ -5,7 +5,7 @@
 \alias{scale_colour_logical}
 \alias{scale_color_logical}
 \alias{scale_fill_logical}
-\title{Binary Discrete Colour Schemes for \pkg{ggplot2} and \pkg{ggraph}}
+\title{Binary Discrete Color Schemes for \pkg{ggplot2} and \pkg{ggraph}}
 \usage{
 scale_colour_logical(..., aesthetics = "colour")
 
@@ -23,7 +23,7 @@ strings listing the name(s) of the aesthetic(s) that this scale works with.}
 A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
-Provides a colour scale for \code{\link{logical}} values.
+Provides a color scale for \code{\link{logical}} values.
 }
 \examples{
 library(ggplot2)
@@ -39,7 +39,7 @@ ggplot2::ggplot(logic, ggplot2::aes(x, y, fill = values)) +
   scale_fill_logical()
 }
 \seealso{
-Other qualitative colour schemes: 
+Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},
 \code{\link{scale_colour_stratigraphy}()},
@@ -56,4 +56,4 @@ Other qualitative colour schemes:
 \author{
 N. Frerebeau
 }
-\concept{qualitative colour schemes}
+\concept{qualitative color schemes}

@@ -34,13 +34,13 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-Color blindness affects a large number of individuals. When communicating scientific results colour palettes must therefore be carefully chosen to be accessible to all readers.
+Color blindness affects a large number of individuals. When communicating scientific results color palettes must therefore be carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of @okabe2008, @tol2021 and @crameri2018 colour schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colours that are distinct for all people, including colour-blind readers. This package also provides tools to simulate colour-blindness and to test how well the colours of any palette are identifiable. To simulate colour-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
+This R package provides an implementation of @okabe2008, @tol2021 and @crameri2018 color schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colors that are distinct for all people, including color-blind readers. This package also provides tools to simulate color-blindness and to test how well the colors of any palette are identifiable. To simulate color-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
 
-@tol2021 and @crameri2018 offer carefully chosen schemes, ready for each type of data, with colours that are:
+@tol2021 and @crameri2018 offer carefully chosen schemes, ready for each type of data, with colors that are:
 
-* Distinct for all people, including colour-blind readers,
+* Distinct for all people, including color-blind readers,
 * Distinct from black and white,
 * Distinct on screen and paper,
 * Matching well together,
@@ -48,9 +48,9 @@ This R package provides an implementation of @okabe2008, @tol2021 and @crameri20
 
 See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
 
-For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these colour schemes may not be colour-blind safe.
+For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these color schemes may not be color-blind safe.
 
-All these colour schemes are implemented for use with base R **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
+All these color schemes are implemented for use with base R **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
 
 ```{r citation, echo=FALSE, comment=''}
 utils::citation("khroma")
@@ -91,18 +91,18 @@ info()
 
 </details>
 
-### Colour palettes and scales
+### Color palettes and scales
 
-`colour()` returns a palette function that when called with a single integer argument returns a vector of colours.
+`color()` returns a palette function that when called with a single integer argument returns a vector of colors.
 
 ```{r usage}
-## Paul Tol's bright colour scheme
-bright <- colour("bright")
+## Paul Tol's bright color scheme
+bright <- color("bright")
 bright(7)
 ```
 
 ```{r usage-show, fig.height=2, fig.width=7, fig.align='center'}
-## Show the colour palette
+## Show the color palette
 plot_scheme(bright(7), colours = TRUE)
 ```
 
@@ -115,7 +115,7 @@ plot(
   x = mpg$displ,
   y = mpg$hwy,
   pch = 16,
-  col = colour("bright")(7)[as.factor(mpg$class)],
+  col = color("bright")(7)[as.factor(mpg$class)],
   xlab = "displ",
   ylab = "hwy",
   panel.first = grid()
@@ -123,33 +123,33 @@ plot(
 
 ## Use with ggplot2
 ggplot2::ggplot(data = mpg) +
-  ggplot2::aes(x = displ, y = hwy, colour = class) +
+  ggplot2::aes(x = displ, y = hwy, color = class) +
   ggplot2::geom_point() +
   ggplot2::theme_bw() +
-  scale_colour_bright()
+  scale_color_bright()
 ```
 
 ### Diagnostic tools
-#### Test how well the colours are identifiable
+#### Test how well the colors are identifiable
 
 ```{r usage-map, fig.height=2, fig.width=7, fig.align='center'}
-## Okabe & Ito's colour scheme
-okabe <- colour("okabe ito")
+## Okabe & Ito's color scheme
+okabe <- color("okabe ito")
 
 set.seed(12345)
 plot_map(okabe(8))
 ```
 
 ```{r usage-tiles, fig.height=3, fig.width=3, fig.align='center'}
-## BuRd sequential colour scheme
-BuRd <- colour("BuRd")
+## BuRd sequential color scheme
+BuRd <- color("BuRd")
 
 plot_tiles(BuRd(128), n = 256)
 ```
 
-#### Simulate colour-blindness
+#### Simulate color-blindness
 
-```{r usage-colourblind1, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
+```{r usage-colorblind1, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
 ## convert() returns a modified palette function
 deuteranopia <- convert(okabe, mode = "deuteranopia")
 plot_scheme(deuteranopia(8), colours = TRUE)
@@ -164,13 +164,13 @@ achromatopsia <- convert(okabe, mode = "achromatopsia")
 plot_scheme(achromatopsia(8), colours = TRUE)
 ```
 
-```{r usage-colourblind2, fig.height=4, fig.width=7, fig.align='center'}
-plot_scheme_colourblind(okabe(8))
+```{r usage-colorblind2, fig.height=4, fig.width=7, fig.align='center'}
+plot_scheme_colorblind(okabe(8))
 
-## ggplot2 default colour scheme
-## (equally spaced hues around the colour wheel)
+## ggplot2 default color scheme
+## (equally spaced hues around the color wheel)
 x <- scales::hue_pal()(8)
-plot_scheme_colourblind(x)
+plot_scheme_colorblind(x)
 ```
 
 ## Contributing

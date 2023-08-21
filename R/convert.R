@@ -1,10 +1,10 @@
-# Colour Conversion
+# Color Conversion
 
-#' CMYK to/from RGB Colour Conversion
+#' CMYK to/from RGB Color Conversion
 #'
 #' @param cyan,magenta,yellow,black,red,blue,green A [`numeric`] vector with
 #'  values in \eqn{[0, max]}.
-#' @param max A [`numeric`] value giving the maximum of the colour values range.
+#' @param max A [`numeric`] value giving the maximum of the color values range.
 #' @return An integer matrix with three or four columns.
 #' @author N. Frerebeau
 #' @keywords internal
@@ -48,7 +48,7 @@ RGB2CMYB <- function(red, green, blue, max = 255) {
   return(CMYK)
 }
 
-#' RGB to/from XYZ Colour Conversion
+#' RGB to/from XYZ Color Conversion
 #'
 #' @param red,blue,green A [`numeric`] vector with values in \eqn{[0, max]}.
 #' @param x,y,z A [`numeric`] vector of color coordinates.
