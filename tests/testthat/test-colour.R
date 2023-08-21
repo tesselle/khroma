@@ -6,8 +6,8 @@ test_that("ggplot2 rescaler", {
 })
 test_that("Colour ramp", {
   h <- elevation <- hist(volcano, breaks = 10, plot = FALSE)$breaks
-  expect_snapshot(ramp(h, palette = "BuRd")(10), cran = TRUE)
-  expect_snapshot(ramp(h, palette = "BuRd", midpoint = 160)(10), cran = TRUE)
+  expect_snapshot(ramp(palette = "BuRd")(h), cran = TRUE)
+  expect_snapshot(ramp(palette = "BuRd")(h, midpoint = 160), cran = TRUE)
 })
 test_that("Palette informations", {
   expect_snapshot(info(), cran = TRUE)

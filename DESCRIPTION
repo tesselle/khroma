@@ -59,6 +59,7 @@ Collate:
     'ggplot2.R'
     'khroma-package.R'
     'plot.R'
+    'ramp.R'
     'scale_colour_crameri.R'
     'scale_colour_okabeito.R'
     'scale_colour_other.R'
