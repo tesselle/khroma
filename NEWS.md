@@ -2,6 +2,9 @@
 ## Bugfixes & changes
 *  Fix `ramp()` to return a palette function with argument a vector of values that are mapped to colors.
 
+## Internals
+* Use **tinytest** and **tinysnapshot** instead of **testthat** and **vdiffr**.
+
 # khroma 1.10.0
 ## Bugfixes & changes
 *  Add Okabe Ito colour scale with black at last position (#12, thanks to @ustervbo). 

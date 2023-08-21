@@ -77,18 +77,6 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "fansi",
-      "name": "fansi",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=fansi"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
       "provider": {
@@ -137,6 +125,18 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "rsvg",
+      "name": "rsvg",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rsvg"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "scales",
       "name": "scales",
       "provider": {
@@ -161,29 +161,39 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "testthat",
-      "name": "testthat",
-      "version": ">= 3.0.0",
+      "identifier": "svglite",
+      "name": "svglite",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=testthat"
+      "sameAs": "https://CRAN.R-project.org/package=svglite"
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "vdiffr",
-      "name": "vdiffr",
-      "version": ">= 1.0.0",
+      "identifier": "tinysnapshot",
+      "name": "tinysnapshot",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=vdiffr"
+      "sameAs": "https://CRAN.R-project.org/package=tinysnapshot"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tinytest",
+      "name": "tinytest",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tinytest"
     }
   ],
   "softwareRequirements": {
@@ -191,7 +201,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 3.3"
+      "version": ">= 3.5.0"
     },
     "2": {
       "@type": "SoftwareApplication",
@@ -220,7 +230,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3125.895KB",
+  "fileSize": "1243.122KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
