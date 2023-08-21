@@ -9,25 +9,25 @@ template:
 reference:
 - title: Colour Palette
   contents:
-  - has_concept("colour palettes")
-- title: Qualitative Colour Schemes
+  - has_concept("color palettes")
+- title: Qualitative Color Schemes
   contents:
-  - has_concept("qualitative colour schemes")
-- title: Diverging Colour Schemes
+  - has_concept("qualitative color schemes")
+- title: Diverging Color Schemes
   contents:
-  - has_concept("diverging colour schemes")
-- title: Sequential Colour Schemes
+  - has_concept("diverging color schemes")
+- title: Sequential Color Schemes
   contents:
-  - has_concept("sequential colour schemes")
-- title: Multi Sequential Colour Schemes
+  - has_concept("sequential color schemes")
+- title: Multi Sequential Color Schemes
   contents:
-  - has_concept("multi sequential colour schemes")
-- title: Cyclic Colour Schemes
+  - has_concept("multi sequential color schemes")
+- title: Cyclic Color Schemes
   contents:
-  - has_concept("cyclic colour schemes")
-- title: Themed Colour Schemes
+  - has_concept("cyclic color schemes")
+- title: Themed Color Schemes
   contents:
-  - has_concept("themed colour schemes")
+  - has_concept("themed color schemes")
 - title: Diagnostic Tools
   contents:
   - has_concept("diagnostic tools")
