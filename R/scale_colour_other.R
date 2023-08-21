@@ -1,5 +1,5 @@
 # Other color schemes
-#' @include colour.R
+#' @include color.R
 NULL
 
 # Discrete =====================================================================

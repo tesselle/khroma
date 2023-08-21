@@ -44,6 +44,10 @@ plot_scheme(tri(7))
 # Achromatopsia
 ach <- convert(pal, mode = "achromatopsia")
 plot_scheme(ach(7))
+
+## Plot simulated color blindness
+plot_scheme_colorblind(pal(7))
+
 }
 \references{
 Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
@@ -62,7 +66,11 @@ Colourmaps for Checking the Legibility of Displays by Dichromats.
 \seealso{
 Other diagnostic tools: 
 \code{\link{compare}()},
-\code{\link{plot}()}
+\code{\link{plot.color_scheme}()},
+\code{\link{plot_map}()},
+\code{\link{plot_scheme_colourblind}()},
+\code{\link{plot_scheme}()},
+\code{\link{plot_tiles}()}
 }
 \author{
 N. Frerebeau

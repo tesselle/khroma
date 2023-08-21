@@ -17,6 +17,3 @@ plot_map(colour("discrete rainbow")(14))
 plot_tiles(colour("discrete rainbow")(14), n = 256)
 plot_tiles(colour("discrete rainbow")(23), n = 256)
 plot_tiles(colour("smooth rainbow")(256), n = 256)
-
-## Plot simulated color blindness
-plot_scheme_colorblind(colour("bright")(7))

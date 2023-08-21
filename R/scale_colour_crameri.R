@@ -1,5 +1,5 @@
 # Fabio Crameri's color schemes
-#' @include colour.R
+#' @include color.R
 NULL
 
 # Diverging ====================================================================

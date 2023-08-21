@@ -17,3 +17,7 @@ plot_scheme(tri(7))
 # Achromatopsia
 ach <- convert(pal, mode = "achromatopsia")
 plot_scheme(ach(7))
+
+## Plot simulated color blindness
+plot_scheme_colorblind(pal(7))
+

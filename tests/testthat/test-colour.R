@@ -1,8 +1,7 @@
 test_that("ggplot2 rescaler", {
-  skip_if_not_installed("scales")
-  expect_type(mid_rescaler(mid = 5)(1:100), "double")
-  expect_length(mid_rescaler(mid = 5)(1:100), 100)
-  expect_equal(max(mid_rescaler(mid = 5)(1:100)), 1)
+  expect_type(rescale_mid(mid = 5)(1:100), "double")
+  expect_length(rescale_mid(mid = 5)(1:100), 100)
+  expect_equal(max(rescale_mid(mid = 5)(1:100)), 1)
 })
 test_that("Colour ramp", {
   h <- elevation <- hist(volcano, breaks = 10, plot = FALSE)$breaks

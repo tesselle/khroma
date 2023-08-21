@@ -65,18 +65,6 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "covr",
-      "name": "covr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=covr"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "crayon",
       "name": "crayon",
       "provider": {
@@ -232,7 +220,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3120.857KB",
+  "fileSize": "3125.895KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

@@ -34,7 +34,6 @@ Imports:
     stats,
     utils
 Suggests:
-    covr,
     crayon,
     fansi,
     ggplot2,
@@ -53,12 +52,19 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Collate: 
     'anomalize.R'
-    'colour.R'
+    'color.R'
     'compare.R'
     'convert.R'
     'ggplot2.R'
+    'info.R'
+    'khroma-internal.R'
     'khroma-package.R'
     'plot.R'
+    'plot_map.R'
+    'plot_scheme.R'
+    'plot_scheme_colorblind.R'
+    'plot_tiles.R'
+    'print.R'
     'ramp.R'
     'scale_colour_crameri.R'
     'scale_colour_okabeito.R'

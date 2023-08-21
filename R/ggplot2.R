@@ -1,5 +1,5 @@
 # Color scales constructor for ggplot2
-#' @include colour.R
+#' @include color.R
 NULL
 
 #' Color Scale Builder
@@ -123,21 +123,11 @@ scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
   scale_args$na.value <- scale_args$na.value %||% attr(palette, "missing")
 
   if (type == "diverging") {
-    scale_args$rescaler <- mid_rescaler(mid = midpoint)
+    scale_args$rescaler <- rescale_mid(mid = midpoint)
   }
 
   palette <- scales::gradient_n_pal(palette(max, range = range))
   do.call(
     ggplot2::continuous_scale, c(aesthetics, scale_name, palette, scale_args)
   )
-}
-
-# COPY FROM GGPLOT2 NON-EXPORTS
-#' @keywords internal
-#' @noRd
-mid_rescaler <- function(mid) {
-  check_package("scales") # Check if scales is installed
-  function(x, to = c(0, 1), from = range(x, na.rm = TRUE)) {
-    scales::rescale_mid(x, to, from, mid)
-  }
 }

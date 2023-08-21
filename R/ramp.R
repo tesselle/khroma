@@ -17,10 +17,7 @@ ramp <- function(palette, ...) {
 
   fun <- function(x, midpoint = NULL) {
     if (!is.null(midpoint) && is.numeric(midpoint)) {
-      to <- c(0, 1)
-      from <- range(x, na.rm = TRUE)
-      extent <- 2 * max(abs(from - midpoint))
-      z <- (x - midpoint) / extent * diff(to) + mean(to)
+      z <- rescale_mid(midpoint)(x)
     } else {
       z <- (x - min(x)) / (max(x) - min(x))
     }

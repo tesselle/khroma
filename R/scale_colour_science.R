@@ -1,4 +1,4 @@
-#' @include colour.R
+#' @include color.R
 NULL
 
 # Geologic Timescale ===========================================================

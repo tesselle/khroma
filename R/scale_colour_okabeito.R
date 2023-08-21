@@ -1,5 +1,5 @@
 # Okabe & Ito color scheme
-#' @include colour.R
+#' @include color.R
 NULL
 
 # Discrete =====================================================================
