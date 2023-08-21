@@ -370,6 +370,9 @@ identifiers:
 - description: The versioned DOI for version 1.10.0.
   type: doi
   value: 10.5281/zenodo.7838382
+- description: The versioned DOI for version 1.11.0.
+  type: doi
+  value: 10.5281/zenodo.8269306
 - description: The Software Heritage identifier for version 1.4.0.
   type: swh
   value: swh:1:dir:ac530bf9321ee33e982c1e3fa44c275e01ba3fb1
