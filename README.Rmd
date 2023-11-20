@@ -12,6 +12,7 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = NULL
 )
+Sys.setlocale("LC_MESSAGES", 'en_GB.UTF-8') # Force locale
 ```
 
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
@@ -22,7 +23,7 @@ knitr::opts_chunk$set(
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 [![Dependencies](https://tinyverse.netlify.com/badge/khroma)](https://cran.r-project.org/package=khroma)
 
-[![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev){.pkgdown-devel}
+[![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev/khroma){.pkgdown-devel}
 [![CRAN Version](http://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-release}
 [![CRAN checks](https://badges.cranchecks.info/worst/khroma.svg)](https://cran.r-project.org/web/checks/check_results_khroma.html){.pkgdown-release}
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-release}

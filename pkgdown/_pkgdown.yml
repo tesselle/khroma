@@ -2,9 +2,6 @@ url: https://packages.tesselle.org/khroma
 
 template:
   package: tekton
-  opengraph:
-    twitter:
-      creator: "@nfrerebeau"
 
 reference:
 - title: Colour Palette

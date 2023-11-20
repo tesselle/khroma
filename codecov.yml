@@ -1,7 +1,8 @@
 comment: false
 
 ignore:
-  - "R/khroma-package.R"
+  - "R/khroma-deprecated.R"
+  - "R/zzz.R"
 
 coverage:
   status:

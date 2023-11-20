@@ -10,7 +10,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 [![Dependencies](https://tinyverse.netlify.com/badge/khroma)](https://cran.r-project.org/package=khroma)
 
-<a href="https://tesselle.r-universe.dev" class="pkgdown-devel"><img
+<a href="https://tesselle.r-universe.dev/khroma"
+class="pkgdown-devel"><img
 src="https://tesselle.r-universe.dev/badges/khroma"
 alt="r-universe" /></a>
 <a href="https://cran.r-project.org/package=khroma"
@@ -76,7 +77,7 @@ or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
       doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
       R package version 1.11.0, <https://packages.tesselle.org/khroma/>.
 
-    Une entrée BibTeX pour les utilisateurs LaTeX est
+    A BibTeX entry for LaTeX users is
 
       @Manual{,
         author = {Nicolas Frerebeau},

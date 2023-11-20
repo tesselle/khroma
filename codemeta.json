@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.1 (2023-06-16)",
+  "runtimePlatform": "R version 4.3.2 (2023-10-31)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -51,6 +51,16 @@
       "familyName": "Stervbo",
       "email": "ulrik.stervbo@gmail.com",
       "@id": "https://orcid.org/0000-0002-2831-8868"
+    }
+  ],
+  "funder": [
+    {
+      "@type": "Organization",
+      "name": "Université Bordeaux Montaigne"
+    },
+    {
+      "@type": "Organization",
+      "name": "CNRS"
     }
   ],
   "maintainer": [
@@ -230,7 +240,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1364.032KB",
+  "fileSize": "1364.116KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

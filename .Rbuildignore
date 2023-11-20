@@ -2,7 +2,6 @@
 ^codemeta\.json$
 ^\_pkgdown\.yml$
 ^cran-comments\.md$
-^CRAN-RELEASE$
 ^LICENSE\.md$
 ^README\.Rmd$
 ^data-raw$
