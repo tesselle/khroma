@@ -3,14 +3,15 @@ title: "Paul Tol's Color Schemes"
 author: "N. Frerebeau"
 date: "`r Sys.Date()`"
 output:
-  rmarkdown::html_vignette:
-    fig_caption: yes
-    toc: true
+  markdown::html_format:
+    options:
+      toc: true
+      number_sections: true
 bibliography: bibliography.bib
 vignette: >
   %\VignetteIndexEntry{Paul Tol's Color Schemes}
+  %\VignetteEngine{knitr::knitr}
   %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include=FALSE}

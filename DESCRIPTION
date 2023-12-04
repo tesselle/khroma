@@ -40,7 +40,7 @@ Suggests:
     ggplot2,
     ggraph,
     knitr,
-    rmarkdown,
+    markdown,
     rsvg,
     scales,
     spacesXYZ,
