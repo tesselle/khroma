@@ -1,4 +1,6 @@
 # khroma 1.11.0.9000
+## New functions
+* Add Paul Tol `nightfall` and `incandescent` colour schemes.
 
 # khroma 1.11.0
 ## Bugfixes & changes

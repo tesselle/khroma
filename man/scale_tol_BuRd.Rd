@@ -131,6 +131,7 @@ Other diverging color schemes:
 \code{\link{scale_crameri_vanimo}},
 \code{\link{scale_crameri_vik}},
 \code{\link{scale_tol_PRGn}},
+\code{\link{scale_tol_nightfall}},
 \code{\link{scale_tol_sunset}}
 
 Other Paul Tol's color schemes: 
@@ -140,10 +141,12 @@ Other Paul Tol's color schemes:
 \code{\link{scale_tol_dark}},
 \code{\link{scale_tol_discreterainbow}},
 \code{\link{scale_tol_highcontrast}},
+\code{\link{scale_tol_incandescent}},
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_light}},
 \code{\link{scale_tol_mediumcontrast}},
 \code{\link{scale_tol_muted}},
+\code{\link{scale_tol_nightfall}},
 \code{\link{scale_tol_pale}},
 \code{\link{scale_tol_smoothrainbow}},
 \code{\link{scale_tol_sunset}},

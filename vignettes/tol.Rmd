@@ -41,7 +41,7 @@ The *pale* and *dark* schemes are not very distinct in either normal or color-bl
 
 The qualitative color schemes must be used as given (no interpolation): colors are picked up to the maximum number of supported values. Refer to the original document for details about the recommended uses (see references).
 
-| Scheme            | Max. colors |
+| Scheme            | Max. colors  |
 |:------------------|-------------:|
 | `bright`          | 7            |
 | `high contrast`   | 3            |
@@ -100,16 +100,23 @@ plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
 ## Diverging data
 If more colors than defined are needed from a given scheme, the color coordinates are linearly interpolated to provide a continuous version of the scheme.
 
-| Scheme   | Num. of colors | Bad data |
-|:---------|----------------:|---------:|
-| `sunset` | 11              | #FFFFFF  |
-| `BuRd`   | 9               | #FFEE99  |
-| `PRGn`   | 9               | #FFEE99  |
+| Scheme      | Num. of colors  | Bad data |
+|:------------|----------------:|---------:|
+| `sunset`    | 11              | #FFFFFF  |
+| `nightfall` | 17              | #FFFFFF  |
+| `BuRd`      | 9               | #FFEE99  |
+| `PRGn`      | 9               | #FFEE99  |
 
 ### *sunset*
 ```{r tol_div_sunset, fig.height=2, fig.width=7}
 sunset <- color("sunset")
-plot_scheme(sunset(9), colours = TRUE, size = 0.9)
+plot_scheme(sunset(11), colours = TRUE, size = 0.9)
+```
+
+### *nightfall*
+```{r tol_div_nightfall, fig.height=2, fig.width=7}
+nightfall <- color("nightfall")
+plot_scheme(nightfall(17), colours = TRUE, size = 0.9)
 ```
 
 ### *BuRd*
@@ -127,10 +134,11 @@ plot_scheme(PRGn(9), colours = TRUE, size = 0.9)
 ## Sequential data
 If more colors than defined are needed from a given scheme, the color coordinates are linearly interpolated to provide a continuous version of the scheme, with the exception of the *discrete rainbow* scheme (see below).
 
-| Scheme             | Num. of colors | Bad data |
+| Scheme             | Num. of colors  | Bad data |
 |:-------------------|----------------:|---------:|
 | `YlOrBr`           | 9               | #888888  |
 | `iridescent`       | 23              | #999999  |
+| `incandescent`     | 11              | #888888  |
 | `discrete rainbow` | 23              | #777777  |
 | `smooth rainbow`   | 34              | #666666  |
 
@@ -144,6 +152,12 @@ plot_scheme(YlOrBr(9), colours = TRUE, size = 0.9)
 ```{r tol_seq_iridescent, fig.height=2, fig.width=7}
 iridescent <- color("iridescent")
 plot_scheme(iridescent(23), colours = TRUE, size = 0.5)
+```
+
+### *incandescent*
+```{r tol_seq_incandescent, fig.height=2, fig.width=7}
+incandescent <- color("incandescent")
+plot_scheme(incandescent(11), colours = TRUE, size = 0.5)
 ```
 
 ### *rainbow*
@@ -212,6 +226,7 @@ plot_tiles(color("PRGn")(128), n = 256)
 set.seed(12345)
 plot_map(YlOrBr(9))
 plot_map(iridescent(23))
+plot_map(incandescent(11))
 plot_map(discrete_rainbow(14))
 plot_map(smooth_rainbow(23))
 ```
@@ -219,6 +234,7 @@ plot_map(smooth_rainbow(23))
 ```{r tol_seq_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='30%', fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent and smooth rainbow sequential color schemes.'}
 plot_tiles(color("YlOrBr")(128), n = 256)
 plot_tiles(color("iridescent")(128), n = 256)
+plot_tiles(color("incandescent")(128), n = 256)
 plot_tiles(color("smooth rainbow")(128), n = 256)
 ```
 

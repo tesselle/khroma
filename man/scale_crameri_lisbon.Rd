@@ -134,6 +134,7 @@ Other diverging color schemes:
 \code{\link{scale_crameri_vik}},
 \code{\link{scale_tol_BuRd}},
 \code{\link{scale_tol_PRGn}},
+\code{\link{scale_tol_nightfall}},
 \code{\link{scale_tol_sunset}}
 
 Other Fabio Crameri's color schemes: 

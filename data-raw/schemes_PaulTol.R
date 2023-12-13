@@ -127,6 +127,17 @@ schemes_tol2018 <- list(
     names = NULL,
     scheme = NULL
   ),
+  nightfall = list(
+    type = "diverging",
+    interpolate = TRUE,
+    missing = "#FFFFFF",
+    max = 17,
+    colours = c("#125A56", "#00767B", "#238F9D", "#42A7C6", "#60BCE9", "#9DCCEF",
+                "#C6DBED", "#DEE6E7", "#ECEADA", "#F0E6B2", "#F9D576", "#FFB954",
+                "#FD9A44", "#F57634", "#E94C1F", "#D11807", "#A01813"),
+    names = NULL,
+    scheme = NULL
+  ),
   BuRd = list(
     type = "diverging",
     interpolate = TRUE,

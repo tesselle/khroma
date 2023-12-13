@@ -168,6 +168,22 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
   expect_inherits(scale_fill_sunset(), "ScaleContinuous")
   expect_equal(scale_fill_sunset()$na.value, "#FFFFFF")
 
+  ## Nightfall -----------------------------------------------------------------
+  expect_inherits(scale_colour_nightfall(midpoint = 10), "ggproto")
+  expect_inherits(scale_colour_nightfall(midpoint = 10), "ScaleContinuous")
+  expect_inherits(scale_colour_nightfall(), "ggproto")
+  expect_inherits(scale_colour_nightfall(), "ScaleContinuous")
+  expect_equal(scale_colour_nightfall()$na.value, "#FFFFFF")
+
+  expect_inherits(scale_color_nightfall(), "ggproto")
+  expect_inherits(scale_color_nightfall(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_nightfall(midpoint = 10), "ggproto")
+  expect_inherits(scale_fill_nightfall(midpoint = 10), "ScaleContinuous")
+  expect_inherits(scale_fill_nightfall(), "ggproto")
+  expect_inherits(scale_fill_nightfall(), "ScaleContinuous")
+  expect_equal(scale_fill_nightfall()$na.value, "#FFFFFF")
+
   ## BuRd ----------------------------------------------------------------------
   expect_inherits(scale_colour_BuRd(midpoint = 10), "ggproto")
   expect_inherits(scale_colour_BuRd(midpoint = 10), "ScaleContinuous")
@@ -232,6 +248,21 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
   expect_inherits(scale_fill_iridescent(), "ScaleContinuous")
   expect_inherits(scale_fill_iridescent(discrete = TRUE), "ScaleDiscrete")
   expect_equal(scale_fill_iridescent()$na.value, "#999999")
+
+  ## Incandescent --------------------------------------------------------------
+  expect_inherits(scale_colour_incandescent(), "ggproto")
+  expect_inherits(scale_colour_incandescent(), "ScaleContinuous")
+  expect_inherits(scale_colour_incandescent(discrete = TRUE), "ScaleDiscrete")
+  expect_equal(scale_colour_incandescent()$na.value, "#888888")
+
+  expect_inherits(scale_color_incandescent(), "ggproto")
+  expect_inherits(scale_color_incandescent(), "ScaleContinuous")
+  expect_equal(scale_color_incandescent()$na.value, "#888888")
+
+  expect_inherits(scale_fill_incandescent(), "ggproto")
+  expect_inherits(scale_fill_incandescent(), "ScaleContinuous")
+  expect_inherits(scale_fill_incandescent(discrete = TRUE), "ScaleDiscrete")
+  expect_equal(scale_fill_incandescent()$na.value, "#888888")
 
   ## Discrete rainbow ----------------------------------------------------------
   expect_inherits(scale_colour_discreterainbow(), "ggproto")

@@ -21,9 +21,10 @@
 #'  \describe{
 #'   \item{Qualitative data}{`bright` (7), `high contrast` (3), `vibrant` (7),
 #'   `muted` (9), `medium contrast` (6), `pale` (6), `dark` (6), `light` (9).}
-#'   \item{Diverging data}{`sunset` (11), `BuRd` (9), `PRGn` (9).}
-#'   \item{Sequential data}{`YlOrBr` (9), `iridescent` (23), `discrete rainbow`
-#'   (23), `smooth rainbow` (34).}
+#'   \item{Diverging data}{`sunset` (11), `nightfall` (17), `BuRd` (9),
+#'   `PRGn` (9).}
+#'   \item{Sequential data}{`YlOrBr` (9), `iridescent` (23), `incandescent`
+#'   (11), `discrete rainbow` (23), `smooth rainbow` (34).}
 #'  }
 #' @section Qualitative Color Schemes:
 #'  According to Paul Tol's technical note, the `bright`, `highcontrast`,

@@ -119,6 +119,7 @@ Other sequential color schemes:
 \code{\link{scale_crameri_tokyo}},
 \code{\link{scale_crameri_turku}},
 \code{\link{scale_tol_YlOrBr}},
+\code{\link{scale_tol_incandescent}},
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_smoothrainbow}}
 
@@ -129,10 +130,12 @@ Other Paul Tol's color schemes:
 \code{\link{scale_tol_bright}},
 \code{\link{scale_tol_dark}},
 \code{\link{scale_tol_highcontrast}},
+\code{\link{scale_tol_incandescent}},
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_light}},
 \code{\link{scale_tol_mediumcontrast}},
 \code{\link{scale_tol_muted}},
+\code{\link{scale_tol_nightfall}},
 \code{\link{scale_tol_pale}},
 \code{\link{scale_tol_smoothrainbow}},
 \code{\link{scale_tol_sunset}},

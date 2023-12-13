@@ -62,9 +62,10 @@ color schemes (divergent and sequential schemes are linearly interpolated).
 \describe{
 \item{Qualitative data}{\code{bright} (7), \verb{high contrast} (3), \code{vibrant} (7),
 \code{muted} (9), \verb{medium contrast} (6), \code{pale} (6), \code{dark} (6), \code{light} (9).}
-\item{Diverging data}{\code{sunset} (11), \code{BuRd} (9), \code{PRGn} (9).}
-\item{Sequential data}{\code{YlOrBr} (9), \code{iridescent} (23), \verb{discrete rainbow}
-(23), \verb{smooth rainbow} (34).}
+\item{Diverging data}{\code{sunset} (11), \code{nightfall} (17), \code{BuRd} (9),
+\code{PRGn} (9).}
+\item{Sequential data}{\code{YlOrBr} (9), \code{iridescent} (23), \code{incandescent}
+(11), \verb{discrete rainbow} (23), \verb{smooth rainbow} (34).}
 }
 }
 
