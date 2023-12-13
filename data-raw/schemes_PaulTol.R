@@ -171,6 +171,16 @@ schemes_tol2018 <- list(
     names = NULL,
     scheme = NULL
   ),
+  incandescent = list(
+    type = "sequential",
+    interpolate = TRUE,
+    missing = "#888888",
+    max = 11,
+    colours = c("#CEFFFF", "#C6F7D6", "#A2F49B", "#BBE453", "#D5CE04", "#E7B503",
+                "#F19903", "#F6790B", "#F94902", "#E40515", "#A80003"),
+    names = NULL,
+    scheme = NULL
+  ),
   discreterainbow = list(
     type = "sequential",
     interpolate = FALSE,
