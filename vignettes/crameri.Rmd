@@ -18,7 +18,7 @@ vignette: >
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.align = "center"
+  out.width = "100%"
 )
 ```
 
@@ -27,7 +27,7 @@ library(khroma)
 ```
 
 ## Introduction
-@crameri2018 offers carefully chosen schemes, ready for mapping data, with colors that are:
+Crameri (2018) offers carefully chosen schemes, ready for mapping data, with colors that are:
 
 * Perceptually uniform,
 * Perceptually ordered,
@@ -35,7 +35,7 @@ library(khroma)
 * Readable as black and white print,
 * Citable & reproducible.
 
-All the scales presented in @crameri2021 are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
+All the scales presented in Crameri (2021) are implemented here, for use with base R **graphics**, [**ggplot2**](https://ggplot2.tidyverse.org/) or [**ggraph**](https://ggraph.data-imaginist.com/).
 
 ## Diverging data
 
@@ -224,3 +224,7 @@ plot(fes(256))
 ```
 
 ## References
+
+Crameri, F. 2018. "Geodynamic Diagnostics, Scientific Visualisation and StagLab 3.0." *Geoscientific Model Development* 11 (6): 2541-2562. DOI: [10.5194/gmd-11-2541-2018](https://doi.org/10.5194/gmd-11-2541-2018).
+
+Crameri, F. 2021. *Scientific Colour Maps* (version 7.0.0). Zenodo. DOI: [10.5281/zenodo.4491293](https://doi.org/10.5281/zenodo.4491293).

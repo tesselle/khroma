@@ -15,7 +15,11 @@ vignette: >
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%"
+)
 ```
 
 ```{r packages}
@@ -23,14 +27,14 @@ library(khroma)
 ```
 
 ## Introduction
-@tol2021 offers carefully chosen schemes, ready for each type of data, with colors that are:
+Tol (2021) offers carefully chosen schemes, ready for each type of data, with colors that are:
 
 * Distinct for all people, including color-blind readers,
 * Distinct from black and white,
 * Distinct on screen and paper,
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note (issue 3.2, 2021-08-18) are implemented here, for use with base R **graphics** or [**ggplot2**](https://ggplot2.tidyverse.org/).
+All the scales presented in Paul Tol's technical note (issue 3.2, 2021-08-18) are implemented here, for use with base R **graphics**, [**ggplot2**](https://ggplot2.tidyverse.org/) or [**ggraph**](https://ggraph.data-imaginist.com/).
 
 ## Qualitative data
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* color schemes are color-blind safe.
@@ -161,7 +165,7 @@ plot_scheme(incandescent(11), colours = TRUE, size = 0.5)
 ```
 
 ### *rainbow*
-As a general rule, ordered data should not be represented using a rainbow scheme. There are three main arguments against such use [@tol2021]:
+As a general rule, ordered data should not be represented using a rainbow scheme. There are three main arguments against such use (Tol 2021):
 
 * The spectral order of visible light carries no inherent magnitude message.
 * Some bands of almost constant hue with sharp transitions between them, can be perceived as jumps in the data.
@@ -173,7 +177,7 @@ If such use cannot be avoided, Paul Tol's technical note provides two color sche
 : This scheme must not be interpolated.
 
 *smooth rainbow*
-: This scheme does not have to be used over the full range [@tol2021 suggests starting at purple].
+: This scheme does not have to be used over the full range. Tol (2021) suggests starting at purple.
 
 ```{r tol_seq_rainbow, fig.height=2, fig.width=7}
 discrete_rainbow <- color("discrete rainbow")
@@ -210,12 +214,14 @@ plot_map(light(9))
 ```{r tol_div, echo=FALSE, fig.height = 2, fig.width = 7, fig.show='hold', fig.cap='Diagnostic maps for the sunset, BuRd and PRGn (from top to bottom) diverging color schemes.'}
 set.seed(12345)
 plot_map(sunset(11))
+plot_map(nightfall(17))
 plot_map(BuRd(9))
 plot_map(PRGn(9))
 ```
 
-```{r tol_div_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='30%', fig.show='hold', fig.cap='Diagnostic maps for the sunset, BuRd and PRGn diverging color schemes.'}
+```{r tol_div_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='50%', fig.show='hold', fig.cap='Diagnostic maps for the sunset, BuRd and PRGn diverging color schemes.'}
 plot_tiles(color("sunset")(128), n = 256)
+plot_tiles(color("nightfall")(128), n = 256)
 plot_tiles(color("BuRd")(128), n = 256)
 plot_tiles(color("PRGn")(128), n = 256)
 ```
@@ -231,7 +237,7 @@ plot_map(discrete_rainbow(14))
 plot_map(smooth_rainbow(23))
 ```
 
-```{r tol_seq_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='30%', fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent and smooth rainbow sequential color schemes.'}
+```{r tol_seq_map, echo=FALSE, fig.height = 7, fig.width = 7, out.width='50%', fig.show='hold', fig.cap='Diagnostic maps for the YlOrBr, iridescent and smooth rainbow sequential color schemes.'}
 plot_tiles(color("YlOrBr")(128), n = 256)
 plot_tiles(color("iridescent")(128), n = 256)
 plot_tiles(color("incandescent")(128), n = 256)
@@ -239,3 +245,5 @@ plot_tiles(color("smooth rainbow")(128), n = 256)
 ```
 
 ## References
+
+Tol, P. 2021. "Colour Schemes." Technical note SRON/EPS/TN/09-002 3.2. SRON. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
