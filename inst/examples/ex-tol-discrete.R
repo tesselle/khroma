@@ -1,4 +1,4 @@
-library(ggplot2)
+data(mpg, package = "ggplot2")
 
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
@@ -7,6 +7,8 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
   scale_colour_vibrant()
+
+data(diamonds, package = "ggplot2")
 
 ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
   ggplot2::geom_bar() +

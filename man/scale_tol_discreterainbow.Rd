@@ -40,7 +40,7 @@ vector of colors be reversed?}
 strings listing the name(s) of the aesthetic(s) that this scale works with.}
 }
 \value{
-A \link[ggplot2:continuous_scale]{continuous} scale.
+A \link[ggplot2:discrete_scale]{discrete} scale.
 }
 \description{
 Paul Tol's \emph{discrete rainbow} Sequential Color Scheme
@@ -79,19 +79,21 @@ range.}
 }
 
 \examples{
-data(faithfuld, package = "ggplot2")
+data(mpg, package = "ggplot2")
 
-ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
-  ggplot2::geom_raster() +
-  scale_fill_YlOrBr()
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_bright()
 
-ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
-  ggplot2::geom_raster() +
-  scale_fill_iridescent(reverse = TRUE)
+ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
+  ggplot2::geom_point() +
+  scale_colour_vibrant()
 
-ggplot2::ggplot(faithfuld, ggplot2::aes(waiting, eruptions, fill = density)) +
-  ggplot2::geom_raster() +
-  scale_fill_smoothrainbow(range = c(0.25, 1))
+data(diamonds, package = "ggplot2")
+
+ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
+  ggplot2::geom_bar() +
+  scale_fill_muted()
 }
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
@@ -99,29 +101,20 @@ SRON/EPS/TN/09-002, issue 3.1.
 URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
-Other sequential color schemes: 
-\code{\link{scale_crameri_acton}},
-\code{\link{scale_crameri_bamako}},
-\code{\link{scale_crameri_batlowK}},
-\code{\link{scale_crameri_batlowW}},
-\code{\link{scale_crameri_batlow}},
-\code{\link{scale_crameri_bilbao}},
-\code{\link{scale_crameri_buda}},
-\code{\link{scale_crameri_davos}},
-\code{\link{scale_crameri_devon}},
-\code{\link{scale_crameri_grayC}},
-\code{\link{scale_crameri_hawaii}},
-\code{\link{scale_crameri_imola}},
-\code{\link{scale_crameri_lajolla}},
-\code{\link{scale_crameri_lapaz}},
-\code{\link{scale_crameri_nuuk}},
-\code{\link{scale_crameri_oslo}},
-\code{\link{scale_crameri_tokyo}},
-\code{\link{scale_crameri_turku}},
-\code{\link{scale_tol_YlOrBr}},
-\code{\link{scale_tol_incandescent}},
-\code{\link{scale_tol_iridescent}},
-\code{\link{scale_tol_smoothrainbow}}
+Other qualitative color schemes: 
+\code{\link{scale_colour_land}()},
+\code{\link{scale_colour_soil}()},
+\code{\link{scale_colour_stratigraphy}()},
+\code{\link{scale_logical_discrete}},
+\code{\link{scale_okabeito_discrete}},
+\code{\link{scale_tol_bright}},
+\code{\link{scale_tol_dark}},
+\code{\link{scale_tol_highcontrast}},
+\code{\link{scale_tol_light}},
+\code{\link{scale_tol_mediumcontrast}},
+\code{\link{scale_tol_muted}},
+\code{\link{scale_tol_pale}},
+\code{\link{scale_tol_vibrant}}
 
 Other Paul Tol's color schemes: 
 \code{\link{scale_tol_BuRd}},
@@ -145,4 +138,4 @@ Other Paul Tol's color schemes:
 N. Frerebeau
 }
 \concept{Paul Tol's color schemes}
-\concept{sequential color schemes}
+\concept{qualitative color schemes}

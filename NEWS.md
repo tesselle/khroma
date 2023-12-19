@@ -2,6 +2,9 @@
 ## New functions
 * Add Paul Tol `nightfall` and `incandescent` colour schemes.
 
+## Bugfixes & changes
+*  Fix `discreterainbow` scheme (qualitative scheme instead of sequential).
+
 # khroma 1.11.0
 ## Bugfixes & changes
 *  Fix `ramp()` to return a palette function with argument a vector of values that are mapped to colors.

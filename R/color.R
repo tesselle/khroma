@@ -161,15 +161,17 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
       # Validate
-      if (n > k)
-        stop(
-          sprintf("%s color scheme supports up to %d values.",
-                  sQuote(palette), k),
-          call. = FALSE
-        )
+      if (n > k) {
+        msg <- "%s color scheme supports up to %d values."
+        stop(sprintf(msg, sQuote(palette), k), call. = FALSE)
+      }
       # Arrange color schemes
       if (!is.null(col_scheme)) {
         m <- col_scheme[[n]]
+        if (reverse) {
+          m <- rev(m)
+          col_colors <- rev(col_colors)
+        }
         col <- col_colors[m]
       } else if (col_type == "qualitative") {
         m <- seq_len(n)

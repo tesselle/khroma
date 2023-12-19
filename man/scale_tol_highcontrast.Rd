@@ -66,7 +66,7 @@ references).
 }
 
 \examples{
-library(ggplot2)
+data(mpg, package = "ggplot2")
 
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
@@ -75,6 +75,8 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
 ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
   scale_colour_vibrant()
+
+data(diamonds, package = "ggplot2")
 
 ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
   ggplot2::geom_bar() +
@@ -94,6 +96,7 @@ Other qualitative color schemes:
 \code{\link{scale_okabeito_discrete}},
 \code{\link{scale_tol_bright}},
 \code{\link{scale_tol_dark}},
+\code{\link{scale_tol_discreterainbow}},
 \code{\link{scale_tol_light}},
 \code{\link{scale_tol_mediumcontrast}},
 \code{\link{scale_tol_muted}},

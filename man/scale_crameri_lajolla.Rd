@@ -137,7 +137,6 @@ Other sequential color schemes:
 \code{\link{scale_crameri_tokyo}},
 \code{\link{scale_crameri_turku}},
 \code{\link{scale_tol_YlOrBr}},
-\code{\link{scale_tol_discreterainbow}},
 \code{\link{scale_tol_incandescent}},
 \code{\link{scale_tol_iridescent}},
 \code{\link{scale_tol_smoothrainbow}}

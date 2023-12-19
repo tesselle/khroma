@@ -84,6 +84,7 @@ Other qualitative color schemes:
 \code{\link{scale_okabeito_discrete}},
 \code{\link{scale_tol_bright}},
 \code{\link{scale_tol_dark}},
+\code{\link{scale_tol_discreterainbow}},
 \code{\link{scale_tol_highcontrast}},
 \code{\link{scale_tol_light}},
 \code{\link{scale_tol_mediumcontrast}},
