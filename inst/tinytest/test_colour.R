@@ -1,4 +1,3 @@
-options(crayon.enabled = FALSE)
 pal <- info()
 
 # Palette colours ==============================================================

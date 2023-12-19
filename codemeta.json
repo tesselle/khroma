@@ -75,18 +75,6 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "crayon",
-      "name": "crayon",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=crayon"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
       "provider": {
@@ -240,7 +228,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1364.145KB",
+  "fileSize": "1385.973KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
