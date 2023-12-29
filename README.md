@@ -72,20 +72,20 @@ or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 
     To cite khroma in publications use:
 
-      Frerebeau N (2023). _khroma: Colour Schemes for Scientific Data
+      Frerebeau N (2024). _khroma: Colour Schemes for Scientific Data
       Visualization_. Université Bordeaux Montaigne, Pessac, France.
       doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
-      R package version 1.11.0, <https://packages.tesselle.org/khroma/>.
+      R package version 1.12.0, <https://packages.tesselle.org/khroma/>.
 
     A BibTeX entry for LaTeX users is
 
       @Manual{,
         author = {Nicolas Frerebeau},
         title = {{khroma: Colour Schemes for Scientific Data Visualization}},
-        year = {2023},
+        year = {2024},
         organization = {Université Bordeaux Montaigne},
         address = {Pessac, France},
-        note = {R package version 1.11.0},
+        note = {R package version 1.12.0},
         doi = {10.5281/zenodo.1472077},
         url = {https://packages.tesselle.org/khroma/},
       }
@@ -171,18 +171,20 @@ info()
 #> 41            pale qualitative   6    <NA>
 #> 42            dark qualitative   6    <NA>
 #> 43           light qualitative   9    <NA>
-#> 44          sunset   diverging  11 #FFFFFF
-#> 45            BuRd   diverging   9 #FFEE99
-#> 46            PRGn   diverging   9 #FFEE99
-#> 47          YlOrBr  sequential   9 #888888
-#> 48      iridescent  sequential  23 #999999
-#> 49 discreterainbow  sequential  23 #777777
-#> 50   smoothrainbow  sequential  34 #666666
-#> 51        okabeito qualitative   8    <NA>
-#> 52   okabeitoblack qualitative   8    <NA>
-#> 53    stratigraphy qualitative 175    <NA>
-#> 54            soil qualitative  24    <NA>
-#> 55            land qualitative  14    <NA>
+#> 44 discreterainbow qualitative  23 #777777
+#> 45          sunset   diverging  11 #FFFFFF
+#> 46       nightfall   diverging  17 #FFFFFF
+#> 47            BuRd   diverging   9 #FFEE99
+#> 48            PRGn   diverging   9 #FFEE99
+#> 49          YlOrBr  sequential   9 #888888
+#> 50      iridescent  sequential  23 #999999
+#> 51    incandescent  sequential  11 #888888
+#> 52   smoothrainbow  sequential  34 #666666
+#> 53        okabeito qualitative   8    <NA>
+#> 54   okabeitoblack qualitative   8    <NA>
+#> 55    stratigraphy qualitative 175    <NA>
+#> 56            soil qualitative  24    <NA>
+#> 57            land qualitative  14    <NA>
 ```
 
 </details>

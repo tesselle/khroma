@@ -1,24 +1,24 @@
 # Platform
 
-|field    |value                                                                        |
-|:--------|:----------------------------------------------------------------------------|
-|version  |R version 4.3.1 (2023-06-16)                                                 |
-|os       |Ubuntu 22.04.3 LTS                                                           |
-|system   |x86_64, linux-gnu                                                            |
-|ui       |RStudio                                                                      |
-|language |(EN)                                                                         |
-|collate  |fr_FR.UTF-8                                                                  |
-|ctype    |fr_FR.UTF-8                                                                  |
-|tz       |Europe/Paris                                                                 |
-|date     |2023-08-21                                                                   |
-|rstudio  |2023.06.1+524 Mountain Hydrangea (desktop)                                   |
-|pandoc   |3.1.1 @ /usr/lib/rstudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown) |
+|field    |value                                    |
+|:--------|:----------------------------------------|
+|version  |R version 4.3.2 (2023-10-31)             |
+|os       |Ubuntu 22.04.3 LTS                       |
+|system   |x86_64, linux-gnu                        |
+|ui       |RStudio                                  |
+|language |(EN)                                     |
+|collate  |fr_FR.UTF-8                              |
+|ctype    |fr_FR.UTF-8                              |
+|tz       |Europe/Paris                             |
+|date     |2023-12-19                               |
+|rstudio  |2023.09.0+463 Desert Sunflower (desktop) |
+|pandoc   |NA                                       |
 
 # Dependencies
 
-|package |old    |new         |Δ  |
-|:-------|:------|:-----------|:--|
-|khroma  |1.10.0 |1.10.0.9000 |*  |
+|package |old    |new    |Δ  |
+|:-------|:------|:------|:--|
+|khroma  |1.11.0 |1.12.0 |*  |
 
 # Revdeps
 
