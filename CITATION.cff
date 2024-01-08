@@ -63,7 +63,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
   version: '>= 3.5.0'
@@ -75,7 +75,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
 - type: software
@@ -86,7 +86,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
 - type: software
@@ -97,7 +97,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
 - type: software
@@ -108,7 +108,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
 - type: software
@@ -119,7 +119,7 @@ references:
   - name: R Core Team
   location:
     name: Vienna, Austria
-  year: '2023'
+  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
 - type: software
@@ -156,7 +156,7 @@ references:
   - family-names: Dunnington
     given-names: Dewey
     orcid: https://orcid.org/0000-0002-9415-4582
-  year: '2023'
+  year: '2024'
 - type: software
   title: ggraph
   abstract: 'ggraph: An Implementation of Grammar of Graphics for Graphs and Networks'
@@ -168,7 +168,7 @@ references:
     given-names: Thomas Lin
     email: thomasp85@gmail.com
     orcid: https://orcid.org/0000-0002-5147-4711
-  year: '2023'
+  year: '2024'
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
@@ -180,7 +180,7 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2023'
+  year: '2024'
 - type: software
   title: markdown
   abstract: 'markdown: Render Markdown with ''commonmark'''
@@ -196,7 +196,7 @@ references:
     given-names: JJ
   - family-names: Horner
     given-names: Jeffrey
-  year: '2023'
+  year: '2024'
 - type: software
   title: rsvg
   abstract: 'rsvg: Render SVG Images into PDF, PNG, (Encapsulated) PostScript, or
@@ -209,7 +209,7 @@ references:
     given-names: Jeroen
     email: jeroen@berkeley.edu
     orcid: https://orcid.org/0000-0002-4035-0289
-  year: '2023'
+  year: '2024'
 - type: software
   title: scales
   abstract: 'scales: Scale Functions for Visualization'
@@ -226,7 +226,7 @@ references:
     orcid: https://orcid.org/0000-0002-5147-4711
   - family-names: Seidel
     given-names: Dana
-  year: '2023'
+  year: '2024'
 - type: software
   title: spacesXYZ
   abstract: 'spacesXYZ: CIE XYZ and some of Its Derived Color Spaces'
@@ -235,7 +235,7 @@ references:
   authors:
   - family-names: Davis
     given-names: Glenn
-  year: '2023'
+  year: '2024'
 - type: software
   title: svglite
   abstract: 'svglite: An ''SVG'' Graphics Device'
@@ -262,7 +262,7 @@ references:
   - family-names: Lise
     given-names: Vaudor
     email: lise.vaudor@ens-lyon.fr
-  year: '2023'
+  year: '2024'
 - type: software
   title: tinysnapshot
   abstract: 'tinysnapshot: Snapshots for Unit Tests using the ''tinytest'' Framework'
@@ -274,7 +274,7 @@ references:
     given-names: Vincent
     email: vincent.arel-bundock@umontreal.ca
     orcid: https://orcid.org/0000-0003-2042-7063
-  year: '2023'
+  year: '2024'
 - type: software
   title: tinytest
   abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'
@@ -286,7 +286,7 @@ references:
     given-names: Mark
     email: mark.vanderloo@gmail.com
     orcid: https://orcid.org/0000-0002-9807-4686
-  year: '2023'
+  year: '2024'
 identifiers:
 - description: The concept DOI.
   type: doi
@@ -339,6 +339,9 @@ identifiers:
 - description: The versioned DOI for version 1.11.0.
   type: doi
   value: 10.5281/zenodo.8269306
+- description: The versioned DOI for version 1.12.0.
+  type: doi
+  value: 10.5281/zenodo.10470003
 - description: The Software Heritage identifier for version 1.4.0.
   type: swh
   value: swh:1:dir:ac530bf9321ee33e982c1e3fa44c275e01ba3fb1
