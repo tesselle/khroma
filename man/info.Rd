@@ -2,7 +2,7 @@
 % Please edit documentation in R/info.R
 \name{info}
 \alias{info}
-\title{Available Palettes}
+\title{Available Schemes}
 \usage{
 info()
 }
@@ -10,26 +10,25 @@ info()
 A \code{\link{data.frame}} with the following columns:
 \describe{
 \item{\code{palette}}{Names of palette.}
-\item{\code{type}}{Types of palettes: sequential, diverging or qualitative.}
+\item{\code{type}}{Types of schemes: sequential, diverging or qualitative.}
 \item{\code{max}}{Maximum number of colors that are contained in each
-palette. Only relevant for qualitative palettes.}
+palette. Only relevant for qualitative schemes.}
 \item{\code{missing}}{The hexadecimal color value for mapping missing values.}
 }
 }
 \description{
-Returns information about the available palettes.
+Returns information about the available schemes.
 }
 \examples{
 ## Get a table of available palettes
 info()
 }
 \seealso{
-Other color palettes: 
+Other color schemes: 
 \code{\link{colour}()},
-\code{\link{ramp}()},
-\code{\link{scale_picker}}
+\code{\link{ramp}()}
 }
 \author{
 N. Frerebeau
 }
-\concept{color palettes}
+\concept{color schemes}

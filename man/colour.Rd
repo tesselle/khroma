@@ -3,7 +3,7 @@
 \name{colour}
 \alias{colour}
 \alias{color}
-\title{Color Palette}
+\title{Color Schemes}
 \usage{
 colour(
   palette,
@@ -17,8 +17,8 @@ colour(
 color(palette, reverse = FALSE, names = FALSE, lang = "en", force = FALSE, ...)
 }
 \arguments{
-\item{palette}{A \code{\link{character}} string giving the name of the palette to be
-used (see below).}
+\item{palette}{A \code{\link{character}} string giving the name of the scheme to be
+used (see \code{\link[=info]{info()}}).}
 
 \item{reverse}{A \code{\link{logical}} scalar: should the resulting vector of colors
 should be reversed?}
@@ -37,9 +37,9 @@ schemes, as they are designed to be used as is to remain color-blind safe.}
 \link[grDevices:colorRamp]{colorRampPalette}.}
 }
 \value{
-A palette function with the following attributes, that when called
-with a single integer argument (the number of levels) returns a (named)
-vector of colors.
+A \code{\link{function}} function with the following attributes, that when called
+with a single argument (an \code{\link{integer}} specifying the number of colors)
+returns a (named) vector of colors.
 
 \describe{
 \item{palette}{A \code{\link{character}} string giving the name of the
@@ -62,81 +62,13 @@ examples).
 \description{
 Provides qualitative, diverging and sequential color schemes.
 }
-\section{Paul Tol's Color Schemes}{
-
-The following palettes are available. The maximum number of supported
-colors is in brackets, this value is only relevant for the qualitative
-color schemes (divergent and sequential schemes are linearly interpolated).
-\describe{
-\item{Qualitative data}{\code{bright} (7), \verb{high contrast} (3), \code{vibrant} (7),
-\code{muted} (9), \verb{medium contrast} (6), \code{pale} (6), \code{dark} (6), \code{light} (9).}
-\item{Diverging data}{\code{sunset} (11), \code{nightfall} (17), \code{BuRd} (9),
-\code{PRGn} (9).}
-\item{Sequential data}{\code{YlOrBr} (9), \code{iridescent} (23), \code{incandescent}
-(11), \verb{discrete rainbow} (23), \verb{smooth rainbow} (34).}
-}
-}
-
-\section{Qualitative Color Schemes}{
-
-According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
-\code{vibrant} and \code{muted} color schemes are color-blind safe. The
-\code{mediumcontrast} color scheme is designed for situations needing color
-pairs.
-
-The \code{light} color scheme is reasonably distinct for both normal or
-colorblind vision and is intended to fill labeled cells.
-
-The \code{pale} and \code{dark} schemes are not very distinct in either normal or
-colorblind vision and should be used as a text background or to highlight
-a cell in a table.
-
-Refer to the original document for details about the recommended uses (see
-references).
-}
-
-\section{Rainbow Color Scheme}{
-
-As a general rule, ordered data should not be represented using a rainbow
-scheme. There are three main arguments against such use (Tol 2018):
-\itemize{
-\item{The spectral order of visible light carries no inherent magnitude
-message.}
-\item{Some bands of almost constant hue with sharp transitions between
-them, can be perceived as jumps in the data.}
-\item{Color-blind people have difficulty distinguishing some colors of
-the rainbow.}
-}
-If such use cannot be avoided, Paul Tol's technical note provides two color
-schemes that are reasonably clear in color-blind vision. To remain
-color-blind safe, these two schemes must comply with the following
-conditions:
-\describe{
-\item{\code{discreterainbow}}{This scheme must not be interpolated.}
-\item{\code{smoothrainbow}}{This scheme does not have to be used over the full
-range.}
-}
-}
-
-\section{Okabe and Ito Color Scheme}{
-
-The following (qualitative) color scheme is available:
+\details{
+The following color scheme are available:
 \describe{
 \item{\code{okabeito}}{Up to 8 colors.}
 \item{\verb{okabeito black}}{Up to 8 colors, with black as the last.}
 }
 }
-
-\section{Scientific Color Schemes}{
-
-The following (qualitative) color schemes are available:
-\describe{
-\item{\code{stratigraphy}}{International Chronostratigraphic Chart (175 colors).}
-\item{\code{land}}{AVHRR Global Land Cover Classification (14 colors).}
-\item{\code{soil}}{FAO Reference Soil Groups (24 colors).}
-}
-}
-
 \examples{
 ## Okabe and Ito colour scheme
 colour("okabe ito")(8)
@@ -176,6 +108,14 @@ PRGn <- colour("PRGn")
 plot_scheme(PRGn(9, range = c(0.5, 1)))
 }
 \references{
+Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+StagLab 3.0. \emph{Geosci. Model Dev.}, 11, 2541-2562.
+\doi{10.5194/gmd-11-2541-2018}
+
+Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+science communication. \emph{Nature Communications}, 11, 5444.
+\doi{10.1038/s41467-020-19160-7}
+
 Jones, A., Montanarella, L. & Jones, R. (Ed.) (2005). \emph{Soil atlas of
 Europe}. Luxembourg: European Commission, Office for Official Publications
 of the European Communities. 128 pp. ISBN: 92-894-8120-X.
@@ -191,13 +131,12 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 \href{https://ccgm.org/}{Commission for the Geological Map of the World}
 }
 \seealso{
-Other color palettes: 
+Other color schemes: 
 \code{\link{info}()},
-\code{\link{ramp}()},
-\code{\link{scale_picker}}
+\code{\link{ramp}()}
 }
 \author{
 N. Frerebeau
 }
-\concept{color palettes}
+\concept{color schemes}
 \keyword{color}

@@ -92,14 +92,30 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 \description{
 Fabio Crameri's \emph{tofino} Diverging Color Scheme
 }
-\section{Interpolation}{
+\section{Diverging Color Schemes}{
 
 If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default color for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.#'
+\tabular{lll}{
+\strong{Palette} \tab \strong{Max.} \cr
+\code{broc}      \tab 256      \cr
+\code{cork}      \tab 256      \cr
+\code{vik}       \tab 256      \cr
+\code{lisbon}    \tab 256      \cr
+\code{tofino}    \tab 256      \cr
+\code{berlin}    \tab 256      \cr
+\code{roma}      \tab 256      \cr
+\code{bam}       \tab 256      \cr
+\code{vanimo}    \tab 256      \cr
+\code{brocO}*    \tab 256      \cr
+\code{corkO}*    \tab 256      \cr
+\code{vikO}*     \tab 256      \cr
+\code{romaO}*    \tab 256      \cr
+\code{bamO}*     \tab 256      \cr
+}
+*: cyclic color schemes.
 }
 
 \examples{

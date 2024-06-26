@@ -83,14 +83,37 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 \description{
 Fabio Crameri's \emph{bamako} Sequential Color Scheme
 }
-\section{Interpolation}{
+\section{Sequential Color Schemes}{
 
 If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default color for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+\tabular{lll}{
+\strong{Palette} \tab \strong{Max.} \cr
+\code{batlow}    \tab 256      \cr
+\code{batlowW}   \tab 256      \cr
+\code{batlowK}   \tab 256      \cr
+\code{devon}     \tab 256      \cr
+\code{lajolla}   \tab 256      \cr
+\code{bamako}    \tab 256      \cr
+\code{davos}     \tab 256      \cr
+\code{bilbao}    \tab 256      \cr
+\code{nuuk}      \tab 256      \cr
+\code{oslo}      \tab 256      \cr
+\code{grayC}     \tab 256      \cr
+\code{hawaii}    \tab 256      \cr
+\code{lapaz}     \tab 256      \cr
+\code{tokyo}     \tab 256      \cr
+\code{buda}      \tab 256      \cr
+\code{acton}     \tab 256      \cr
+\code{turku}     \tab 256      \cr
+\code{imola}     \tab 256      \cr
+\code{oleron}*   \tab 256      \cr
+\code{bukavu}*   \tab 256      \cr
+\code{fes}*      \tab 256      \cr
+}
+*: multisequential color schemes.
 }
 
 \examples{

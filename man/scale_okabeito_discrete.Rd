@@ -92,15 +92,6 @@ Figures and Presentations That Are Friendly to Colorblind People}.
 URL: \url{https://jfly.uni-koeln.de/color/}.
 }
 \seealso{
-Other color-blind safe color schemes: 
-\code{\link{scale_crameri_cyclic}},
-\code{\link{scale_crameri_diverging}},
-\code{\link{scale_crameri_mutlisequential}},
-\code{\link{scale_crameri_sequential}},
-\code{\link{scale_tol_discrete}},
-\code{\link{scale_tol_diverging}},
-\code{\link{scale_tol_sequential}}
-
 Other qualitative color schemes: 
 \code{\link{scale_colour_land}()},
 \code{\link{scale_colour_soil}()},

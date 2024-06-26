@@ -3,49 +3,15 @@
 NULL
 
 # Discrete =====================================================================
-#' Paul Tol's Discrete Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## Bright ----------------------------------------------------------------------
+#' Paul Tol's *bright* Discrete Color Scheme
 #'
-#' Provides qualitative color scales from Paul Tol's *Colour Schemes*.
 #' @param ... Arguments passed to [ggplot2::discrete_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @details
-#'  \tabular{ll}{
-#'   **Palette** \tab **Max.** \cr
-#'   `bright` \tab 7 \cr
-#'   `highcontrast` \tab 3 \cr
-#'   `vibrant` \tab 7 \cr
-#'   `muted` \tab 9 \cr
-#'   `mediumcontrast` \tab 6 \cr
-#'   `pale` \tab 6 \cr
-#'   `dark` \tab 6 \cr
-#'   `light` \tab 9 \cr
-#'  }
-#' @section Interpolation:
-#'  The qualitative color schemes are used as given (no interpolation):
-#'  colors are picked up to the maximum number of supported values.
-#' @inheritSection colour Qualitative Color Schemes
-#' @return A [discrete][ggplot2::discrete_scale] scale.
-#' @references
-#'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
-#' @example inst/examples/ex-tol-discrete.R
-#' @family color-blind safe color schemes
-#' @author N. Frerebeau
-#' @name scale_tol_discrete
-#' @rdname scale_tol_discrete
-#' @keywords internal
-NULL
-
-## Bright ----------------------------------------------------------------------
-#' Paul Tol's *bright* Discrete Color Scheme
-#'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -96,9 +62,8 @@ scale_edge_fill_bright <- function(..., reverse = FALSE,
 ## High contrast ---------------------------------------------------------------
 #' Paul Tol's *high contrast* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -151,9 +116,8 @@ scale_edge_fill_highcontrast <- function(..., reverse = FALSE,
 ## Vibrant ---------------------------------------------------------------------
 #' Paul Tol's *vibrant* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -204,9 +168,8 @@ scale_edge_fill_vibrant <- function(..., reverse = FALSE,
 ## Muted -----------------------------------------------------------------------
 #' Paul Tol's *muted* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -231,7 +194,7 @@ scale_colour_muted <- function(..., reverse = FALSE, aesthetics = "colour") {
 scale_color_muted <- scale_colour_muted
 
 #' @export
-#' @rdname scale_tol_discrete
+#' @rdname scale_tol_muted
 scale_fill_muted <- function(..., reverse = FALSE, aesthetics = "fill") {
   scale_discrete(aesthetics, "muted", reverse = reverse, ...)
 }
@@ -257,9 +220,8 @@ scale_edge_fill_muted <- function(..., reverse = FALSE,
 ## Medium contrast -------------------------------------------------------------
 #' Paul Tol's *medium contrast* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -312,9 +274,8 @@ scale_edge_fill_mediumcontrast <- function(..., reverse = FALSE,
 ## Pale ------------------------------------------------------------------------
 #' Paul Tol's *pale* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -365,9 +326,8 @@ scale_edge_fill_pale <- function(..., reverse = FALSE,
 ## Dark ------------------------------------------------------------------------
 #' Paul Tol's *dark* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -418,9 +378,8 @@ scale_edge_fill_dark <- function(..., reverse = FALSE,
 ## Light -----------------------------------------------------------------------
 #' Paul Tol's *light* Discrete Color Scheme
 #'
-#' @inheritParams scale_tol_discrete
-#' @inheritSection scale_tol_discrete Interpolation
-#' @inheritSection colour Qualitative Color Schemes
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Qualitative Color Schemes
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
@@ -471,9 +430,9 @@ scale_edge_fill_light <- function(..., reverse = FALSE,
 ## Discrete Rainbow ------------------------------------------------------------
 #' Paul Tol's *discrete rainbow* Sequential Color Scheme
 #'
-#' @inheritParams scale_tol_sequential
-#' @inheritSection scale_tol_sequential Interpolation
-#' @inheritSection colour Rainbow Color Scheme
+#' @inheritParams scale_tol_bright
+#' @inheritSection tol Sequential Color Schemes
+#' @inheritSection tol Rainbow Color Scheme
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -524,9 +483,9 @@ scale_edge_fill_discreterainbow <- function(..., reverse = FALSE,
 }
 
 # Diverging ====================================================================
-#' Paul Tol's Diverging Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## Sunset ----------------------------------------------------------------------
+#' Paul Tol's *sunset* Diverging Color Scheme
 #'
-#' Provides diverging color scales from Paul Tol's *Colour Schemes*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -539,38 +498,7 @@ scale_edge_fill_discreterainbow <- function(..., reverse = FALSE,
 #'  recommendations and likely a very poor use of color.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @details
-#'  \tabular{lll}{
-#'   **Palette** \tab **Max. colors** \tab **NA value** \cr
-#'   `sunset` \tab 11 \tab #FFFFFF \cr
-#'   `BuRd` \tab 9 \tab #FFEE99 \cr
-#'   `PRGn` \tab 9 \tab #FFEE99 \cr
-#'  }
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme.
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
-#' @example inst/examples/ex-tol-diverging.R
-#' @family color-blind safe color schemes
-#' @author N. Frerebeau
-#' @name scale_tol_diverging
-#' @rdname scale_tol_diverging
-#' @keywords internal
-NULL
-
-## Sunset ----------------------------------------------------------------------
-#' Paul Tol's *sunset* Diverging Color Scheme
-#'
-#' @inheritParams scale_tol_diverging
-#' @inheritSection scale_tol_diverging Interpolation
+#' @inheritSection tol Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -647,8 +575,8 @@ scale_edge_fill_sunset <- function(..., reverse = FALSE, range = c(0, 1),
 ## Nightfall ----------------------------------------------------------------------
 #' Paul Tol's *nightfall* Diverging Color Scheme
 #'
-#' @inheritParams scale_tol_diverging
-#' @inheritSection scale_tol_diverging Interpolation
+#' @inheritParams scale_tol_sunset
+#' @inheritSection tol Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -725,8 +653,8 @@ scale_edge_fill_nightfall <- function(..., reverse = FALSE, range = c(0, 1),
 ## BuRd ------------------------------------------------------------------------
 #' Paul Tol's *BuRd* Diverging Color Scheme
 #'
-#' @inheritParams scale_tol_diverging
-#' @inheritSection scale_tol_diverging Interpolation
+#' @inheritParams scale_tol_sunset
+#' @inheritSection tol Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -803,8 +731,8 @@ scale_edge_fill_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
 ## PRGn ------------------------------------------------------------------------
 #' Paul Tol's *PRGn* Diverging Color Scheme
 #'
-#' @inheritParams scale_tol_diverging
-#' @inheritSection scale_tol_diverging Interpolation
+#' @inheritParams scale_tol_sunset
+#' @inheritSection tol Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -879,9 +807,9 @@ scale_edge_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Sequential ===================================================================
-#' Paul Tol's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## YlOrBr ----------------------------------------------------------------------
+#' Paul Tol's *YlOrBr* Sequential Color Scheme
 #'
-#' Provides sequential color scales from Paul Tol's *Colour Schemes*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -892,40 +820,7 @@ scale_edge_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale? If `TRUE`, it is a departure from Paul Tol's
 #'  recommendations and likely a very poor use of color.
-#' @details#'
-#'  \tabular{lll}{
-#'   **Palette** \tab **Max. colors** \tab **NA value** \cr
-#'   `YlOrBr` \tab 9 \tab #888888 \cr
-#'   `iridescent` \tab 23 \tab #999999 \cr
-#'   `discreterainbow` \tab 23 \tab #777777 \cr
-#'   `smoothrainbow` \tab 34 \tab #666666 \cr
-#'  }
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme, with the exception of the `discrete rainbow` scheme (see below).
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].
-#' @inheritSection colour Rainbow Color Scheme
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
-#'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
-#' @example inst/examples/ex-tol-sequential.R
-#' @family color-blind safe color schemes
-#' @author N. Frerebeau
-#' @name scale_tol_sequential
-#' @rdname scale_tol_sequential
-#' @keywords internal
-NULL
-
-## YlOrBr ----------------------------------------------------------------------
-#' Paul Tol's *YlOrBr* Sequential Color Scheme
-#'
-#' @inheritParams scale_tol_sequential
-#' @inheritSection scale_tol_sequential Interpolation
+#' @inheritSection tol Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -1000,8 +895,8 @@ scale_edge_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
 ## Iridescent ------------------------------------------------------------------
 #' Paul Tol's *iridescent* Sequential Color Scheme
 #'
-#' @inheritParams scale_tol_sequential
-#' @inheritSection scale_tol_sequential Interpolation
+#' @inheritParams scale_colour_YlOrBr
+#' @inheritSection tol Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -1076,8 +971,8 @@ scale_edge_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
 ## Incandescent ------------------------------------------------------------------
 #' Paul Tol's *incandescent* Sequential Color Scheme
 #'
-#' @inheritParams scale_tol_sequential
-#' @inheritSection scale_tol_sequential Interpolation
+#' @inheritParams scale_colour_YlOrBr
+#' @inheritSection tol Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
@@ -1152,9 +1047,9 @@ scale_edge_fill_incandescent <- function(..., reverse = FALSE, range = c(0, 1),
 ## Smooth Rainbow --------------------------------------------------------------
 #' Paul Tol's *smooth rainbow* Sequential Color Scheme
 #'
-#' @inheritParams scale_tol_sequential
-#' @inheritSection scale_tol_sequential Interpolation
-#' @inheritSection colour Rainbow Color Scheme
+#' @inheritParams scale_colour_YlOrBr
+#' @inheritSection tol Sequential Color Schemes
+#' @inheritSection tol Rainbow Color Scheme
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.

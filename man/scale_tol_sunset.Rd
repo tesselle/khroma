@@ -89,14 +89,19 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 \description{
 Paul Tol's \emph{sunset} Diverging Color Scheme
 }
-\section{Interpolation}{
+\section{Diverging Color Schemes}{
 
 If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-Note that the default color for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+\tabular{lll}{
+\strong{Palette} \tab \strong{Max.} \tab \strong{NA value} \cr
+\code{sunset}    \tab 11       \tab #FFFFFF      \cr
+\code{nightfall} \tab 17       \tab #FFFFFF      \cr
+\code{BuRd}      \tab 9        \tab #FFEE99      \cr
+\code{PRGn}      \tab 9        \tab #FFEE99      \cr
+}
 }
 
 \examples{

@@ -12,7 +12,7 @@ NULL
 #'  [continuous][ggplot2::continuous_scale] scale.
 #' @example inst/examples/ex-pick.R
 #' @author N. Frerebeau
-#' @family color palettes
+#' @family color scales
 #' @name scale_picker
 #' @rdname scale_picker
 NULL
@@ -130,4 +130,10 @@ scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
   do.call(
     ggplot2::continuous_scale, c(aesthetics, scale_name, palette, scale_args)
   )
+}
+
+rescale_mid <- function(mid) {
+  function(x) {
+    scale_midpoint(x, midpoint = mid)
+  }
 }

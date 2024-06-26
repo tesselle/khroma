@@ -42,13 +42,7 @@ ggplot2::ggplot(mpg, ggplot2::aes(displ, hwy, colour = class)) +
   ggplot2::geom_point() +
   scale_colour_picker(palette = "okabeito")
 }
-\seealso{
-Other color palettes: 
-\code{\link{colour}()},
-\code{\link{info}()},
-\code{\link{ramp}()}
-}
 \author{
 N. Frerebeau
 }
-\concept{color palettes}
+\concept{color scales}

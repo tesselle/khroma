@@ -10,7 +10,7 @@
 #'  argument (see examples).
 #' @example inst/examples/ex-ramp.R
 #' @author N. Frerebeau
-#' @family color palettes
+#' @family color schemes
 #' @keywords color
 #' @export
 ramp <- function(palette, ...) {

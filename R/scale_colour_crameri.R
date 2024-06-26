@@ -3,9 +3,9 @@
 NULL
 
 # Diverging ====================================================================
-#' Fabio Crameri's Diverging Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## broc ------------------------------------------------------------------------
+#' Fabio Crameri's *broc* Diverging Color Scheme
 #'
-#' Provides diverging color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -17,51 +17,7 @@ NULL
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
-#' @details
-#'  Available schemes:
-#'
-#'  * `broc`
-#'  * `cork`
-#'  * `vik`
-#'  * `lisbon`
-#'  * `tofino`
-#'  * `berlin`
-#'  * `roma`
-#'  * `bam`
-#'  * `vanimo`
-#'
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme.
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].#'
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
-#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
-#'  \doi{10.5194/gmd-11-2541-2018}
-#'
-#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
-#'  science communication. *Nature Communications*, 11, 5444.
-#'  \doi{10.1038/s41467-020-19160-7}
-#' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
-#' @example inst/examples/ex-crameri-diverging.R
-#' @author N. Frerebeau
-#' @family color-blind safe color schemes
-#' @name scale_crameri_diverging
-#' @rdname scale_crameri_diverging
-#' @keywords internal
-NULL
-
-## broc ------------------------------------------------------------------------
-#' Fabio Crameri's *broc* Diverging Color Scheme
-#'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -145,8 +101,8 @@ scale_edge_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
 ## cork ------------------------------------------------------------------------
 #' Fabio Crameri's *cork* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -230,8 +186,8 @@ scale_edge_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
 ## vik -------------------------------------------------------------------------
 #' Fabio Crameri's *vik* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -315,8 +271,8 @@ scale_edge_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
 ## lisbon ----------------------------------------------------------------------
 #' Fabio Crameri's *lisbon* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -400,8 +356,8 @@ scale_edge_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
 ## tofino ----------------------------------------------------------------------
 #' Fabio Crameri's *tofino* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -485,8 +441,8 @@ scale_edge_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
 ## berlin ----------------------------------------------------------------------
 #' Fabio Crameri's *berlin* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -570,8 +526,8 @@ scale_edge_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
 ## roma ------------------------------------------------------------------------
 #' Fabio Crameri's *roma* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -655,8 +611,8 @@ scale_edge_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
 ## bam -------------------------------------------------------------------------
 #' Fabio Crameri's *bam* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -740,8 +696,8 @@ scale_edge_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
 ## vanimo ----------------------------------------------------------------------
 #' Fabio Crameri's *vanimo* Diverging Color Scheme
 #'
-#' @inheritParams scale_crameri_diverging
-#' @inheritSection scale_crameri_diverging Interpolation
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -823,9 +779,9 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Sequential ===================================================================
-#' Fabio Crameri's Sequential Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## batlow ----------------------------------------------------------------------
+#' Fabio Crameri's *batlow* Sequential Color Scheme
 #'
-#' Provides sequential color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -835,60 +791,7 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
-#' @details
-#'  Available schemes:
-#'
-#'  * `batlow`
-#'  * `batlowW`
-#'  * `batlowK`
-#'  * `devon`
-#'  * `lajolla`
-#'  * `bamako`
-#'  * `davos`
-#'  * `bilbao`
-#'  * `nuuk`
-#'  * `oslo`
-#'  * `grayC`
-#'  * `hawaii`
-#'  * `lapaz`
-#'  * `tokyo`
-#'  * `buda`
-#'  * `acton`
-#'  * `turku`
-#'  * `imola`
-#'
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme.
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
-#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
-#'  \doi{10.5194/gmd-11-2541-2018}
-#'
-#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
-#'  science communication. *Nature Communications*, 11, 5444.
-#'  \doi{10.1038/s41467-020-19160-7}
-#' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
-#' @example inst/examples/ex-crameri-sequential.R
-#' @author N. Frerebeau
-#' @family color-blind safe color schemes
-#' @name scale_crameri_sequential
-#' @rdname scale_crameri_sequential
-#' @keywords internal
-NULL
-
-## batlow ----------------------------------------------------------------------
-#' Fabio Crameri's *batlow* Sequential Color Scheme
-#'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -970,8 +873,8 @@ scale_edge_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
 ## batlowW ---------------------------------------------------------------------
 #' Fabio Crameri's *batlowW* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1053,8 +956,8 @@ scale_edge_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
 ## batlowK ---------------------------------------------------------------------
 #' Fabio Crameri's *batlowK* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1136,8 +1039,8 @@ scale_edge_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
 ## devon -----------------------------------------------------------------------
 #' Fabio Crameri's *devon* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1219,8 +1122,8 @@ scale_edge_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
 ## lajolla ---------------------------------------------------------------------
 #' Fabio Crameri's *lajolla* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1302,8 +1205,8 @@ scale_edge_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
 ## bamako ----------------------------------------------------------------------
 #' Fabio Crameri's *bamako* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1385,8 +1288,8 @@ scale_edge_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
 ## davos -----------------------------------------------------------------------
 #' Fabio Crameri's *davos* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1468,8 +1371,8 @@ scale_edge_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
 ## bilbao ----------------------------------------------------------------------
 #' Fabio Crameri's *bilbao* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1551,8 +1454,8 @@ scale_edge_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
 ## nuuk ------------------------------------------------------------------------
 #' Fabio Crameri's *nuuk* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1634,8 +1537,8 @@ scale_edge_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
 ## oslo ------------------------------------------------------------------------
 #' Fabio Crameri's *oslo* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1717,8 +1620,8 @@ scale_edge_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
 ## grayC -----------------------------------------------------------------------
 #' Fabio Crameri's *grayC* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1800,8 +1703,8 @@ scale_edge_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
 ## hawaii ----------------------------------------------------------------------
 #' Fabio Crameri's *hawaii* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1883,8 +1786,8 @@ scale_edge_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
 ## lapaz -----------------------------------------------------------------------
 #' Fabio Crameri's *lapaz* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -1966,8 +1869,8 @@ scale_edge_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
 ## tokyo -----------------------------------------------------------------------
 #' Fabio Crameri's *tokyo* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2049,8 +1952,8 @@ scale_edge_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
 ## buda ------------------------------------------------------------------------
 #' Fabio Crameri's *buda* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2132,8 +2035,8 @@ scale_edge_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
 ## acton -----------------------------------------------------------------------
 #' Fabio Crameri's *acton* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2215,8 +2118,8 @@ scale_edge_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
 ## turku -----------------------------------------------------------------------
 #' Fabio Crameri's *turku* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2298,8 +2201,8 @@ scale_edge_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
 ## imola -----------------------------------------------------------------------
 #' Fabio Crameri's *imola* Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_sequential
-#' @inheritSection scale_crameri_sequential Interpolation
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2379,11 +2282,9 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Multi Sequential =============================================================
-#' Fabio Crameri's Multi-Sequential Color Schemes for \pkg{ggplot2}
-#'  and \pkg{ggraph}
+## oleron ----------------------------------------------------------------------
+#' Fabio Crameri's *oleron* Multi-Sequential Color Scheme
 #'
-#' Provides multi-sequential color scales from Fabio Crameri's *Scientific
-#' colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -2393,45 +2294,7 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 #'  (in data value) of the diverging scale. Defaults to `0`.
 #' @param aesthetics A [`character`] string or vector of character
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
-#' @details
-#'  Available schemes:
-#'
-#'  * `oleron`
-#'  * `bukavu`
-#'  * `fes`
-#'
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme.
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
-#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
-#'  \doi{10.5194/gmd-11-2541-2018}
-#'
-#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
-#'  science communication. *Nature Communications*, 11, 5444.
-#'  \doi{10.1038/s41467-020-19160-7}
-#' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
-#' @example inst/examples/ex-crameri-multisequential.R
-#' @author N. Frerebeau
-#' @family color-blind safe color schemes
-#' @name scale_crameri_mutlisequential
-#' @rdname scale_crameri_mutlisequential
-#' @keywords internal
-NULL
-
-## oleron ----------------------------------------------------------------------
-#' Fabio Crameri's *oleron* Multi-Sequential Color Scheme
-#'
-#' @inheritParams scale_crameri_mutlisequential
-#' @inheritSection scale_crameri_mutlisequential Interpolation
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2475,8 +2338,8 @@ scale_fill_oleron <- function(..., reverse = FALSE, range = c(0, 1),
 ## bukavu ----------------------------------------------------------------------
 #' Fabio Crameri's *bukavu* Multi-Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_mutlisequential
-#' @inheritSection scale_crameri_mutlisequential Interpolation
+#' @inheritParams scale_crameri_oleron
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2520,8 +2383,8 @@ scale_fill_bukavu <- function(..., reverse = FALSE, range = c(0, 1),
 ## fes -------------------------------------------------------------------------
 #' Fabio Crameri's *fes* Multi-Sequential Color Scheme
 #'
-#' @inheritParams scale_crameri_mutlisequential
-#' @inheritSection scale_crameri_mutlisequential Interpolation
+#' @inheritParams scale_crameri_oleron
+#' @inheritSection crameri Sequential Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2563,9 +2426,9 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 }
 
 # Cyclic =======================================================================
-#' Fabio Crameri's Cyclic Color Schemes for \pkg{ggplot2} and \pkg{ggraph}
+## brocO -----------------------------------------------------------------------
+#' Fabio Crameri's *brocO* Cyclic Color Scheme
 #'
-#' Provides cyclic color scales from Fabio Crameri's *Scientific colour*.
 #' @param ... Arguments passed to [ggplot2::continuous_scale()].
 #' @param reverse A [`logical`] scalar. Should the resulting
 #'  vector of colors be reversed?
@@ -2575,47 +2438,7 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 #'  strings listing the name(s) of the aesthetic(s) that this scale works with.
 #' @param discrete A [`logical`] scalar: should the color scheme be
 #'  used as a discrete scale?
-#' @details
-#'  Available schemes:
-#'
-#'  * `brocO`
-#'  * `corkO`
-#'  * `vikO`
-#'  * `romaO`
-#'  * `bamO`
-#'
-#' @section Interpolation:
-#'  If more colors than defined are needed from a given scheme, the color
-#'  coordinates are linearly interpolated to provide a continuous version of the
-#'  scheme.
-#'
-#'  Note that the default color for `NA` can be overridden by passing
-#'  a value to [ggplot2::continuous_scale()].
-#' @return A [continuous][ggplot2::continuous_scale] scale.
-#' @references
-#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
-#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
-#'  \doi{10.5194/gmd-11-2541-2018}
-#'
-#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
-#'  science communication. *Nature Communications*, 11, 5444.
-#'  \doi{10.1038/s41467-020-19160-7}
-#' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
-#' @example inst/examples/ex-crameri-diverging.R
-#' @author N. Frerebeau
-#' @family color-blind safe color schemes
-#' @name scale_crameri_cyclic
-#' @rdname scale_crameri_cyclic
-#' @keywords internal
-NULL
-
-## brocO -----------------------------------------------------------------------
-#' Fabio Crameri's *brocO* Cyclic Color Scheme
-#'
-#' @inheritParams scale_crameri_cyclic
-#' @inheritSection scale_crameri_cyclic Interpolation
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2665,8 +2488,8 @@ scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 ## corkO -----------------------------------------------------------------------
 #' Fabio Crameri's *corkO* Cyclic Color Scheme
 #'
-#' @inheritParams scale_crameri_cyclic
-#' @inheritSection scale_crameri_cyclic Interpolation
+#' @inheritParams scale_crameri_brocO
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2716,8 +2539,8 @@ scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 ## vikO ------------------------------------------------------------------------
 #' Fabio Crameri's *vikO* Cyclic Color Scheme
 #'
-#' @inheritParams scale_crameri_cyclic
-#' @inheritSection scale_crameri_cyclic Interpolation
+#' @inheritParams scale_crameri_brocO
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2767,8 +2590,8 @@ scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 ## romaO -----------------------------------------------------------------------
 #' Fabio Crameri's *romaO* Cyclic Color Scheme
 #'
-#' @inheritParams scale_crameri_cyclic
-#' @inheritSection scale_crameri_cyclic Interpolation
+#' @inheritParams scale_crameri_brocO
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
@@ -2818,8 +2641,8 @@ scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 ## bamO ------------------------------------------------------------------------
 #' Fabio Crameri's *bamO* Cyclic Color Scheme
 #'
-#' @inheritParams scale_crameri_cyclic
-#' @inheritSection scale_crameri_cyclic Interpolation
+#' @inheritParams scale_crameri_brocO
+#' @inheritSection crameri Diverging Color Schemes
 #' @return A [continuous][ggplot2::continuous_scale] scale.
 #' @references
 #'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and

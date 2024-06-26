@@ -80,14 +80,19 @@ A \link[ggplot2:continuous_scale]{continuous} scale.
 \description{
 Paul Tol's \emph{YlOrBr} Sequential Color Scheme
 }
-\section{Interpolation}{
+\section{Sequential Color Schemes}{
 
 If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
-scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
+scheme.
 
-Note that the default color for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+\tabular{lll}{
+\strong{Palette}       \tab \strong{Max.} \tab \strong{NA value} \cr
+\code{YlOrBr}          \tab 9        \tab #888888      \cr
+\code{iridescent}      \tab 23       \tab #999999      \cr
+\code{discreterainbow} \tab 23       \tab #777777      \cr
+\code{smoothrainbow}   \tab 34       \tab #666666      \cr
+}
 }
 
 \examples{

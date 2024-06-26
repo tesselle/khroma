@@ -4,6 +4,7 @@
 \alias{scale_tol_muted}
 \alias{scale_colour_muted}
 \alias{scale_color_muted}
+\alias{scale_fill_muted}
 \alias{scale_edge_colour_muted}
 \alias{scale_edge_color_muted}
 \alias{scale_edge_fill_muted}
@@ -12,6 +13,8 @@
 scale_colour_muted(..., reverse = FALSE, aesthetics = "colour")
 
 scale_color_muted(..., reverse = FALSE, aesthetics = "colour")
+
+scale_fill_muted(..., reverse = FALSE, aesthetics = "fill")
 
 scale_edge_colour_muted(..., reverse = FALSE, aesthetics = "edge_colour")
 
@@ -34,13 +37,22 @@ A \link[ggplot2:discrete_scale]{discrete} scale.
 \description{
 Paul Tol's \emph{muted} Discrete Color Scheme
 }
-\section{Interpolation}{
+\section{Qualitative Color Schemes}{
 
 The qualitative color schemes are used as given (no interpolation):
 colors are picked up to the maximum number of supported values.
-}
 
-\section{Qualitative Color Schemes}{
+\tabular{ll}{
+\strong{Palette}      \tab \strong{Max.} \cr
+\code{bright}         \tab 7        \cr
+\code{highcontrast}   \tab 3        \cr
+\code{vibrant}        \tab 7        \cr
+\code{muted}          \tab 9        \cr
+\code{mediumcontrast} \tab 6        \cr
+\code{pale}           \tab 6        \cr
+\code{dark}           \tab 6        \cr
+\code{light}          \tab 9        \cr
+}
 
 According to Paul Tol's technical note, the \code{bright}, \code{highcontrast},
 \code{vibrant} and \code{muted} color schemes are color-blind safe. The
@@ -55,7 +67,7 @@ colorblind vision and should be used as a text background or to highlight
 a cell in a table.
 
 Refer to the original document for details about the recommended uses (see
-references).
+references)
 }
 
 \examples{

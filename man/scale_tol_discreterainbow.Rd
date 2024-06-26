@@ -31,7 +31,7 @@ scale_edge_color_discreterainbow(
 scale_edge_fill_discreterainbow(..., reverse = FALSE, aesthetics = "edge_fill")
 }
 \arguments{
-\item{...}{Arguments passed to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.}
+\item{...}{Arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
 \item{reverse}{A \code{\link{logical}} scalar. Should the resulting
 vector of colors be reversed?}
@@ -45,14 +45,19 @@ A \link[ggplot2:discrete_scale]{discrete} scale.
 \description{
 Paul Tol's \emph{discrete rainbow} Sequential Color Scheme
 }
-\section{Interpolation}{
+\section{Sequential Color Schemes}{
 
 If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
-scheme, with the exception of the \verb{discrete rainbow} scheme (see below).
+scheme.
 
-Note that the default color for \code{NA} can be overridden by passing
-a value to \code{\link[ggplot2:continuous_scale]{ggplot2::continuous_scale()}}.
+\tabular{lll}{
+\strong{Palette}       \tab \strong{Max.} \tab \strong{NA value} \cr
+\code{YlOrBr}          \tab 9        \tab #888888      \cr
+\code{iridescent}      \tab 23       \tab #999999      \cr
+\code{discreterainbow} \tab 23       \tab #777777      \cr
+\code{smoothrainbow}   \tab 34       \tab #666666      \cr
+}
 }
 
 \section{Rainbow Color Scheme}{
