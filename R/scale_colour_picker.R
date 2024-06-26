@@ -12,7 +12,7 @@ NULL
 #'  [continuous][ggplot2::continuous_scale] scale.
 #' @example inst/examples/ex-pick.R
 #' @author N. Frerebeau
-#' @family color scales
+#' @family ggplot2 scales
 #' @name scale_picker
 #' @rdname scale_picker
 NULL
@@ -58,7 +58,7 @@ scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
 #' Builds a discrete or continuous scale for \pkg{ggplot2} according to the
 #' color scheme used.
 #' @param aesthetics The names of the aesthetics that this scale works with.
-#' @param scale_name A [`character`] string giving the name of the palette to be
+#' @param scheme A [`character`] string giving the name of the scheme to be
 #'  used (see [color()]).
 #' @param guide A [`function`] used to create a guide or its name.
 #'  See [ggplot2::guides()] for more information.
@@ -85,15 +85,14 @@ scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
 #' @noRd
 NULL
 
-scale_discrete <- function(aesthetics, scale_name, guide = "legend",
+scale_discrete <- function(aesthetics, scheme, guide = "legend",
                            reverse = FALSE, use_names = FALSE,
                            lang = "en", ...) {
   # Check if ggplot2 is installed
   check_package("ggplot2")
 
   # Get color scheme
-  palette <- color(scale_name, reverse = reverse, names = use_names,
-                   lang = lang)
+  palette <- color(scheme, reverse = reverse, names = use_names, lang = lang)
 
   # Build scale
   scale_args <- list(...)
@@ -101,11 +100,12 @@ scale_discrete <- function(aesthetics, scale_name, guide = "legend",
   scale_args$na.value <- scale_args$na.value %||% attr(palette, "missing")
 
   do.call(
-    ggplot2::discrete_scale, c(aesthetics, scale_name, palette, scale_args)
+    ggplot2::discrete_scale,
+    c(aesthetics = aesthetics, palette = palette, scale_args)
   )
 }
 
-scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
+scale_continuous <- function(aesthetics, scheme, guide = "colourbar",
                              reverse = FALSE, range = c(0, 1), midpoint = 0,
                              lang = "en", ...) {
   # Validation
@@ -113,7 +113,7 @@ scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
   if (guide == "edge_colourbar") check_package("ggraph")
 
   # Get color scheme
-  palette <- color(scale_name, reverse = reverse, names = FALSE, lang = lang)
+  palette <- color(scheme, reverse = reverse, names = FALSE, lang = lang)
   max <- attr(palette, "max")
   type <- attr(palette, "type")
 
@@ -128,12 +128,13 @@ scale_continuous <- function(aesthetics, scale_name, guide = "colourbar",
 
   palette <- scales::gradient_n_pal(palette(max, range = range))
   do.call(
-    ggplot2::continuous_scale, c(aesthetics, scale_name, palette, scale_args)
+    ggplot2::continuous_scale,
+    c(aesthetics = aesthetics, palette = palette, scale_args)
   )
 }
 
 rescale_mid <- function(mid) {
-  function(x) {
-    scale_midpoint(x, midpoint = mid)
+  function(x, to = c(0, 1), from = range(x, na.rm = TRUE)) {
+    scale_midpoint(x, to = to, from = from, midpoint = mid)
   }
 }

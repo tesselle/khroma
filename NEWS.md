@@ -10,6 +10,7 @@
 * `plot*()` functions invisibly return the first argument (vector of colors).
 * Deprecate `convert()` (#14).
 * Deprecate `ramp()`.
+* Remove deprecated argument in `ggplot2::discrete_scale()` and `ggplot2::continuous_scale()` (#15).
 
 # khroma 1.12.0
 ## New functions
