@@ -120,9 +120,9 @@ science communication. \emph{Nature Communications}, 11, 5444.
 \seealso{
 Other sequential color schemes: 
 \code{\link{scale_crameri_bamako}},
+\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_batlowK}},
 \code{\link{scale_crameri_batlowW}},
-\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_bilbao}},
 \code{\link{scale_crameri_buda}},
 \code{\link{scale_crameri_davos}},
@@ -142,20 +142,20 @@ Other sequential color schemes:
 \code{\link{scale_tol_smoothrainbow}}
 
 Other Fabio Crameri's color schemes: 
+\code{\link{scale_crameri_bam}},
 \code{\link{scale_crameri_bamO}},
 \code{\link{scale_crameri_bamako}},
-\code{\link{scale_crameri_bam}},
+\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_batlowK}},
 \code{\link{scale_crameri_batlowW}},
-\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_berlin}},
 \code{\link{scale_crameri_bilbao}},
-\code{\link{scale_crameri_brocO}},
 \code{\link{scale_crameri_broc}},
+\code{\link{scale_crameri_brocO}},
 \code{\link{scale_crameri_buda}},
 \code{\link{scale_crameri_bukavu}},
-\code{\link{scale_crameri_corkO}},
 \code{\link{scale_crameri_cork}},
+\code{\link{scale_crameri_corkO}},
 \code{\link{scale_crameri_davos}},
 \code{\link{scale_crameri_devon}},
 \code{\link{scale_crameri_fes}},
@@ -168,14 +168,14 @@ Other Fabio Crameri's color schemes:
 \code{\link{scale_crameri_nuuk}},
 \code{\link{scale_crameri_oleron}},
 \code{\link{scale_crameri_oslo}},
-\code{\link{scale_crameri_romaO}},
 \code{\link{scale_crameri_roma}},
+\code{\link{scale_crameri_romaO}},
 \code{\link{scale_crameri_tofino}},
 \code{\link{scale_crameri_tokyo}},
 \code{\link{scale_crameri_turku}},
 \code{\link{scale_crameri_vanimo}},
-\code{\link{scale_crameri_vikO}},
-\code{\link{scale_crameri_vik}}
+\code{\link{scale_crameri_vik}},
+\code{\link{scale_crameri_vikO}}
 }
 \author{
 N. Frerebeau

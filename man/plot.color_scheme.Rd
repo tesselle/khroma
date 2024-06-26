@@ -40,8 +40,8 @@ Other diagnostic tools:
 \code{\link{compare}()},
 \code{\link{convert}()},
 \code{\link{plot_map}()},
-\code{\link{plot_scheme_colourblind}()},
 \code{\link{plot_scheme}()},
+\code{\link{plot_scheme_colourblind}()},
 \code{\link{plot_tiles}()}
 }
 \author{

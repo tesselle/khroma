@@ -137,9 +137,9 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 Other sequential color schemes: 
 \code{\link{scale_crameri_acton}},
 \code{\link{scale_crameri_bamako}},
+\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_batlowK}},
 \code{\link{scale_crameri_batlowW}},
-\code{\link{scale_crameri_batlow}},
 \code{\link{scale_crameri_bilbao}},
 \code{\link{scale_crameri_buda}},
 \code{\link{scale_crameri_davos}},

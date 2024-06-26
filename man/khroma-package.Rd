@@ -3,7 +3,6 @@
 \docType{package}
 \name{khroma-package}
 \alias{khroma-package}
-\alias{_PACKAGE}
 \alias{khroma}
 \title{khroma: Colour Schemes for Scientific Data Visualization}
 \description{
