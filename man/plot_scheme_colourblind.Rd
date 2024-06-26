@@ -12,6 +12,10 @@ plot_scheme_colorblind(x)
 \arguments{
 \item{x}{A \code{\link{character}} vector of colors.}
 }
+\value{
+\code{plot_scheme_colourblind()} is called for its side-effects: it results in a
+graphic being displayed (invisibly returns \code{x}).
+}
 \description{
 Shows colors in a plot with different types of simulated color blindness.
 }

@@ -12,6 +12,10 @@ plot_tiles(x, n = 512)
 \item{n}{An \code{\link{integer}} specifying the size of the grid (defaults to
 \eqn{512}).}
 }
+\value{
+\code{plot_tiles()} is called for its side-effects: it results in a graphic
+being displayed (invisibly returns \code{x}).
+}
 \description{
 Produces a diagnostic map for a given color scheme.
 }

@@ -2,6 +2,9 @@
 #'
 #' Shows colors in a plot with different types of simulated color blindness.
 #' @param x A [`character`] vector of colors.
+#' @return
+#'  `plot_scheme_colourblind()` is called for its side-effects: it results in a
+#'  graphic being displayed (invisibly returns `x`).
 #' @example inst/examples/ex-anomalize.R
 #' @author N. Frerebeau, V. Arel-Bundock
 #' @family diagnostic tools
@@ -33,6 +36,8 @@ plot_scheme_colourblind <- function(x) {
     y = grid::unit(c(0.97, 0.77, 0.57, 0.37, 0.17), "npc"),
     hjust = 0
   )
+
+  invisible(x)
 }
 
 #' @rdname plot_scheme_colourblind

@@ -19,6 +19,10 @@ displayed?}
 should be magnified relative to the default. Works the same as \code{cex}
 parameter of \code{\link[graphics:par]{graphics::par()}}.}
 }
+\value{
+\code{plot_scheme()} is called for its side-effects: it results in a graphic
+being displayed (invisibly returns \code{x}).
+}
 \description{
 Shows colors in a plot.
 }

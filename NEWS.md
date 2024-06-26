@@ -1,6 +1,7 @@
 # khroma 1.12.0.9000
 ## Bugfixes & changes
 * `colour()` no longer returns a named vector by default.
+* `plot*()` functions invisibly return the first argument (vector of colors).
 
 # khroma 1.12.0
 ## New functions

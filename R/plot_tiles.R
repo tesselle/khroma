@@ -4,6 +4,9 @@
 #' @param x A [`character`] vector of colors.
 #' @param n An [`integer`] specifying the size of the grid (defaults to
 #'  \eqn{512}).
+#' @return
+#'  `plot_tiles()` is called for its side-effects: it results in a graphic
+#'   being displayed (invisibly returns `x`).
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau
 #' @family diagnostic tools
@@ -27,4 +30,6 @@ plot_tiles <- function(x, n = 512) {
   graphics::par(mar = c(0, 0, 0, 0) + 0.1, xaxs = "i", yaxs = "i")
   graphics::image(x = seq_len(n), y = seq_len(n), z = z, col = x,
                   axes = FALSE, asp = 1)
+
+  invisible(x)
 }

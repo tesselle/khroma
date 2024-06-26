@@ -2,6 +2,9 @@
 #'
 #' Produces a diagnostic map for a given color scheme.
 #' @param x A [`character`] vector of colors.
+#' @return
+#'  `plot_map()` is called for its side-effects: it results in a graphic
+#'   being displayed (invisibly returns `x`).
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau, V. Arel-Bundock
 #' @family diagnostic tools
@@ -34,6 +37,8 @@ plot_map <- function(x) {
 
     draw_mosaic(columns = q, border = "black", fill = unique_color, offset = h)
   }
+
+  invisible(x)
 }
 
 #' Mosaic

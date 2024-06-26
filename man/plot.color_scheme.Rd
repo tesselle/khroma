@@ -11,6 +11,10 @@
 
 \item{...}{Currently not used.}
 }
+\value{
+\code{plot()} is called for its side-effects: it results in a graphic
+being displayed (invisibly returns \code{x}).
+}
 \description{
 Quickly displays a color scheme returned by \code{\link[=color]{color()}}.
 }

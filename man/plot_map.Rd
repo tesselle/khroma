@@ -9,6 +9,10 @@ plot_map(x)
 \arguments{
 \item{x}{A \code{\link{character}} vector of colors.}
 }
+\value{
+\code{plot_map()} is called for its side-effects: it results in a graphic
+being displayed (invisibly returns \code{x}).
+}
 \description{
 Produces a diagnostic map for a given color scheme.
 }

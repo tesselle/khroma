@@ -9,6 +9,9 @@
 #' @param size A [`numeric`] value giving the amount by which plotting text
 #'  should be magnified relative to the default. Works the same as `cex`
 #'  parameter of [graphics::par()].
+#' @return
+#'  `plot_scheme()` is called for its side-effects: it results in a graphic
+#'   being displayed (invisibly returns `x`).
 #' @example inst/examples/ex-plot.R
 #' @author N. Frerebeau
 #' @family diagnostic tools
@@ -59,6 +62,8 @@ plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   if (names && !is.null(names(x))) {
     graphics::text(x = p, y = q + delta * info, labels = names(x), cex = size)
   }
+
+  invisible(x)
 }
 
 draw_hexagon <- function(x = 0, y = 0, r = 0.5, border = NULL, fill = NA) {
