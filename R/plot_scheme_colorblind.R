@@ -5,7 +5,7 @@
 #' @return
 #'  `plot_scheme_colourblind()` is called for its side-effects: it results in a
 #'  graphic being displayed (invisibly returns `x`).
-#' @example inst/examples/ex-anomalize.R
+#' @example inst/examples/ex-change.R
 #' @author N. Frerebeau, V. Arel-Bundock
 #' @family diagnostic tools
 #' @export

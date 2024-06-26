@@ -2,9 +2,12 @@
 % Please edit documentation in R/khroma-deprecated.R
 \name{khroma-deprecated}
 \alias{khroma-deprecated}
+\alias{convert}
 \alias{ramp}
 \title{Deprecated Functions in dimensio}
 \usage{
+convert(x, mode)
+
 ramp(palette, ...)
 }
 \description{

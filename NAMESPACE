@@ -2,6 +2,7 @@
 
 S3method(plot,color_scheme)
 S3method(print,color_scheme)
+export(change)
 export(color)
 export(colour)
 export(compare)

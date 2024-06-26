@@ -11,7 +11,7 @@
 #'  colors. All the attributes of the initial palette function are inherited,
 #'  with a supplementary attribute "`mode`" giving the corresponding
 #'  color-blind vision.
-#' @example inst/examples/ex-anomalize.R
+#' @example inst/examples/ex-change.R
 #' @references
 #'  Brettel, H., Viénot, F. and Mollon, J. D. (1997). Computerized Simulation of
 #'  Color Appearance for Dichromats. *Journal of the Optical Society of America
@@ -28,11 +28,11 @@
 #' @author N. Frerebeau
 #' @family diagnostic tools
 #' @export
-convert <- function(x, mode) {
+change <- function(x, mode) {
   fun <- function(n) { anomalize(x(n), mode = mode) }
   attributes(fun) <- attributes(x)
   attr(fun, "mode") <- mode
-  return(fun)
+  fun
 }
 
 #' Anomalize

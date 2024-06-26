@@ -1,13 +1,13 @@
 # Colour-blind =================================================================
 bright <- colour("bright", names = TRUE)
 # Protanopia
-pro <- convert(bright, mode = "protanopia")
+pro <- change(bright, mode = "protanopia")
 # Deuteranopia
-deu <- convert(bright, mode = "deuteranopia")
+deu <- change(bright, mode = "deuteranopia")
 # Tritanopia
-tri <- convert(bright, mode = "tritanopia")
+tri <- change(bright, mode = "tritanopia")
 # Achromatopsia
-ach <- convert(bright, mode = "achromatopsia")
+ach <- change(bright, mode = "achromatopsia")
 
 expect_equal(
   pro(7),

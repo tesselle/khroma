@@ -152,17 +152,17 @@ plot_tiles(BuRd(128), n = 256)
 #### Simulate color-blindness
 
 ```{r usage-colorblind1, echo=FALSE, eval=FALSE, fig.height=2, fig.width=7, fig.align='center'}
-## convert() returns a modified palette function
-deuteranopia <- convert(okabe, mode = "deuteranopia")
+## change() returns function
+deuteranopia <- change(okabe, mode = "deuteranopia")
 plot_scheme(deuteranopia(8), colours = TRUE)
 
-protanopia <- convert(okabe, mode = "protanopia")
+protanopia <- change(okabe, mode = "protanopia")
 plot_scheme(protanopia(8), colours = TRUE)
 
-tritanopia <- convert(okabe, mode = "tritanopia")
+tritanopia <- change(okabe, mode = "tritanopia")
 plot_scheme(tritanopia(8), colours = TRUE)
 
-achromatopsia <- convert(okabe, mode = "achromatopsia")
+achromatopsia <- change(okabe, mode = "achromatopsia")
 plot_scheme(achromatopsia(8), colours = TRUE)
 ```
 

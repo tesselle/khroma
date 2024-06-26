@@ -39,8 +39,8 @@ plot_tiles(colour("smooth rainbow")(256), n = 256)
 }
 \seealso{
 Other diagnostic tools: 
+\code{\link{change}()},
 \code{\link{compare}()},
-\code{\link{convert}()},
 \code{\link{plot.color_scheme}()},
 \code{\link{plot_scheme}()},
 \code{\link{plot_scheme_colourblind}()},

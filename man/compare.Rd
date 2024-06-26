@@ -50,7 +50,7 @@ compare(ach(5))
 }
 \seealso{
 Other diagnostic tools: 
-\code{\link{convert}()},
+\code{\link{change}()},
 \code{\link{plot.color_scheme}()},
 \code{\link{plot_map}()},
 \code{\link{plot_scheme}()},

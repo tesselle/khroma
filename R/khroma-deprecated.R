@@ -8,6 +8,13 @@ NULL
 
 #' @export
 #' @rdname khroma-deprecated
+convert <- function(x, mode) {
+  .Deprecated(new = "change()", old = "convert()")
+  change(x, mode)
+}
+
+#' @export
+#' @rdname khroma-deprecated
 ramp <- function(palette, ...) {
   .Deprecated(new = "palette_color_picker()", old = "ramp()")
 
