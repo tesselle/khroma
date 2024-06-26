@@ -15,7 +15,7 @@ if (at_home()) {
 
   for (i in c(TRUE, FALSE)) {
     for (j in c(TRUE, FALSE)) {
-      plot_scheme_muted <- function() plot_scheme(colour("muted")(9), colours = i, names = j)
+      plot_scheme_muted <- function() plot_scheme(colour("muted", names = TRUE)(9), colours = i, names = j)
       expect_snapshot_plot(plot_scheme_muted, paste0("scheme_muted_", i, j))
     }
   }

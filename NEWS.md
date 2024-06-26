@@ -1,4 +1,6 @@
 # khroma 1.12.0.9000
+## Bugfixes & changes
+* `colour()` no longer returns a named vector by default.
 
 # khroma 1.12.0
 ## New functions

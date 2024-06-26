@@ -14,7 +14,8 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
 
   pal_fill <- scale_fill_picker(palette = "YlOrBr")
   expect_equal(pal_fill, scale_fill_YlOrBr())
-
+}
+if (requireNamespace("ggraph", quietly = TRUE)) {
   pal_edge_colour <- scale_edge_colour_picker(palette = "okabeito")
   expect_equal(pal_edge_colour, scale_edge_colour_okabeito())
 

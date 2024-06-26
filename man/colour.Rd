@@ -5,9 +5,16 @@
 \alias{color}
 \title{Color Palette}
 \usage{
-colour(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
+colour(
+  palette,
+  reverse = FALSE,
+  names = FALSE,
+  lang = "en",
+  force = FALSE,
+  ...
+)
 
-color(palette, reverse = FALSE, names = TRUE, lang = "en", force = FALSE, ...)
+color(palette, reverse = FALSE, names = FALSE, lang = "en", force = FALSE, ...)
 }
 \arguments{
 \item{palette}{A \code{\link{character}} string giving the name of the palette to be
@@ -33,6 +40,7 @@ schemes, as they are designed to be used as is to remain color-blind safe.}
 A palette function with the following attributes, that when called
 with a single integer argument (the number of levels) returns a (named)
 vector of colors.
+
 \describe{
 \item{palette}{A \code{\link{character}} string giving the name of the
 color scheme.}

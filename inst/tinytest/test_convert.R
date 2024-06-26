@@ -1,5 +1,5 @@
 # Colour-blind =================================================================
-bright <- colour("bright")
+bright <- colour("bright", names = TRUE)
 # Protanopia
 pro <- convert(bright, mode = "protanopia")
 # Deuteranopia

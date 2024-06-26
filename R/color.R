@@ -77,6 +77,7 @@
 #' @return A palette function with the following attributes, that when called
 #'  with a single integer argument (the number of levels) returns a (named)
 #'  vector of colors.
+#'
 #'  \describe{
 #'   \item{palette}{A [`character`] string giving the name of the
 #'   color scheme.}
@@ -113,7 +114,7 @@
 #' @family color palettes
 #' @keywords color
 #' @export
-colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
+colour <- function(palette, reverse = FALSE, names = FALSE, lang = "en",
                    force = FALSE, ...) {
   ## Validation
   palette <- gsub(pattern = "[[:blank:]]", replacement = "", x = palette)
@@ -134,11 +135,12 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
   if (reverse) col_colors <- rev(col_colors)
 
   if (col_interpolate || force) {
+
     ## For color schemes that can be linearly interpolated
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
       # Validate
-      if (any(range > 1) | any(range < 0))
+      if (any(range > 1) || any(range < 0))
         stop(sQuote("range"), " values must be in [0,1].", call. = FALSE)
       # Remove starting colors
       col_colors <- utils::tail(col_colors, k * (1 - range[[1]]))
@@ -154,7 +156,9 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       )
       return(col)
     }
+
   } else {
+
     ## No interpolation
     ## FIXME: add 'range = c(0, 1)' to prevent "multiple local function
     ## definitions" note in R CMD check
@@ -190,6 +194,7 @@ colour <- function(palette, reverse = FALSE, names = TRUE, lang = "en",
       )
       return(col)
     }
+
   }
   ## Set attributes
   fun <- structure(
