@@ -25,8 +25,7 @@ info()
 }
 \seealso{
 Other color schemes: 
-\code{\link{colour}()},
-\code{\link{ramp}()}
+\code{\link{colour}()}
 }
 \author{
 N. Frerebeau

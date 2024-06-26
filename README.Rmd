@@ -94,7 +94,7 @@ info()
 
 ### Color palettes and scales
 
-`color()` returns a palette function that when called with a single integer argument returns a vector of colors.
+`color()` returns a function that when called with a single integer argument returns a vector of colors.
 
 ```{r usage}
 ## Paul Tol's bright color scheme
@@ -103,7 +103,7 @@ bright(7)
 ```
 
 ```{r usage-show, fig.height=2, fig.width=7, fig.align='center'}
-## Show the color palette
+## Plot the color scheme
 plot_scheme(bright(7), colours = TRUE)
 ```
 
@@ -116,10 +116,11 @@ plot(
   x = mpg$displ,
   y = mpg$hwy,
   pch = 16,
-  col = color("bright")(7)[as.factor(mpg$class)],
+  col = palette_color_picker("bright")(mpg$class),
   xlab = "displ",
   ylab = "hwy",
-  panel.first = grid()
+  panel.first = grid(),
+  las = 1
 )
 
 ## Use with ggplot2

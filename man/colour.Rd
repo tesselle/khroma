@@ -132,8 +132,7 @@ URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other color schemes: 
-\code{\link{info}()},
-\code{\link{ramp}()}
+\code{\link{info}()}
 }
 \author{
 N. Frerebeau

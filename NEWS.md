@@ -1,7 +1,13 @@
 # khroma 1.12.0.9000
+## New functions
+* Add `palette_color_picker()`, `palette_color_continuous()` and  `palette_color_discrete()` to map values to colors.
+* Add `palette_shape()` and `palette_line()` to map values to symbols.
+* Add `palette_size_range()` to size symbols.
+
 ## Bugfixes & changes
 * `colour()` no longer returns a named vector by default.
 * `plot*()` functions invisibly return the first argument (vector of colors).
+* Deprecate `ramp()`.
 
 # khroma 1.12.0
 ## New functions
