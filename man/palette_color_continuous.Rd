@@ -2,9 +2,17 @@
 % Please edit documentation in R/palettes.R
 \name{palette_color_continuous}
 \alias{palette_color_continuous}
+\alias{palette_colour_continuous}
 \title{Color Mapping (continuous)}
 \usage{
 palette_color_continuous(
+  colors = NULL,
+  domain = NULL,
+  midpoint = NULL,
+  missing = "#DDDDDD"
+)
+
+palette_colour_continuous(
   colors = NULL,
   domain = NULL,
   midpoint = NULL,
@@ -31,8 +39,21 @@ of colors.
 \description{
 Maps continuous values to an interpolated colors gradient.
 }
-\note{
-Designed after scales
+\examples{
+## Visualize a simple DEM model
+## Distribution of elevation values
+elevation <- hist(volcano)
+
+## Where are breaks?
+elevation$breaks
+
+## Build palette functions
+BuRd <- color("BuRd")
+ramp_BuRd <- palette_color_continuous(colors = BuRd(10))
+
+## Plot image
+image(volcano, col = ramp_BuRd(elevation$breaks))
+legend("topright", legend = elevation$breaks, fill = ramp_BuRd(elevation$breaks))
 }
 \seealso{
 Other palettes: 

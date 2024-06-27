@@ -2,9 +2,17 @@
 % Please edit documentation in R/palettes.R
 \name{palette_color_discrete}
 \alias{palette_color_discrete}
+\alias{palette_colour_discrete}
 \title{Color Mapping (discrete)}
 \usage{
 palette_color_discrete(
+  colors = NULL,
+  domain = NULL,
+  ordered = FALSE,
+  missing = "#DDDDDD"
+)
+
+palette_colour_discrete(
   colors = NULL,
   domain = NULL,
   ordered = FALSE,
@@ -29,6 +37,24 @@ A palette \code{\link{function}} that when called with a single argument
 }
 \description{
 Maps categorical values to colors.
+}
+\examples{
+## Build palette functions
+bright <- c(versicolor = "#4477AA", virginica = "#EE6677", setosa = "#228833")
+ramp_bright <- palette_color_discrete(colors = bright)
+
+## Plot
+plot(
+  x = iris$Petal.Length,
+  y = iris$Sepal.Length,
+  pch = 16,
+  col = ramp_bright(iris$Species),
+  xlab = "Petal length",
+  ylab = "Sepal length",
+  panel.first = grid(),
+  las = 1
+)
+legend("topleft", legend = names(bright), col = bright, pch = 16)
 }
 \seealso{
 Other palettes: 

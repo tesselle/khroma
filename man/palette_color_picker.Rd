@@ -2,9 +2,19 @@
 % Please edit documentation in R/palettes.R
 \name{palette_color_picker}
 \alias{palette_color_picker}
+\alias{palette_colour_picker}
 \title{Color Mapping}
 \usage{
 palette_color_picker(
+  scheme,
+  domain = NULL,
+  midpoint = NULL,
+  ordered = FALSE,
+  missing = NULL,
+  ...
+)
+
+palette_colour_picker(
   scheme,
   domain = NULL,
   midpoint = NULL,

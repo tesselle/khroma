@@ -52,6 +52,10 @@ palette_color_picker <- function(scheme, domain = NULL, midpoint = NULL,
   fun
 }
 
+#' @export
+#' @rdname palette_color_picker
+palette_colour_picker <- palette_color_picker
+
 #' Color Mapping (continuous)
 #'
 #' Maps continuous values to an interpolated colors gradient.
@@ -66,7 +70,7 @@ palette_color_picker <- function(scheme, domain = NULL, midpoint = NULL,
 #'  A palette [`function`] that when called with a single argument
 #'  (a [`numeric`] vector of continuous values) returns a [`character`] vector
 #'  of colors.
-#' @note Designed after scales
+#' @example inst/examples/ex-palette-continuous.R
 #' @family palettes
 #' @export
 palette_color_continuous <- function(colors = NULL, domain = NULL,
@@ -105,6 +109,10 @@ palette_color_continuous <- function(colors = NULL, domain = NULL,
   }
 }
 
+#' @export
+#' @rdname palette_color_continuous
+palette_colour_continuous <- palette_color_continuous
+
 #' Color Mapping (discrete)
 #'
 #' Maps categorical values to colors.
@@ -118,6 +126,7 @@ palette_color_continuous <- function(colors = NULL, domain = NULL,
 #' @return
 #'  A palette [`function`] that when called with a single argument
 #'  (a vector of categorical values) returns a [`character`] vector of colors.
+#' @example inst/examples/ex-palette-discrete.R
 #' @family palettes
 #' @export
 palette_color_discrete <- function(colors = NULL, domain = NULL,
@@ -155,6 +164,10 @@ palette_color_discrete <- function(colors = NULL, domain = NULL,
     col
   }
 }
+
+#' @export
+#' @rdname palette_color_discrete
+palette_colour_discrete <- palette_color_discrete
 
 ## Symbol ----------------------------------------------------------------------
 #' Symbol Mapping
