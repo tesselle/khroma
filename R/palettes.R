@@ -99,7 +99,7 @@ palette_color_continuous <- function(colors = NULL, domain = NULL,
 
     OK <- !is.na(x)
     if (is.null(colors)) {
-      colors <- grDevices::hcl.colors(12, "YlOrRd", rev = TRUE)
+      colors <- color(palette = "YlOrBr")(9)
     }
     colors <- grDevices::colorRamp(colors)(x[OK], ...)
 
@@ -152,7 +152,7 @@ palette_color_discrete <- function(colors = NULL, domain = NULL,
 
     OK <- !is.na(x)
     if (is.null(colors)) {
-      colors <- grDevices::hcl.colors(n, "viridis")
+      colors <- color(palette = "discreterainbow")(n)
     }
 
     if (length(colors) < n) {

@@ -37,7 +37,7 @@ expect_warning(palette_color_picker(scheme = "bright")(c(1, 2, 3, 4, 5, 6, 7)))
 ## Continuous ------------------------------------------------------------------
 expect_identical(
   palette_color_continuous()(c(1, 2, 3)),
-  c("#FFFFC8", "#F39200", "#7D0025")
+  c("#FFFFE5", "#FB9A29", "#662506")
 )
 expect_identical(
   palette_color_continuous(bw)(c(0, 0.5, 1)),
@@ -70,8 +70,8 @@ expect_identical(
 
 ## Discrete --------------------------------------------------------------------
 expect_identical(
-  palette_color_discrete(NULL, LETTERS)(lvl),
-  c("#4B0055", "#4B0055", "#462169", "#4A0E5F", "#4B0055", "#4A0E5F")
+  palette_color_discrete(NULL, domain = LETTERS[1:23])(lvl),
+  c("#E8ECFB", "#E8ECFB", "#CAACCB", "#D9CCE3", "#E8ECFB", "#D9CCE3")
 )
 expect_identical(
   palette_color_discrete(c("#4477AA", "#EE6677", "#228833"), domain = c("A", "B", "C"))(lvl),
