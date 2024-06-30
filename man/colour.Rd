@@ -62,13 +62,6 @@ examples).
 \description{
 Provides qualitative, diverging and sequential color schemes.
 }
-\details{
-The following color scheme are available:
-\describe{
-\item{\code{okabeito}}{Up to 8 colors.}
-\item{\verb{okabeito black}}{Up to 8 colors, with black as the last.}
-}
-}
 \examples{
 ## Okabe and Ito colour scheme
 colour("okabe ito")(8)

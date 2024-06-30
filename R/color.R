@@ -14,12 +14,6 @@
 #'  schemes, as they are designed to be used as is to remain color-blind safe.
 #' @param ... Further arguments passed to
 #'  [colorRampPalette][grDevices::colorRamp].
-#' @details
-#'  The following color scheme are available:
-#'  \describe{
-#'   \item{`okabeito`}{Up to 8 colors.}
-#'   \item{`okabeito black`}{Up to 8 colors, with black as the last.}
-#'  }
 #' @return
 #'  A [`function`] function with the following attributes, that when called
 #'  with a single argument (an [`integer`] specifying the number of colors)

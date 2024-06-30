@@ -181,6 +181,7 @@ palette_colour_discrete <- palette_color_discrete
 #' @return
 #'  A palette [`function`] that when called with a single argument
 #'  (a [`character`] vector of categorical values) returns a vector of symbols.
+#' @example inst/examples/ex-palette-discrete.R
 #' @family palettes
 #' @export
 palette_shape <- function(symbols = NULL, domain = NULL, ordered = FALSE, ...) {
@@ -234,6 +235,7 @@ palette_line <- function(types = NULL, domain = NULL, ordered = FALSE, ...) {
 #'  (a [`numeric`] vector of continuous values) returns a [`numeric`] vector
 #'  giving the amount by which plotting text and symbols should be magnified
 #'  relative to the default.
+#' @example inst/examples/ex-palette-continuous.R
 #' @family palettes
 #' @export
 palette_size_range <- function(range = c(1, 6), ...) {
