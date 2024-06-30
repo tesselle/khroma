@@ -1,18 +1,18 @@
-# -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.5.0
+# --------------------------------------------
+# CITATION file created with {cffr} R package
 # See also: https://docs.ropensci.org/cffr/
-# -----------------------------------------------------------
+# --------------------------------------------
  
 cff-version: 1.2.0
 message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.12.0
+version: 1.13.0
 doi: 10.5281/zenodo.1472077
 abstract: Color schemes ready for each type of data (qualitative, diverging or sequential),
   with colors that are distinct for all people, including color-blind readers. This
-  package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <doi:10.5194/gmd-11-2541-2018>
+  package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <https://doi.org/10.5194/gmd-11-2541-2018>
   color schemes for use with 'graphics' or 'ggplot2'. It provides tools to simulate
   color-blindness and to test how well the colors of any palette are identifiable.
   Several scientific thematic schemes (geologic timescale, land cover, FAO soils,
@@ -33,13 +33,12 @@ preferred-citation:
     orcid: https://orcid.org/0000-0001-5759-4944
     affiliation: Université Bordeaux Montaigne
   year: '2024'
-  location:
-    name: Pessac, France
-  notes: R package version 1.12.0
-  doi: 10.5281/zenodo.1472077
-  url: https://packages.tesselle.org/khroma/
   institution:
     name: Université Bordeaux Montaigne
+    address: Pessac, France
+  notes: R package version 1.13.0
+  doi: 10.5281/zenodo.1472077
+  url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma
 repository-code: https://github.com/tesselle/khroma
 url: https://packages.tesselle.org/khroma/
@@ -61,11 +60,10 @@ references:
   url: https://www.R-project.org/
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
   version: '>= 3.5.0'
 - type: software
   title: graphics
@@ -73,55 +71,50 @@ references:
   notes: Imports
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
 - type: software
   title: grDevices
   abstract: 'R: A Language and Environment for Statistical Computing'
   notes: Imports
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
 - type: software
   title: grid
   abstract: 'R: A Language and Environment for Statistical Computing'
   notes: Imports
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
 - type: software
   title: stats
   abstract: 'R: A Language and Environment for Statistical Computing'
   notes: Imports
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
 - type: software
   title: utils
   abstract: 'R: A Language and Environment for Statistical Computing'
   notes: Imports
   authors:
   - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2024'
   institution:
     name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
 - type: software
   title: ggplot2
   abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
@@ -156,18 +149,10 @@ references:
   - family-names: Dunnington
     given-names: Dewey
     orcid: https://orcid.org/0000-0002-9415-4582
-  year: '2024'
-- type: software
-  title: ggraph
-  abstract: 'ggraph: An Implementation of Grammar of Graphics for Graphs and Networks'
-  notes: Suggests
-  url: https://ggraph.data-imaginist.com
-  repository: https://CRAN.R-project.org/package=ggraph
-  authors:
-  - family-names: Pedersen
-    given-names: Thomas Lin
-    email: thomasp85@gmail.com
-    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Brand
+    given-names: Teun
+    name-particle: van den
+    orcid: https://orcid.org/0000-0002-9335-7468
   year: '2024'
 - type: software
   title: knitr
@@ -282,8 +267,9 @@ references:
   url: https://github.com/markvanderloo/tinytest
   repository: https://CRAN.R-project.org/package=tinytest
   authors:
-  - family-names: van der Loo
+  - family-names: Loo
     given-names: Mark
+    name-particle: van der
     email: mark.vanderloo@gmail.com
     orcid: https://orcid.org/0000-0002-9807-4686
   year: '2024'
@@ -344,4 +330,5 @@ identifiers:
   value: 10.5281/zenodo.10470003
 - description: The Software Heritage identifier for version 1.4.0.
   type: swh
-  value: swh:1:dir:ac530bf9321ee33e982c1e3fa44c275e01ba3fb1
+  value: swh:1:snp:4eeb6407ecccc7391eddcf1c83dd8b0a20168592
+

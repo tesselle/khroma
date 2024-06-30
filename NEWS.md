@@ -1,4 +1,4 @@
-# khroma 1.12.0.9000
+# khroma 1.13.0
 ## New functions
 * Add `palette_color_picker()`, `palette_color_continuous()` and  `palette_color_discrete()` to map values to colors.
 * Add `palette_shape()` and `palette_line()` to map values to symbols.
@@ -17,7 +17,7 @@
 * Add Paul Tol `nightfall` and `incandescent` colour schemes.
 
 ## Bugfixes & changes
-*  Fix `discreterainbow` scheme (qualitative scheme instead of sequential).
+*  Fix `discreterainbow` scheme (*qualitative* scheme instead of *sequential*).
 
 # khroma 1.11.0
 ## Bugfixes & changes

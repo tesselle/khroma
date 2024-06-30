@@ -2,6 +2,7 @@ comment: false
 
 ignore:
   - "R/khroma-deprecated.R"
+  - "R/khroma-defunct.R"
   - "R/zzz.R"
 
 coverage:

@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
 [![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tesselle/khroma)
 [![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
-[![Dependencies](https://tinyverse.netlify.com/badge/khroma)](https://cran.r-project.org/package=khroma)
+[![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma)
 
 <a href="https://tesselle.r-universe.dev/khroma"
 class="pkgdown-devel"><img
@@ -70,28 +70,17 @@ All these color schemes are implemented for use with base R **graphics**
 or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 [**ggraph**](https://github.com/thomasp85/ggraph).
 
-    To cite khroma in publications use:
+------------------------------------------------------------------------
 
-      Frerebeau N (2024). _khroma: Colour Schemes for Scientific Data
-      Visualization_. Université Bordeaux Montaigne, Pessac, France.
-      doi:10.5281/zenodo.1472077 <https://doi.org/10.5281/zenodo.1472077>,
-      R package version 1.12.0, <https://packages.tesselle.org/khroma/>.
+To cite khroma in publications use:
 
-    A BibTeX entry for LaTeX users is
+Frerebeau N (2024). *khroma: Colour Schemes for Scientific Data
+Visualization*. Université Bordeaux Montaigne, Pessac, France.
+<doi:10.5281/zenodo.1472077> <https://doi.org/10.5281/zenodo.1472077>, R
+package version 1.13.0, <https://packages.tesselle.org/khroma/>.
 
-      @Manual{,
-        author = {Nicolas Frerebeau},
-        title = {{khroma: Colour Schemes for Scientific Data Visualization}},
-        year = {2024},
-        organization = {Université Bordeaux Montaigne},
-        address = {Pessac, France},
-        note = {R package version 1.12.0},
-        doi = {10.5281/zenodo.1472077},
-        url = {https://packages.tesselle.org/khroma/},
-      }
-
-    This package is a part of the tesselle project
-    <https://www.tesselle.org>.
+This package is a part of the tesselle project
+<https://www.tesselle.org>.
 
 ## Installation
 
@@ -191,21 +180,20 @@ info()
 
 ### Color palettes and scales
 
-`color()` returns a palette function that when called with a single
-integer argument returns a vector of colors.
+`color()` returns a function that when called with a single integer
+argument returns a vector of colors.
 
 ``` r
 ## Paul Tol's bright color scheme
 bright <- color("bright")
 bright(7)
-#>      blue       red     green    yellow      cyan    purple      grey 
-#> "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB" 
+#> [1] "#4477AA" "#EE6677" "#228833" "#CCBB44" "#66CCEE" "#AA3377" "#BBBBBB"
 #> attr(,"missing")
 #> [1] NA
 ```
 
 ``` r
-## Show the color palette
+## Plot the color scheme
 plot_scheme(bright(7), colours = TRUE)
 ```
 
@@ -220,10 +208,11 @@ plot(
   x = mpg$displ,
   y = mpg$hwy,
   pch = 16,
-  col = color("bright")(7)[as.factor(mpg$class)],
+  col = palette_color_picker("bright")(mpg$class),
   xlab = "displ",
   ylab = "hwy",
-  panel.first = grid()
+  panel.first = grid(),
+  las = 1
 )
 ```
 
@@ -290,7 +279,8 @@ to this project, you agree to abide by its terms.
 
 ## References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
 
 <div id="ref-crameri2018" class="csl-entry">
 
