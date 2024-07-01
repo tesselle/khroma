@@ -1,3 +1,5 @@
+# khroma 1.13.0.9000
+
 # khroma 1.13.0
 ## New functions
 * Add `palette_color_picker()`, `palette_color_continuous()` and  `palette_color_discrete()` to map values to colors.
