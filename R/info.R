@@ -135,7 +135,7 @@ NULL
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  \tabular{lll}{
+#'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
 #'   `broc`      \tab 256      \cr
 #'   `cork`      \tab 256      \cr
@@ -158,7 +158,7 @@ NULL
 #'  coordinates are linearly interpolated to provide a continuous version of the
 #'  scheme.
 #'
-#'  \tabular{lll}{
+#'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
 #'   `batlow`    \tab 256      \cr
 #'   `batlowW`   \tab 256      \cr

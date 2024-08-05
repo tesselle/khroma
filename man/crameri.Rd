@@ -16,7 +16,7 @@ If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-\tabular{lll}{
+\tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
 \code{broc}      \tab 256      \cr
 \code{cork}      \tab 256      \cr
@@ -42,7 +42,7 @@ If more colors than defined are needed from a given scheme, the color
 coordinates are linearly interpolated to provide a continuous version of the
 scheme.
 
-\tabular{lll}{
+\tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
 \code{batlow}    \tab 256      \cr
 \code{batlowW}   \tab 256      \cr
