@@ -20,8 +20,9 @@ palette_colour_continuous(
 )
 }
 \arguments{
-\item{colors}{A vector of colors that values will be mapped to. If \code{NULL}
-(the default), uses \emph{YlOrRd} (see \code{\link[grDevices:palettes]{grDevices::hcl.colors()}}).}
+\item{colors}{A vector of colors or a \code{\link{function}} that when called with a
+single argument (an integer specifying the number of colors) returns a
+vector of colors. If \code{NULL} (the default), uses \emph{YlOrRd}.}
 
 \item{domain}{A \code{\link{numeric}} range specifying the possible values that can be
 mapped.}
@@ -56,6 +57,8 @@ image(volcano, col = ramp_BuRd(elevation$breaks))
 legend("topright", legend = elevation$breaks, fill = ramp_BuRd(elevation$breaks))
 }
 \seealso{
+\code{\link[grDevices:colorRamp]{grDevices::colorRamp()}}
+
 Other palettes: 
 \code{\link{palette_color_discrete}()},
 \code{\link{palette_color_picker}()},

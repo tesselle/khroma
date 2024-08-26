@@ -20,8 +20,9 @@ palette_colour_discrete(
 )
 }
 \arguments{
-\item{colors}{A vector of colors that values will be mapped to. If \code{NULL}
-(the default), uses \emph{viridis} (see \code{\link[grDevices:palettes]{grDevices::hcl.colors()}}).}
+\item{colors}{A vector of colors or a \code{\link{function}} that when called with a
+single argument (an integer specifying the number of colors) returns a
+vector of colors. If \code{NULL} (the default), uses \emph{discrete rainbow}.}
 
 \item{domain}{A vector of categorical data specifying the possible values
 that can be mapped.}

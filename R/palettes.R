@@ -59,8 +59,9 @@ palette_colour_picker <- palette_color_picker
 #' Color Mapping (continuous)
 #'
 #' Maps continuous values to an interpolated colors gradient.
-#' @param colors A vector of colors that values will be mapped to. If `NULL`
-#'  (the default), uses *YlOrRd* (see [grDevices::hcl.colors()]).
+#' @param colors A vector of colors or a [`function`] that when called with a
+#'  single argument (an integer specifying the number of colors) returns a
+#'  vector of colors. If `NULL` (the default), uses *YlOrRd*.
 #' @param domain A [`numeric`] range specifying the possible values that can be
 #'  mapped.
 #' @param midpoint A length-one [`numeric`] vector specifying the mid-point of
@@ -70,6 +71,7 @@ palette_colour_picker <- palette_color_picker
 #'  A palette [`function`] that when called with a single argument
 #'  (a [`numeric`] vector of continuous values) returns a [`character`] vector
 #'  of colors.
+#' @seealso [grDevices::colorRamp()]
 #' @example inst/examples/ex-palette-continuous.R
 #' @family palettes
 #' @export
@@ -101,6 +103,9 @@ palette_color_continuous <- function(colors = NULL, domain = NULL,
     if (is.null(colors)) {
       colors <- color(palette = "YlOrBr")(9)
     }
+    if (is.function(colors)) {
+      colors <- colors(9)
+    }
     colors <- grDevices::colorRamp(colors)(x[OK], ...)
 
     col <- rep(missing, length(x))
@@ -116,8 +121,9 @@ palette_colour_continuous <- palette_color_continuous
 #' Color Mapping (discrete)
 #'
 #' Maps categorical values to colors.
-#' @param colors A vector of colors that values will be mapped to. If `NULL`
-#'  (the default), uses *viridis* (see [grDevices::hcl.colors()]).
+#' @param colors A vector of colors or a [`function`] that when called with a
+#'  single argument (an integer specifying the number of colors) returns a
+#'  vector of colors. If `NULL` (the default), uses *discrete rainbow*.
 #' @param domain A vector of categorical data specifying the possible values
 #'  that can be mapped.
 #' @param ordered A [`logical`] scalar: should the levels be treated as already
@@ -153,6 +159,9 @@ palette_color_discrete <- function(colors = NULL, domain = NULL,
     OK <- !is.na(x)
     if (is.null(colors)) {
       colors <- color(palette = "discreterainbow")(n)
+    }
+    if (is.function(colors)) {
+      colors <- colors(n)
     }
 
     if (length(colors) < n) {

@@ -1,4 +1,6 @@
 # khroma 1.13.0.9000
+## Enhancements
+* Allow to pass a color function to `palette_color_continuous()` and  `palette_color_discrete()`.
 
 # khroma 1.13.0
 ## New functions
