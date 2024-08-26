@@ -1,4 +1,4 @@
-# khroma 1.13.0.9000
+# khroma 1.14.0
 ## Enhancements
 * Allow to pass a color function to `palette_color_continuous()` and  `palette_color_discrete()`.
 
@@ -18,7 +18,7 @@
 
 # khroma 1.12.0
 ## New functions
-* Add Paul Tol `nightfall` and `incandescent` colour schemes.
+* Add Paul Tol `nightfall` and `incandescent` color schemes.
 
 ## Bugfixes & changes
 *  Fix `discreterainbow` scheme (*qualitative* scheme instead of *sequential*).

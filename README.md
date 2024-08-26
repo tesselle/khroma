@@ -77,7 +77,7 @@ To cite khroma in publications use:
 Frerebeau N (2024). *khroma: Colour Schemes for Scientific Data
 Visualization*. Université Bordeaux Montaigne, Pessac, France.
 <doi:10.5281/zenodo.1472077> <https://doi.org/10.5281/zenodo.1472077>, R
-package version 1.13.0, <https://packages.tesselle.org/khroma/>.
+package version 1.14.0, <https://packages.tesselle.org/khroma/>.
 
 This package is a part of the tesselle project
 <https://www.tesselle.org>.

@@ -8,8 +8,69 @@ message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.13.0.9000
+version: 1.14.0
 doi: 10.5281/zenodo.1472077
+identifiers:
+- description: The concept DOI.
+  type: doi
+  value: 10.5281/zenodo.1472077
+- description: The versioned DOI for version 1.0.0.
+  type: doi
+  value: 10.5281/zenodo.1472078
+- description: The versioned DOI for version 1.1.0.
+  type: doi
+  value: 10.5281/zenodo.2577258
+- description: The versioned DOI for version 1.1.1.
+  type: doi
+  value: 10.5281/zenodo.2635680
+- description: The versioned DOI for version 1.1.2.
+  type: doi
+  value: 10.5281/zenodo.3237015
+- description: The versioned DOI for version 1.1.3.
+  type: doi
+  value: 10.5281/zenodo.3239344
+- description: The versioned DOI for version 1.2.0.
+  type: doi
+  value: 10.5281/zenodo.3371615
+- description: The versioned DOI for version 1.3.0.
+  type: doi
+  value: 10.5281/zenodo.3519838
+- description: The versioned DOI for version 1.4.0.
+  type: doi
+  value: 10.5281/zenodo.4067906
+- description: The versioned DOI for version 1.4.1.
+  type: doi
+  value: 10.5281/zenodo.4612091
+- description: The versioned DOI for version 1.5.0.
+  type: doi
+  value: 10.5281/zenodo.4723613
+- description: The versioned DOI for version 1.6.0.
+  type: doi
+  value: 10.5281/zenodo.4947109
+- description: The versioned DOI for version 1.7.0.
+  type: doi
+  value: 10.5281/zenodo.5388239
+- description: The versioned DOI for version 1.8.0.
+  type: doi
+  value: 10.5281/zenodo.5886699
+- description: The versioned DOI for version 1.9.0.
+  type: doi
+  value: 10.5281/zenodo.6659769
+- description: The versioned DOI for version 1.10.0.
+  type: doi
+  value: 10.5281/zenodo.7838382
+- description: The versioned DOI for version 1.11.0.
+  type: doi
+  value: 10.5281/zenodo.8269306
+- description: The versioned DOI for version 1.12.0.
+  type: doi
+  value: 10.5281/zenodo.10470003
+- description: The versioned DOI for version 1.13.0.
+  type: doi
+  value: 10.5281/zenodo.12606781
+- description: The Software Heritage identifier for version 1.4.0.
+  type: swh
+  value: swh:1:snp:4eeb6407ecccc7391eddcf1c83dd8b0a20168592
 abstract: Color schemes ready for each type of data (qualitative, diverging or sequential),
   with colors that are distinct for all people, including color-blind readers. This
   package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <https://doi.org/10.5194/gmd-11-2541-2018>
@@ -36,7 +97,7 @@ preferred-citation:
   institution:
     name: Université Bordeaux Montaigne
     address: Pessac, France
-  notes: R package version 1.13.0.9000
+  notes: R package version 1.14.0
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma
@@ -154,6 +215,20 @@ references:
     name-particle: van den
     orcid: https://orcid.org/0000-0002-9335-7468
   year: '2024'
+  doi: 10.32614/CRAN.package.ggplot2
+- type: software
+  title: ggraph
+  abstract: 'ggraph: An Implementation of Grammar of Graphics for Graphs and Networks'
+  notes: Suggests
+  url: https://ggraph.data-imaginist.com
+  repository: https://CRAN.R-project.org/package=ggraph
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomasp85@gmail.com
+    orcid: https://orcid.org/0000-0002-5147-4711
+  year: '2024'
+  doi: 10.32614/CRAN.package.ggraph
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
@@ -166,6 +241,7 @@ references:
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
   year: '2024'
+  doi: 10.32614/CRAN.package.knitr
 - type: software
   title: markdown
   abstract: 'markdown: Render Markdown with ''commonmark'''
@@ -182,6 +258,7 @@ references:
   - family-names: Horner
     given-names: Jeffrey
   year: '2024'
+  doi: 10.32614/CRAN.package.markdown
 - type: software
   title: rsvg
   abstract: 'rsvg: Render SVG Images into PDF, PNG, (Encapsulated) PostScript, or
@@ -195,6 +272,7 @@ references:
     email: jeroen@berkeley.edu
     orcid: https://orcid.org/0000-0002-4035-0289
   year: '2024'
+  doi: 10.32614/CRAN.package.rsvg
 - type: software
   title: scales
   abstract: 'scales: Scale Functions for Visualization'
@@ -212,6 +290,7 @@ references:
   - family-names: Seidel
     given-names: Dana
   year: '2024'
+  doi: 10.32614/CRAN.package.scales
 - type: software
   title: spacesXYZ
   abstract: 'spacesXYZ: CIE XYZ and some of Its Derived Color Spaces'
@@ -221,6 +300,7 @@ references:
   - family-names: Davis
     given-names: Glenn
   year: '2024'
+  doi: 10.32614/CRAN.package.spacesXYZ
 - type: software
   title: svglite
   abstract: 'svglite: An ''SVG'' Graphics Device'
@@ -248,6 +328,7 @@ references:
     given-names: Vaudor
     email: lise.vaudor@ens-lyon.fr
   year: '2024'
+  doi: 10.32614/CRAN.package.svglite
 - type: software
   title: tinysnapshot
   abstract: 'tinysnapshot: Snapshots for Unit Tests using the ''tinytest'' Framework'
@@ -260,6 +341,7 @@ references:
     email: vincent.arel-bundock@umontreal.ca
     orcid: https://orcid.org/0000-0003-2042-7063
   year: '2024'
+  doi: 10.32614/CRAN.package.tinysnapshot
 - type: software
   title: tinytest
   abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'
@@ -273,65 +355,5 @@ references:
     email: mark.vanderloo@gmail.com
     orcid: https://orcid.org/0000-0002-9807-4686
   year: '2024'
-identifiers:
-- description: The concept DOI.
-  type: doi
-  value: 10.5281/zenodo.1472077
-- description: The versioned DOI for version 1.0.0.
-  type: doi
-  value: 10.5281/zenodo.1472078
-- description: The versioned DOI for version 1.1.0.
-  type: doi
-  value: 10.5281/zenodo.2577258
-- description: The versioned DOI for version 1.1.1.
-  type: doi
-  value: 10.5281/zenodo.2635680
-- description: The versioned DOI for version 1.1.2.
-  type: doi
-  value: 10.5281/zenodo.3237015
-- description: The versioned DOI for version 1.1.3.
-  type: doi
-  value: 10.5281/zenodo.3239344
-- description: The versioned DOI for version 1.2.0.
-  type: doi
-  value: 10.5281/zenodo.3371615
-- description: The versioned DOI for version 1.3.0.
-  type: doi
-  value: 10.5281/zenodo.3519838
-- description: The versioned DOI for version 1.4.0.
-  type: doi
-  value: 10.5281/zenodo.4067906
-- description: The versioned DOI for version 1.4.1.
-  type: doi
-  value: 10.5281/zenodo.4612091
-- description: The versioned DOI for version 1.5.0.
-  type: doi
-  value: 10.5281/zenodo.4723613
-- description: The versioned DOI for version 1.6.0.
-  type: doi
-  value: 10.5281/zenodo.4947109
-- description: The versioned DOI for version 1.7.0.
-  type: doi
-  value: 10.5281/zenodo.5388239
-- description: The versioned DOI for version 1.8.0.
-  type: doi
-  value: 10.5281/zenodo.5886699
-- description: The versioned DOI for version 1.9.0.
-  type: doi
-  value: 10.5281/zenodo.6659769
-- description: The versioned DOI for version 1.10.0.
-  type: doi
-  value: 10.5281/zenodo.7838382
-- description: The versioned DOI for version 1.11.0.
-  type: doi
-  value: 10.5281/zenodo.8269306
-- description: The versioned DOI for version 1.12.0.
-  type: doi
-  value: 10.5281/zenodo.10470003
-- description: The versioned DOI for version 1.13.0.
-  type: doi
-  value: 10.5281/zenodo.12606781
-- description: The Software Heritage identifier for version 1.4.0.
-  type: swh
-  value: swh:1:snp:4eeb6407ecccc7391eddcf1c83dd8b0a20168592
+  doi: 10.32614/CRAN.package.tinytest
 

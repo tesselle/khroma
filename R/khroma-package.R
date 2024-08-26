@@ -2,7 +2,7 @@
 #'  \tabular{ll}{
 #'   **Package:** \tab khroma \cr
 #'   **Type:** \tab Package \cr
-#'   **Version:** \tab 1.13.0 \cr
+#'   **Version:** \tab 1.14.0 \cr
 #'   **License:** \tab GPL-3 \cr
 #'   **Zenodo:** \tab \doi{10.5281/zenodo.1472077} \cr
 #'  }
