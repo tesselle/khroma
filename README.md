@@ -16,7 +16,7 @@ src="https://tesselle.r-universe.dev/badges/khroma"
 alt="r-universe" /></a>
 <a href="https://cran.r-project.org/package=khroma"
 class="pkgdown-release"><img
-src="http://www.r-pkg.org/badges/version/khroma"
+src="https://www.r-pkg.org/badges/version/khroma"
 alt="CRAN Version" /></a> <a
 href="https://cran.r-project.org/web/checks/check_results_khroma.html"
 class="pkgdown-release"><img
@@ -24,7 +24,7 @@ src="https://badges.cranchecks.info/worst/khroma.svg"
 alt="CRAN checks" /></a>
 <a href="https://cran.r-project.org/package=khroma"
 class="pkgdown-release"><img
-src="http://cranlogs.r-pkg.org/badges/khroma"
+src="https://cranlogs.r-pkg.org/badges/khroma"
 alt="CRAN Downloads" /></a>
 
 [![Project Status: Active – The project has reached a stable, usable
