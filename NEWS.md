@@ -1,4 +1,4 @@
-# khroma 1.14.0.9000
+# khroma 1.15.0
 ## New functions
 * Add `palette_size_sequential()` and `palette_size_diverging()` to size symbols.
 

@@ -74,10 +74,10 @@ or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
 
 To cite khroma in publications use:
 
-Frerebeau N (2024). *khroma: Colour Schemes for Scientific Data
+Frerebeau N (2025). *khroma: Colour Schemes for Scientific Data
 Visualization*. Université Bordeaux Montaigne, Pessac, France.
 <doi:10.5281/zenodo.1472077> <https://doi.org/10.5281/zenodo.1472077>, R
-package version 1.14.0, <https://packages.tesselle.org/khroma/>.
+package version 1.15.0, <https://packages.tesselle.org/khroma/>.
 
 This package is a part of the tesselle project
 <https://www.tesselle.org>.

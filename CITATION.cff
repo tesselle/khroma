@@ -8,7 +8,7 @@ message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.14.0
+version: 1.15.0
 doi: 10.5281/zenodo.1472077
 identifiers:
 - description: The concept DOI.
@@ -71,6 +71,9 @@ identifiers:
 - description: The versioned DOI for version 1.14.0.
   type: doi
   value: 10.5281/zenodo.13378711
+- description: The CRAN DOI
+  type: doi
+  value: 10.32614/cran.package.khroma
 - description: The Software Heritage identifier for version 1.4.0.
   type: swh
   value: swh:1:snp:4eeb6407ecccc7391eddcf1c83dd8b0a20168592
@@ -96,11 +99,11 @@ preferred-citation:
     email: nicolas.frerebeau@u-bordeaux-montaigne.fr
     orcid: https://orcid.org/0000-0001-5759-4944
     affiliation: Université Bordeaux Montaigne
-  year: '2024'
+  year: '2025'
   institution:
     name: Université Bordeaux Montaigne
     address: Pessac, France
-  notes: R package version 1.14.0
+  notes: R package version 1.15.0
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma
@@ -127,7 +130,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
   version: '>= 3.5.0'
 - type: software
   title: graphics
@@ -138,7 +141,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: grDevices
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -148,7 +151,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: grid
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -158,7 +161,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: stats
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -168,7 +171,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: utils
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -178,7 +181,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: ggplot2
   abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
@@ -217,7 +220,7 @@ references:
     given-names: Teun
     name-particle: van den
     orcid: https://orcid.org/0000-0002-9335-7468
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.ggplot2
 - type: software
   title: ggraph
@@ -230,7 +233,7 @@ references:
     given-names: Thomas Lin
     email: thomasp85@gmail.com
     orcid: https://orcid.org/0000-0002-5147-4711
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.ggraph
 - type: software
   title: knitr
@@ -243,7 +246,7 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.knitr
 - type: software
   title: markdown
@@ -260,7 +263,7 @@ references:
     given-names: JJ
   - family-names: Horner
     given-names: Jeffrey
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.markdown
 - type: software
   title: rsvg
@@ -272,9 +275,9 @@ references:
   authors:
   - family-names: Ooms
     given-names: Jeroen
-    email: jeroen@berkeley.edu
+    email: jeroenooms@gmail.com
     orcid: https://orcid.org/0000-0002-4035-0289
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.rsvg
 - type: software
   title: scales
@@ -292,7 +295,7 @@ references:
     orcid: https://orcid.org/0000-0002-5147-4711
   - family-names: Seidel
     given-names: Dana
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.scales
 - type: software
   title: spacesXYZ
@@ -302,7 +305,7 @@ references:
   authors:
   - family-names: Davis
     given-names: Glenn
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.spacesXYZ
 - type: software
   title: svglite
@@ -330,7 +333,7 @@ references:
   - family-names: Lise
     given-names: Vaudor
     email: lise.vaudor@ens-lyon.fr
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.svglite
 - type: software
   title: tinysnapshot
@@ -343,7 +346,7 @@ references:
     given-names: Vincent
     email: vincent.arel-bundock@umontreal.ca
     orcid: https://orcid.org/0000-0003-2042-7063
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.tinysnapshot
 - type: software
   title: tinytest
@@ -357,6 +360,6 @@ references:
     name-particle: van der
     email: mark.vanderloo@gmail.com
     orcid: https://orcid.org/0000-0002-9807-4686
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.tinytest
 
