@@ -71,6 +71,9 @@ identifiers:
 - description: The versioned DOI for version 1.14.0.
   type: doi
   value: 10.5281/zenodo.13378711
+- description: The versioned DOI for version 1.15.0.
+  type: doi
+  value: 10.5281/zenodo.14629064
 - description: The CRAN DOI
   type: doi
   value: 10.32614/cran.package.khroma
@@ -89,7 +92,6 @@ authors:
   given-names: Nicolas
   email: nicolas.frerebeau@u-bordeaux-montaigne.fr
   orcid: https://orcid.org/0000-0001-5759-4944
-  affiliation: Université Bordeaux Montaigne
 preferred-citation:
   type: manual
   title: 'khroma: Colour Schemes for Scientific Data Visualization'
@@ -98,7 +100,6 @@ preferred-citation:
     given-names: Nicolas
     email: nicolas.frerebeau@u-bordeaux-montaigne.fr
     orcid: https://orcid.org/0000-0001-5759-4944
-    affiliation: Université Bordeaux Montaigne
   year: '2025'
   institution:
     name: Université Bordeaux Montaigne
@@ -114,7 +115,6 @@ contact:
   given-names: Nicolas
   email: nicolas.frerebeau@u-bordeaux-montaigne.fr
   orcid: https://orcid.org/0000-0001-5759-4944
-  affiliation: Université Bordeaux Montaigne
 keywords:
 - data visualization
 - colour schemes
