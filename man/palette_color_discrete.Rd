@@ -40,6 +40,7 @@ A palette \code{\link{function}} that when called with a single argument
 Maps categorical values to colors.
 }
 \examples{
+## Scatter plot
 ## Build color palette functions
 bright <- c(versicolor = "#4477AA", virginica = "#EE6677", setosa = "#228833")
 pal_color <- palette_color_discrete(colors = bright)
@@ -66,6 +67,6 @@ Other palettes:
 \code{\link{palette_color_continuous}()},
 \code{\link{palette_color_picker}()},
 \code{\link{palette_shape}()},
-\code{\link{palette_size_range}()}
+\code{\link{palette_size}}
 }
 \concept{palettes}

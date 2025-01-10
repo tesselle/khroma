@@ -138,10 +138,14 @@ expect_identical(palette_shape(named_symbols)(lvl),
                  c(A = 16, A = 16, C = 15, B = 17, A = 16, B = 17))
 
 # Size =========================================================================
-expect_error(palette_size_range()(lvl))
-expect_error(palette_size_max(max = 1)(lvl))
+expect_error(palette_size_sequential()(lvl), "Discrete value supplied to continuous scale.")
+expect_identical(min(palette_size_sequential(c(1, 6))(c(1, 2, 3))), 1)
+expect_identical(max(palette_size_sequential(c(1, 6))(c(1, 2, 3))), 6)
+expect_identical(palette_size_sequential(4)(c(1, 2, 3)), c(4, 4, 4))
+expect_identical(palette_size_sequential(c(4, 5))(c(1, NA, 3)), c(4, NA, 5))
+expect_identical(palette_size_sequential(c(1, 6))(c(-1, 0, 1, 2, 3)),
+                 khroma:::scale_range(sqrt(khroma:::scale_range(c(-1, 0, 1, 2, 3))), to = c(1, 6)))
 
-# expect_equal(palette_size_range()(c(1, 2, 3)), c(1/3, 2/3, 3/3))
-expect_identical(palette_size_range(4)(c(1, 2, 3)), c(4, 4, 4))
-# expect_identical(palette_size_range(c(4, 5))(c(1, 2, 3)), c(4, 4.5, 5))
-# expect_identical(palette_size_range(c(4, 5))(c(1, NA, 3)), c(4, NA, 5))
+expect_error(palette_size_diverging()(lvl), "Discrete value supplied to continuous scale.")
+expect_identical(palette_size_diverging(c(1, 3))(c(-1, 0, 1, 2, 3)),
+                 khroma:::scale_range(sqrt(khroma:::scale_midpoint(abs(c(-1, 0, 1, 2, 3)))), to = c(1, 3)))

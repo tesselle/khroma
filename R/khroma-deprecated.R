@@ -8,6 +8,19 @@ NULL
 
 #' @export
 #' @rdname khroma-deprecated
+palette_size_range <- function(range = c(1, 6), ...) {
+
+  force(range)
+
+  function(x) {
+    need_continuous(x)
+    x <- scale_range(x)
+    scale_range(sqrt(x), to = range(range, na.rm = TRUE))
+  }
+}
+
+#' @export
+#' @rdname khroma-deprecated
 convert <- function(x, mode) {
   .Deprecated(new = "change()", old = "convert()")
   change(x, mode)

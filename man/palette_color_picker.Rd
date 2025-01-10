@@ -78,6 +78,6 @@ Other palettes:
 \code{\link{palette_color_continuous}()},
 \code{\link{palette_color_discrete}()},
 \code{\link{palette_shape}()},
-\code{\link{palette_size_range}()}
+\code{\link{palette_size}}
 }
 \concept{palettes}

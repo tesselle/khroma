@@ -237,7 +237,8 @@ palette_line <- function(types = NULL, domain = NULL, ordered = FALSE, ...) {
 #' Symbol Size Mapping
 #'
 #' @param range A length-two [`numeric`] vector giving range of possible sizes
-#' (greater than 0).
+#'  (greater than 0).
+#' @param midpoint A length-one [`numeric`] vector specifying the data mid-point.
 #' @param ... Currently not used.
 #' @return
 #'  A palette [`function`] that when called with a single argument
@@ -246,14 +247,34 @@ palette_line <- function(types = NULL, domain = NULL, ordered = FALSE, ...) {
 #'  relative to the default.
 #' @example inst/examples/ex-palette-continuous.R
 #' @family palettes
+#' @name palette_size
+#' @rdname palette_size
+NULL
+
 #' @export
-palette_size_range <- function(range = c(1, 6), ...) {
+#' @rdname palette_size
+palette_size_sequential <- function(range = c(1, 6), ...) {
 
   force(range)
 
   function(x) {
     need_continuous(x)
-    scale_range(sqrt(x), to = range(range, na.rm = TRUE), from = c(0, 1))
+    x <- scale_range(x)
+    scale_range(sqrt(x), to = range(range, na.rm = TRUE))
+  }
+}
+
+#' @export
+#' @rdname palette_size
+palette_size_diverging <- function(range = c(1, 6), midpoint = 0, ...) {
+
+  force(range)
+  force(midpoint)
+
+  function(x) {
+    need_continuous(x)
+    x <- scale_midpoint(abs(x), midpoint = midpoint)
+    scale_range(sqrt(x), to = range(range, na.rm = TRUE))
   }
 }
 
@@ -285,7 +306,8 @@ scale_range <- function(x, to = c(0, 1), from = range(x, finite = TRUE)) {
 #' @family scales
 #' @keywords internal
 #' @noRd
-scale_midpoint <- function(x, to = c(0, 1), from = range(x, finite = TRUE), midpoint = 0) {
+scale_midpoint <- function(x, to = c(0, 1), from = range(x, finite = TRUE),
+                           midpoint = 0) {
   if (is_zero(to) || is_zero(from)) return(ifelse(is.na(x), NA, mean(to)))
   extent <- 2 * max(abs(from - midpoint))
   (x - midpoint) / extent * diff(to) + mean(to)

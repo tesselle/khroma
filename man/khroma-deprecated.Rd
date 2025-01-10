@@ -2,10 +2,13 @@
 % Please edit documentation in R/khroma-deprecated.R
 \name{khroma-deprecated}
 \alias{khroma-deprecated}
+\alias{palette_size_range}
 \alias{convert}
 \alias{ramp}
 \title{Deprecated Functions in dimensio}
 \usage{
+palette_size_range(range = c(1, 6), ...)
+
 convert(x, mode)
 
 ramp(palette, ...)

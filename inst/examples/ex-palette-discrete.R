@@ -1,3 +1,4 @@
+## Scatter plot
 ## Build color palette functions
 bright <- c(versicolor = "#4477AA", virginica = "#EE6677", setosa = "#228833")
 pal_color <- palette_color_discrete(colors = bright)
