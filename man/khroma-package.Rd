@@ -22,9 +22,9 @@ Color schemes ready for each type of data (qualitative, diverging or sequential)
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://codeberg.org/tesselle/khroma}
   \item \url{https://packages.tesselle.org/khroma/}
-  \item \url{https://github.com/tesselle/khroma}
-  \item Report bugs at \url{https://github.com/tesselle/khroma/issues}
+  \item Report bugs at \url{https://codeberg.org/tesselle/khroma/issues}
 }
 
 }

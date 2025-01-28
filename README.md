@@ -5,9 +5,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/tesselle/khroma/workflows/R-CMD-check/badge.svg)](https://github.com/tesselle/khroma/actions)
-[![codecov](https://codecov.io/gh/tesselle/khroma/branch/main/graph/badge.svg)](https://app.codecov.io/gh/tesselle/khroma)
-[![CodeFactor](https://www.codefactor.io/repository/github/tesselle/khroma/badge/main)](https://www.codefactor.io/repository/github/tesselle/khroma/overview/main)
 [![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma)
 
 <a href="https://tesselle.r-universe.dev/khroma"
@@ -91,11 +88,11 @@ You can install the released version of **khroma** from
 install.packages("khroma")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+And the development version from [Codeberg](https://codeberg.org/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("tesselle/khroma")
+remotes::install_git("https://codeberg.org/tesselle/khroma")
 ```
 
 ## Usage

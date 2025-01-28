@@ -108,7 +108,7 @@ preferred-citation:
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma
-repository-code: https://github.com/tesselle/khroma
+repository-code: https://codeberg.org/tesselle/khroma
 url: https://packages.tesselle.org/khroma/
 contact:
 - family-names: Frerebeau
