@@ -53,6 +53,9 @@ VignetteBuilder:
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+X-schema.org-isPartOf: https://www.tesselle.org
+X-schema.org-keywords: data-visualization, colour-schemes, accessibility,
+    r-package
 Collate: 
     'change.R'
     'color.R'

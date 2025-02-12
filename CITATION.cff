@@ -77,9 +77,6 @@ identifiers:
 - description: The CRAN DOI
   type: doi
   value: 10.32614/cran.package.khroma
-- description: The Software Heritage identifier for version 1.4.0.
-  type: swh
-  value: swh:1:snp:4eeb6407ecccc7391eddcf1c83dd8b0a20168592
 abstract: Color schemes ready for each type of data (qualitative, diverging or sequential),
   with colors that are distinct for all people, including color-blind readers. This
   package provides an implementation of Paul Tol (2018) and Fabio Crameri (2018) <https://doi.org/10.5194/gmd-11-2541-2018>
@@ -116,10 +113,10 @@ contact:
   email: nicolas.frerebeau@u-bordeaux-montaigne.fr
   orcid: https://orcid.org/0000-0001-5759-4944
 keywords:
-- data visualization
-- colour schemes
+- data-visualization
+- colour-schemes
 - accessibility
-- r package
+- r-package
 references:
 - type: software
   title: 'R: A Language and Environment for Statistical Computing'

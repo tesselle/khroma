@@ -221,7 +221,9 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1415.486KB",
+  "isPartOf": "https://www.tesselle.org",
+  "keywords": ["data-visualization", "colour-schemes", "accessibility", "r-package"],
+  "fileSize": "1415.338KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",

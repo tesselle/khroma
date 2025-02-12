@@ -180,3 +180,82 @@ plot_scheme_colorblind(x)
 Please note that the **khroma** project is released with a [Contributor Code of Conduct](https://www.tesselle.org/conduct.html). By contributing to this project, you agree to abide by its terms.
 
 ## References
+
+```{r metadata, include=FALSE}
+## Update codemeta.json
+codemetar::write_codemeta(verbose = FALSE)
+
+## Update CITATION.cff
+cff_keys <- list(
+  identifiers = list(
+    list(description = "The concept DOI.",
+         type = "doi",
+         value = "10.5281/zenodo.1472077"),
+    list(description = "The versioned DOI for version 1.0.0.",
+         type = "doi",
+         value = "10.5281/zenodo.1472078"),
+    list(description = "The versioned DOI for version 1.1.0.",
+         type = "doi",
+         value = "10.5281/zenodo.2577258"),
+    list(description = "The versioned DOI for version 1.1.1.",
+         type = "doi",
+         value = "10.5281/zenodo.2635680"),
+    list(description = "The versioned DOI for version 1.1.2.",
+         type = "doi",
+         value = "10.5281/zenodo.3237015"),
+    list(description = "The versioned DOI for version 1.1.3.",
+         type = "doi",
+         value = "10.5281/zenodo.3239344"),
+    list(description = "The versioned DOI for version 1.2.0.",
+         type = "doi",
+         value = "10.5281/zenodo.3371615"),
+    list(description = "The versioned DOI for version 1.3.0.",
+         type = "doi",
+         value = "10.5281/zenodo.3519838"),
+    list(description = "The versioned DOI for version 1.4.0.",
+         type = "doi",
+         value = "10.5281/zenodo.4067906"),
+    list(description = "The versioned DOI for version 1.4.1.",
+         type = "doi",
+         value = "10.5281/zenodo.4612091"),
+    list(description = "The versioned DOI for version 1.5.0.",
+         type = "doi",
+         value = "10.5281/zenodo.4723613"),
+    list(description = "The versioned DOI for version 1.6.0.",
+         type = "doi",
+         value = "10.5281/zenodo.4947109"),
+    list(description = "The versioned DOI for version 1.7.0.",
+         type = "doi",
+         value = "10.5281/zenodo.5388239"),
+    list(description = "The versioned DOI for version 1.8.0.",
+         type = "doi",
+         value = "10.5281/zenodo.5886699"),
+    list(description = "The versioned DOI for version 1.9.0.",
+         type = "doi",
+         value = "10.5281/zenodo.6659769"),
+    list(description = "The versioned DOI for version 1.10.0.",
+         type = "doi",
+         value = "10.5281/zenodo.7838382"),
+    list(description = "The versioned DOI for version 1.11.0.",
+         type = "doi",
+         value = "10.5281/zenodo.8269306"),
+    list(description = "The versioned DOI for version 1.12.0.",
+         type = "doi",
+         value = "10.5281/zenodo.10470003"),
+    list(description = "The versioned DOI for version 1.13.0.",
+         type = "doi",
+         value = "10.5281/zenodo.12606781"),
+    list(description = "The versioned DOI for version 1.14.0.",
+         type = "doi",
+         value = "10.5281/zenodo.13378711"),
+    list(description = "The versioned DOI for version 1.15.0.",
+         type = "doi",
+         value = "10.5281/zenodo.14629064"),
+    list(description = "The CRAN DOI",
+         type = "doi",
+         value = "10.32614/cran.package.khroma")
+  )
+)
+cff <- cffr::cff_create("DESCRIPTION", keys = cff_keys)
+if (cffr::cff_validate(cff)) cffr::cff_write(cff, outfile = "CITATION.cff")
+```
