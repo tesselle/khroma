@@ -2,17 +2,7 @@
 % Please edit documentation in R/khroma-defunct.R
 \name{khroma-defunct}
 \alias{khroma-defunct}
-\alias{scale_colour_logical}
-\alias{scale_color_logical}
-\alias{scale_fill_logical}
 \title{Defunct Functions in khroma}
-\usage{
-scale_colour_logical(..., aesthetics = "colour")
-
-scale_color_logical(..., aesthetics = "colour")
-
-scale_fill_logical(..., aesthetics = "fill")
-}
 \arguments{
 \item{...}{Not used.}
 }
