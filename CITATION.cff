@@ -74,6 +74,9 @@ identifiers:
 - description: The versioned DOI for version 1.15.0.
   type: doi
   value: 10.5281/zenodo.14629064
+- description: The versioned DOI for version 1.16.0.
+  type: doi
+  value: 10.5281/zenodo.14927198
 - description: The CRAN DOI
   type: doi
   value: 10.32614/cran.package.khroma
