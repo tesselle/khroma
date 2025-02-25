@@ -89,8 +89,10 @@ colour <- function(palette, reverse = FALSE, names = FALSE, lang = "en",
     fun <- function(n, range = c(0, 1)) {
       if (missing(n)) n <- k
       # Validate
-      if (any(range > 1) || any(range < 0))
-        stop(sQuote("range"), " values must be in [0,1].", call. = FALSE)
+      if (any(range > 1) || any(range < 0)) {
+        msg <- tr_("%s values must be in [0,1].")
+        stop(sprintf(msg, sQuote("range")), call. = FALSE)
+      }
       # Remove starting colors
       col_colors <- utils::tail(col_colors, k * (1 - range[[1]]))
       # Remove ending colors
@@ -115,7 +117,7 @@ colour <- function(palette, reverse = FALSE, names = FALSE, lang = "en",
       if (missing(n)) n <- k
       # Validate
       if (n > k) {
-        msg <- "%s color scheme supports up to %d values."
+        msg <- tr_("%s color scheme supports up to %d values.")
         stop(sprintf(msg, sQuote(palette), k), call. = FALSE)
       }
       # Arrange color schemes

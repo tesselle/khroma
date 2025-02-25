@@ -11,8 +11,7 @@
 #' @export
 plot_scheme_colourblind <- function(x) {
   # Validation
-  if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colors.")
+  assert_color(x)
 
   n <- length(x)
   col <- c(x, anomalize(x, 'deuteranopia'), anomalize(x, 'protanopia'),

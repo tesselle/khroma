@@ -89,7 +89,7 @@ scale_discrete <- function(aesthetics, scheme, guide = "legend",
                            reverse = FALSE, use_names = FALSE,
                            lang = "en", ...) {
   # Check if ggplot2 is installed
-  check_package("ggplot2")
+  assert_package("ggplot2")
 
   # Get color scheme
   palette <- color(scheme, reverse = reverse, names = use_names, lang = lang)
@@ -109,8 +109,8 @@ scale_continuous <- function(aesthetics, scheme, guide = "colourbar",
                              reverse = FALSE, range = c(0, 1), midpoint = 0,
                              lang = "en", ...) {
   # Validation
-  check_package("ggplot2") # Check if ggplot2 is installed
-  if (guide == "edge_colourbar") check_package("ggraph")
+  assert_package("ggplot2") # Check if ggplot2 is installed
+  if (guide == "edge_colourbar") assert_package("ggraph")
 
   # Get color scheme
   palette <- color(scheme, reverse = reverse, names = FALSE, lang = lang)

@@ -13,8 +13,8 @@
 #' @export
 plot_tiles <- function(x, n = 512) {
   # Validation
-  if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colors.")
+  assert_color(x)
+
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(old_par))

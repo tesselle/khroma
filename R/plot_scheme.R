@@ -18,8 +18,7 @@
 #' @export
 plot_scheme <- function(x, colours = FALSE, names = FALSE, size = 1) {
   # Validation
-  if (!is.atomic(x) || !is.character(x))
-    stop("x must be a character vector of colors.")
+  assert_color(x)
 
   # Save and restore graphical parameters
   old_par <- graphics::par(no.readonly = TRUE)

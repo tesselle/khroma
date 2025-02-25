@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: khroma 1.15.0.9000\n"
+"POT-Creation-Date: 2025-02-25 17:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: color.R:93
+msgid "%s values must be in [0,1]."
+msgstr ""
+
+#: color.R:120
+msgid "%s color scheme supports up to %d values."
+msgstr ""
+
+#: khroma-internal.R:14
+msgid "Package %s needed for this function to work. Please install it."
+msgstr ""
+
+#: khroma-internal.R:22
+msgid "%s must be a character vector of colors."
+msgstr ""
+
+#: palettes.R:99
+msgid "Some values were outside the color scale."
+msgstr ""
+
+#: palettes.R:168
+msgid "Only %d colors were specified (%d are required)."
+msgstr ""
+
+#: palettes.R:217
+msgid "Consider specifying symbols manually:"
+msgstr ""
+
+#: palettes.R:218
+msgid "more than 6 becomes difficult to discriminate."
+msgstr ""
+
+#: palettes.R:320
+msgid "Discrete value supplied to continuous scale."
+msgstr ""
+
+#: palettes.R:327
+msgid "Continuous value supplied to discrete scale."
+msgstr ""

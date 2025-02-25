@@ -11,7 +11,7 @@ if (at_home()) {
   expect_snapshot_plot(plot_range, "plot_range")
 
   # Schemes ====================================================================
-  expect_error(plot_scheme(1:5), "x must be a character vector of colors.")
+  expect_error(plot_scheme(1:5), "must be a character vector of colors.")
 
   for (i in c(TRUE, FALSE)) {
     for (j in c(TRUE, FALSE)) {
@@ -21,7 +21,7 @@ if (at_home()) {
   }
 
   # Diagnostic Map =============================================================
-  expect_error(plot_map(1:5), "x must be a character vector of colors.")
+  expect_error(plot_map(1:5), "must be a character vector of colors.")
 
   # Keep the results the same for R versions prior to 3.6
   if (getRversion() >= "3.6") {
@@ -36,7 +36,7 @@ if (at_home()) {
   expect_snapshot_plot(plot_map_bright, "plot_map_bright")
 
   # Diagnostic Tiles", {
-  expect_error(plot_tiles(1:5), "x must be a character vector of colors.")
+  expect_error(plot_tiles(1:5), "must be a character vector of colors.")
 
   plot_tiles_bright <- function() plot_tiles(colour("bright")(7), n = 32)
   expect_snapshot_plot(plot_tiles_bright, "plot_tiles_bright")

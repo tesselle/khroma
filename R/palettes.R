@@ -96,7 +96,7 @@ palette_color_continuous <- function(colors = NULL, domain = NULL,
     out <- x < 0 | x > 1
     if (any(out, na.rm = TRUE)) {
       x[out] <- NA
-      warning("Some values were outside the color scale.", call. = FALSE)
+      warning(tr_("Some values were outside the color scale."), call. = FALSE)
     }
 
     OK <- !is.na(x)
@@ -165,7 +165,7 @@ palette_color_discrete <- function(colors = NULL, domain = NULL,
     }
 
     if (length(colors) < n) {
-      msg <- "Only %d colors were specified (%d are required)."
+      msg <- tr_("Only %d colors were specified (%d are required).")
       warning(sprintf(msg, length(colors), n), call. = FALSE)
     }
     col <- colors[x]
@@ -214,8 +214,9 @@ palette_shape <- function(symbols = NULL, domain = NULL, ordered = FALSE, ...) {
     if (is.null(symbols)) {
       n <- length(domain)
       if (n > 6) {
-        warning("Consider specifying symbols manually: ",
-                "more than 6 becomes difficult to discriminate.", call. = FALSE)
+        warning(tr_("Consider specifying symbols manually: "),
+                tr_("more than 6 becomes difficult to discriminate."),
+                call. = FALSE)
       }
       symbols <- c(16, 17, 15, 3, 7, 8)[seq_len(n)]
     }
@@ -316,14 +317,14 @@ scale_midpoint <- function(x, to = c(0, 1), from = range(x, finite = TRUE),
 # Helpers ======================================================================
 need_continuous <- function(x) {
   if (!is.numeric(x)) {
-    stop("Discrete value supplied to continuous scale.", call. = FALSE)
+    stop(tr_("Discrete value supplied to continuous scale."), call. = FALSE)
   }
   invisible(x)
 }
 
 need_discrete <- function(x) {
   if (is.double(x)) {
-    warning("Continuous value supplied to discrete scale.", call. = FALSE)
+    warning(tr_("Continuous value supplied to discrete scale."), call. = FALSE)
   }
   invisible(x)
 }
