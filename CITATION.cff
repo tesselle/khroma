@@ -8,7 +8,7 @@ message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.15.0
+version: 1.16.0
 doi: 10.5281/zenodo.1472077
 identifiers:
 - description: The concept DOI.
@@ -101,7 +101,7 @@ preferred-citation:
   institution:
     name: Université Bordeaux Montaigne
     address: Pessac, France
-  notes: R package version 1.15.0
+  notes: R package version 1.16.0
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma

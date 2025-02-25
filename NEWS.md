@@ -1,4 +1,9 @@
-# khroma 1.15.0.9000
+# khroma 1.16.0
+## Enhancements
+* Translate into French.
+
+## Internals
+* Update package metadata.
 
 # khroma 1.15.0
 ## New functions
