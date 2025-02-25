@@ -1,6 +1,6 @@
 ## Test environments
 * Ubuntu (local): R devel, release, oldrel
-* Windows (on GitHub Actions and win-builder): R devel, release, oldrel
+* Windows (on win-builder): R devel, release, oldrel
 
 ## R CMD check results
 
