@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Code
+coverage](https://packages.tesselle.org/khroma/coverage/badge.svg)](https://packages.tesselle.org/khroma/coverage/)
 [![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma)
 
 <a href="https://tesselle.r-universe.dev/khroma"

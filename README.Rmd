@@ -18,6 +18,7 @@ Sys.setenv(LANGUAGE = "en") # Force locale
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
+[![Code coverage](https://packages.tesselle.org/khroma/coverage/badge.svg)](https://packages.tesselle.org/khroma/coverage/)
 [![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma)
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev/khroma){.pkgdown-devel}
