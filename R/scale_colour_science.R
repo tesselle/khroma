@@ -84,7 +84,7 @@ scale_edge_fill_stratigraphy <- function(..., lang = "en") {
 #' @references
 #'  Tol, P. (2018). *Colour Schemes.* SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-science-land.R
 #' @author N. Frerebeau
 #' @family themed color schemes

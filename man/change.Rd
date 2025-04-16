@@ -57,7 +57,7 @@ A}, 14(10), p. 2647-2655. \doi{10.1364/JOSAA.14.002647}.
 
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 SRON/EPS/TN/09-002, issue 3.1.
-URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 
 Viénot, F., Brettel, H. and Mollon, J. D. (1999). Digital Video
 Colourmaps for Checking the Legibility of Displays by Dichromats.

@@ -300,7 +300,7 @@ People.” *J\*FLY*. <https://jfly.uni-koeln.de/color/>.
 <div id="ref-tol2021" class="csl-entry">
 
 Tol, Paul. 2021. “Colour Schemes.” Technical note SRON/EPS/TN/09-002
-3.2. SRON. <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
+3.2. SRON. <https://sronpersonalpages.nl/~pault/data/colourschemes.pdf>.
 
 </div>
 

@@ -122,7 +122,7 @@ ggplot2::ggplot(economics, ggplot2::aes(psavert, pce, colour = unemploy)) +
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 SRON/EPS/TN/09-002, issue 3.1.
-URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other diverging color schemes: 

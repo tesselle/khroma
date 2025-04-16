@@ -16,7 +16,7 @@ NULL
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -68,7 +68,7 @@ scale_edge_fill_bright <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -122,7 +122,7 @@ scale_edge_fill_highcontrast <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -174,7 +174,7 @@ scale_edge_fill_vibrant <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -226,7 +226,7 @@ scale_edge_fill_muted <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -280,7 +280,7 @@ scale_edge_fill_mediumcontrast <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -332,7 +332,7 @@ scale_edge_fill_pale <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -384,7 +384,7 @@ scale_edge_fill_dark <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2021). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.2.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -437,7 +437,7 @@ scale_edge_fill_light <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-discrete.R
 #' @author N. Frerebeau
 #' @family qualitative color schemes
@@ -503,7 +503,7 @@ scale_edge_fill_discreterainbow <- function(..., reverse = FALSE,
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -581,7 +581,7 @@ scale_edge_fill_sunset <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -659,7 +659,7 @@ scale_edge_fill_nightfall <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -737,7 +737,7 @@ scale_edge_fill_BuRd <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -825,7 +825,7 @@ scale_edge_fill_PRGn <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -901,7 +901,7 @@ scale_edge_fill_YlOrBr <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -977,7 +977,7 @@ scale_edge_fill_iridescent <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1054,7 +1054,7 @@ scale_edge_fill_incandescent <- function(..., reverse = FALSE, range = c(0, 1),
 #' @references
 #'  Tol, P. (2018). *Colour Schemes*. SRON. Technical Note No.
 #'  SRON/EPS/TN/09-002, issue 3.1.
-#'  URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+#'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #' @example inst/examples/ex-tol-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes

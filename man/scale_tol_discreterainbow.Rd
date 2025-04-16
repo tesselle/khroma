@@ -103,7 +103,7 @@ ggplot2::ggplot(diamonds, ggplot2::aes(clarity, fill = cut)) +
 \references{
 Tol, P. (2018). \emph{Colour Schemes}. SRON. Technical Note No.
 SRON/EPS/TN/09-002, issue 3.1.
-URL: \url{https://personal.sron.nl/~pault/data/colourschemes.pdf}
+URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 }
 \seealso{
 Other qualitative color schemes: 

@@ -246,4 +246,4 @@ plot_tiles(color("smooth rainbow")(128), n = 256)
 
 ## References
 
-Tol, P. 2021. "Colour Schemes." Technical note SRON/EPS/TN/09-002 3.2. SRON. URL: <https://personal.sron.nl/~pault/data/colourschemes.pdf>.
+Tol, P. 2021. "Colour Schemes." Technical note SRON/EPS/TN/09-002 3.2. SRON. URL: <https://sronpersonalpages.nl/~pault/data/colourschemes.pdf>.
