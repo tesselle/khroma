@@ -21,8 +21,8 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHw1MDQuMDA=)'>
-<text x='252.00' y='557.28' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='62.57px' lengthAdjust='spacingAndGlyphs'>seq_len(n)</text>
-<text transform='translate(-44.64,252.00) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='62.57px' lengthAdjust='spacingAndGlyphs'>seq_len(n)</text>
+<text x='252.00' y='557.28' text-anchor='middle' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='56.71px' lengthAdjust='spacingAndGlyphs'>seq_len(n)</text>
+<text transform='translate(-44.64,252.00) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='56.71px' lengthAdjust='spacingAndGlyphs'>seq_len(n)</text>
 </g>
 <defs>
   <clipPath id='cpMS40NHw1MDIuNTZ8MS40NHw1MDIuNTY='>

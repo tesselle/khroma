@@ -56,10 +56,10 @@
 <rect x='288.00' y='433.44' width='72.00' height='70.56' style='stroke-width: 0.75; stroke: #E8E8E8; fill: #E8E8E8;' />
 <rect x='360.00' y='433.44' width='72.00' height='70.56' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
 <rect x='432.00' y='433.44' width='72.00' height='70.56' style='stroke-width: 0.75; stroke: #BABABB; fill: #BABABB;' />
-<text x='0.00' y='19.49' style='font-size: 12.00px; font-family: "Arial";' textLength='41.58px' lengthAdjust='spacingAndGlyphs'>Palette</text>
-<text x='0.00' y='120.29' style='font-size: 12.00px; font-family: "Arial";' textLength='81.89px' lengthAdjust='spacingAndGlyphs'>Deuteranopia</text>
-<text x='0.00' y='221.09' style='font-size: 12.00px; font-family: "Arial";' textLength='64.37px' lengthAdjust='spacingAndGlyphs'>Protanopia</text>
-<text x='0.00' y='321.89' style='font-size: 12.00px; font-family: "Arial";' textLength='59.16px' lengthAdjust='spacingAndGlyphs'>Tritanopia</text>
-<text x='0.00' y='422.69' style='font-size: 12.00px; font-family: "Arial";' textLength='89.89px' lengthAdjust='spacingAndGlyphs'>Achromatopsia</text>
+<text x='0.00' y='19.25' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='37.36px' lengthAdjust='spacingAndGlyphs'>Palette</text>
+<text x='0.00' y='120.05' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='72.06px' lengthAdjust='spacingAndGlyphs'>Deuteranopia</text>
+<text x='0.00' y='220.85' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='58.05px' lengthAdjust='spacingAndGlyphs'>Protanopia</text>
+<text x='0.00' y='321.65' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='52.91px' lengthAdjust='spacingAndGlyphs'>Tritanopia</text>
+<text x='0.00' y='422.45' style='font-size: 12.00px; font-family: "Liberation Sans";' textLength='80.06px' lengthAdjust='spacingAndGlyphs'>Achromatopsia</text>
 </g>
 </svg>

@@ -39,6 +39,7 @@ Imports:
 Suggests: 
     ggplot2,
     ggraph,
+    fontquiver,
     knitr,
     markdown,
     rsvg,

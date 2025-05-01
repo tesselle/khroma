@@ -1,3 +1,5 @@
+Sys.setenv(LANGUAGE = "en") # Force locale
+
 # Rescale continuous vector ====================================================
 expect_identical(
   khroma:::scale_range(5:10),
