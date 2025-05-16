@@ -12,12 +12,17 @@ Color schemes ready for each type of data (qualitative, diverging or sequential)
 }
 \details{
 \tabular{ll}{
-\strong{Package:} \tab khroma \cr
-\strong{Type:} \tab Package \cr
-\strong{Version:} \tab 1.15.0 \cr
-\strong{License:} \tab GPL-3 \cr
-\strong{Zenodo:} \tab \doi{10.5281/zenodo.1472077} \cr
+\strong{Version} \tab 1.15.0 \cr
+\strong{License} \tab GPL-3 \cr
+\strong{CRAN DOI} \tab \doi{10.32614/CRAN.package.khroma} \cr
+\strong{Zenodo DOI} \tab \doi{10.5281/zenodo.1472077} \cr
 }
+
+Archéosciences Bordeaux (UMR 6034)\cr
+Maison de l'Archéologie\cr
+Université Bordeaux Montaigne\cr
+F-33607 Pessac cedex\cr
+France
 }
 \seealso{
 Useful links:
@@ -29,23 +34,16 @@ Useful links:
 
 }
 \author{
-\strong{Full list of authors and contributors} (alphabetic order)
-\tabular{ll}{
-Vincent Arel-Bundock \tab \emph{Université de Montréal, Canada} \cr
-Nicolas Frerebeau \tab \emph{Université Bordeaux Montaigne, France} \cr
-Brice Lebrun \tab \emph{Université Bordeaux Montaigne, France} \cr
-Ulrik Stervbo \tab \emph{Ruhr-Universität Bochum}
+\strong{Maintainer}: Nicolas Frerebeau \email{nicolas.frerebeau@u-bordeaux-montaigne.fr} (\href{https://orcid.org/0000-0001-5759-4944}{ORCID})
+
+Other contributors:
+\itemize{
+  \item Brice Lebrun (\href{https://orcid.org/0000-0001-7503-8685}{ORCID}) (Logo designer) [artist]
+  \item Vincent Arel-Bundock \email{vincent.arel-bundock@umontreal.ca} (\href{https://orcid.org/0000-0003-2042-7063}{ORCID}) [contributor]
+  \item Ulrik Stervbo \email{ulrik.stervbo@gmail.com} (\href{https://orcid.org/0000-0002-2831-8868}{ORCID}) [contributor]
+  \item Université Bordeaux Montaigne (03pbgwk21) [funder]
+  \item CNRS (02feahw73) [funder]
 }
 
-\strong{Package maintainer}
-
-Nicolas Frerebeau\cr
-\email{nicolas.frerebeau@u-bordeaux-montaigne.fr}
-
-Archéosciences Bordeaux (UMR 6034)\cr
-Maison de l'Archéologie\cr
-Université Bordeaux Montaigne\cr
-F-33607 Pessac cedex\cr
-France
 }
 \keyword{internal}

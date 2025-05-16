@@ -3,7 +3,7 @@
 \name{khroma-deprecated}
 \alias{khroma-deprecated}
 \alias{palette_size_range}
-\title{Deprecated Functions in dimensio}
+\title{Deprecated Functions in khroma}
 \usage{
 palette_size_range(range = c(1, 6), ...)
 }

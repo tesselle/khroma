@@ -1,4 +1,4 @@
-#' Deprecated Functions in dimensio
+#' Deprecated Functions in khroma
 #'
 #' These functions still work but will be removed (defunct) in the next version.
 #' @name khroma-deprecated
