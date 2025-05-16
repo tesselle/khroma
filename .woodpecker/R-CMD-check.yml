@@ -1,0 +1,23 @@
+when:
+  - event: [push, pull_request]
+
+steps:
+  - name: test
+    image: rocker/r2u:latest
+    commands:
+      # Install system dependencies
+      - apt update -y && apt install curl qpdf -y
+      # Install pandoc
+      - curl -s https://api.github.com/repos/jgm/pandoc/releases/latest | grep -wo "https.*-amd64.deb" | wget -qi -
+      - dpkg -i $(ls pandoc-*-amd64.deb) && rm $(ls pandoc-*-amd64.deb)
+      - |
+        R -q -s --no-save << "END"
+        # Install R dependencies
+        utils::install.packages(c("remotes", "rcmdcheck"))
+        remotes::install_deps(dependencies = TRUE)
+        # Run R CMD check
+        if (Sys.getenv("_R_CHECK_FORCE_SUGGESTS_", "") == "") Sys.setenv("_R_CHECK_FORCE_SUGGESTS_" = "false")
+        if (Sys.getenv("_R_CHECK_CRAN_INCOMING_", "") == "") Sys.setenv("_R_CHECK_CRAN_INCOMING_" = "false")
+        if (Sys.getenv("_R_CHECK_SYSTEM_CLOCK_", "") == "") Sys.setenv("_R_CHECK_SYSTEM_CLOCK_" = "false")
+        rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran"), build_args = "--no-manual", error_on = "warning", check_dir = "check")
+        END

@@ -4,6 +4,7 @@
 ^cran-comments\.md$
 ^CRAN-SUBMISSION$
 
+^\.woodpecker$
 ^\.covrignore$
 ^pkgdown$
 ^\_pkgdown\.yml$

@@ -1,7 +1,8 @@
-/.github export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
 
 /pkgdown export-ignore
 /revdep export-ignore
-codecov.yml export-ignore
+/.github export-ignore
+/.woodpecker export-ignore
+.covrignore export-ignore
