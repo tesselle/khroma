@@ -7,7 +7,6 @@ output:
     options:
       toc: true
       number_sections: true
-bibliography: bibliography.bib
 vignette: >
   %\VignetteIndexEntry{Paul Tol's Color Schemes}
   %\VignetteEngine{knitr::knitr}
