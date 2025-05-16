@@ -1,14 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: khroma 1.15.0.9000\n"
-"POT-Creation-Date: 2025-02-25 17:40+0100\n"
+"Project-Id-Version: khroma 1.16.0.9000\n"
+"POT-Creation-Date: 2025-05-16 16:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Nicolas Frerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: color.R:93
 msgid "%s values must be in [0,1]."
@@ -30,22 +31,30 @@ msgstr ""
 msgid "Some values were outside the color scale."
 msgstr ""
 
-#: palettes.R:168
-msgid "Only %d colors were specified (%d are required)."
-msgstr ""
-
-#: palettes.R:217
+#: palettes.R:219
 msgid "Consider specifying symbols manually:"
 msgstr ""
 
-#: palettes.R:218
+#: palettes.R:220
 msgid "more than 6 becomes difficult to discriminate."
 msgstr ""
 
-#: palettes.R:320
+#: palettes.R:322
 msgid "Discrete value supplied to continuous scale."
 msgstr ""
 
-#: palettes.R:327
+#: palettes.R:329
 msgid "Continuous value supplied to discrete scale."
 msgstr ""
+
+#: palettes.R:169
+msgid "Only %d color was specified"
+msgid_plural "Only %d colors were specified"
+msgstr[0] ""
+msgstr[1] ""
+
+#: palettes.R:170
+msgid "(%d is required)"
+msgid_plural "(%d are required)"
+msgstr[0] ""
+msgstr[1] ""

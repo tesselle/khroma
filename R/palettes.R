@@ -164,9 +164,11 @@ palette_color_discrete <- function(colors = NULL, domain = NULL,
       colors <- colors(n)
     }
 
-    if (length(colors) < n) {
-      msg <- tr_("Only %d colors were specified (%d are required).")
-      warning(sprintf(msg, length(colors), n), call. = FALSE)
+    m <- length(colors)
+    if (m < n) {
+      msg_m <- sprintf(ngettext(m, "Only %d color was specified", "Only %d colors were specified"), m)
+      msg_n <- sprintf(ngettext(n, "(%d is required)", "(%d are required)"), n)
+      warning(sprintf("%s %s.", msg_m, msg_n), call. = FALSE)
     }
     col <- colors[x]
     col[!OK] <- missing

@@ -1,12 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: khroma 1.15.0.9000\n"
-"POT-Creation-Date: 2025-02-25 17:40+0100\n"
+"POT-Creation-Date: 2025-05-16 16:49+0200\n"
 "PO-Revision-Date: 2025-02-25 17:34+0100\n"
 "Last-Translator: nfrerebeau <nicolas.frerebeau@u-bordeaux-montaigne.fr>\n"
-"Language-Team: French <https://translate.codeberg.org/projects/tesselle/"
+"Language-Team: French <https://translate.codeberg.org/projects/tesselle/>\n"
 "Language: fr\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,22 +31,30 @@ msgstr "%s doit être un vecteur de couleurs."
 msgid "Some values were outside the color scale."
 msgstr "Certaines valeurs étaient en dehors de la gamme de couleurs."
 
-#: palettes.R:168
-msgid "Only %d colors were specified (%d are required)."
-msgstr "Seules %d couleurs ont été spécifiées (%d sont requises)."
-
-#: palettes.R:217
+#: palettes.R:219
 msgid "Consider specifying symbols manually:"
 msgstr "Envisagez de spécifier les symboles manuellement :"
 
-#: palettes.R:218
+#: palettes.R:220
 msgid "more than 6 becomes difficult to discriminate."
 msgstr "il est difficile de distinguer plus de 6 niveaux."
 
-#: palettes.R:320
+#: palettes.R:322
 msgid "Discrete value supplied to continuous scale."
 msgstr "Valeur discrète fournie à une échelle continue."
 
-#: palettes.R:327
+#: palettes.R:329
 msgid "Continuous value supplied to discrete scale."
 msgstr "Valeur continue fournie à une échelle discrète."
+
+#: palettes.R:169
+msgid "Only %d color was specified"
+msgid_plural "Only %d colors were specified"
+msgstr[0] "Seule %d couleur a été spécifiée"
+msgstr[1] "Seules %d couleurs ont été spécifiées"
+
+#: palettes.R:170
+msgid "(%d is required)"
+msgid_plural "(%d are required)"
+msgstr[0] "(%d est requise)"
+msgstr[1] "(%d sont requises)"
