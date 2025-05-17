@@ -28,6 +28,7 @@ France
 Useful links:
 \itemize{
   \item \url{https://codeberg.org/tesselle/khroma}
+  \item \url{https://tesselle.r-universe.dev/khroma}
   \item \url{https://packages.tesselle.org/khroma/}
   \item Report bugs at \url{https://codeberg.org/tesselle/khroma/issues}
 }

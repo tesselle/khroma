@@ -26,6 +26,7 @@ Description: Color schemes ready for each type of data (qualitative,
     soils, etc.) are also implemented.
 License: GPL (>= 3)
 URL: https://codeberg.org/tesselle/khroma,
+    https://tesselle.r-universe.dev/khroma,
     https://packages.tesselle.org/khroma/
 BugReports: https://codeberg.org/tesselle/khroma/issues
 Depends: 
