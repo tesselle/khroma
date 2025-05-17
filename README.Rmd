@@ -18,8 +18,9 @@ Sys.setenv(LANGUAGE = "en") # Force locale
 # khroma <img width=120px src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
-[![Code coverage](https://packages.tesselle.org/khroma/coverage/badge.svg)](https://packages.tesselle.org/khroma/coverage/)
-[![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma)
+[![status-badge](https://ci.codeberg.org/api/badges/14693/status.svg)](https://ci.codeberg.org/repos/14693){.pkgdown-devel}
+[![Code coverage](https://packages.tesselle.org/khroma/coverage/badge.svg)](https://packages.tesselle.org/khroma/coverage/){.pkgdown-devel}
+[![Dependencies](https://tinyverse.netlify.app/badge/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-devel}
 
 [![r-universe](https://tesselle.r-universe.dev/badges/khroma)](https://tesselle.r-universe.dev/khroma){.pkgdown-devel}
 [![CRAN Version](https://www.r-pkg.org/badges/version/khroma)](https://cran.r-project.org/package=khroma){.pkgdown-release}
