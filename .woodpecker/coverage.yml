@@ -1,0 +1,55 @@
+when:
+  - event: [push]
+
+steps:
+  - name: test
+    image: rocker/r2u:latest
+    commands:
+      # Install system dependencies
+      - apt update -y && apt install git -y
+      - |
+        R -q -s --no-save << "END"
+        # Install R dependencies
+        install.packages(c("remotes", "DT", "htmltools"))
+        remotes::install_git("https://codeberg.org/tesselle/tekton")
+        remotes::install_deps(dependencies = TRUE)
+        # Test coverage
+        tekton::coverage(pkg = ".", dest_dir = "coverage")
+        END
+
+  - name: deploy
+    image: alpine/git
+    depends_on: test
+    environment:
+      USER:
+        from_secret: deploy_user
+      SERVER:
+        from_secret: deploy_host
+      REPO:
+        from_secret: deploy_repository
+      KEY:
+        from_secret: ssh_key
+    commands:
+      # Install ssh-agent if not already installed
+      - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+      # Run ssh-agent (inside the build environment)
+      - eval $(ssh-agent -s)
+      # Add the SSH key stored in KEY variable to the agent store
+      - echo "$${KEY}" | tr -d '\r' | ssh-add -
+      # Create the SSH directory and give it the right permissions
+      - mkdir -p ~/.ssh
+      - chmod 700 ~/.ssh
+      # Use ssh-keyscan to scan the keys of the server
+      - ssh-keyscan $${SERVER} >> ~/.ssh/known_hosts
+      - chmod 644 ~/.ssh/known_hosts
+      # Configure git
+      - git config --global user.email "packages@tesselle.org"
+      - git config --global user.name "tesselle"
+      # Git deploy
+      - mkdir -p ./tmp/htdocs/$${CI_REPO_NAME} && mv coverage ./tmp/htdocs/$${CI_REPO_NAME} && cd tmp
+      - git init -b main
+      - git remote add production ssh+git://$${USER}@$${SERVER}/packages.$${REPO}
+      - git add *
+      - git commit -m "Built $${CI_REPO_NAME}"
+      - git push -f production main
+      - ssh $${USER}@$${SERVER} deploy packages.$${REPO} main
