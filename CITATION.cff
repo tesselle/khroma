@@ -8,7 +8,7 @@ message: 'To cite package "khroma" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'khroma: Colour Schemes for Scientific Data Visualization'
-version: 1.16.0
+version: 1.17.0
 doi: 10.5281/zenodo.1472077
 identifiers:
 - description: The concept DOI.
@@ -104,7 +104,7 @@ preferred-citation:
   institution:
     name: Université Bordeaux Montaigne
     address: Pessac, France
-  notes: R package version 1.16.0
+  notes: R package version 1.17.0
   doi: 10.5281/zenodo.1472077
   url: https://packages.tesselle.org/khroma/
 repository: https://CRAN.R-project.org/package=khroma
@@ -236,6 +236,17 @@ references:
   year: '2025'
   doi: 10.32614/CRAN.package.ggraph
 - type: software
+  title: fontquiver
+  abstract: 'fontquiver: Set of Installed Fonts'
+  notes: Suggests
+  repository: https://CRAN.R-project.org/package=fontquiver
+  authors:
+  - family-names: Henry
+    given-names: Lionel
+    email: lionel@rstudio.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.fontquiver
+- type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
   notes: Suggests
@@ -305,6 +316,7 @@ references:
   authors:
   - family-names: Davis
     given-names: Glenn
+    email: gdavis@gluonics.com
   year: '2025'
   doi: 10.32614/CRAN.package.spacesXYZ
 - type: software
@@ -348,6 +360,7 @@ references:
     orcid: https://orcid.org/0000-0003-2042-7063
   year: '2025'
   doi: 10.32614/CRAN.package.tinysnapshot
+  version: '>= 0.2.0'
 - type: software
   title: tinytest
   abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'

@@ -1,4 +1,6 @@
-# khroma 1.16.0.9000
+# khroma 1.17.0
+## Enhancements
+* Upgrade to Scientific Colours Maps v8.
 
 # khroma 1.16.0
 ## Enhancements

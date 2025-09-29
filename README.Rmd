@@ -36,17 +36,7 @@ Sys.setenv(LANGUAGE = "en") # Force locale
 
 Color blindness affects a large number of individuals. When communicating scientific results color palettes must therefore be carefully chosen to be accessible to all readers.
 
-This R package provides an implementation of @okabe2008, @tol2021 and @crameri2018 color schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colors that are distinct for all people, including color-blind readers. This package also provides tools to simulate color-blindness and to test how well the colors of any palette are identifiable. To simulate color-blindness in production-ready R figures you may also be interested in the [**colorblindr**](https://github.com/clauswilke/colorblindr) package.
-
-@tol2021 and @crameri2018 offer carefully chosen schemes, ready for each type of data, with colors that are:
-
-* Distinct for all people, including color-blind readers,
-* Distinct from black and white,
-* Distinct on screen and paper,
-* Matching well together,
-* Citable and reproducible.
-
-See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
+This R package provides an implementation of @okabe2008, @tol2021 and @crameri2018 color schemes. These schemes are ready for each type of data (qualitative, diverging or sequential), with colors that are distinct for all people, including color-blind readers (see `vignette("tol")` and `vignette("crameri")` for a more complete overview). This package also provides tools to simulate color-blindness and to test how well the colors of any palette are identifiable.
 
 For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these color schemes may not be color-blind safe.
 
@@ -176,6 +166,10 @@ plot_scheme_colorblind(okabe(8))
 x <- scales::hue_pal()(8)
 plot_scheme_colorblind(x)
 ```
+
+## Related Works
+
+* [**colorblindr**](https://github.com/clauswilke/colorblindr) allows to simulate color-blindness in production-ready R figures.
 
 ## Contributing
 

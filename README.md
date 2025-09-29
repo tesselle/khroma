@@ -50,32 +50,18 @@ carefully chosen to be accessible to all readers.
 This R package provides an implementation of Okabe and Ito (2008), Tol
 (2021) and Crameri (2018) color schemes. These schemes are ready for
 each type of data (qualitative, diverging or sequential), with colors
-that are distinct for all people, including color-blind readers. This
-package also provides tools to simulate color-blindness and to test how
-well the colors of any palette are identifiable. To simulate
-color-blindness in production-ready R figures you may also be interested
-in the [**colorblindr**](https://github.com/clauswilke/colorblindr)
-package.
-
-Tol (2021) and Crameri (2018) offer carefully chosen schemes, ready for
-each type of data, with colors that are:
-
-- Distinct for all people, including color-blind readers,
-- Distinct from black and white,
-- Distinct on screen and paper,
-- Matching well together,
-- Citable and reproducible.
-
-See `vignette("tol")` and `vignette("crameri")` for a more complete
-overview.
+that are distinct for all people, including color-blind readers (see
+`vignette("tol")` and `vignette("crameri")` for a more complete
+overview). This package also provides tools to simulate color-blindness
+and to test how well the colors of any palette are identifiable.
 
 For specific uses, several scientific thematic schemes (geologic
 timescale, land cover, FAO soils, etc.) are implemented, but these color
 schemes may not be color-blind safe.
 
 All these color schemes are implemented for use with base R **graphics**
-or [**ggplot2**](https://github.com/tidyverse/ggplot2) and
-[**ggraph**](https://github.com/thomasp85/ggraph).
+or [**ggplot2**](https://cran.r-project.org/package=ggplot2) and
+[**ggraph**](https://cran.r-project.org/package=ggraph).
 
 ------------------------------------------------------------------------
 
@@ -84,7 +70,7 @@ To cite khroma in publications use:
 Frerebeau N (2025). *khroma: Colour Schemes for Scientific Data
 Visualization*. Université Bordeaux Montaigne, Pessac, France.
 <doi:10.5281/zenodo.1472077> <https://doi.org/10.5281/zenodo.1472077>, R
-package version 1.16.0, <https://packages.tesselle.org/khroma/>.
+package version 1.17.0, <https://packages.tesselle.org/khroma/>.
 
 This package is a part of the tesselle project
 <https://www.tesselle.org>.
@@ -116,7 +102,9 @@ library(khroma)
 ```
 
 <details>
+
 <summary>
+
 <strong>Available palettes</strong> (click to expand)
 </summary>
 
@@ -133,54 +121,59 @@ info()
 #> 7             roma   diverging 256    <NA>
 #> 8              bam   diverging 256    <NA>
 #> 9           vanimo   diverging 256    <NA>
-#> 10          oleron   diverging 256    <NA>
-#> 11          bukavu   diverging 256    <NA>
-#> 12             fes   diverging 256    <NA>
-#> 13           devon  sequential 256    <NA>
-#> 14         lajolla  sequential 256    <NA>
-#> 15          bamako  sequential 256    <NA>
-#> 16           davos  sequential 256    <NA>
-#> 17          bilbao  sequential 256    <NA>
-#> 18            nuuk  sequential 256    <NA>
-#> 19            oslo  sequential 256    <NA>
-#> 20           grayC  sequential 256    <NA>
-#> 21          hawaii  sequential 256    <NA>
-#> 22           lapaz  sequential 256    <NA>
-#> 23           tokyo  sequential 256    <NA>
-#> 24            buda  sequential 256    <NA>
-#> 25           acton  sequential 256    <NA>
-#> 26           turku  sequential 256    <NA>
-#> 27           imola  sequential 256    <NA>
-#> 28          batlow  sequential 256    <NA>
-#> 29         batlowW  sequential 256    <NA>
-#> 30         batlowK  sequential 256    <NA>
-#> 31           brocO  sequential 256    <NA>
-#> 32           corkO  sequential 256    <NA>
-#> 33            vikO  sequential 256    <NA>
-#> 34           romaO  sequential 256    <NA>
-#> 35            bamO  sequential 256    <NA>
-#> 36          bright qualitative   7    <NA>
-#> 37    highcontrast qualitative   3    <NA>
-#> 38         vibrant qualitative   7    <NA>
-#> 39           muted qualitative   9 #DDDDDD
-#> 40  mediumcontrast qualitative   6    <NA>
-#> 41            pale qualitative   6    <NA>
-#> 42            dark qualitative   6    <NA>
-#> 43           light qualitative   9    <NA>
-#> 44 discreterainbow qualitative  23 #777777
-#> 45          sunset   diverging  11 #FFFFFF
-#> 46       nightfall   diverging  17 #FFFFFF
-#> 47            BuRd   diverging   9 #FFEE99
-#> 48            PRGn   diverging   9 #FFEE99
-#> 49          YlOrBr  sequential   9 #888888
-#> 50      iridescent  sequential  23 #999999
-#> 51    incandescent  sequential  11 #888888
-#> 52   smoothrainbow  sequential  34 #666666
-#> 53        okabeito qualitative   8    <NA>
-#> 54   okabeitoblack qualitative   8    <NA>
-#> 55    stratigraphy qualitative 175    <NA>
-#> 56            soil qualitative  24    <NA>
-#> 57            land qualitative  14    <NA>
+#> 10         managua   diverging 256    <NA>
+#> 11          oleron   diverging 256    <NA>
+#> 12          bukavu   diverging 256    <NA>
+#> 13             fes   diverging 256    <NA>
+#> 14           navia  sequential 256    <NA>
+#> 15          naviaW  sequential 256    <NA>
+#> 16           devon  sequential 256    <NA>
+#> 17         glasgow  sequential 256    <NA>
+#> 18         lajolla  sequential 256    <NA>
+#> 19          bamako  sequential 256    <NA>
+#> 20           davos  sequential 256    <NA>
+#> 21          bilbao  sequential 256    <NA>
+#> 22            nuuk  sequential 256    <NA>
+#> 23            oslo  sequential 256    <NA>
+#> 24           grayC  sequential 256    <NA>
+#> 25          hawaii  sequential 256    <NA>
+#> 26           lapaz  sequential 256    <NA>
+#> 27          lipari  sequential 256    <NA>
+#> 28           tokyo  sequential 256    <NA>
+#> 29            buda  sequential 256    <NA>
+#> 30           acton  sequential 256    <NA>
+#> 31           turku  sequential 256    <NA>
+#> 32           imola  sequential 256    <NA>
+#> 33          batlow  sequential 256    <NA>
+#> 34         batlowW  sequential 256    <NA>
+#> 35         batlowK  sequential 256    <NA>
+#> 36           brocO  sequential 256    <NA>
+#> 37           corkO  sequential 256    <NA>
+#> 38            vikO  sequential 256    <NA>
+#> 39           romaO  sequential 256    <NA>
+#> 40            bamO  sequential 256    <NA>
+#> 41          bright qualitative   7    <NA>
+#> 42    highcontrast qualitative   3    <NA>
+#> 43         vibrant qualitative   7    <NA>
+#> 44           muted qualitative   9 #DDDDDD
+#> 45  mediumcontrast qualitative   6    <NA>
+#> 46            pale qualitative   6    <NA>
+#> 47            dark qualitative   6    <NA>
+#> 48           light qualitative   9    <NA>
+#> 49 discreterainbow qualitative  23 #777777
+#> 50          sunset   diverging  11 #FFFFFF
+#> 51       nightfall   diverging  17 #FFFFFF
+#> 52            BuRd   diverging   9 #FFEE99
+#> 53            PRGn   diverging   9 #FFEE99
+#> 54          YlOrBr  sequential   9 #888888
+#> 55      iridescent  sequential  23 #999999
+#> 56    incandescent  sequential  11 #888888
+#> 57   smoothrainbow  sequential  34 #666666
+#> 58        okabeito qualitative   8    <NA>
+#> 59   okabeitoblack qualitative   8    <NA>
+#> 60    stratigraphy qualitative 175    <NA>
+#> 61            soil qualitative  24    <NA>
+#> 62            land qualitative  14    <NA>
 ```
 
 </details>
@@ -277,6 +270,11 @@ plot_scheme_colorblind(x)
 ```
 
 <img src="man/figures/README-usage-colorblind2-2.png" style="display: block; margin: auto;" />
+
+## Related Works
+
+- [**colorblindr**](https://github.com/clauswilke/colorblindr) allows to
+  simulate color-blindness in production-ready R figures.
 
 ## Contributing
 

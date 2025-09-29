@@ -12,7 +12,7 @@ Color schemes ready for each type of data (qualitative, diverging or sequential)
 }
 \details{
 \tabular{ll}{
-\strong{Version} \tab 1.15.0 \cr
+\strong{Version} \tab 1.17.0 \cr
 \strong{License} \tab GPL-3 \cr
 \strong{CRAN DOI} \tab \doi{10.32614/CRAN.package.khroma} \cr
 \strong{Zenodo DOI} \tab \doi{10.5281/zenodo.1472077} \cr
@@ -28,8 +28,8 @@ France
 Useful links:
 \itemize{
   \item \url{https://codeberg.org/tesselle/khroma}
-  \item \url{https://tesselle.r-universe.dev/khroma}
   \item \url{https://packages.tesselle.org/khroma/}
+  \item \url{https://tesselle.r-universe.dev/khroma}
   \item Report bugs at \url{https://codeberg.org/tesselle/khroma/issues}
 }
 
@@ -42,8 +42,8 @@ Other contributors:
   \item Brice Lebrun (\href{https://orcid.org/0000-0001-7503-8685}{ORCID}) (Logo designer) [artist]
   \item Vincent Arel-Bundock \email{vincent.arel-bundock@umontreal.ca} (\href{https://orcid.org/0000-0003-2042-7063}{ORCID}) [contributor]
   \item Ulrik Stervbo \email{ulrik.stervbo@gmail.com} (\href{https://orcid.org/0000-0002-2831-8868}{ORCID}) [contributor]
-  \item Université Bordeaux Montaigne (03pbgwk21) [funder]
-  \item CNRS (02feahw73) [funder]
+  \item Université Bordeaux Montaigne (\href{https://ror.org/03pbgwk21}{ROR}) [funder]
+  \item CNRS (\href{https://ror.org/02feahw73}{ROR}) [funder]
 }
 
 }
