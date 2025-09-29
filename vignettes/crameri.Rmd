@@ -26,6 +26,7 @@ library(khroma)
 ```
 
 ## Introduction
+
 Crameri (2018) offers carefully chosen schemes, ready for mapping data, with colors that are:
 
 * Perceptually uniform,
@@ -34,7 +35,7 @@ Crameri (2018) offers carefully chosen schemes, ready for mapping data, with col
 * Readable as black and white print,
 * Citable & reproducible.
 
-All the scales presented in Crameri (2021) are implemented here, for use with base R **graphics**, [**ggplot2**](https://ggplot2.tidyverse.org/) or [**ggraph**](https://ggraph.data-imaginist.com/).
+All the scales presented in Crameri (2023) are implemented here, for use with base R **graphics**, [**ggplot2**](https://cran.r-project.org/package=ggplot2) and [**ggraph**](https://cran.r-project.org/package=ggraph).
 
 ## Diverging data
 

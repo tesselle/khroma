@@ -26,6 +26,7 @@ library(khroma)
 ```
 
 ## Introduction
+
 Tol (2021) offers carefully chosen schemes, ready for each type of data, with colors that are:
 
 * Distinct for all people, including color-blind readers,
@@ -33,9 +34,10 @@ Tol (2021) offers carefully chosen schemes, ready for each type of data, with co
 * Distinct on screen and paper,
 * Matching well together.
 
-All the scales presented in Paul Tol's technical note (issue 3.2, 2021-08-18) are implemented here, for use with base R **graphics**, [**ggplot2**](https://ggplot2.tidyverse.org/) or [**ggraph**](https://ggraph.data-imaginist.com/).
+All the scales presented in Paul Tol's technical note (issue 3.2, 2021-08-18) are implemented here, for use with base R **graphics**, [**ggplot2**](https://cran.r-project.org/package=ggplot2) and [**ggraph**](https://cran.r-project.org/package=ggraph).
 
 ## Qualitative data
+
 According to Paul Tol's technical note, the *bright*, *contrast*, *vibrant* and *muted* color schemes are color-blind safe.
 
 The *light* color scheme is reasonably distinct for both normal or color-blind vision and is intended to fill labelled cells.
@@ -101,6 +103,7 @@ plot_scheme(light(9), colours = TRUE, names = TRUE, size = 0.9)
 ```
 
 ## Diverging data
+
 If more colors than defined are needed from a given scheme, the color coordinates are linearly interpolated to provide a continuous version of the scheme.
 
 | Scheme      | Num. of colors  | Bad data |
@@ -135,6 +138,7 @@ plot_scheme(PRGn(9), colours = TRUE, size = 0.9)
 ```
 
 ## Sequential data
+
 If more colors than defined are needed from a given scheme, the color coordinates are linearly interpolated to provide a continuous version of the scheme, with the exception of the *discrete rainbow* scheme (see below).
 
 | Scheme             | Num. of colors  | Bad data |

@@ -50,7 +50,7 @@ See `vignette("tol")` and `vignette("crameri")` for a more complete overview.
 
 For specific uses, several scientific thematic schemes (geologic timescale, land cover, FAO soils, etc.) are implemented, but these color schemes may not be color-blind safe.
 
-All these color schemes are implemented for use with base R **graphics** or [**ggplot2**](https://github.com/tidyverse/ggplot2) and [**ggraph**](https://github.com/thomasp85/ggraph).
+All these color schemes are implemented for use with base R **graphics** or [**ggplot2**](https://cran.r-project.org/package=ggplot2) and [**ggraph**](https://cran.r-project.org/package=ggraph).
 
 ---
 
