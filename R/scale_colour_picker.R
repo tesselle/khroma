@@ -79,7 +79,7 @@ scale_edge_fill_picker <- function(..., palette = "YlOrBr") {
 #'  or [ggplot2::continuous_scale()], used respectively for qualitative data
 #'  and diverging/sequential data.
 #' @return A [discrete][ggplot2::discrete_scale()]
-#'  or [continuous][ggplot2:continuous_scale()] scale.
+#'  or [continuous][ggplot2::continuous_scale()] scale.
 #' @author N. Frerebeau
 #' @keywords internal
 #' @noRd
