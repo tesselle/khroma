@@ -7,8 +7,8 @@
 \alias{scale_fill_romaO}
 \title{Fabio Crameri's \emph{romaO} Cyclic Color Scheme}
 \source{
-Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
-\doi{10.5281/zenodo.4491293}
+Crameri, F. (2023). Scientific colour maps. \emph{Zenodo}, v8.0.1.
+\doi{10.5281/zenodo.1243862}
 }
 \usage{
 scale_colour_romaO(
@@ -64,20 +64,21 @@ scheme.
 
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
-\code{broc}      \tab 256      \cr
-\code{cork}      \tab 256      \cr
-\code{vik}       \tab 256      \cr
-\code{lisbon}    \tab 256      \cr
-\code{tofino}    \tab 256      \cr
-\code{berlin}    \tab 256      \cr
-\code{roma}      \tab 256      \cr
 \code{bam}       \tab 256      \cr
-\code{vanimo}    \tab 256      \cr
-\code{brocO}*    \tab 256      \cr
-\code{corkO}*    \tab 256      \cr
-\code{vikO}*     \tab 256      \cr
-\code{romaO}*    \tab 256      \cr
 \code{bamO}*     \tab 256      \cr
+\code{berlin}    \tab 256      \cr
+\code{broc}      \tab 256      \cr
+\code{brocO}*    \tab 256      \cr
+\code{cork}      \tab 256      \cr
+\code{corkO}*    \tab 256      \cr
+\code{lisbon}    \tab 256      \cr
+\code{managua}   \tab 256      \cr
+\code{roma}      \tab 256      \cr
+\code{romaO}*    \tab 256      \cr
+\code{tofino}    \tab 256      \cr
+\code{vanimo}    \tab 256      \cr
+\code{vik}       \tab 256      \cr
+\code{vikO}*     \tab 256      \cr
 }
 *: cyclic color schemes.
 }
@@ -128,12 +129,17 @@ Other Fabio Crameri's color schemes:
 \code{\link{scale_crameri_davos}},
 \code{\link{scale_crameri_devon}},
 \code{\link{scale_crameri_fes}},
+\code{\link{scale_crameri_glasgow}},
 \code{\link{scale_crameri_grayC}},
 \code{\link{scale_crameri_hawaii}},
 \code{\link{scale_crameri_imola}},
 \code{\link{scale_crameri_lajolla}},
 \code{\link{scale_crameri_lapaz}},
+\code{\link{scale_crameri_lipari}},
 \code{\link{scale_crameri_lisbon}},
+\code{\link{scale_crameri_managua}},
+\code{\link{scale_crameri_navia}},
+\code{\link{scale_crameri_naviaW}},
 \code{\link{scale_crameri_nuuk}},
 \code{\link{scale_crameri_oleron}},
 \code{\link{scale_crameri_oslo}},

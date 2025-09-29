@@ -38,6 +38,18 @@ All the scales presented in Crameri (2021) are implemented here, for use with ba
 
 ## Diverging data
 
+### *bam*
+```{r crameri_div_bam, fig.height=2, fig.width=7}
+bam <- color("bam")
+plot(bam(256))
+```
+
+### *berlin*
+```{r crameri_div_berlin, fig.height=2, fig.width=7}
+berlin <- color("berlin")
+plot(berlin(256))
+```
+
 ### *broc*
 ```{r crameri_div_broc, fig.height=2, fig.width=7}
 broc <- color("broc")
@@ -50,28 +62,16 @@ cork <- color("cork")
 plot(cork(256))
 ```
 
-### *vik*
-```{r crameri_div_vik, fig.height=2, fig.width=7}
-vik <- color("vik")
-plot(vik(256))
-```
-
 ### *lisbon*
 ```{r crameri_div_lisbon, fig.height=2, fig.width=7}
 lisbon <- color("lisbon")
 plot(lisbon(256))
 ```
 
-### *tofino*
-```{r crameri_div_tofino, fig.height=2, fig.width=7}
-tofino <- color("tofino")
-plot(tofino(256))
-```
-
-### *berlin*
-```{r crameri_div_berlin, fig.height=2, fig.width=7}
-berlin <- color("berlin")
-plot(berlin(256))
+### *managua*
+```{r crameri_seq_managua, fig.height=2, fig.width=7}
+managua <- color("managua")
+plot(managua(256))
 ```
 
 ### *roma*
@@ -80,10 +80,10 @@ roma <- color("roma")
 plot(roma(256))
 ```
 
-### *bam*
-```{r crameri_div_bam, fig.height=2, fig.width=7}
-bam <- color("bam")
-plot(bam(256))
+### *tofino*
+```{r crameri_div_tofino, fig.height=2, fig.width=7}
+tofino <- color("tofino")
+plot(tofino(256))
 ```
 
 ### *vanimo*
@@ -92,7 +92,25 @@ vanimo <- color("vanimo")
 plot(vanimo(256))
 ```
 
+### *vik*
+```{r crameri_div_vik, fig.height=2, fig.width=7}
+vik <- color("vik")
+plot(vik(256))
+```
+
 ## Sequential data
+
+### *acton*
+```{r crameri_seq_acton, fig.height=2, fig.width=7}
+acton <- color("acton")
+plot(acton(256))
+```
+
+### *bamako*
+```{r crameri_seq_bamako, fig.height=2, fig.width=7}
+bamako <- color("bamako")
+plot(bamako(256))
+```
 
 ### *batlow*
 ```{r crameri_seq_batlow, fig.height=2, fig.width=7}
@@ -112,22 +130,16 @@ batlowK <- color("batlowK")
 plot(batlowK(256))
 ```
 
-### *devon*
-```{r crameri_seq_devon, fig.height=2, fig.width=7}
-devon <- color("devon")
-plot(devon(256))
+### *bilbao*
+```{r crameri_seq_bilbao, fig.height=2, fig.width=7}
+bilbao <- color("bilbao")
+plot(bilbao(256))
 ```
 
-### *lajolla*
-```{r crameri_seq_lajolla, fig.height=2, fig.width=7}
-lajolla <- color("lajolla")
-plot(lajolla(256))
-```
-
-### *bamako*
-```{r crameri_seq_bamako, fig.height=2, fig.width=7}
-bamako <- color("bamako")
-plot(bamako(256))
+### *buda*
+```{r crameri_seq_buda, fig.height=2, fig.width=7}
+buda <- color("buda")
+plot(buda(256))
 ```
 
 ### *davos*
@@ -136,22 +148,16 @@ davos <- color("davos")
 plot(davos(256))
 ```
 
-### *bilbao*
-```{r crameri_seq_bilbao, fig.height=2, fig.width=7}
-bilbao <- color("bilbao")
-plot(bilbao(256))
+### *devon*
+```{r crameri_seq_devon, fig.height=2, fig.width=7}
+devon <- color("devon")
+plot(devon(256))
 ```
 
-### *nuuk*
-```{r crameri_seq_nuuk, fig.height=2, fig.width=7}
-nuuk <- color("nuuk")
-plot(nuuk(256))
-```
-
-### *oslo*
-```{r crameri_seq_oslo, fig.height=2, fig.width=7}
-oslo <- color("oslo")
-plot(oslo(256))
+### *glasgow*
+```{r crameri_seq_glasgow, fig.height=2, fig.width=7}
+glasgow <- color("glasgow")
+plot(glasgow(256))
 ```
 
 ### *grayC*
@@ -166,10 +172,52 @@ hawaii <- color("hawaii")
 plot(hawaii(256))
 ```
 
+### *imola*
+```{r crameri_seq_imola, fig.height=2, fig.width=7}
+imola <- color("imola")
+plot(imola(256))
+```
+
+### *lajolla*
+```{r crameri_seq_lajolla, fig.height=2, fig.width=7}
+lajolla <- color("lajolla")
+plot(lajolla(256))
+```
+
 ### *lapaz*
 ```{r crameri_seq_lapaz, fig.height=2, fig.width=7}
 lapaz <- color("lapaz")
 plot(lapaz(256))
+```
+
+### *lipari*
+```{r crameri_seq_lipari, fig.height=2, fig.width=7}
+lipari <- color("lipari")
+plot(lipari(256))
+```
+
+### *navia*
+```{r crameri_seq_navia, fig.height=2, fig.width=7}
+navia <- color("navia")
+plot(navia(256))
+```
+
+### *naviaW*
+```{r crameri_seq_naviaW, fig.height=2, fig.width=7}
+naviaW <- color("naviaW")
+plot(naviaW(256))
+```
+
+### *nuuk*
+```{r crameri_seq_nuuk, fig.height=2, fig.width=7}
+nuuk <- color("nuuk")
+plot(nuuk(256))
+```
+
+### *oslo*
+```{r crameri_seq_oslo, fig.height=2, fig.width=7}
+oslo <- color("oslo")
+plot(oslo(256))
 ```
 
 ### *tokyo*
@@ -178,37 +226,13 @@ tokyo <- color("tokyo")
 plot(tokyo(256))
 ```
 
-### *buda*
-```{r crameri_seq_buda, fig.height=2, fig.width=7}
-buda <- color("buda")
-plot(buda(256))
-```
-
-### *acton*
-```{r crameri_seq_acton, fig.height=2, fig.width=7}
-acton <- color("acton")
-plot(acton(256))
-```
-
 ### *turku*
 ```{r crameri_seq_turku, fig.height=2, fig.width=7}
 turku <- color("turku")
 plot(turku(256))
 ```
 
-### *imola*
-```{r crameri_seq_imola, fig.height=2, fig.width=7}
-imola <- color("imola")
-plot(imola(256))
-```
-
 ## Multi-sequential data
-
-### *oleron*
-```{r crameri_seq_oleron, fig.height=2, fig.width=7}
-oleron <- color("oleron")
-plot(oleron(256))
-```
 
 ### *bukavu*
 ```{r crameri_seq_bukavu, fig.height=2, fig.width=7}
@@ -222,8 +246,14 @@ fes <- color("fes")
 plot(fes(256))
 ```
 
+### *oleron*
+```{r crameri_seq_oleron, fig.height=2, fig.width=7}
+oleron <- color("oleron")
+plot(oleron(256))
+```
+
 ## References
 
 Crameri, F. 2018. "Geodynamic Diagnostics, Scientific Visualisation and StagLab 3.0." *Geoscientific Model Development* 11 (6): 2541-2562. DOI: [10.5194/gmd-11-2541-2018](https://doi.org/10.5194/gmd-11-2541-2018).
 
-Crameri, F. 2021. *Scientific Colour Maps* (version 7.0.0). Zenodo. DOI: [10.5281/zenodo.4491293](https://doi.org/10.5281/zenodo.4491293).
+Crameri, F. 2023. *Scientific Colour Maps* (version 8.0.1). Zenodo. DOI: [10.5281/zenodo.1243862](https://doi.org/10.5281/zenodo.1243862).

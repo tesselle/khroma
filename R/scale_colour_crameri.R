@@ -28,8 +28,8 @@ NULL
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -113,8 +113,8 @@ scale_edge_fill_broc <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -198,8 +198,8 @@ scale_edge_fill_cork <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -283,8 +283,8 @@ scale_edge_fill_vik <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -368,8 +368,8 @@ scale_edge_fill_lisbon <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -453,8 +453,8 @@ scale_edge_fill_tofino <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -538,8 +538,8 @@ scale_edge_fill_berlin <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -623,8 +623,8 @@ scale_edge_fill_roma <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -708,8 +708,8 @@ scale_edge_fill_bam <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family diverging color schemes
@@ -778,6 +778,91 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+## managua ---------------------------------------------------------------------
+#' Fabio Crameri's *managua* Diverging Color Scheme
+#'
+#' @inheritParams scale_crameri_broc
+#' @inheritSection crameri Diverging Color Schemes
+#' @return A [continuous][ggplot2::continuous_scale] scale.
+#' @references
+#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+#'  \doi{10.5194/gmd-11-2541-2018}
+#'
+#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+#'  science communication. *Nature Communications*, 11, 5444.
+#'  \doi{10.1038/s41467-020-19160-7}
+#' @source
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
+#' @example inst/examples/ex-crameri-diverging.R
+#' @author N. Frerebeau
+#' @family diverging color schemes
+#' @family Fabio Crameri's color schemes
+#' @name scale_crameri_managua
+#' @rdname scale_crameri_managua
+NULL
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_colour_managua <- function(..., reverse = FALSE, range = c(0, 1),
+                                midpoint = 0, discrete = FALSE,
+                                aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "managua", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "managua", reverse = reverse, range = range,
+                     midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_color_managua <- scale_colour_managua
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_fill_managua <- function(..., reverse = FALSE, range = c(0, 1),
+                              midpoint = 0, discrete = FALSE,
+                              aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "managua", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "managua", reverse = reverse, range = range,
+                     midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_edge_colour_managua <- function(..., reverse = FALSE, range = c(0, 1),
+                                     midpoint = 0, discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "managua", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "managua", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_edge_color_managua <- scale_edge_colour_managua
+
+#' @export
+#' @rdname scale_crameri_managua
+scale_edge_fill_managua <- function(..., reverse = FALSE, range = c(0, 1),
+                                   midpoint = 0, discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "managua", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "managua", guide = "edge_colourbar",
+                     reverse = reverse, range = range, midpoint = midpoint, ...)
+  }
+}
+
 # Sequential ===================================================================
 ## batlow ----------------------------------------------------------------------
 #' Fabio Crameri's *batlow* Sequential Color Scheme
@@ -802,8 +887,8 @@ scale_edge_fill_vanimo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -885,8 +970,8 @@ scale_edge_fill_batlow <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -968,8 +1053,8 @@ scale_edge_fill_batlowW <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1051,8 +1136,8 @@ scale_edge_fill_batlowK <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1134,8 +1219,8 @@ scale_edge_fill_devon <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1217,8 +1302,8 @@ scale_edge_fill_lajolla <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1300,8 +1385,8 @@ scale_edge_fill_bamako <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1383,8 +1468,8 @@ scale_edge_fill_davos <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1466,8 +1551,8 @@ scale_edge_fill_bilbao <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1549,8 +1634,8 @@ scale_edge_fill_nuuk <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1632,8 +1717,8 @@ scale_edge_fill_oslo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1715,8 +1800,8 @@ scale_edge_fill_grayC <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1798,8 +1883,8 @@ scale_edge_fill_hawaii <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1881,8 +1966,8 @@ scale_edge_fill_lapaz <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -1964,8 +2049,8 @@ scale_edge_fill_tokyo <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -2047,8 +2132,8 @@ scale_edge_fill_buda <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -2130,8 +2215,8 @@ scale_edge_fill_acton <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -2213,8 +2298,8 @@ scale_edge_fill_turku <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-sequential.R
 #' @author N. Frerebeau
 #' @family sequential color schemes
@@ -2281,6 +2366,338 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
   }
 }
 
+## glasgow ---------------------------------------------------------------------
+#' Fabio Crameri's *glasgow* Sequential Color Scheme
+#'
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
+#' @return A [continuous][ggplot2::continuous_scale] scale.
+#' @references
+#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+#'  \doi{10.5194/gmd-11-2541-2018}
+#'
+#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+#'  science communication. *Nature Communications*, 11, 5444.
+#'  \doi{10.1038/s41467-020-19160-7}
+#' @source
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
+#' @example inst/examples/ex-crameri-sequential.R
+#' @author N. Frerebeau
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
+#' @name scale_crameri_glasgow
+#' @rdname scale_crameri_glasgow
+NULL
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_colour_glasgow <- function(..., reverse = FALSE, range = c(0, 1),
+                                 discrete = FALSE, aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "glasgow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "glasgow", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_color_glasgow <- scale_colour_glasgow
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_fill_glasgow <- function(..., reverse = FALSE, range = c(0, 1),
+                               discrete = FALSE, aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "glasgow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "glasgow", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_edge_colour_glasgow <- function(..., reverse = FALSE, range = c(0, 1),
+                                      discrete = FALSE,
+                                      aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "glasgow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "glasgow", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_edge_color_glasgow <- scale_edge_colour_glasgow
+
+#' @export
+#' @rdname scale_crameri_glasgow
+scale_edge_fill_glasgow <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "glasgow", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "glasgow", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+## lipari ----------------------------------------------------------------------
+#' Fabio Crameri's *lipari* Sequential Color Scheme
+#'
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
+#' @return A [continuous][ggplot2::continuous_scale] scale.
+#' @references
+#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+#'  \doi{10.5194/gmd-11-2541-2018}
+#'
+#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+#'  science communication. *Nature Communications*, 11, 5444.
+#'  \doi{10.1038/s41467-020-19160-7}
+#' @source
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
+#' @example inst/examples/ex-crameri-sequential.R
+#' @author N. Frerebeau
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
+#' @name scale_crameri_lipari
+#' @rdname scale_crameri_lipari
+NULL
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_colour_lipari <- function(..., reverse = FALSE, range = c(0, 1),
+                                discrete = FALSE, aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lipari", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lipari", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_color_lipari <- scale_colour_lipari
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_fill_lipari <- function(..., reverse = FALSE, range = c(0, 1),
+                              discrete = FALSE, aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lipari", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lipari", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_edge_colour_lipari <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lipari", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lipari", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_edge_color_lipari <- scale_edge_colour_lipari
+
+#' @export
+#' @rdname scale_crameri_lipari
+scale_edge_fill_lipari <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "lipari", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "lipari", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+## navia -----------------------------------------------------------------------
+#' Fabio Crameri's *navia* Sequential Color Scheme
+#'
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
+#' @return A [continuous][ggplot2::continuous_scale] scale.
+#' @references
+#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+#'  \doi{10.5194/gmd-11-2541-2018}
+#'
+#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+#'  science communication. *Nature Communications*, 11, 5444.
+#'  \doi{10.1038/s41467-020-19160-7}
+#' @source
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
+#' @example inst/examples/ex-crameri-sequential.R
+#' @author N. Frerebeau
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
+#' @name scale_crameri_navia
+#' @rdname scale_crameri_navia
+NULL
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_colour_navia <- function(..., reverse = FALSE, range = c(0, 1),
+                               discrete = FALSE, aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "navia", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "navia", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_color_navia <- scale_colour_navia
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_fill_navia <- function(..., reverse = FALSE, range = c(0, 1),
+                             discrete = FALSE, aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "navia", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "navia", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_edge_colour_navia <- function(..., reverse = FALSE, range = c(0, 1),
+                                    discrete = FALSE,
+                                    aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "navia", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "navia", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_edge_color_navia <- scale_edge_colour_navia
+
+#' @export
+#' @rdname scale_crameri_navia
+scale_edge_fill_navia <- function(..., reverse = FALSE, range = c(0, 1),
+                                  discrete = FALSE,
+                                  aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "navia", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "navia", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+## naviaW ----------------------------------------------------------------------
+#' Fabio Crameri's *naviaW* Sequential Color Scheme
+#'
+#' @inheritParams scale_crameri_batlow
+#' @inheritSection crameri Sequential Color Schemes
+#' @return A [continuous][ggplot2::continuous_scale] scale.
+#' @references
+#'  Crameri, F. (2018). Geodynamic diagnostics, scientific visualisation and
+#'  StagLab 3.0. *Geosci. Model Dev.*, 11, 2541-2562.
+#'  \doi{10.5194/gmd-11-2541-2018}
+#'
+#'  Crameri, F., Shephard, G. E. & Heron, P. J. (2020). The misuse of colour in
+#'  science communication. *Nature Communications*, 11, 5444.
+#'  \doi{10.1038/s41467-020-19160-7}
+#' @source
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
+#' @example inst/examples/ex-crameri-sequential.R
+#' @author N. Frerebeau
+#' @family sequential color schemes
+#' @family Fabio Crameri's color schemes
+#' @name scale_crameri_naviaW
+#' @rdname scale_crameri_naviaW
+NULL
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_colour_naviaW <- function(..., reverse = FALSE, range = c(0, 1),
+                                discrete = FALSE, aesthetics = "colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "naviaW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "naviaW", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_color_naviaW <- scale_colour_naviaW
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_fill_naviaW <- function(..., reverse = FALSE, range = c(0, 1),
+                              discrete = FALSE, aesthetics = "fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "naviaW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "naviaW", reverse = reverse,
+                     range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_edge_colour_naviaW <- function(..., reverse = FALSE, range = c(0, 1),
+                                     discrete = FALSE,
+                                     aesthetics = "edge_colour") {
+  if (discrete) {
+    scale_discrete(aesthetics, "naviaW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "naviaW", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_edge_color_naviaW <- scale_edge_colour_naviaW
+
+#' @export
+#' @rdname scale_crameri_naviaW
+scale_edge_fill_naviaW <- function(..., reverse = FALSE, range = c(0, 1),
+                                   discrete = FALSE,
+                                   aesthetics = "edge_fill") {
+  if (discrete) {
+    scale_discrete(aesthetics, "naviaW", reverse = reverse, ...)
+  } else {
+    scale_continuous(aesthetics, "naviaW", guide = "edge_colourbar",
+                     reverse = reverse, range = range, ...)
+  }
+}
+
 # Multi Sequential =============================================================
 ## oleron ----------------------------------------------------------------------
 #' Fabio Crameri's *oleron* Multi-Sequential Color Scheme
@@ -2305,8 +2722,8 @@ scale_edge_fill_imola <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
 #' @family multi sequential color schemes
@@ -2350,8 +2767,8 @@ scale_fill_oleron <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
 #' @family multi sequential color schemes
@@ -2395,8 +2812,8 @@ scale_fill_bukavu <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-multisequential.R
 #' @author N. Frerebeau
 #' @family multi sequential color schemes
@@ -2449,8 +2866,8 @@ scale_fill_fes <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family cyclic color schemes
@@ -2500,8 +2917,8 @@ scale_fill_brocO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family cyclic color schemes
@@ -2551,8 +2968,8 @@ scale_fill_corkO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family cyclic color schemes
@@ -2602,8 +3019,8 @@ scale_fill_vikO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family cyclic color schemes
@@ -2653,8 +3070,8 @@ scale_fill_romaO <- function(..., reverse = FALSE, range = c(0, 1),
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @example inst/examples/ex-crameri-diverging.R
 #' @author N. Frerebeau
 #' @family cyclic color schemes

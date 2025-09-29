@@ -10,8 +10,8 @@
 \alias{scale_edge_fill_hawaii}
 \title{Fabio Crameri's \emph{hawaii} Sequential Color Scheme}
 \source{
-Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
-\doi{10.5281/zenodo.4491293}
+Crameri, F. (2023). Scientific colour maps. \emph{Zenodo}, v8.0.1.
+\doi{10.5281/zenodo.1243862}
 }
 \usage{
 scale_colour_hawaii(
@@ -91,27 +91,30 @@ scheme.
 
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
+\code{acton}     \tab 256      \cr
+\code{bamako}    \tab 256      \cr
 \code{batlow}    \tab 256      \cr
 \code{batlowW}   \tab 256      \cr
 \code{batlowK}   \tab 256      \cr
-\code{devon}     \tab 256      \cr
-\code{lajolla}   \tab 256      \cr
-\code{bamako}    \tab 256      \cr
-\code{davos}     \tab 256      \cr
 \code{bilbao}    \tab 256      \cr
-\code{nuuk}      \tab 256      \cr
-\code{oslo}      \tab 256      \cr
+\code{buda}      \tab 256      \cr
+\code{bukavu}*   \tab 256      \cr
+\code{davos}     \tab 256      \cr
+\code{devon}     \tab 256      \cr
+\code{fes}*      \tab 256      \cr
+\code{glasgow}   \tab 256      \cr
 \code{grayC}     \tab 256      \cr
 \code{hawaii}    \tab 256      \cr
-\code{lapaz}     \tab 256      \cr
-\code{tokyo}     \tab 256      \cr
-\code{buda}      \tab 256      \cr
-\code{acton}     \tab 256      \cr
-\code{turku}     \tab 256      \cr
 \code{imola}     \tab 256      \cr
+\code{lajolla}   \tab 256      \cr
+\code{lapaz}     \tab 256      \cr
+\code{navia}     \tab 256      \cr
+\code{naviaW}    \tab 256      \cr
+\code{nuuk}      \tab 256      \cr
 \code{oleron}*   \tab 256      \cr
-\code{bukavu}*   \tab 256      \cr
-\code{fes}*      \tab 256      \cr
+\code{oslo}      \tab 256      \cr
+\code{tokyo}     \tab 256      \cr
+\code{turku}     \tab 256      \cr
 }
 *: multisequential color schemes.
 }
@@ -151,10 +154,14 @@ Other sequential color schemes:
 \code{\link{scale_crameri_buda}},
 \code{\link{scale_crameri_davos}},
 \code{\link{scale_crameri_devon}},
+\code{\link{scale_crameri_glasgow}},
 \code{\link{scale_crameri_grayC}},
 \code{\link{scale_crameri_imola}},
 \code{\link{scale_crameri_lajolla}},
 \code{\link{scale_crameri_lapaz}},
+\code{\link{scale_crameri_lipari}},
+\code{\link{scale_crameri_navia}},
+\code{\link{scale_crameri_naviaW}},
 \code{\link{scale_crameri_nuuk}},
 \code{\link{scale_crameri_oslo}},
 \code{\link{scale_crameri_tokyo}},
@@ -183,11 +190,16 @@ Other Fabio Crameri's color schemes:
 \code{\link{scale_crameri_davos}},
 \code{\link{scale_crameri_devon}},
 \code{\link{scale_crameri_fes}},
+\code{\link{scale_crameri_glasgow}},
 \code{\link{scale_crameri_grayC}},
 \code{\link{scale_crameri_imola}},
 \code{\link{scale_crameri_lajolla}},
 \code{\link{scale_crameri_lapaz}},
+\code{\link{scale_crameri_lipari}},
 \code{\link{scale_crameri_lisbon}},
+\code{\link{scale_crameri_managua}},
+\code{\link{scale_crameri_navia}},
+\code{\link{scale_crameri_naviaW}},
 \code{\link{scale_crameri_nuuk}},
 \code{\link{scale_crameri_oleron}},
 \code{\link{scale_crameri_oslo}},

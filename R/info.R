@@ -137,20 +137,21 @@ NULL
 #'
 #'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
-#'   `broc`      \tab 256      \cr
-#'   `cork`      \tab 256      \cr
-#'   `vik`       \tab 256      \cr
-#'   `lisbon`    \tab 256      \cr
-#'   `tofino`    \tab 256      \cr
-#'   `berlin`    \tab 256      \cr
-#'   `roma`      \tab 256      \cr
 #'   `bam`       \tab 256      \cr
-#'   `vanimo`    \tab 256      \cr
-#'   `brocO`*    \tab 256      \cr
-#'   `corkO`*    \tab 256      \cr
-#'   `vikO`*     \tab 256      \cr
-#'   `romaO`*    \tab 256      \cr
 #'   `bamO`*     \tab 256      \cr
+#'   `berlin`    \tab 256      \cr
+#'   `broc`      \tab 256      \cr
+#'   `brocO`*    \tab 256      \cr
+#'   `cork`      \tab 256      \cr
+#'   `corkO`*    \tab 256      \cr
+#'   `lisbon`    \tab 256      \cr
+#'   `managua`   \tab 256      \cr
+#'   `roma`      \tab 256      \cr
+#'   `romaO`*    \tab 256      \cr
+#'   `tofino`    \tab 256      \cr
+#'   `vanimo`    \tab 256      \cr
+#'   `vik`       \tab 256      \cr
+#'   `vikO`*     \tab 256      \cr
 #'  }
 #'  *: cyclic color schemes.
 #' @section Sequential Color Schemes:
@@ -160,27 +161,30 @@ NULL
 #'
 #'  \tabular{ll}{
 #'   **Palette** \tab **Max.** \cr
+#'   `acton`     \tab 256      \cr
+#'   `bamako`    \tab 256      \cr
 #'   `batlow`    \tab 256      \cr
 #'   `batlowW`   \tab 256      \cr
 #'   `batlowK`   \tab 256      \cr
-#'   `devon`     \tab 256      \cr
-#'   `lajolla`   \tab 256      \cr
-#'   `bamako`    \tab 256      \cr
-#'   `davos`     \tab 256      \cr
 #'   `bilbao`    \tab 256      \cr
-#'   `nuuk`      \tab 256      \cr
-#'   `oslo`      \tab 256      \cr
+#'   `buda`      \tab 256      \cr
+#'   `bukavu`*   \tab 256      \cr
+#'   `davos`     \tab 256      \cr
+#'   `devon`     \tab 256      \cr
+#'   `fes`*      \tab 256      \cr
+#'   `glasgow`   \tab 256      \cr
 #'   `grayC`     \tab 256      \cr
 #'   `hawaii`    \tab 256      \cr
-#'   `lapaz`     \tab 256      \cr
-#'   `tokyo`     \tab 256      \cr
-#'   `buda`      \tab 256      \cr
-#'   `acton`     \tab 256      \cr
-#'   `turku`     \tab 256      \cr
 #'   `imola`     \tab 256      \cr
+#'   `lajolla`   \tab 256      \cr
+#'   `lapaz`     \tab 256      \cr
+#'   `navia`     \tab 256      \cr
+#'   `naviaW`    \tab 256      \cr
+#'   `nuuk`      \tab 256      \cr
 #'   `oleron`*   \tab 256      \cr
-#'   `bukavu`*   \tab 256      \cr
-#'   `fes`*      \tab 256      \cr
+#'   `oslo`      \tab 256      \cr
+#'   `tokyo`     \tab 256      \cr
+#'   `turku`     \tab 256      \cr
 #'  }
 #'  *: multisequential color schemes.
 #' @references
@@ -192,8 +196,8 @@ NULL
 #'  science communication. *Nature Communications*, 11, 5444.
 #'  \doi{10.1038/s41467-020-19160-7}
 #' @source
-#'  Crameri, F. (2021). Scientific colour maps. *Zenodo*, v7.0.
-#'  \doi{10.5281/zenodo.4491293}
+#'  Crameri, F. (2023). Scientific colour maps. *Zenodo*, v8.0.1.
+#'  \doi{10.5281/zenodo.1243862}
 #' @keywords internal
 #' @rdname crameri
 #' @name crameri

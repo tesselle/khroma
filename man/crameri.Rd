@@ -4,8 +4,8 @@
 \alias{crameri}
 \title{Fabio Crameri's Color Schemes}
 \source{
-Crameri, F. (2021). Scientific colour maps. \emph{Zenodo}, v7.0.
-\doi{10.5281/zenodo.4491293}
+Crameri, F. (2023). Scientific colour maps. \emph{Zenodo}, v8.0.1.
+\doi{10.5281/zenodo.1243862}
 }
 \description{
 Fabio Crameri's Color Schemes
@@ -18,20 +18,21 @@ scheme.
 
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
-\code{broc}      \tab 256      \cr
-\code{cork}      \tab 256      \cr
-\code{vik}       \tab 256      \cr
-\code{lisbon}    \tab 256      \cr
-\code{tofino}    \tab 256      \cr
-\code{berlin}    \tab 256      \cr
-\code{roma}      \tab 256      \cr
 \code{bam}       \tab 256      \cr
-\code{vanimo}    \tab 256      \cr
-\code{brocO}*    \tab 256      \cr
-\code{corkO}*    \tab 256      \cr
-\code{vikO}*     \tab 256      \cr
-\code{romaO}*    \tab 256      \cr
 \code{bamO}*     \tab 256      \cr
+\code{berlin}    \tab 256      \cr
+\code{broc}      \tab 256      \cr
+\code{brocO}*    \tab 256      \cr
+\code{cork}      \tab 256      \cr
+\code{corkO}*    \tab 256      \cr
+\code{lisbon}    \tab 256      \cr
+\code{managua}   \tab 256      \cr
+\code{roma}      \tab 256      \cr
+\code{romaO}*    \tab 256      \cr
+\code{tofino}    \tab 256      \cr
+\code{vanimo}    \tab 256      \cr
+\code{vik}       \tab 256      \cr
+\code{vikO}*     \tab 256      \cr
 }
 *: cyclic color schemes.
 }
@@ -44,27 +45,30 @@ scheme.
 
 \tabular{ll}{
 \strong{Palette} \tab \strong{Max.} \cr
+\code{acton}     \tab 256      \cr
+\code{bamako}    \tab 256      \cr
 \code{batlow}    \tab 256      \cr
 \code{batlowW}   \tab 256      \cr
 \code{batlowK}   \tab 256      \cr
-\code{devon}     \tab 256      \cr
-\code{lajolla}   \tab 256      \cr
-\code{bamako}    \tab 256      \cr
-\code{davos}     \tab 256      \cr
 \code{bilbao}    \tab 256      \cr
-\code{nuuk}      \tab 256      \cr
-\code{oslo}      \tab 256      \cr
+\code{buda}      \tab 256      \cr
+\code{bukavu}*   \tab 256      \cr
+\code{davos}     \tab 256      \cr
+\code{devon}     \tab 256      \cr
+\code{fes}*      \tab 256      \cr
+\code{glasgow}   \tab 256      \cr
 \code{grayC}     \tab 256      \cr
 \code{hawaii}    \tab 256      \cr
-\code{lapaz}     \tab 256      \cr
-\code{tokyo}     \tab 256      \cr
-\code{buda}      \tab 256      \cr
-\code{acton}     \tab 256      \cr
-\code{turku}     \tab 256      \cr
 \code{imola}     \tab 256      \cr
+\code{lajolla}   \tab 256      \cr
+\code{lapaz}     \tab 256      \cr
+\code{navia}     \tab 256      \cr
+\code{naviaW}    \tab 256      \cr
+\code{nuuk}      \tab 256      \cr
 \code{oleron}*   \tab 256      \cr
-\code{bukavu}*   \tab 256      \cr
-\code{fes}*      \tab 256      \cr
+\code{oslo}      \tab 256      \cr
+\code{tokyo}     \tab 256      \cr
+\code{turku}     \tab 256      \cr
 }
 *: multisequential color schemes.
 }

@@ -131,6 +131,7 @@ Other diverging color schemes:
 \code{\link{scale_crameri_broc}},
 \code{\link{scale_crameri_cork}},
 \code{\link{scale_crameri_lisbon}},
+\code{\link{scale_crameri_managua}},
 \code{\link{scale_crameri_roma}},
 \code{\link{scale_crameri_tofino}},
 \code{\link{scale_crameri_vanimo}},

@@ -133,6 +133,20 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
   expect_inherits(scale_fill_vanimo(), "ggproto")
   expect_inherits(scale_fill_vanimo(), "ScaleContinuous")
 
+  ## managua -------------------------------------------------------------------
+  expect_inherits(scale_colour_managua(midpoint = 10), "ggproto")
+  expect_inherits(scale_colour_managua(midpoint = 10), "ScaleContinuous")
+  expect_inherits(scale_colour_managua(), "ggproto")
+  expect_inherits(scale_colour_managua(), "ScaleContinuous")
+
+  expect_inherits(scale_color_managua(), "ggproto")
+  expect_inherits(scale_color_managua(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_managua(midpoint = 10), "ggproto")
+  expect_inherits(scale_fill_managua(midpoint = 10), "ScaleContinuous")
+  expect_inherits(scale_fill_managua(), "ggproto")
+  expect_inherits(scale_fill_managua(), "ScaleContinuous")
+
   # Sequential schemes =========================================================
   ## batlow --------------------------------------------------------------------
   expect_inherits(scale_colour_batlow(), "ggproto")
@@ -349,6 +363,54 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
   expect_inherits(scale_fill_imola(), "ggproto")
   expect_inherits(scale_fill_imola(), "ScaleContinuous")
   expect_inherits(scale_fill_imola(discrete = TRUE), "ScaleDiscrete")
+
+  ## glasgow -------------------------------------------------------------------
+  expect_inherits(scale_colour_glasgow(), "ggproto")
+  expect_inherits(scale_colour_glasgow(), "ScaleContinuous")
+  expect_inherits(scale_colour_glasgow(discrete = TRUE), "ScaleDiscrete")
+
+  expect_inherits(scale_color_glasgow(), "ggproto")
+  expect_inherits(scale_color_glasgow(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_glasgow(), "ggproto")
+  expect_inherits(scale_fill_glasgow(), "ScaleContinuous")
+  expect_inherits(scale_fill_glasgow(discrete = TRUE), "ScaleDiscrete")
+
+  ## lipari --------------------------------------------------------------------
+  expect_inherits(scale_colour_lipari(), "ggproto")
+  expect_inherits(scale_colour_lipari(), "ScaleContinuous")
+  expect_inherits(scale_colour_lipari(discrete = TRUE), "ScaleDiscrete")
+
+  expect_inherits(scale_color_lipari(), "ggproto")
+  expect_inherits(scale_color_lipari(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_lipari(), "ggproto")
+  expect_inherits(scale_fill_lipari(), "ScaleContinuous")
+  expect_inherits(scale_fill_lipari(discrete = TRUE), "ScaleDiscrete")
+
+  ## navia ---------------------------------------------------------------------
+  expect_inherits(scale_colour_navia(), "ggproto")
+  expect_inherits(scale_colour_navia(), "ScaleContinuous")
+  expect_inherits(scale_colour_navia(discrete = TRUE), "ScaleDiscrete")
+
+  expect_inherits(scale_color_navia(), "ggproto")
+  expect_inherits(scale_color_navia(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_navia(), "ggproto")
+  expect_inherits(scale_fill_navia(), "ScaleContinuous")
+  expect_inherits(scale_fill_navia(discrete = TRUE), "ScaleDiscrete")
+
+  ## naviaW --------------------------------------------------------------------
+  expect_inherits(scale_colour_naviaW(), "ggproto")
+  expect_inherits(scale_colour_naviaW(), "ScaleContinuous")
+  expect_inherits(scale_colour_naviaW(discrete = TRUE), "ScaleDiscrete")
+
+  expect_inherits(scale_color_naviaW(), "ggproto")
+  expect_inherits(scale_color_naviaW(), "ScaleContinuous")
+
+  expect_inherits(scale_fill_naviaW(), "ggproto")
+  expect_inherits(scale_fill_naviaW(), "ScaleContinuous")
+  expect_inherits(scale_fill_naviaW(discrete = TRUE), "ScaleDiscrete")
 
   # Multi-Sequential color schemes =============================================
   ## oleron --------------------------------------------------------------------
