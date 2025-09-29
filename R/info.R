@@ -222,7 +222,7 @@ NULL
 #'  SRON/EPS/TN/09-002, issue 3.2.
 #'  URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 #'
-#'  \href{https://ccgm.org/}{Commission for the Geological Map of the World}
+#'  \href{https://www.ccgm.org/}{Commission for the Geological Map of the World}.
 #' @keywords internal
 #' @rdname science
 #' @name science

@@ -15,7 +15,7 @@ NULL
 #' @details Values will be matched based on the geological unit names.
 #' @return A [discrete][ggplot2::discrete_scale] scale.
 #' @references
-#'  \href{https://ccgm.org/}{Commission for the Geological Map of the World}.
+#'  \href{https://www.ccgm.org/}{Commission for the Geological Map of the World}.
 #' @example inst/examples/ex-science-stratigraphy.R
 #' @author N. Frerebeau
 #' @family themed color schemes

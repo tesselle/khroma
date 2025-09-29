@@ -23,6 +23,6 @@ Tol, P. (2021). \emph{Colour Schemes}. SRON. Technical Note No.
 SRON/EPS/TN/09-002, issue 3.2.
 URL: \url{https://sronpersonalpages.nl/~pault/data/colourschemes.pdf}
 
-\href{https://ccgm.org/}{Commission for the Geological Map of the World}
+\href{https://www.ccgm.org/}{Commission for the Geological Map of the World}.
 }
 \keyword{internal}
