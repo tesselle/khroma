@@ -77,6 +77,9 @@ identifiers:
 - description: The versioned DOI for version 1.16.0.
   type: doi
   value: 10.5281/zenodo.14927198
+- description: The versioned DOI for version 1.17.0.
+  type: doi
+  value: 10.5281/zenodo.17232742
 - description: The CRAN DOI
   type: doi
   value: 10.32614/cran.package.khroma
@@ -183,6 +186,17 @@ references:
     address: Vienna, Austria
   year: '2025'
 - type: software
+  title: fontquiver
+  abstract: 'fontquiver: Set of Installed Fonts'
+  notes: Suggests
+  repository: https://CRAN.R-project.org/package=fontquiver
+  authors:
+  - family-names: Henry
+    given-names: Lionel
+    email: lionel@rstudio.com
+  year: '2025'
+  doi: 10.32614/CRAN.package.fontquiver
+- type: software
   title: ggplot2
   abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
   notes: Suggests
@@ -235,17 +249,6 @@ references:
     orcid: https://orcid.org/0000-0002-5147-4711
   year: '2025'
   doi: 10.32614/CRAN.package.ggraph
-- type: software
-  title: fontquiver
-  abstract: 'fontquiver: Set of Installed Fonts'
-  notes: Suggests
-  repository: https://CRAN.R-project.org/package=fontquiver
-  authors:
-  - family-names: Henry
-    given-names: Lionel
-    email: lionel@rstudio.com
-  year: '2025'
-  doi: 10.32614/CRAN.package.fontquiver
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'

@@ -68,6 +68,18 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
+      "identifier": "fontquiver",
+      "name": "fontquiver",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=fontquiver"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
       "provider": {
@@ -89,18 +101,6 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=ggraph"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "fontquiver",
-      "name": "fontquiver",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=fontquiver"
     },
     {
       "@type": "SoftwareApplication",
@@ -236,7 +236,7 @@
   },
   "isPartOf": "https://www.tesselle.org",
   "keywords": ["data-visualization", "colour-schemes", "accessibility", "r-package"],
-  "fileSize": "1506.863KB",
+  "fileSize": "1506.891KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
