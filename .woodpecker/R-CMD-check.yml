@@ -6,7 +6,7 @@ steps:
     image: rocker/r2u:latest
     commands:
       # Install system dependencies
-      - apt update -y && apt install curl qpdf -y
+      - apt update -y && apt install curl wget qpdf -y
       # Install pandoc
       - curl -s https://api.github.com/repos/jgm/pandoc/releases/latest | grep -wo "https.*-amd64.deb" | wget -qi -
       - dpkg -i $(ls pandoc-*-amd64.deb) && rm $(ls pandoc-*-amd64.deb)
